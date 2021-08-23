@@ -1,0 +1,10 @@
+style:
+  version: VERSION
+  css:
+    theme:
+      assets/css/webcrc.style.css: {}
+  js:
+    assets/js/webcrc.script.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal

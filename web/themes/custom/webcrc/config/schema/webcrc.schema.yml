@@ -1,0 +1,5 @@
+# Schema for the configuration files of the webcrc theme.
+
+webcrc.settings:
+  type: theme_settings
+  label: 'webcrc settings'

@@ -1,0 +1,15 @@
+site_name: Develop handbook
+theme: material
+dev_addr: '0.0.0.0:8080'
+nav:
+  - Home: index.md
+  - Local: local.md
+  - Deployment: deploy.md
+  - Tests: tests.md
+  - Environments: environments.md
+  - Entities: entities.md
+  - Others:
+    - MkDocs: others/mkdocs.md
+    - Composer Drupal project: others/composer-drupal-project.md
+markdown_extensions:
+  - admonition
