@@ -1,0 +1,10 @@
+uuid: 50e4478c-6404-4773-90ec-4c5c226a0c8d
+langcode: es
+status: true
+dependencies:
+  module:
+    - search_api
+id: search_api_task.token
+label: Comodín
+targetEntityType: search_api_task
+cache: true

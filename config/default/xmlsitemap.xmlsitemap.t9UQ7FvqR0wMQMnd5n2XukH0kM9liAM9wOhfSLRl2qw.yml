@@ -1,0 +1,8 @@
+uuid: d8373ce2-4b5a-47d3-9c53-c6d29d43de5a
+langcode: es
+status: true
+dependencies: {  }
+id: t9UQ7FvqR0wMQMnd5n2XukH0kM9liAM9wOhfSLRl2qw
+label: 'http://webcrc.docker.localhost:8000/es'
+context:
+  language: es

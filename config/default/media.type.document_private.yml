@@ -1,0 +1,13 @@
+uuid: 1bb1ab86-eeb0-4563-b64b-e2632cdf74f5
+langcode: es
+status: true
+dependencies: {  }
+id: document_private
+label: 'Document private'
+description: 'Archivos subidos de forma privada'
+source: file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_file
+field_map: {  }

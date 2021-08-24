@@ -1,0 +1,13 @@
+uuid: 93727f09-d56a-401c-85ef-f3961e958e41
+langcode: es
+status: true
+dependencies: {  }
+id: private
+path: /
+bypass: false
+grant_file_owners: true
+users: {  }
+roles:
+  authenticated: authenticated
+  administrator: administrator
+  anonymous: '0'

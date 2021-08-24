@@ -1,0 +1,20 @@
+uuid: d097936d-8280-4701-bf20-a0f8c3e3ad0f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - webcrc
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: webcrc_local_actions
+theme: webcrc
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

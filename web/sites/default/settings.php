@@ -514,7 +514,7 @@ $settings['update_free_access'] = FALSE;
  * See https://www.drupal.org/documentation/modules/file for more information
  * about securing private files.
  */
-# $settings['file_private_path'] = '';
+$settings['file_private_path'] = '../private-files';
 
 /**
  * Temporary file path:
@@ -776,3 +776,15 @@ $databases['default']['default'] = array (
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
+
+$settings['redis.connection']['host'] = 'redis';
+$settings['redis.connection']['port'] = '6379';
+//$settings['redis.connection']['password'] = '';
+$settings['redis.connection']['base'] = 0;
+$settings['redis.connection']['interface'] = 'PhpRedis';
+$settings['redis.settings']['perm_ttl'] = 1209600; // 14 dias
+$settings['cache']['default'] = 'cache.backend.redis';
+$settings['cache']['bins']['bootstrap'] = 'cache.backend.chainedfast';
+$settings['cache']['bins']['discovery'] = 'cache.backend.chainedfast';
+$settings['cache']['bins']['config'] = 'cache.backend.chainedfast';
+$settings['container_yamls'][] = "sites/default/redis.services.yml";

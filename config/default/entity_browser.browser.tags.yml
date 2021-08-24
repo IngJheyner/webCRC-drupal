@@ -1,0 +1,31 @@
+uuid: 3e48182f-44bb-4560-b207-5648a005e0eb
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.tags
+  module:
+    - views
+name: tags
+label: Tags
+display: modal
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Seleccione tags'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  b75f636c-78c6-42e8-a226-286218df8fd5:
+    settings:
+      view: tags
+      view_display: entity_browser_1
+      submit_text: 'Seleccione tags'
+      auto_select: false
+    uuid: b75f636c-78c6-42e8-a226-286218df8fd5
+    weight: 1
+    label: Tags
+    id: view

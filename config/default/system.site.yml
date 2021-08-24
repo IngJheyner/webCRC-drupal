@@ -1,0 +1,14 @@
+uuid: 6c81981c-26c5-4056-8099-0792a5fc6b27
+name: Webcrc
+mail: admin@example.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /index
+admin_compact_mode: false
+weight_select_max: 100
+langcode: es
+default_langcode: es
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
