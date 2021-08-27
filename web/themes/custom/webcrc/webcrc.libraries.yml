@@ -3,6 +3,7 @@ style:
   css:
     theme:
       assets/css/webcrc.style.css: {}
+      //cdn.www.gov.co/v2/assets/cdn.min.css: {type: external}
   js:
     assets/js/webcrc.script.js: {}
   dependencies:

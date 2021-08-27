@@ -38,7 +38,8 @@ mix.browserSync({
  | COPY FILES
  |--------------------------------------------------------------------------
  */
- mix.copy('node_modules/blazy/blazy.min.js', '../../../libraries/blazy/blazy.js')
+ mix.copy('node_modules/@fortawesome/fontawesome-free/webfonts', 'assets/webfonts')
+      .copy('node_modules/blazy/blazy.min.js', '../../../libraries/blazy/blazy.js')
       .copy('node_modules/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js', '../../../libraries/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js')
       .copy('node_modules/dropzone/', '../../../libraries/dropzone/')
       .copy('node_modules/slick-carousel/slick/slick.css', '../../../libraries/slick/slick/slick.css')

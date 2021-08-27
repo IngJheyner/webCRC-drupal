@@ -1,3 +1,10 @@
+// Fonts
+// -----------------------------------------------------------------------------
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+
 // Bootstrap
 // -----------------------------------------------------------------------------
 @import "~bootstrap/scss/functions";
@@ -56,5 +63,6 @@
 // Other
 // -----------------------------------------------------------------------------
 @import "block/block";
+@import "block/_block.top.a";
 @import "content/node.page";
 @import "content/node.article";

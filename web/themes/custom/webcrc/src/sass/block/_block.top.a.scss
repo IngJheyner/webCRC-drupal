@@ -1,0 +1,171 @@
+// Top a
+// -----------------------------------------------------------------------------
+.page__top_a {
+  position: relative;
+
+  // Estilos del menu para la pagina del Home
+  nav.nav-main-menu.home-menu {
+    position: absolute;
+    right: 0;
+    left: 0;
+
+    ul.sf-menu {
+      background: rgba(0,0,0,1);
+      background: -moz-linear-gradient(top, rgba(0,0,0,1) 18%, rgba(0,0,0,1) 25%, rgba(0,0,0,0) 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(18%, rgba(0,0,0,1)), color-stop(25%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,0)));
+      background: -webkit-linear-gradient(top, rgba(0,0,0,1) 18%, rgba(0,0,0,1) 25%, rgba(0,0,0,0) 100%);
+      background: -o-linear-gradient(top, rgba(0,0,0,1) 18%, rgba(0,0,0,1) 25%, rgba(0,0,0,0) 100%);
+      background: -ms-linear-gradient(top, rgba(0,0,0,1) 18%, rgba(0,0,0,1) 25%, rgba(0,0,0,0) 100%);
+      background: linear-gradient(to bottom, rgba(0,0,0,1) 18%, rgba(0,0,0,1) 25%, rgba(0,0,0,0) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+    }
+  }
+
+  // Estilos del menu para paginas internas
+  nav.nav-main-menu {
+    position: relative;
+    right: 0;
+    left: 0;
+
+    ul.sf-menu {
+      background: #000;
+    }
+  }
+
+  // Estilos del menu generales
+  ul.sf-menu {
+    float: none;
+    width: 100%;
+    padding: 0 50px;
+    display: table;
+
+    > li {
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    li {
+      float: none;
+      background: transparent;
+
+      a {
+        color: #fff !important;
+        font-weight: bold;
+        font-size: 13pt;
+
+        span.sf-sub-indicator {
+          color: #fff !important;
+          right: 22px;
+        }
+      }
+
+      a:hover, a:active, a:focus {
+        color: #000 !important;
+
+        span.sf-sub-indicator {
+          color: #000 !important;
+        }
+      }
+
+      a.is-active {
+        background: transparent !important;
+      }
+    }
+
+    li.sfHover {
+      a {
+        color: #000 !important;
+
+        span.sf-sub-indicator {
+          color: #000 !important;
+        }
+      }
+    }
+  }
+
+  // Estilos para el Slideshow Home
+  div#slick-views-home-slideshow-block-1-2 {
+    position: relative;
+    display: block;
+  }
+
+  div.slide__caption {
+    padding: 0;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .field-content div {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-75%, -50%);
+
+      p {
+        color: #FFF;
+        font-size: 38pt;
+        line-height: 50pt;
+        font-weight: bold;
+        text-shadow: 0 0 15px rgb(0,0,0)
+      }
+    }
+  }
+
+  // Slide puntos navegacion
+  .slick-dots {
+    position: absolute;
+    bottom: 0;
+    padding: 15px 0px 50px;
+    margin: auto;
+    right: 0;
+    left: 0;
+    text-align: center;
+
+    > li {
+      margin: 0;
+      padding: 0 5px;
+    }
+
+    button {
+      color: transparent;
+      background: rgb(255, 255, 255);
+      border: none;
+      border-radius: 100%;
+      width: 15px;
+      height: 15px;
+    }
+
+    > li.slick-active  button {
+      background: rgb(244, 46, 98);
+    }
+  }
+
+  // Slide Flechas
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    background: rgba(255,255,255,.5);
+    color: transparent;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 40px 0px rgba(0,0,0,1);
+    padding: 0;
+    margin: 0 40px;
+  }
+
+  .slick-prev:before {
+    content: fa-content($fa-var-angle-left);
+    font-family: "Font Awesome 5 Free"; 
+    color: #000;
+  }
+  
+  .slick-next:before {
+    content: fa-content($fa-var-angle-right);
+    font-family: "Font Awesome 5 Free"; 
+    color: #000;
+  }
+    
+}

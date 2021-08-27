@@ -1,0 +1,89 @@
+{% set classes = [
+  'block',
+  bundle ? 'block--' ~ bundle|clean_class,
+  id ? 'block--' ~ id|replace({"_": "-"})|clean_class,
+]|merge(utility_classes ? utility_classes : []) %}
+
+{% if html_tag %}
+  <{{ html_tag }}{{ attributes|without('id').addClass(classes) }}>
+{% endif %}
+
+  {% block content %}
+    <div class="footer_logo_webcrc">
+      <div class="row">
+        <div class="col-12">
+          {{ content.field_home_footer_logo_webcrc }}
+        </div>
+      </div>
+    </div>
+    <div class="footer_location">
+      <div class="row">
+        <div class="col-12">
+          {{ content.field_home_footer_location }}
+        </div>
+      </div>
+    </div>
+    <div class="footer_contacts">
+      <div class="row">
+        <div class="col-12">
+          {{ content.field_home_footer_contacts }}
+        </div>
+        <div class="col-12">
+          {{ content.field_home_footer_insti_mail }}
+        </div>
+        <div class="col-12">
+          {{ content.field_home_footer_judicial_mail }}
+        </div>
+      </div>
+    </div>
+    <div class="footer_org">
+      <div class="row">
+        <div class="col-12">
+          {{ content.field_home_footer_txt_org }}
+        </div>
+        <div class="col-12">
+          {{ content.field_home_footer_img_org }}
+        </div>
+      </div>
+    </div>
+    <div class="footer_social">
+      <div class="row">
+        <div class="col-12">
+          {{ content.field_home_footer_title_social }}
+        </div>
+        <div class="col-12">
+          <ul class="list-group list-group-horizontal">
+            <li class="list-group-item">
+              <a href="{{ content.field_home_footer_url_facebook[0]['#title'] }}" target="_blank">
+                {{ content.field_home_footer_logo_facebook }}
+              </a>
+            </li>
+            <li class="list-group-item">
+              <a href="{{ content.field_home_footer_url_twitter[0]['#title'] }}" target="_blank">
+                {{ content.field_home_footer_logo_twitter }}
+              </a>
+            </li>
+            <li class="list-group-item">
+              <a href="{{ content.field_home_footer_url_instagram[0]['#title'] }}" target="_blank">
+                {{ content.field_home_footer_logo_instagram }}
+              </a>
+            </li>
+            <li class="list-group-item">
+              <a href="{{ content.field_home_footer_url_youtube[0]['#title'] }}" target="_blank">
+                {{ content.field_home_footer_logo_youtube }}
+              </a>
+            </li>
+            <li class="list-group-item">
+              <a href="{{ content.field_home_footer_url_linkedin[0]['#title'] }}" target="_blank">
+                {{ content.field_home_footer_logo_linkedin }}
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  {% endblock %}
+
+{% if html_tag %}
+  </{{ html_tag }}>
+{% endif %} 

@@ -2,4 +2,25 @@
 // -----------------------------------------------------------------------------
 .page__header {
 
+  .header-gov {
+    background: rgb(51, 102, 204);
+
+    img {
+      padding: 10px;
+      max-width: 150px;
+    }
+
+    .lang-govco
+    {
+      color: #fff;
+    }
+  }
+
+  .header-webcrc {
+
+    .logo-crc {
+      background-image: repeating-linear-gradient(-70deg, transparent 0, transparent 9%, #f42e62 0, #f42e62);
+      padding: 15px 0;
+    }
+  }
 }

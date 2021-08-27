@@ -91,6 +91,9 @@ $theme-colors: map-merge(
     $theme-colors
 );
 
+// Fonts
+$fa-font-path:        "../../../assets/webfonts";
+
 // Set a specific jump point for requesting color jumps
 $theme-color-interval:      8% !default;
 

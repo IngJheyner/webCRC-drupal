@@ -1,5 +1,113 @@
 // Page: Footer
 // -----------------------------------------------------------------------------
+footer.page__footer {
+  padding: 0;
+  margin: 0 auto;
+  background: transparent !important;
+}
+
 .page__footer {
 
+  > .container-fluid {
+    padding: 0;
+  }
+
+  ul > li,  ul > li a{
+    border: none;
+    padding: 10px 10px 0 0;
+    background: transparent;
+  }
+
+  .logo-co img {
+    width: 60px;
+  }
+
+  .logo-gov-co img {
+    width: 130px;
+  }
+
+  .backgrond-footer-top {
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 20%, rgba(244,46,98,1) 20%);
+    padding: 70px 0;
+  }
+
+  .backgrond-footer-bottom {
+    background: #3366CC;
+  }
+
+  .page__footer__top,
+  .page__footer__bottom {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .page__footer__top {
+    background: rgb(255, 255, 255);
+    padding: 50px;
+    border-radius: 1%;
+    box-shadow: 0 0 15px 0px rgba(0, 0, 0, .2);
+  }
+
+  .page__footer__bottom {
+    background: transparent;
+  }
+
+  .block--home-footer {
+
+    > * {
+      margin: 0 auto 30px;
+    }
+
+    > :last-child {
+      margin-bottom: 0;
+    }
+
+    img {
+        margin: 0;
+    }
+
+    .field__label,
+    .home-footer__txt-org,
+    .home-footer__title-social {
+      font-weight: bold;
+    }
+
+    .footer_contacts {
+
+      .home-footer__insti-mail .field__label,
+      .home-footer__judicial-mail .field__label {
+        font-weight: normal !important;
+      }
+
+      .home-footer__insti-mail,
+      .home-footer__judicial-mail {
+        display: flex;
+
+        div {
+          padding: 0 5px 0 0;
+        }
+
+        .field__item {
+          color: rgb(95, 106, 167);
+          text-decoration: underline;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .footer_org {
+
+      div {
+
+        div:last-child > div{
+          display: flex;
+
+          .field__item {
+            margin: 10px 20px 0 0;
+          }
+        }
+      }
+    }
+  }
 }
