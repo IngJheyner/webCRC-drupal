@@ -92,7 +92,9 @@ $theme-colors: map-merge(
 );
 
 // Fonts
-$fa-font-path:        "../../../assets/webfonts";
+$fa-font-path:        "../webfonts/";
+$material-design-icons-font-directory-path: '../material-iconfont/';
+
 
 // Set a specific jump point for requesting color jumps
 $theme-color-interval:      8% !default;

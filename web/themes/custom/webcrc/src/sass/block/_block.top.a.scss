@@ -3,88 +3,136 @@
 .page__top_a {
   position: relative;
 
-  // Estilos del menu para la pagina del Home
+  // Estilo Menu general
+  ul.sf-menu,
+  ul#superfish-main-accordion {
+    float: none;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 1);
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+
+    li {
+      background: transparent;
+
+      a,
+      a:visited {
+        font-size: 1.2rem;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+      }
+
+      a.is-active,
+      a.is-active:hover,
+      a.is-active:active,
+      a.is-active:focus,
+      a:hover, 
+      a:active, 
+      a:focus {
+        color: rgba(0,0,0,1);
+        text-decoration: underline;
+      }
+
+      a.is-active {
+        color: rgba(255,255,255,1);
+        background: transparent;
+      }
+    }
+
+    .sf-sub-indicator:after {
+      font-family: "Material Icons";
+      content: "expand_more";
+      position: absolute;
+      top: 0;
+      left: 0;
+      line-height: 1;
+      color: rgb(255, 255, 255);
+    }
+
+    .sfHover > ul {
+      min-width: 100% !important;
+    }
+
+    .sfHover a,
+    .sfHover a:visited,
+    .sfhover li a,
+    .sfHover .sf-sub-indicator:after,
+    .sf-expanded .sf-sub-indicator:after,
+    a:hover .sf-sub-indicator:after
+     {
+      color: rgba(0,0,0,1);
+    }
+  }
+
+  ul.sf-menu:after {
+    display: none;
+  }
+
+  // Estilos menu responsive
+  .sf-accordion-toggle {
+
+    a#superfish-main-toggle {
+      background: rgb(47, 42, 124);
+      color: rgb(255,255,255);
+      border: none;
+      padding: 2rem;
+      border-radius: 50%;
+
+      span {
+        display: none;
+        visibility: hidden;
+        color: transparent;
+      }
+    }
+
+    a#superfish-main-toggle:after {
+      font-family: "Material Icons";
+      content: "menu";
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+  }
+
+  ul#superfish-main-accordion {
+    padding: 0;
+
+    a.is-active {
+      color: rgba(255,255,255,1) !important;
+    }
+
+    li {
+      ul {
+        li:first-child {
+          display: none;
+          visibility: none;
+        }
+      }
+    }
+  }
+
+  // Estilos menu pagina Home
   nav.nav-main-menu.home-menu {
     position: absolute;
     right: 0;
     left: 0;
+    z-index: 1;
 
     ul.sf-menu {
-      background: rgba(0,0,0,1);
-      background: -moz-linear-gradient(top, rgba(0,0,0,1) 18%, rgba(0,0,0,1) 25%, rgba(0,0,0,0) 100%);
-      background: -webkit-gradient(left top, left bottom, color-stop(18%, rgba(0,0,0,1)), color-stop(25%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,0)));
-      background: -webkit-linear-gradient(top, rgba(0,0,0,1) 18%, rgba(0,0,0,1) 25%, rgba(0,0,0,0) 100%);
-      background: -o-linear-gradient(top, rgba(0,0,0,1) 18%, rgba(0,0,0,1) 25%, rgba(0,0,0,0) 100%);
-      background: -ms-linear-gradient(top, rgba(0,0,0,1) 18%, rgba(0,0,0,1) 25%, rgba(0,0,0,0) 100%);
-      background: linear-gradient(to bottom, rgba(0,0,0,1) 18%, rgba(0,0,0,1) 25%, rgba(0,0,0,0) 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+      background: rgb(0,0,0);
+      background: -moz-linear-gradient(180deg, rgba(0,0,0,0.7) 60%, rgba(255,255,255,0) 100%);
+      background: -webkit-linear-gradient(180deg, rgba(0,0,0,0.7) 60%, rgba(255,255,255,0) 100%);
+      background: linear-gradient(180deg, rgba(0,0,0,0.7) 60%, rgba(255,255,255,0) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1); 
     }
   }
 
-  // Estilos del menu para paginas internas
-  nav.nav-main-menu {
-    position: relative;
-    right: 0;
-    left: 0;
-
-    ul.sf-menu {
-      background: #000;
-    }
-  }
-
-  // Estilos del menu generales
-  ul.sf-menu {
-    float: none;
-    width: 100%;
-    padding: 0 50px;
-    display: table;
-
-    > li {
-      display: table-cell;
-      text-align: center;
-      vertical-align: middle;
-    }
-
-    li {
-      float: none;
-      background: transparent;
-
-      a {
-        color: #fff !important;
-        font-weight: bold;
-        font-size: 13pt;
-
-        span.sf-sub-indicator {
-          color: #fff !important;
-          right: 22px;
-        }
-      }
-
-      a:hover, a:active, a:focus {
-        color: #000 !important;
-
-        span.sf-sub-indicator {
-          color: #000 !important;
-        }
-      }
-
-      a.is-active {
-        background: transparent !important;
-      }
-    }
-
-    li.sfHover {
-      a {
-        color: #000 !important;
-
-        span.sf-sub-indicator {
-          color: #000 !important;
-        }
-      }
-    }
-  }
-
-  // Estilos para el Slideshow Home
+  // Slideshow Home
   div#slick-views-home-slideshow-block-1-2 {
     position: relative;
     display: block;
@@ -114,7 +162,7 @@
     }
   }
 
-  // Slide puntos navegacion
+  // Slideshow puntos de navegacion
   .slick-dots {
     position: absolute;
     bottom: 0;
@@ -143,7 +191,11 @@
     }
   }
 
-  // Slide Flechas
+  // Slideshow flechas
+  .slick__arrow {
+    z-index: 0;
+  }
+
   .slick-arrow {
     position: absolute;
     top: 50%;
@@ -154,18 +206,23 @@
     box-shadow: 0 0 40px 0px rgba(0,0,0,1);
     padding: 0;
     margin: 0 40px;
+    text-align: center;
   }
 
   .slick-prev:before {
-    content: fa-content($fa-var-angle-left);
-    font-family: "Font Awesome 5 Free"; 
+    font-family: "Material Icons";
+    content: "chevron_left";
     color: #000;
+    font-size: 5rem;
+    line-height: 1;
   }
   
   .slick-next:before {
-    content: fa-content($fa-var-angle-right);
-    font-family: "Font Awesome 5 Free"; 
+    font-family: "Material Icons";
+    content: "chevron_right";
     color: #000;
+    font-size: 5rem;
+    line-height: 1;
   }
     
 }

@@ -39,6 +39,7 @@ mix.browserSync({
  |--------------------------------------------------------------------------
  */
  mix.copy('node_modules/@fortawesome/fontawesome-free/webfonts', 'assets/webfonts')
+      .copy('node_modules/material-design-icons-iconfont/dist/fonts/', 'assets/material-iconfont')
       .copy('node_modules/blazy/blazy.min.js', '../../../libraries/blazy/blazy.js')
       .copy('node_modules/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js', '../../../libraries/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js')
       .copy('node_modules/dropzone/', '../../../libraries/dropzone/')
