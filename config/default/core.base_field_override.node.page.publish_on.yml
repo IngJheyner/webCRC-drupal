@@ -1,0 +1,18 @@
+uuid: f700c0f1-f63a-4fac-a6bf-f25c92ac7bc7
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.page
+id: node.page.publish_on
+field_name: publish_on
+entity_type: node
+bundle: page
+label: 'Publicar en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

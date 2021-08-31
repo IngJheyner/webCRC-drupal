@@ -1,0 +1,22 @@
+uuid: eff12956-9f45-4adc-b264-85997dac8ce6
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.home_slideshow
+id: node.home_slideshow.sticky
+field_name: sticky
+entity_type: node
+bundle: home_slideshow
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

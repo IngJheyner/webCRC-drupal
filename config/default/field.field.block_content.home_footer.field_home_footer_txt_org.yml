@@ -1,0 +1,21 @@
+uuid: 2573fe0b-6d4f-4bcd-93f5-c6bbc45c7c03
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.home_footer
+    - field.storage.block_content.field_home_footer_txt_org
+id: block_content.home_footer.field_home_footer_txt_org
+field_name: field_home_footer_txt_org
+entity_type: block_content
+bundle: home_footer
+label: 'Texto organizaciones'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 'Organizaciones internacionales presididas por la CRC'
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,38 @@
+uuid: a8133e30-fcc9-4136-952a-ec8bb7a05248
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.home_footer
+    - field.storage.block_content.field_home_footer_logo_facebook
+  module:
+    - image
+id: block_content.home_footer.field_home_footer_logo_facebook
+field_name: field_home_footer_logo_facebook
+entity_type: block_content
+bundle: home_footer
+label: Logo
+description: 'Logo de facebook'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: webcrc/images/footer
+  file_extensions: 'png gif jpg jpeg svg'
+  max_filesize: '400 KB'
+  max_resolution: 100x100
+  min_resolution: 50x50
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

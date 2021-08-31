@@ -11,7 +11,7 @@ _core:
 id: webcrc_breadcrumbs
 theme: webcrc
 region: navbar_branding
-weight: -7
+weight: -5
 provider: null
 plugin: system_breadcrumb_block
 settings:

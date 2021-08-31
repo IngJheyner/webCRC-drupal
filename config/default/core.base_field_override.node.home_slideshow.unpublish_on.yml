@@ -1,0 +1,18 @@
+uuid: 35a9dc6b-5db8-4a27-8662-08addc933733
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.home_slideshow
+id: node.home_slideshow.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: home_slideshow
+label: 'Quitar publicación en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

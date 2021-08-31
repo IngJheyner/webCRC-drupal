@@ -1,0 +1,8 @@
+uuid: 5ba8516a-80c3-4b73-8f3e-c57633e5767b
+langcode: es
+status: true
+dependencies: {  }
+id: home_footer_copyright
+label: 'Home [Pie de pagina Copyright]'
+revision: 0
+description: 'Copyright la pagina comisión de regulación de comunicaciones'

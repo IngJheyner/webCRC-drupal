@@ -1,0 +1,85 @@
+uuid: 3bdb9885-9d2f-4e0a-abb3-9888ac15aebf
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.home_header
+    - field.field.block_content.home_header.field_home_header_logo_govco
+    - field.field.block_content.home_header.field_home_header_logo_webcrc
+    - image.style.thumbnail
+  module:
+    - field_group
+    - svg_image
+third_party_settings:
+  field_group:
+    group_home_header_infomacion:
+      children:
+        - info
+        - langcode
+      parent_name: ''
+      weight: 0
+      format_type: details_sidebar
+      region: content
+      format_settings:
+        description: ''
+        open: true
+        weight: 0
+        required_fields: true
+        id: ''
+        classes: ''
+        show_empty_fields: false
+      label: Infomación
+    group_home_header_content:
+      children:
+        - field_home_header_logo_govco
+        - field_home_header_logo_webcrc
+      parent_name: ''
+      weight: 1
+      format_type: details_sidebar
+      region: content
+      format_settings:
+        description: ''
+        weight: 0
+        required_fields: true
+        id: ''
+        classes: ''
+        show_empty_fields: false
+        open: false
+      label: Contenido
+id: block_content.home_header.default
+targetEntityType: block_content
+bundle: home_header
+mode: default
+content:
+  field_home_header_logo_govco:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_home_header_logo_webcrc:
+    weight: 3
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  info:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

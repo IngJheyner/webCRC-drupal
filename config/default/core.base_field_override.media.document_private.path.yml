@@ -1,0 +1,20 @@
+uuid: c546c113-7743-4f10-8442-62b5f5c440a4
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.document_private
+  module:
+    - path
+id: media.document_private.path
+field_name: path
+entity_type: media
+bundle: document_private
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

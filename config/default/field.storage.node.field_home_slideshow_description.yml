@@ -1,0 +1,19 @@
+uuid: 82bc8d0a-5a34-4563-a9d5-b57e41dd2c52
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_home_slideshow_description
+field_name: field_home_slideshow_description
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

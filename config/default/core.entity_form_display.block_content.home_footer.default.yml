@@ -1,0 +1,390 @@
+uuid: 53b82e4d-b8fd-470e-a2f3-381f55212c35
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.home_footer
+    - field.field.block_content.home_footer.field_home_footer_contacts
+    - field.field.block_content.home_footer.field_home_footer_img_org
+    - field.field.block_content.home_footer.field_home_footer_insti_mail
+    - field.field.block_content.home_footer.field_home_footer_judicial_mail
+    - field.field.block_content.home_footer.field_home_footer_location
+    - field.field.block_content.home_footer.field_home_footer_logo_facebook
+    - field.field.block_content.home_footer.field_home_footer_logo_instagram
+    - field.field.block_content.home_footer.field_home_footer_logo_linkedin
+    - field.field.block_content.home_footer.field_home_footer_logo_twitter
+    - field.field.block_content.home_footer.field_home_footer_logo_webcrc
+    - field.field.block_content.home_footer.field_home_footer_logo_youtube
+    - field.field.block_content.home_footer.field_home_footer_title_social
+    - field.field.block_content.home_footer.field_home_footer_txt_org
+    - field.field.block_content.home_footer.field_home_footer_url_facebook
+    - field.field.block_content.home_footer.field_home_footer_url_instagram
+    - field.field.block_content.home_footer.field_home_footer_url_linkedin
+    - field.field.block_content.home_footer.field_home_footer_url_twitter
+    - field.field.block_content.home_footer.field_home_footer_url_youtube
+    - image.style.thumbnail
+  module:
+    - field_group
+    - link
+    - svg_image
+third_party_settings:
+  field_group:
+    group_home_footer_info_block:
+      children:
+        - info
+        - langcode
+      parent_name: ''
+      weight: 0
+      format_type: details_sidebar
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        effect: bounceslide
+        formatter: closed
+        description: ''
+        required_fields: true
+        direction: vertical
+        width_breakpoint: 640
+        open: false
+        weight: 0
+      label: 'Infomación del bloque'
+    group_home_footer_img:
+      children:
+        - field_home_footer_logo_webcrc
+      parent_name: ''
+      weight: 1
+      format_type: details_sidebar
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        effect: bounceslide
+        open: false
+        required_fields: true
+        weight: 0
+      label: 'Imagenes pie de pagina'
+    group_home_footer_org_img:
+      children:
+        - field_home_footer_txt_org
+        - field_home_footer_img_org
+      parent_name: ''
+      weight: 4
+      format_type: details_sidebar
+      region: content
+      format_settings:
+        effect: bounceslide
+        id: ''
+        classes: ''
+        show_empty_fields: false
+        open: false
+        required_fields: true
+        weight: 0
+      label: Organizaciones
+    group_home_footer_location_conta:
+      children:
+        - field_home_footer_location
+        - field_home_footer_contacts
+      parent_name: ''
+      weight: 2
+      format_type: details_sidebar
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+        weight: 0
+      label: 'Sedes y Contactos'
+    group_home_footer_emails:
+      children:
+        - field_home_footer_insti_mail
+        - field_home_footer_judicial_mail
+      parent_name: ''
+      weight: 3
+      format_type: details_sidebar
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+        weight: 0
+      label: Correos
+    group_home_footer_red_social:
+      children:
+        - field_home_footer_title_social
+        - group_home_footer_facebook
+        - group_home_footer_twitter
+        - group_home_footer_instagram
+        - group_home_footer_youtube
+        - group_home_footer_linkedin
+      parent_name: ''
+      weight: 5
+      format_type: details_sidebar
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+        weight: 0
+      label: 'Redes sociales'
+    group_home_footer_facebook:
+      children:
+        - field_home_footer_logo_facebook
+        - field_home_footer_url_facebook
+      parent_name: group_home_footer_red_social
+      weight: 7
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+        open: false
+        weight: 0
+        effect: none
+        formatter: closed
+        direction: vertical
+        width_breakpoint: 640
+      label: Facebook
+    group_home_footer_twitter:
+      children:
+        - field_home_footer_logo_twitter
+        - field_home_footer_url_twitter
+      parent_name: group_home_footer_red_social
+      weight: 8
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Twitter
+    group_home_footer_instagram:
+      children:
+        - field_home_footer_logo_instagram
+        - field_home_footer_url_instagram
+      parent_name: group_home_footer_red_social
+      weight: 9
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Instagram
+    group_home_footer_youtube:
+      children:
+        - field_home_footer_logo_youtube
+        - field_home_footer_url_youtube
+      parent_name: group_home_footer_red_social
+      weight: 10
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Youtube
+    group_home_footer_linkedin:
+      children:
+        - field_home_footer_logo_linkedin
+        - field_home_footer_url_linkedin
+      parent_name: group_home_footer_red_social
+      weight: 11
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Linkedin
+id: block_content.home_footer.default
+targetEntityType: block_content
+bundle: home_footer
+mode: default
+content:
+  field_home_footer_contacts:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_home_footer_img_org:
+    weight: 8
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_home_footer_insti_mail:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_home_footer_judicial_mail:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_home_footer_location:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_home_footer_logo_facebook:
+    weight: 26
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_home_footer_logo_instagram:
+    weight: 30
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_home_footer_logo_linkedin:
+    weight: 34
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_home_footer_logo_twitter:
+    weight: 28
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_home_footer_logo_webcrc:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_home_footer_logo_youtube:
+    weight: 32
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_home_footer_title_social:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_home_footer_txt_org:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_home_footer_url_facebook:
+    weight: 27
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_home_footer_url_instagram:
+    weight: 31
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_home_footer_url_linkedin:
+    weight: 35
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_home_footer_url_twitter:
+    weight: 29
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_home_footer_url_youtube:
+    weight: 33
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  info:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,19 @@
+uuid: 270cf586-68b9-4afb-9f6c-de6c737aa16f
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.home_footer
+    - field.storage.block_content.field_home_footer_judicial_mail
+id: block_content.home_footer.field_home_footer_judicial_mail
+field_name: field_home_footer_judicial_mail
+entity_type: block_content
+bundle: home_footer
+label: 'Correo de notificaciones judiciales'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

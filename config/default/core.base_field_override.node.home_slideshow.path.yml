@@ -1,0 +1,20 @@
+uuid: 1bc406c4-137e-4e0f-928c-172f526d1a23
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.home_slideshow
+  module:
+    - path
+id: node.home_slideshow.path
+field_name: path
+entity_type: node
+bundle: home_slideshow
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

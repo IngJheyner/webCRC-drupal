@@ -1,0 +1,8 @@
+uuid: 6635c26d-ea16-41c7-8a4e-13a1ab08bde6
+langcode: es
+status: true
+dependencies: {  }
+id: home_footer
+label: 'Home [Pie de pagina]'
+revision: 0
+description: 'Pie de pagina principal para la pagina del Home'

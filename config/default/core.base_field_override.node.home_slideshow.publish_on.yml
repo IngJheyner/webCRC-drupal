@@ -1,0 +1,18 @@
+uuid: c0c873c6-bd1a-4804-99c3-e684fa6e3393
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.home_slideshow
+id: node.home_slideshow.publish_on
+field_name: publish_on
+entity_type: node
+bundle: home_slideshow
+label: 'Publicar en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

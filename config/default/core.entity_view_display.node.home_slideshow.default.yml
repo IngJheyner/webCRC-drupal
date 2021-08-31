@@ -1,0 +1,74 @@
+uuid: 94098427-59de-4837-8696-1614dd513e0f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.home_slideshow.field_home_slideshow_description
+    - field.field.node.home_slideshow.field_home_slideshow_imagen
+    - field.field.node.home_slideshow.field_home_slideshow_url
+    - node.type.home_slideshow
+  module:
+    - blazy
+    - link
+    - user
+id: node.home_slideshow.default
+targetEntityType: node
+bundle: home_slideshow
+mode: default
+content:
+  field_home_slideshow_description:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_home_slideshow_imagen:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      icon: ''
+      layout: ''
+      view_mode: ''
+      cache: 0
+      current_view_mode: ''
+      skin: ''
+      fx: ''
+      style: ''
+      background: false
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      caption: {  }
+      responsive_image_style: ''
+      box_style: ''
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
+      _uri: ''
+      breakpoints: {  }
+      sizes: ''
+      grid_header: ''
+      grid: 0
+      grid_medium: 0
+      grid_small: 0
+    third_party_settings: {  }
+    type: blazy
+    region: content
+  field_home_slideshow_url:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  langcode: true
+  links: true
+  search_api_excerpt: true

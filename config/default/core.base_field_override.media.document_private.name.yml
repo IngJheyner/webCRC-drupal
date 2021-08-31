@@ -1,0 +1,20 @@
+uuid: 287af662-880d-4493-8c8e-466d5911fa2d
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.document_private
+id: media.document_private.name
+field_name: name
+entity_type: media
+bundle: document_private
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,22 @@
+uuid: 833adf22-9afb-423c-aa33-3f998013e8dd
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.home_header
+id: block_content.home_header.status
+field_name: status
+entity_type: block_content
+bundle: home_header
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,19 @@
+uuid: 42d41eb1-e949-456e-8bf4-2f18f5be5c2e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_home_slideshow_description
+    - node.type.home_slideshow
+id: node.home_slideshow.field_home_slideshow_description
+field_name: field_home_slideshow_description
+entity_type: node
+bundle: home_slideshow
+label: Descripón
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

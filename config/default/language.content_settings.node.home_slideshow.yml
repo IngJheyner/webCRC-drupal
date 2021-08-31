@@ -1,0 +1,18 @@
+uuid: 3d9801e1-162e-4e1a-a476-b6ab7dff60f0
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.home_slideshow
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.home_slideshow
+target_entity_type_id: node
+target_bundle: home_slideshow
+default_langcode: site_default
+language_alterable: false

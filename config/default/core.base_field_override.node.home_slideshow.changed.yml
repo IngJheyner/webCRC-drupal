@@ -1,0 +1,18 @@
+uuid: 6b7abb48-d135-4d42-819d-27f22f8d2a77
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.home_slideshow
+id: node.home_slideshow.changed
+field_name: changed
+entity_type: node
+bundle: home_slideshow
+label: Modificado
+description: 'La fecha en que el nodo fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

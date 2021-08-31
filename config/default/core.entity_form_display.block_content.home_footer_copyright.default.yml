@@ -1,0 +1,118 @@
+uuid: 3434495f-72bb-4ece-8ed4-c7218f3a5a88
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.home_footer_copyright
+    - field.field.block_content.home_footer_copyright.field_home_footer_logo_co
+    - field.field.block_content.home_footer_copyright.field_home_footer_url_co
+    - field.field.block_content.home_footer_copyright.field_home_footer_url_govco
+    - field.field.block_content.home_footer_copyright.field_home_header_logo_govco
+    - image.style.thumbnail
+  module:
+    - field_group
+    - link
+    - svg_image
+third_party_settings:
+  field_group:
+    group_home_footer_govco:
+      children:
+        - field_home_header_logo_govco
+        - field_home_footer_url_govco
+      parent_name: ''
+      weight: 1
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: open
+        required_fields: true
+      label: Gov.co
+    group_home_footer_info_copy:
+      children:
+        - info
+        - langcode
+      parent_name: ''
+      weight: 0
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Infomación
+    group_home_footer_copy_co:
+      children:
+        - field_home_footer_logo_co
+        - field_home_footer_url_co
+      parent_name: ''
+      weight: 2
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: CO
+id: block_content.home_footer_copyright.default
+targetEntityType: block_content
+bundle: home_footer_copyright
+mode: default
+content:
+  field_home_footer_logo_co:
+    weight: 3
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_home_footer_url_co:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_home_footer_url_govco:
+    weight: 22
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_home_header_logo_govco:
+    weight: 21
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  info:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 3
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

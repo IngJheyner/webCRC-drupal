@@ -1,0 +1,28 @@
+uuid: 53ec1982-a1be-48a2-88ec-f1d481feb566
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.home_slideshow.field_home_slideshow_description
+    - field.field.node.home_slideshow.field_home_slideshow_imagen
+    - field.field.node.home_slideshow.field_home_slideshow_url
+    - node.type.home_slideshow
+  module:
+    - user
+id: node.home_slideshow.teaser
+targetEntityType: node
+bundle: home_slideshow
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_home_slideshow_description: true
+  field_home_slideshow_imagen: true
+  field_home_slideshow_url: true
+  langcode: true
+  search_api_excerpt: true

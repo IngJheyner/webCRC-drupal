@@ -1,0 +1,25 @@
+uuid: 4b53be8c-43cb-40cb-baca-b97478610052
+langcode: es
+status: true
+dependencies:
+  config:
+    - webform.webform.boletin_de_noticias
+  module:
+    - webform
+  theme:
+    - webcrc
+id: form_newsletter
+theme: webcrc
+region: footer_right
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Boletín de noticias'
+  provider: webform
+  label_display: visible
+  webform_id: boletin_de_noticias
+  default_data: ''
+  redirect: false
+visibility: {  }

@@ -1,0 +1,18 @@
+uuid: 06658775-0973-4277-98be-a66e752d8e75
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.article
+id: node.article.publish_on
+field_name: publish_on
+entity_type: node
+bundle: article
+label: 'Publicar en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

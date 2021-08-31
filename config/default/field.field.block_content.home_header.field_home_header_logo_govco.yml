@@ -1,0 +1,38 @@
+uuid: 6a66d097-b181-4a39-b7e7-32bc9fe2ffec
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.home_header
+    - field.storage.block_content.field_home_header_logo_govco
+  module:
+    - image
+id: block_content.home_header.field_home_header_logo_govco
+field_name: field_home_header_logo_govco
+entity_type: block_content
+bundle: home_header
+label: 'Logo Gov.co'
+description: 'Imagen del logo gobierno'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: webcrc/images/header
+  file_extensions: 'png gif jpg jpeg svg'
+  max_filesize: '1 MB'
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

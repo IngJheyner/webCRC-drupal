@@ -1,0 +1,18 @@
+uuid: ffce2eb4-253d-43cd-8de9-d5573144a02a
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.home_header
+id: block_content.home_header.info
+field_name: info
+entity_type: block_content
+bundle: home_header
+label: 'Block description'
+description: 'Una breve descripción de su bloque.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

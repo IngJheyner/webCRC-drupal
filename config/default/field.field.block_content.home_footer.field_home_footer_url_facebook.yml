@@ -1,0 +1,23 @@
+uuid: 59cc63b6-84ca-499e-94d6-9f797e6ee718
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.home_footer
+    - field.storage.block_content.field_home_footer_url_facebook
+  module:
+    - link
+id: block_content.home_footer.field_home_footer_url_facebook
+field_name: field_home_footer_url_facebook
+entity_type: block_content
+bundle: home_footer
+label: Enlace
+description: 'Ruta a la cuenta de facebook'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 1
+field_type: link

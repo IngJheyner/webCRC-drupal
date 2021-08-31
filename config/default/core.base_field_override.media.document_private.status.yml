@@ -1,0 +1,22 @@
+uuid: 3a4073ce-cbad-47de-8d95-06a03c542cb3
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.document_private
+id: media.document_private.status
+field_name: status
+entity_type: media
+bundle: document_private
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,8 @@
+uuid: 6e48ea10-24a2-4052-86b6-bf05be847149
+langcode: es
+status: true
+dependencies: {  }
+id: home_header
+label: 'Home [Encabezado]'
+revision: 0
+description: 'Encabezado principal para la pagina del Home'

@@ -1,0 +1,18 @@
+uuid: 8c694662-d667-4bbf-97e9-05331d79ee84
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.home_slideshow
+id: node.home_slideshow.created
+field_name: created
+entity_type: node
+bundle: home_slideshow
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

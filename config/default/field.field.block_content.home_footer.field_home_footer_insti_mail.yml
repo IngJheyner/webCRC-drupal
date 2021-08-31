@@ -1,0 +1,19 @@
+uuid: c2dc1e54-1752-4e3d-9eaa-2ed7a9500679
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.home_footer
+    - field.storage.block_content.field_home_footer_insti_mail
+id: block_content.home_footer.field_home_footer_insti_mail
+field_name: field_home_footer_insti_mail
+entity_type: block_content
+bundle: home_footer
+label: 'Correo Institucional'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

@@ -1,0 +1,21 @@
+uuid: 6a1d3e71-9277-40af-a23c-597bf1a2f515
+langcode: es
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.field_home_footer_txt_org
+field_name: field_home_footer_txt_org
+entity_type: block_content
+type: string
+settings:
+  max_length: 195
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

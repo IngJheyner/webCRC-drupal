@@ -1,0 +1,111 @@
+uuid: 83d15745-3d60-4882-a9d4-3b8dacf7760a
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.home_footer_copyright
+    - field.field.block_content.home_footer_copyright.field_home_footer_logo_co
+    - field.field.block_content.home_footer_copyright.field_home_footer_url_co
+    - field.field.block_content.home_footer_copyright.field_home_footer_url_govco
+    - field.field.block_content.home_footer_copyright.field_home_header_logo_govco
+  module:
+    - blazy
+    - link
+id: block_content.home_footer_copyright.default
+targetEntityType: block_content
+bundle: home_footer_copyright
+mode: default
+content:
+  field_home_footer_logo_co:
+    weight: 3
+    label: hidden
+    settings:
+      image_style: ''
+      icon: ''
+      layout: ''
+      view_mode: ''
+      cache: 0
+      current_view_mode: ''
+      skin: ''
+      fx: ''
+      style: ''
+      background: false
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      caption: {  }
+      responsive_image_style: ''
+      box_style: ''
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
+      _uri: ''
+      breakpoints: {  }
+      sizes: ''
+      grid_header: ''
+      grid: 0
+      grid_medium: 0
+      grid_small: 0
+    third_party_settings: {  }
+    type: blazy
+    region: content
+  field_home_footer_url_co:
+    weight: 4
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_home_footer_url_govco:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_home_header_logo_govco:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      icon: ''
+      layout: ''
+      view_mode: ''
+      cache: 0
+      current_view_mode: ''
+      skin: ''
+      fx: ''
+      style: ''
+      background: false
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      caption: {  }
+      responsive_image_style: ''
+      box_style: ''
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
+      _uri: ''
+      breakpoints: {  }
+      sizes: ''
+      grid_header: ''
+      grid: 0
+      grid_medium: 0
+      grid_small: 0
+    third_party_settings: {  }
+    type: blazy
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true
