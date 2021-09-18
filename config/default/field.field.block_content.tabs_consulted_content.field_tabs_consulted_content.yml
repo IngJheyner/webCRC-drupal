@@ -1,0 +1,49 @@
+uuid: 7b2518d0-bf56-4ff4-928b-01019661f642
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.tabs_consulted_content
+    - field.storage.block_content.field_tabs_consulted_content
+    - paragraphs.paragraphs_type.tabs_wrapper
+  module:
+    - entity_reference_revisions
+id: block_content.tabs_consulted_content.field_tabs_consulted_content
+field_name: field_tabs_consulted_content
+entity_type: block_content
+bundle: tabs_consulted_content
+label: 'Contenidos consultados'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      tabs_wrapper: tabs_wrapper
+    target_bundles_drag_drop:
+      a11y_paragraphs_tab_content:
+        weight: 10
+        enabled: false
+      a11y_paragraphs_tabs_panel:
+        weight: 8
+        enabled: false
+      a11y_paragraphs_tabs_wrapper:
+        weight: 9
+        enabled: false
+      from_library:
+        weight: 11
+        enabled: false
+      tab_content:
+        weight: 13
+        enabled: false
+      tab_header:
+        weight: 14
+        enabled: false
+      tabs_wrapper:
+        enabled: true
+        weight: 12
+field_type: entity_reference_revisions

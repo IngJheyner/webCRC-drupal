@@ -1,0 +1,10 @@
+uuid: c4490ba5-3d16-451a-a528-508d7b861dee
+langcode: es
+status: true
+dependencies: {  }
+id: postdata_indicators
+label: 'Indicadores postdata'
+icon_uuid: null
+icon_default: null
+description: 'Indicatodes postdata'
+behavior_plugins: {  }

@@ -4,5 +4,6 @@
     "/var/www/html/web/libraries/blazy/blazy.js": "/var/www/html/web/libraries/blazy/blazy.js",
     "/var/www/html/web/libraries/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js": "/var/www/html/web/libraries/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js",
     "/var/www/html/web/libraries/slick/slick/slick.css": "/var/www/html/web/libraries/slick/slick/slick.css",
-    "/var/www/html/web/libraries/slick/slick/slick.min.js": "/var/www/html/web/libraries/slick/slick/slick.min.js"
+    "/var/www/html/web/libraries/slick/slick/slick.min.js": "/var/www/html/web/libraries/slick/slick/slick.min.js",
+    "/var/www/html/web/libraries/a11y-accordion-tabs/a11y-accordion-tabs.js": "/var/www/html/web/libraries/a11y-accordion-tabs/a11y-accordion-tabs.js"
 }

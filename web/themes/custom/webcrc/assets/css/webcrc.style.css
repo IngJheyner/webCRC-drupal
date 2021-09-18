@@ -20422,6 +20422,10 @@ body {
   background-color: #ebebeb;
 }
 
+h2 > * {
+  font-size: 35pt;
+}
+
 a {
   color: #5f6aa7;
   text-decoration: underline;
@@ -20521,6 +20525,252 @@ footer.page__footer {
 }
 .page__footer .block--home-footer .footer_org div div:last-child > div .field__item {
   margin: 10px 20px 0 0;
+}
+
+.logo-postdata {
+  position: relative;
+  color: #fedd32;
+  font-size: 10rem;
+  font-weight: bold;
+}
+.logo-postdata:after {
+  content: "";
+  position: absolute;
+  display: block;
+  right: 0;
+  bottom: 0;
+  width: 35%;
+  margin-right: 2rem;
+  border: 5px solid #fedd32;
+  border-radius: 20px;
+}
+
+.tabs-container ul.nav-pills {
+  background: white;
+}
+.tabs-container ul.nav-pills li {
+  position: relative;
+}
+.tabs-container ul.nav-pills li .title, .tabs-container ul.nav-pills li .title > * {
+  font-size: 38pt;
+  font-weight: bold;
+}
+.tabs-container ul.nav-pills li a {
+  text-decoration: none;
+  padding: 15px 5px;
+  text-align: center;
+}
+.tabs-container ul.nav-pills li a * {
+  color: #2f2a7c;
+  align-items: center;
+}
+.tabs-container ul.nav-pills li a img {
+  min-width: 55px;
+}
+.tabs-container ul.nav-pills li a .media.media-container {
+  width: 50%;
+  margin: auto;
+  min-width: 350px;
+}
+.tabs-container ul.nav-pills li a .description {
+  visibility: hidden;
+  margin-top: -10px;
+  font-weight: normal;
+}
+.tabs-container ul.nav-pills li a.active * {
+  color: #f4435c;
+}
+.tabs-container ul.nav-pills li a.active img {
+  filter: invert(25%) sepia(99%) saturate(2254%) hue-rotate(328deg) brightness(98%) contrast(95%);
+}
+.tabs-container ul.nav-pills li a.active .description {
+  visibility: visible;
+}
+.tabs-container ul.nav-pills li a.active:after {
+  font-family: "Material Icons";
+  content: "arrow_drop_down";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 55%;
+  font-size: 5rem;
+  color: white;
+}
+.tabs-container ul.nav-pills li:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #cacaca;
+  width: 2px;
+  height: 80%;
+  margin: auto;
+}
+.tabs-container ul.nav-pills li:last-child:after {
+  display: none;
+}
+.tabs-container .viewsreference--view-title {
+  display: none;
+}
+.tabs-container div.tab-content {
+  background: #d6d6d6;
+  padding: 50px 20px 30px;
+}
+.tabs-container div.tab-content ul.slide__content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+}
+.tabs-container div.tab-content ul.slide__content li {
+  position: relative;
+  padding: 30px 20px;
+}
+.tabs-container div.tab-content ul.slide__content li:before {
+  font-family: "Material Icons";
+  content: "arrow_drop_up";
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -10px;
+  color: transparent;
+  font-size: 3rem;
+  text-align: center;
+  margin: auto;
+}
+.tabs-container div.tab-content ul.slide__content > li:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #e7e7e7;
+  width: 2px;
+  height: 80%;
+  margin: auto;
+}
+.tabs-container div.tab-content ul.slide__content > li:last-child:after {
+  display: none;
+}
+.tabs-container div.tab-content ul.slide__content .slide__caption {
+  position: relative;
+  text-align: center;
+  color: #2f2a7c;
+}
+.tabs-container div.tab-content ul.slide__content .slide__caption a {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  text-align: center;
+  background: transparent !important;
+  color: transparent !important;
+  z-index: 1;
+}
+.tabs-container div.tab-content ul.slide__content .slide__caption .background-round {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  margin: auto;
+  width: 100%;
+  max-width: 100px;
+}
+.tabs-container div.tab-content ul.slide__content .slide__caption img {
+  width: 100%;
+  max-width: 100px;
+  min-width: 70px;
+  padding: 20px;
+}
+.tabs-container div.tab-content ul.slide__content li:hover {
+  background: #f4435c;
+  border-radius: 15px;
+}
+.tabs-container div.tab-content ul.slide__content li:hover::before {
+  color: white;
+}
+.tabs-container div.tab-content ul.slide__content li:hover::after {
+  display: none;
+}
+.tabs-container div.tab-content ul.slide__content li:hover h1, .tabs-container div.tab-content ul.slide__content li:hover h2, .tabs-container div.tab-content ul.slide__content li:hover h3, .tabs-container div.tab-content ul.slide__content li:hover h4, .tabs-container div.tab-content ul.slide__content li:hover h5, .tabs-container div.tab-content ul.slide__content li:hover h5,
+.tabs-container div.tab-content ul.slide__content li:hover div, .tabs-container div.tab-content ul.slide__content li:hover p {
+  color: white;
+}
+.tabs-container div.tab-content ul.slide__content li:hover .background-round {
+  background: white;
+}
+.tabs-container div.tab-content ul.slide__content li:hover img {
+  filter: invert(25%) sepia(99%) saturate(2254%) hue-rotate(328deg) brightness(98%) contrast(95%);
+}
+.tabs-container div.tab-content .slick-dots {
+  padding: 0;
+  bottom: -35px;
+}
+
+.indicators-container {
+  background: white;
+}
+.indicators-container .row .col:first-child .card,
+.indicators-container .row .col:first-child .card .card-body {
+  background: #283789;
+}
+.indicators-container .card {
+  width: 100%;
+  max-width: 270px;
+  min-width: 255px;
+  margin: auto;
+  overflow: hidden;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 6px 9px 1px rgba(0, 0, 0, 0.3);
+}
+.indicators-container .card .card-body {
+  background: #f1f1f1;
+  padding: 15px 10px 5px;
+  border: none;
+}
+.indicators-container .card .card-body * {
+  margin: 20px auto;
+  line-height: 1;
+}
+.indicators-container .card .card-body .count_indicator {
+  font-size: 35pt;
+  font-weight: bold;
+}
+.indicators-container .card .card-body .count_indicator:first-letter {
+  font-size: 65pt;
+}
+.indicators-container .card .card-body .unit, .indicators-container .card .card-body .unit * {
+  font-size: 18pt;
+  font-weight: bold;
+}
+.indicators-container .card .card-body .description, .indicators-container .card .card-body .description * {
+  font-size: 14pt;
+}
+.indicators-container .card .card-footer {
+  padding: 30px 18px;
+  background: #283789;
+  border: none;
+}
+.indicators-container .card .card-footer * {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 13pt;
+  line-height: 1;
+}
+.indicators-container .card .card-footer > .media {
+  max-width: 90%;
+  margin: 0 auto;
+}
+.indicators-container .card .card-footer .font-image {
+  background: white;
+  border-radius: 50%;
+}
+.indicators-container .card .card-footer img {
+  width: 100%;
+  min-width: 30px;
+  max-width: 40px;
 }
 
 .page__top_a {
@@ -20647,6 +20897,9 @@ footer.page__footer {
   position: relative;
   display: block;
 }
+.page__top_a li.slide__grid.grid {
+  padding: 0;
+}
 .page__top_a div.slide__caption {
   padding: 0;
 }
@@ -20667,7 +20920,8 @@ footer.page__footer {
   font-weight: bold;
   text-shadow: 0 0 15px black;
 }
-.page__top_a .slick-dots {
+
+.slick-dots {
   position: absolute;
   bottom: 0;
   padding: 15px 0px 50px;
@@ -20676,11 +20930,11 @@ footer.page__footer {
   left: 0;
   text-align: center;
 }
-.page__top_a .slick-dots > li {
+.slick-dots > li {
   margin: 0;
   padding: 0 5px;
 }
-.page__top_a .slick-dots button {
+.slick-dots button {
   color: transparent;
   background: white;
   border: none;
@@ -20688,13 +20942,15 @@ footer.page__footer {
   width: 15px;
   height: 15px;
 }
-.page__top_a .slick-dots > li.slick-active button {
+.slick-dots > li.slick-active button {
   background: #f42e62;
 }
-.page__top_a .slick__arrow {
+
+.slick__arrow {
   z-index: 0;
 }
-.page__top_a .slick-arrow {
+
+.slick__arrow .slick-arrow {
   position: absolute;
   top: 50%;
   background: rgba(255, 255, 255, 0.5);
@@ -20706,14 +20962,16 @@ footer.page__footer {
   margin: 0 40px;
   text-align: center;
 }
-.page__top_a .slick-prev:before {
+
+.slick-prev.slick-arrow:before {
   font-family: "Material Icons";
   content: "chevron_left";
   color: #000;
   font-size: 5rem;
   line-height: 1;
 }
-.page__top_a .slick-next:before {
+
+.slick-next.slick-arrow:before {
   font-family: "Material Icons";
   content: "chevron_right";
   color: #000;

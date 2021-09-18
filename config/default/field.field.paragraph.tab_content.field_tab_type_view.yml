@@ -1,0 +1,62 @@
+uuid: 3c1d1712-f15d-44dc-a30b-0003252163d9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tab_type_view
+    - paragraphs.paragraphs_type.tab_content
+  module:
+    - viewsreference
+id: paragraph.tab_content.field_tab_type_view
+field_name: field_tab_type_view
+entity_type: paragraph
+bundle: tab_content
+label: 'Tipo de vista'
+description: 'Seleccione una vista que desee que se visualize en la pestaña'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: 0
+  plugin_types:
+    block: block
+    default: 0
+    page: 0
+    feed: 0
+    entity_browser: 0
+    embed: 0
+  preselect_views:
+    tabs_contents_consulted: tabs_contents_consulted
+    block_content: 0
+    comment: 0
+    comments_recent: 0
+    content: 0
+    content_recent: 0
+    files: 0
+    frontpage: 0
+    home_search: 0
+    home_slideshow: 0
+    media: 0
+    media_library: 0
+    paragraphs_library: 0
+    paragraphs_library_browser: 0
+    redirect: 0
+    scheduler_scheduled_content: 0
+    tags: 0
+    taxonomy_term: 0
+    user_admin_people: 0
+    watchdog: 0
+    webform_submissions: 0
+    who_s_new: 0
+    who_s_online: 0
+  enabled_settings:
+    argument: 0
+    limit: 0
+    offset: 0
+    title: 0
+    pager: 0
+field_type: viewsreference

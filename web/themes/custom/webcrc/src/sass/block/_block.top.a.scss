@@ -138,6 +138,11 @@
     display: block;
   }
 
+  li.slide__grid.grid
+  {
+    padding: 0;
+  }
+
   div.slide__caption {
     padding: 0;
 
@@ -160,69 +165,68 @@
         text-shadow: 0 0 15px rgb(0,0,0)
       }
     }
+  }    
+}
+
+// Slideshow puntos de navegacion
+.slick-dots {
+  position: absolute;
+  bottom: 0;
+  padding: 15px 0px 50px;
+  margin: auto;
+  right: 0;
+  left: 0;
+  text-align: center;
+
+  > li {
+    margin: 0;
+    padding: 0 5px;
   }
 
-  // Slideshow puntos de navegacion
-  .slick-dots {
-    position: absolute;
-    bottom: 0;
-    padding: 15px 0px 50px;
-    margin: auto;
-    right: 0;
-    left: 0;
-    text-align: center;
-
-    > li {
-      margin: 0;
-      padding: 0 5px;
-    }
-
-    button {
-      color: transparent;
-      background: rgb(255, 255, 255);
-      border: none;
-      border-radius: 100%;
-      width: 15px;
-      height: 15px;
-    }
-
-    > li.slick-active  button {
-      background: rgb(244, 46, 98);
-    }
-  }
-
-  // Slideshow flechas
-  .slick__arrow {
-    z-index: 0;
-  }
-
-  .slick-arrow {
-    position: absolute;
-    top: 50%;
-    background: rgba(255,255,255,.5);
+  button {
     color: transparent;
-    width: 100px;
-    height: 100px;
-    box-shadow: 0 0 40px 0px rgba(0,0,0,1);
-    padding: 0;
-    margin: 0 40px;
-    text-align: center;
+    background: rgb(255, 255, 255);
+    border: none;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
   }
 
-  .slick-prev:before {
-    font-family: "Material Icons";
-    content: "chevron_left";
-    color: #000;
-    font-size: 5rem;
-    line-height: 1;
+  > li.slick-active  button {
+    background: rgb(244, 46, 98);
   }
-  
-  .slick-next:before {
-    font-family: "Material Icons";
-    content: "chevron_right";
-    color: #000;
-    font-size: 5rem;
-    line-height: 1;
-  }
-    
+}
+
+// Slideshow flechas
+.slick__arrow {
+  z-index: 0;
+}
+
+.slick__arrow .slick-arrow {
+  position: absolute;
+  top: 50%;
+  background: rgba(255,255,255,.5);
+  color: transparent;
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 0 40px 0px rgba(0,0,0,1);
+  padding: 0;
+  margin: 0 40px;
+  text-align: center;
+}
+
+.slick-prev.slick-arrow:before {
+  font-family: "Material Icons";
+  content: "chevron_left";
+  color: #000;
+  font-size: 5rem;
+  line-height: 1;
+}
+
+.slick-next.slick-arrow:before {
+  font-family: "Material Icons";
+  content: "chevron_right";
+  color: #000;
+  font-size: 5rem;
+  line-height: 1;
 }

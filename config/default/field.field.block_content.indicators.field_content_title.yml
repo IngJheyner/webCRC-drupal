@@ -1,0 +1,21 @@
+uuid: 27641103-b8cb-4af9-b044-2bd7188c9f81
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.indicators
+    - field.storage.block_content.field_content_title
+id: block_content.indicators.field_content_title
+field_name: field_content_title
+entity_type: block_content
+bundle: indicators
+label: Titulo
+description: 'Titulo del bloque indicadores'
+required: false
+translatable: false
+default_value:
+  -
+    value: Indicadores
+default_value_callback: ''
+settings: {  }
+field_type: string

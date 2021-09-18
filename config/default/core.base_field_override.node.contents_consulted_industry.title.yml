@@ -1,0 +1,18 @@
+uuid: 474763d9-3a5f-44ac-8f5f-8b7a90d298c8
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.contents_consulted_industry
+id: node.contents_consulted_industry.title
+field_name: title
+entity_type: node
+bundle: contents_consulted_industry
+label: Titulo
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

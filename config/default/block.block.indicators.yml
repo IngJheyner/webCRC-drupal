@@ -1,0 +1,30 @@
+uuid: debb87aa-aa91-4533-b403-0380ece5fa8c
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:indicators:a6f79fbc-3c22-45c9-b011-f3b39cdcfe46'
+  module:
+    - block_content
+    - system
+  theme:
+    - webcrc
+id: indicators
+theme: webcrc
+region: top_b
+weight: 0
+provider: null
+plugin: 'block_content:a6f79fbc-3c22-45c9-b011-f3b39cdcfe46'
+settings:
+  id: 'block_content:a6f79fbc-3c22-45c9-b011-f3b39cdcfe46'
+  label: Indicadores
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

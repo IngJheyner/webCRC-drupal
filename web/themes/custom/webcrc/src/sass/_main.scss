@@ -1,0 +1,298 @@
+.logo-postdata {
+  position: relative;
+  color: rgba(254, 221, 50, 1);
+  font-size: 10rem;
+  font-weight: bold;
+
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    right: 0;
+    bottom: 0;
+    width: 35%;
+    margin-right: 2rem;
+    border: 5px solid rgba(254, 221, 50, 1);
+    border-radius: 20px;
+  }
+}
+
+.tabs-container {
+  ul.nav-pills {
+    background: rgba(255, 255, 255, 1);
+
+    li {
+      position: relative;
+
+      .title, .title > *
+      {
+        font-size: 38pt;
+        font-weight: bold;
+      }
+
+      a {
+        text-decoration: none;
+        padding: 15px 5px;
+        text-align: center;
+
+        * {
+          color: rgba(47, 42, 124, 1);
+          align-items: center;
+        }
+
+        img {
+          min-width: 55px;
+        }
+
+        .media.media-container
+        {
+          width: 50%;
+          margin: auto;
+          min-width: 350px;
+        }
+
+        .description
+        {
+          visibility: hidden;
+          margin-top: -10px;
+          font-weight: normal;
+        }
+      }
+
+      a.active {
+
+        * {
+          color: rgba(244, 67, 92, 1);
+        }
+        
+        img {
+          filter: invert(25%) sepia(99%) saturate(2254%) hue-rotate(328deg) brightness(98%) contrast(95%);
+        }
+
+        .description {
+          visibility: visible;
+        }
+      }
+
+      a.active:after {
+        font-family: "Material Icons";
+        content: 'arrow_drop_down';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 55%;
+        font-size: 5rem;
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+
+    li:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: rgb(202, 202, 202);
+      width: 2px;
+      height: 80%;
+      margin: auto;
+    }
+
+    li:last-child:after {
+      display: none;
+    }
+  }
+
+  .viewsreference--view-title {
+    display: none;
+  }
+
+  div.tab-content {
+    background: rgba(214, 214, 214, 1);
+    padding: 50px 20px 30px;
+
+    ul.slide__content {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      justify-content: center;
+
+      li {
+        position: relative;
+        padding: 30px 20px;
+      }
+
+      li:before {
+        font-family: "Material Icons";
+        content: 'arrow_drop_up';
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: -10px;
+        color: transparent;
+        font-size: 3rem;
+        text-align: center;
+        margin: auto;
+      }
+
+      > li:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(231, 231, 231, 1);
+        width: 2px;
+        height: 80%;
+        margin: auto;
+      }
+
+      > li:last-child:after {
+        display: none;
+      }
+
+      .slide__caption {
+        position: relative;
+        text-align: center;
+        color: rgba(47, 42, 124, 1);
+    
+        a {
+          position: absolute;
+          right: 0;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          text-align: center;
+          background: transparent !important;
+          color: transparent !important;
+          z-index: 1;
+        }
+
+        .background-round {
+          background: rgba(255,255,255,0.7);
+          border-radius: 50%;
+          margin: auto;
+          width: 100%;
+          max-width: 100px;
+        }
+    
+        img {
+          width: 100%;
+          max-width: 100px;
+          min-width: 70px;
+          padding: 20px;
+        }
+      }
+
+      li:hover {
+        background: rgba(244, 67, 92, 1);
+        border-radius: 15px;
+
+        &::before {
+          color: rgba(255, 255, 255, 1);
+        }
+
+        &::after {
+          display: none;
+        }
+
+        h1, h2, h3, h4, h5, h5,
+        div, p {
+          color: rgba(255, 255, 255, 1);
+        }
+
+        .background-round {
+          background: rgba(255, 255, 255, 1);
+        }
+
+        img {
+          filter: invert(25%) sepia(99%) saturate(2254%) hue-rotate(328deg) brightness(98%) contrast(95%);
+        }
+      }
+    }
+
+    .slick-dots {
+      padding: 0;
+      bottom: -35px;
+    }
+  }
+}
+
+.indicators-container {
+  background: rgba(255, 255, 255, 1);
+
+  .row .col:first-child .card, 
+  .row .col:first-child .card .card-body {
+    background: rgba(40, 55, 137, 1);
+  }
+
+  .card {
+    width: 100%;
+    max-width: 270px;
+    min-width: 255px;
+    margin: auto;
+    overflow: hidden;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 6px 9px 1px rgba(0, 0, 0, .3);
+
+    .card-body {
+      background: rgba(241, 241, 241, 1);
+      padding: 15px 10px 5px;
+      border: none;
+
+      * {
+        margin: 20px auto;
+        line-height: 1;
+      }
+
+      .count_indicator {
+        font-size: 35pt;
+        font-weight: bold;
+    
+        &:first-letter {
+          font-size: 65pt;
+        }
+      }
+
+      .unit, .unit * {
+        font-size: 18pt;
+        font-weight: bold;
+      }
+
+      .description, .description * {
+        font-size: 14pt;
+      }
+    }
+
+    .card-footer {
+      padding: 30px 18px;
+      background: rgba(40, 55, 137, 1);
+      border: none;
+
+      * {
+        color: rgba(255, 255, 255, 1);
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 13pt;
+        line-height: 1;
+      }
+
+      > .media {
+        max-width: 90%;
+        margin: 0 auto;
+      }
+
+      .font-image {
+        background: rgba(255, 255, 255, 1);
+        border-radius: 50%;
+      }
+
+      img {
+        width: 100%;
+        min-width: 30px;
+        max-width: 40px;
+      }
+    }
+  }
+}

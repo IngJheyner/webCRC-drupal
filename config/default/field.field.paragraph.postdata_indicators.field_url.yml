@@ -1,0 +1,28 @@
+uuid: 95b0ec68-4b4a-41b1-b614-a72e6bf8282a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_url
+    - paragraphs.paragraphs_type.postdata_indicators
+  module:
+    - link
+id: paragraph.postdata_indicators.field_url
+field_name: field_url
+entity_type: paragraph
+bundle: postdata_indicators
+label: Enlace
+description: 'Url para el item del indicador'
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'internal:/'
+    title: 'Ampliar informaciòn'
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

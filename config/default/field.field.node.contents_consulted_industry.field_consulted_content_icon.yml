@@ -1,0 +1,29 @@
+uuid: 3d7db035-45ad-46b2-af08-c8f32e93bd4d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_consulted_content_icon
+    - media.type.images_icons
+    - node.type.contents_consulted_industry
+id: node.contents_consulted_industry.field_consulted_content_icon
+field_name: field_consulted_content_icon
+entity_type: node
+bundle: contents_consulted_industry
+label: Icono
+description: 'Icono para item de contenido industria'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      images_icons: images_icons
+    sort:
+      field: created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
