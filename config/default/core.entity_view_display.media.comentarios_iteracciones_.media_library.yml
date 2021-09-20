@@ -1,0 +1,52 @@
+uuid: 89ffd4f3-7db0-49ca-8938-463da4711613
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.comentarios_iteracciones_.field_media_file_2
+    - field.field.media.comentarios_iteracciones_.field_operador_comentarios
+    - field.field.media.comentarios_iteracciones_.field_publicacion_comentarios
+    - field.field.media.comentarios_iteracciones_.field_ruta_archivo_comentarios
+    - media.type.comentarios_iteracciones_
+  module:
+    - datetime
+    - file
+    - options
+id: media.comentarios_iteracciones_.media_library
+targetEntityType: media
+bundle: comentarios_iteracciones_
+mode: media_library
+content:
+  field_media_file_2:
+    type: file_default
+    weight: 1
+    region: content
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+  field_operador_comentarios:
+    type: list_default
+    weight: 0
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_publicacion_comentarios:
+    type: datetime_default
+    weight: 2
+    region: content
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_ruta_archivo_comentarios: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

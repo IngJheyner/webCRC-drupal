@@ -57,6 +57,10 @@
 @import "layout/page.content";
 @import "layout/page.footer";
 
+// Override (Anular estilos de modulos contribuidos)
+// -----------------------------------------------------------------------------
+@import "override/easy_breadcrumb/easy_breadcrumb";
+
 // Component
 // -----------------------------------------------------------------------------
 @import "../components/node/node";
@@ -67,3 +71,7 @@
 @import "block/_block.top.a";
 @import "content/node.page";
 @import "content/node.article";
+
+// PROYECTOS REGULATORIOS
+// -----------------------------------------------------------------------------
+@import "content/projects_regulatory/projects_regulatory";

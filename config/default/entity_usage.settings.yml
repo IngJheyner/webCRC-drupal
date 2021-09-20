@@ -9,3 +9,48 @@ edit_warning_message_entity_types:
 delete_warning_message_entity_types:
   - paragraphs_library_item
 langcode: es
+track_enabled_source_entity_types:
+  - path_alias
+  - block_content
+  - comment
+  - node
+  - shortcut
+  - menu_link_content
+  - feeds_feed
+  - media
+  - contact_message
+  - paragraphs_library_item
+  - paragraph
+  - redirect
+  - feeds_subscription
+  - search_api_task
+  - taxonomy_term
+  - webform_submission
+track_enabled_target_entity_types:
+  - path_alias
+  - block_content
+  - comment
+  - node
+  - shortcut
+  - menu_link_content
+  - feeds_feed
+  - media
+  - contact_message
+  - paragraphs_library_item
+  - paragraph
+  - redirect
+  - feeds_subscription
+  - search_api_task
+  - taxonomy_term
+  - webform_submission
+track_enabled_plugins:
+  - entity_embed
+  - linkit
+  - link
+  - layout_builder
+  - entity_reference
+  - dynamic_entity_reference
+  - html_link
+  - block_field
+  - media_embed
+site_domains: {  }

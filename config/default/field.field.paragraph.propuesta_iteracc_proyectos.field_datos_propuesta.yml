@@ -1,0 +1,29 @@
+uuid: 8c388d50-e63a-4ddb-ae9b-56e883db8537
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_datos_propuesta
+    - media.type.propuesta_interaccion_proyectos_
+    - paragraphs.paragraphs_type.propuesta_iteracc_proyectos
+id: paragraph.propuesta_iteracc_proyectos.field_datos_propuesta
+field_name: field_datos_propuesta
+entity_type: paragraph
+bundle: propuesta_iteracc_proyectos
+label: 'Datos Propuesta'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      propuesta_interaccion_proyectos_: propuesta_interaccion_proyectos_
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

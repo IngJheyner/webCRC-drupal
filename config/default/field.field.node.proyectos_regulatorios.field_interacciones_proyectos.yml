@@ -1,0 +1,46 @@
+uuid: 9c9a0d72-bd27-4034-bf34-10ecd2ef27d4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_interacciones_proyectos
+    - node.type.proyectos_regulatorios
+    - paragraphs.paragraphs_type.iterecciones_proyectos
+  module:
+    - entity_reference_revisions
+id: node.proyectos_regulatorios.field_interacciones_proyectos
+field_name: field_interacciones_proyectos
+entity_type: node
+bundle: proyectos_regulatorios
+label: 'Propuestas, Comentarios y Com. extemporáneo.'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      iterecciones_proyectos: iterecciones_proyectos
+    target_bundles_drag_drop:
+      comentarios_iteracciones:
+        weight: 7
+        enabled: false
+      enlaces:
+        weight: 8
+        enabled: false
+      from_library:
+        weight: 9
+        enabled: false
+      home_tabs_items_featured:
+        weight: 10
+        enabled: false
+      iterecciones_proyectos:
+        enabled: true
+        weight: 11
+      propuesta_iteracc_proyectos:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

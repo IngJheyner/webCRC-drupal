@@ -1,0 +1,21 @@
+uuid: 04ff3891-f9d3-4a2b-91d1-f584e71cee59
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_servicios_proyectos
+    - node.type.proyectos_regulatorios
+  module:
+    - options
+id: node.proyectos_regulatorios.field_servicios_proyectos
+field_name: field_servicios_proyectos
+entity_type: node
+bundle: proyectos_regulatorios
+label: Servicios
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

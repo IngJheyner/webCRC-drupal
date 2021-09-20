@@ -20418,12 +20418,23 @@ readers do not read off random characters that represent icons */
   content: "\E56B";
 }
 
+/* ===== ===== TEXTO ===== ===== */
+/* ===== ===== FONDO ===== ===== */
+/* ===== ===== BOTONES y Anclas ===== ===== */
 body {
   background-color: #ebebeb;
 }
 
-a {
-  color: #5f6aa7;
+h1, h2, h3, h4, h5, h6 {
+  color: #070707 !important;
+}
+
+p {
+  color: #383838 !important;
+}
+
+main a {
+  color: #2F2A7C !important;
   text-decoration: underline;
   font-weight: bold;
 }
@@ -20521,6 +20532,22 @@ footer.page__footer {
 }
 .page__footer .block--home-footer .footer_org div div:last-child > div .field__item {
   margin: 10px 20px 0 0;
+}
+
+/* ===== ===== TEXTO ===== ===== */
+/* ===== ===== FONDO ===== ===== */
+/* ===== ===== BOTONES y Anclas ===== ===== */
+ol.breadcrumb li.breadcrumb-item {
+  margin: 5px 5px;
+}
+ol.breadcrumb li.breadcrumb-item a {
+  margin-right: 0.5em;
+}
+ol.breadcrumb li.breadcrumb-item:first-child {
+  margin-left: 0;
+}
+ol.breadcrumb li.breadcrumb-item.active {
+  color: #070707;
 }
 
 .page__top_a {
@@ -20719,4 +20746,49 @@ footer.page__footer {
   color: #000;
   font-size: 5rem;
   line-height: 1;
+}
+
+/* ===== ===== TEXTO ===== ===== */
+/* ===== ===== FONDO ===== ===== */
+/* ===== ===== BOTONES y Anclas ===== ===== */
+article.projects__regulatory section.projects__regulatory-header {
+  position: relative;
+}
+article.projects__regulatory section.projects__regulatory-header::after {
+  content: "";
+  position: absolute;
+  bottom: -8%;
+  left: 25%;
+  border-top: 20px solid white;
+  border-top-color: inherit;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  color: white;
+}
+article.projects__regulatory section.projects__regulatory-content {
+  background-color: #EBEBEB;
+}
+article.projects__regulatory section.projects__regulatory-content div.node__content div.node__content-info > div.node__content-info--items {
+  border-right: 1px solid #D6D6D6;
+}
+article.projects__regulatory section.projects__regulatory-content div.node__content div.node__content-info > div.node__content-info--items:last-child {
+  border: 0;
+}
+article.projects__regulatory section.projects__regulatory-content div.node__content div.node__content-mechanisms ul.list-group li.list-group-item {
+  border: 0;
+}
+article.projects__regulatory section.projects__regulatory-content div.node__content div.node__content-mechanisms ul.list-group li.list-group-item span.badge {
+  padding: 0.6em;
+  border-radius: 50%;
+  background-color: #2F2A7C;
+}
+article.projects__regulatory section.projects__regulatory-content div.node__content div.node__content-mechanisms ul.list-group li.list-group-item u.text {
+  color: #2F2A7C;
+}
+article.projects__regulatory section.projects__regulatory-content div.node__content div.node__content-mechanisms ul.list-group li.list-group-item:first-child {
+  background-color: #141414;
+  border: 1px solid #141414;
+}
+article.projects__regulatory section.projects__regulatory-content div.node__content div.node__content-mechanisms ul.list-group li.node__content-mechanisms--enlaces .field__item {
+  padding-bottom: 0.25rem;
 }

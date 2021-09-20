@@ -1,0 +1,37 @@
+uuid: a0dc1ca4-bf18-41d4-bfc3-782f4bbb21e2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.enlaces.field_enlace_proyectos
+    - field.field.paragraph.enlaces.field_enlaces_proyectos
+    - paragraphs.paragraphs_type.enlaces
+  module:
+    - link
+    - options
+id: paragraph.enlaces.default
+targetEntityType: paragraph
+bundle: enlaces
+mode: default
+content:
+  field_enlace_proyectos:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_enlaces_proyectos:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden:
+  search_api_excerpt: true

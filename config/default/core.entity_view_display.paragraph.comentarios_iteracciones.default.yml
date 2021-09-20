@@ -1,0 +1,23 @@
+uuid: a66a47ae-c764-4c14-9f53-c8bbca3d4fb0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.comentarios_iteracciones.field_media_file_comentarios
+    - paragraphs.paragraphs_type.comentarios_iteracciones
+id: paragraph.comentarios_iteracciones.default
+targetEntityType: paragraph
+bundle: comentarios_iteracciones
+mode: default
+content:
+  field_media_file_comentarios:
+    type: entity_reference_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  search_api_excerpt: true

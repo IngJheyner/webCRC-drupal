@@ -1,0 +1,24 @@
+uuid: cf597431-c1f1-482d-9d99-2be475c8c138
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_publicacion_propuestas
+    - media.type.propuesta_interaccion_proyectos_
+  module:
+    - datetime
+id: media.propuesta_interaccion_proyectos_.field_publicacion_propuestas
+field_name: field_publicacion_propuestas
+entity_type: media
+bundle: propuesta_interaccion_proyectos_
+label: 'Fecha de publicación'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

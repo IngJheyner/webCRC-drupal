@@ -1,0 +1,9 @@
+# Custom module library for general purposes.
+webcrc_projects_regulatory:
+  js:
+    js/webcrc-projects-regulatory.js: {}
+  css:
+    component:
+      css/webcrc-projects-regulatory.css: {}
+  dependencies:
+    - core/drupalSettings

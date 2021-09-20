@@ -1,0 +1,112 @@
+uuid: 98f306d8-3aa8-4fc1-aa40-9658ec558db1
+langcode: es
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.propuesta_interacciones_media
+    - field.field.paragraph.iterecciones_proyectos.field_comentarios_interacciones
+    - field.field.paragraph.iterecciones_proyectos.field_fases_interacciones
+    - field.field.paragraph.iterecciones_proyectos.field_fecha_cierre_iteracciones
+    - field.field.paragraph.iterecciones_proyectos.field_propuestas_interacciones
+    - paragraphs.paragraphs_type.iterecciones_proyectos
+  module:
+    - datetime
+    - entity_browser
+    - field_group
+third_party_settings:
+  field_group:
+    group_field_group:
+      children:
+        - group_propuestas
+        - group_comentarios
+      parent_name: ''
+      weight: 2
+      format_type: tabs
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        direction: horizontal
+        width_breakpoint: 640
+      label: 'Field Group'
+    group_propuestas:
+      children:
+        - field_propuestas_interacciones
+      parent_name: group_field_group
+      weight: 1
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Propuestas
+    group_comentarios:
+      children:
+        - field_comentarios_interacciones
+      parent_name: group_field_group
+      weight: 2
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Comentarios
+id: paragraph.iterecciones_proyectos.default
+targetEntityType: paragraph
+bundle: iterecciones_proyectos
+mode: default
+content:
+  field_comentarios_interacciones:
+    type: entity_browser_entity_reference
+    weight: 0
+    region: content
+    settings:
+      entity_browser: comentarios_interacciones_media
+      field_widget_display: rendered_entity
+      field_widget_display_settings:
+        view_mode: media_library
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      field_widget_replace: false
+      open: false
+    third_party_settings: {  }
+  field_fases_interacciones:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_fecha_cierre_iteracciones:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_propuestas_interacciones:
+    type: entity_browser_entity_reference
+    weight: 0
+    region: content
+    settings:
+      entity_browser: propuesta_interacciones_media
+      field_widget_display: rendered_entity
+      field_widget_display_settings:
+        view_mode: media_library
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      field_widget_replace: false
+      open: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

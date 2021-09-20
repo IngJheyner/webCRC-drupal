@@ -1,0 +1,11 @@
+uuid: ea125d43-dc0e-4390-9b28-45691a5a04fd
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.comentarios_iteracciones_
+id: media.comentarios_iteracciones_
+target_entity_type_id: media
+target_bundle: comentarios_iteracciones_
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,73 @@
+uuid: db0540c5-6e4b-4c53-82cc-ac496202b000
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.media.propuesta_interaccion_proyectos_.field_media_file_1
+    - field.field.media.propuesta_interaccion_proyectos_.field_publicacion_propuestas
+    - field.field.media.propuesta_interaccion_proyectos_.field_ruta_file_propuestas
+    - media.type.propuesta_interaccion_proyectos_
+  module:
+    - field_group
+    - file
+third_party_settings:
+  field_group:
+    group_informacion:
+      children:
+        - field_ruta_file_propuestas
+        - field_media_file_1
+        - created
+        - uid
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Información
+id: media.propuesta_interaccion_proyectos_.default
+targetEntityType: media
+bundle: propuesta_interaccion_proyectos_
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_media_file_1:
+    type: file_generic
+    weight: 2
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_ruta_file_propuestas:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  uid:
+    type: entity_reference_autocomplete
+    weight: 4
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  field_publicacion_propuestas: true
+  langcode: true
+  name: true
+  path: true
+  status: true

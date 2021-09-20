@@ -1,6 +1,6 @@
 uuid: 55981e4d-bd67-400f-8103-c271566b2fca
 langcode: es
-status: false
+status: true
 dependencies: {  }
 id: local
 label: local
@@ -8,6 +8,7 @@ description: 'Configuracion del entorno de desarrollo'
 folder: ../config/envs/local
 module:
   devel: 0
+  webprofiler: 0
 theme: {  }
 blacklist: {  }
 graylist: {  }

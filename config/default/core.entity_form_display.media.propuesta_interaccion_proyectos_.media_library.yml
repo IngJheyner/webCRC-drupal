@@ -1,0 +1,25 @@
+uuid: 31b6a491-a46b-4000-bded-99e369b4d97a
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.propuesta_interaccion_proyectos_.field_media_file_1
+    - field.field.media.propuesta_interaccion_proyectos_.field_publicacion_propuestas
+    - field.field.media.propuesta_interaccion_proyectos_.field_ruta_file_propuestas
+    - media.type.propuesta_interaccion_proyectos_
+id: media.propuesta_interaccion_proyectos_.media_library
+targetEntityType: media
+bundle: propuesta_interaccion_proyectos_
+mode: media_library
+content: {  }
+hidden:
+  created: true
+  field_media_file_1: true
+  field_publicacion_propuestas: true
+  field_ruta_file_propuestas: true
+  langcode: true
+  name: true
+  path: true
+  status: true
+  uid: true

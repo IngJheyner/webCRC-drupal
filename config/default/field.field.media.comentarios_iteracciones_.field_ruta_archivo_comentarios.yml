@@ -1,0 +1,19 @@
+uuid: 6dda6730-c7ad-4fe0-abb6-f1acfbede49c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_ruta_archivo_comentarios
+    - media.type.comentarios_iteracciones_
+id: media.comentarios_iteracciones_.field_ruta_archivo_comentarios
+field_name: field_ruta_archivo_comentarios
+entity_type: media
+bundle: comentarios_iteracciones_
+label: 'Ruta del Archivo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

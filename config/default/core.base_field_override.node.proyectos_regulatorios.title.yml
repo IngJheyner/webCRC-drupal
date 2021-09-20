@@ -1,0 +1,18 @@
+uuid: 54c16f99-23a6-410d-a68a-20c594d11b2a
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.proyectos_regulatorios
+id: node.proyectos_regulatorios.title
+field_name: title
+entity_type: node
+bundle: proyectos_regulatorios
+label: Codigo
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

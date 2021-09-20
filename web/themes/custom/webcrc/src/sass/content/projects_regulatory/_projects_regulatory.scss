@@ -1,0 +1,70 @@
+@use '../../base/variables/variables' as var;
+article.projects__regulatory{
+
+    section.projects__regulatory-header{
+
+        position: relative;
+
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: -8%;
+            left: 25%;
+            border-top: 20px solid white;
+            border-top-color: inherit;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            color: white;
+        }        
+    }
+
+    section.projects__regulatory-content{
+
+        background-color: var.$bg-color-primary;
+
+        div.node__content{
+
+            div.node__content-info > div.node__content-info--items{
+                
+                border-right: 1px solid var.$bg-color-secundary;
+
+                &:last-child{
+                    border: 0;
+                }
+
+            }
+
+            div.node__content-mechanisms{
+
+                ul.list-group{
+
+                    li.list-group-item{
+
+                        border: 0;
+
+                        span.badge{
+                            padding: .6em;
+                            border-radius: 50%;
+                            background-color: var.$btn-color-primary;
+                        }
+
+                        u.text{
+                            color: var.$btn-color-primary;
+                        }
+                        
+                        &:first-child{
+                            background-color: var.$bg-color-terciario;
+                            border: 1px solid var.$bg-color-terciario;
+                        }
+                    }
+
+                    li.node__content-mechanisms--enlaces .field__item{
+                        padding-bottom: .25rem ;
+                    }
+                    
+                }
+            }
+        }
+    }
+
+}

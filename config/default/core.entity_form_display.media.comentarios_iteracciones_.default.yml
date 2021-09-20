@@ -1,0 +1,71 @@
+uuid: 4961827d-0ed5-4019-afe2-2fa1ff8643e3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.media.comentarios_iteracciones_.field_media_file_2
+    - field.field.media.comentarios_iteracciones_.field_operador_comentarios
+    - field.field.media.comentarios_iteracciones_.field_publicacion_comentarios
+    - field.field.media.comentarios_iteracciones_.field_ruta_archivo_comentarios
+    - media.type.comentarios_iteracciones_
+  module:
+    - field_group
+    - file
+third_party_settings:
+  field_group:
+    group_inf:
+      children:
+        - field_ruta_archivo_comentarios
+        - field_media_file_2
+        - field_operador_comentarios
+        - created
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Información
+id: media.comentarios_iteracciones_.default
+targetEntityType: media
+bundle: comentarios_iteracciones_
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 29
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_media_file_2:
+    type: file_generic
+    weight: 27
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_operador_comentarios:
+    type: options_select
+    weight: 28
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_ruta_archivo_comentarios:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  field_publicacion_comentarios: true
+  langcode: true
+  name: true
+  path: true
+  status: true
+  uid: true

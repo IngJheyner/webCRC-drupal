@@ -1,0 +1,102 @@
+uuid: 89562312-6f6f-468e-9720-7081017b87a3
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.proyectos_regulatorios.field_email_proyectos
+    - field.field.node.proyectos_regulatorios.field_enlaces_proyectos
+    - field.field.node.proyectos_regulatorios.field_estado_proyectos
+    - field.field.node.proyectos_regulatorios.field_interacciones_proyectos
+    - field.field.node.proyectos_regulatorios.field_nombre_proyecto
+    - field.field.node.proyectos_regulatorios.field_oficina_proyecto
+    - field.field.node.proyectos_regulatorios.field_resumen_proyecto
+    - field.field.node.proyectos_regulatorios.field_servicios_proyectos
+    - field.field.node.proyectos_regulatorios.field_tipo_proyecto
+    - node.type.proyectos_regulatorios
+  module:
+    - entity_reference_revisions
+    - options
+    - user
+id: node.proyectos_regulatorios.full
+targetEntityType: node
+bundle: proyectos_regulatorios
+mode: full
+content:
+  field_email_proyectos:
+    type: basic_string
+    weight: 0
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_enlaces_proyectos:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  field_estado_proyectos:
+    type: list_default
+    weight: 2
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_interacciones_proyectos:
+    type: entity_reference_revisions_entity_view
+    weight: 9
+    region: content
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  field_nombre_proyecto:
+    type: string
+    weight: 3
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_oficina_proyecto:
+    type: string
+    weight: 4
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_resumen_proyecto:
+    type: basic_string
+    weight: 5
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_servicios_proyectos:
+    type: list_default
+    weight: 6
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_tipo_proyecto:
+    type: list_default
+    weight: 7
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true

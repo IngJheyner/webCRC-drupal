@@ -1,0 +1,46 @@
+uuid: ff100840-cf12-489a-b60f-a574282cd81e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_file_1
+    - media.type.propuesta_interaccion_proyectos_
+  module:
+    - file
+    - filefield_paths
+third_party_settings:
+  filefield_paths:
+    enabled: true
+    file_path:
+      value: 'Proyectos Regulatorios/[media:field_ruta_file_propuestas]/Propuestas'
+      options:
+        slashes: false
+        pathauto: false
+        transliterate: false
+    redirect: false
+    retroactive_update: false
+    active_updating: false
+    file_name:
+      value: '[file:ffp-name-only-original].[file:ffp-extension-original]'
+      options:
+        slashes: false
+        pathauto: false
+        transliterate: false
+id: media.propuesta_interaccion_proyectos_.field_media_file_1
+field_name: field_media_file_1
+entity_type: media
+bundle: propuesta_interaccion_proyectos_
+label: Archivo
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: ''
+  file_extensions: 'txt doc docx pdf'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

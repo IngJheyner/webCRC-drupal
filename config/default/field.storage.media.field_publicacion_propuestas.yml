@@ -1,0 +1,20 @@
+uuid: aae96c29-0d21-4a72-998c-3af42dfa0c4b
+langcode: es
+status: true
+dependencies:
+  module:
+    - datetime
+    - media
+id: media.field_publicacion_propuestas
+field_name: field_publicacion_propuestas
+entity_type: media
+type: datetime
+settings:
+  datetime_type: datetime
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

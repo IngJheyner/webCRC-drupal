@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for webcrc_projects_regulatory module.
+ *
+ * @DCG
+ * This file is no longer required in Drupal 8.
+ * @see https://www.drupal.org/node/2217931
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+ /**
+  * Implements hook_form_alter().
+  */
+ function webcrc_projects_regulatory_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+   
+   
+   if($form['#id'] == "node-proyectos-regulatorios-edit-form" || $form['#id'] == "node-proyectos-regulatorios-form"){
+
+     $form['#attached']['library'][] = 'webcrc_projects_regulatory/webcrc_projects_regulatory';
+
+   }
+
+ }

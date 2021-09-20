@@ -1,0 +1,24 @@
+uuid: 37d383bc-fcc2-4a2b-95e3-b3d51f289331
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_publicacion_comentarios
+    - media.type.comentarios_iteracciones_
+  module:
+    - datetime
+id: media.comentarios_iteracciones_.field_publicacion_comentarios
+field_name: field_publicacion_comentarios
+entity_type: media
+bundle: comentarios_iteracciones_
+label: 'Fecha de publicación'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

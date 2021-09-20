@@ -1,0 +1,11 @@
+uuid: b5f3ccf7-12cd-45a0-90e0-043ea86dd4c9
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.proyectos_regulatorios
+id: node.proyectos_regulatorios
+target_entity_type_id: node
+target_bundle: proyectos_regulatorios
+default_langcode: site_default
+language_alterable: false

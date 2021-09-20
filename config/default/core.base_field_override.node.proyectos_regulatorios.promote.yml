@@ -1,0 +1,22 @@
+uuid: 58589162-c7ed-4d59-bcba-f20cab604b30
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.proyectos_regulatorios
+id: node.proyectos_regulatorios.promote
+field_name: promote
+entity_type: node
+bundle: proyectos_regulatorios
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

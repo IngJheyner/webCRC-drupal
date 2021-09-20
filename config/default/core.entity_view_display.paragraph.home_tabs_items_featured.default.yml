@@ -8,15 +8,15 @@ dependencies:
     - field.field.paragraph.home_tabs_items_featured.field_tab_title
     - paragraphs.paragraphs_type.home_tabs_items_featured
   module:
-    - svg_image
+    - blazy
 id: paragraph.home_tabs_items_featured.default
 targetEntityType: paragraph
 bundle: home_tabs_items_featured
 mode: default
 content:
   field_tab_description:
-    weight: 1
-    label: above
+    weight: 2
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -24,20 +24,40 @@ content:
     region: content
   field_tab_imagen:
     weight: 0
-    label: above
+    label: hidden
     settings:
-      svg_attributes:
-        width: null
-        height: null
-      svg_render_as_image: true
       image_style: ''
-      image_link: ''
+      icon: ''
+      layout: ''
+      view_mode: ''
+      cache: 0
+      current_view_mode: ''
+      skin: ''
+      fx: ''
+      style: ''
+      background: false
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      caption: {  }
+      responsive_image_style: ''
+      box_style: ''
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
+      _uri: ''
+      breakpoints: {  }
+      sizes: ''
+      grid_header: ''
+      grid: 0
+      grid_medium: 0
+      grid_small: 0
     third_party_settings: {  }
-    type: image
+    type: blazy
     region: content
   field_tab_title:
-    weight: 2
-    label: above
+    weight: 1
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }

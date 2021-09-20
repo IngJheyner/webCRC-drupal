@@ -1,0 +1,33 @@
+uuid: 3742d6df-1e15-411d-8967-f6c20cd1b66e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.media.comentarios_iteracciones_.field_media_file_2
+    - field.field.media.comentarios_iteracciones_.field_operador_comentarios
+    - field.field.media.comentarios_iteracciones_.field_publicacion_comentarios
+    - field.field.media.comentarios_iteracciones_.field_ruta_archivo_comentarios
+    - media.type.comentarios_iteracciones_
+id: media.comentarios_iteracciones_.default
+targetEntityType: media
+bundle: comentarios_iteracciones_
+mode: default
+content:
+  field_ruta_archivo_comentarios:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  created: true
+  field_media_file_2: true
+  field_operador_comentarios: true
+  field_publicacion_comentarios: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

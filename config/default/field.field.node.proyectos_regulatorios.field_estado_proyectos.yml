@@ -1,0 +1,23 @@
+uuid: d05e8071-b218-49ea-8ffe-1abffb6feef9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_estado_proyectos
+    - node.type.proyectos_regulatorios
+  module:
+    - options
+id: node.proyectos_regulatorios.field_estado_proyectos
+field_name: field_estado_proyectos
+entity_type: node
+bundle: proyectos_regulatorios
+label: Estado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '1'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

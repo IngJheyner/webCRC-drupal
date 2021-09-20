@@ -1,0 +1,33 @@
+uuid: 3e41278a-c8ee-4000-83f8-e8f03b1c8457
+langcode: es
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: proyectos_regulatorios
+label: 'Proyectos Regulatorios'
+type: 'canonical_entities:node'
+pattern: 'proyectos-regulatorios/[node:title]'
+selection_criteria:
+  d734e64c-ccc5-42fc-8ff9-f201d02e82a5:
+    id: node_type
+    bundles:
+      proyectos_regulatorios: proyectos_regulatorios
+    negate: false
+    context_mapping:
+      node: node
+    uuid: d734e64c-ccc5-42fc-8ff9-f201d02e82a5
+  1e826523-4c90-494f-a319-2b6ee8468793:
+    id: language
+    langcodes:
+      es: es
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: 1e826523-4c90-494f-a319-2b6ee8468793
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

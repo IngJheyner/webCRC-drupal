@@ -1,0 +1,19 @@
+uuid: a575e24e-c547-4924-9a27-d0525875a197
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nombre_proyecto
+    - node.type.proyectos_regulatorios
+id: node.proyectos_regulatorios.field_nombre_proyecto
+field_name: field_nombre_proyecto
+entity_type: node
+bundle: proyectos_regulatorios
+label: 'Nombre del Proyecto'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

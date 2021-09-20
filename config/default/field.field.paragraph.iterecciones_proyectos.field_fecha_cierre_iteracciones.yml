@@ -1,0 +1,21 @@
+uuid: 1ada334b-e3cb-4138-b3b4-a25f07bb27df
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fecha_cierre_iteracciones
+    - paragraphs.paragraphs_type.iterecciones_proyectos
+  module:
+    - datetime
+id: paragraph.iterecciones_proyectos.field_fecha_cierre_iteracciones
+field_name: field_fecha_cierre_iteracciones
+entity_type: paragraph
+bundle: iterecciones_proyectos
+label: 'Fecha de cierre de comentarios'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

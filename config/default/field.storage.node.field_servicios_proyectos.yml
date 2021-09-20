@@ -1,0 +1,42 @@
+uuid: dbc4f421-20b5-45bb-b598-34e66b46fc0d
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_servicios_proyectos
+field_name: field_servicios_proyectos
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: Televisión
+    -
+      value: '2'
+      label: Radio
+    -
+      value: '3'
+      label: 'Internet Fijo'
+    -
+      value: '4'
+      label: 'Internet Movil'
+    -
+      value: '5'
+      label: 'Telefonía fija'
+    -
+      value: '6'
+      label: 'Telefonía móvil'
+    -
+      value: '7'
+      label: Postal
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

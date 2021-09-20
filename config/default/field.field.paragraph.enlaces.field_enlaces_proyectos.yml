@@ -1,0 +1,21 @@
+uuid: cdc99142-89c8-4967-83a1-7affe0042e0b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_enlaces_proyectos
+    - paragraphs.paragraphs_type.enlaces
+  module:
+    - options
+id: paragraph.enlaces.field_enlaces_proyectos
+field_name: field_enlaces_proyectos
+entity_type: paragraph
+bundle: enlaces
+label: 'Tipo de Enlace'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,21 @@
+uuid: 9e80c0c9-9137-40e0-b11e-4747aa4700ce
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.field_ruta_archivo_comentarios
+field_name: field_ruta_archivo_comentarios
+entity_type: media
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

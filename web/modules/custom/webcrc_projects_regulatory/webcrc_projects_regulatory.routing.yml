@@ -1,0 +1,7 @@
+webcrc_projects_regulatory.example:
+  path: '/webcrc-projects-regulatory/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\webcrc_projects_regulatory\Controller\WebcrcProjectsRegulatoryController::build'
+  requirements:
+    _permission: 'access content'

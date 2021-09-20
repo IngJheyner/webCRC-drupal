@@ -1,0 +1,24 @@
+uuid: eba60a3c-eedb-4d24-8107-dc80223ef6ad
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.propuesta_iteracc_proyectos.field_datos_propuesta
+    - paragraphs.paragraphs_type.propuesta_iteracc_proyectos
+  module:
+    - media_library
+id: paragraph.propuesta_iteracc_proyectos.default
+targetEntityType: paragraph
+bundle: propuesta_iteracc_proyectos
+mode: default
+content:
+  field_datos_propuesta:
+    type: media_library_widget
+    weight: 0
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true
