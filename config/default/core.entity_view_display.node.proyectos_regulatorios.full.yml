@@ -10,8 +10,8 @@ dependencies:
     - field.field.node.proyectos_regulatorios.field_interacciones_proyectos
     - field.field.node.proyectos_regulatorios.field_nombre_proyecto
     - field.field.node.proyectos_regulatorios.field_oficina_proyecto
+    - field.field.node.proyectos_regulatorios.field_projects_services
     - field.field.node.proyectos_regulatorios.field_resumen_proyecto
-    - field.field.node.proyectos_regulatorios.field_servicios_proyectos
     - field.field.node.proyectos_regulatorios.field_tipo_proyecto
     - node.type.proyectos_regulatorios
   module:
@@ -41,7 +41,7 @@ content:
     third_party_settings: {  }
   field_estado_proyectos:
     type: list_default
-    weight: 2
+    weight: 3
     region: content
     label: above
     settings: {  }
@@ -50,20 +50,12 @@ content:
     type: entity_reference_revisions_entity_view
     weight: 9
     region: content
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
   field_nombre_proyecto:
-    type: string
-    weight: 3
-    region: content
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-  field_oficina_proyecto:
     type: string
     weight: 4
     region: content
@@ -71,15 +63,24 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-  field_resumen_proyecto:
-    type: basic_string
+  field_oficina_proyecto:
+    type: string
     weight: 5
     region: content
     label: above
-    settings: {  }
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
-  field_servicios_proyectos:
-    type: list_default
+  field_projects_services:
+    type: entity_reference_label
+    weight: 7
+    region: content
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+  field_resumen_proyecto:
+    type: basic_string
     weight: 6
     region: content
     label: above
@@ -87,7 +88,7 @@ content:
     third_party_settings: {  }
   field_tipo_proyecto:
     type: list_default
-    weight: 7
+    weight: 2
     region: content
     label: above
     settings: {  }

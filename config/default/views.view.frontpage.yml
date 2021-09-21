@@ -11,9 +11,9 @@ dependencies:
 _core:
   default_config_hash: HAnuLuk87TQ6QDwuJNjLTJYoBftdp6XtJh8RdBx3-TY
 id: frontpage
-label: Frontpage
+label: 'Página inicio'
 module: node
-description: 'All content promoted to the front page.'
+description: 'Todo el contenido promovido a la página principal.'
 tag: default
 base_table: node_field_data
 base_field: nid
@@ -31,10 +31,10 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Aplicar
           reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Restablecer
+          exposed_sorts_label: 'Ordenar por'
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -143,17 +143,17 @@ display:
           total_pages: 0
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementos por página'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Todo -'
             offset: false
-            offset_label: Offset
+            offset_label: Desplazamiento
           tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
+            previous: '‹ Anterior'
+            next: 'Siguiente >'
+            first: '« Primero'
+            last: 'Último »'
           quantity: 9
       query:
         type: views_query
@@ -173,6 +173,7 @@ display:
           admin_label: ''
           expose:
             label: ''
+            field_identifier: sticky
           exposed: false
           field: sticky
           group_type: group
@@ -195,6 +196,7 @@ display:
           exposed: false
           expose:
             label: ''
+            field_identifier: created
           granularity: second
           entity_type: node
           entity_field: created
@@ -212,7 +214,7 @@ display:
       arguments: {  }
       display_extenders: {  }
     display_plugin: default
-    display_title: Default
+    display_title: 'Por defecto'
     id: default
     position: 0
     cache_metadata:
@@ -226,7 +228,7 @@ display:
   feed_1:
     display_plugin: feed
     id: feed_1
-    display_title: Feed
+    display_title: 'Canal de noticias'
     position: 2
     display_options:
       sitename_title: true
@@ -365,7 +367,7 @@ display:
           view_mode: default
       sorts: {  }
     display_plugin: page
-    display_title: Page
+    display_title: Página
     id: page_1
     position: 1
     cache_metadata:

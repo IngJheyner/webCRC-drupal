@@ -668,6 +668,7 @@ display:
           exposed: false
           expose:
             label: ''
+            field_identifier: changed
           granularity: second
           entity_type: feeds_feed
           entity_field: changed

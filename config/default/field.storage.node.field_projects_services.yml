@@ -1,16 +1,16 @@
-uuid: 938fb94c-23fd-44c8-9d3b-9d17c3ff6bb1
+uuid: dd28a01f-b20b-4080-8ef2-c584acbe38e6
 langcode: es
 status: true
 dependencies:
   module:
-    - media
-    - paragraphs
-id: paragraph.field_media_file_comentarios
-field_name: field_media_file_comentarios
-entity_type: paragraph
+    - node
+    - taxonomy
+id: node.field_projects_services
+field_name: field_projects_services
+entity_type: node
 type: entity_reference
 settings:
-  target_type: media
+  target_type: taxonomy_term
 module: core
 locked: false
 cardinality: -1

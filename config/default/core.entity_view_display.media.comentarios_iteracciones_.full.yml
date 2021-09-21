@@ -1,49 +1,42 @@
-uuid: 89ffd4f3-7db0-49ca-8938-463da4711613
+uuid: ea7f7e8b-a68b-44ad-8795-f6669f14a969
 langcode: es
-status: false
+status: true
 dependencies:
   config:
-    - core.entity_view_mode.media.media_library
+    - core.entity_view_mode.media.full
     - field.field.media.comentarios_iteracciones_.field_media_file_2
     - field.field.media.comentarios_iteracciones_.field_operador_comentarios
     - field.field.media.comentarios_iteracciones_.field_publicacion_comentarios
     - field.field.media.comentarios_iteracciones_.field_ruta_archivo_comentarios
     - media.type.comentarios_iteracciones_
   module:
-    - datetime
     - file
-    - options
-id: media.comentarios_iteracciones_.media_library
+id: media.comentarios_iteracciones_.full
 targetEntityType: media
 bundle: comentarios_iteracciones_
-mode: media_library
+mode: full
 content:
-  field_media_file_2:
-    type: file_default
+  created:
+    type: timestamp
     weight: 1
     region: content
-    label: above
+    label: hidden
+    settings:
+      date_format: fecha_webcrc
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  field_media_file_2:
+    type: file_default
+    weight: 0
+    region: content
+    label: hidden
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-  field_operador_comentarios:
-    type: list_default
-    weight: 0
-    region: content
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-  field_publicacion_comentarios:
-    type: datetime_default
-    weight: 2
-    region: content
-    label: above
-    settings:
-      format_type: medium
-      timezone_override: ''
-    third_party_settings: {  }
 hidden:
-  created: true
+  field_operador_comentarios: true
+  field_publicacion_comentarios: true
   field_ruta_archivo_comentarios: true
   langcode: true
   name: true

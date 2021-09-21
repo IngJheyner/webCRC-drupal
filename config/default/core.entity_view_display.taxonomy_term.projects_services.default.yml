@@ -1,0 +1,31 @@
+uuid: 1cd21c83-d102-4166-bb56-7c8e7863e58c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.projects_services.field_services_icon
+    - taxonomy.vocabulary.projects_services
+  module:
+    - svg_image
+id: taxonomy_term.projects_services.default
+targetEntityType: taxonomy_term
+bundle: projects_services
+mode: default
+content:
+  field_services_icon:
+    weight: -4
+    label: above
+    settings:
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  description: true
+  langcode: true
+  search_api_excerpt: true
