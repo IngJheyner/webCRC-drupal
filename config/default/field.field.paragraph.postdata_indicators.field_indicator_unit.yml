@@ -1,0 +1,21 @@
+uuid: a2870ca9-c8a7-4959-8e9d-13320cf6c24b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_indicator_unit
+    - paragraphs.paragraphs_type.postdata_indicators
+  module:
+    - options
+id: paragraph.postdata_indicators.field_indicator_unit
+field_name: field_indicator_unit
+entity_type: paragraph
+bundle: postdata_indicators
+label: Unidad
+description: 'Unidad del valor del indicador'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

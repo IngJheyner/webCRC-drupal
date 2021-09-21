@@ -11,6 +11,7 @@ regions:
   header: Header
   primary_menu: 'Primary menu'
   top_a: 'Top a'
+  top_b: 'Top b'
   content: Content
   footer_left: 'Footer left'
   footer_right: 'Footer right'

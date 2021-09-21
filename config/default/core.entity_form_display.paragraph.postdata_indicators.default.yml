@@ -1,0 +1,67 @@
+uuid: 7d57df5e-6f4c-42bb-88a7-a59c6971d968
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.postdata_indicators.field_indicator_description
+    - field.field.paragraph.postdata_indicators.field_indicator_icon
+    - field.field.paragraph.postdata_indicators.field_indicator_title
+    - field.field.paragraph.postdata_indicators.field_indicator_unit
+    - field.field.paragraph.postdata_indicators.field_indicator_value
+    - field.field.paragraph.postdata_indicators.field_url
+    - paragraphs.paragraphs_type.postdata_indicators
+  module:
+    - link
+    - media_library
+id: paragraph.postdata_indicators.default
+targetEntityType: paragraph
+bundle: postdata_indicators
+mode: default
+content:
+  field_indicator_description:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_indicator_icon:
+    type: media_library_widget
+    weight: 3
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_indicator_title:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_indicator_unit:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_indicator_value:
+    weight: 0
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_url:
+    weight: 5
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  status: true

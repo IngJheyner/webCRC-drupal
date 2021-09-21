@@ -1,0 +1,73 @@
+uuid: d1dded59-ea0a-4adf-82b7-ba061bdb6ad2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.contents_consulted_citizenship.field_consulted_content_icon
+    - field.field.node.contents_consulted_citizenship.field_consulted_content_url
+    - node.type.contents_consulted_citizenship
+  module:
+    - blazy
+    - link
+    - user
+id: node.contents_consulted_citizenship.default
+targetEntityType: node
+bundle: contents_consulted_citizenship
+mode: default
+content:
+  field_consulted_content_icon:
+    type: blazy_media
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      class: ''
+      id: ''
+      image: ''
+      link: ''
+      overlay: ''
+      title: ''
+      vanilla: false
+      icon: ''
+      layout: ''
+      view_mode: ''
+      cache: 0
+      current_view_mode: ''
+      skin: ''
+      fx: ''
+      style: ''
+      background: false
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      caption: {  }
+      responsive_image_style: ''
+      box_style: ''
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
+      _uri: ''
+      breakpoints: {  }
+      sizes: ''
+      grid_header: ''
+      grid: 0
+      grid_medium: 0
+      grid_small: 0
+    third_party_settings: {  }
+    region: content
+  field_consulted_content_url:
+    weight: 0
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  langcode: true
+  links: true
+  search_api_excerpt: true

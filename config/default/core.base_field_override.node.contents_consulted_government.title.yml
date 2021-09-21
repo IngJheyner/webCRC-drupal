@@ -1,0 +1,18 @@
+uuid: 8cf442ab-869a-4288-af92-08512603290c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.contents_consulted_government
+id: node.contents_consulted_government.title
+field_name: title
+entity_type: node
+bundle: contents_consulted_government
+label: Titulo
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

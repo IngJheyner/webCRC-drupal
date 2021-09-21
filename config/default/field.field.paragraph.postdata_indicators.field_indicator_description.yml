@@ -1,0 +1,19 @@
+uuid: fb746ac1-0cac-40fd-8720-3488f5e7028b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_indicator_description
+    - paragraphs.paragraphs_type.postdata_indicators
+id: paragraph.postdata_indicators.field_indicator_description
+field_name: field_indicator_description
+entity_type: paragraph
+bundle: postdata_indicators
+label: Descripción
+description: 'Descripción corta para el valor del indicador'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

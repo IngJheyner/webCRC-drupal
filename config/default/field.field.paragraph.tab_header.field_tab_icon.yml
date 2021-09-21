@@ -1,0 +1,29 @@
+uuid: 08a08b5b-90c9-4764-8d3f-7f21f43324e7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tab_icon
+    - media.type.images_icons
+    - paragraphs.paragraphs_type.tab_header
+id: paragraph.tab_header.field_tab_icon
+field_name: field_tab_icon
+entity_type: paragraph
+bundle: tab_header
+label: 'Tab icono'
+description: 'Icono que se visualiza en la pestaña'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      images_icons: images_icons
+    sort:
+      field: created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

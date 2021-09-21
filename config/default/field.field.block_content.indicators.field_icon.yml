@@ -1,0 +1,29 @@
+uuid: 8ca07b68-f303-438a-8bf9-1dc96cef874e
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.indicators
+    - field.storage.block_content.field_icon
+    - media.type.images_icons
+id: block_content.indicators.field_icon
+field_name: field_icon
+entity_type: block_content
+bundle: indicators
+label: Icono
+description: 'Icono para el bloque de indicadores'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      images_icons: images_icons
+    sort:
+      field: created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

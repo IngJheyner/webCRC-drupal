@@ -1,0 +1,23 @@
+uuid: df383a07-9a1b-4ee5-b9de-4901dda56e74
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_consulted_content_url
+    - node.type.contents_consulted_government
+  module:
+    - link
+id: node.contents_consulted_government.field_consulted_content_url
+field_name: field_consulted_content_url
+entity_type: node
+bundle: contents_consulted_government
+label: Enlace
+description: 'Enlace de la pagina interna o externa para el tipo de contenido gobierno'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

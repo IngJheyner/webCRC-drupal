@@ -1,0 +1,29 @@
+uuid: f981baef-113d-43db-be0b-c42d50b09d0a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_indicator_icon
+    - media.type.images_icons
+    - paragraphs.paragraphs_type.postdata_indicators
+id: paragraph.postdata_indicators.field_indicator_icon
+field_name: field_indicator_icon
+entity_type: paragraph
+bundle: postdata_indicators
+label: Icono
+description: 'Icono para el indicador'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      images_icons: images_icons
+    sort:
+      field: created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -69,6 +69,7 @@ module:
   options: 0
   page_cache: 0
   paragraphs_library: 0
+  paragraphs_tabs_widget: 0
   path: 0
   path_alias: 0
   pfdp: 0
@@ -97,8 +98,10 @@ module:
   twig_tweak: 0
   update: 0
   user: 0
+  verf: 0
   views_ui: 0
   webcrc_projects_regulatory: 0
+  viewsreference: 0
   webform: 0
   webform_ui: 0
   pathauto: 1

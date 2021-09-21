@@ -21053,16 +21053,34 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(bootstrap__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _fortawesome_fontawesome_free__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fortawesome/fontawesome-free */ "./node_modules/@fortawesome/fontawesome-free/js/fontawesome.js");
 /* harmony import */ var _fortawesome_fontawesome_free__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_fontawesome_free__WEBPACK_IMPORTED_MODULE_2__);
+!(function webpackMissingModule() { var e = new Error("Cannot find module 'animejs/lib/anime.es'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
 
 
 
 
-(function () {
+
+(function ($, Drupal) {
   'use strict';
 
   Drupal.behaviors.helloWorld = {
-    attach: function attach(context) {
-      console.log('Hello World');
+    attach: function attach(context, settings) {
+      $(document, context).once('webcrc').each(function () {
+        $(document).ready(function () {
+          var indicatorCount = document.querySelectorAll('.count_indicator');
+
+          if (indicatorCount) {
+            indicatorCount.forEach(function (count_indicator) {
+              var valueCount = parseFloat(count_indicator.getAttribute('data-target'));
+              !(function webpackMissingModule() { var e = new Error("Cannot find module 'animejs/lib/anime.es'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())({
+                targets: count_indicator,
+                innerHTML: [0, valueCount],
+                easing: 'linear',
+                round: 100
+              });
+            });
+          }
+        });
+      });
     }
   };
 })(jQuery, Drupal);

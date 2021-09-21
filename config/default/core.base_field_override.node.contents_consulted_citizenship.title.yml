@@ -1,0 +1,18 @@
+uuid: 37077374-04c5-49a4-b6fe-7889b695a5e4
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.contents_consulted_citizenship
+id: node.contents_consulted_citizenship.title
+field_name: title
+entity_type: node
+bundle: contents_consulted_citizenship
+label: Titulo
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

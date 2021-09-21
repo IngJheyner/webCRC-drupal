@@ -1,0 +1,10 @@
+uuid: 7d932993-a4c5-4ca3-880f-6185c80bbe07
+langcode: es
+status: true
+dependencies: {  }
+id: tab_header
+label: 'Tab encabezado'
+icon_uuid: null
+icon_default: null
+description: 'Creador de pestañas'
+behavior_plugins: {  }
