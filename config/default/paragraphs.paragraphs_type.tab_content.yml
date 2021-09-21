@@ -1,0 +1,10 @@
+uuid: 3e5560c8-45cc-4ed0-8d28-ece2ef74d8db
+langcode: es
+status: true
+dependencies: {  }
+id: tab_content
+label: 'Tab contenido'
+icon_uuid: null
+icon_default: null
+description: 'Creador de contenido para cada pestaña'
+behavior_plugins: {  }

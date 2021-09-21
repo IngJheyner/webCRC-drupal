@@ -1,0 +1,109 @@
+uuid: 9831a7fd-b7b6-4016-8591-2922d86eb1ae
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.postdata_indicators.field_indicator_description
+    - field.field.paragraph.postdata_indicators.field_indicator_icon
+    - field.field.paragraph.postdata_indicators.field_indicator_title
+    - field.field.paragraph.postdata_indicators.field_indicator_unit
+    - field.field.paragraph.postdata_indicators.field_indicator_value
+    - field.field.paragraph.postdata_indicators.field_url
+    - paragraphs.paragraphs_type.postdata_indicators
+  module:
+    - blazy
+    - link
+    - options
+id: paragraph.postdata_indicators.default
+targetEntityType: paragraph
+bundle: postdata_indicators
+mode: default
+content:
+  field_indicator_description:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_indicator_icon:
+    type: blazy_media
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+      class: ''
+      id: ''
+      image: ''
+      overlay: ''
+      title: ''
+      vanilla: false
+      icon: ''
+      layout: ''
+      cache: 0
+      current_view_mode: ''
+      skin: ''
+      fx: ''
+      style: ''
+      background: false
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      caption: {  }
+      responsive_image_style: ''
+      box_style: ''
+      image_style: ''
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
+      _uri: ''
+      breakpoints: {  }
+      sizes: ''
+      grid_header: ''
+      grid: 0
+      grid_medium: 0
+      grid_small: 0
+    third_party_settings: {  }
+    region: content
+  field_indicator_title:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_indicator_unit:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_indicator_value:
+    weight: 0
+    label: hidden
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_url:
+    weight: 5
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  search_api_excerpt: true

@@ -1,0 +1,24 @@
+uuid: 1f39b798-fb7d-4316-b7ba-acf2f2ef1124
+langcode: es
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_indicator_unit
+field_name: field_indicator_unit
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: MIL
+      label: Millones
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

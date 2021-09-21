@@ -1,0 +1,11 @@
+uuid: 4efc7963-c1b0-4ba1-8504-a6578e2bf89d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.contents_consulted_citizenship
+id: node.contents_consulted_citizenship
+target_entity_type_id: node
+target_bundle: contents_consulted_citizenship
+default_langcode: site_default
+language_alterable: false

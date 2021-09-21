@@ -1,0 +1,10 @@
+uuid: 05fdf386-7ed2-4cbe-b1c9-637b56ed2323
+langcode: es
+status: true
+dependencies: {  }
+id: tabs_wrapper
+label: Tabs
+icon_uuid: null
+icon_default: null
+description: 'Contenedor principal para los items de los tabs'
+behavior_plugins: {  }

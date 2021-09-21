@@ -1,0 +1,8 @@
+uuid: 4bf47e38-98bf-46ff-b48c-8e34ce86ca90
+langcode: es
+status: true
+dependencies: {  }
+id: tabs_consulted_content
+label: 'Contenidos más consultados'
+revision: 0
+description: 'Tabs para contenidos más consultados'

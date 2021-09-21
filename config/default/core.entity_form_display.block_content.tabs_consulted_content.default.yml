@@ -1,0 +1,79 @@
+uuid: a247e215-ef6b-4f1d-9eb5-3980afecb0c0
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.tabs_consulted_content
+    - field.field.block_content.tabs_consulted_content.field_tabs_consulted_content
+  module:
+    - field_group
+    - paragraphs
+third_party_settings:
+  field_group:
+    group_tabs_information:
+      children:
+        - info
+        - langcode
+      parent_name: ''
+      weight: 0
+      format_type: details_sidebar
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+        weight: 0
+      label: Infomación
+    group_tabs_content:
+      children:
+        - field_tabs_consulted_content
+        - field_pruebas
+      parent_name: ''
+      weight: 1
+      format_type: details_sidebar
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+        weight: 0
+      label: Contenido
+id: block_content.tabs_consulted_content.default
+targetEntityType: block_content
+bundle: tabs_consulted_content
+mode: default
+content:
+  field_tabs_consulted_content:
+    type: entity_reference_paragraphs
+    weight: 26
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  info:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

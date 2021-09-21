@@ -1,0 +1,16 @@
+uuid: 0e378669-b385-4b74-a177-1947821cb21c
+langcode: es
+status: true
+dependencies: {  }
+id: images_icons
+label: Iconos
+description: 'Imagenes que tienen como finalidad representar un icono para una sección'
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image
+  thumbnails_directory: 'public://oembed_thumbnails'
+  providers: {  }
+field_map:
+  name: name

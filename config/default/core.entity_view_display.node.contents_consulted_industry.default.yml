@@ -1,0 +1,73 @@
+uuid: 99f18d80-934b-4447-bbe0-6c85e19713e8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.contents_consulted_industry.field_consulted_content_icon
+    - field.field.node.contents_consulted_industry.field_consulted_content_url
+    - node.type.contents_consulted_industry
+  module:
+    - blazy
+    - link
+    - user
+id: node.contents_consulted_industry.default
+targetEntityType: node
+bundle: contents_consulted_industry
+mode: default
+content:
+  field_consulted_content_icon:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      responsive_image_style: ''
+      media_switch: ''
+      thumbnail_style: ''
+      ratio: ''
+      view_mode: default
+      current_view_mode: default
+      background: false
+      class: ''
+      id: ''
+      image: ''
+      link: ''
+      overlay: ''
+      title: ''
+      vanilla: false
+      icon: ''
+      layout: ''
+      cache: 0
+      skin: ''
+      fx: ''
+      style: ''
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      caption: {  }
+      box_style: ''
+      _uri: ''
+      breakpoints: {  }
+      sizes: ''
+      grid_header: ''
+      grid: 0
+      grid_medium: 0
+      grid_small: 0
+    third_party_settings: {  }
+    type: blazy_media
+    region: content
+  field_consulted_content_url:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  langcode: true
+  links: true
+  search_api_excerpt: true

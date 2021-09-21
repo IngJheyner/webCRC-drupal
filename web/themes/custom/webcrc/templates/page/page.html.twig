@@ -29,6 +29,16 @@
     </div>
   </div>
 
+  {% if page.top_b %}
+    <div class="page__top_b">
+      <div class="container-fluid p-0">
+        <div id="top_b">
+          {{ page.top_b }}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+
   <main class="pt-5 pb-5">
     {% if page.content %}
       <div class="page__content">

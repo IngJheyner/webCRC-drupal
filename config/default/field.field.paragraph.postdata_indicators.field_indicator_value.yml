@@ -1,0 +1,23 @@
+uuid: 8cf487ca-e0d7-4ed9-88ae-f9361e32f33b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_indicator_value
+    - paragraphs.paragraphs_type.postdata_indicators
+id: paragraph.postdata_indicators.field_indicator_value
+field_name: field_indicator_value
+entity_type: paragraph
+bundle: postdata_indicators
+label: Cifra
+description: 'Valor númerico del indicador'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

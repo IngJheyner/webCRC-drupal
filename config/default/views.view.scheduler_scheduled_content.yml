@@ -11,9 +11,9 @@ dependencies:
 _core:
   default_config_hash: uZN6cIt2dD4FwsmAOJePjdGDOLwx9TjvixvVXEetc9k
 id: scheduler_scheduled_content
-label: 'Scheduled content'
+label: 'Contenido planificado'
 module: views
-description: 'Find and manage scheduled content.'
+description: 'Encontrar y gestionar contenido planificado.'
 tag: ''
 base_table: node_field_revision
 base_field: vid
@@ -935,7 +935,7 @@ display:
           entity_field: unpublish_on
           plugin_id: date
       sorts: {  }
-      title: 'Scheduled Content'
+      title: 'Contenido planificado'
       header: {  }
       footer: {  }
       empty:
@@ -948,7 +948,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'No scheduled content.'
+          content: 'No hay contenido planificado.'
           plugin_id: text_custom
       arguments: {  }
       relationships:
@@ -1009,7 +1009,7 @@ display:
       tab_options:
         type: normal
         title: Content
-        description: 'Find and manage scheduled content'
+        description: 'Encontrar y gestionar contenido planificado'
         menu_name: admin
         weight: -10
       display_extenders: {  }
@@ -1043,11 +1043,11 @@ display:
       tab_options:
         type: normal
         title: Content
-        description: 'Find and manage scheduled content'
+        description: 'Encontrar y gestionar contenido planificado'
         menu_name: admin
         weight: -10
       display_extenders: {  }
-      display_description: 'Scheduled content tab on user profile, showing just that user''s scheduled content'
+      display_description: 'Pestaña de contenido planificado en el perfil de usuario, que muestra el contenido planificado solo por dicho usuario'
       defaults:
         filters: true
         filter_groups: true
@@ -1107,7 +1107,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: true
-          content: 'No scheduled content for user {{ arguments.uid }}'
+          content: 'No hay contenido planificado para el usuario {{ arguments.uid }}'
           plugin_id: text_custom
     display_plugin: page
     display_title: 'User profile tab'

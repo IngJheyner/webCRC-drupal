@@ -1,0 +1,11 @@
+uuid: 908223e0-a914-4246-ae3c-f4d7b93a162f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.contents_consulted_industry
+id: node.contents_consulted_industry
+target_entity_type_id: node
+target_bundle: contents_consulted_industry
+default_langcode: site_default
+language_alterable: false

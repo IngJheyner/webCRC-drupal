@@ -1,0 +1,11 @@
+uuid: c0eaa388-6fa2-419c-9729-66fee3a89bea
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.contents_consulted_government
+id: node.contents_consulted_government
+target_entity_type_id: node
+target_bundle: contents_consulted_government
+default_langcode: site_default
+language_alterable: false
