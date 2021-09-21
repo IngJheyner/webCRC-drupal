@@ -64,6 +64,33 @@ article.projects__regulatory{
                     
                 }
             }
+
+            div.node__content-interactions{
+
+                div#accordion{      
+
+                    div.card-header{
+                        background-color: var.$btn-color-primary;
+                    }
+
+                    div.card-body{
+                        border-left: 8px solid rgba(51, 102, 204, .5);
+
+                        div.file__content{
+                            
+                            div.file__content-file{
+                                border-left: 2px solid rgba(51, 102, 204, .5);
+                                margin-top: .5em;
+                                padding-left: 1em;
+
+                                div.file__content-file--item{
+                                    margin-top: .5em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 

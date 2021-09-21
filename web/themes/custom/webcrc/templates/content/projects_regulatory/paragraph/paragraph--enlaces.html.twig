@@ -50,7 +50,7 @@
 {% if content.field_enlaces_proyectos.0['#markup'] == 'Formulario' %}
     {% set icon = 'fas fa-align-justify text-white' %}
 {% elseif content.field_enlaces_proyectos.0['#markup'] == 'Facebook' %}
-    {% set icon = 'fab fa-facebook text-white' %}
+    {% set icon = content.field_links_icon_facebook %}
 {% else %}
     {% set icon = 'fab fa-twitter text-white' %}
 {% endif %}
@@ -60,7 +60,7 @@
   <div{{ attributes.addClass(classes) }}>
 
     {% block content %}
-     <span class="badge badge-info pb-1"><i class="{{ icon }}"></i></span><a href="{{ content.field_enlace_proyectos.0['#title'] }}" class="text mx-2" target="_blank">{{ content.field_enlaces_proyectos.0['#markup'] }}</a>
+     <i class="{{ icon }}"></i><a href="{{ content.field_enlace_proyectos.0['#title'] }}" class="text mx-2" target="_blank">{{ content.field_enlaces_proyectos.0['#markup'] }}</a>
   
     {% endblock %}
 
