@@ -1,0 +1,25 @@
+{%
+  set classes = [
+    'block',
+    'transparenciaAcceso',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+  ]
+%}
+
+<style>
+.tableTransparenciaTipoDocumento table caption{
+  display:block;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 400;
+  color: #296294
+}
+
+{% block content %}
+
+    <div class="container mb-2">
+        <h1 class="tituloEncabezado">{{ label }}</h1>   
+    </div>
+
+{% endblock %}
