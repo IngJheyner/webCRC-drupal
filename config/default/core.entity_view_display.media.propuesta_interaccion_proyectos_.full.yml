@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.media.full
     - field.field.media.propuesta_interaccion_proyectos_.field_media_file_1
-    - field.field.media.propuesta_interaccion_proyectos_.field_publicacion_propuestas
     - field.field.media.propuesta_interaccion_proyectos_.field_ruta_file_propuestas
     - media.type.propuesta_interaccion_proyectos_
   module:
@@ -17,7 +16,7 @@ mode: full
 content:
   created:
     type: timestamp
-    weight: 1
+    weight: 2
     region: content
     label: hidden
     settings:
@@ -27,14 +26,13 @@ content:
     third_party_settings: {  }
   field_media_file_1:
     type: file_default
-    weight: 0
+    weight: 1
     region: content
     label: hidden
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
 hidden:
-  field_publicacion_propuestas: true
   field_ruta_file_propuestas: true
   langcode: true
   name: true

@@ -110,13 +110,12 @@
 
           {%
             set info_state = {
-              'badge' : content.field_estado_proyectos.0['#markup'] == 'Abierto' ? 'badge badge-success' : 'badge badge-none',
-              'icon' : content.field_estado_proyectos.0['#markup'] == 'Abierto' ? 'far fa-folder text-white' : 'fas fa-circle text-danger',
-              'text' : content.field_estado_proyectos.0['#markup'] == 'Abierto' ? 'open Project'|trans : 'Finished project'|trans
+              'icon' : content.field_estado_proyectos.0['#markup'] == 'Abierto' ? '/themes/custom/webcrc/src/images/proyecto-abierto.svg' : '/themes/custom/webcrc/src/images/proyecto-finalizado.svg',
+              'text' : content.field_estado_proyectos.0['#markup'] == 'Abierto' ? 'open Project'|trans : 'finished Project'|trans
             }
           %}         
           
-          <span class="{{ info_state.badge }}"><i class="{{ info_state.icon }}"></i></span> {{ info_state.text }}          
+        <img src="{{ info_state.icon }}"></img> {{ info_state.text }}          
 
         </div>
 
@@ -128,11 +127,11 @@
         {# ===== ===== Tomar la fecha de cierre de la ultima interaccion ===== ===== #}
         {% if content.field_estado_proyectos.0['#markup'] == 'Abierto' %}
           {% for key, value in node.field_interacciones_proyectos %}
-            {% if loop.first %}
+            {% if loop.last %}
               {% set dateClose = content.field_interacciones_proyectos[key]['#paragraph'].field_fecha_cierre_iteracciones.value %}
               {# ===== ===== DATE COMMENTS ===== ===== #}
               <div class="node__content-info--items date-comments px-3">
-                <span class="badge badge-primary"><i class="fa fa-calendar text-white"></i></span> {{ 'Comments are accepted until'|t }} {{ dateClose|date('d/M/Y') }}
+                <img src="/themes/custom/webcrc/src/images/aceptan-comentarios.svg"> {{ 'Comments are accepted until'|t }} {{ dateClose|date('d/M/Y') }}
               </div>
             {% endif %}
           {% endfor %}
@@ -146,6 +145,10 @@
       <div class="row">    
         <div class="col-8">
 
+          {# ===== ===== TIPO DE PROYECTO ===== ===== #}
+          {{ content.field_tipo_proyecto}}
+          <hr class="my-3">
+
           {# ===== ===== RESUMEN ===== ===== #}
           <div class="node__content-abstract">
             {{ content.field_resumen_proyecto }}
@@ -157,7 +160,7 @@
           {# ===== ===== INTERACCIONES ===== ===== #}
           <div class="node__content-interactions">
 
-              <h3>{{ 'Interactions'|t }}</h3>
+            <h3>{{ 'Interactions'|t }}</h3>
 
             {{ content.field_interacciones_proyectos }} 
             
@@ -171,11 +174,11 @@
           <ul class="list-group">
 
             <li class="list-group-item active font-weigth-bold text-center"><i class="fas fa-inbox text-white"></i> {{ 'Mechanisms for participation'|trans }}</li>
-            <li class="list-group-item node__content-mechanisms--email pt-3 pb-1"><span class="badge badge-info"><i class="fas fa-at text-white"></i></span><u class="text mx-2 font-weight-bold">{{ content.field_email_proyectos.0 }}</u></li>
+            <li class="list-group-item node__content-mechanisms--email pt-3 pb-1"><img src="/themes/custom/webcrc/src/images/email.svg"><u class="text mx-2 font-weight-bold">{{ content.field_email_proyectos.0 }}</u></li>
             <li class="list-group-item node__content-mechanisms--enlaces py-1">            
               {{ content.field_enlaces_proyectos }}
             </li>
-            <li class="list-group-item node__content-mechanisms--email pt-0 pb-3"><span class="badge badge-info"><i class="fas fa-city text-white"></i></span><u class="text mx-2 font-weight-bold">{{ content.field_oficina_proyecto.0 }}</u></li>
+            <li class="list-group-item node__content-mechanisms--email pt-0 pb-3"><img src="/themes/custom/webcrc/src/images/Direccion.svg"><u class="text mx-2 font-weight-bold">{{ content.field_oficina_proyecto.0 }}</u></li>
             
           </ul>
 

@@ -1,7 +1,8 @@
 # Custom module library for general purposes.
 webcrc_projects_regulatory:
   js:
-    js/webcrc-projects-regulatory.min.js: { minified: true }
+    #js/webcrc-projects-regulatory.min.js: { minified: true }
+    js/webcrc-projects-regulatory.js: {}
   css:
     component:
       css/webcrc-projects-regulatory.css: {}

@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.field.media.comentarios_iteracciones_.field_media_file_2
     - field.field.media.comentarios_iteracciones_.field_operador_comentarios
-    - field.field.media.comentarios_iteracciones_.field_publicacion_comentarios
     - field.field.media.comentarios_iteracciones_.field_ruta_archivo_comentarios
     - media.type.comentarios_iteracciones_
   module:
@@ -15,9 +14,9 @@ third_party_settings:
   field_group:
     group_inf:
       children:
+        - field_operador_comentarios
         - field_ruta_archivo_comentarios
         - field_media_file_2
-        - field_operador_comentarios
         - created
       parent_name: ''
       weight: 0
@@ -37,13 +36,13 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 29
+    weight: 31
     region: content
     settings: {  }
     third_party_settings: {  }
   field_media_file_2:
     type: file_generic
-    weight: 27
+    weight: 30
     region: content
     settings:
       progress_indicator: throbber
@@ -55,7 +54,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_ruta_archivo_comentarios:
-    weight: 26
+    weight: 29
     settings:
       size: 60
       placeholder: ''
@@ -63,7 +62,6 @@ content:
     type: string_textfield
     region: content
 hidden:
-  field_publicacion_comentarios: true
   langcode: true
   name: true
   path: true

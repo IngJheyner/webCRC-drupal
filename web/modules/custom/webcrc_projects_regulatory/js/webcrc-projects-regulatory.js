@@ -40,25 +40,29 @@
                         $(files).wrap("<details class='required-fields field-group-details js-form-wrapper form-wrapper seven-details' data-drupal-selector='edit-group-file-conv' id='edit-group-file-conv'><div class='seven-details__wrapper details-wrapper'></div></details>");
                         $(files).parent().before("<summary role='button' aria-controls='edit-group-prueba' aria-expanded='false' aria-pressed='false' class='seven-details__summary form-required'><span>Cargar Archivos.</span></summary>");
                         
-                        iframe = document.querySelector(iframeC).contentWindow.document;
+                        iframe = document.querySelector(iframeC).contentWindow.document; 
                         
+                        /* ===== ===== Oculatar y apaercer elementos ===== ===== */
                         let uploadFile = iframe.getElementById('edit-upload');
+                        iframe.getElementById('edit-actions').style.display = 'none';
 
-                        $(uploadFile).on('click', function () {
+                        $(uploadFile).on('click mouseover', function () {
                             
-                            iframe.getElementById('edit-group-file-conv').removeAttribute('open');
+                            iframe.getElementById('edit-group-file-conv').removeAttribute('open'); 
+                            iframe.getElementById('edit-actions').style.display = 'none';       
+                           
                         
                         });
                         
                         iframe.getElementById('edit-group-file-conv').addEventListener('click', function() {
                             
                             let newFiles = iframe.getElementById('ief-dropzone-upload'); 
+                            iframe.getElementById('edit-actions').style.display = 'block';
 
-                            $(newFiles).children('div.form-wrapper').each(function (idx, el) {
-                                
+                            $(newFiles).children('div.form-wrapper').each(function (idx, el) {                                
                                 $(el).children('fieldset').children('div.fieldset__wrapper').children(nameRouteFile).children().children('input').val(code);
                                 $(el).children('fieldset').children('div.fieldset__wrapper').children(nameRouteFile).css('display', 'none');
-                                $(el).children('fieldset').find('div.field--name-uid').css("display", "none");
+                                $(el).children('fieldset').find('div.field--name-uid').css("display", "none");                               
                             
                             });
 

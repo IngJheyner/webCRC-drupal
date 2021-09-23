@@ -48,19 +48,20 @@
 %}
 
 {% if content.field_enlaces_proyectos.0['#markup'] == 'Formulario' %}
-    {% set icon = 'fas fa-align-justify text-white' %}
+    {% set icon = '/themes/custom/webcrc/src/images/Formulario.svg' %}
 {% elseif content.field_enlaces_proyectos.0['#markup'] == 'Facebook' %}
-    {% set icon = content.field_links_icon_facebook %}
+     {% set icon = '/themes/custom/webcrc/src/images/Facebook.svg' %}
 {% else %}
-    {% set icon = 'fab fa-twitter text-white' %}
+    {% set icon = '/themes/custom/webcrc/src/images/Twitter.svg' %}
 {% endif %}
+
 
 {% block paragraph %}
 
   <div{{ attributes.addClass(classes) }}>
 
     {% block content %}
-     <i class="{{ icon }}"></i><a href="{{ content.field_enlace_proyectos.0['#title'] }}" class="text mx-2" target="_blank">{{ content.field_enlaces_proyectos.0['#markup'] }}</a>
+    <img src="{{ icon }}"><a href="{{ content.field_enlace_proyectos.0['#title'] }}" class="text mx-2" target="_blank">{{ content.field_enlaces_proyectos.0['#markup'] }}</a>
   
     {% endblock %}
 

@@ -7,6 +7,7 @@ dependencies:
     - field.field.paragraph.iterecciones_proyectos.field_comentarios_interacciones
     - field.field.paragraph.iterecciones_proyectos.field_fases_interacciones
     - field.field.paragraph.iterecciones_proyectos.field_fecha_cierre_iteracciones
+    - field.field.paragraph.iterecciones_proyectos.field_interactions_comments
     - field.field.paragraph.iterecciones_proyectos.field_propuestas_interacciones
     - paragraphs.paragraphs_type.iterecciones_proyectos
   module:
@@ -47,6 +48,7 @@ third_party_settings:
       label: Propuestas
     group_comentarios:
       children:
+        - group_sin_comentarios
         - field_comentarios_interacciones
       parent_name: group_field_group
       weight: 5
@@ -60,6 +62,20 @@ third_party_settings:
         formatter: closed
         required_fields: true
       label: Comentarios
+    group_sin_comentarios:
+      children:
+        - field_interactions_comments
+      parent_name: group_comentarios
+      weight: 20
+      format_type: fieldset
+      region: content
+      format_settings:
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+        show_empty_fields: false
+      label: 'Sin comentarios'
 id: paragraph.iterecciones_proyectos.default
 targetEntityType: paragraph
 bundle: iterecciones_proyectos
@@ -67,13 +83,13 @@ mode: default
 content:
   field_comentarios_interacciones:
     type: entity_browser_entity_reference
-    weight: 0
+    weight: 22
     region: content
     settings:
       entity_browser: comentarios_interacciones_media
       field_widget_display: rendered_entity
       field_widget_display_settings:
-        view_mode: media_library
+        view_mode: default
       field_widget_edit: true
       field_widget_remove: true
       selection_mode: selection_append
@@ -92,6 +108,13 @@ content:
     third_party_settings: {  }
     type: datetime_default
     region: content
+  field_interactions_comments:
+    weight: 21
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
   field_propuestas_interacciones:
     type: entity_browser_entity_reference
     weight: 0
@@ -100,7 +123,7 @@ content:
       entity_browser: propuesta_interacciones_media
       field_widget_display: rendered_entity
       field_widget_display_settings:
-        view_mode: full
+        view_mode: default
       field_widget_edit: true
       field_widget_remove: true
       selection_mode: selection_append

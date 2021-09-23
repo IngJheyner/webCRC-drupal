@@ -21,19 +21,12 @@
 
 {% if label_hidden %}
   {% if multiple %}
-    <div{{ attributes.addClass(classes) }}>    
+    <div{{ attributes.addClass(classes) }}>  
 
       {% for item in items %}
-
-        {% if item.content['#plain_text'] == 'Internet Movil'%}
-            {% set icon_services = 'fa fa-wifi text-white' %}
-        {% endif %}
-
-        <div{{ item.attributes.addClass('field__item flex-fill mx-2') }}>
-          <span class="badge badge-primary"><i class="{{ icon_services }}"></i></span>
+        <div{{ item.attributes.addClass('field__item flex-fill mx-2') }}>          
            {{ item.content }}
-        </div>
-        
+        </div>        
       {% endfor %}
 
     </div>

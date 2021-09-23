@@ -6,11 +6,9 @@ dependencies:
     - core.entity_view_mode.media.media_library
     - field.field.media.comentarios_iteracciones_.field_media_file_2
     - field.field.media.comentarios_iteracciones_.field_operador_comentarios
-    - field.field.media.comentarios_iteracciones_.field_publicacion_comentarios
     - field.field.media.comentarios_iteracciones_.field_ruta_archivo_comentarios
     - media.type.comentarios_iteracciones_
   module:
-    - datetime
     - file
     - options
 id: media.comentarios_iteracciones_.media_library
@@ -32,15 +30,6 @@ content:
     region: content
     label: above
     settings: {  }
-    third_party_settings: {  }
-  field_publicacion_comentarios:
-    type: datetime_default
-    weight: 2
-    region: content
-    label: above
-    settings:
-      format_type: medium
-      timezone_override: ''
     third_party_settings: {  }
 hidden:
   created: true

@@ -1,38 +1,29 @@
-uuid: bdd4ac42-3c96-4432-a2c0-99e368f2d8d3
+uuid: b50df759-7a06-4c9a-8b0d-be71ecd54f17
 langcode: es
 status: true
 dependencies:
   config:
     - field.storage.taxonomy_term.field_services_icon
+    - media.type.images_icons
     - taxonomy.vocabulary.projects_services
-  module:
-    - image
 id: taxonomy_term.projects_services.field_services_icon
 field_name: field_services_icon
 entity_type: taxonomy_term
 bundle: projects_services
-label: services_icon
+label: Icono
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_extensions: 'png gif jpg jpeg'
-  alt_field: true
-  alt_field_required: true
-  title_field: false
-  title_field_required: false
-  max_resolution: ''
-  min_resolution: ''
-  default_image:
-    uuid: null
-    alt: ''
-    title: ''
-    width: null
-    height: null
-  file_directory: '[date:custom:Y]-[date:custom:m]'
-  max_filesize: ''
-  handler: 'default:file'
-  handler_settings: {  }
-field_type: image
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      images_icons: images_icons
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

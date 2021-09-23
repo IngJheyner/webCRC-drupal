@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_form_mode.media.media_library
     - field.field.media.propuesta_interaccion_proyectos_.field_media_file_1
-    - field.field.media.propuesta_interaccion_proyectos_.field_publicacion_propuestas
     - field.field.media.propuesta_interaccion_proyectos_.field_ruta_file_propuestas
     - media.type.propuesta_interaccion_proyectos_
 id: media.propuesta_interaccion_proyectos_.media_library
@@ -16,7 +15,6 @@ content: {  }
 hidden:
   created: true
   field_media_file_1: true
-  field_publicacion_propuestas: true
   field_ruta_file_propuestas: true
   langcode: true
   name: true

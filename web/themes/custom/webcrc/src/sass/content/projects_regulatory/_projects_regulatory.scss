@@ -42,12 +42,6 @@ article.projects__regulatory{
 
                         border: 0;
 
-                        span.badge{
-                            padding: .6em;
-                            border-radius: 50%;
-                            background-color: var.$btn-color-primary;
-                        }
-
                         u.text{
                             color: var.$btn-color-primary;
                         }
@@ -76,12 +70,26 @@ article.projects__regulatory{
                     div.card-body{
                         border-left: 8px solid rgba(51, 102, 204, .5);
 
-                        div.file__content{
+                        div.file__content{    
+
+                            div.file__content-title.Propuestas::before{
+                                content: url('../../src/images/Propuesta.svg');  
+                                position: relative;                                    
+                                top: 15px;
+                                left: -8px;                               
+                            }
+
+                            div.file__content-title.Comentarios::before{
+                                content: url('../../src/images/Comentarios-normales.svg');  
+                                position: relative;                                    
+                                top: 15px;
+                                left: -8px;                               
+                            }
                             
                             div.file__content-file{
                                 border-left: 2px solid rgba(51, 102, 204, .5);
                                 margin-top: .5em;
-                                padding-left: 1em;
+                                padding-left: 1em;                                
 
                                 div.file__content-file--item{
                                     margin-top: .5em;
