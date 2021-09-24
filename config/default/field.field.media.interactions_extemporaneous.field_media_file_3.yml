@@ -1,0 +1,46 @@
+uuid: 5fa0288c-58f1-41ce-b609-9be54b3b2fca
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_file_3
+    - media.type.interactions_extemporaneous
+  module:
+    - file
+    - filefield_paths
+third_party_settings:
+  filefield_paths:
+    enabled: true
+    file_path:
+      value: 'Proyectos Comentarios/[media:field_extemporaneous_route_file]/Extemporaneos'
+      options:
+        slashes: false
+        pathauto: false
+        transliterate: false
+    redirect: false
+    retroactive_update: false
+    active_updating: false
+    file_name:
+      value: '[file:ffp-name-only-original].[file:ffp-extension-original]'
+      options:
+        slashes: false
+        pathauto: false
+        transliterate: false
+id: media.interactions_extemporaneous.field_media_file_3
+field_name: field_media_file_3
+entity_type: media
+bundle: interactions_extemporaneous
+label: Archivo
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: ''
+  file_extensions: 'txt doc docx pdf'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

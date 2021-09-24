@@ -6,7 +6,7 @@
 #}
 {%
   set classes = [
-    'd-flex',
+    'flex-column flex-lg-row d-flex flex-md-wrap align-content-stretch',
   bundle|clean_class ~ '__' ~ field_name_clean|clean_class,
   label_display == 'inline' ? 'd-flex',
 ]
@@ -24,7 +24,7 @@
     <div{{ attributes.addClass(classes) }}>  
 
       {% for item in items %}
-        <div{{ item.attributes.addClass('field__item flex-fill mx-2') }}>          
+        <div{{ item.attributes.addClass('field__item flex-fill mx-lg-2') }}>          
            {{ item.content }}
         </div>        
       {% endfor %}

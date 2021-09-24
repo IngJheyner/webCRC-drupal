@@ -5,17 +5,25 @@ dependencies:
   config:
     - field.storage.node.field_projects_services
     - node.type.proyectos_regulatorios
+    - taxonomy.vocabulary.projects_services
 id: node.proyectos_regulatorios.field_projects_services
 field_name: field_projects_services
 entity_type: node
 bundle: proyectos_regulatorios
 label: Servicios
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
-  handler_settings: {  }
+  handler_settings:
+    target_bundles:
+      projects_services: projects_services
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
 field_type: entity_reference

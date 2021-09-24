@@ -1,4 +1,70 @@
 @use '../../base/variables/variables' as var;
+
+@mixin accordion-title($selector...) {
+
+    @for $i from 0 to length($selector){
+
+        div.file__content-title.#{nth($selector, $i + 1)}::before{           
+
+            @if nth($selector, $i + 1) == Propuestas{
+                content: url('../../src/images/Propuesta.svg');
+            } @else if  nth($selector, $i + 1) == Comentarios{
+                content: url('../../src/images/Comentarios-normales.svg');
+            } @else if  nth($selector, $i + 1) == Documents{
+                content: url('../../src/images/Documentacion.svg'); 
+            }          
+            position: relative;                                    
+            top: 15px;
+            left: -8px;                                                    
+        }
+    } 
+   
+}
+
+/* ===== ===== MIXIN ACCORDION ===== ===== */
+@mixin accordion($value...) {
+
+        div#accordion{      
+
+            div.card-header{
+                background-color: nth($value, 1);
+            }
+
+            div.card-body{
+                border-left: 8px solid nth($value, 2);
+                @include media-breakpoint-down(xs) {
+                    padding: 1em;
+                }
+
+                @include media-breakpoint-up(md) {
+                    @include accordion-title(Propuestas, Comentarios, Documents);                
+                } 
+
+                div.file__content-file{
+
+                    @include media-breakpoint-up(md) {
+                        border-left: 2px solid rgba(51, 102, 204, .5);
+                        margin-top: .5em;
+                        padding-left: 1em;   
+                    }                                                
+
+                    div.file__content-file--item{
+                        margin-top: .5em;
+                       
+                        article.node__normativity-teaser > div.node__content > div.node__content-teaser{
+                            max-width: 200px;
+                            @include media-breakpoint-up(md) {
+                                max-width: 625px;
+                            }                            
+                        }
+                    }
+                }
+                
+            }
+        }
+    
+}
+
 article.projects__regulatory{
 
     section.projects__regulatory-header{
@@ -26,6 +92,14 @@ article.projects__regulatory{
 
             div.node__content-info > div.node__content-info--items{
                 
+                &.state{
+                    min-width: 185px;
+                    height: 80px;
+                    max-height: 80px;
+                }
+                &.date-comments{
+                    max-height: 80px;
+                }
                 border-right: 1px solid var.$bg-color-secundary;
 
                 &:last-child{
@@ -61,45 +135,17 @@ article.projects__regulatory{
 
             div.node__content-interactions{
 
-                div#accordion{      
+                @include accordion(var.$btn-color-primary, rgba(51, 102, 204, .5)); 
+            }
 
-                    div.card-header{
-                        background-color: var.$btn-color-primary;
-                    }
-
-                    div.card-body{
-                        border-left: 8px solid rgba(51, 102, 204, .5);
-
-                        div.file__content{    
-
-                            div.file__content-title.Propuestas::before{
-                                content: url('../../src/images/Propuesta.svg');  
-                                position: relative;                                    
-                                top: 15px;
-                                left: -8px;                               
-                            }
-
-                            div.file__content-title.Comentarios::before{
-                                content: url('../../src/images/Comentarios-normales.svg');  
-                                position: relative;                                    
-                                top: 15px;
-                                left: -8px;                               
-                            }
-                            
-                            div.file__content-file{
-                                border-left: 2px solid rgba(51, 102, 204, .5);
-                                margin-top: .5em;
-                                padding-left: 1em;                                
-
-                                div.file__content-file--item{
-                                    margin-top: .5em;
-                                }
-                            }
-                        }
-                    }
-                }
+            div.node__content-documents{
+                @include accordion(var.$bg-color-terciario, var.$bg-color-secundary);
             }
         }
     }
 
 }
+
+/* ==============================
+MEDIA QUERY
+============================== */

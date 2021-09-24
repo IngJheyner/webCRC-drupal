@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 id: propuesta_interaccion_proyectos_
 label: 'Propuesta [ Interacciones ]'
-description: 'Se visualiza en parrafo de nombre Propuesta, una seccion de interaccion para proyectos regulatorios.'
+description: 'Se visualiza en parrafo de nombre Propuesta, una seccion de interaccion para proyectos comentarios.'
 source: file
 queue_thumbnail_downloads: false
 new_revision: false

@@ -10,6 +10,7 @@ dependencies:
     - media.type.comentarios_iteracciones_
   module:
     - file
+    - options
 id: media.comentarios_iteracciones_.full
 targetEntityType: media
 bundle: comentarios_iteracciones_
@@ -26,15 +27,20 @@ content:
       timezone: ''
     third_party_settings: {  }
   field_media_file_2:
-    type: file_default
+    type: file_url_plain
     weight: 1
     region: content
     label: hidden
-    settings:
-      use_description_as_link_text: true
+    settings: {  }
+    third_party_settings: {  }
+  field_operador_comentarios:
+    type: list_default
+    weight: 0
+    region: content
+    label: hidden
+    settings: {  }
     third_party_settings: {  }
 hidden:
-  field_operador_comentarios: true
   field_ruta_archivo_comentarios: true
   langcode: true
   name: true

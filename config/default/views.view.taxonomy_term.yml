@@ -44,8 +44,8 @@ display:
         options:
           submit_button: Aplicar
           reset_button: false
-          reset_button_label: Restablecer
-          exposed_sorts_label: 'Ordenar por'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -107,7 +107,7 @@ display:
           exception:
             value: ''
             title_enable: false
-            title: Todo(s)
+            title: All
           title_enable: true
           title: '{{ arguments.tid }}'
           default_argument_type: fixed

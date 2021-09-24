@@ -16,3 +16,18 @@ function webcrc_projects_regulatory_form_alter (&$form, FormStateInterface $form
     $form['#attached']['library'][] = 'webcrc_projects_regulatory/webcrc_projects_regulatory';
   }
 }
+
+/**
+ * Implements hook_preprocess_field().
+ */
+function webcrc_projects_regulatory_preprocess_field(&$variables, $hook){  
+  $element = $variables['element'];
+  if($element['#bundle'] == 'proyectos_regulatorios'){
+    //Definir si existe algun documento final para ocultar o
+    //mostrar las interacciones    
+    $nid = \Drupal::routeMatch()->getParameter('node')->id();
+    $field = \Drupal::entityTypeManager()->getStorage('node')->load($nid);
+    $variables['document_defined'] = $field->get('field_projects_documents_endings')->getValue();
+  }  
+  
+}

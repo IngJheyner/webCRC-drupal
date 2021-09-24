@@ -110,11 +110,14 @@
                     iframeC = 'iframe#entity_browser_iframe_propuesta_interacciones_media';
                     nameRouteFile = 'div.field--name-field-ruta-file-propuestas';
 
-                }else{
+                }else if($(this).attr('value') == 'Gestionar Comentarios'){
 
                     iframeC = 'iframe#entity_browser_iframe_comentarios_interacciones_media';
                     nameRouteFile = 'div.field--name-field-ruta-archivo-comentarios';
 
+                }else{
+                    iframeC = 'iframe#entity_browser_iframe_interactions_extemporaneous';
+                    nameRouteFile = 'div.field--name-field-extemporaneous-route-file';
                 }
 
             });

@@ -7,21 +7,11 @@ dependencies:
     - taxonomy.vocabulary.projects_services
   module:
     - media_library
-    - path
-    - text
 id: taxonomy_term.projects_services.default
 targetEntityType: taxonomy_term
 bundle: projects_services
 mode: default
 content:
-  description:
-    type: text_textarea
-    weight: 2
-    region: content
-    settings:
-      placeholder: ''
-      rows: 5
-    third_party_settings: {  }
   field_services_icon:
     type: media_library_widget
     weight: 1
@@ -29,13 +19,6 @@ content:
       media_types: {  }
     third_party_settings: {  }
     region: content
-  langcode:
-    type: language_select
-    weight: 3
-    region: content
-    settings:
-      include_locked: true
-    third_party_settings: {  }
   name:
     type: string_textfield
     weight: 0
@@ -44,17 +27,14 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  path:
-    type: path
-    weight: 4
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 5
+    weight: 2
     region: content
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  description: true
+  langcode: true
+  path: true

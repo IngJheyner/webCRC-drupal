@@ -7,6 +7,7 @@ dependencies:
     - field.field.paragraph.iterecciones_proyectos.field_comentarios_interacciones
     - field.field.paragraph.iterecciones_proyectos.field_fases_interacciones
     - field.field.paragraph.iterecciones_proyectos.field_fecha_cierre_iteracciones
+    - field.field.paragraph.iterecciones_proyectos.field_interaction_extemporaneous
     - field.field.paragraph.iterecciones_proyectos.field_interactions_comments
     - field.field.paragraph.iterecciones_proyectos.field_propuestas_interacciones
     - paragraphs.paragraphs_type.iterecciones_proyectos
@@ -20,6 +21,7 @@ third_party_settings:
       children:
         - group_propuestas
         - group_comentarios
+        - group_extemporaneos
       parent_name: ''
       weight: 2
       format_type: tabs
@@ -76,6 +78,21 @@ third_party_settings:
         classes: ''
         show_empty_fields: false
       label: 'Sin comentarios'
+    group_extemporaneos:
+      children:
+        - field_interaction_extemporaneous
+      parent_name: group_field_group
+      weight: 6
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Extemporaneos
 id: paragraph.iterecciones_proyectos.default
 targetEntityType: paragraph
 bundle: iterecciones_proyectos
@@ -107,6 +124,21 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
+    region: content
+  field_interaction_extemporaneous:
+    type: entity_browser_entity_reference
+    weight: 4
+    settings:
+      entity_browser: interactions_extemporaneous
+      field_widget_display: rendered_entity
+      field_widget_display_settings:
+        view_mode: default
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      field_widget_replace: false
+      open: false
+    third_party_settings: {  }
     region: content
   field_interactions_comments:
     weight: 21

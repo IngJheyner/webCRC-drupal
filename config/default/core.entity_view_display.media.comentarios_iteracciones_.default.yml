@@ -10,10 +10,12 @@ dependencies:
   module:
     - field_group
     - file
+    - options
 third_party_settings:
   field_group:
     group_field_comments:
       children:
+        - field_operador_comentarios
         - field_media_file_2
         - created
       parent_name: ''
@@ -33,7 +35,7 @@ mode: default
 content:
   created:
     type: timestamp
-    weight: 2
+    weight: 4
     region: content
     label: above
     settings:
@@ -43,14 +45,20 @@ content:
     third_party_settings: {  }
   field_media_file_2:
     type: file_default
-    weight: 1
+    weight: 3
     region: content
     label: above
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
+  field_operador_comentarios:
+    type: list_default
+    weight: 2
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
 hidden:
-  field_operador_comentarios: true
   field_ruta_archivo_comentarios: true
   langcode: true
   name: true

@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 name: Servicios
 vid: projects_services
-description: 'Proyectos Relacionados'
+description: 'Proyectos Comentarios'
 weight: 0

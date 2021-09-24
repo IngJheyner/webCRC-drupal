@@ -1,0 +1,29 @@
+uuid: ac6fe8bf-3fe2-4074-b3cf-fbe1e0379764
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_interaction_extemporaneous
+    - media.type.interactions_extemporaneous
+    - paragraphs.paragraphs_type.iterecciones_proyectos
+id: paragraph.iterecciones_proyectos.field_interaction_extemporaneous
+field_name: field_interaction_extemporaneous
+entity_type: paragraph
+bundle: iterecciones_proyectos
+label: Extemporaneos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      interactions_extemporaneous: interactions_extemporaneous
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

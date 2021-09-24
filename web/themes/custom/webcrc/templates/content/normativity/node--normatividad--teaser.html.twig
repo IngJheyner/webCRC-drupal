@@ -72,7 +72,7 @@
 #}
 {%
   set classes = [
-    'node projects__regulatory',
+    'node node__normativity-teaser',
     'node--type-' ~ node.bundle|clean_class,
     node.isPromoted() ? 'node--promoted',
     node.isSticky() ? 'node--sticky',
@@ -83,114 +83,13 @@
 
 <article{{ attributes.addClass(classes) }}>
 
-  <section class="projects__regulatory-header container-fluid p-0 bg-white pt-5 pb-3">
+  <div{{ content_attributes.addClass('node__content') }}>
 
-    <div class="container">
+    <div class="d-flex flex-column node__content-teaser">    
+      <a href="{{ url }}" rel="bookmark">{{ label.0 }}</a>
+      <time>{{ node.getCreatedTime()|format_date('fecha_webcrc') }}</time>
+    <div>
 
-    
-      <h2 class="title font-weight-bold display-4">
-        {{ label.0 }}
-      </h2>
-
-      {{ drupal_breadcrumb() }}
-
-    </div>
-
-  </section>
-
-  <section class="projects__regulatory-content py-5">
-
-    <div{{ content_attributes.addClass('node__content container px-0') }}>
-
-      {# ===== ===== ITEMS INFO ===== ===== #}
-      <div class="node__content-info d-flex mb-2">
-
-        {# ===== ===== STATE ===== ===== #}
-        <div class="node__content-info--items state pr-3">
-
-          {%
-            set info_state = {
-              'icon' : content.field_estado_proyectos.0['#markup'] == 'Abierto' ? '/themes/custom/webcrc/src/images/proyecto-abierto.svg' : '/themes/custom/webcrc/src/images/proyecto-finalizado.svg',
-              'text' : content.field_estado_proyectos.0['#markup'] == 'Abierto' ? 'open Project'|trans : 'finished Project'|trans
-            }
-          %}         
-          
-        <img src="{{ info_state.icon }}"></img> {{ info_state.text }}          
-
-        </div>
-
-        {# ===== ===== SERVICES ===== ===== #}
-        <div class="node__content-info--items services px-3">         
-          {{ content.field_projects_services }}
-        </div>
-
-        {# ===== ===== Tomar la fecha de cierre de la ultima interaccion ===== ===== #}
-        {% if content.field_estado_proyectos.0['#markup'] == 'Abierto' %}
-          {% for key, value in node.field_interacciones_proyectos %}
-            {% if loop.last %}
-              {% set dateClose = content.field_interacciones_proyectos[key]['#paragraph'].field_fecha_cierre_iteracciones.value %}
-              {# ===== ===== DATE COMMENTS ===== ===== #}
-              <div class="node__content-info--items date-comments px-3">
-                <img src="/themes/custom/webcrc/src/images/aceptan-comentarios.svg"> {{ 'Comments are accepted until'|t }} {{ dateClose|date('d/M/Y') }}
-              </div>
-            {% endif %}
-          {% endfor %}
-        {% endif %}     
-
-      </div>
-      {# ===== ===== TITLE PROJECTS ===== ===== #}
-      <h1 class="node__content-title">{{ content.field_nombre_proyecto.0 }}</h1>
-
-      {# ===== ===== RESUMEN Y MECANISMOS DE PARTICIPACION E INTERACCIONES ===== ===== #}
-      <div class="row">    
-        <div class="col-8">
-
-          {# ===== ===== TIPO DE PROYECTO ===== ===== #}
-          {{ content.field_tipo_proyecto}}
-          <hr class="my-3">
-
-          {# ===== ===== RESUMEN ===== ===== #}
-          <div class="node__content-abstract">
-            {{ content.field_resumen_proyecto }}
-            
-          </div>
-
-          <hr>
-
-          {# ===== ===== INTERACCIONES ===== ===== #}
-          <div class="node__content-interactions">
-
-            <h3>{{ 'Interactions'|t }}</h3>
-
-            {{ content.field_interacciones_proyectos }} 
-            
-          </div> 
-               
-        </div>
-
-        {# ===== ===== MECANISMOS DE PARTICIPACION ===== ===== #}
-        <div class="col-4 node__content-mechanisms">
-
-          <ul class="list-group">
-
-            <li class="list-group-item active font-weigth-bold text-center"><i class="fas fa-inbox text-white"></i> {{ 'Mechanisms for participation'|trans }}</li>
-            <li class="list-group-item node__content-mechanisms--email pt-3 pb-1"><img src="/themes/custom/webcrc/src/images/email.svg"><u class="text mx-2 font-weight-bold">{{ content.field_email_proyectos.0 }}</u></li>
-            <li class="list-group-item node__content-mechanisms--enlaces py-1">            
-              {{ content.field_enlaces_proyectos }}
-            </li>
-            <li class="list-group-item node__content-mechanisms--email pt-0 pb-3"><img src="/themes/custom/webcrc/src/images/Direccion.svg"><u class="text mx-2 font-weight-bold">{{ content.field_oficina_proyecto.0 }}</u></li>
-            
-          </ul>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <section class="projects__regulatory-related">
-  </section>  
+  </div>
 
 </article>

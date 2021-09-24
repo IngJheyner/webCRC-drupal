@@ -46,23 +46,26 @@
     not paragraph.isPublished() ? 'paragraph--unpublished'
   ]
 %}
-
-{% if content.field_enlaces_proyectos.0['#markup'] == 'Formulario' %}
-    {% set icon = '/themes/custom/webcrc/src/images/Formulario.svg' %}
-{% elseif content.field_enlaces_proyectos.0['#markup'] == 'Facebook' %}
-     {% set icon = '/themes/custom/webcrc/src/images/Facebook.svg' %}
-{% else %}
-    {% set icon = '/themes/custom/webcrc/src/images/Twitter.svg' %}
-{% endif %}
-
-
 {% block paragraph %}
-
   <div{{ attributes.addClass(classes) }}>
 
     {% block content %}
-    <img src="{{ icon }}"><a href="{{ content.field_enlace_proyectos.0['#title'] }}" class="text mx-2" target="_blank">{{ content.field_enlaces_proyectos.0['#markup'] }}</a>
-  
+
+     {% if content.field_interactions_comments[0]['#markup'] == 'TRUE' %}
+      <hr>
+      <p class="my-4">
+        <img src="/themes/custom/webcrc/src/images/no-aceptan-comentarios.svg" class="mr-3" alt="{{'See interaction'|t}}" onerror="this.remove();">
+        {{ 'No comment'|t }}
+      </p>
+      <hr>
+      {{ content.field_propuestas_interacciones }}
+
+     {% else %}
+
+      {{ content.field_comentarios_interacciones}} <hr>{{ content.field_propuestas_interacciones }}
+
+     {% endif %}
+
     {% endblock %}
 
   </div>

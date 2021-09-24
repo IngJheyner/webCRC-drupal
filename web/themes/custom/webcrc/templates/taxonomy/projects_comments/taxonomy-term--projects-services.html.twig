@@ -27,6 +27,7 @@
 #}
 <div{{ attributes }}>
   {% if name and not page %}
-    <img src="{{ file_url( content.field_services_icon[0]['#media'].field_media_image.entity.uri.value) }}"> <strong>{{ name.0 }}</strong>
+    <img src="{{ file_url( content.field_services_icon[0]['#media'].field_media_image.entity.uri.value) }}" alt="{{ name.0 }}" onerror="this.remove();"> 
+    <strong>{{ name.0 }}</strong>
   {% endif %}
 </div>

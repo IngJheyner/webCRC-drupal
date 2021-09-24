@@ -1,0 +1,21 @@
+uuid: db2d0546-c441-46f3-92d9-efbc00c1963c
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.field_extemporaneous_route_file
+field_name: field_extemporaneous_route_file
+entity_type: media
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

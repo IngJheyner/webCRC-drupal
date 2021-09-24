@@ -86,6 +86,7 @@ module:
   shortcut: 0
   slick: 0
   slick_views: 0
+  structure_sync: 0
   superfish: 0
   svg_image: 0
   svg_image_responsive: 0

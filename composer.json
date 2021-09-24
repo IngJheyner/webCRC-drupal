@@ -63,6 +63,7 @@
         "drupal/slick": "^2.3",
         "drupal/slick_views": "^2.4",
         "drupal/stage_file_proxy": "^1.1",
+        "drupal/structure_sync": "^2.0",
         "drupal/styleguide": "^2.0@beta",
         "drupal/superfish": "^1.4",
         "drupal/svg_image": "^1.15",

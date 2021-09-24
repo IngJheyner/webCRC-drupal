@@ -1,0 +1,25 @@
+uuid: 80d356a5-9a4b-42d6-aad9-2f2165b9821f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_projects_documents_endings
+    - node.type.proyectos_regulatorios
+id: node.proyectos_regulatorios.field_projects_documents_endings
+field_name: field_projects_documents_endings
+entity_type: node
+bundle: proyectos_regulatorios
+label: 'Agregar documentos relacionada a un tipo de contenido.'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: projects_comments
+      display_name: entity_reference_projects_comments
+      arguments: {  }
+field_type: entity_reference
