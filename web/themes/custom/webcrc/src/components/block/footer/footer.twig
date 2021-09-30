@@ -52,32 +52,11 @@
           {{ content.field_home_footer_title_social }}
         </div>
         <div class="col-12">
-          <ul class="list-group list-group-horizontal">
-            <li class="list-group-item">
-              <a href="{{ content.field_home_footer_url_facebook[0]['#title'] }}" target="_blank">
-                {{ content.field_home_footer_logo_facebook }}
-              </a>
-            </li>
-            <li class="list-group-item">
-              <a href="{{ content.field_home_footer_url_twitter[0]['#title'] }}" target="_blank">
-                {{ content.field_home_footer_logo_twitter }}
-              </a>
-            </li>
-            <li class="list-group-item">
-              <a href="{{ content.field_home_footer_url_instagram[0]['#title'] }}" target="_blank">
-                {{ content.field_home_footer_logo_instagram }}
-              </a>
-            </li>
-            <li class="list-group-item">
-              <a href="{{ content.field_home_footer_url_youtube[0]['#title'] }}" target="_blank">
-                {{ content.field_home_footer_logo_youtube }}
-              </a>
-            </li>
-            <li class="list-group-item">
-              <a href="{{ content.field_home_footer_url_linkedin[0]['#title'] }}" target="_blank">
-                {{ content.field_home_footer_logo_linkedin }}
-              </a>
-            </li>
+          <ul class="list-group list-group-horizontal social-networks">
+            {% for key, item in content.field_social_networks if key|first != '#' %}
+              {% set social_network = item %}
+              {{ social_network }}
+            {% endfor %}
           </ul>
         </div>
       </div>

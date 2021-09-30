@@ -1,0 +1,21 @@
+uuid: 2f3d5059-948f-4b14-855f-5ff84ae86a75
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.news_crc
+  module:
+    - text
+id: node.news_crc.field_content
+field_name: field_content
+entity_type: node
+bundle: news_crc
+label: Contenido
+description: 'Contenido de toda la noticia'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

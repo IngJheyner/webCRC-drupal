@@ -2,25 +2,16 @@ uuid: 3af9c350-0131-404e-9cc8-d51ae3ad8a91
 langcode: es
 status: true
 dependencies:
-  config:
-    - field.storage.node.body
-    - search_api.server.database_server
   module:
     - node
     - search_api
+  config:
+    - search_api.server.database_server
 id: webcrc_contenido
 name: Contenido
 description: ''
 read_only: false
 field_settings:
-  webcrc_search_body:
-    label: Cuerpo
-    datasource_id: 'entity:node'
-    property_path: body
-    type: text
-    dependencies:
-      config:
-        - field.storage.node.body
   webcrc_search_label:
     label: Etiqueta
     property_path: aggregated_field
@@ -44,7 +35,7 @@ datasource_settings:
     bundles:
       default: false
       selected:
-        - article
+        - news_crc
     languages:
       default: true
       selected: {  }
@@ -55,7 +46,6 @@ processor_settings:
   ignorecase:
     all_fields: false
     fields:
-      - webcrc_search_body
       - webcrc_search_label
       - webcrc_search_title
     weights:
@@ -66,7 +56,6 @@ processor_settings:
   tokenizer:
     all_fields: false
     fields:
-      - webcrc_search_body
       - webcrc_search_label
     ignored: ._-
     spaces: ''
@@ -78,7 +67,6 @@ processor_settings:
   transliteration:
     all_fields: false
     fields:
-      - webcrc_search_body
       - webcrc_search_label
       - webcrc_search_title
     weights:

@@ -6,7 +6,52 @@
 #}
 <div class="page">
   
-  {% if page.header %}
+  {% embed '@webcrc/block/header/header.twig' with {
+    placement: 'sticky-top',
+    container: 'fixed',
+    color: 'light',
+    utility_classes: ['bg-light']
+  } %}
+    
+    {% block toolbar_left %}
+      {% if page.toolbar_left %}
+        {{ page.toolbar_left }}
+      {% endif %}
+    {% endblock %}
+    
+    {% block toolbar_right %}
+      {% if page.toolbar_right %}
+        {{ page.toolbar_right }}
+      {% endif %}
+    {% endblock %}
+
+    {% block logo %}
+      {% if page.logo %}
+        {{ page.logo }}
+      {% endif %}
+    {% endblock %}
+
+    {% block search %}
+      {% if page.search %}
+        {{ page.search }}
+      {% endif %}
+    {% endblock %}
+
+    {% block menu %}
+      {% if page.main_menu %}
+        {{ page.main_menu }}
+      {% endif %}
+    {% endblock %}
+
+    {% block top_a %}
+      {% if page.top_a %}
+        {{ page.top_a }}
+      {% endif %}
+    {% endblock %}
+
+  {% endembed %}
+
+  {# {% if page.header %}
     <header class="page__header">
       <div class="container-fluid p-0">
         {{ page.header }}
@@ -14,7 +59,7 @@
     </header>
   {% endif %}
 
-  <div class="page__top_a">
+   <div class="page__top_a">
     <div class="container-fluid p-0">
       {% if page.primary_menu %}
         <nav class="nav-main-menu home-menu">
@@ -27,7 +72,7 @@
         </div>
       {% endif %}
     </div>
-  </div>
+  </div> #}
 
   {% if page.top_b %}
     <div class="page__top_b">
@@ -48,6 +93,16 @@
       </div>
     {% endif %}
   </main>
+
+  {% if page.bottom_a %}
+    <div class="page__bottom_a pl-5 pr-5">
+      <div class="container-fluid p-0">
+        <div id="bottom_a" class="d-flex pl-5 pr-5">
+          {{ page.bottom_a }}
+        </div>
+      </div>
+    </div>
+  {% endif %}
 
   <footer class="page__footer">
     <div class="container-fluid">

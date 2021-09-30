@@ -1,0 +1,29 @@
+uuid: 3f1d203c-b0c2-4a1d-982c-600dffd4f368
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content_icon
+    - media.type.images_icons
+    - paragraphs.paragraphs_type.list_social_networks
+id: paragraph.list_social_networks.field_content_icon
+field_name: field_content_icon
+entity_type: paragraph
+bundle: list_social_networks
+label: 'Icono red social'
+description: 'Icono principal de la red social'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      images_icons: images_icons
+    sort:
+      field: created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

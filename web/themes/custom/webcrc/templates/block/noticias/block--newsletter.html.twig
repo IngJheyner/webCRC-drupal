@@ -1,0 +1,26 @@
+{% set classes = [
+  'block newsletter-container',
+  bundle ? 'block--' ~ bundle|clean_class,
+  id ? 'block--' ~ id|replace({"_": "-"})|clean_class,
+]|merge(utility_classes ? utility_classes : []) %}
+
+<div {{ attributes|without('id').addClass(classes) }}>
+
+  {% block content %}
+    <div class="d-flex mt-0 mb-2 p-0">
+      <div class="media">
+        <span class="align-self-center">
+          {{ content.field_icon }}
+        </span>
+        <div class="media-body ml-3 align-self-center">
+          <h2 class="mb-0 title-two-colors">
+            {{ content.field_content_title_primary }} {{ content.field_content_title }}
+          </h2>
+        </div>
+      </div>
+    </div>
+    {{ content.field_content_description }}
+    <br />
+    {{ content.field_content_form }}
+  {% endblock %}
+</div>

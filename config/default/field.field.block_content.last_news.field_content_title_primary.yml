@@ -1,0 +1,19 @@
+uuid: a40c0a0a-22b3-4ba7-aa92-163c843428b9
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.last_news
+    - field.storage.block_content.field_content_title_primary
+id: block_content.last_news.field_content_title_primary
+field_name: field_content_title_primary
+entity_type: block_content
+bundle: last_news
+label: 'Titulo primario'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,85 @@
+{#
+/**
+ * @file
+ * Template for the tabs paragraph.
+ */
+#}
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+    'nav',
+    'nav-pills',
+    'mb-0',
+    'nav-justified'
+  ]
+%}
+
+{# Sets Unique ID for Accordion from Paragraph ID. #}
+{% set section_id = 'section' ~ paragraph.id.value %}
+{% set tab_id = 'tab' ~ paragraph.id.value %}
+
+{% block paragraph %}
+  {% block content %}
+    <div class="tabs-container tabs-primary">
+      <ul {{ attributes.addClass(classes) }} id="pills-tab" role="tablist">
+        {% for key, item in content.field_tabs_content if key|first != '#' %}
+          <li class="nav-item" 
+              role="presentation">
+            <a  class="field__item  nav-link {{ key == 0 ? 'active' : null }}" 
+                id="pills-{{ tab_id }}-{{ key + 1 }}-tab" 
+                data-toggle="pill" 
+                href="#pills-counted-contents-{{ section_id }}-{{ key + 1 }}"
+                role="tab" 
+                aria-controls="pills-{{ section_id }}-{{ key + 1 }}"
+                aria-selected="true">
+              {% set section_header = item %}
+              {{ section_header }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+
+      <div class="tab-content" id="pills-tabContent">
+        {% for key, item in content.field_tabs_content if key|first != '#' %}
+          <div  class="tab-pane fade {{ key == 0 ? 'show active' : null }}" 
+                id="pills-counted-contents-{{ section_id }}-{{ key + 1 }}"
+                role="tabpanel" 
+                aria-labelledby="pills-{{ tab_id }}-{{ key + 1 }}-tab"
+                tabindex="0" >
+            {% for body_key, body_item in item['#paragraph'].field_tab_content if key|first != '#' %}
+
+              {# Use the same render array as item and set the '#paragraph'. #}
+              {% set section_body = item %}
+
+              {% set lang = section_body['#paragraph'].langcode[0].value %}
+
+              {# Check if a translation exists #}
+              {% if section_body['#paragraph'].field_tab_content[body_key].entity.hasTranslation(lang) %}
+
+                {# Load the entity for the current translation #}
+                {% set section_translation= section_body['#paragraph'].field_tab_content[body_key].entity.getTranslation(lang) %}
+            
+              {% else %}
+
+                {# Load the source entity #}
+                {% set section_translation= section_body['#paragraph'].field_tab_content[body_key].entity %}
+
+              {% endif %}
+
+              {% set section_body = section_body|merge({'#paragraph': section_translation}) %}
+
+              {# Remove the cache keys so it doesn't repeat the first value. #}
+              {% set section_body = section_body|merge({'#cache': {}}) %}
+            
+              {# Print the compiled section body. #}
+              {{ section_body }}
+            {% endfor %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  {% endblock %}
+{% endblock paragraph %}

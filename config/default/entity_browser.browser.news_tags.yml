@@ -1,0 +1,31 @@
+uuid: c3a7b2dd-19bf-40a2-a50b-d62e1f8daa1e
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.tags
+  module:
+    - views
+name: news_tags
+label: 'Tags noticias'
+display: modal
+display_configuration:
+  width: '850'
+  height: '750'
+  link_text: 'Seleccione etiquetas'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: single
+widget_selector_configuration: {  }
+widgets:
+  76a723dd-3ca6-420a-bace-e022c6d44a3d:
+    settings:
+      view: tags
+      view_display: entity_browser_2
+      submit_text: 'Seleccione tag'
+      auto_select: false
+    uuid: 76a723dd-3ca6-420a-bace-e022c6d44a3d
+    weight: 1
+    label: Tags
+    id: view

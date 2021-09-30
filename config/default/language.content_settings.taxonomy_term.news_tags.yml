@@ -1,0 +1,11 @@
+uuid: 2774560d-a856-4916-ab8a-588a20860e44
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.news_tags
+id: taxonomy_term.news_tags
+target_entity_type_id: taxonomy_term
+target_bundle: news_tags
+default_langcode: site_default
+language_alterable: false

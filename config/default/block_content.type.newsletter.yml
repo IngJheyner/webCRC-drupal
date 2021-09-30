@@ -1,0 +1,8 @@
+uuid: f88dcc24-99fc-4ffb-a863-9c57c09ad2bb
+langcode: es
+status: true
+dependencies: {  }
+id: newsletter
+label: 'Botetin de noticias'
+revision: 0
+description: 'Formulario del boletin de noticias del pie de pagina'

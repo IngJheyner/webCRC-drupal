@@ -1,0 +1,46 @@
+uuid: 5505c451-5139-4cc8-89cb-132d5f126d37
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tabs_content
+    - paragraphs.paragraphs_type.tab_header
+    - paragraphs.paragraphs_type.tabs_wrapper_secondary
+  module:
+    - entity_reference_revisions
+id: paragraph.tabs_wrapper_secondary.field_tabs_content
+field_name: field_tabs_content
+entity_type: paragraph
+bundle: tabs_wrapper_secondary
+label: 'Tabs items'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      tab_header: tab_header
+    target_bundles_drag_drop:
+      from_library:
+        weight: 7
+        enabled: false
+      postdata_indicators:
+        weight: 8
+        enabled: false
+      tab_content:
+        weight: 11
+        enabled: false
+      tab_header:
+        enabled: true
+        weight: 12
+      tabs_wrapper:
+        weight: 9
+        enabled: false
+      tabs_wrapper_secondary:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

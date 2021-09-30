@@ -1,0 +1,23 @@
+uuid: 15ac723e-05e9-4ff9-aef7-da0df763d27f
+langcode: es
+status: true
+dependencies:
+  config:
+    - search_api.index.webcrc_contenido
+id: primary_search
+label: Buscador
+path: busqueda
+clean_url: true
+show_all_when_no_keys: false
+index: webcrc_contenido
+limit: 10
+searched_fields:
+  webcrc_search_label: webcrc_search_label
+style: view_modes
+view_mode_configuration:
+  'entity:node':
+    default: default
+    overrides:
+      news_crc: ''
+show_search_form: true
+parse_mode: terms

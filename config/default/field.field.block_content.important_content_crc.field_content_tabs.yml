@@ -1,0 +1,49 @@
+uuid: a39e8209-e24a-4b5d-b8e5-a3d6b0fb6751
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.important_content_crc
+    - field.storage.block_content.field_content_tabs
+    - paragraphs.paragraphs_type.tabs_wrapper_vertical
+  module:
+    - entity_reference_revisions
+id: block_content.important_content_crc.field_content_tabs
+field_name: field_content_tabs
+entity_type: block_content
+bundle: important_content_crc
+label: 'Items contenidos mas importantes'
+description: 'Tabs Contenidos mas importantes de la crc'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      tabs_wrapper_vertical: tabs_wrapper_vertical
+    target_bundles_drag_drop:
+      from_library:
+        weight: 8
+        enabled: false
+      postdata_indicators:
+        weight: 9
+        enabled: false
+      tab_content:
+        weight: 13
+        enabled: false
+      tab_header:
+        weight: 14
+        enabled: false
+      tabs_wrapper:
+        weight: 10
+        enabled: false
+      tabs_wrapper_secondary:
+        weight: 11
+        enabled: false
+      tabs_wrapper_vertical:
+        enabled: true
+        weight: 12
+field_type: entity_reference_revisions

@@ -1,0 +1,15 @@
+{#
+/**
+ * @file
+ * Template for a Toolbar Header
+ */
+#}
+{% set classes = [
+  'block',
+  bundle ? 'block--' ~ bundle|clean_class,
+  id ? 'block--' ~ id|replace({"_": "-"})|clean_class,
+]|merge(utility_classes ? utility_classes : []) %}
+
+{% block content %} 
+  {{ content.field_home_header_logo_govco }}
+{% endblock %} 

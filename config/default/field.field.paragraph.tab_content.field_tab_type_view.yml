@@ -13,7 +13,7 @@ entity_type: paragraph
 bundle: tab_content
 label: 'Tipo de vista'
 description: 'Seleccione una vista que desee que se visualize en la pestaña'
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
@@ -42,6 +42,7 @@ settings:
     home_slideshow: 0
     media: 0
     media_library: 0
+    news: 0
     paragraphs_library: 0
     paragraphs_library_browser: 0
     redirect: 0

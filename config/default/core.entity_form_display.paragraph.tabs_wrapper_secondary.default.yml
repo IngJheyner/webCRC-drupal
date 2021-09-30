@@ -1,0 +1,29 @@
+uuid: 4bcd9813-ef7f-4791-83c5-c34cd1ef7b68
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tabs_wrapper_secondary.field_tabs_content
+    - paragraphs.paragraphs_type.tabs_wrapper_secondary
+  module:
+    - paragraphs
+id: paragraph.tabs_wrapper_secondary.default
+targetEntityType: paragraph
+bundle: tabs_wrapper_secondary
+mode: default
+content:
+  field_tabs_content:
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
+    region: content
+hidden:
+  created: true
+  status: true
