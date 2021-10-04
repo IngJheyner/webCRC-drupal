@@ -131,9 +131,35 @@
                 ftnInter(code, iframeC, nameRouteFile);
                         
             });
+            
+            /*===========================================
+            TABLE JQUERY VIEW PROJECTS COMMENTS
+            =============================================*/
+             
+            function filterColumn ( i ) {
+                $('#table__projects-regulatory').DataTable().column( i ).search(
+                    $('#col'+i+'_filter').val(),
+                    //$('#col'+i+'_regex').prop('checked'),
+                    //$('#col'+i+'_smart').prop('checked')
+                ).draw();
+            }
+             
+            $('#table__projects-regulatory').once('webcrc').each(function () {
+                $('#table__projects-regulatory').dataTable({
+                    //"searching": false,
+                    "pagingType": "simple",
+                    "lengthChange": false,
+                    "pageLength": 10
+                });
+
+                $('input.column_filter').on( 'keyup click', function () {
+                    filterColumn( $(this).parents('div').attr('data-column') );
+                });
+                $('select.column_filter').on( 'change', function () {
+                    filterColumn( $(this).parents('div').attr('data-column') );
+                });
+            });           
 
         }
-
     };
-
 }(jQuery, Drupal));

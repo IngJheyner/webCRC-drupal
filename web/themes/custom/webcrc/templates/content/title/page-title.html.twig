@@ -1,0 +1,25 @@
+{#
+/**
+ * @file
+ * Template for the page title.
+ */
+#}
+{{ title_prefix }}
+
+{% if title %}
+
+  <section class="header__title container-fluid bg-white pt-5 pb-3">
+
+    <div class="container px-0">
+    
+      <h2{{ title_attributes.addClass('title font-weight-bold display-4') }}>{{ title }}</h2>
+
+      {{ drupal_breadcrumb() }}
+
+    </div>
+
+  </section>
+
+{% endif %}
+
+{{ title_suffix }}

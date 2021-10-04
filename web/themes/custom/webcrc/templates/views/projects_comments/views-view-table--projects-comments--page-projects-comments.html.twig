@@ -1,0 +1,165 @@
+{#
+/**
+ * @file
+ * Default theme implementation for displaying a view as a bootstrap table.
+ *
+ * Available variables:
+ * - attributes: Remaining HTML attributes for the element.
+ *   - class: HTML classes that can be used to style contextually through CSS.
+ * - title : The title of this group of rows.
+ * - header: The table header columns.
+ *   - attributes: Remaining HTML attributes for the element.
+ *   - content: HTML classes to apply to each header cell, indexed by
+ *   the header's key.
+ *   - default_classes: A flag indicating whether default classes should be
+ *     used.
+ * - caption_needed: Is the caption tag needed.
+ * - caption: The caption for this table.
+ * - accessibility_description: Extended description for the table details.
+ * - accessibility_summary: Summary for the table details.
+ * - rows: Table row items. Rows are keyed by row number.
+ *   - attributes: HTML classes to apply to each row.
+ *   - columns: Row column items. Columns are keyed by column number.
+ *     - attributes: HTML classes to apply to each column.
+ *     - content: The column content.
+ *   - default_classes: A flag indicating whether default classes should be
+ *     used.
+ * - responsive: A flag indicating whether table is responsive.
+ * - sticky: A flag indicating whether table header is sticky.
+ *
+ * @see template_preprocess_views_bootstrap_table()
+ *
+ * @ingroup themeable
+ */
+#}
+{%
+  set classes = [
+    'cols-' ~ header|length,    
+    sticky ? 'sticky-enabled',
+  ]
+%}
+
+{% if responsive %}
+  <div class="table-responsive">
+{% endif %}
+
+{{ attach_library('webcrc_projects_regulatory/webcrc_projects_datatable') }}
+{{ attach_library('webcrc_projects_regulatory/webcrc_projects_regulatory') }}
+
+{# ============================================
+FORMULARIO DE BUSQUEDA
+=============================================== #}
+
+<form action="" method='' class="form-group" id="form__projects-comments">
+
+  <div id="filter_col0" data-column="0">
+    <input type='text' id='col0_filter' class="column_filter form-control" placeholder="{{'Name or title: Improvement of mobile networks, Analysis of communication media ...'|t}}">
+  </div>
+  <hr>
+
+  <div class="input__projects d-flex">
+    <div id="filter_col1" data-column="1" class="my-3">
+      <label for='projects-state'>{{'State'|t}}</label>
+      <select id='col1_filter' class="column_filter">
+      <option value=''>Seleccione...</option>
+        {% for statee in state %}
+          <option value='{{statee}}'>{{statee}}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div id="filter_col6" data-column="6" class="my-3">
+      <label for='projects-service'>{{'Service'|t}}</label>
+      <select id='col6_filter' class="column_filter">
+      <option value=''>Seleccione...</option>
+        {% for services in type_services %}
+          <option value='{{services}}'>{{services}}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div id="filter_col4" data-column="4" class="my-3">
+      <label for='projects-service'>{{'Project type'|t}}</label>
+      <select id='col4_filter' class="column_filter">
+      <option value=''>Seleccione...</option>
+        {% for type in type_typeprojects %}
+          <option value='{{type}}'>{{type}}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div class="my-3">a</div>
+  </div>
+
+
+</form>
+
+<section class='table__projects bg-white rounded-lg table'>
+  <table{{ attributes.addClass(classes) }} id="table__projects-regulatory"> 
+    
+    {% if header %}
+      <thead>
+        <tr>
+          {% for key, column in header %}
+            {% if column.default_classes %}
+              {%
+                set column_classes = [
+                  'views-field',
+                  'views-field-' ~ fields[key],
+                ]
+              %}
+            {% endif %}
+            <th{{ column.attributes.addClass(column_classes).setAttribute('scope', 'col') }}>
+              {%- if column.wrapper_element -%}
+                <{{ column.wrapper_element }}>
+                  {%- if column.url -%}
+                    <a href="{{ column.url }}" title="{{ column.title }}">{{ column.content }}{{ column.sort_indicator }}</a>
+                  {%- else -%}
+                    {{ column.content }}{{ column.sort_indicator }}
+                  {%- endif -%}
+                </{{ column.wrapper_element }}>
+              {%- else -%}
+                {%- if column.url -%}
+                  <a href="{{ column.url }}" title="{{ column.title }}">{{ column.content }}{{ column.sort_indicator }}</a>
+                {%- else -%}
+                  {{- column.content }}{{ column.sort_indicator }}
+                {%- endif -%}
+              {%- endif -%}
+            </th>
+          {% endfor %}
+        </tr>
+      </thead>
+    {% endif %}
+    <tbody>
+      {% for row in rows %}
+        <tr{{ row.attributes }}>
+          {% for key, column in row.columns %}
+            {% if column.default_classes %}
+              {%
+                set column_classes = [
+                  'views-field'
+                ]
+              %}
+              {% for field in column.fields %}
+                {% set column_classes = column_classes|merge(['views-field-' ~ field]) %}
+              {% endfor %}
+            {% endif %}
+            <td{{ column.attributes.addClass(column_classes) }}>
+              {%- if column.wrapper_element -%}
+                <{{ column.wrapper_element }}>
+                {% for content in column.content %}
+                  {{ content.separator }}{{ content.field_output }}
+                {% endfor %}
+                </{{ column.wrapper_element }}>
+              {%- else -%}
+                {% for content in column.content %}
+                  {{- content.separator }}{{ content.field_output -}}
+                {% endfor %}
+              {%- endif %}
+            </td>
+          {% endfor %}
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+{% if responsive %}
+  </div>
+{% endif %}

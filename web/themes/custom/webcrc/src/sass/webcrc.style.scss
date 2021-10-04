@@ -46,6 +46,7 @@
 // Base
 // -----------------------------------------------------------------------------
 @import "base/mixins";
+@import "base/mixins/mixins";
 @import "base/functions";
 @import "base/helpers";
 @import "base/elements";
@@ -75,6 +76,7 @@
 @import "block/_block.top.a";
 @import "content/node.page";
 @import "content/node.article";
+@import "content/title/title";
 
 // PROYECTOS REGULATORIOS
 // -----------------------------------------------------------------------------
@@ -83,7 +85,3 @@
 // NORMATIVIDAD
 // -----------------------------------------------------------------------------
 @import "content/normativity/normativity";
-
-// MEDIA QUERY
-// -----------------------------------------------------------------------------
-@import "./base/mixins/media-query";

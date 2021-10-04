@@ -9,16 +9,16 @@
 #}
 {% if breadcrumb %}
   <nav aria-label="breadcrumb" class="{{ utility_classes|join(' ') }}">
-    <ol class="breadcrumb">
+    <ol class="breadcrumb flex-column flex-md-row">
       {% for item in breadcrumb %}
-        <li class="breadcrumb-item {{ not item.url ? 'active' }}">
+        <li class="breadcrumb-item {{ not item.url ? 'active mx-0 mx-md-2' }}">
           {% if item.url %}
-            <a href="{{ item.url }}">{{ item.text }}</a> /
+            <a href="{{ item.url }}">{{ item.text }}</a> <span class="d-none d-md-block">/</span>
           {% else %}
             {% if loop.last %}
               {{ item.text }}
             {% else %}
-              {{ item.text }} /
+              {{ item.text }} <span class="d-none d-md-block">/</span>
             {% endif %}
           {% endif %}
         </li>

@@ -13,6 +13,19 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name" : "datatables/datatables",
+                "version": "1.10.21",
+                "type": "drupal-library",
+                "source": {
+                    "url": "https://github.com/DataTables/DataTables.git",
+                    "type": "git",
+                    "reference": "tags/1.10.21"
+                }
+            }
         }
     ],
     "require": {
@@ -30,6 +43,7 @@
         "drupal/config_split": "^1.7",
         "drupal/core-composer-scaffold": "^9.2",
         "drupal/core-recommended": "^9.1",
+        "drupal/datatables": "^2.0",
         "drupal/dropzonejs": "^2.5",
         "drupal/easy_breadcrumb": "^2.0",
         "drupal/entity_browser": "^2.6",
@@ -70,11 +84,13 @@
         "drupal/twig_tweak": "^3.1",
         "drupal/ultimate_cron": "^2.0@alpha",
         "drupal/verf": "^1.0",
+        "drupal/views_bootstrap": "^4.3",
         "drupal/viewsreference": "^2.0@beta",
         "drupal/webform": "^6.0@alpha",
         "drupal/xmlsitemap": "^1.0",
         "drush/drush": "^10.3",
-        "kint-php/kint": "^3.3"
+        "kint-php/kint": "^3.3",
+        "datatables/datatables": "^1.10"
     },
     "require-dev": {
         "metadrop/drupal-dev": "^0.1"

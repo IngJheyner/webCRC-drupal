@@ -8,3 +8,11 @@ webcrc_projects_regulatory:
       css/webcrc-projects-regulatory.css: {}
   dependencies:
     - core/drupalSettings
+
+# DataTable jquery
+webcrc_projects_datatable:
+  js:
+    lib/DataTables/datatables.min.js: {}
+  css:
+    component:
+      lib/DataTables/datatables.min.css: {}

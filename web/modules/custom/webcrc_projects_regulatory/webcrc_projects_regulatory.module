@@ -8,6 +8,7 @@
 * @see https://www.drupal.org/node/2217931
 */
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\paragraphs\Entity\Paragraph;
 /**
 * Implements hook_form_alter().
 */
@@ -31,3 +32,73 @@ function webcrc_projects_regulatory_preprocess_field(&$variables, $hook){
   }  
   
 }
+
+/**
+ * Implements hook_preprocess_views_view_table()
+ */
+function webcrc_projects_regulatory_preprocess_views_view_table(&$variables){
+
+  if($variables['theme_hook_original'] === 'views_view_table__projects_comments__page_projects_comments'){
+
+    /* ===== ===== TERMINOS DE TAXONOMIA SERVICIOS ===== ===== */
+    $tax_services = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->loadTree('projects_services');
+    $services = [];
+    for($i=0; $i<count($tax_services); $i++){
+      array_push($services, $tax_services[$i]->name);
+    }   
+    $variables['type_services'] = $services;
+
+    /* ===== ===== TIPO DE PROYECTO ===== ===== */
+    $variables['type_typeprojects'] = $variables['view']->filter['field_tipo_proyecto_value']->getValueOptions();
+
+    /* ===== ===== TIPO DE PROYECTO ===== ===== */
+    $variables['state'] = $variables['view']->filter['field_estado_proyectos_value']->getValueOptions();
+
+  }
+  
+}
+
+/**
+ * Implements hook_preprocess_views_view_field()
+ */
+function webcrc_projects_regulatory_preprocess_views_view_field(&$variables) {
+  $view = $variables['view'];
+  $field = $variables['field'];
+  $row = $variables['row'];
+  
+  if($view->storage->id() == 'projects_comments'){
+
+    if($view->current_display == 'page_projects_comments'){      
+        
+      //array_push($my_field_value, end($result->_entity->get('field_interacciones_proyectos')->getValue()));
+      if($field->field == 'field_interacciones_proyectos'){
+
+        $field = end($row->_entity->get('field_interacciones_proyectos')->getValue());
+        $paragraph = Paragraph::load($field['target_id']);
+        $definition_interactions = $paragraph->get('field_interactions_comments')[0]->getValue()['value'];
+
+        if($definition_interactions == 0){
+          $variables['output'] = ['#markup' => '<img src="/themes/custom/webcrc/src/images/aceptan-comentarios.svg" class="mr-3" alt="See interaction" onerror="this.remove();"><span class="d-none">FALSE</span>'];          
+        }else{
+          $variables['output'] =['#markup' => '<img src="/themes/custom/webcrc/src/images/no-aceptan-comentarios.svg" class="mr-3" alt="See interaction" onerror="this.remove();"><span class="d-none">TRUE</span>'];
+        }
+      }
+
+      if($field->field == 'nothing'){
+
+        $field = end($row->_entity->get('field_interacciones_proyectos')->getValue());
+        $paragraph = Paragraph::load($field['target_id']);
+        $dateTime = strtotime($paragraph->get('field_fecha_cierre_iteracciones')[0]->getValue()['value']);
+        $variables['output'] = \Drupal::service('date.formatter')->format($dateTime, 'fecha_corta_webcrc');
+
+      }      
+        
+    }
+  }
+
+  //$variables['info'] = $field->field;
+    
+}
+  
+  
+  

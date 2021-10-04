@@ -83,30 +83,15 @@
 
 <article{{ attributes.addClass(classes) }}>
 
-  <section class="projects__regulatory-header container-fluid p-lg-0 bg-white pt-5 pb-3">
+  <section class="projects__regulatory-content pt-4 pt-md-5">
 
-    <div class="container">
-
-    
-      <h2 class="title font-weight-bold display-4">
-        {{ label.0 }}
-      </h2>
-
-      {{ drupal_breadcrumb() }}
-
-    </div>
-
-  </section>
-
-  <section class="projects__regulatory-content pt-4 pt-lg-5">
-
-    <div{{ content_attributes.addClass('node__content container px-lg-0') }}>
+    <div{{ content_attributes.addClass('node__content container px-md-0') }}>
 
       {# ===== ===== ITEMS INFO ===== ===== #}
-      <div class="node__content-info row mb-4">
+      <div class="node__content-info container d-flex flex-column flex-md-row px-0 mb-3">
 
         {# ===== ===== STATE ===== ===== #}
-        <div class="node__content-info--items state col-xs-12 col-md-3 order-1 d-flex mb-2 mb-lg-0">
+        <div class="node__content-info--items state d-flex">
 
           {%
             set info_state = {
@@ -116,13 +101,13 @@
             }
           %}         
           
-          <img src="{{ info_state.icon }}" class="d-block mx-auto" alt="{{ info_state.alt }}" onerror="this.remove();">
+          <img src="{{ info_state.icon }}" alt="{{ info_state.alt }}" onerror="this.remove();">
           <p class="m-auto flex-grow-1 flex-lg-grow-0 pl-1 pl-lg-0">{{ info_state.text }}</p>        
 
         </div>
 
         {# ===== ===== SERVICES ===== ===== #}
-        <div class="node__content-info--items services col-xs-12 col-md order-3 order-lg-2 order-lg-2 mt-2 mt-lg-0">         
+        <div class="node__content-info--items services order-lg-2 order-lg-2 px-lg-2">         
           {{ content.field_projects_services }}         
         </div>
 
@@ -133,15 +118,15 @@
             {% if loop.last %}
               {% set dateClose = content.field_interacciones_proyectos[key]['#paragraph'].field_fecha_cierre_iteracciones.value %}
 
-              <div class="node__content-info--items date-comments col-xs-12 col-md order-2 order-lg-3 d-flex flex-row mb-2 mb-lg-0">
+              <div class="node__content-info--items date-comments order-2 order-lg-3 d-flex mb-2 mb-lg-0 px-lg-2">
 
-                <img src="/themes/custom/webcrc/src/images/aceptan-comentarios.svg" class="d-block mx-auto" alt="{{ 'Comments are accepted until'|t }}"> 
+                <img src="/themes/custom/webcrc/src/images/aceptan-comentarios.svg" alt="{{ 'Comments are accepted until'|t }}"> 
 
                 <p class="m-auto text-left pl-1 pl-lg-0 flex-grow-1 flex-lg-grow-0">
 
                   {{ 'Comments are accepted until'|t }}
 
-                  {{ dateClose|date('U')|format_date('fecha_corta_webcrc') }}
+                  <time datetime='{{ dateClose|date('U')|format_date('fecha_corta_webcrc') }}'>{{ dateClose|date('U')|format_date('fecha_corta_webcrc') }}</time>
 
                 </p>               
               </div>              
@@ -208,16 +193,16 @@
         </div>
 
         {# ===== ===== MECANISMOS DE PARTICIPACION ===== ===== #}
-        <div class="col-12 col-lg-4 node__content-mechanisms">
+        <div class="col-12 col-lg-4 node__content-mechanisms mt-4 mt-md-0">
 
           <ul class="list-group">
 
-            <li class="list-group-item active font-weigth-bold text-center"><i class="fas fa-inbox text-white"></i> {{ 'Mechanisms for participation'|trans }}</li>
-            <li class="list-group-item node__content-mechanisms--email pt-3 pb-1"><img src="/themes/custom/webcrc/src/images/email.svg"><u class="text mx-2 font-weight-bold">{{ content.field_email_proyectos.0 }}</u></li>
-            <li class="list-group-item node__content-mechanisms--enlaces py-1">            
+            <li class="list-group-item active font-weigth-bold text-left text-md-center px-2 px-md-4"><i class="fas fa-inbox text-white"></i> {{ 'Mechanisms for participation'|trans }}</li>
+            <li class="list-group-item node__content-mechanisms--email pt-3 pb-1 px-2 px-md-4"><img src="/themes/custom/webcrc/src/images/email.svg"><a href="mailto:{{ content.field_email_proyectos.0 }}?Subject=Cordial%20saludo%20señores%20de%20la%20CRC" class="text mx-2 font-weight-bold">{{ content.field_email_proyectos.0 }}</a></li>
+            <li class="list-group-item node__content-mechanisms--enlaces py-1 px-2 px-md-4">            
               {{ content.field_enlaces_proyectos }}
             </li>
-            <li class="list-group-item node__content-mechanisms--email pt-0 pb-3"><img src="/themes/custom/webcrc/src/images/Direccion.svg"><u class="text mx-2 font-weight-bold">{{ content.field_oficina_proyecto.0 }}</u></li>
+            <li class="list-group-item node__content-mechanisms--email pt-0 pb-3 px-2 px-md-4"><img src="/themes/custom/webcrc/src/images/Direccion.svg"><u class="text mx-2 font-weight-bold">{{ content.field_oficina_proyecto.0 }}</u></li>
             
           </ul>
 

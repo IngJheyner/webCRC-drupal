@@ -20418,6 +20418,9 @@ readers do not read off random characters that represent icons */
   content: "\E56B";
 }
 
+/* ==============================
+ENCABEZADO
+============================== */
 /* ===== ===== TEXTO ===== ===== */
 /* ===== ===== FONDO ===== ===== */
 /* ===== ===== BOTONES y Anclas ===== ===== */
@@ -20455,6 +20458,12 @@ main a {
 .page__header .header-webcrc .logo-crc {
   background-image: repeating-linear-gradient(-70deg, transparent 0, transparent 9%, #f42e62 0, #f42e62);
   padding: 15px 0;
+}
+
+.page__content {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 footer.page__footer {
@@ -21006,37 +21015,43 @@ ol.breadcrumb li.breadcrumb-item.active {
   line-height: 1;
 }
 
+section.header__title {
+  position: relative;
+}
+@media (min-width: 768px) {
+  section.header__title::after {
+    content: "";
+    position: absolute;
+    bottom: -8%;
+    left: 25%;
+    border-top: 20px solid white;
+    border-top-color: inherit;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    color: white;
+  }
+}
+
 /* ===== ===== TEXTO ===== ===== */
 /* ===== ===== FONDO ===== ===== */
 /* ===== ===== BOTONES y Anclas ===== ===== */
+/* ==============================
+INTERNAS
+============================== */
 /* ===== ===== MIXIN ACCORDION ===== ===== */
-article.projects__regulatory section.projects__regulatory-header {
-  position: relative;
-}
-article.projects__regulatory section.projects__regulatory-header::after {
-  content: "";
-  position: absolute;
-  bottom: -8%;
-  left: 25%;
-  border-top: 20px solid white;
-  border-top-color: inherit;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  color: white;
-}
 article.projects__regulatory section.projects__regulatory-content {
   background-color: #EBEBEB;
 }
-article.projects__regulatory section.projects__regulatory-content div.node__content div.node__content-info > div.node__content-info--items {
-  border-right: 1px solid #D6D6D6;
-}
 article.projects__regulatory section.projects__regulatory-content div.node__content div.node__content-info > div.node__content-info--items.state {
-  min-width: 185px;
-  height: 80px;
-  max-height: 80px;
+  min-width: 240px;
 }
 article.projects__regulatory section.projects__regulatory-content div.node__content div.node__content-info > div.node__content-info--items.date-comments {
   max-height: 80px;
+}
+@media (min-width: 768px) {
+  article.projects__regulatory section.projects__regulatory-content div.node__content div.node__content-info > div.node__content-info--items {
+    border-right: 1px solid #D6D6D6;
+  }
 }
 article.projects__regulatory section.projects__regulatory-content div.node__content div.node__content-info > div.node__content-info--items:last-child {
   border: 0;
@@ -21152,7 +21167,3 @@ article.projects__regulatory section.projects__regulatory-content div.node__cont
     max-width: 625px;
   }
 }
-
-/* ==============================
-MEDIA QUERY
-============================== */

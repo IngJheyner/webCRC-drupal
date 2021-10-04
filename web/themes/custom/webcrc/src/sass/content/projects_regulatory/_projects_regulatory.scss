@@ -1,5 +1,8 @@
 @use '../../base/variables/variables' as var;
 
+/* ==============================
+INTERNAS
+============================== */
 @mixin accordion-title($selector...) {
 
     @for $i from 0 to length($selector){
@@ -65,24 +68,8 @@
     
 }
 
-article.projects__regulatory{
-
-    section.projects__regulatory-header{
-
-        position: relative;
-
-        &::after{
-            content: "";
-            position: absolute;
-            bottom: -8%;
-            left: 25%;
-            border-top: 20px solid white;
-            border-top-color: inherit;
-            border-left: 20px solid transparent;
-            border-right: 20px solid transparent;
-            color: white;
-        }        
-    }
+article.projects__regulatory{   
+    
 
     section.projects__regulatory-content{
 
@@ -93,14 +80,14 @@ article.projects__regulatory{
             div.node__content-info > div.node__content-info--items{
                 
                 &.state{
-                    min-width: 185px;
-                    height: 80px;
-                    max-height: 80px;
+                    min-width: 240px;
                 }
                 &.date-comments{
                     max-height: 80px;
                 }
-                border-right: 1px solid var.$bg-color-secundary;
+                @include media-breakpoint-up(md){
+                    border-right: 1px solid var.$bg-color-secundary;
+                }
 
                 &:last-child{
                     border: 0;
@@ -145,7 +132,3 @@ article.projects__regulatory{
     }
 
 }
-
-/* ==============================
-MEDIA QUERY
-============================== */
