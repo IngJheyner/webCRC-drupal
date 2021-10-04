@@ -1,0 +1,46 @@
+uuid: 501ed6b2-0488-41a5-9ca1-a634aa5f9a28
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.tabs_social_networks
+    - field.storage.block_content.field_content_tabs
+    - paragraphs.paragraphs_type.tabs_wrapper_secondary
+  module:
+    - entity_reference_revisions
+id: block_content.tabs_social_networks.field_content_tabs
+field_name: field_content_tabs
+entity_type: block_content
+bundle: tabs_social_networks
+label: 'Redes sociales'
+description: 'Tab para cada red social'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      tabs_wrapper_secondary: tabs_wrapper_secondary
+    target_bundles_drag_drop:
+      from_library:
+        weight: 6
+        enabled: false
+      postdata_indicators:
+        weight: 7
+        enabled: false
+      tab_content:
+        weight: 9
+        enabled: false
+      tab_header:
+        weight: 10
+        enabled: false
+      tabs_wrapper:
+        weight: 8
+        enabled: false
+      tabs_wrapper_secondary:
+        enabled: true
+        weight: 10
+field_type: entity_reference_revisions

@@ -1,6 +1,6 @@
 uuid: d097936d-8280-4701-bf20-a0f8c3e3ad0f
 langcode: en
-status: true
+status: false
 dependencies:
   theme:
     - webcrc
@@ -8,8 +8,8 @@ _core:
   default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
 id: webcrc_local_actions
 theme: webcrc
-region: content
-weight: -6
+region: disabled
+weight: -9
 provider: null
 plugin: local_actions_block
 settings:

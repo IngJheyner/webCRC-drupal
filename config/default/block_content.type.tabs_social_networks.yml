@@ -1,0 +1,8 @@
+uuid: 89ea8d74-a73f-4427-ac4c-698d9629518c
+langcode: es
+status: true
+dependencies: {  }
+id: tabs_social_networks
+label: 'Tabs Redes sociales'
+revision: 0
+description: 'Tabs para las redes sociales de la crc'

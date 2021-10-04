@@ -9,7 +9,7 @@ dependencies:
 id: indicators
 theme: webcrc
 region: top_b
-weight: 0
+weight: -9
 provider: null
 plugin: 'block_content:a6f79fbc-3c22-45c9-b011-f3b39cdcfe46'
 settings:

@@ -1,0 +1,20 @@
+uuid: 21090c69-684b-42a0-9352-f1d01b510b98
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - webcrc
+id: system_messages
+theme: webcrc
+region: content
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Mensajes
+  provider: system
+  label_display: '0'
+visibility: {  }

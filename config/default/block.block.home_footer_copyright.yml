@@ -11,7 +11,7 @@ dependencies:
 id: home_footer_copyright
 theme: webcrc
 region: footer_bottom
-weight: 0
+weight: -10
 provider: null
 plugin: 'block_content:507d46e7-c253-401d-bcba-244b0a8fe603'
 settings:

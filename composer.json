@@ -73,6 +73,8 @@
         "drupal/remove_http_headers": "^1.0",
         "drupal/scheduler": "^1.4",
         "drupal/search_api": "^1.20",
+        "drupal/search_api_autocomplete": "^1.5",
+        "drupal/search_api_page": "^1.0@beta",
         "drupal/simple_sitemap": "^3.8",
         "drupal/slick": "^2.3",
         "drupal/slick_views": "^2.4",

@@ -1,0 +1,8 @@
+uuid: 2ac5fb1e-8e88-4678-be85-3f11bd791477
+langcode: es
+status: true
+dependencies: {  }
+id: news_dates
+label: 'Fecha noticias'
+locked: false
+pattern: d/m/y

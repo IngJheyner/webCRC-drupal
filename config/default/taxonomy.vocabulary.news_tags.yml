@@ -1,0 +1,8 @@
+uuid: ebdc775b-baf1-4eaf-a75a-e433b018dd33
+langcode: es
+status: true
+dependencies: {  }
+name: 'Etiquetas noticias'
+vid: news_tags
+description: 'Tax. para noticias CRC'
+weight: 0

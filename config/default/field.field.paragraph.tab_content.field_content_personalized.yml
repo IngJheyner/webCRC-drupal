@@ -1,0 +1,21 @@
+uuid: 1c11b4c2-950c-43fc-a90a-d309b42378e5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content_personalized
+    - paragraphs.paragraphs_type.tab_content
+  module:
+    - text
+id: paragraph.tab_content.field_content_personalized
+field_name: field_content_personalized
+entity_type: paragraph
+bundle: tab_content
+label: 'Conteido Personalizado'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -10,7 +10,7 @@
     'paragraph--type--' ~ paragraph.bundle|clean_class,
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
     not paragraph.isPublished() ? 'paragraph--unpublished',
-    'card h-100'
+    'card h-100 card-indicator'
   ]
 %}
 {% block paragraph %}
@@ -37,6 +37,10 @@
             </span>
             <div class="media-body ml-3 mb-0 align-self-center card-title">
               {{ content.field_indicator_title }}
+              <a  class="btn btn-link"
+                  href="{{ content.field_url.0['#url'] }}">
+                {{ content.field_url.0['#title'] }}
+              </a>
             </div>
           </div>
         </div>

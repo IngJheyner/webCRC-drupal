@@ -1,0 +1,10 @@
+uuid: d381d9c3-5fb2-4b82-a22b-6bb32c94fd69
+langcode: es
+status: true
+dependencies: {  }
+id: tabs_wrapper_secondary
+label: 'Tabs secundario'
+icon_uuid: null
+icon_default: null
+description: ' Contenedor principal para los items de los tabs secundarios'
+behavior_plugins: {  }

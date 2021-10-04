@@ -10,13 +10,13 @@ dependencies:
     - webcrc
 id: home_main_menu
 theme: webcrc
-region: primary_menu
-weight: 0
+region: main_menu
+weight: -12
 provider: null
 plugin: 'superfish:main'
 settings:
   id: 'superfish:main'
-  label: 'Home [Menu Principal]'
+  label: 'Menu Principal'
   provider: superfish
   label_display: '0'
   level: '1'
