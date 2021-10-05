@@ -1,0 +1,8 @@
+uuid: 3c375f84-dae7-42c3-becd-5afee6324f8a
+langcode: es
+status: true
+dependencies: {  }
+id: indicators
+label: Indicadores
+revision: 0
+description: 'Indicador de cifras crc'

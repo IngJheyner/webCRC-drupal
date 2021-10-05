@@ -1,0 +1,49 @@
+uuid: b2c44adc-7e78-472f-bfac-a8d20ac4d997
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tabs_content
+    - paragraphs.paragraphs_type.tab_header
+    - paragraphs.paragraphs_type.tabs_wrapper
+  module:
+    - entity_reference_revisions
+id: paragraph.tabs_wrapper.field_tabs_content
+field_name: field_tabs_content
+entity_type: paragraph
+bundle: tabs_wrapper
+label: 'Tabs items'
+description: 'Agregar nuevo tab '
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      tab_header: tab_header
+    target_bundles_drag_drop:
+      a11y_paragraphs_tab_content:
+        weight: 10
+        enabled: false
+      a11y_paragraphs_tabs_panel:
+        weight: 8
+        enabled: false
+      a11y_paragraphs_tabs_wrapper:
+        weight: 9
+        enabled: false
+      from_library:
+        weight: 11
+        enabled: false
+      tab_content:
+        weight: 13
+        enabled: false
+      tab_header:
+        enabled: true
+        weight: 14
+      tabs_wrapper:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

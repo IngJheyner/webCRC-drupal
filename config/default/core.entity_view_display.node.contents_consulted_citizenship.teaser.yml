@@ -1,0 +1,26 @@
+uuid: 5ec7c395-2bec-4850-99c0-e0e87aa7f04c
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.contents_consulted_citizenship.field_consulted_content_icon
+    - field.field.node.contents_consulted_citizenship.field_consulted_content_url
+    - node.type.contents_consulted_citizenship
+  module:
+    - user
+id: node.contents_consulted_citizenship.teaser
+targetEntityType: node
+bundle: contents_consulted_citizenship
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_consulted_content_icon: true
+  field_consulted_content_url: true
+  langcode: true
+  search_api_excerpt: true

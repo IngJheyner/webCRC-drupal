@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 id: comentarios_iteracciones_
 label: 'Comentarios [ Interacciones ]'
-description: 'Se visualiza en parrafo de nombre Comentarios, una seccion de interaccion para proyectos regulatorios.'
+description: 'Se visualiza en parrafo de nombre Comentarios, una seccion de interaccion para proyectos comentarios.'
 source: file
 queue_thumbnail_downloads: false
 new_revision: false

@@ -9,23 +9,14 @@ dependencies:
     - field.field.block_content.home_footer.field_home_footer_insti_mail
     - field.field.block_content.home_footer.field_home_footer_judicial_mail
     - field.field.block_content.home_footer.field_home_footer_location
-    - field.field.block_content.home_footer.field_home_footer_logo_facebook
-    - field.field.block_content.home_footer.field_home_footer_logo_instagram
-    - field.field.block_content.home_footer.field_home_footer_logo_linkedin
-    - field.field.block_content.home_footer.field_home_footer_logo_twitter
     - field.field.block_content.home_footer.field_home_footer_logo_webcrc
-    - field.field.block_content.home_footer.field_home_footer_logo_youtube
     - field.field.block_content.home_footer.field_home_footer_title_social
     - field.field.block_content.home_footer.field_home_footer_txt_org
-    - field.field.block_content.home_footer.field_home_footer_url_facebook
-    - field.field.block_content.home_footer.field_home_footer_url_instagram
-    - field.field.block_content.home_footer.field_home_footer_url_linkedin
-    - field.field.block_content.home_footer.field_home_footer_url_twitter
-    - field.field.block_content.home_footer.field_home_footer_url_youtube
+    - field.field.block_content.home_footer.field_social_networks
     - image.style.thumbnail
   module:
     - field_group
-    - link
+    - paragraphs
     - svg_image
 third_party_settings:
   field_group:
@@ -120,6 +111,7 @@ third_party_settings:
     group_home_footer_red_social:
       children:
         - field_home_footer_title_social
+        - field_social_networks
         - group_home_footer_facebook
         - group_home_footer_twitter
         - group_home_footer_instagram
@@ -143,7 +135,7 @@ third_party_settings:
         - field_home_footer_logo_facebook
         - field_home_footer_url_facebook
       parent_name: group_home_footer_red_social
-      weight: 7
+      weight: 8
       format_type: tab
       region: content
       format_settings:
@@ -164,7 +156,7 @@ third_party_settings:
         - field_home_footer_logo_twitter
         - field_home_footer_url_twitter
       parent_name: group_home_footer_red_social
-      weight: 8
+      weight: 9
       format_type: tab
       region: content
       format_settings:
@@ -180,7 +172,7 @@ third_party_settings:
         - field_home_footer_logo_instagram
         - field_home_footer_url_instagram
       parent_name: group_home_footer_red_social
-      weight: 9
+      weight: 10
       format_type: tab
       region: content
       format_settings:
@@ -196,7 +188,7 @@ third_party_settings:
         - field_home_footer_logo_youtube
         - field_home_footer_url_youtube
       parent_name: group_home_footer_red_social
-      weight: 10
+      weight: 11
       format_type: tab
       region: content
       format_settings:
@@ -212,7 +204,7 @@ third_party_settings:
         - field_home_footer_logo_linkedin
         - field_home_footer_url_linkedin
       parent_name: group_home_footer_red_social
-      weight: 11
+      weight: 12
       format_type: tab
       region: content
       format_settings:
@@ -268,48 +260,8 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_home_footer_logo_facebook:
-    weight: 26
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
-    region: content
-  field_home_footer_logo_instagram:
-    weight: 30
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
-    region: content
-  field_home_footer_logo_linkedin:
-    weight: 34
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
-    region: content
-  field_home_footer_logo_twitter:
-    weight: 28
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
-    region: content
   field_home_footer_logo_webcrc:
     weight: 2
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
-    region: content
-  field_home_footer_logo_youtube:
-    weight: 32
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -332,45 +284,17 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_home_footer_url_facebook:
-    weight: 27
+  field_social_networks:
+    type: entity_reference_paragraphs
+    weight: 7
     settings:
-      placeholder_url: ''
-      placeholder_title: ''
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
     third_party_settings: {  }
-    type: link_default
-    region: content
-  field_home_footer_url_instagram:
-    weight: 31
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    type: link_default
-    region: content
-  field_home_footer_url_linkedin:
-    weight: 35
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    type: link_default
-    region: content
-  field_home_footer_url_twitter:
-    weight: 29
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    type: link_default
-    region: content
-  field_home_footer_url_youtube:
-    weight: 33
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    type: link_default
     region: content
   info:
     type: string_textfield

@@ -1,0 +1,25 @@
+uuid: d490f4db-e2b1-47bf-b4e8-caf03ec28339
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.interactions_extemporaneous.field_extemporaneous_route_file
+    - field.field.media.interactions_extemporaneous.field_media_file_3
+    - field.field.media.interactions_extemporaneous.field_operador_comentarios
+    - media.type.interactions_extemporaneous
+id: media.interactions_extemporaneous.media_library
+targetEntityType: media
+bundle: interactions_extemporaneous
+mode: media_library
+content: {  }
+hidden:
+  created: true
+  field_extemporaneous_route_file: true
+  field_media_file_3: true
+  field_operador_comentarios: true
+  langcode: true
+  name: true
+  path: true
+  status: true
+  uid: true

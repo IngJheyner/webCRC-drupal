@@ -1,0 +1,39 @@
+uuid: 02ecbfe4-d5b5-4a2f-a4fe-578fd2af77fa
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tab_content.field_content_personalized
+    - field.field.paragraph.tab_content.field_tab_type_view
+    - paragraphs.paragraphs_type.tab_content
+  module:
+    - text
+    - viewsreference
+id: paragraph.tab_content.default
+targetEntityType: paragraph
+bundle: tab_content
+mode: default
+content:
+  field_content_personalized:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_tab_type_view:
+    weight: 0
+    label: hidden
+    settings:
+      plugin_types:
+        block: block
+        default: 0
+        page: 0
+        feed: 0
+        entity_browser: 0
+        embed: 0
+    third_party_settings: {  }
+    type: viewsreference_formatter
+    region: content
+hidden:
+  search_api_excerpt: true

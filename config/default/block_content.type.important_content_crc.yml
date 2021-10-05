@@ -1,0 +1,8 @@
+uuid: dff8a25c-5f84-44e2-83e0-4d288cc852ee
+langcode: es
+status: true
+dependencies: {  }
+id: important_content_crc
+label: 'Contenido más importante crc'
+revision: 0
+description: 'Los mas importante de la crc'

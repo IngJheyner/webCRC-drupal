@@ -1,0 +1,27 @@
+uuid: 7f62d53e-93d3-47ef-8fd1-294da5d826ba
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - webcrc
+id: tabs_social_networks
+theme: webcrc
+region: bottom_a
+weight: -10
+provider: null
+plugin: 'block_content:b78e3423-dddb-49b0-97af-f37d06b61a79'
+settings:
+  id: 'block_content:b78e3423-dddb-49b0-97af-f37d06b61a79'
+  label: 'Tabs redes sociales'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

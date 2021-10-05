@@ -1,0 +1,29 @@
+uuid: a7e1585f-6273-4488-a6de-25a2b4bfcc86
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_consulted_content_icon
+    - media.type.images_icons
+    - node.type.contents_consulted_citizenship
+id: node.contents_consulted_citizenship.field_consulted_content_icon
+field_name: field_consulted_content_icon
+entity_type: node
+bundle: contents_consulted_citizenship
+label: Icono
+description: 'Icono para item de contenidos ciudadania'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      images_icons: images_icons
+    sort:
+      field: created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

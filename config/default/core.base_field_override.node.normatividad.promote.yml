@@ -1,0 +1,22 @@
+uuid: 5390dc25-3310-46d0-86a0-7b0d10ea5856
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.normatividad
+id: node.normatividad.promote
+field_name: promote
+entity_type: node
+bundle: normatividad
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,33 @@
+uuid: 42302d5e-5d6b-4efe-b70d-e15d43e180eb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tab_content.field_content_personalized
+    - field.field.paragraph.tab_content.field_tab_type_view
+    - paragraphs.paragraphs_type.tab_content
+  module:
+    - text
+    - viewsreference
+id: paragraph.tab_content.default
+targetEntityType: paragraph
+bundle: tab_content
+mode: default
+content:
+  field_content_personalized:
+    weight: 1
+    settings:
+      rows: 6
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_tab_type_view:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: viewsreference_select
+    region: content
+hidden:
+  created: true
+  status: true

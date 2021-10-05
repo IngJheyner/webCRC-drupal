@@ -1,0 +1,19 @@
+uuid: 9a126458-e6e0-462c-b1d1-2f582de85411
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.important_content_crc
+    - field.storage.block_content.field_content_title_primary
+id: block_content.important_content_crc.field_content_title_primary
+field_name: field_content_title_primary
+entity_type: block_content
+bundle: important_content_crc
+label: 'Titulo primario'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

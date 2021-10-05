@@ -1,0 +1,19 @@
+uuid: 94585517-cbf6-431b-9f1e-9eb5d1534004
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.normatividad.body
+    - node.type.normatividad
+  module:
+    - user
+id: node.normatividad.default
+targetEntityType: node
+bundle: normatividad
+mode: default
+content: {  }
+hidden:
+  body: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

@@ -1,0 +1,34 @@
+uuid: ab28ec9e-0f68-46b3-ba0f-bbbf3c450952
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.list_social_networks.field_content_icon
+    - field.field.paragraph.list_social_networks.field_url
+    - paragraphs.paragraphs_type.list_social_networks
+  module:
+    - link
+    - media_library
+id: paragraph.list_social_networks.default
+targetEntityType: paragraph
+bundle: list_social_networks
+mode: default
+content:
+  field_content_icon:
+    type: media_library_widget
+    weight: 0
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_url:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  status: true

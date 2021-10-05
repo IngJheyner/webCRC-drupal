@@ -1,0 +1,23 @@
+uuid: 59ba6fd3-9ac8-45c0-a5c7-06ce1b82434a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_consulted_content_url
+    - node.type.contents_consulted_citizenship
+  module:
+    - link
+id: node.contents_consulted_citizenship.field_consulted_content_url
+field_name: field_consulted_content_url
+entity_type: node
+bundle: contents_consulted_citizenship
+label: Enlace
+description: 'Enlace de la pagina interna o externa para el tipo de contenido ciudadania'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

@@ -1,0 +1,8 @@
+uuid: c0c3906e-3788-46ee-b688-a0a96b6eb9e1
+langcode: es
+status: true
+dependencies: {  }
+id: last_news
+label: 'Ultimas noticias'
+revision: 0
+description: 'Se visualizaran las utimas noticias publicadas de la crc'

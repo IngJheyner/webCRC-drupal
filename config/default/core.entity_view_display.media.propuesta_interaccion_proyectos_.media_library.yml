@@ -1,15 +1,13 @@
 uuid: c5070e8b-7e7d-4651-b145-b0e67ce8ca01
 langcode: es
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.media.media_library
     - field.field.media.propuesta_interaccion_proyectos_.field_media_file_1
-    - field.field.media.propuesta_interaccion_proyectos_.field_publicacion_propuestas
     - field.field.media.propuesta_interaccion_proyectos_.field_ruta_file_propuestas
     - media.type.propuesta_interaccion_proyectos_
   module:
-    - datetime
     - file
 id: media.propuesta_interaccion_proyectos_.media_library
 targetEntityType: media
@@ -23,15 +21,6 @@ content:
     label: above
     settings:
       use_description_as_link_text: true
-    third_party_settings: {  }
-  field_publicacion_propuestas:
-    type: datetime_default
-    weight: 2
-    region: content
-    label: above
-    settings:
-      format_type: medium
-      timezone_override: ''
     third_party_settings: {  }
   name:
     type: string

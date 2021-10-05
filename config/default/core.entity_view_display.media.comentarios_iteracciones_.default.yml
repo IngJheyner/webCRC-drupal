@@ -5,27 +5,61 @@ dependencies:
   config:
     - field.field.media.comentarios_iteracciones_.field_media_file_2
     - field.field.media.comentarios_iteracciones_.field_operador_comentarios
-    - field.field.media.comentarios_iteracciones_.field_publicacion_comentarios
     - field.field.media.comentarios_iteracciones_.field_ruta_archivo_comentarios
     - media.type.comentarios_iteracciones_
+  module:
+    - field_group
+    - file
+    - options
+third_party_settings:
+  field_group:
+    group_field_comments:
+      children:
+        - field_operador_comentarios
+        - field_media_file_2
+        - created
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: field-comments
+        classes: ''
+        description: ''
+      label: Archivo
 id: media.comentarios_iteracciones_.default
 targetEntityType: media
 bundle: comentarios_iteracciones_
 mode: default
 content:
-  field_ruta_archivo_comentarios:
-    weight: 0
+  created:
+    type: timestamp
+    weight: 4
+    region: content
     label: above
     settings:
-      link_to_entity: false
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
     third_party_settings: {  }
-    type: string
+  field_media_file_2:
+    type: file_default
+    weight: 3
     region: content
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+  field_operador_comentarios:
+    type: list_default
+    weight: 2
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
 hidden:
-  created: true
-  field_media_file_2: true
-  field_operador_comentarios: true
-  field_publicacion_comentarios: true
+  field_ruta_archivo_comentarios: true
   langcode: true
   name: true
   search_api_excerpt: true

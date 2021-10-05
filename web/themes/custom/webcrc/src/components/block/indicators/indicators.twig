@@ -1,0 +1,51 @@
+{% set classes = [
+  'block indicators-container',
+  bundle ? 'block--' ~ bundle|clean_class,
+  id ? 'block--' ~ id|replace({"_": "-"})|clean_class,
+]|merge(utility_classes ? utility_classes : []) %}
+
+{% if html_tag %}
+  <{{ html_tag }}{{ attributes|without('id').addClass(classes) }}>
+{% endif %}
+
+  {% block content %}
+    <div class="d-flex justify-content-center mt-0 mb-2 pt-5 pb-4">
+      <div class="media">
+        <span class="align-self-center">
+          {{ content.field_icon }}
+        </span>
+        <div class="media-body ml-3 align-self-center">
+          <h2 class="mb-0">
+            {{ content.field_content_title }}
+          </h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 m-0 pl-5 pr-5">
+      <div class="col mb-4 p-0">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <p class="logo-postdata">
+              Pd
+            </p>
+            {# {{ content.field_logo }} #}
+          </div>
+          <div class="card-footer">
+            <a  class="stretched-link"
+                href="{{ content.field_primary_url.0['#url'] }}">
+              {{ content.field_primary_url.0['#title'] }}
+            </a>
+          </div>
+        </div>
+      </div>
+      {% for key, item in content.field_indicator if key|first != '#' %}
+        {% set section_indicator = item %}
+        {{ section_indicator }}
+      {% endfor %}
+    </div>
+  {% endblock %}
+
+{% if html_tag %}
+  </{{ html_tag }}>
+{% endif %}

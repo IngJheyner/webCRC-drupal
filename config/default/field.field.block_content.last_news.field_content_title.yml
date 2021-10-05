@@ -1,0 +1,19 @@
+uuid: cb8e52b5-8726-4dcb-b229-ce42985c6c05
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.last_news
+    - field.storage.block_content.field_content_title
+id: block_content.last_news.field_content_title
+field_name: field_content_title
+entity_type: block_content
+bundle: last_news
+label: Titulo
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

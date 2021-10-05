@@ -1,22 +1,75 @@
 @use '../../base/variables/variables' as var;
-article.projects__regulatory{
 
-    section.projects__regulatory-header{
+/* ==============================
+INTERNAS
+============================== */
+@mixin accordion-title($selector...) {
 
-        position: relative;
+    @for $i from 0 to length($selector){
 
-        &::after{
-            content: "";
-            position: absolute;
-            bottom: -8%;
-            left: 25%;
-            border-top: 20px solid white;
-            border-top-color: inherit;
-            border-left: 20px solid transparent;
-            border-right: 20px solid transparent;
-            color: white;
-        }        
-    }
+        div.file__content-title.#{nth($selector, $i + 1)}::before{           
+
+            @if nth($selector, $i + 1) == Propuestas{
+                content: url('../../src/images/Propuesta.svg');
+            } @else if  nth($selector, $i + 1) == Comentarios{
+                content: url('../../src/images/Comentarios-normales.svg');
+            } @else if  nth($selector, $i + 1) == Documents{
+                content: url('../../src/images/Documentacion.svg'); 
+            }          
+            position: relative;                                    
+            top: 15px;
+            left: -8px;                                                    
+        }
+    } 
+   
+}
+
+/* ===== ===== MIXIN ACCORDION ===== ===== */
+@mixin accordion($value...) {
+
+        div#accordion{      
+
+            div.card-header{
+                background-color: nth($value, 1);
+            }
+
+            div.card-body{
+                border-left: 8px solid nth($value, 2);
+                @include media-breakpoint-down(xs) {
+                    padding: 1em;
+                }
+
+                @include media-breakpoint-up(md) {
+                    @include accordion-title(Propuestas, Comentarios, Documents);                
+                } 
+
+                div.file__content-file{
+
+                    @include media-breakpoint-up(md) {
+                        border-left: 2px solid rgba(51, 102, 204, .5);
+                        margin-top: .5em;
+                        padding-left: 1em;   
+                    }                                                
+
+                    div.file__content-file--item{
+                        margin-top: .5em;
+                       
+                        article.node__normativity-teaser > div.node__content > div.node__content-teaser{
+                            max-width: 200px;
+                            @include media-breakpoint-up(md) {
+                                max-width: 625px;
+                            }                            
+                        }
+                    }
+                }
+                
+            }
+        }
+    
+}
+
+article.projects__regulatory{   
+    
 
     section.projects__regulatory-content{
 
@@ -26,7 +79,15 @@ article.projects__regulatory{
 
             div.node__content-info > div.node__content-info--items{
                 
-                border-right: 1px solid var.$bg-color-secundary;
+                &.state{
+                    min-width: 240px;
+                }
+                &.date-comments{
+                    max-height: 80px;
+                }
+                @include media-breakpoint-up(md){
+                    border-right: 1px solid var.$bg-color-secundary;
+                }
 
                 &:last-child{
                     border: 0;
@@ -41,12 +102,6 @@ article.projects__regulatory{
                     li.list-group-item{
 
                         border: 0;
-
-                        span.badge{
-                            padding: .6em;
-                            border-radius: 50%;
-                            background-color: var.$btn-color-primary;
-                        }
 
                         u.text{
                             color: var.$btn-color-primary;
@@ -64,7 +119,125 @@ article.projects__regulatory{
                     
                 }
             }
+
+            div.node__content-interactions{
+
+                @include accordion(var.$btn-color-primary, rgba(51, 102, 204, .5)); 
+            }
+
+            div.node__content-documents{
+                @include accordion(var.$bg-color-terciario, var.$bg-color-secundary);
+            }
         }
     }
 
+}
+
+/* ==============================
+VISTA PAGE COMMENTS
+============================== */
+div.page-projects{
+
+    @include media-breakpoint-up(xl){
+        div.container{
+            max-width: 1400px;
+        }
+    }
+
+    form{
+        background-color: var.$bg-color-cuaternario;
+        @include media-breakpoint-down(sm) {
+            padding-inline: 1em;
+            padding-block: 2em;
+        }
+        padding-inline: 8em;
+        padding-block: 3em;
+
+        div.input{
+            height: 3em;
+            background: white;
+            border-radius: 0.25rem;
+            input{
+                padding: 1.5em 0;
+            }
+            select{
+                border: 0;
+                outline-offset: 0;
+                &:focus{
+                    outline: none;
+                    box-shadow: none;
+                }
+                option{
+                    width: 100%;
+                    border: 0;                   
+                }
+            }
+            label{
+                color: var.$bg-color-cuaternario;
+            }
+        }
+
+        div.input__projects{
+
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            div.input__projects-item{
+                @include media-breakpoint-down(sm) {
+                    flex-basis: 100%;
+                }
+                flex-basis: 48.5%;
+                height: 4em;
+            }
+        }
+    }
+
+    div#table__projects-regulatory_wrapper{
+        div.row:nth-child(1){
+            display: none;
+        }
+        div.row:nth-child(3) > div:nth-child(1){
+            display: none;
+        }
+        table{
+            thead{
+                tr{
+                    &:nth-child(2)th{
+                        background-color: rgba(51, 102, 204, 0.5);
+                    }
+                    th{
+                        border: 0;
+                    }
+                }
+            }
+            tbody{
+
+                tr td:last-child strong{
+                    display: none;
+                }
+            }
+        }
+        
+        ul.pagination{
+            padding-block: 2em;
+            a{
+                text-decoration: none;
+                border: 0;
+            }
+
+            li.page-item.active{
+                              
+                a{
+                    color: white !important;
+                    background-color: var.$btn-color-primary; 
+                    border-radius: .3em;
+                }
+            }
+
+            li.disabled a{
+                color: var.$text-color-terciario !important;
+            }
+        }
+        
+    }
 }

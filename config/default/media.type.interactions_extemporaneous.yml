@@ -1,0 +1,14 @@
+uuid: a1f5344c-f013-4890-bca9-f1f0b1d12a0d
+langcode: es
+status: true
+dependencies: {  }
+id: interactions_extemporaneous
+label: 'Extemporaneos [ Interacciones ]'
+description: 'Se visualiza en parrafo de nombre Extemporaneo, una seccion de interaccion para proyectos comentarios.'
+source: file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_file_3
+field_map:
+  name: name

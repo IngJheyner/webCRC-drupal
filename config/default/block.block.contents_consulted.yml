@@ -1,0 +1,27 @@
+uuid: 2bba8df4-87ab-4d3d-8a91-7a995836589b
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - webcrc
+id: contents_consulted
+theme: webcrc
+region: top_b
+weight: -11
+provider: null
+plugin: 'block_content:29787947-1321-44c7-8051-03f4a5820754'
+settings:
+  id: 'block_content:29787947-1321-44c7-8051-03f4a5820754'
+  label: 'Contenidos consultados'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

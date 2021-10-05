@@ -1,0 +1,21 @@
+uuid: 8178c803-7792-4a7a-ac45-bafa11e933cc
+langcode: es
+status: true
+dependencies:
+  module:
+    - block_content
+    - entity_reference_revisions
+    - paragraphs
+id: block_content.field_tabs_consulted_content
+field_name: field_tabs_consulted_content
+entity_type: block_content
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

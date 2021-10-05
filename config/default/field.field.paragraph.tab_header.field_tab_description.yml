@@ -1,0 +1,19 @@
+uuid: 85175d7c-c656-44ec-a9c0-14a581b3b580
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tab_description
+    - paragraphs.paragraphs_type.tab_header
+id: paragraph.tab_header.field_tab_description
+field_name: field_tab_description
+entity_type: paragraph
+bundle: tab_header
+label: 'Tab descripción'
+description: 'Una breve descripción que tendra la pestaña'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

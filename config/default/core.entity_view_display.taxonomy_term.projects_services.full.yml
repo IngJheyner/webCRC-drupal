@@ -1,0 +1,26 @@
+uuid: b46a0783-ba3e-4728-9bd5-bf26b0ffbb71
+langcode: es
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.full
+    - field.field.taxonomy_term.projects_services.field_services_icon
+    - taxonomy.vocabulary.projects_services
+id: taxonomy_term.projects_services.full
+targetEntityType: taxonomy_term
+bundle: projects_services
+mode: full
+content:
+  field_services_icon:
+    type: entity_reference_entity_view
+    weight: -4
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  description: true
+  langcode: true
+  search_api_excerpt: true

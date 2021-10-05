@@ -1,5 +1,6 @@
 @use '../../base/variables/variables' as var;
-ol.breadcrumb{    
+ol.breadcrumb{  
+    background-color: transparent;  
     li.breadcrumb-item{
         margin: 5px 5px;
         a{

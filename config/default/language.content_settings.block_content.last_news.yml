@@ -1,0 +1,11 @@
+uuid: 591ae07b-0533-4bfb-9454-5e177e742d91
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.last_news
+id: block_content.last_news
+target_entity_type_id: block_content
+target_bundle: last_news
+default_langcode: site_default
+language_alterable: false

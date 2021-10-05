@@ -1,0 +1,11 @@
+uuid: 323a435b-d0e0-486a-a764-fd29a159f728
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.indicators
+id: block_content.indicators
+target_entity_type_id: block_content
+target_bundle: indicators
+default_langcode: site_default
+language_alterable: false

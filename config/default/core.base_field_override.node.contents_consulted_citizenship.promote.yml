@@ -1,0 +1,22 @@
+uuid: 075e0557-11ef-434d-8380-57e86f7e81ec
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.contents_consulted_citizenship
+id: node.contents_consulted_citizenship.promote
+field_name: promote
+entity_type: node
+bundle: contents_consulted_citizenship
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

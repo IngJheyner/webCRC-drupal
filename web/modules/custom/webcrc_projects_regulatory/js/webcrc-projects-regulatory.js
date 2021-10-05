@@ -40,25 +40,29 @@
                         $(files).wrap("<details class='required-fields field-group-details js-form-wrapper form-wrapper seven-details' data-drupal-selector='edit-group-file-conv' id='edit-group-file-conv'><div class='seven-details__wrapper details-wrapper'></div></details>");
                         $(files).parent().before("<summary role='button' aria-controls='edit-group-prueba' aria-expanded='false' aria-pressed='false' class='seven-details__summary form-required'><span>Cargar Archivos.</span></summary>");
                         
-                        iframe = document.querySelector(iframeC).contentWindow.document;
+                        iframe = document.querySelector(iframeC).contentWindow.document; 
                         
+                        /* ===== ===== Oculatar y apaercer elementos ===== ===== */
                         let uploadFile = iframe.getElementById('edit-upload');
+                        iframe.getElementById('edit-actions').style.display = 'none';
 
-                        $(uploadFile).on('click', function () {
+                        $(uploadFile).on('click mouseover', function () {
                             
-                            iframe.getElementById('edit-group-file-conv').removeAttribute('open');
+                            iframe.getElementById('edit-group-file-conv').removeAttribute('open'); 
+                            iframe.getElementById('edit-actions').style.display = 'none';       
+                           
                         
                         });
                         
                         iframe.getElementById('edit-group-file-conv').addEventListener('click', function() {
                             
                             let newFiles = iframe.getElementById('ief-dropzone-upload'); 
+                            iframe.getElementById('edit-actions').style.display = 'block';
 
-                            $(newFiles).children('div.form-wrapper').each(function (idx, el) {
-                                
+                            $(newFiles).children('div.form-wrapper').each(function (idx, el) {                                
                                 $(el).children('fieldset').children('div.fieldset__wrapper').children(nameRouteFile).children().children('input').val(code);
                                 $(el).children('fieldset').children('div.fieldset__wrapper').children(nameRouteFile).css('display', 'none');
-                                $(el).children('fieldset').find('div.field--name-uid').css("display", "none");
+                                $(el).children('fieldset').find('div.field--name-uid').css("display", "none");                               
                             
                             });
 
@@ -106,11 +110,14 @@
                     iframeC = 'iframe#entity_browser_iframe_propuesta_interacciones_media';
                     nameRouteFile = 'div.field--name-field-ruta-file-propuestas';
 
-                }else{
+                }else if($(this).attr('value') == 'Gestionar Comentarios'){
 
                     iframeC = 'iframe#entity_browser_iframe_comentarios_interacciones_media';
                     nameRouteFile = 'div.field--name-field-ruta-archivo-comentarios';
 
+                }else{
+                    iframeC = 'iframe#entity_browser_iframe_interactions_extemporaneous';
+                    nameRouteFile = 'div.field--name-field-extemporaneous-route-file';
                 }
 
             });
@@ -124,9 +131,45 @@
                 ftnInter(code, iframeC, nameRouteFile);
                         
             });
+            
+            /*===========================================
+            TABLE JQUERY VIEW PROJECTS COMMENTS
+            =============================================*/
+             
+            function filterColumn ( i ) {
+                $('#table__projects-regulatory').DataTable().column( i ).search(
+                    $('#col'+i+'_filter').val(),
+                    //$('#col'+i+'_regex').prop('checked'),
+                    //$('#col'+i+'_smart').prop('checked')
+                ).draw();
+            }
+             
+            $('#table__projects-regulatory').once('webcrc').each(function () {
+                $('#table__projects-regulatory').dataTable({
+                    //"searching": false,
+                    "pagingType": "simple_numbers",
+                    "lengthChange": false,
+                    "pageLength": 10,
+                    "responsive": true,
+                    "columnDefs": [
+                        { className: "max-desktop", responsivePriority: 1, targets: 0 },
+                        { className: "max-desktop", responsivePriority: 2, targets: 1 },
+                        { className: "tablet-l desktop", targets: 2 },
+                        { className: "tablet-l desktop", targets: 3 },
+                        { className: "tablet-l desktop", targets: 4 },
+                        { className: "tablet-l desktop", targets: 5 },
+                        { className: "tablet-l desktop", targets: 6 }
+                    ]
+                });
+
+                $('input.column_filter').on( 'keyup click', function () {
+                    filterColumn( $(this).parents('div').attr('data-column') );
+                });
+                $('select.column_filter').on( 'change', function () {
+                    filterColumn( $(this).parents('div').attr('data-column') );
+                });
+            }); 
 
         }
-
     };
-
 }(jQuery, Drupal));

@@ -1,0 +1,19 @@
+uuid: f2518a13-8061-410e-a435-246f29b35b0c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tab_title
+    - paragraphs.paragraphs_type.tab_header
+id: paragraph.tab_header.field_tab_title
+field_name: field_tab_title
+entity_type: paragraph
+bundle: tab_header
+label: 'Tab titulo'
+description: 'Titulo que se visualizara en la pestaña'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

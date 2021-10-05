@@ -1,0 +1,43 @@
+uuid: 68213fdf-2fa8-4324-bf03-8f80247ec7d4
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.indicators
+    - field.storage.block_content.field_indicator
+    - paragraphs.paragraphs_type.postdata_indicators
+  module:
+    - entity_reference_revisions
+id: block_content.indicators.field_indicator
+field_name: field_indicator
+entity_type: block_content
+bundle: indicators
+label: Indicador
+description: 'Inicador cifra crc'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      postdata_indicators: postdata_indicators
+    target_bundles_drag_drop:
+      from_library:
+        weight: 6
+        enabled: false
+      postdata_indicators:
+        enabled: true
+        weight: 7
+      tab_content:
+        weight: 9
+        enabled: false
+      tab_header:
+        weight: 10
+        enabled: false
+      tabs_wrapper:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

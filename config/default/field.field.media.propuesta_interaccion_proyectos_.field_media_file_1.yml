@@ -12,7 +12,7 @@ third_party_settings:
   filefield_paths:
     enabled: true
     file_path:
-      value: 'Proyectos Regulatorios/[media:field_ruta_file_propuestas]/Propuestas'
+      value: 'Proyectos Comentarios/[media:field_ruta_file_propuestas]/Propuestas'
       options:
         slashes: false
         pathauto: false

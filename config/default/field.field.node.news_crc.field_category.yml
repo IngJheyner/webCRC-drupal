@@ -1,0 +1,29 @@
+uuid: f4f96580-5afd-47b0-b055-9c995cfdd108
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_category
+    - node.type.news_crc
+    - taxonomy.vocabulary.news_tags
+id: node.news_crc.field_category
+field_name: field_category
+entity_type: node
+bundle: news_crc
+label: Categoria
+description: 'Tipo de categoria que pertenece la noticia'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      news_tags: news_tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

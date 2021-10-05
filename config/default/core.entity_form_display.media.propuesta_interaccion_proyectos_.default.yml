@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.media.propuesta_interaccion_proyectos_.field_media_file_1
-    - field.field.media.propuesta_interaccion_proyectos_.field_publicacion_propuestas
     - field.field.media.propuesta_interaccion_proyectos_.field_ruta_file_propuestas
     - media.type.propuesta_interaccion_proyectos_
   module:
@@ -17,7 +16,6 @@ third_party_settings:
         - field_ruta_file_propuestas
         - field_media_file_1
         - created
-        - uid
       parent_name: ''
       weight: 0
       format_type: fieldset
@@ -55,19 +53,9 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  uid:
-    type: entity_reference_autocomplete
-    weight: 4
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
 hidden:
-  field_publicacion_propuestas: true
   langcode: true
   name: true
   path: true
   status: true
+  uid: true

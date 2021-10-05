@@ -1,0 +1,10 @@
+uuid: de5cc82f-ee08-46f6-9ed1-67fa40e132d2
+langcode: es
+status: true
+dependencies: {  }
+id: list_social_networks
+label: 'Lista redes sociales'
+icon_uuid: null
+icon_default: null
+description: 'Lista de redes sociales con un icono y un link'
+behavior_plugins: {  }

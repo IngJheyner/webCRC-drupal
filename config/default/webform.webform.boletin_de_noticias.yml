@@ -1,7 +1,12 @@
 uuid: 554d2fe4-5dec-4889-8311-6e31a611ec68
 langcode: es
 status: open
-dependencies: {  }
+dependencies:
+  module:
+    - honeypot
+third_party_settings:
+  honeypot:
+    honeypot: true
 open: null
 close: null
 weight: 0
@@ -21,8 +26,7 @@ elements: |-
     '#minlength': 1
     '#maxlength': 150
     '#autocomplete': 'off'
-    '#required': true
-    '#required_error': 'El nombre es obligatorio'
+    '#placeholder': 'Jorge Perez, María Duarte ...'
   newsletter_user_email:
     '#type': email
     '#title': Email
@@ -31,6 +35,7 @@ elements: |-
     '#minlength': 1
     '#maxlength': 150
     '#autocomplete': 'off'
+    '#placeholder': 'micorreo@dominio.com ...'
     '#required': true
     '#required_error': 'El email es obligatorio'
   newsletter_user_occupation:
@@ -40,6 +45,7 @@ elements: |-
     '#description_display': tooltip
     '#maxlength': 150
     '#autocomplete': 'off'
+    '#placeholder': 'Ingeniero, Estudiante, Maestro ...'
   newsletter_user_politics:
     '#type': checkbox
     '#title': 'Acepta términos y condiciones'
@@ -52,17 +58,17 @@ elements: |-
 css: ''
 javascript: ''
 settings:
-  ajax: false
+  ajax: true
   ajax_scroll_top: form
-  ajax_progress_type: ''
-  ajax_effect: ''
-  ajax_speed: null
+  ajax_progress_type: throbber
+  ajax_effect: fade
+  ajax_speed: 500
   page: true
   page_submit_path: /newsletter
   page_confirm_path: ''
   page_theme_name: ''
-  form_title: both
-  form_submit_once: false
+  form_title: source_entity_webform
+  form_submit_once: true
   form_exception_message: ''
   form_open_message: ''
   form_close_message: ''
@@ -76,7 +82,7 @@ settings:
   form_prepopulate_source_entity_required: false
   form_prepopulate_source_entity_type: ''
   form_reset: false
-  form_disable_autocomplete: false
+  form_disable_autocomplete: true
   form_novalidate: false
   form_disable_inline_errors: false
   form_required: false
@@ -130,7 +136,7 @@ settings:
   wizard_track: ''
   wizard_prev_button_label: ''
   wizard_next_button_label: ''
-  wizard_toggle: false
+  wizard_toggle: true
   wizard_toggle_show_label: ''
   wizard_toggle_hide_label: ''
   preview: 0
@@ -148,9 +154,9 @@ settings:
   draft_loaded_message: ''
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
-  confirmation_type: page
-  confirmation_title: ''
-  confirmation_message: ''
+  confirmation_type: modal
+  confirmation_title: Mensaje
+  confirmation_message: 'Gracias por suscribirse a nuestro boletin de noticias'
   confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true

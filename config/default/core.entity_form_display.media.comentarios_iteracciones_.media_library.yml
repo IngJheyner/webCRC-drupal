@@ -6,7 +6,6 @@ dependencies:
     - core.entity_form_mode.media.media_library
     - field.field.media.comentarios_iteracciones_.field_media_file_2
     - field.field.media.comentarios_iteracciones_.field_operador_comentarios
-    - field.field.media.comentarios_iteracciones_.field_publicacion_comentarios
     - field.field.media.comentarios_iteracciones_.field_ruta_archivo_comentarios
     - media.type.comentarios_iteracciones_
 id: media.comentarios_iteracciones_.media_library
@@ -18,7 +17,6 @@ hidden:
   created: true
   field_media_file_2: true
   field_operador_comentarios: true
-  field_publicacion_comentarios: true
   field_ruta_archivo_comentarios: true
   langcode: true
   name: true

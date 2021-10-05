@@ -1,4 +1,4 @@
-uuid: 8e3f35bd-089f-4182-82cc-2d8cab2b87c1
+uuid: a9b3e7fe-5fb2-4d2b-9dc7-eb1b8220dcda
 langcode: es
 status: true
 dependencies:
@@ -9,7 +9,7 @@ field_name: field_tab_description
 entity_type: paragraph
 type: string
 settings:
-  max_length: 150
+  max_length: 255
   is_ascii: false
   case_sensitive: false
 module: core

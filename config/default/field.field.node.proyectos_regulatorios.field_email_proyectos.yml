@@ -11,7 +11,7 @@ entity_type: node
 bundle: proyectos_regulatorios
 label: 'Correo electrónico'
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

@@ -1,0 +1,25 @@
+uuid: b023a316-c60f-4a52-9c85-38f1e980e524
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tabs_wrapper_secondary.field_tabs_content
+    - paragraphs.paragraphs_type.tabs_wrapper_secondary
+  module:
+    - entity_reference_revisions
+id: paragraph.tabs_wrapper_secondary.default
+targetEntityType: paragraph
+bundle: tabs_wrapper_secondary
+mode: default
+content:
+  field_tabs_content:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+hidden:
+  search_api_excerpt: true

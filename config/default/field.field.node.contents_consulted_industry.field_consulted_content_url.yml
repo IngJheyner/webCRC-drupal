@@ -1,0 +1,23 @@
+uuid: 041eb9c0-478f-4c32-98c2-76a8625344ea
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_consulted_content_url
+    - node.type.contents_consulted_industry
+  module:
+    - link
+id: node.contents_consulted_industry.field_consulted_content_url
+field_name: field_consulted_content_url
+entity_type: node
+bundle: contents_consulted_industry
+label: Enlace
+description: 'Enlace de la pagina interna o externa para el tipo de contenido industria'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

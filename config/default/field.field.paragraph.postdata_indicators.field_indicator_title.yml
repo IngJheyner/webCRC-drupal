@@ -1,0 +1,19 @@
+uuid: 976dceac-1f88-48dd-933e-888147851c60
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_indicator_title
+    - paragraphs.paragraphs_type.postdata_indicators
+id: paragraph.postdata_indicators.field_indicator_title
+field_name: field_indicator_title
+entity_type: paragraph
+bundle: postdata_indicators
+label: Titulo
+description: 'Titulo para el indicador'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

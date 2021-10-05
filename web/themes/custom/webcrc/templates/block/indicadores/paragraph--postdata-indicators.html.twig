@@ -1,0 +1,50 @@
+{#
+/**
+ * @file
+ * Template for the indicators paragraph.
+ */
+#}
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+    'card h-100 card-indicator'
+  ]
+%}
+{% block paragraph %}
+  {% block content %}
+    <div class="col mb-4 p-0">
+      <div {{ attributes.addClass(classes) }}>
+        <div class="card-body text-center">
+          <div class="card-title">
+            <p class="count_indicator" data-target="{{ content.field_indicator_value.0  }}">
+              0
+            </p>
+          </div>
+          <span class="unit">
+            {{ content.field_indicator_unit }}
+          </span>
+          <span class="description">
+            {{ content.field_indicator_description }}
+          </span>
+        </div>
+        <div class="card-footer">
+          <div class="media">
+            <span class="align-self-center font-image p-2">
+              {{ content.field_indicator_icon }}
+            </span>
+            <div class="media-body ml-3 mb-0 align-self-center card-title">
+              {{ content.field_indicator_title }}
+              <a  class="btn btn-link"
+                  href="{{ content.field_url.0['#url'] }}">
+                {{ content.field_url.0['#title'] }}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endblock %}
+{% endblock paragraph %}

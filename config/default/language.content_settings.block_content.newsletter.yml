@@ -1,0 +1,11 @@
+uuid: 533d7684-a347-4394-a808-a7ccef06a5bc
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.newsletter
+id: block_content.newsletter
+target_entity_type_id: block_content
+target_bundle: newsletter
+default_langcode: site_default
+language_alterable: false

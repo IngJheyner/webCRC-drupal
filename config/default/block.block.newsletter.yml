@@ -1,0 +1,21 @@
+uuid: 348301d5-ad05-4a77-a412-29800a34900b
+langcode: es
+status: true
+dependencies:
+  theme:
+    - webcrc
+id: newsletter
+theme: webcrc
+region: footer_right
+weight: 0
+provider: null
+plugin: 'block_content:8df82bb0-b5c2-4fa4-a354-97253c686628'
+settings:
+  id: 'block_content:8df82bb0-b5c2-4fa4-a354-97253c686628'
+  label: 'Boletin de noticias'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
