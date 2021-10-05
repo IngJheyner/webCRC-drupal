@@ -36,12 +36,10 @@
   set classes = [
     'cols-' ~ header|length,    
     sticky ? 'sticky-enabled',
+    'text-center display table hover'
   ]
 %}
 
-{% if responsive %}
-  <div class="table-responsive">
-{% endif %}
 
 {{ attach_library('webcrc_projects_regulatory/webcrc_projects_datatable') }}
 {{ attach_library('webcrc_projects_regulatory/webcrc_projects_regulatory') }}
@@ -52,51 +50,79 @@ FORMULARIO DE BUSQUEDA
 
 <form action="" method='' class="form-group" id="form__projects-comments">
 
-  <div id="filter_col0" data-column="0">
-    <input type='text' id='col0_filter' class="column_filter form-control" placeholder="{{'Name or title: Improvement of mobile networks, Analysis of communication media ...'|t}}">
+  <p class="h4 text-center text-white mb-3">{{'Find the project of your interest.'|t}}</p>
+
+  <div id="filter_col4" data-column="4" class="input__projects-code input">
+    <input type='text' id='col4_filter' class="column_filter form-control" placeholder="{{'Name or title: Improvement of mobile networks, Analysis of communication media ...'|t}}">
   </div>
-  <hr>
+  <hr class="bg-white">
 
   <div class="input__projects d-flex">
-    <div id="filter_col1" data-column="1" class="my-3">
-      <label for='projects-state'>{{'State'|t}}</label>
-      <select id='col1_filter' class="column_filter">
-      <option value=''>Seleccione...</option>
+
+    <div id="filter_col1" data-column="1" class="my-3 input__projects-item input">
+      <small><label for='projects-state' class="m-0 px-3">{{'State'|t}}</label></small>
+      <select id='col1_filter' class="column_filter form-control px-3">
+      <option value=''>{{ 'Please select...'|t}}</option>
         {% for statee in state %}
           <option value='{{statee}}'>{{statee}}</option>
         {% endfor %}
       </select>
     </div>
-    <div id="filter_col6" data-column="6" class="my-3">
-      <label for='projects-service'>{{'Service'|t}}</label>
-      <select id='col6_filter' class="column_filter">
-      <option value=''>Seleccione...</option>
+
+    <div id="filter_col6" data-column="6" class="my-3 input__projects-item input">
+      <small><label for='projects-service' class="m-0 px-3">{{'Service'|t}}</label></small>
+      <select id='col6_filter' class="column_filter form-control px-3">
+      <option value=''>{{ 'Please select...'|t}}</option>
         {% for services in type_services %}
           <option value='{{services}}'>{{services}}</option>
         {% endfor %}
       </select>
     </div>
-    <div id="filter_col4" data-column="4" class="my-3">
-      <label for='projects-service'>{{'Project type'|t}}</label>
-      <select id='col4_filter' class="column_filter">
-      <option value=''>Seleccione...</option>
+
+    <div id="filter_col5" data-column="5" class="my-3 input__projects-item input">
+      <small><label for='projects-service' class="m-0 px-3">{{'Project type'|t}}</label></small>
+      <select id='col5_filter' class="column_filter form-control px-3">
+      <option value=''>{{ 'Please select...'|t}}</option>
         {% for type in type_typeprojects %}
           <option value='{{type}}'>{{type}}</option>
         {% endfor %}
       </select>
     </div>
-    <div class="my-3">a</div>
+    <div id="filter_col2" data-column="2" class="my-3 input__projects-item input">
+      <small><label for='projects-service' class="m-0 px-3">{{'Comments'|t}}</label></small>
+      <select id='col2_filter' class="column_filter form-control px-3">
+      <option value=''>{{ 'Please select...'|t}}</option>      
+      <option value='FALSE'>{{'Accept comments'|t}}</option>   
+      <option value='TRUE'>{{'They do not accept comments'|t}}</option>      
+      </select>
+    </div>
   </div>
 
+  <div class='btn__projects text-center mt-3'>
+    <button class='btn btn-outline-light'>{{'New search'|t}}</button>
+  </div>
 
 </form>
 
-<section class='table__projects bg-white rounded-lg table'>
-  <table{{ attributes.addClass(classes) }} id="table__projects-regulatory"> 
-    
+
+
+<section class='table__projects bg-white rounded-lg shadow'>
+  <table{{ attributes.addClass(classes) }} id="table__projects-regulatory" style="width:100%"> 
     {% if header %}
-      <thead>
+      <thead> 
         <tr>
+          <th colspan="7">          
+            {% if caption %}
+              <p class="h4 text-left p-3">{{ caption }}</p>
+            {% else %}
+              <p class="h4 text-left p-4">{{ title }}</p>
+            {% endif %}
+            {% if (summary_element is not empty) %}
+              {{ summary_element }}
+            {% endif %}           
+          </th>
+        </tr>  
+        <tr>          
           {% for key, column in header %}
             {% if column.default_classes %}
               {%
@@ -154,12 +180,9 @@ FORMULARIO DE BUSQUEDA
                 {% endfor %}
               {%- endif %}
             </td>
-          {% endfor %}
+          {% endfor %}          
         </tr>
       {% endfor %}
     </tbody>
   </table>
 </section>
-{% if responsive %}
-  </div>
-{% endif %}

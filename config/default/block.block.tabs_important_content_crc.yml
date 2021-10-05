@@ -2,10 +2,7 @@ uuid: 931e591a-916c-4d93-9724-34ba50a36900
 langcode: es
 status: true
 dependencies:
-  content:
-    - 'block_content:important_content_crc:f054bf59-bf4c-47a8-a4c3-aebdbb350de5'
   module:
-    - block_content
     - system
   theme:
     - webcrc

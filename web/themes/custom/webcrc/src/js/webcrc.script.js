@@ -30,6 +30,9 @@ import anime from 'animejs/lib/anime.es';
             });
           }
         });
+
+        /* ===== ===== TOOLTIP ===== ===== */
+        $('[data-toggle="tooltip"]').tooltip();
       });
     }
   };

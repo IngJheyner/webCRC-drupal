@@ -147,9 +147,19 @@
             $('#table__projects-regulatory').once('webcrc').each(function () {
                 $('#table__projects-regulatory').dataTable({
                     //"searching": false,
-                    "pagingType": "simple",
+                    "pagingType": "simple_numbers",
                     "lengthChange": false,
-                    "pageLength": 10
+                    "pageLength": 10,
+                    "responsive": true,
+                    "columnDefs": [
+                        { className: "max-desktop", responsivePriority: 1, targets: 0 },
+                        { className: "max-desktop", responsivePriority: 2, targets: 1 },
+                        { className: "tablet-l desktop", targets: 2 },
+                        { className: "tablet-l desktop", targets: 3 },
+                        { className: "tablet-l desktop", targets: 4 },
+                        { className: "tablet-l desktop", targets: 5 },
+                        { className: "tablet-l desktop", targets: 6 }
+                    ]
                 });
 
                 $('input.column_filter').on( 'keyup click', function () {
@@ -158,7 +168,7 @@
                 $('select.column_filter').on( 'change', function () {
                     filterColumn( $(this).parents('div').attr('data-column') );
                 });
-            });           
+            }); 
 
         }
     };

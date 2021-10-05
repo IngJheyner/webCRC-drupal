@@ -1,6 +1,6 @@
 uuid: 12c2e77d-4b48-4d37-ba52-031a74687d1b
 langcode: en
-status: false
+status: true
 dependencies:
   theme:
     - webcrc
@@ -8,8 +8,8 @@ _core:
   default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
 id: webcrc_page_title
 theme: webcrc
-region: disabled
-weight: -12
+region: content
+weight: -13
 provider: null
 plugin: page_title_block
 settings:

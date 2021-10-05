@@ -13,12 +13,12 @@
       {% for item in breadcrumb %}
         <li class="breadcrumb-item {{ not item.url ? 'active mx-0 mx-md-2' }}">
           {% if item.url %}
-            <a href="{{ item.url }}">{{ item.text }}</a> <span class="d-none d-md-block">/</span>
+            <a href="{{ item.url }}">{{ item.text }}</a>
           {% else %}
             {% if loop.last %}
               {{ item.text }}
             {% else %}
-              {{ item.text }} <span class="d-none d-md-block">/</span>
+              {{ item.text }}
             {% endif %}
           {% endif %}
         </li>

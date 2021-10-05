@@ -25,9 +25,9 @@
  * @ingroup themeable
  */
 #}
-<div{{ attributes }}>
+<div{{ attributes.addClass('d-inline-block') }} >
   {% if name and not page %}
-    <img src="{{ file_url( content.field_services_icon[0]['#media'].field_media_image.entity.uri.value) }}" alt="{{ name.0 }}" onerror="this.remove();"> 
+    <img src="{{ file_url( content.field_services_icon[0]['#media'].field_media_image.entity.uri.value) }}" alt="{{ name.0 }}" onerror="this.remove();" data-toggle="tooltip" data-placement="top" title="{{ name.0 }}"> 
     <strong>{{ name.0 }}</strong>
   {% endif %}
 </div>
