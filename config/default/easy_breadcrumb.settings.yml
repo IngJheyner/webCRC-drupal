@@ -1,7 +1,7 @@
 applies_admin_routes: true
 include_home_segment: true
 alternative_title_field: field_breadcrumb_title
-home_segment_title: Home
+home_segment_title: Inicio
 home_segment_keep: false
 include_title_segment: true
 language_path_prefix_as_segment: false
@@ -29,7 +29,7 @@ add_structured_data_json_ld: false
 use_site_title: false
 include_invalid_paths: true
 excluded_paths: ''
-replaced_titles: 'proyectos regulatorios::proyectos para comentarios'
+replaced_titles: ''
 custom_paths: ''
 title_segment_as_link: false
 follow_redirects: true

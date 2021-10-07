@@ -20,25 +20,24 @@ content:
     type: timestamp
     weight: 4
     region: content
-    label: above
+    label: hidden
     settings:
-      date_format: medium
+      date_format: fecha_webcrc
       custom_date_format: ''
-      timezone: ''
+      timezone: America/Bogota
     third_party_settings: {  }
   field_media_file_3:
-    type: file_default
+    type: file_url_plain
     weight: 3
     region: content
-    label: visually_hidden
-    settings:
-      use_description_as_link_text: true
+    label: hidden
+    settings: {  }
     third_party_settings: {  }
   field_operador_comentarios:
     type: list_default
     weight: 2
     region: content
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
 hidden:

@@ -10,7 +10,7 @@ id: paragraph.iterecciones_proyectos.field_interaction_extemporaneous
 field_name: field_interaction_extemporaneous
 entity_type: paragraph
 bundle: iterecciones_proyectos
-label: Extemporaneos
+label: 'Comentarios Extemporáneos'
 description: ''
 required: false
 translatable: false

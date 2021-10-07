@@ -22,10 +22,10 @@ content:
     type: datetime_default
     weight: 1
     region: content
-    label: above
+    label: hidden
     settings:
-      format_type: medium
-      timezone_override: ''
+      timezone_override: America/Bogota
+      format_type: fecha_corta_webcrc
     third_party_settings: {  }
   field_interactions_comments:
     type: boolean

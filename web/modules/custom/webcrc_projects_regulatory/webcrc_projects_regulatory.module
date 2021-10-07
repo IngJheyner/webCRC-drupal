@@ -91,12 +91,12 @@ function webcrc_projects_regulatory_preprocess_views_view_field(&$variables) {
         $dateTime = strtotime($paragraph->get('field_fecha_cierre_iteracciones')[0]->getValue()['value']);
         $variables['output'] = \Drupal::service('date.formatter')->format($dateTime, 'fecha_corta_webcrc');
 
-      }      
+      }     
         
     }
   }
 
-  //$variables['info'] = $field->field;
+  //$variables['info'] = dump($field);
     
 }
   
