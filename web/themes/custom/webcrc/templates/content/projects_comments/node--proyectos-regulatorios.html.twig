@@ -157,7 +157,7 @@
             <hr>
             <div class="node__content-documents py-3">
               <div id="accordion">
-                <div class="card">
+                <div class="card shadow">
                   <div class="card-header" id="headingOne">
                     <h5 class="mb-0">
                       <a class="text-white w-100" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -214,7 +214,9 @@
 
   </section>
 
-  <section class="projects__regulatory-related">
+  <section class="projects__regulatory-related container-fluid px-0 mt-5">
+    <div id='projects__regulatory-related--bg'></div>
+    {{ drupal_view('projects_comments', 'block_projects_related') }}    
   </section>  
 
 </article>

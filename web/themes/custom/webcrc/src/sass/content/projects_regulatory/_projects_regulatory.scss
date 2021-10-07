@@ -131,6 +131,41 @@ article.projects__regulatory{
         }
     }
 
+    /* ==============================
+    PROJECTS RELATED
+    ============================== */
+    section.projects__regulatory-related{
+
+        position: relative;
+
+        div#projects__regulatory-related--bg{
+            background-color: var.$bg-color-quinario;
+            position: absolute;
+            z-index: -1;
+            left: 0;
+            top: 0;
+            height: 100vh;
+            width: 100%;
+        }   
+
+        div.projects__related-content{
+
+            p.projects__related-header--title span{
+                color: var.$text-color-cuaternario !important;
+            }
+
+            div#projects__related-content--info{
+                p.date{
+                    border-left: 1px solid var.$bg-color-cuaternario;
+                }
+            }
+        }
+
+           
+
+        
+    }
+    
 }
 
 /* ==============================
@@ -145,24 +180,42 @@ div.page-projects{
     }
 
     form{
+
         background-color: var.$bg-color-cuaternario;
+
         @include media-breakpoint-down(sm) {
             padding-inline: 1em;
             padding-block: 2em;
+        }
+        @include media-breakpoint-up(md) {
+            padding-inline: 2em;
+        }
+        @include media-breakpoint-up(lg) {
+            padding-inline: 3em;
         }
         padding-inline: 8em;
         padding-block: 3em;
 
         div.input{
+
             height: 3em;
             background: white;
             border-radius: 0.25rem;
+
             input{
                 padding: 1.5em 0;
+                border: 0;
+                @include media-breakpoint-down(sm){
+                    &::placeholder{
+                        content: 'a';
+                        color: white;
+                    }
+                }
             }
             select{
                 border: 0;
                 outline-offset: 0;
+                appearance: none;
                 &:focus{
                     outline: none;
                     box-shadow: none;
@@ -183,16 +236,26 @@ div.page-projects{
             flex-wrap: wrap;
 
             div.input__projects-item{
+                position: relative;
                 @include media-breakpoint-down(sm) {
                     flex-basis: 100%;
                 }
                 flex-basis: 48.5%;
                 height: 4em;
+
+                i{
+                    color: var.$bg-color-cuaternario;
+                    position: absolute;
+                    bottom: 1em;
+                    right: 2em;
+                }
             }
         }
     }
 
+    /* ===== ===== TABLE ===== ===== */
     div#table__projects-regulatory_wrapper{
+
         div.row:nth-child(1){
             display: none;
         }
@@ -218,6 +281,7 @@ div.page-projects{
             }
         }
         
+        /* ===== ===== PAGINATION ===== ===== */
         ul.pagination{
             padding-block: 2em;
             a{

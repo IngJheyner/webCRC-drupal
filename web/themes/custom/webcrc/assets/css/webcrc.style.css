@@ -21350,6 +21350,11 @@ section.header__title {
 INTERNAS
 ============================== */
 /* ===== ===== MIXIN ACCORDION ===== ===== */
+article.projects__regulatory {
+  /* ==============================
+  PROJECTS RELATED
+  ============================== */
+}
 article.projects__regulatory section.projects__regulatory-content {
   background-color: #EBEBEB;
 }
@@ -21361,7 +21366,7 @@ article.projects__regulatory section.projects__regulatory-content div.node__cont
 }
 @media (min-width: 768px) {
   article.projects__regulatory section.projects__regulatory-content div.node__content div.node__content-info > div.node__content-info--items {
-    border-right: 1px solid #D6D6D6;
+    border-right: 1px solid #b8b8b8;
   }
 }
 article.projects__regulatory section.projects__regulatory-content div.node__content div.node__content-info > div.node__content-info--items:last-child {
@@ -21433,7 +21438,7 @@ article.projects__regulatory section.projects__regulatory-content div.node__cont
   background-color: #141414;
 }
 article.projects__regulatory section.projects__regulatory-content div.node__content div.node__content-documents div#accordion div.card-body {
-  border-left: 8px solid #D6D6D6;
+  border-left: 8px solid #b8b8b8;
 }
 @media (max-width: 575.98px) {
   article.projects__regulatory section.projects__regulatory-content div.node__content div.node__content-documents div#accordion div.card-body {
@@ -21478,10 +21483,31 @@ article.projects__regulatory section.projects__regulatory-content div.node__cont
     max-width: 625px;
   }
 }
+article.projects__regulatory section.projects__regulatory-related {
+  position: relative;
+}
+article.projects__regulatory section.projects__regulatory-related div#projects__regulatory-related--bg {
+  background-color: #2F2A7C;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+}
+article.projects__regulatory section.projects__regulatory-related div.projects__related-content p.projects__related-header--title span {
+  color: #F42E62 !important;
+}
+article.projects__regulatory section.projects__regulatory-related div.projects__related-content div#projects__related-content--info p.date {
+  border-left: 1px solid #3366CC;
+}
 
 /* ==============================
 VISTA PAGE COMMENTS
 ============================== */
+div.page-projects {
+  /* ===== ===== TABLE ===== ===== */
+}
 @media (min-width: 1200px) {
   div.page-projects div.container {
     max-width: 1400px;
@@ -21498,6 +21524,16 @@ div.page-projects form {
     padding-block: 2em;
   }
 }
+@media (min-width: 768px) {
+  div.page-projects form {
+    padding-inline: 2em;
+  }
+}
+@media (min-width: 992px) {
+  div.page-projects form {
+    padding-inline: 3em;
+  }
+}
 div.page-projects form div.input {
   height: 3em;
   background: white;
@@ -21505,10 +21541,28 @@ div.page-projects form div.input {
 }
 div.page-projects form div.input input {
   padding: 1.5em 0;
+  border: 0;
+}
+@media (max-width: 767.98px) {
+  div.page-projects form div.input input::-moz-placeholder {
+    content: "a";
+    color: white;
+  }
+  div.page-projects form div.input input:-ms-input-placeholder {
+    content: "a";
+    color: white;
+  }
+  div.page-projects form div.input input::placeholder {
+    content: "a";
+    color: white;
+  }
 }
 div.page-projects form div.input select {
   border: 0;
   outline-offset: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 div.page-projects form div.input select:focus {
   outline: none;
@@ -21526,6 +21580,7 @@ div.page-projects form div.input__projects {
   flex-wrap: wrap;
 }
 div.page-projects form div.input__projects div.input__projects-item {
+  position: relative;
   flex-basis: 48.5%;
   height: 4em;
 }
@@ -21533,6 +21588,15 @@ div.page-projects form div.input__projects div.input__projects-item {
   div.page-projects form div.input__projects div.input__projects-item {
     flex-basis: 100%;
   }
+}
+div.page-projects form div.input__projects div.input__projects-item i {
+  color: #3366CC;
+  position: absolute;
+  bottom: 1em;
+  right: 2em;
+}
+div.page-projects div#table__projects-regulatory_wrapper {
+  /* ===== ===== PAGINATION ===== ===== */
 }
 div.page-projects div#table__projects-regulatory_wrapper div.row:nth-child(1) {
   display: none;

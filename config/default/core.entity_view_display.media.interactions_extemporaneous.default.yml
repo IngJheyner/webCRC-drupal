@@ -44,7 +44,7 @@ content:
       timezone: ''
     third_party_settings: {  }
   field_media_file_3:
-    label: visually_hidden
+    label: above
     weight: 3
     settings:
       use_description_as_link_text: true

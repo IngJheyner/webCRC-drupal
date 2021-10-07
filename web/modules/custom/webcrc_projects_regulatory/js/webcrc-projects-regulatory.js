@@ -147,6 +147,7 @@
             $('#table__projects-regulatory').once('webcrc').each(function () {
                 $('#table__projects-regulatory').dataTable({
                     //"searching": false,
+                    "order": [],
                     "pagingType": "simple_numbers",
                     "lengthChange": false,
                     "pageLength": 10,
@@ -159,7 +160,14 @@
                         { className: "tablet-l desktop", targets: 4 },
                         { className: "tablet-l desktop", targets: 5 },
                         { className: "tablet-l desktop", targets: 6 }
-                    ]
+                    ],
+                    "language":{
+                        "zeroRecords":    "No se encontraron resultados.",
+                        "paginate": {                        
+                            "next":       "Siguiente",
+                            "previous":   "Anterior"
+                        }
+                    }
                 });
 
                 $('input.column_filter').on( 'keyup click', function () {
