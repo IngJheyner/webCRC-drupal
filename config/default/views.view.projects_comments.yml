@@ -10,10 +10,12 @@ dependencies:
     - field.storage.node.field_tipo_proyecto
     - node.type.normatividad
     - node.type.proyectos_regulatorios
+    - taxonomy.vocabulary.projects_services
   module:
     - entity_reference_revisions
     - node
     - options
+    - taxonomy
     - user
     - views_bootstrap
 id: projects_comments
@@ -321,10 +323,10 @@ display:
           entity_type: node
           entity_field: nid
           plugin_id: node_nid
-        field_projects_services_target_id:
-          id: field_projects_services_target_id
-          table: node__field_projects_services
-          field: field_projects_services_target_id
+        tid:
+          id: tid
+          table: taxonomy_index
+          field: tid
           relationship: none
           group_type: group
           admin_label: ''
@@ -338,10 +340,11 @@ display:
           default_argument_type: taxonomy_tid
           default_argument_options:
             node: true
+            limit: true
+            vids:
+              projects_services: projects_services
             anyall: +
             term_page: '0'
-            limit: false
-            vids: {  }
           default_argument_skip_url: false
           summary_options:
             base_path: ''
@@ -358,8 +361,10 @@ display:
             fail: 'not found'
           validate_options: {  }
           break_phrase: true
-          not: false
-          plugin_id: numeric
+          add_table: false
+          require_value: false
+          reduce_duplicates: true
+          plugin_id: taxonomy_index_tid
       css_class: 'projects__related-content py-4 container'
       style:
         type: views_bootstrap_grid
@@ -385,7 +390,7 @@ display:
           admin_label: 'Titulo o encabezado'
           empty: false
           tokenize: true
-          content: '<p class=''mb-4 h2 text-white''>{{ ''Related projects''|t }}</p>'
+          content: "<p class='my-4 h2 text-white projects__related-header--title'>\r\n<img src=\"/themes/custom/webcrc/src/images/icono-candado.svg\" alt=\"Proyectos Relacionados\" onerror=\"this.remove();\">\r\n <span class='h2'>{{'Projects'|t}}</span> \r\n{{ 'related'|t }}\r\n</p>"
           plugin_id: text_custom
       fields:
         view_node:

@@ -135,6 +135,7 @@ article.projects__regulatory{
     PROJECTS RELATED
     ============================== */
     section.projects__regulatory-related{
+
         position: relative;
 
         div#projects__regulatory-related--bg{
@@ -145,13 +146,24 @@ article.projects__regulatory{
             top: 0;
             height: 100vh;
             width: 100%;
-        }      
+        }   
 
-        div#projects__related-content--info{
-            p.date{
-                border-left: 1px solid var.$bg-color-cuaternario;
+        div.projects__related-content{
+
+            p.projects__related-header--title span{
+                color: var.$text-color-cuaternario !important;
+            }
+
+            div#projects__related-content--info{
+                p.date{
+                    border-left: 1px solid var.$bg-color-cuaternario;
+                }
             }
         }
+
+           
+
+        
     }
     
 }

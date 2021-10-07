@@ -21495,7 +21495,10 @@ article.projects__regulatory section.projects__regulatory-related div#projects__
   height: 100vh;
   width: 100%;
 }
-article.projects__regulatory section.projects__regulatory-related div#projects__related-content--info p.date {
+article.projects__regulatory section.projects__regulatory-related div.projects__related-content p.projects__related-header--title span {
+  color: #F42E62 !important;
+}
+article.projects__regulatory section.projects__regulatory-related div.projects__related-content div#projects__related-content--info p.date {
   border-left: 1px solid #3366CC;
 }
 
