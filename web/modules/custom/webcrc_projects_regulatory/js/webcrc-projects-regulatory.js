@@ -135,6 +135,7 @@
             /*===========================================
             TABLE JQUERY VIEW PROJECTS COMMENTS
             =============================================*/
+            //$('[data-toggle="tooltip"]').tooltip();
              
             function filterColumn ( i ) {
                 $('#table__projects-regulatory').DataTable().column( i ).search(
