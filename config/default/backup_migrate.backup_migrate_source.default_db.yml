@@ -8,4 +8,4 @@ id: default_db
 label: 'Base de datos de Drupal predeterminada'
 type: DefaultDB
 config:
-  name: 'Default Drupal Database'
+  name: 'Base de datos de Drupal predeterminada'

@@ -11,7 +11,7 @@ _core:
 id: webcrc_powered
 theme: webcrc
 region: footer
-weight: -4
+weight: -12
 provider: null
 plugin: system_powered_by_block
 settings:

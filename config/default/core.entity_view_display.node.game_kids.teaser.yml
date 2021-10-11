@@ -1,0 +1,26 @@
+uuid: 0f400105-aac8-4b5e-99a1-5724d40923e6
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.game_kids.field_content_url
+    - field.field.node.game_kids.field_image_content
+    - node.type.game_kids
+  module:
+    - user
+id: node.game_kids.teaser
+targetEntityType: node
+bundle: game_kids
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_content_url: true
+  field_image_content: true
+  langcode: true
+  search_api_excerpt: true

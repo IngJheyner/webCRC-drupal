@@ -1,0 +1,29 @@
+uuid: 77e5f351-5c85-4589-9346-876294003ca7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_logo
+    - media.type.logos
+    - node.type.content_kids_page
+id: node.content_kids_page.field_content_logo
+field_name: field_content_logo
+entity_type: node
+bundle: content_kids_page
+label: Logo
+description: 'Logo pagina de niños, niñas y adolecentes'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      logos: logos
+    sort:
+      field: created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

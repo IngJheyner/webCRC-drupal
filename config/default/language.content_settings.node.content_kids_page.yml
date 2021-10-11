@@ -1,0 +1,11 @@
+uuid: ce052888-0997-4093-b630-cd8d79277af9
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.content_kids_page
+id: node.content_kids_page
+target_entity_type_id: node
+target_bundle: content_kids_page
+default_langcode: site_default
+language_alterable: false

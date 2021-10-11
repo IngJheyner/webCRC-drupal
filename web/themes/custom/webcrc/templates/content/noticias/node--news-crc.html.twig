@@ -1,0 +1,43 @@
+{#
+/**
+ * @file
+ * Template for a Node component.
+ */
+#}
+{%
+  set classes = [
+  'node',
+  node.isPromoted() ? 'node--promoted',
+  node.isSticky() ? 'node--sticky',
+  not node.isPublished() ? 'node--unpublished',
+  node.bundle|clean_class,
+  node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
+]
+%}
+
+{% set created = node.created.value|format_date('custom', 'l\\,\\ d \\d\\e F \\d\\e Y') %}
+
+<article{{ attributes.addClass(classes) }}>
+  <div class="container my-5 text-rize">
+    {% block content %}
+      <h1>
+        {{ label }}
+      </h1>
+       <time class="text-muted d-inline-block">
+        {{ created }}
+      </time>
+      <div class="media mb-5">
+        <span class="align-self-center">
+          {{ content.field_image_content }}
+        </span>
+        <div class="media-body align-self-center px-3">
+          <a href="/noticias/{{ content.field_category.0['#title']|lower }}">
+            {{ content.field_category.0['#title'] }}
+          </a>
+          {{ content.field_introduccion_contenido }}
+        </div>
+      </div>
+      {{ content.field_content }}
+    {% endblock %}
+  </div>
+</article>

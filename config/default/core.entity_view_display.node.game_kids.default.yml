@@ -1,0 +1,75 @@
+uuid: 5e19ed04-d2e1-4efb-b23e-e9704deee594
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.game_kids.field_content_url
+    - field.field.node.game_kids.field_image_content
+    - node.type.game_kids
+  module:
+    - blazy
+    - link
+    - user
+id: node.game_kids.default
+targetEntityType: node
+bundle: game_kids
+mode: default
+content:
+  field_content_url:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_image_content:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      responsive_image_style: ''
+      media_switch: ''
+      thumbnail_style: ''
+      ratio: ''
+      view_mode: default
+      current_view_mode: default
+      background: false
+      caption:
+        title: '0'
+        alt: '0'
+      class: ''
+      id: ''
+      image: ''
+      link: ''
+      overlay: ''
+      title: ''
+      vanilla: false
+      icon: ''
+      layout: ''
+      cache: 0
+      skin: ''
+      fx: ''
+      style: ''
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      box_style: ''
+      _uri: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
+      breakpoints: {  }
+      sizes: ''
+      grid_header: ''
+    third_party_settings: {  }
+    type: blazy_media
+    region: content
+hidden:
+  langcode: true
+  links: true
+  search_api_excerpt: true

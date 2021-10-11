@@ -9,7 +9,7 @@ _core:
 id: webcrc_local_actions
 theme: webcrc
 region: disabled
-weight: -11
+weight: -10
 provider: null
 plugin: local_actions_block
 settings:

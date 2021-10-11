@@ -1,0 +1,10 @@
+uuid: 6c6f177c-405f-4ca9-a63b-9dbb0102cab5
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: qbi6B8MzM7sRhA2nD6VtJdnfOUAElwVkPkcd0cFya5g
+id: feed_block
+label: 'Feed Block'
+revision: 1
+description: 'Configure & display content from an RSS feed.'
