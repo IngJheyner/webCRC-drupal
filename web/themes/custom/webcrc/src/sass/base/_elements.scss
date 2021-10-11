@@ -10,6 +10,11 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+h1 > * {
+  display: block;
+  font-size: 25pt;
+}
+
 h2 > * {
   font-size: 35pt;
 }
@@ -66,4 +71,10 @@ strong {
 
 small {
 
+}
+
+time {
+  border-left: 5px solid rgb(51, 102, 204);
+  padding: 0 10px;
+  margin: 0 auto 20px;
 }

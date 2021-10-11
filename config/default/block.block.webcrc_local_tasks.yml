@@ -9,7 +9,7 @@ _core:
 id: webcrc_local_tasks
 theme: webcrc
 region: disabled
-weight: -11
+weight: -12
 provider: null
 plugin: local_tasks_block
 settings:

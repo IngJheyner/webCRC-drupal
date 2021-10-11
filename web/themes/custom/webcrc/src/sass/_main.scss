@@ -54,6 +54,69 @@
   margin: 0 5px;
 }
 
+.btn-primary {
+  color: rgba(255, 255, 255, 1);
+  background: rgb(47, 42, 124);
+  border-radius: 15px;
+  padding: 10px 20px;
+}
+
+// ESTILOS TABS GLOBAL
+.tabs-container.tabs-global {
+  width: 100%;
+  padding: 30px 0;
+  margin: 0 auto;
+
+  ul.nav-tabs {
+    padding: 0 7rem;
+
+    li {
+      margin-right: 20px;
+      padding: 0;
+      background: transparent;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      * {
+        font-size: 14pt;
+        color: rgb(140, 140, 140);
+      }
+
+      a {
+        padding: 10px 100px;
+        text-decoration: none;
+        background: rgba(206, 206, 206, 1);
+        border: none;
+
+        &.active {
+          background: rgba(47, 42, 124, 1);
+          transition: all .3s ease;
+          * {
+            color: rgba(255, 255, 255, 1);
+            transition: all .3s ease;
+          }
+        }
+      }
+    }
+  }
+
+  div.tab-content {
+    padding: 0;
+    margin: auto;
+    div.tab-pane {
+      padding: 30px 50px 60px;
+      background: rgb(46,41,123);
+      background: linear-gradient(90deg, rgba(46,41,123,1) 0%, rgba(23,19,78,1) 100%); 
+
+      * {
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+}
+
 // CONTENIDOS MAS CONSULTADOS
 .tabs-container {
   ul.nav-pills {
@@ -631,4 +694,44 @@
       padding-bottom: 120%;
     }
   }
+}
+
+// TODAS LAS NOTICIAS
+
+.news-all {
+  max-width: 1600px;
+  margin: auto;
+
+  .field-content > *{
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  sub {
+    * {
+      color: rgba(40, 55, 137, 1);
+      font-style: oblique;
+    }
+  }
+
+  h3, h4, h5, h6 { 
+    margin: 0;
+
+    * {
+      display: block;
+      color: rgba(61, 61, 61, 1);
+      font-size: 14pt;
+      font-weight: 600;
+    }
+  }
+
+  time {
+    border-left: 5px solid rgb(51, 102, 204);
+    padding: 0 10px;
+  }
+
 }

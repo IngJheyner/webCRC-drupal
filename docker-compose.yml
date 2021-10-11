@@ -28,6 +28,7 @@ services:
       DB_DRIVER: $DB_DRIVER
       PHP_FPM_USER: wodby
       PHP_FPM_GROUP: wodby
+      PHP_DATE_TIMEZONE: "America/Bogota"
       # Set 80 columns for docker exec -it.
       COLUMNS: 80
 #      # PHPUnit Drupal testing configurations

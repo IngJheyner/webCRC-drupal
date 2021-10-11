@@ -10,8 +10,8 @@ _core:
   default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
 id: webcrc_messages
 theme: webcrc
-region: navbar_branding
-weight: -4
+region: disabled
+weight: -6
 provider: null
 plugin: system_messages_block
 settings:

@@ -1,0 +1,30 @@
+uuid: da9056c5-89da-4e5e-8792-e7a051851b11
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:feed_block:1362f50e-7d7c-4e7c-a8dc-7027dd9b7214'
+  module:
+    - block_content
+    - system
+  theme:
+    - webcrc
+id: rss
+theme: webcrc
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:1362f50e-7d7c-4e7c-a8dc-7027dd9b7214'
+settings:
+  id: 'block_content:1362f50e-7d7c-4e7c-a8dc-7027dd9b7214'
+  label: rss
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

@@ -1,0 +1,122 @@
+// Node Kids
+// -----------------------------------------------------------------------------
+.kids-page {
+  .content-kids-page__field-content-background-image {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+    > div {
+      padding-bottom: 0 !important;
+      width: 100%;
+      height: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .content-kids-page__field-content-logo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  .card-body {
+    position: relative;
+    width: 70%;
+    margin: 5rem auto;
+    padding: 20px 70px 20px 65px;
+
+    * {
+      width: 100%;
+      margin: auto;
+      color: rgb(255, 255, 255);
+      border-radius: 20px;
+      font-size: 22pt;
+    }
+
+    .content-kids-page__field-content-video {
+      .media {
+        position: relative;
+        padding-bottom: 50%;
+        height: 0;
+
+        iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .tabs-container {
+    div.tab-content {
+      ul.slide__content {
+        li {
+          padding: 15px 35px;
+          width: 100%;
+          max-width: 510px;
+
+          .grid__content {
+            background: rgba(255 ,255, 255, 1);
+            border-radius: 10px;
+
+            .field-content > .media {
+              display: flex;
+              flex-wrap: nowrap;
+              padding: 0;
+
+              img {
+                padding: 0 10px;
+              }
+
+              .media-body {
+                text-align: left;
+
+                h5 {
+                  margin-bottom: 30px;
+                  color: rgba(0, 0, 0, 1);
+                  font-size: 12pt;
+                }
+
+                a {
+                  position: relative;
+                  background: rgb(47, 42, 124) !important;
+                  color: rgb(255, 255, 255) !important;
+                  padding: 15px 20px;
+                  text-decoration: none;
+                  border-radius: 10px;
+                }
+              }
+            }
+          }
+  
+          &:after,
+          &:before {
+            content: none;
+          }
+
+          &:hover,
+          &:active,
+          &:visited {
+            background: none;
+            border-radius: 0;
+
+            img {
+              filter: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

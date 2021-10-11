@@ -51,29 +51,6 @@
 
   {% endembed %}
 
-  {# {% if page.header %}
-    <header class="page__header">
-      <div class="container-fluid p-0">
-        {{ page.header }}
-      </div>
-    </header>
-  {% endif %}
-
-   <div class="page__top_a">
-    <div class="container-fluid p-0">
-      {% if page.primary_menu %}
-        <nav class="nav-main-menu home-menu">
-          {{ page.primary_menu }}
-        </nav>
-      {% endif %}
-      {% if page.top_a %}
-        <div id="top_a" class="home-slide">
-          {{ page.top_a }}
-        </div>
-      {% endif %}
-    </div>
-  </div> #}
-
   {% if page.top_b %}
     <div class="page__top_b">
       <div class="container-fluid p-0">
@@ -87,7 +64,7 @@
   <main class="pt-5 pb-5">
     {% if page.content %}
       <div class="page__content">
-        <div class="container">
+        <div class="container-fluid p-0">
           {{ page.content }}
         </div>
       </div>

@@ -1,0 +1,28 @@
+uuid: 82564fcd-2f53-472f-81c1-0694a67fc68a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_url
+    - node.type.game_kids
+  module:
+    - link
+id: node.game_kids.field_content_url
+field_name: field_content_url
+entity_type: node
+bundle: game_kids
+label: Enlace
+description: 'Url del juego'
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'route:<nolink>'
+    title: Jugar
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

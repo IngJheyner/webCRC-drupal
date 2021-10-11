@@ -1,0 +1,11 @@
+uuid: 199a5123-252d-48e3-b1d0-31238604480c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.game_kids
+id: node.game_kids
+target_entity_type_id: node
+target_bundle: game_kids
+default_langcode: site_default
+language_alterable: false

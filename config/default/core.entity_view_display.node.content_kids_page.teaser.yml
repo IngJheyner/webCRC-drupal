@@ -1,0 +1,32 @@
+uuid: 92ea0856-1c2e-4be6-91cd-296c09f61598
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.content_kids_page.field_content_background_image
+    - field.field.node.content_kids_page.field_content_logo
+    - field.field.node.content_kids_page.field_content_tabs
+    - field.field.node.content_kids_page.field_content_video
+    - field.field.node.content_kids_page.field_introduccion_contenido
+    - node.type.content_kids_page
+  module:
+    - user
+id: node.content_kids_page.teaser
+targetEntityType: node
+bundle: content_kids_page
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_content_background_image: true
+  field_content_logo: true
+  field_content_tabs: true
+  field_content_video: true
+  field_introduccion_contenido: true
+  langcode: true
+  search_api_excerpt: true

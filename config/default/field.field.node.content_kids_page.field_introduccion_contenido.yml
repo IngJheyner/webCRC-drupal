@@ -1,0 +1,19 @@
+uuid: 6fa5fc8e-b6b8-4dbd-a475-eaa5f17b6182
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_introduccion_contenido
+    - node.type.content_kids_page
+id: node.content_kids_page.field_introduccion_contenido
+field_name: field_introduccion_contenido
+entity_type: node
+bundle: content_kids_page
+label: Descripción
+description: 'Descripción principal'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,2 @@
+view_rss_feed_url: 'https://www.postdata.gov.co/postdata-rss.xml'
+authentication_type: basic_auth
