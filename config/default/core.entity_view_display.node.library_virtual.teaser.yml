@@ -1,17 +1,17 @@
-uuid: 1cdb32ec-1440-4757-ac49-77b75d8c08cc
+uuid: 686062d5-d3ae-4243-8142-2c883a459017
 langcode: es
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.ejemplo.body
-    - node.type.ejemplo
+    - field.field.node.library_virtual.body
+    - node.type.library_virtual
   module:
     - text
     - user
-id: node.ejemplo.teaser
+id: node.library_virtual.teaser
 targetEntityType: node
-bundle: ejemplo
+bundle: library_virtual
 mode: teaser
 content:
   body:

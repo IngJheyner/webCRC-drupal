@@ -50,29 +50,66 @@
       {{ header }}
     </div>
   {% endif %}
-  {% if exposed %}
-    <div class="view-filters">
-      {{ exposed }}
-    </div>
-  {% endif %}
+  
   {% if attachment_before %}
     <div class="attachment attachment-before">
       {{ attachment_before }}
     </div>
-  {% endif %}
-  {% if rows %}
-    <div class="view-content container px-md-0">
-      {{ rows }}
-    </div>
-  {% elseif empty %}
-    <div class="view-empty">
-      {{ empty }}
-    </div>
-  {% endif %}
+  {% endif %} 
 
-  {% if pager %}
-    {{ pager }}
-  {% endif %}
+  <div class="view-content container px-0">
+
+    {# ===== ===== FORMULARIO ===== ===== #}
+    {% if exposed %}
+
+      <div class="view-filters">
+        {{ exposed }}
+      </div>
+
+    {% endif %}   
+
+    <div class='table__projects bg-white rounded-lg shadow mt-5'>
+
+      {# ===== ===== TABLA DE DATOS ===== ===== #}
+      {#% if rows %#}
+      {{ rows }}
+      {% if empty %}
+        <div class="view-empty">
+          {{ empty }}
+        </div>
+      {% endif %} 
+
+      {# ===== ===== PAGINADOR ===== ===== #}
+      {% if pager %}
+        {{ pager }}
+      {% endif %}
+
+    </div>
+
+    {# ===== ===== IFORMACION ===== ===== #}
+    <div class='table__projects-info mt-4'>
+      <div class="d-flex flex-column flex-lg-row justify-content-around">
+        <div>
+          <img src='/themes/custom/webcrc/src/images/proyecto-abierto.svg' onerror='this.remove();'>
+          <p class='d-inline-block'>{{'open Project'|t}}</p>
+        </div>
+        <div>
+        <img src='/themes/custom/webcrc/src/images/proyecto-finalizado.svg' onerror='this.remove();'>
+          <p class='d-inline-block'>{{'finished Project'|t}}</p>
+        </div>
+        <div>
+        <img src='/themes/custom/webcrc/src/images/aceptan-comentarios.svg' onerror='this.remove();'>
+          <p class='d-inline-block'>{{'Comments are accepted.'|t}}</p>
+        </div>
+        <div>
+        <img src='/themes/custom/webcrc/src/images/no-aceptan-comentarios.svg' onerror='this.remove();'>
+          <p class='d-inline-block'>{{'Comments are not accepted.'|t}}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+   
   {% if attachment_after %}
     <div class="attachment attachment-after">
       {{ attachment_after }}

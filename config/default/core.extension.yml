@@ -28,7 +28,6 @@ module:
   ctools: 0
   datetime: 0
   dblog: 0
-  devel_generate: 0
   dropzonejs: 0
   dropzonejs_eb_widget: 0
   dynamic_page_cache: 0
@@ -46,7 +45,6 @@ module:
   filefield_paths: 0
   filter: 0
   gin_toolbar: 0
-  google_analytics: 0
   help: 0
   history: 0
   honeypot: 0

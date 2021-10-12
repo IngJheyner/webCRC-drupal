@@ -8,6 +8,9 @@ description: 'Configuracion del entorno de desarrollo'
 folder: ../config/envs/local
 module:
   devel: 0
+  devel_entity_updates: 0
+  devel_generate: 0
+  entity_update: 0
   webprofiler: 0
 theme: {  }
 blacklist: {  }
