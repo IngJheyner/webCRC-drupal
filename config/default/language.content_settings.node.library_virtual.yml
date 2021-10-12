@@ -1,11 +1,11 @@
-uuid: 0c86d105-0d4b-44f7-adaf-0cce86487f41
+uuid: cb14ccb4-4915-435b-bdce-94f342fc89d1
 langcode: es
 status: true
 dependencies:
   config:
-    - node.type.ejemplo
-id: node.ejemplo
+    - node.type.library_virtual
+id: node.library_virtual
 target_entity_type_id: node
-target_bundle: ejemplo
+target_bundle: library_virtual
 default_langcode: site_default
 language_alterable: false

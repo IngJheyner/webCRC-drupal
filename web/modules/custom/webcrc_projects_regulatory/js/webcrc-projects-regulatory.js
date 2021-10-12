@@ -147,11 +147,11 @@
              
             $('#table__projects-regulatory').once('webcrc').each(function () {
                 $('#table__projects-regulatory').dataTable({
-                    //"searching": false,
+                    "searching": false,
                     "order": [],
-                    "pagingType": "simple_numbers",
+                    "info": false,
+                    "paging": false,
                     "lengthChange": false,
-                    "pageLength": 10,
                     "responsive": true,
                     "columnDefs": [
                         { className: "max-desktop", responsivePriority: 1, targets: 0 },
@@ -162,13 +162,6 @@
                         { className: "tablet-l desktop", targets: 5 },
                         { className: "tablet-l desktop", targets: 6 }
                     ],
-                    "language":{
-                        "zeroRecords":    "No se encontraron resultados.",
-                        "paginate": {                        
-                            "next":       "Siguiente",
-                            "previous":   "Anterior"
-                        }
-                    }
                 });
 
                 $('input.column_filter').on( 'keyup click', function () {

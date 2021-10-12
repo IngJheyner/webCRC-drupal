@@ -21507,6 +21507,7 @@ VISTA PAGE COMMENTS
 ============================== */
 div.page-projects {
   /* ===== ===== TABLE ===== ===== */
+  /* ===== ===== PAGINATION ===== ===== */
 }
 @media (min-width: 1200px) {
   div.page-projects div.container {
@@ -21589,42 +21590,27 @@ div.page-projects form div.input__projects div.input__projects-item {
     flex-basis: 100%;
   }
 }
-div.page-projects form div.input__projects div.input__projects-item i {
-  color: #3366CC;
-  position: absolute;
-  bottom: 1em;
-  right: 2em;
-}
-div.page-projects div#table__projects-regulatory_wrapper {
-  /* ===== ===== PAGINATION ===== ===== */
-}
-div.page-projects div#table__projects-regulatory_wrapper div.row:nth-child(1) {
-  display: none;
-}
-div.page-projects div#table__projects-regulatory_wrapper div.row:nth-child(3) > div:nth-child(1) {
-  display: none;
-}
-div.page-projects div#table__projects-regulatory_wrapper table thead tr:nth-child(2) th {
+div.page-projects table.table__projects-regulatory thead tr:nth-child(2) th {
   background-color: rgba(51, 102, 204, 0.5);
 }
-div.page-projects div#table__projects-regulatory_wrapper table thead tr th {
+div.page-projects table.table__projects-regulatory thead tr th {
   border: 0;
 }
-div.page-projects div#table__projects-regulatory_wrapper table tbody tr td:last-child strong {
+div.page-projects table.table__projects-regulatory tbody tr td:last-child strong {
   display: none;
 }
-div.page-projects div#table__projects-regulatory_wrapper ul.pagination {
+div.page-projects ul.pagination {
   padding-block: 2em;
 }
-div.page-projects div#table__projects-regulatory_wrapper ul.pagination a {
+div.page-projects ul.pagination a {
   text-decoration: none;
   border: 0;
 }
-div.page-projects div#table__projects-regulatory_wrapper ul.pagination li.page-item.active a {
+div.page-projects ul.pagination li.page-item.active a {
   color: white !important;
   background-color: #2F2A7C;
   border-radius: 0.3em;
 }
-div.page-projects div#table__projects-regulatory_wrapper ul.pagination li.disabled a {
+div.page-projects ul.pagination li.disabled a {
   color: #EBEBEB !important;
 }

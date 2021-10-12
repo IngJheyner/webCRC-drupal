@@ -1,16 +1,16 @@
-uuid: 5bdc0086-7020-445d-aad0-8baf9a8d14f9
+uuid: 4193c182-97ef-4f9e-9b9f-53df25c9dcee
 langcode: es
 status: true
 dependencies:
   config:
-    - field.field.node.ejemplo.body
-    - node.type.ejemplo
+    - field.field.node.library_virtual.body
+    - node.type.library_virtual
   module:
     - text
     - user
-id: node.ejemplo.default
+id: node.library_virtual.default
 targetEntityType: node
-bundle: ejemplo
+bundle: library_virtual
 mode: default
 content:
   body:

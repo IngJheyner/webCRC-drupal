@@ -1,16 +1,16 @@
-uuid: d905112d-da10-4424-b374-db7996e61e35
+uuid: 27ef8445-ffc1-4e18-8c47-0ecfb91274d1
 langcode: es
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.ejemplo
+    - node.type.library_virtual
   module:
     - text
-id: node.ejemplo.body
+id: node.library_virtual.body
 field_name: body
 entity_type: node
-bundle: ejemplo
+bundle: library_virtual
 label: Body
 description: ''
 required: false

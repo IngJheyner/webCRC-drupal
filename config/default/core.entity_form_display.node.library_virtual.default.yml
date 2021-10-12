@@ -1,17 +1,17 @@
-uuid: c5ced2a7-6d8b-4554-916d-1b7405eed3a2
+uuid: 4c4f3cfe-6708-4314-8790-fac4d0dd30f4
 langcode: es
 status: true
 dependencies:
   config:
-    - field.field.node.ejemplo.body
-    - node.type.ejemplo
+    - field.field.node.library_virtual.body
+    - node.type.library_virtual
   module:
     - path
     - scheduler
     - text
-id: node.ejemplo.default
+id: node.library_virtual.default
 targetEntityType: node
-bundle: ejemplo
+bundle: library_virtual
 mode: default
 content:
   body:
