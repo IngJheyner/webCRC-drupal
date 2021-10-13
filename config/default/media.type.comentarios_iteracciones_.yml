@@ -1,0 +1,14 @@
+uuid: 69280053-9adb-4115-9134-375c2f0c88e8
+langcode: es
+status: true
+dependencies: {  }
+id: comentarios_iteracciones_
+label: 'Comentarios [ Interacciones ]'
+description: 'Se visualiza en parrafo de nombre Comentarios, una seccion de interaccion para proyectos comentarios.'
+source: file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_file_2
+field_map:
+  name: name

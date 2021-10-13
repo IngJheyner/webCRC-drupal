@@ -1,0 +1,67 @@
+uuid: f1831fde-289b-4d5f-8070-08463826a817
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.media.interactions_extemporaneous.field_extemporaneous_route_file
+    - field.field.media.interactions_extemporaneous.field_media_file_3
+    - field.field.media.interactions_extemporaneous.field_operador_comentarios
+    - media.type.interactions_extemporaneous
+  module:
+    - field_group
+    - file
+    - options
+third_party_settings:
+  field_group:
+    group_extemporaneous_folder:
+      children:
+        - field_operador_comentarios
+        - field_media_file_3
+        - created
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+      label: Archivos
+id: media.interactions_extemporaneous.default
+targetEntityType: media
+bundle: interactions_extemporaneous
+mode: default
+content:
+  created:
+    type: timestamp
+    weight: 4
+    region: content
+    label: above
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  field_media_file_3:
+    label: above
+    weight: 3
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_operador_comentarios:
+    type: list_default
+    weight: 2
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_extemporaneous_route_file: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

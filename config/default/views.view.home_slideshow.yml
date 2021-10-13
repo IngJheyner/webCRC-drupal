@@ -72,9 +72,9 @@ display:
           optionset_thumbnail: ''
           skin_thumbnail: ''
           thumbnail_position: ''
-          grid: 1
-          grid_medium: 1
-          grid_small: 1
+          grid: '1'
+          grid_medium: '1'
+          grid_small: '1'
           visible_items: 1
           preserve_keys: false
           image: ''
@@ -382,6 +382,7 @@ display:
           exposed: false
           expose:
             label: ''
+            field_identifier: created
           granularity: second
       title: 'Home [Slideshow]'
       header: {  }

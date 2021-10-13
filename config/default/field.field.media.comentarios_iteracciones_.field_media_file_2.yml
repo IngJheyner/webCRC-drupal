@@ -1,0 +1,46 @@
+uuid: dd273096-57df-4ca5-8381-752722955507
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_file_2
+    - media.type.comentarios_iteracciones_
+  module:
+    - file
+    - filefield_paths
+third_party_settings:
+  filefield_paths:
+    enabled: true
+    file_path:
+      value: 'Proyectos Comentarios/[media:field_ruta_archivo_comentarios]/Comentarios'
+      options:
+        slashes: false
+        pathauto: false
+        transliterate: false
+    redirect: false
+    retroactive_update: false
+    active_updating: false
+    file_name:
+      value: '[file:ffp-name-only-original].[file:ffp-extension-original]'
+      options:
+        slashes: false
+        pathauto: false
+        transliterate: false
+id: media.comentarios_iteracciones_.field_media_file_2
+field_name: field_media_file_2
+entity_type: media
+bundle: comentarios_iteracciones_
+label: Archivo
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: ''
+  file_extensions: 'txt doc docx pdf'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

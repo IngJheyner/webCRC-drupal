@@ -1,0 +1,19 @@
+uuid: 33489ca6-8fe6-4f14-a5d6-9a28c609cbfc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oficina_proyecto
+    - node.type.proyectos_regulatorios
+id: node.proyectos_regulatorios.field_oficina_proyecto
+field_name: field_oficina_proyecto
+entity_type: node
+bundle: proyectos_regulatorios
+label: Oficina
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

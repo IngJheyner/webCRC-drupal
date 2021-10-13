@@ -10,8 +10,8 @@ _core:
   default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
 id: webcrc_breadcrumbs
 theme: webcrc
-region: navbar_branding
-weight: -5
+region: disabled
+weight: -7
 provider: null
 plugin: system_breadcrumb_block
 settings:

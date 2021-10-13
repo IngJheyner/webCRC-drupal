@@ -1,0 +1,30 @@
+uuid: 5bdc0086-7020-445d-aad0-8baf9a8d14f9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.ejemplo.body
+    - node.type.ejemplo
+  module:
+    - text
+    - user
+id: node.ejemplo.default
+targetEntityType: node
+bundle: ejemplo
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,8 @@
+uuid: 494ebcaf-5fe2-4ea3-affb-a2248b76caa5
+langcode: es
+status: true
+dependencies: {  }
+id: fecha_corta_webcrc
+label: 'Fecha Corta - Webcrc'
+locked: false
+pattern: d/M/Y

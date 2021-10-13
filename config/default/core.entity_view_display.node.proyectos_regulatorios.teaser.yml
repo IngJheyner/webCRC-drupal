@@ -1,0 +1,42 @@
+uuid: f9d225d4-c4e6-448b-8cfa-66d87f1acd4c
+langcode: es
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.proyectos_regulatorios.field_email_proyectos
+    - field.field.node.proyectos_regulatorios.field_enlaces_proyectos
+    - field.field.node.proyectos_regulatorios.field_estado_proyectos
+    - field.field.node.proyectos_regulatorios.field_interacciones_proyectos
+    - field.field.node.proyectos_regulatorios.field_nombre_proyecto
+    - field.field.node.proyectos_regulatorios.field_oficina_proyecto
+    - field.field.node.proyectos_regulatorios.field_projects_documents_endings
+    - field.field.node.proyectos_regulatorios.field_projects_services
+    - field.field.node.proyectos_regulatorios.field_resumen_proyecto
+    - field.field.node.proyectos_regulatorios.field_tipo_proyecto
+    - node.type.proyectos_regulatorios
+  module:
+    - user
+id: node.proyectos_regulatorios.teaser
+targetEntityType: node
+bundle: proyectos_regulatorios
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_email_proyectos: true
+  field_enlaces_proyectos: true
+  field_estado_proyectos: true
+  field_interacciones_proyectos: true
+  field_nombre_proyecto: true
+  field_oficina_proyecto: true
+  field_projects_documents_endings: true
+  field_projects_services: true
+  field_resumen_proyecto: true
+  field_tipo_proyecto: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,45 @@
+uuid: 9ba38b48-225a-4f59-84fd-88e11f35ae46
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.token
+    - field.field.paragraph.iterecciones_proyectos.field_comentarios_interacciones
+    - field.field.paragraph.iterecciones_proyectos.field_fases_interacciones
+    - field.field.paragraph.iterecciones_proyectos.field_fecha_cierre_iteracciones
+    - field.field.paragraph.iterecciones_proyectos.field_interaction_extemporaneous
+    - field.field.paragraph.iterecciones_proyectos.field_interactions_comments
+    - field.field.paragraph.iterecciones_proyectos.field_propuestas_interacciones
+    - paragraphs.paragraphs_type.iterecciones_proyectos
+  module:
+    - datetime
+id: paragraph.iterecciones_proyectos.token
+targetEntityType: paragraph
+bundle: iterecciones_proyectos
+mode: token
+content:
+  field_fecha_cierre_iteracciones:
+    type: datetime_default
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      timezone_override: America/Bogota
+      format_type: fecha_corta_webcrc
+    third_party_settings: {  }
+  field_interactions_comments:
+    type: boolean
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+hidden:
+  field_comentarios_interacciones: true
+  field_fases_interacciones: true
+  field_interaction_extemporaneous: true
+  field_propuestas_interacciones: true
+  search_api_excerpt: true

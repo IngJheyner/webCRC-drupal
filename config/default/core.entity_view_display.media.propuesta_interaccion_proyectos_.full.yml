@@ -1,0 +1,47 @@
+uuid: 0ac7d440-70bc-45e2-b549-664d82cbdc8c
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.full
+    - field.field.media.propuesta_interaccion_proyectos_.field_media_file_1
+    - field.field.media.propuesta_interaccion_proyectos_.field_ruta_file_propuestas
+    - media.type.propuesta_interaccion_proyectos_
+  module:
+    - file
+id: media.propuesta_interaccion_proyectos_.full
+targetEntityType: media
+bundle: propuesta_interaccion_proyectos_
+mode: full
+content:
+  created:
+    type: timestamp
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      date_format: fecha_webcrc
+      custom_date_format: ''
+      timezone: America/Bogota
+    third_party_settings: {  }
+  field_media_file_1:
+    type: file_url_plain
+    weight: 1
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_ruta_file_propuestas: true
+  langcode: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

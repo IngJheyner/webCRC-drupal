@@ -1,0 +1,70 @@
+uuid: 871fab20-e3f2-4647-85b0-008e75d4b079
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.list_social_networks.field_content_icon
+    - field.field.paragraph.list_social_networks.field_url
+    - paragraphs.paragraphs_type.list_social_networks
+  module:
+    - blazy
+    - link
+id: paragraph.list_social_networks.default
+targetEntityType: paragraph
+bundle: list_social_networks
+mode: default
+content:
+  field_content_icon:
+    type: blazy_media
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+      class: ''
+      id: ''
+      image: ''
+      overlay: ''
+      title: ''
+      vanilla: false
+      icon: ''
+      layout: ''
+      cache: 0
+      current_view_mode: ''
+      skin: ''
+      fx: ''
+      style: ''
+      background: false
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      caption: {  }
+      responsive_image_style: ''
+      box_style: ''
+      image_style: ''
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
+      _uri: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
+      breakpoints: {  }
+      sizes: ''
+      grid_header: ''
+    third_party_settings: {  }
+    region: content
+  field_url:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  search_api_excerpt: true

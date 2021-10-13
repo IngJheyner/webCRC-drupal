@@ -1,0 +1,21 @@
+uuid: 63959bca-15a4-4ecc-be29-6ff6e542cbbb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fases_interacciones
+    - paragraphs.paragraphs_type.iterecciones_proyectos
+  module:
+    - options
+id: paragraph.iterecciones_proyectos.field_fases_interacciones
+field_name: field_fases_interacciones
+entity_type: paragraph
+bundle: iterecciones_proyectos
+label: Fases
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

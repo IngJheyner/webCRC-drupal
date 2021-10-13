@@ -1,0 +1,30 @@
+uuid: c7501c52-390a-4f19-a5b4-7fdaf284a372
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:last_news:d6b7ca44-d780-4080-8a98-17d98296f931'
+  module:
+    - block_content
+    - system
+  theme:
+    - webcrc
+id: home_news
+theme: webcrc
+region: bottom_a
+weight: -11
+provider: null
+plugin: 'block_content:d6b7ca44-d780-4080-8a98-17d98296f931'
+settings:
+  id: 'block_content:d6b7ca44-d780-4080-8a98-17d98296f931'
+  label: 'Ultimas noticias'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

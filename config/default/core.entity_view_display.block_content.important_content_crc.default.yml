@@ -1,0 +1,86 @@
+uuid: 6d4d476b-a140-4cb9-b0b7-825face81636
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.important_content_crc
+    - field.field.block_content.important_content_crc.field_content_tabs
+    - field.field.block_content.important_content_crc.field_content_title
+    - field.field.block_content.important_content_crc.field_content_title_primary
+    - field.field.block_content.important_content_crc.field_icon
+  module:
+    - blazy
+    - entity_reference_revisions
+id: block_content.important_content_crc.default
+targetEntityType: block_content
+bundle: important_content_crc
+mode: default
+content:
+  field_content_tabs:
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_content_title:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_content_title_primary:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_icon:
+    weight: 0
+    label: hidden
+    settings:
+      link: '1'
+      class: ''
+      id: ''
+      image: ''
+      overlay: ''
+      title: ''
+      vanilla: false
+      icon: ''
+      layout: ''
+      view_mode: ''
+      cache: 0
+      current_view_mode: ''
+      skin: ''
+      fx: ''
+      style: ''
+      background: false
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      caption: {  }
+      responsive_image_style: ''
+      box_style: ''
+      image_style: ''
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
+      _uri: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
+      breakpoints: {  }
+      sizes: ''
+      grid_header: ''
+    third_party_settings: {  }
+    type: blazy_media
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

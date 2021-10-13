@@ -1,0 +1,41 @@
+uuid: 010ec9e3-7126-4b2f-8952-46bc2178dd47
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.comentarios_iteracciones_
+  module:
+    - dropzonejs_eb_widget
+    - media
+name: comentarios_interacciones_media
+label: 'Comentarios en Interacciones Media'
+display: modal
+display_configuration:
+  width: '1100'
+  height: '800'
+  link_text: 'Gestionar Comentarios'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: single
+widget_selector_configuration: {  }
+widgets:
+  8de90e5a-b0e6-40bf-be29-ebd34a1dbf88:
+    settings:
+      form_mode: default
+      media_type: comentarios_iteracciones_
+      upload_location: 'public://[date:custom:Y]-[date:custom:m]'
+      dropzone_description: 'Drop files here to upload them'
+      max_filesize: 32M
+      extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp'
+      clientside_resize: false
+      resize_width: null
+      resize_height: null
+      resize_quality: !!float 1
+      resize_method: contain
+      thumbnail_method: contain
+      submit_text: Confirmar
+    uuid: 8de90e5a-b0e6-40bf-be29-ebd34a1dbf88
+    weight: 1
+    label: Comentarios
+    id: dropzonejs_media_entity_inline_entity_form

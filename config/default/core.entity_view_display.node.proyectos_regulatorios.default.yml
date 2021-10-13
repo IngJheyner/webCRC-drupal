@@ -1,0 +1,37 @@
+uuid: 5c8336c3-cf74-4490-b082-6f0b22315005
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.proyectos_regulatorios.field_email_proyectos
+    - field.field.node.proyectos_regulatorios.field_enlaces_proyectos
+    - field.field.node.proyectos_regulatorios.field_estado_proyectos
+    - field.field.node.proyectos_regulatorios.field_interacciones_proyectos
+    - field.field.node.proyectos_regulatorios.field_nombre_proyecto
+    - field.field.node.proyectos_regulatorios.field_oficina_proyecto
+    - field.field.node.proyectos_regulatorios.field_projects_documents_endings
+    - field.field.node.proyectos_regulatorios.field_projects_services
+    - field.field.node.proyectos_regulatorios.field_resumen_proyecto
+    - field.field.node.proyectos_regulatorios.field_tipo_proyecto
+    - node.type.proyectos_regulatorios
+  module:
+    - user
+id: node.proyectos_regulatorios.default
+targetEntityType: node
+bundle: proyectos_regulatorios
+mode: default
+content: {  }
+hidden:
+  field_email_proyectos: true
+  field_enlaces_proyectos: true
+  field_estado_proyectos: true
+  field_interacciones_proyectos: true
+  field_nombre_proyecto: true
+  field_oficina_proyecto: true
+  field_projects_documents_endings: true
+  field_projects_services: true
+  field_resumen_proyecto: true
+  field_tipo_proyecto: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

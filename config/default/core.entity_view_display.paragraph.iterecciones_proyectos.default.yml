@@ -1,0 +1,58 @@
+uuid: c9f041db-068a-4460-9549-f731f12de9a3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.iterecciones_proyectos.field_comentarios_interacciones
+    - field.field.paragraph.iterecciones_proyectos.field_fases_interacciones
+    - field.field.paragraph.iterecciones_proyectos.field_fecha_cierre_iteracciones
+    - field.field.paragraph.iterecciones_proyectos.field_interaction_extemporaneous
+    - field.field.paragraph.iterecciones_proyectos.field_interactions_comments
+    - field.field.paragraph.iterecciones_proyectos.field_propuestas_interacciones
+    - paragraphs.paragraphs_type.iterecciones_proyectos
+id: paragraph.iterecciones_proyectos.default
+targetEntityType: paragraph
+bundle: iterecciones_proyectos
+mode: default
+content:
+  field_comentarios_interacciones:
+    type: entity_reference_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_interaction_extemporaneous:
+    type: entity_reference_entity_view
+    weight: 3
+    label: above
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_interactions_comments:
+    weight: 0
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_propuestas_interacciones:
+    type: entity_reference_entity_view
+    weight: 2
+    label: above
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_fases_interacciones: true
+  field_fecha_cierre_iteracciones: true
+  search_api_excerpt: true

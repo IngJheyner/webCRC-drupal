@@ -1,0 +1,29 @@
+uuid: 0741cb09-0582-466f-8a7f-89556f76cf72
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.news_crc
+    - taxonomy.vocabulary.news_tags
+id: node.news_crc.field_tags
+field_name: field_tags
+entity_type: node
+bundle: news_crc
+label: Etiquetas
+description: 'Relación de la noticia con otros tipos de categorias'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      news_tags: news_tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

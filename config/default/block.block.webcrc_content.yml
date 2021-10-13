@@ -1,6 +1,6 @@
 uuid: 12ec5251-81dc-492d-a1fa-b466a4a3b8b2
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,8 +10,8 @@ _core:
   default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
 id: webcrc_content
 theme: webcrc
-region: content
-weight: -5
+region: disabled
+weight: -9
 provider: null
 plugin: system_main_block
 settings:

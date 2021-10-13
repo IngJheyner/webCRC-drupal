@@ -1,6 +1,6 @@
 uuid: c11f352c-075f-42bd-9f30-0284004e958f
 langcode: en
-status: true
+status: false
 dependencies:
   theme:
     - webcrc
@@ -8,8 +8,8 @@ _core:
   default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
 id: webcrc_local_tasks
 theme: webcrc
-region: content
-weight: -8
+region: disabled
+weight: -12
 provider: null
 plugin: local_tasks_block
 settings:

@@ -1,0 +1,32 @@
+uuid: 122b25c3-3a87-4e55-b600-f7ad04a50880
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.newsletter
+    - field.storage.block_content.field_content_form
+    - webform.webform.boletin_de_noticias
+  module:
+    - webform
+id: block_content.newsletter.field_content_form
+field_name: field_content_form
+entity_type: block_content
+bundle: newsletter
+label: Formulario
+description: 'Formulario creado con el componente webfroms'
+required: true
+translatable: false
+default_value:
+  -
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+    target_uuid: 554d2fe4-5dec-4889-8311-6e31a611ec68
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

@@ -12,7 +12,7 @@ dependencies:
 id: contents_consulted
 theme: webcrc
 region: top_b
-weight: 0
+weight: -11
 provider: null
 plugin: 'block_content:29787947-1321-44c7-8051-03f4a5820754'
 settings:

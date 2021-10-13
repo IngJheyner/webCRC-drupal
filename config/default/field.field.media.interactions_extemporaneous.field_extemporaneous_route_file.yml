@@ -1,0 +1,19 @@
+uuid: 08ed6091-5f21-4889-9899-e100b70c8bff
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_extemporaneous_route_file
+    - media.type.interactions_extemporaneous
+id: media.interactions_extemporaneous.field_extemporaneous_route_file
+field_name: field_extemporaneous_route_file
+entity_type: media
+bundle: interactions_extemporaneous
+label: 'Ruta del Archivo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

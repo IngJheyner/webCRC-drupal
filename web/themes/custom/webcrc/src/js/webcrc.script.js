@@ -12,8 +12,7 @@ import anime from 'animejs/lib/anime.es';
 
       $(document, context).once('webcrc').each( function () {
 
-        $(document).ready( function () {
-
+        $(document).ready( function () {          
           var indicatorCount = document.querySelectorAll('.count_indicator');
 
           if(indicatorCount) {
@@ -30,6 +29,9 @@ import anime from 'animejs/lib/anime.es';
             });
           }
         });
+
+        /* ===== ===== TOOLTIP ===== ===== */
+        // $('[data-toggle="tooltip"]').tooltip();
       });
     }
   };

@@ -1,0 +1,18 @@
+@use '../../base/variables/variables' as var;
+ol.breadcrumb{  
+    background-color: transparent;  
+    li.breadcrumb-item{
+        margin: 5px 5px;
+        a{
+            margin-right: 0.5em;            
+        }
+
+        &:first-child{
+               margin-left: 0; 
+        }
+        
+        &.active{
+            color: var.$text-color-primary;
+        }
+    }
+}

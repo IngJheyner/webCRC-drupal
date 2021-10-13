@@ -1,0 +1,49 @@
+uuid: 246347e0-be68-43b4-b797-67c6e2e743f6
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.full
+    - field.field.media.interactions_extemporaneous.field_extemporaneous_route_file
+    - field.field.media.interactions_extemporaneous.field_media_file_3
+    - field.field.media.interactions_extemporaneous.field_operador_comentarios
+    - media.type.interactions_extemporaneous
+  module:
+    - file
+    - options
+id: media.interactions_extemporaneous.full
+targetEntityType: media
+bundle: interactions_extemporaneous
+mode: full
+content:
+  created:
+    type: timestamp
+    weight: 4
+    region: content
+    label: hidden
+    settings:
+      date_format: fecha_webcrc
+      custom_date_format: ''
+      timezone: America/Bogota
+    third_party_settings: {  }
+  field_media_file_3:
+    type: file_url_plain
+    weight: 3
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_operador_comentarios:
+    type: list_default
+    weight: 2
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_extemporaneous_route_file: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

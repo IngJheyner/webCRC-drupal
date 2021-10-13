@@ -1,0 +1,11 @@
+uuid: 68d7d724-e998-42b9-9bbf-e05ab729a2d2
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.interactions_extemporaneous
+id: media.interactions_extemporaneous
+target_entity_type_id: media
+target_bundle: interactions_extemporaneous
+default_langcode: site_default
+language_alterable: false

@@ -9,7 +9,7 @@ _core:
   default_config_hash: R44sHtkxxZrBiHA2kQiOrgfOwXDce6s8fpQCTUoDhf0
 id: default
 name: default
-label: Default
+label: 'Por defecto'
 weight: -10
 group: ''
 skin: default
@@ -69,3 +69,10 @@ options:
     vertical: false
     verticalSwiping: false
     waitForAnimate: true
+    regionLabel: carousel
+    useGroupRole: true
+    instructionsText: ''
+    useAutoplayToggleButton: true
+    pauseIcon: slick-pause-icon
+    playIcon: slick-play-icon
+    arrowsPlacement: ''

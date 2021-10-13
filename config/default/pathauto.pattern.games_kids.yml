@@ -1,0 +1,34 @@
+uuid: 27090661-6533-46b5-a86b-a21c4e4a6f35
+langcode: es
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: games_kids
+label: 'Jugos niños'
+type: 'canonical_entities:node'
+pattern: 'ninos/[node:title]'
+selection_criteria:
+  e10206b4-5ddb-446d-ac09-248382fc6f0e:
+    id: node_type
+    bundles:
+      game_kids: game_kids
+    negate: false
+    context_mapping:
+      node: node
+    uuid: e10206b4-5ddb-446d-ac09-248382fc6f0e
+  5e9d1289-b7b1-4d3f-8ed9-2a14247a3fb7:
+    id: language
+    langcodes:
+      en: en
+      es: es
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: 5e9d1289-b7b1-4d3f-8ed9-2a14247a3fb7
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

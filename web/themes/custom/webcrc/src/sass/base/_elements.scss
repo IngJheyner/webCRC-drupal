@@ -1,3 +1,4 @@
+@use './variables/variables' as var;
 // body
 // -----------------------------------------------------------------------------
 body {
@@ -7,7 +8,12 @@ body {
 // Headings
 // -----------------------------------------------------------------------------
 h1, h2, h3, h4, h5, h6 {
+ color: var.$text-color-primary;
+}
 
+h1 > * {
+  display: block;
+  font-size: 25pt;
 }
 
 h2 > * {
@@ -17,13 +23,15 @@ h2 > * {
 // Text
 // -----------------------------------------------------------------------------
 p {
-
+  color: var.$text-color-secundary;
 }
 
 // Links
 // -----------------------------------------------------------------------------
-a {
-  color: rgb(95, 106, 167);
+main{
+
+  a { 
+  color: var.$btn-color-primary;
   text-decoration: underline;
   font-weight: bold;
 
@@ -31,6 +39,9 @@ a {
 
   }
 }
+
+}
+
 
 // Lists
 // -----------------------------------------------------------------------------
@@ -66,4 +77,10 @@ strong {
 
 small {
 
+}
+
+time {
+  border-left: 5px solid rgb(51, 102, 204);
+  padding: 0 10px;
+  margin: 0 auto 20px;
 }

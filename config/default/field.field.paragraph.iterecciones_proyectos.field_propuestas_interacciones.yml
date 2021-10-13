@@ -1,0 +1,29 @@
+uuid: b029ccfb-d00d-4cb9-b6c8-10443a24348d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_propuestas_interacciones
+    - media.type.propuesta_interaccion_proyectos_
+    - paragraphs.paragraphs_type.iterecciones_proyectos
+id: paragraph.iterecciones_proyectos.field_propuestas_interacciones
+field_name: field_propuestas_interacciones
+entity_type: paragraph
+bundle: iterecciones_proyectos
+label: Propuestas
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      propuesta_interaccion_proyectos_: propuesta_interaccion_proyectos_
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

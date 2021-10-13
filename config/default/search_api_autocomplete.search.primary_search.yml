@@ -1,0 +1,25 @@
+uuid: b109c739-5bcf-475a-931f-c43290efe924
+langcode: es
+status: false
+dependencies:
+  config:
+    - search_api.index.webcrc_contenido
+    - search_api_page.search_api_page.primary_search
+  module:
+    - search_api_page
+    - search_api_autocomplete
+id: primary_search
+label: Buscador
+index_id: webcrc_contenido
+suggester_settings:
+  live_results:
+    fields: {  }
+    view_modes: {  }
+    highlight:
+      enabled: false
+      field: ''
+suggester_weights: {  }
+suggester_limits: {  }
+search_settings:
+  'page:primary_search': {  }
+options: {  }

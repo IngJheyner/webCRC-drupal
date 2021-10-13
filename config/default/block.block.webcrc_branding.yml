@@ -1,6 +1,6 @@
 uuid: 2ad32e6f-8d4f-4d18-a3b9-985de8b46bea
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,8 +10,8 @@ _core:
   default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
 id: webcrc_branding
 theme: webcrc
-region: navbar_branding
-weight: -6
+region: disabled
+weight: -8
 provider: null
 plugin: system_branding_block
 settings:

@@ -1,0 +1,25 @@
+/* ==============================
+ENCABEZADO
+============================== */
+@mixin encabezado-webcrc($tag) {
+
+    #{$tag}.header__title{
+
+        position: relative;
+        
+        @include media-breakpoint-up(md) {
+            &::after{
+                content: "";
+                position: absolute;
+                bottom: -8%;
+                left: 25%;
+                border-top: 20px solid white;
+                border-top-color: inherit;
+                border-left: 20px solid transparent;
+                border-right: 20px solid transparent;
+                color: white;
+                z-index: 1;
+            }
+        }        
+    }
+}

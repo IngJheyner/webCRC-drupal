@@ -1,0 +1,8 @@
+uuid: cc1d2759-44a1-47c9-9738-cf79dfc1bd6e
+langcode: es
+status: true
+dependencies: {  }
+id: fecha_webcrc
+label: 'Fecha - Webcrc'
+locked: false
+pattern: 'd/M/Y - H:m'

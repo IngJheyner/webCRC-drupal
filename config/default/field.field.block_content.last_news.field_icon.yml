@@ -1,0 +1,29 @@
+uuid: e4ad3246-c294-4130-810d-e027f6e67dc7
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.last_news
+    - field.storage.block_content.field_icon
+    - media.type.images_icons
+id: block_content.last_news.field_icon
+field_name: field_icon
+entity_type: block_content
+bundle: last_news
+label: Icono
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      images_icons: images_icons
+    sort:
+      field: created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

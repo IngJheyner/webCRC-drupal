@@ -1,0 +1,167 @@
+uuid: 98f306d8-3aa8-4fc1-aa40-9658ec558db1
+langcode: es
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.propuesta_interacciones_media
+    - field.field.paragraph.iterecciones_proyectos.field_comentarios_interacciones
+    - field.field.paragraph.iterecciones_proyectos.field_fases_interacciones
+    - field.field.paragraph.iterecciones_proyectos.field_fecha_cierre_iteracciones
+    - field.field.paragraph.iterecciones_proyectos.field_interaction_extemporaneous
+    - field.field.paragraph.iterecciones_proyectos.field_interactions_comments
+    - field.field.paragraph.iterecciones_proyectos.field_propuestas_interacciones
+    - paragraphs.paragraphs_type.iterecciones_proyectos
+  module:
+    - datetime
+    - entity_browser
+    - field_group
+third_party_settings:
+  field_group:
+    group_field_group:
+      children:
+        - group_propuestas
+        - group_comentarios
+        - group_extemporaneos
+      parent_name: ''
+      weight: 2
+      format_type: tabs
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        direction: horizontal
+        width_breakpoint: 640
+      label: 'Field Group'
+    group_propuestas:
+      children:
+        - field_propuestas_interacciones
+      parent_name: group_field_group
+      weight: 4
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Propuestas
+    group_comentarios:
+      children:
+        - group_sin_comentarios
+        - field_comentarios_interacciones
+      parent_name: group_field_group
+      weight: 5
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Comentarios
+    group_sin_comentarios:
+      children:
+        - field_interactions_comments
+      parent_name: group_comentarios
+      weight: 20
+      format_type: fieldset
+      region: content
+      format_settings:
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+        show_empty_fields: false
+      label: 'Sin comentarios'
+    group_extemporaneos:
+      children:
+        - field_interaction_extemporaneous
+      parent_name: group_field_group
+      weight: 6
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Extemporaneos
+id: paragraph.iterecciones_proyectos.default
+targetEntityType: paragraph
+bundle: iterecciones_proyectos
+mode: default
+content:
+  field_comentarios_interacciones:
+    type: entity_browser_entity_reference
+    weight: 22
+    region: content
+    settings:
+      entity_browser: comentarios_interacciones_media
+      field_widget_display: rendered_entity
+      field_widget_display_settings:
+        view_mode: default
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      field_widget_replace: false
+      open: false
+    third_party_settings: {  }
+  field_fases_interacciones:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_fecha_cierre_iteracciones:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_interaction_extemporaneous:
+    type: entity_browser_entity_reference
+    weight: 4
+    settings:
+      entity_browser: interactions_extemporaneous
+      field_widget_display: rendered_entity
+      field_widget_display_settings:
+        view_mode: default
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      field_widget_replace: false
+      open: false
+    third_party_settings: {  }
+    region: content
+  field_interactions_comments:
+    weight: 21
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_propuestas_interacciones:
+    type: entity_browser_entity_reference
+    weight: 0
+    region: content
+    settings:
+      entity_browser: propuesta_interacciones_media
+      field_widget_display: rendered_entity
+      field_widget_display_settings:
+        view_mode: default
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      field_widget_replace: false
+      open: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

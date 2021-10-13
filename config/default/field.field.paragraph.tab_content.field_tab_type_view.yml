@@ -13,7 +13,7 @@ entity_type: paragraph
 bundle: tab_content
 label: 'Tipo de vista'
 description: 'Seleccione una vista que desee que se visualize en la pestaña'
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
@@ -30,7 +30,9 @@ settings:
     entity_browser: 0
     embed: 0
   preselect_views:
+    rss_pruebas: rss_pruebas
     tabs_contents_consulted: tabs_contents_consulted
+    tabs_content_kids: tabs_content_kids
     block_content: 0
     comment: 0
     comments_recent: 0
@@ -38,14 +40,15 @@ settings:
     content_recent: 0
     files: 0
     frontpage: 0
-    home_search: 0
     home_slideshow: 0
     media: 0
     media_library: 0
+    news: 0
     paragraphs_library: 0
     paragraphs_library_browser: 0
     redirect: 0
     scheduler_scheduled_content: 0
+    search_view: 0
     tags: 0
     taxonomy_term: 0
     user_admin_people: 0

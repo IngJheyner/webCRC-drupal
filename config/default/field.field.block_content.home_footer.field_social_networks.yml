@@ -1,0 +1,52 @@
+uuid: 05fb1e31-06f4-400e-8ea1-854af1ec442f
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.home_footer
+    - field.storage.block_content.field_social_networks
+    - paragraphs.paragraphs_type.list_social_networks
+  module:
+    - entity_reference_revisions
+id: block_content.home_footer.field_social_networks
+field_name: field_social_networks
+entity_type: block_content
+bundle: home_footer
+label: 'Redes sociales'
+description: 'Listado de redes sociales para el pie de pagina'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      list_social_networks: list_social_networks
+    target_bundles_drag_drop:
+      from_library:
+        weight: 9
+        enabled: false
+      list_social_networks:
+        enabled: true
+        weight: 10
+      postdata_indicators:
+        weight: 11
+        enabled: false
+      tab_content:
+        weight: 15
+        enabled: false
+      tab_header:
+        weight: 16
+        enabled: false
+      tabs_wrapper:
+        weight: 12
+        enabled: false
+      tabs_wrapper_secondary:
+        weight: 13
+        enabled: false
+      tabs_wrapper_vertical:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

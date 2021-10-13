@@ -40,10 +40,10 @@ display:
         options:
           items_per_page: 50
           tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
+            previous: '‹ Anterior'
+            next: 'Siguiente >'
+            first: '« Primero'
+            last: 'Último »'
       style:
         type: table
         options:
@@ -551,7 +551,7 @@ display:
           table: views
           field: area_text_custom
           empty: true
-          content: 'No content available.'
+          content: 'No hay contenido disponible.'
           plugin_id: text_custom
       arguments: {  }
       relationships:
@@ -569,7 +569,7 @@ display:
           1: AND
       display_extenders: {  }
     display_plugin: default
-    display_title: Default
+    display_title: 'Por defecto'
     id: default
     position: 0
     cache_metadata:
@@ -601,7 +601,7 @@ display:
         weight: -10
       display_extenders: {  }
     display_plugin: page
-    display_title: Page
+    display_title: Página
     id: page_1
     position: 1
     cache_metadata:

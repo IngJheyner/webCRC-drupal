@@ -1,0 +1,14 @@
+uuid: 47426be8-b8fd-464e-88e9-a80749e7a438
+langcode: es
+status: true
+dependencies: {  }
+id: propuesta_interaccion_proyectos_
+label: 'Propuesta [ Interacciones ]'
+description: 'Se visualiza en parrafo de nombre Propuesta, una seccion de interaccion para proyectos comentarios.'
+source: file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_file_1
+field_map:
+  name: name

@@ -1,0 +1,41 @@
+uuid: c90ace52-bed7-46eb-a830-4f7ff38dc3cd
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.propuesta_interaccion_proyectos_
+  module:
+    - dropzonejs_eb_widget
+    - media
+name: propuesta_interacciones_media
+label: 'Propuesta en Interacciones Media'
+display: modal
+display_configuration:
+  width: '1100'
+  height: '800'
+  link_text: 'Gestionar Propuestas'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: single
+widget_selector_configuration: {  }
+widgets:
+  0f55127c-9f08-47cd-8934-486f833cf4e5:
+    settings:
+      form_mode: default
+      media_type: propuesta_interaccion_proyectos_
+      upload_location: 'public://[date:custom:Y]-[date:custom:m]'
+      dropzone_description: 'Suelta los archivos aquí para subirlos'
+      max_filesize: 32M
+      extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp'
+      clientside_resize: false
+      resize_width: null
+      resize_height: null
+      resize_quality: !!float 1
+      resize_method: contain
+      thumbnail_method: contain
+      submit_text: 'Cargar Propuesta'
+    uuid: 0f55127c-9f08-47cd-8934-486f833cf4e5
+    weight: 1
+    label: Propuestas
+    id: dropzonejs_media_entity_inline_entity_form

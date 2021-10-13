@@ -1,0 +1,11 @@
+uuid: 0c86d105-0d4b-44f7-adaf-0cce86487f41
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.ejemplo
+id: node.ejemplo
+target_entity_type_id: node
+target_bundle: ejemplo
+default_langcode: site_default
+language_alterable: false

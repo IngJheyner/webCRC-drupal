@@ -1,0 +1,55 @@
+uuid: 953198be-eeda-4600-a232-31f310d1b659
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_tabs
+    - node.type.content_kids_page
+    - paragraphs.paragraphs_type.tabs_wrapper_global
+  module:
+    - entity_reference_revisions
+id: node.content_kids_page.field_content_tabs
+field_name: field_content_tabs
+entity_type: node
+bundle: content_kids_page
+label: Tabs
+description: 'Tabs contenido pagina niño, niñas y adolecentes'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      tabs_wrapper_global: tabs_wrapper_global
+    target_bundles_drag_drop:
+      from_library:
+        weight: 10
+        enabled: false
+      list_social_networks:
+        weight: 11
+        enabled: false
+      postdata_indicators:
+        weight: 12
+        enabled: false
+      tab_content:
+        weight: 17
+        enabled: false
+      tab_header:
+        weight: 18
+        enabled: false
+      tabs_wrapper:
+        weight: 13
+        enabled: false
+      tabs_wrapper_global:
+        enabled: true
+        weight: 14
+      tabs_wrapper_secondary:
+        weight: 15
+        enabled: false
+      tabs_wrapper_vertical:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

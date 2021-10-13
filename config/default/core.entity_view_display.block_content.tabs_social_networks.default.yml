@@ -1,0 +1,26 @@
+uuid: 4a56f379-fc10-4f97-ba6a-a8495fb86ddf
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.tabs_social_networks
+    - field.field.block_content.tabs_social_networks.field_content_tabs
+  module:
+    - entity_reference_revisions
+id: block_content.tabs_social_networks.default
+targetEntityType: block_content
+bundle: tabs_social_networks
+mode: default
+content:
+  field_content_tabs:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

@@ -46,6 +46,7 @@
 // Base
 // -----------------------------------------------------------------------------
 @import "base/mixins";
+@import "base/mixins/mixins";
 @import "base/functions";
 @import "base/helpers";
 @import "base/elements";
@@ -56,6 +57,10 @@
 @import "layout/page.header";
 @import "layout/page.content";
 @import "layout/page.footer";
+
+// Override (Anular estilos de modulos contribuidos)
+// -----------------------------------------------------------------------------
+@import "override/easy_breadcrumb/easy_breadcrumb";
 
 // Component
 // -----------------------------------------------------------------------------
@@ -71,3 +76,13 @@
 @import "block/_block.top.a";
 @import "content/node.page";
 @import "content/node.article";
+@import "content/title/title";
+
+// PROYECTOS REGULATORIOS
+// -----------------------------------------------------------------------------
+@import "content/projects_regulatory/projects_regulatory";
+
+// NORMATIVIDAD
+// -----------------------------------------------------------------------------
+@import "content/normativity/normativity";
+@import "content/node.kids.page";

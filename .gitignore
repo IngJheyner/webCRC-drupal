@@ -7,9 +7,11 @@
 /web/profiles/contrib/
 /web/libraries/
 /create-project.gif
+/.vscode/
 
 # Ignore sensitive information.
 /web/sites/*/settings.local.php
+/web/sites/*/services.yml
 
 # Ignore local drush settings
 /web/sites/*/local.drush.yml

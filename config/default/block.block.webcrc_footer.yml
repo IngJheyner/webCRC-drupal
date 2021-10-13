@@ -13,7 +13,7 @@ _core:
 id: webcrc_footer
 theme: webcrc
 region: footer
-weight: -5
+weight: -13
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

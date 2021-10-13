@@ -7,6 +7,8 @@ module:
   admin_toolbar_tools: 0
   advagg: 0
   automated_cron: 0
+  backup_migrate: 0
+  basic_auth: 0
   big_pipe: 0
   big_pipe_sessionless: 0
   blazy: 0
@@ -15,6 +17,7 @@ module:
   block_content: 0
   breakpoint: 0
   ckeditor: 0
+  ckeditor_bs_grid: 0
   color: 0
   comment: 0
   components: 0
@@ -27,17 +30,23 @@ module:
   ctools: 0
   datetime: 0
   dblog: 0
+  devel_generate: 0
   dropzonejs: 0
+  dropzonejs_eb_widget: 0
   dynamic_page_cache: 0
+  easy_breadcrumb: 0
   editor: 0
   entity_browser: 0
   entity_reference_revisions: 0
   entity_usage: 0
   facets: 0
+  feed_block: 0
+  feeds: 0
   field: 0
   field_group: 0
   field_ui: 0
   file: 0
+  filefield_paths: 0
   filter: 0
   gin_toolbar: 0
   google_analytics: 0
@@ -45,12 +54,14 @@ module:
   history: 0
   honeypot: 0
   image: 0
+  inline_entity_form: 0
   jquery_ui: 0
   jquery_ui_accordion: 0
   language: 0
   link: 0
   locale: 0
   media: 0
+  media_entity_instagram: 0
   media_library: 0
   menu_link_content: 0
   menu_ui: 0
@@ -75,10 +86,14 @@ module:
   responsive_image: 0
   scheduler: 0
   search_api: 0
+  search_api_autocomplete: 0
   search_api_db: 0
+  search_api_page: 0
+  serialization: 0
   shortcut: 0
   slick: 0
   slick_views: 0
+  structure_sync: 0
   superfish: 0
   svg_image: 0
   svg_image_responsive: 0
@@ -92,8 +107,11 @@ module:
   update: 0
   user: 0
   verf: 0
+  views_bootstrap: 0
+  views_taxonomy_term_name_depth: 0
   views_ui: 0
   viewsreference: 0
+  webcrc_projects_regulatory: 0
   webform: 0
   webform_ui: 0
   pathauto: 1

@@ -1,0 +1,257 @@
+uuid: 84de61e6-c011-4f0c-903f-4603757e0188
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.proyectos_regulatorios.field_email_proyectos
+    - field.field.node.proyectos_regulatorios.field_enlaces_proyectos
+    - field.field.node.proyectos_regulatorios.field_estado_proyectos
+    - field.field.node.proyectos_regulatorios.field_interacciones_proyectos
+    - field.field.node.proyectos_regulatorios.field_nombre_proyecto
+    - field.field.node.proyectos_regulatorios.field_oficina_proyecto
+    - field.field.node.proyectos_regulatorios.field_projects_documents_endings
+    - field.field.node.proyectos_regulatorios.field_projects_services
+    - field.field.node.proyectos_regulatorios.field_resumen_proyecto
+    - field.field.node.proyectos_regulatorios.field_tipo_proyecto
+    - node.type.proyectos_regulatorios
+  module:
+    - field_group
+    - paragraphs
+third_party_settings:
+  field_group:
+    group_informacion:
+      children:
+        - title
+        - field_estado_proyectos
+        - created
+        - status
+      parent_name: group_field_group_tabs
+      weight: 1
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        direction: horizontal
+        width_breakpoint: 640
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Información
+    group_field_group_tabs:
+      children:
+        - group_informacion
+        - group_contenido
+        - group_mecanismos_participacio
+        - group_iteracciones_proyectos
+        - group_documentos_finales
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        direction: horizontal
+        width_breakpoint: 640
+      label: 'Field Group Tabs'
+    group_contenido:
+      children:
+        - field_tipo_proyecto
+        - field_projects_services
+        - field_nombre_proyecto
+        - field_resumen_proyecto
+      parent_name: group_field_group_tabs
+      weight: 2
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Contenido
+    group_mecanismos_participacio:
+      children:
+        - field_email_proyectos
+        - field_oficina_proyecto
+        - field_enlaces_proyectos
+      parent_name: group_field_group_tabs
+      weight: 3
+      format_type: tab
+      region: content
+      format_settings:
+        description: ''
+        formatter: closed
+        required_fields: true
+        id: ''
+        classes: ''
+        show_empty_fields: false
+      label: 'Mecanismos de Participación'
+    group_iteracciones_proyectos:
+      children:
+        - field_interacciones_proyectos
+      parent_name: group_field_group_tabs
+      weight: 4
+      format_type: tab
+      region: content
+      format_settings:
+        description: ''
+        formatter: open
+        required_fields: true
+        id: ''
+        classes: ''
+        show_empty_fields: false
+      label: Interacciones
+    group_documentos_finales:
+      children:
+        - field_projects_documents_endings
+      parent_name: group_field_group_tabs
+      weight: 5
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Documentos Finales'
+id: node.proyectos_regulatorios.default
+targetEntityType: node
+bundle: proyectos_regulatorios
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_email_proyectos:
+    weight: 28
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_enlaces_proyectos:
+    type: paragraphs
+    weight: 30
+    settings:
+      title: Párrafo
+      title_plural: Paragraphs
+      edit_mode: closed_expand_nested
+      closed_mode: preview
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: enlaces
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+    region: content
+  field_estado_proyectos:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_interacciones_proyectos:
+    type: paragraphs
+    weight: 28
+    settings:
+      title: Párrafo
+      title_plural: Paragraphs
+      edit_mode: closed_expand_nested
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: iterecciones_proyectos
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        duplicate: '0'
+    third_party_settings: {  }
+    region: content
+  field_nombre_proyecto:
+    weight: 33
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_oficina_proyecto:
+    weight: 29
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_projects_documents_endings:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      match_limit: 0
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_projects_services:
+    weight: 32
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_resumen_proyecto:
+    weight: 34
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_tipo_proyecto:
+    weight: 31
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  path: true
+  promote: true
+  publish_on: true
+  sticky: true
+  uid: true
+  unpublish_on: true
+  url_redirects: true

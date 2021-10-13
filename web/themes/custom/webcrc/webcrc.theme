@@ -9,3 +9,22 @@ $includes_path = dirname(__FILE__) . '/includes/*.inc';
 foreach (glob($includes_path) as $filename) {
   require_once dirname(__FILE__) . '/includes/' . basename($filename);
 }
+
+/**
+ * @file
+ * SUBTHEME theme file.
+ */
+function webcrc_page_attachments_alter(&$page){
+
+  $viewport = array(
+
+      '#type' => 'html_tag',
+      '#tag' => 'meta',
+      "#attributes" => array(
+          'name' => 'viewport',
+          'content' => 'width=device-width, initial-scale=1, shrink-to-fit=no',
+      ),
+  );
+
+  $page['#attached']['html_head'][] = [$viewport, 'viewport'];
+}

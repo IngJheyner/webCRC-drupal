@@ -9,22 +9,13 @@ dependencies:
     - field.field.block_content.home_footer.field_home_footer_insti_mail
     - field.field.block_content.home_footer.field_home_footer_judicial_mail
     - field.field.block_content.home_footer.field_home_footer_location
-    - field.field.block_content.home_footer.field_home_footer_logo_facebook
-    - field.field.block_content.home_footer.field_home_footer_logo_instagram
-    - field.field.block_content.home_footer.field_home_footer_logo_linkedin
-    - field.field.block_content.home_footer.field_home_footer_logo_twitter
     - field.field.block_content.home_footer.field_home_footer_logo_webcrc
-    - field.field.block_content.home_footer.field_home_footer_logo_youtube
     - field.field.block_content.home_footer.field_home_footer_title_social
     - field.field.block_content.home_footer.field_home_footer_txt_org
-    - field.field.block_content.home_footer.field_home_footer_url_facebook
-    - field.field.block_content.home_footer.field_home_footer_url_instagram
-    - field.field.block_content.home_footer.field_home_footer_url_linkedin
-    - field.field.block_content.home_footer.field_home_footer_url_twitter
-    - field.field.block_content.home_footer.field_home_footer_url_youtube
+    - field.field.block_content.home_footer.field_social_networks
   module:
     - blazy
-    - link
+    - entity_reference_revisions
 id: block_content.home_footer.default
 targetEntityType: block_content
 bundle: home_footer
@@ -62,12 +53,12 @@ content:
       ratio: ''
       thumbnail_style: ''
       _uri: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
       breakpoints: {  }
       sizes: ''
       grid_header: ''
-      grid: 0
-      grid_medium: 0
-      grid_small: 0
     third_party_settings: {  }
     type: blazy
     region: content
@@ -92,138 +83,6 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-    region: content
-  field_home_footer_logo_facebook:
-    weight: 9
-    label: hidden
-    settings:
-      image_style: ''
-      icon: ''
-      layout: ''
-      view_mode: ''
-      cache: 0
-      current_view_mode: ''
-      skin: ''
-      fx: ''
-      style: ''
-      background: false
-      box_caption: ''
-      box_caption_custom: ''
-      box_media_style: ''
-      caption: {  }
-      responsive_image_style: ''
-      box_style: ''
-      media_switch: ''
-      ratio: ''
-      thumbnail_style: ''
-      _uri: ''
-      breakpoints: {  }
-      sizes: ''
-      grid_header: ''
-      grid: 0
-      grid_medium: 0
-      grid_small: 0
-    third_party_settings: {  }
-    type: blazy
-    region: content
-  field_home_footer_logo_instagram:
-    weight: 13
-    label: hidden
-    settings:
-      image_style: ''
-      icon: ''
-      layout: ''
-      view_mode: ''
-      cache: 0
-      current_view_mode: ''
-      skin: ''
-      fx: ''
-      style: ''
-      background: false
-      box_caption: ''
-      box_caption_custom: ''
-      box_media_style: ''
-      caption: {  }
-      responsive_image_style: ''
-      box_style: ''
-      media_switch: ''
-      ratio: ''
-      thumbnail_style: ''
-      _uri: ''
-      breakpoints: {  }
-      sizes: ''
-      grid_header: ''
-      grid: 0
-      grid_medium: 0
-      grid_small: 0
-    third_party_settings: {  }
-    type: blazy
-    region: content
-  field_home_footer_logo_linkedin:
-    weight: 17
-    label: hidden
-    settings:
-      image_style: ''
-      icon: ''
-      layout: ''
-      view_mode: ''
-      cache: 0
-      current_view_mode: ''
-      skin: ''
-      fx: ''
-      style: ''
-      background: false
-      box_caption: ''
-      box_caption_custom: ''
-      box_media_style: ''
-      caption: {  }
-      responsive_image_style: ''
-      box_style: ''
-      media_switch: ''
-      ratio: ''
-      thumbnail_style: ''
-      _uri: ''
-      breakpoints: {  }
-      sizes: ''
-      grid_header: ''
-      grid: 0
-      grid_medium: 0
-      grid_small: 0
-    third_party_settings: {  }
-    type: blazy
-    region: content
-  field_home_footer_logo_twitter:
-    weight: 11
-    label: hidden
-    settings:
-      image_style: ''
-      icon: ''
-      layout: ''
-      view_mode: ''
-      cache: 0
-      current_view_mode: ''
-      skin: ''
-      fx: ''
-      style: ''
-      background: false
-      box_caption: ''
-      box_caption_custom: ''
-      box_media_style: ''
-      caption: {  }
-      responsive_image_style: ''
-      box_style: ''
-      media_switch: ''
-      ratio: ''
-      thumbnail_style: ''
-      _uri: ''
-      breakpoints: {  }
-      sizes: ''
-      grid_header: ''
-      grid: 0
-      grid_medium: 0
-      grid_small: 0
-    third_party_settings: {  }
-    type: blazy
     region: content
   field_home_footer_logo_webcrc:
     weight: 1
@@ -251,45 +110,12 @@ content:
       box_media_style: ''
       box_style: ''
       _uri: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
       breakpoints: {  }
       sizes: ''
       grid_header: ''
-      grid: 0
-      grid_medium: 0
-      grid_small: 0
-    third_party_settings: {  }
-    type: blazy
-    region: content
-  field_home_footer_logo_youtube:
-    weight: 15
-    label: hidden
-    settings:
-      image_style: ''
-      icon: ''
-      layout: ''
-      view_mode: ''
-      cache: 0
-      current_view_mode: ''
-      skin: ''
-      fx: ''
-      style: ''
-      background: false
-      box_caption: ''
-      box_caption_custom: ''
-      box_media_style: ''
-      caption: {  }
-      responsive_image_style: ''
-      box_style: ''
-      media_switch: ''
-      ratio: ''
-      thumbnail_style: ''
-      _uri: ''
-      breakpoints: {  }
-      sizes: ''
-      grid_header: ''
-      grid: 0
-      grid_medium: 0
-      grid_small: 0
     third_party_settings: {  }
     type: blazy
     region: content
@@ -309,65 +135,14 @@ content:
     third_party_settings: {  }
     type: string
     region: content
-  field_home_footer_url_facebook:
-    weight: 10
+  field_social_networks:
+    type: entity_reference_revisions_entity_view
+    weight: 19
     label: hidden
     settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
+      view_mode: default
+      link: ''
     third_party_settings: {  }
-    type: link
-    region: content
-  field_home_footer_url_instagram:
-    weight: 14
-    label: hidden
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
-    region: content
-  field_home_footer_url_linkedin:
-    weight: 18
-    label: hidden
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
-    region: content
-  field_home_footer_url_twitter:
-    weight: 12
-    label: hidden
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
-    region: content
-  field_home_footer_url_youtube:
-    weight: 16
-    label: hidden
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
     region: content
 hidden:
   langcode: true

@@ -1,0 +1,10 @@
+uuid: b5135d3f-eeca-4f7b-84ce-3e5244aa53ea
+langcode: es
+status: true
+dependencies: {  }
+id: tabs_wrapper_vertical
+label: 'Tabs verticales'
+icon_uuid: null
+icon_default: null
+description: 'Contenedor principal para los items de los tabs verticales'
+behavior_plugins: {  }

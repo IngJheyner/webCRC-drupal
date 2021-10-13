@@ -1,0 +1,29 @@
+uuid: 7b514ff7-4c28-48c9-9560-d0a8499aea1c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_comentarios_interacciones
+    - media.type.comentarios_iteracciones_
+    - paragraphs.paragraphs_type.iterecciones_proyectos
+id: paragraph.iterecciones_proyectos.field_comentarios_interacciones
+field_name: field_comentarios_interacciones
+entity_type: paragraph
+bundle: iterecciones_proyectos
+label: Comentarios
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      comentarios_iteracciones_: comentarios_iteracciones_
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

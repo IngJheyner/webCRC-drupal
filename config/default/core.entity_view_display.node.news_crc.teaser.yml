@@ -1,0 +1,34 @@
+uuid: 4deee531-0da5-45d7-8a1e-917d54e3175e
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.news_crc.field_category
+    - field.field.node.news_crc.field_content
+    - field.field.node.news_crc.field_image_content
+    - field.field.node.news_crc.field_introduccion_contenido
+    - field.field.node.news_crc.field_introduction_image
+    - field.field.node.news_crc.field_tags
+    - node.type.news_crc
+  module:
+    - user
+id: node.news_crc.teaser
+targetEntityType: node
+bundle: news_crc
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_category: true
+  field_content: true
+  field_image_content: true
+  field_introduccion_contenido: true
+  field_introduction_image: true
+  field_tags: true
+  langcode: true
+  search_api_excerpt: true

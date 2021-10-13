@@ -1,0 +1,35 @@
+uuid: 29282627-d521-47fc-9878-040c6d519f71
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.media.logos.field_media_image_1
+    - image.style.large
+    - media.type.logos
+  module:
+    - svg_image
+id: media.logos.default
+targetEntityType: media
+bundle: logos
+mode: default
+content:
+  field_media_image_1:
+    label: visually_hidden
+    weight: 0
+    settings:
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

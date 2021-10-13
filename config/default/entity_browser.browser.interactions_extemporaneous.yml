@@ -1,0 +1,41 @@
+uuid: 4bbaca40-6b59-4da3-b026-18537d42a195
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.interactions_extemporaneous
+  module:
+    - dropzonejs_eb_widget
+    - media
+name: interactions_extemporaneous
+label: 'Extemporaneos en Interacciones Media'
+display: modal
+display_configuration:
+  width: '1100'
+  height: '800'
+  link_text: 'Gestionar Extemporaneos'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: single
+widget_selector_configuration: {  }
+widgets:
+  b71f13fb-f53d-4c20-b84a-3306b2259df6:
+    settings:
+      form_mode: default
+      media_type: interactions_extemporaneous
+      upload_location: 'public://[date:custom:Y]-[date:custom:m]'
+      dropzone_description: 'Drop files here to upload them'
+      max_filesize: 32M
+      extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp'
+      clientside_resize: false
+      resize_width: null
+      resize_height: null
+      resize_quality: !!float 1
+      resize_method: contain
+      thumbnail_method: contain
+      submit_text: Confirmar
+    uuid: b71f13fb-f53d-4c20-b84a-3306b2259df6
+    weight: 1
+    label: Extemporaneos
+    id: dropzonejs_media_entity_inline_entity_form

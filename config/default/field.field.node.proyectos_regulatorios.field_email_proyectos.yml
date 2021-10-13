@@ -1,0 +1,19 @@
+uuid: 662210cb-1ec8-4101-ae78-0a09860d505a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email_proyectos
+    - node.type.proyectos_regulatorios
+id: node.proyectos_regulatorios.field_email_proyectos
+field_name: field_email_proyectos
+entity_type: node
+bundle: proyectos_regulatorios
+label: 'Correo electrónico'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

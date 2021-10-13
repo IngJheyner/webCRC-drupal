@@ -1,36 +1,73 @@
-{% set classes = [
-  'block',
-  bundle ? 'block--' ~ bundle|clean_class,
-  id ? 'block--' ~ id|replace({"_": "-"})|clean_class,
-]|merge(utility_classes ? utility_classes : []) %}
+{#
+/**
+ * @file
+ * Template for Header component.
+ *
+ * Available config:
+ * - container: fixed | fluid.
+ * - placement: default | fixed-top | fixed-bottom | sticky-top
+ * - color: light | dark
+ * - utility_classes: An array of utility classes.
+ *
+ * Available blocks:
+ * - branding
+ * - left
+ * - right
+ */
+#}
+{% set container = container == 'fixed' ? 'container' : false %}
+{% set placement = placement ?? '' %}
+{% set color = color ?? 'light' %}
 
-{% if html_tag %}
-    <{{ html_tag }}{{ attributes|without('id').addClass(classes) }}>
-{% endif %}
-
-  {% block content %}
-    <section class="row justify-content-between m-0 header-gov">
-      <div class="col-2 text-center">
-        <img src="{{ file_url(content.field_home_header_logo_govco[0]['#item'].entity.uri.value) }}" class="img-fluid mt-2 mt-lg-0" />
+<header id="page-header" class="page__header container-fluid p-0">
+  <section id="toolbar_header">
+    <div class="row m-0 pl-5 pr-5 align-items-center header-gov">
+      <div class="col pl-5 text-left">
+        {% block toolbar_left %}
+          {{ toolbar_left }}
+        {% endblock %}
       </div>
-      <div class="col-2 text-center">
+
+      <div class="col pr-5 text-right">
         <span class="govco-icon govco-icon-language-en-n lang-govco ml-3"></span>
+        {% block toolbar_right %}
+          {{ toolbar_right }}
+        {% endblock %}
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="row justify-content-between m-0 header-webcrc">
-      <div class="col-7 col-sm-5 col-xl-4 d-xl-block col-3 text-center logo-crc">
+  <section id="primary_header">
+    <div class="row m-0 align-items-center header-webcrc">
+      <div class="col-4 col-sm-4 col-xl-4 text-center logo-crc">
         <a href="{{ url('<front>') }}">
-          <img src="{{ file_url(content.field_home_header_logo_webcrc[0]['#item'].entity.uri.value) }}" class="img-fluid mt-2 mt-lg-0" />
+          {% block logo %}
+            {{ logo }}
+          {% endblock %}
         </a>
       </div>
-      <div class="col-7 col-sm-7 col-xl-7 text-center">
-        {{ drupal_view('home_search') }}
-        <i class="fas fa-search"></i>
-      </div>
-    </section>
-  {% endblock %} 
 
-{% if html_tag %}
-    </{{ html_tag }}>
-{% endif %} 
+      <div class="col-6 col-sm-6 col-xl-8 text-center search-primary">
+        {% block search %}
+          {{ search }}
+        {% endblock %}
+      </div>
+
+      <div class="page__top_a col-2 col-sm-2 col-md-12 col-lg-12 col-xl-12 p-0">
+        <nav id="main_menu" class="nav-main-menu {{ is_front ? 'home-menu' : null }}">
+          {% block menu %}
+            {{ menu }}
+          {% endblock %}
+        </nav>
+      </div>
+    </div>
+  </section>
+</header>
+
+<section id="top_a" class="page__top_a container-fluid p-0">
+  <div class="home-slide">
+    {% block top_a %}
+      {{ top_a }}
+    {% endblock %}
+  </div>
+</section>
