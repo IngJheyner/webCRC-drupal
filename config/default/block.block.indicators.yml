@@ -2,10 +2,7 @@ uuid: debb87aa-aa91-4533-b403-0380ece5fa8c
 langcode: es
 status: true
 dependencies:
-  content:
-    - 'block_content:indicators:a6f79fbc-3c22-45c9-b011-f3b39cdcfe46'
   module:
-    - block_content
     - system
   theme:
     - webcrc

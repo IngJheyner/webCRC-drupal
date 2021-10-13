@@ -1,0 +1,20 @@
+uuid: 3ec04a52-37c4-49e9-9930-a7f460c4bfc1
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+    - paragraphs
+id: paragraph.field_icono_item_transp
+field_name: field_icono_item_transp
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

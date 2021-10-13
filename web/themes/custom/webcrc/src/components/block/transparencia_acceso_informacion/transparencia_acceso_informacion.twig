@@ -3,23 +3,61 @@
     'block',
     'transparenciaAcceso',
     'block-' ~ configuration.provider|clean_class,
-    'block-' ~ plugin_id|clean_class,
+    'block-' ~ plugin_id|clean_class
   ]
 %}
+{% if html_tag %}
+  <{{ html_tag }}{{ attributes|without('id').addClass(classes) }}>
+{% endif %}
 
-<style>
-.tableTransparenciaTipoDocumento table caption{
-  display:block;
-  text-align: center;
-  font-size: 28px;
-  font-weight: 400;
-  color: #296294
-}
 
 {% block content %}
-
-    <div class="container mb-2">
-        <h1 class="tituloEncabezado">{{ label }}</h1>   
+  <div class="transparencia">
+    <div class="titulo">
+      <h1 class="tituloEncabezado">{{ label }}</h1>   
     </div>
+    <div class="breadcrumbs">
+      <span>breadcrumbs</span>
+    </div>
+  </div>
 
+  <div class="description-content">
+    <div>
+      <span>{{content.field_bloq_descrip_transparencia }}</span>
+    </div>
+    <div class="links_descripcion ">
+      <div class="d-flex align-items-center">
+        <div class="d-block icon-link">
+          <span class="material-icons material-icons-outlined sp">
+            link
+          </span>
+        </div>
+        <div>
+          {{ content.field_bloq_enlace_descrip_trans }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="menu row navbar-nav">
+    {% set item_icon = [] %}
+    {% for key, item in content.field_items_menu_transp_acces if key|first != '#' %}
+      {% set item_menu = item %}
+      <li class="dropdown col-md-4">
+        {{ item_menu }}
+      </li>
+    {% endfor %}
+    {{ item_icon }}
+  </div>
+  <div>
+      <div>
+        {% include '@webcrc/block/transparencia_acceso_informacion/title-for-item-transparencia.twig' with {
+          html_tag: 'div',
+          paragraph_items_menu : content.field_items_menu_transp_acces
+        } %}
+      </div>
+  </div>
 {% endblock %}
+
+{% if html_tag %}
+  </{{ html_tag }}>
+{% endif %}

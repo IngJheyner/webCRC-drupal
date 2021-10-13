@@ -1,0 +1,23 @@
+uuid: 92038706-806e-4c51-9ae5-d339531aee30
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_enlace_subitem_sitio
+    - paragraphs.paragraphs_type.submenu_transpa_acces_infor_publ
+  module:
+    - link
+id: paragraph.submenu_transpa_acces_infor_publ.field_enlace_subitem_sitio
+field_name: field_enlace_subitem_sitio
+entity_type: paragraph
+bundle: submenu_transpa_acces_infor_publ
+label: 'Enlace del subitem a sitio'
+description: 'Enlace del sub-item a sitio ( interno o externo ) [ Submenu de transparencia y acceso a la información pública ]'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

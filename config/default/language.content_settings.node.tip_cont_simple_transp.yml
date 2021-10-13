@@ -1,0 +1,11 @@
+uuid: 79c52114-5558-4e93-b228-e19ad192782d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.tip_cont_simple_transp
+id: node.tip_cont_simple_transp
+target_entity_type_id: node
+target_bundle: tip_cont_simple_transp
+default_langcode: site_default
+language_alterable: false

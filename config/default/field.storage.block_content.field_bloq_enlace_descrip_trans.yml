@@ -1,0 +1,19 @@
+uuid: 8944c273-dac6-4c0f-ac60-5cfe07134875
+langcode: es
+status: true
+dependencies:
+  module:
+    - block_content
+    - link
+id: block_content.field_bloq_enlace_descrip_trans
+field_name: field_bloq_enlace_descrip_trans
+entity_type: block_content
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

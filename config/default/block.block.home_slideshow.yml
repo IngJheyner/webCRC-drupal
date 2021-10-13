@@ -12,7 +12,7 @@ dependencies:
 id: home_slideshow
 theme: webcrc
 region: top_a
-weight: 0
+weight: -11
 provider: null
 plugin: 'views_block:home_slideshow-block_1'
 settings:

@@ -1,0 +1,49 @@
+uuid: 448d3eaa-5ea6-4a82-b0c6-333e9bfe964e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subitems_menu_transp_acces
+    - paragraphs.paragraphs_type.parag_menu_transp_acces_infor
+    - paragraphs.paragraphs_type.submenu_transpa_acces_infor_publ
+  module:
+    - entity_reference_revisions
+id: paragraph.parag_menu_transp_acces_infor.field_subitems_menu_transp_acces
+field_name: field_subitems_menu_transp_acces
+entity_type: paragraph
+bundle: parag_menu_transp_acces_infor
+label: Subitems
+description: 'Subitems (nivel 2) para los submenu cada item nivel 1 del menu de transparencia y acceso a la información pública'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      submenu_transpa_acces_infor_publ: submenu_transpa_acces_infor_publ
+    target_bundles_drag_drop:
+      from_library:
+        weight: 8
+        enabled: false
+      parag_menu_transp_acces_infor:
+        weight: 9
+        enabled: false
+      postdata_indicators:
+        weight: 10
+        enabled: false
+      submenu_transpa_acces_infor_publ:
+        enabled: true
+        weight: 11
+      tab_content:
+        weight: 13
+        enabled: false
+      tab_header:
+        weight: 14
+        enabled: false
+      tabs_wrapper:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

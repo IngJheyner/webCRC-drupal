@@ -1,0 +1,48 @@
+uuid: 0925e859-6d8b-4038-9f8b-89bb0a41555f
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.block_menu_transp_acces_public
+    - field.field.block_content.block_menu_transp_acces_public.field_bloq_descrip_transparencia
+    - field.field.block_content.block_menu_transp_acces_public.field_bloq_enlace_descrip_trans
+    - field.field.block_content.block_menu_transp_acces_public.field_items_menu_transp_acces
+  module:
+    - entity_reference_revisions
+    - link
+id: block_content.block_menu_transp_acces_public.default
+targetEntityType: block_content
+bundle: block_menu_transp_acces_public
+mode: default
+content:
+  field_bloq_descrip_transparencia:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_bloq_enlace_descrip_trans:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_items_menu_transp_acces:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

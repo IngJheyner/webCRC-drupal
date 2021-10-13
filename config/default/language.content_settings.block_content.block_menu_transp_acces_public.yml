@@ -1,0 +1,11 @@
+uuid: 93024f50-0590-44d3-bc81-1aed75e42f09
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.block_menu_transp_acces_public
+id: block_content.block_menu_transp_acces_public
+target_entity_type_id: block_content
+target_bundle: block_menu_transp_acces_public
+default_langcode: site_default
+language_alterable: false

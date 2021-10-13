@@ -1,0 +1,19 @@
+uuid: c73e0b5d-e505-4459-bad9-5fafb26a4262
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_parag_nomb_item_menu_trans
+    - paragraphs.paragraphs_type.parag_menu_transp_acces_infor
+id: paragraph.parag_menu_transp_acces_infor.field_parag_nomb_item_menu_trans
+field_name: field_parag_nomb_item_menu_trans
+entity_type: paragraph
+bundle: parag_menu_transp_acces_infor
+label: 'Nombre de item [ Nivel 1 ][ Transparencia y acceso a la información pública ]'
+description: 'Nombre de item del menu [ Nivel 1 ]  max 150 caracteres '
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
