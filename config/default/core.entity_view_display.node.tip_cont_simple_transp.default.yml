@@ -1,0 +1,30 @@
+uuid: 5e2609ac-32b8-4023-b828-138542733800
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.tip_cont_simple_transp.field_cont_tipo_cont_simp_transp
+    - node.type.tip_cont_simple_transp
+  module:
+    - text
+    - user
+id: node.tip_cont_simple_transp.default
+targetEntityType: node
+bundle: tip_cont_simple_transp
+mode: default
+content:
+  field_cont_tipo_cont_simp_transp:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

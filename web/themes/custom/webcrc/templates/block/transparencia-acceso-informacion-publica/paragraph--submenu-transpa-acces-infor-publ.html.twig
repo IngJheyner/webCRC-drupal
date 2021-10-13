@@ -1,0 +1,31 @@
+{#
+/**
+ * @file
+ * Template for the indicators paragraph.
+ */
+#}
+{%
+  set classes = [
+    'paragraph',
+    'item_menu',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+  ]
+%}
+{% block paragraph %}
+  {% block content %}
+    {% set label_sub_item = content.field_label_subitem_subme_transp.0    %}
+    {% set link_sitio     = content.field_enlace_subitem_sitio.0['#url']  %}
+    {% set documento      = content.field_archi_doc_subitem_transp        %}
+    {% if link_sitio.external != false %}
+      {% if link_sitio.uri != null %}
+        <a class="dropdown-item" href="{{link_sitio.uri}}">{{label_sub_item }}</a>  
+      {% else %}
+        <a class="dropdown-item" href="{{file_url(content.field_archi_doc_subitem_transp[0]['#media'].field_media_file.entity.uri.value)}}">{{label_sub_item}}</a>
+      {% endif %}
+    {% else %}
+      <a class="dropdown-item" href="{{ link_sitio }}">{{label_sub_item }}</a>
+    {% endif %}
+  {% endblock %}
+{% endblock paragraph %}

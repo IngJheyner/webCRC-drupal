@@ -1,0 +1,22 @@
+uuid: 8a9130ad-25f2-4196-8490-4157e3cac4df
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.tip_cont_simple_transp
+id: node.tip_cont_simple_transp.promote
+field_name: promote
+entity_type: node
+bundle: tip_cont_simple_transp
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

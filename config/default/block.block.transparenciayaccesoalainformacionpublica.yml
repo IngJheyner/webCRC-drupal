@@ -1,0 +1,30 @@
+uuid: fa6768fe-a461-4d63-8402-34b95f4a9e82
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:block_menu_transp_acces_public:324097e8-90e7-4499-981e-aa0f154f00ea'
+  module:
+    - block_content
+    - system
+  theme:
+    - webcrc
+id: transparenciayaccesoalainformacionpublica
+theme: webcrc
+region: content
+weight: -10
+provider: null
+plugin: 'block_content:324097e8-90e7-4499-981e-aa0f154f00ea'
+settings:
+  id: 'block_content:324097e8-90e7-4499-981e-aa0f154f00ea'
+  label: 'Transparencia y acceso a la información pública'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/transparencia-y-acceso-a-la-informacion-publica\r\n/transparencia-y-acceso-a-la-informacion-publica/*"
+    negate: false

@@ -1,0 +1,10 @@
+uuid: 910f46eb-01df-4e8a-9108-6b45033d8953
+langcode: es
+status: true
+dependencies: {  }
+id: submenu_transpa_acces_infor_publ
+label: 'Submenu transparencia y acceso a la información pública [ Items nivel 2 ]'
+icon_uuid: null
+icon_default: null
+description: 'Submenu transparencia y acceso a la información pública [ Items nivel 2 ] para el menu nivel 1 '
+behavior_plugins: {  }

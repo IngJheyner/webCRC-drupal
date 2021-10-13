@@ -1,0 +1,23 @@
+{%
+  set classes = [
+    'block',
+    'titleForItemTransparencia',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class
+  ]
+%}
+
+{% if html_tag %}
+  <{{ html_tag }}{{ attributes|without('id').addClass(classes) }}>
+{% endif %}
+
+{% block content %}
+    {% if paragraph_items_menu %}
+        {% set items_menu = paragraph_items_menu %}
+    {% endif %}
+    <h1> 1. Información de la entidad</h1>
+{% endblock %}
+
+{% if html_tag %}
+  </{{ html_tag }}>
+{% endif %}

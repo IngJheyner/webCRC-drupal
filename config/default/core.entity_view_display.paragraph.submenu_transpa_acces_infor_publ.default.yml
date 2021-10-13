@@ -1,0 +1,47 @@
+uuid: 54509602-68dc-4989-80fd-3db43e5572a7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.submenu_transpa_acces_infor_publ.field_archi_doc_subitem_transp
+    - field.field.paragraph.submenu_transpa_acces_infor_publ.field_enlace_subitem_sitio
+    - field.field.paragraph.submenu_transpa_acces_infor_publ.field_label_subitem_subme_transp
+    - paragraphs.paragraphs_type.submenu_transpa_acces_infor_publ
+  module:
+    - link
+id: paragraph.submenu_transpa_acces_infor_publ.default
+targetEntityType: paragraph
+bundle: submenu_transpa_acces_infor_publ
+mode: default
+content:
+  field_archi_doc_subitem_transp:
+    type: entity_reference_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_enlace_subitem_sitio:
+    weight: 1
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_label_subitem_subme_transp:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  search_api_excerpt: true

@@ -1,0 +1,20 @@
+uuid: f257c62c-3cae-4be9-9171-ddef7d6adfae
+langcode: es
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - paragraphs
+id: paragraph.field_subitems_menu_transp_acces
+field_name: field_subitems_menu_transp_acces
+entity_type: paragraph
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: 20
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

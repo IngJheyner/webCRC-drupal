@@ -1,0 +1,52 @@
+{#
+/**
+ * @file
+ * Template for the indicators paragraph.
+ */
+#}
+{%
+  set classes = [
+    'paragraph',
+    'item_menu',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+  ]
+%}
+{% block paragraph %}
+
+  {% block content %}
+    {% set label_item = content.field_parag_nomb_item_menu_trans.0  %}
+    {% set icon_item  = content.field_icono_item_transp.0           %}
+        <a class="nav-link dropdown-toggle border p-2 back-menu-transparencia item_menu" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <div class=" d-flex align-items-center">
+            <div class="col-md-2 p-2 m-0 ">
+              {{ icon_item }}
+            </div>
+            <div class="col-md-9">
+                <div class="align-items-center">
+                    <div class="d-flex align-items-center">
+                        <span>{{ label_item }}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1 p-0">
+                <span class="material-icons material-icons-outlined">
+                    expand_more
+                </span>
+            </div>
+          </div>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <div>
+            {% for key, item in content.field_subitems_menu_transp_acces if key|first != '#' %}
+              {% set subitems = item %}
+              {{ subitems }}            
+            {% endfor %}
+          </div>
+        </div>
+  {% endblock %}
+{% endblock paragraph %}
+
+
+
