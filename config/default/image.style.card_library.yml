@@ -1,0 +1,15 @@
+uuid: 0c0e4a86-7836-4474-a7f8-f3f6b7f72c1c
+langcode: es
+status: true
+dependencies: {  }
+name: card_library
+label: 'Card biblioteca ( 124x177 )'
+effects:
+  284be1d1-6342-4076-834f-a3517ab4fcc6:
+    uuid: 284be1d1-6342-4076-834f-a3517ab4fcc6
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 124
+      height: 177
+      anchor: center-center

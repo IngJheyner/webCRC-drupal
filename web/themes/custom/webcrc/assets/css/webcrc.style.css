@@ -20418,9 +20418,15 @@ readers do not read off random characters that represent icons */
   content: "\E56B";
 }
 
+/* ===== ===== TEXTO ===== ===== */
+/* ===== ===== FONDO ===== ===== */
+/* ===== ===== BOTONES y Anclas ===== ===== */
 /* ==============================
 ENCABEZADO
 ============================== */
+/* ============================================
+FONDO A CONTENIDO DE INTERES O RELACIONADOS
+=============================================== */
 /* ===== ===== TEXTO ===== ===== */
 /* ===== ===== FONDO ===== ===== */
 /* ===== ===== BOTONES y Anclas ===== ===== */
@@ -21486,7 +21492,7 @@ article.projects__regulatory section.projects__regulatory-content div.node__cont
 article.projects__regulatory section.projects__regulatory-related {
   position: relative;
 }
-article.projects__regulatory section.projects__regulatory-related div#projects__regulatory-related--bg {
+article.projects__regulatory section.projects__regulatory-related div#content-related--bg--webcrc {
   background-color: #2F2A7C;
   position: absolute;
   z-index: -1;
@@ -21613,4 +21619,79 @@ div.page-projects ul.pagination li.page-item.active a {
 }
 div.page-projects ul.pagination li.disabled a {
   color: #EBEBEB !important;
+}
+
+/* ===== ===== TEXTO ===== ===== */
+/* ===== ===== FONDO ===== ===== */
+/* ===== ===== BOTONES y Anclas ===== ===== */
+article.library-virtual {
+  /* ==============================
+  VISTA DE TIPO BLOQUE 
+  OTROS DOCUMENTOS DE INTERES
+  ============================== */
+}
+@media (min-width: 992px) {
+  article.library-virtual section.library-virtual__content img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+article.library-virtual section.library-virtual__content div.library-virtual__content-image ul li {
+  background-color: #2F2A7C;
+}
+article.library-virtual section.library-virtual__content div.library-virtual__content-to--share {
+  cursor: pointer;
+  height: 35px;
+  position: relative;
+}
+article.library-virtual section.library-virtual__content div.library-virtual__content-to--share:hover a.share {
+  height: 0;
+  opacity: 0;
+  transition: height 0.1s;
+}
+article.library-virtual section.library-virtual__content div.library-virtual__content-to--share:hover div.a2a_kit a span {
+  height: 32px;
+}
+article.library-virtual section.library-virtual__content div.library-virtual__content-to--share div.a2a_kit {
+  position: absolute;
+  top: 0;
+}
+article.library-virtual section.library-virtual__content div.library-virtual__content-to--share div.a2a_kit a span {
+  height: 0px;
+  transition: height 0.4s;
+}
+article.library-virtual section.library-virtual__content div.library-virtual__content--links-related p.links__related-title span {
+  color: #F42E62;
+}
+article.library-virtual section.library-virtual__content div.library-virtual__content--links-related div.field__items div.field__item {
+  border-right: 1px solid #b8b8b8;
+}
+@media (max-width: 991.98px) {
+  article.library-virtual section.library-virtual__content div.library-virtual__content--links-related div.field__items div.field__item:nth-child(2n) {
+    border-right: 0;
+  }
+}
+article.library-virtual section.library-virtual__content div.library-virtual__content--links-related div.field__items div.field__item:nth-child(3n) {
+  border: 0;
+}
+article.library-virtual section.library-virtual__documents-of-interest {
+  position: relative;
+}
+article.library-virtual section.library-virtual__documents-of-interest div.library__related-content p.library__related-content-title span {
+  color: #F42E62;
+}
+article.library-virtual section.library-virtual__documents-of-interest div.library__related-content div.library__related-content-info div.content__info-container div.content__info-container-tile-document p.type-document em {
+  color: #2F2A7C;
+}
+article.library-virtual section.library-virtual__documents-of-interest div.library__related-content div.library__related-content-info div.content__info-container div.content__info-container-tile-document time small {
+  border-left: 1px solid #2F2A7C;
+}
+article.library-virtual section.library-virtual__documents-of-interest div#content-related--bg--webcrc {
+  background-color: #2F2A7C;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
 }

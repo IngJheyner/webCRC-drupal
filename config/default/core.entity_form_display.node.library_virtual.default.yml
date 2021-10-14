@@ -3,100 +3,197 @@ langcode: es
 status: true
 dependencies:
   config:
-    - field.field.node.library_virtual.body
+    - field.field.node.library_virtual.field_library_author
+    - field.field.node.library_virtual.field_library_file
+    - field.field.node.library_virtual.field_library_image
+    - field.field.node.library_virtual.field_library_information
+    - field.field.node.library_virtual.field_library_keywords
+    - field.field.node.library_virtual.field_library_link_related
+    - field.field.node.library_virtual.field_library_notes
+    - field.field.node.library_virtual.field_library_type_document
+    - field.field.node.library_virtual.field_poll_content_useful
+    - image.style.thumbnail
     - node.type.library_virtual
   module:
-    - path
-    - scheduler
-    - text
+    - field_group
+    - file
+    - link
+    - svg_image
+    - webform
+third_party_settings:
+  field_group:
+    group_grupo_tabs:
+      children:
+        - group_informacion
+        - group_contenido
+        - group_archivos
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        direction: horizontal
+        width_breakpoint: 640
+      label: 'Grupo Tabs'
+    group_informacion:
+      children:
+        - title
+        - created
+        - field_poll_content_useful
+      parent_name: group_grupo_tabs
+      weight: 20
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Información
+    group_contenido:
+      children:
+        - field_library_information
+        - field_library_author
+        - field_library_type_document
+        - field_library_keywords
+        - field_library_link_related
+        - field_library_notes
+      parent_name: group_grupo_tabs
+      weight: 22
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Contenido
+    group_archivos:
+      children:
+        - field_library_image
+        - field_library_file
+      parent_name: group_grupo_tabs
+      weight: 23
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Archivos
 id: node.library_virtual.default
 targetEntityType: node
 bundle: library_virtual
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 121
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-      show_summary: false
-    third_party_settings: {  }
-    region: content
   created:
     type: datetime_timestamp
-    weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  langcode:
-    type: language_select
     weight: 2
     region: content
-    settings:
-      include_locked: true
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
-    region: content
     settings: {  }
     third_party_settings: {  }
-  promote:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 15
-    region: content
-    third_party_settings: {  }
-  publish_on:
-    type: datetime_timestamp_no_default
-    weight: 30
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  status:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 120
-    region: content
-    third_party_settings: {  }
-  sticky:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 16
-    region: content
-    third_party_settings: {  }
-  title:
-    type: string_textfield
-    weight: -5
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  uid:
-    type: entity_reference_autocomplete
-    weight: 5
+  field_library_author:
+    weight: 19
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_library_file:
+    weight: 14
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_library_image:
+    weight: 13
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_library_information:
+    weight: 18
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_library_keywords:
+    weight: 21
+    settings:
+      match_operator: CONTAINS
       match_limit: 10
-    region: content
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-  unpublish_on:
-    type: datetime_timestamp_no_default
-    weight: 30
+    type: entity_reference_autocomplete_tags
     region: content
+  field_library_link_related:
+    weight: 22
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_library_notes:
+    weight: 23
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_library_type_document:
+    weight: 20
     settings: {  }
     third_party_settings: {  }
-  url_redirects:
-    weight: 50
-    settings: {  }
-    third_party_settings: {  }
+    type: options_select
     region: content
-hidden: {  }
+  field_poll_content_useful:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      match_limit: '10'
+      size: 60
+      placeholder: ''
+      default_data: false
+      webforms: {  }
+    third_party_settings: {  }
+    type: webform_entity_reference_autocomplete
+    region: content
+  title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  path: true
+  promote: true
+  publish_on: true
+  status: true
+  sticky: true
+  uid: true
+  unpublish_on: true
+  url_redirects: true

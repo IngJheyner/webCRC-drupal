@@ -1165,7 +1165,7 @@ display:
             link_to_entity: false
         uid:
           id: uid
-          label: Author
+          label: Autor
           table: media_field_revision
           field: uid
           relationship: none

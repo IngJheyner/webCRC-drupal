@@ -1,0 +1,15 @@
+uuid: 8e075f2a-5991-4f6a-a523-1c6b1fb1d9d5
+langcode: es
+status: true
+dependencies: {  }
+name: mobile_285px
+label: 'Mobile ( 285px )'
+effects:
+  b52fb6b6-60b0-48c7-afcd-a56326d34973:
+    uuid: b52fb6b6-60b0-48c7-afcd-a56326d34973
+    id: image_scale
+    weight: 2
+    data:
+      width: 285
+      height: null
+      upscale: true

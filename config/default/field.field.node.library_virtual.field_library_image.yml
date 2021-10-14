@@ -1,0 +1,57 @@
+uuid: 4134d3ce-4fe7-420d-a0ca-fc17f77ca3dd
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_library_image
+    - node.type.library_virtual
+  module:
+    - filefield_paths
+    - image
+third_party_settings:
+  filefield_paths:
+    enabled: false
+    file_path:
+      value: '[date:custom:Y]-[date:custom:m]'
+      options:
+        slashes: false
+        pathauto: false
+        transliterate: false
+    redirect: false
+    retroactive_update: false
+    active_updating: false
+    file_name:
+      value: '[file:ffp-name-only-original].[file:ffp-extension-original]'
+      options:
+        slashes: false
+        pathauto: false
+        transliterate: false
+id: node.library_virtual.field_library_image
+field_name: field_library_image
+entity_type: node
+bundle: library_virtual
+label: Imagen
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: webcrc/images/library_virtual
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '2 mb'
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

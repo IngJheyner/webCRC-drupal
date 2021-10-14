@@ -1,0 +1,11 @@
+uuid: bd16a4e9-b4bd-452e-babe-cda4fc66bf5a
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.library_keywords
+id: taxonomy_term.library_keywords
+target_entity_type_id: taxonomy_term
+target_bundle: library_keywords
+default_langcode: site_default
+language_alterable: false

@@ -246,7 +246,7 @@ display:
           table: users_field_data
           field: name
           relationship: uid
-          label: Author
+          label: Autor
           exclude: false
           alter:
             alter_text: false

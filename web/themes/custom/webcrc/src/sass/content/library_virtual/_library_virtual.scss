@@ -1,0 +1,104 @@
+@use '../../base/variables/variables' as var;
+
+article.library-virtual{
+    
+    section.library-virtual__content{
+        @include media-breakpoint-up(lg) {
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        div.library-virtual__content-image{
+            ul li{
+                background-color: var.$bg-color-quinario;
+            }
+        }
+
+        div.library-virtual__content-to--share{ 
+            cursor: pointer;
+            height: 35px;
+            position: relative;
+            &:hover{    
+
+                a.share{
+                   height: 0;
+                   opacity: 0;
+                   transition: height .1s;                 
+                }
+                div.a2a_kit a span{
+                    height: 32px;
+                }
+            }           
+
+            div.a2a_kit{
+                position: absolute;   
+                top: 0;
+                a span{           
+                    height: 0px;               
+                    transition: height .4s;
+                }
+            }
+        }
+
+        div.library-virtual__content--links-related{
+
+            p.links__related-title{
+                span{
+                    color: var.$text-color-cuaternario;
+                }
+            }
+
+            div.field__items div.field__item{
+
+                border-right: 1px solid var.$bg-color-secundary;
+
+                @include media-breakpoint-down(md) {
+                    &:nth-child(2n){
+                        border-right: 0;
+                    }
+                }
+                &:nth-child(3n){
+                    border: 0;
+                }
+            }
+        }
+    }
+
+    /* ==============================
+    VISTA DE TIPO BLOQUE 
+    OTROS DOCUMENTOS DE INTERES
+    ============================== */
+    section.library-virtual__documents-of-interest{
+        position: relative;
+
+        div.library__related-content{            
+
+            p.library__related-content-title{
+                span{
+                    color: var.$text-color-cuaternario;
+                }
+            }
+
+            div.library__related-content-info{                
+
+                div.content__info-container{
+
+                    div.content__info-container-tile-document{
+
+                        p.type-document em{
+                            color: var.$text-color-quinario;
+                        }
+
+                        time small{
+                            border-left: 1px solid var.$bg-color-quinario;
+                        }
+                    }
+                }
+            }
+        }
+
+        @include content-related--bg--webcrc();
+    }
+}

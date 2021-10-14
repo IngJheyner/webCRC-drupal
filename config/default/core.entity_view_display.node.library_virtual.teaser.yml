@@ -1,32 +1,41 @@
 uuid: 686062d5-d3ae-4243-8142-2c883a459017
 langcode: es
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.library_virtual.body
+    - field.field.node.library_virtual.field_library_author
+    - field.field.node.library_virtual.field_library_file
+    - field.field.node.library_virtual.field_library_image
+    - field.field.node.library_virtual.field_library_information
+    - field.field.node.library_virtual.field_library_keywords
+    - field.field.node.library_virtual.field_library_link_related
+    - field.field.node.library_virtual.field_library_notes
+    - field.field.node.library_virtual.field_library_type_document
+    - field.field.node.library_virtual.field_poll_content_useful
     - node.type.library_virtual
   module:
-    - text
     - user
 id: node.library_virtual.teaser
 targetEntityType: node
 bundle: library_virtual
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    region: content
   links:
     weight: 100
     settings: {  }
     third_party_settings: {  }
     region: content
 hidden:
+  addtoany: true
+  field_library_author: true
+  field_library_file: true
+  field_library_image: true
+  field_library_information: true
+  field_library_keywords: true
+  field_library_link_related: true
+  field_library_notes: true
+  field_library_type_document: true
+  field_poll_content_useful: true
   langcode: true
   search_api_excerpt: true

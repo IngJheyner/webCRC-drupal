@@ -138,15 +138,7 @@ article.projects__regulatory{
 
         position: relative;
 
-        div#projects__regulatory-related--bg{
-            background-color: var.$bg-color-quinario;
-            position: absolute;
-            z-index: -1;
-            left: 0;
-            top: 0;
-            height: 100vh;
-            width: 100%;
-        }   
+        @include content-related--bg--webcrc();   
 
         div.projects__related-content{
 

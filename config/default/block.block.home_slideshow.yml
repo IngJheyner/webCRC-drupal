@@ -1,6 +1,6 @@
 uuid: d835be2a-c030-45de-a3a7-e15485fb0c7d
 langcode: es
-status: true
+status: false
 dependencies:
   config:
     - views.view.home_slideshow

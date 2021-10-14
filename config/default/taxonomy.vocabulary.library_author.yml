@@ -1,0 +1,8 @@
+uuid: 66d3434d-4c76-4628-a99f-4256519013cd
+langcode: es
+status: true
+dependencies: {  }
+name: Autor
+vid: library_author
+description: 'Biblioteca Virtual'
+weight: 0

@@ -1,0 +1,29 @@
+uuid: 8f089f75-3092-49e2-ac8c-621dd35d571e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_library_keywords
+    - node.type.library_virtual
+    - taxonomy.vocabulary.library_keywords
+id: node.library_virtual.field_library_keywords
+field_name: field_library_keywords
+entity_type: node
+bundle: library_virtual
+label: 'Palabras Clave'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      library_keywords: library_keywords
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

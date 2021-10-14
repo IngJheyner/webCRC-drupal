@@ -1,0 +1,23 @@
+uuid: 1e641341-0d86-4405-b64f-8ddc5b3e95c2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_library_link_related
+    - node.type.library_virtual
+  module:
+    - link
+id: node.library_virtual.field_library_link_related
+field_name: field_library_link_related
+entity_type: node
+bundle: library_virtual
+label: 'Enlace(s) Relacionados'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link
