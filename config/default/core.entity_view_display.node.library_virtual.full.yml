@@ -8,6 +8,8 @@ dependencies:
     - field.field.node.library_virtual.field_library_file
     - field.field.node.library_virtual.field_library_image
     - field.field.node.library_virtual.field_library_information
+    - field.field.node.library_virtual.field_library_isbn
+    - field.field.node.library_virtual.field_library_issn
     - field.field.node.library_virtual.field_library_keywords
     - field.field.node.library_virtual.field_library_link_related
     - field.field.node.library_virtual.field_library_notes
@@ -61,6 +63,22 @@ content:
     third_party_settings: {  }
     type: basic_string
     region: content
+  field_library_isbn:
+    type: string
+    weight: 9
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_library_issn:
+    type: string
+    weight: 10
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
   field_library_keywords:
     weight: 4
     label: hidden

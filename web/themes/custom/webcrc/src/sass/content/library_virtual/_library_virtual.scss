@@ -11,6 +11,9 @@ article.library-virtual{
         }
 
         div.library-virtual__content-image{
+            @include media-breakpoint-down(xs) {
+                max-width: 285px;
+            }
             ul li{
                 background-color: var.$bg-color-quinario;
             }
@@ -83,6 +86,10 @@ article.library-virtual{
 
             div.library__related-content-info{                
 
+                @include media-breakpoint-down(xs) {
+                    max-width: 285px;
+                }
+                
                 div.content__info-container{
 
                     div.content__info-container-tile-document{
@@ -101,4 +108,20 @@ article.library-virtual{
 
         @include content-related--bg--webcrc();
     }
+}
+
+/* ==============================
+VISTA TIPO PAGE
+============================== */
+
+div.page-library{
+
+    @include media-breakpoint-up(xl){       
+        max-width: 1400px;        
+    }
+    /* ===== ===== TABLE ===== ===== */
+    @include datable('library-virtual');
+
+    /* ===== ===== FORM VIEW ===== ===== */
+    @include form-view();
 }

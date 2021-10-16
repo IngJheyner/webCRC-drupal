@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.proyectos_regulatorios.field_interacciones_proyectos
     - field.field.node.proyectos_regulatorios.field_nombre_proyecto
     - field.field.node.proyectos_regulatorios.field_oficina_proyecto
+    - field.field.node.proyectos_regulatorios.field_poll_content_useful
     - field.field.node.proyectos_regulatorios.field_projects_documents_endings
     - field.field.node.proyectos_regulatorios.field_projects_services
     - field.field.node.proyectos_regulatorios.field_resumen_proyecto
@@ -28,12 +29,14 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  addtoany: true
   field_email_proyectos: true
   field_enlaces_proyectos: true
   field_estado_proyectos: true
   field_interacciones_proyectos: true
   field_nombre_proyecto: true
   field_oficina_proyecto: true
+  field_poll_content_useful: true
   field_projects_documents_endings: true
   field_projects_services: true
   field_resumen_proyecto: true

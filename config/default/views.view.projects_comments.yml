@@ -960,7 +960,7 @@ display:
       row:
         type: fields
         options: {  }
-      css_class: 'page-projects mt-5'
+      css_class: 'page-projects mt-5 container px-0'
       fields:
         title:
           id: title

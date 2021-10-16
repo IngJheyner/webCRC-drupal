@@ -90,7 +90,7 @@
 
       <div class='col-12 col-lg-6'>
 
-        <div class="card library-virtual__content-image shadow-lg">
+        <div class="card library-virtual__content-image shadow-lg mx-auto mx-lg">
 
           {# ===== ===== Imagen ===== ===== #}
           {{ content.field_library_image }}
@@ -127,9 +127,16 @@
           <p class='font-weight-bold mt-3 mt-lg-0'>{{'Abstract'|t}}</p>
           {{ content.field_library_information.0 }}
 
-          {# ===== ===== AUTOR ===== ===== #}
-          <p class='font-weight-bold mb-0'>{{'Author'|t}}</p>
-          {{ content.field_library_author.0 }}
+          {# ===== ===== ISBN ===== ===== #}
+          <p class='font-weight-bold mb-0'>{{'ISBN'|t}}</p>
+          {{ content.field_library_isbn.0 }}
+
+          {# ===== ===== ISSN ===== ===== #}
+          <p class='font-weight-bold mb-0 mt-3'>{{'ISSN'|t}}</p>
+          {{ content.field_library_issn.0 }}
+
+          {# ===== ===== AUTOR ===== ===== #}      
+          {{ content.field_library_author }}
 
           {# ===== ===== FECHA DE PUBLICACION ===== ===== #}
           <p class='font-weight-bold mb-0 mt-3'>{{'Date publication'|t}}</p>

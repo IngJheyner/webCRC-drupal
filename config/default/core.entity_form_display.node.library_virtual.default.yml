@@ -7,6 +7,8 @@ dependencies:
     - field.field.node.library_virtual.field_library_file
     - field.field.node.library_virtual.field_library_image
     - field.field.node.library_virtual.field_library_information
+    - field.field.node.library_virtual.field_library_isbn
+    - field.field.node.library_virtual.field_library_issn
     - field.field.node.library_virtual.field_library_keywords
     - field.field.node.library_virtual.field_library_link_related
     - field.field.node.library_virtual.field_library_notes
@@ -41,6 +43,8 @@ third_party_settings:
     group_informacion:
       children:
         - title
+        - field_library_isbn
+        - field_library_issn
         - created
         - field_poll_content_useful
       parent_name: group_grupo_tabs
@@ -98,12 +102,12 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 2
+    weight: 39
     region: content
     settings: {  }
     third_party_settings: {  }
   field_library_author:
-    weight: 19
+    weight: 30
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -128,15 +132,31 @@ content:
     type: image_image
     region: content
   field_library_information:
-    weight: 18
+    weight: 29
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
     type: string_textarea
     region: content
+  field_library_isbn:
+    weight: 37
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_library_issn:
+    weight: 38
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_library_keywords:
-    weight: 21
+    weight: 32
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -146,7 +166,7 @@ content:
     type: entity_reference_autocomplete_tags
     region: content
   field_library_link_related:
-    weight: 22
+    weight: 33
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -154,7 +174,7 @@ content:
     type: link_default
     region: content
   field_library_notes:
-    weight: 23
+    weight: 34
     settings:
       rows: 5
       placeholder: ''
@@ -162,13 +182,13 @@ content:
     type: string_textarea
     region: content
   field_library_type_document:
-    weight: 20
+    weight: 31
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_poll_content_useful:
-    weight: 3
+    weight: 40
     settings:
       match_operator: CONTAINS
       match_limit: '10'
@@ -181,7 +201,7 @@ content:
     region: content
   title:
     type: string_textfield
-    weight: 1
+    weight: 36
     region: content
     settings:
       size: 60

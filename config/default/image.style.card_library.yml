@@ -3,13 +3,13 @@ langcode: es
 status: true
 dependencies: {  }
 name: card_library
-label: 'Card biblioteca ( 124x177 )'
+label: 'Card biblioteca ( 160x228 )'
 effects:
   284be1d1-6342-4076-834f-a3517ab4fcc6:
     uuid: 284be1d1-6342-4076-834f-a3517ab4fcc6
     id: image_scale_and_crop
     weight: 1
     data:
-      width: 124
-      height: 177
+      width: 160
+      height: 228
       anchor: center-center

@@ -1,4 +1,6 @@
 <?php
+
+use Drupal\Core\Form\FormStateInterface;
 /**
  * @file
  * Theme functions
@@ -27,4 +29,108 @@ function webcrc_page_attachments_alter(&$page){
   );
 
   $page['#attached']['html_head'][] = [$viewport, 'viewport'];
+}
+
+/**
+ * Implements hook_form_views_exposed_form_alter()
+ *
+ */
+function webcrc_form_views_exposed_form_alter(&$form, FormStateInterface $form_state) {
+  //dpm($form);
+  if($form['#id'] == 'views-exposed-form-library-virtual-page-library-virtual'){
+
+    /* ===== ===== TITULO ===== ===== */
+    if (isset($form['palabras'])) $form['palabras']['#prefix'] = '<p class="h4 text-center text-white mb-3">'.t('Find the publication you have always been looking for').'</p>';
+
+    /* ===== ===== PLACEHOLDER ===== ===== */
+    $form['palabras-claves']['#attributes']['placeholder'] = t('Keywords: Colombia, Communication...');
+    $form['autor']['#attributes']['placeholder'] = t('Author');
+
+    /* ===== ===== LINEA ===== ===== */
+    if (isset($form['tipo-documento']))$form['tipo-documento']['#prefix'] = '<hr class="bg-white"><div class="input__group d-flex">';
+
+    /* ===== ===== END INPUT__GROUP ===== ===== */
+    if(isset($form['created_wrapper'])){
+      $form['created_wrapper']['#suffix'] = '</div>';
+      $form['created_wrapper']['#attributes'] = [
+        'class' => ['d-flex flex-column flex-md-row', 'justify-content-between'],
+      ];
+    }
+
+    $form['actions']['#attributes'] = [
+      'class' => ['text-center mt-3'],
+    ];
+    $form['actions']['submit']['#attributes'] = [
+      'class' => ['btn-outline-light'],
+    ];
+    $form['actions']['reset']['#attributes'] = [
+      'class' => ['btn-outline-light'],
+    ];
+  }
+}
+
+/**
+ * Implements hook_preprocess_form_element()
+ */
+function webcrc_preprocess_form_element(&$variables) {
+  /* ===== ===== Nombre de proyecto ===== ===== */
+  if($variables['name'] == 'palabras'){
+    $variables['attributes'] = [
+      'class' => [
+        'input__primary d-flex flex-row',
+      ]
+    ];
+
+    $variables['label']['#attributes'] = [
+      'class' => [
+        'd-none',
+      ]
+    ];
+
+    $variables['label']['#prefix'] = '<img src="/themes/custom/webcrc/src/images/icono-lupa.svg" onerror="this.remove();" class="mx-3 my-2">';    
+  }
+
+  /* ===== ===== SELECTOR ===== ===== */
+  switch ($variables['name']) {
+
+    case 'tipo-documento': case 'created[min]':  case 'created[max]':
+
+      $variables['attributes'] = [
+        'class' => [
+          'my-3 input__group-item',
+        ]
+      ];
+
+      $variables['label']['#prefix'] = '<small>';
+      $variables['label']['#suffix'] = '</small>';
+      $variables['label']['#attributes'] = [
+        'class' => [
+          'm-0 px-3',
+        ]
+      ];
+        
+    break;
+
+    case 'palabras-claves': case 'autor':
+
+      $variables['attributes'] = [
+        'class' => [
+          'my-3 input__group-item',
+        ]
+      ];
+
+      $variables['label']['#attributes'] = [
+        'class' => [
+          'd-none',
+        ]
+      ];
+
+    break;
+  }
+  
+  /* ===== ===== LABEL ===== ===== */
+  if($variables['name'] == 'created[min]' || $variables['name'] == 'created[max]'){
+    $variables['label']['#title'] = t('Date');
+  }
+  
 }

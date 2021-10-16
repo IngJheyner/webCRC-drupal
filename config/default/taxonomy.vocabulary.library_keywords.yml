@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 name: 'Palabras Clave'
 vid: library_keywords
-description: ''
+description: 'Biblioteca Virtual'
 weight: 0

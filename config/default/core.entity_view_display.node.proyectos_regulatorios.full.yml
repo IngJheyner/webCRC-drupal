@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.proyectos_regulatorios.field_interacciones_proyectos
     - field.field.node.proyectos_regulatorios.field_nombre_proyecto
     - field.field.node.proyectos_regulatorios.field_oficina_proyecto
+    - field.field.node.proyectos_regulatorios.field_poll_content_useful
     - field.field.node.proyectos_regulatorios.field_projects_documents_endings
     - field.field.node.proyectos_regulatorios.field_projects_services
     - field.field.node.proyectos_regulatorios.field_resumen_proyecto
@@ -19,6 +20,7 @@ dependencies:
     - entity_reference_revisions
     - options
     - user
+    - webform
 id: node.proyectos_regulatorios.full
 targetEntityType: node
 bundle: proyectos_regulatorios
@@ -49,7 +51,7 @@ content:
     third_party_settings: {  }
   field_interacciones_proyectos:
     type: entity_reference_revisions_entity_view
-    weight: 9
+    weight: 10
     region: content
     label: hidden
     settings:
@@ -72,9 +74,17 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+  field_poll_content_useful:
+    type: webform_entity_reference_entity_view
+    weight: 9
+    region: content
+    label: above
+    settings:
+      source_entity: true
+    third_party_settings: {  }
   field_projects_documents_endings:
     type: entity_reference_entity_view
-    weight: 10
+    weight: 11
     region: content
     label: hidden
     settings:
@@ -110,5 +120,6 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  addtoany: true
   langcode: true
   search_api_excerpt: true

@@ -20427,6 +20427,15 @@ ENCABEZADO
 /* ============================================
 FONDO A CONTENIDO DE INTERES O RELACIONADOS
 =============================================== */
+/* ==============================
+FORM VISTAS
+============================== */
+/* ==============================
+TABLE
+============================== */
+/* ==============================
+PAGINATION
+============================== */
 /* ===== ===== TEXTO ===== ===== */
 /* ===== ===== FONDO ===== ===== */
 /* ===== ===== BOTONES y Anclas ===== ===== */
@@ -21512,11 +21521,12 @@ article.projects__regulatory section.projects__regulatory-related div.projects__
 VISTA PAGE COMMENTS
 ============================== */
 div.page-projects {
+  /* ===== ===== FORM VIEW ===== ===== */
   /* ===== ===== TABLE ===== ===== */
-  /* ===== ===== PAGINATION ===== ===== */
+  /* ===== ===== PAGINACION ===== ===== */
 }
 @media (min-width: 1200px) {
-  div.page-projects div.container {
+  div.page-projects {
     max-width: 1400px;
   }
 }
@@ -21541,68 +21551,104 @@ div.page-projects form {
     padding-inline: 3em;
   }
 }
-div.page-projects form div.input {
+div.page-projects form div.input__primary {
   height: 3em;
   background: white;
   border-radius: 0.25rem;
 }
-div.page-projects form div.input input {
+div.page-projects form div.input__primary input {
   padding: 1.5em 0;
   border: 0;
 }
 @media (max-width: 767.98px) {
-  div.page-projects form div.input input::-moz-placeholder {
+  div.page-projects form div.input__primary input::-moz-placeholder {
     content: "a";
     color: white;
   }
-  div.page-projects form div.input input:-ms-input-placeholder {
+  div.page-projects form div.input__primary input:-ms-input-placeholder {
     content: "a";
     color: white;
   }
-  div.page-projects form div.input input::placeholder {
+  div.page-projects form div.input__primary input::placeholder {
     content: "a";
     color: white;
   }
 }
-div.page-projects form div.input select {
+div.page-projects form div.input__group {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+  div.page-projects form div.input__group fieldset {
+    flex-basis: 48.5%;
+  }
+}
+@media (max-width: 767.98px) {
+  div.page-projects form div.input__group fieldset {
+    flex-basis: 100%;
+  }
+}
+div.page-projects form div.input__group fieldset legend {
+  margin-bottom: 0;
+}
+div.page-projects form div.input__group div.input__group-item {
+  position: relative;
+  background: white;
+  border-radius: 0.25rem;
+  flex-basis: 48.5%;
+  height: 4em;
+}
+@media (max-width: 767.98px) {
+  div.page-projects form div.input__group div.input__group-item {
+    flex-basis: 100%;
+  }
+}
+div.page-projects form div.input__group div.input__group-item input {
+  border: 0;
+  background-image: none;
+}
+@media (max-width: 767.98px) {
+  div.page-projects form div.input__group div.input__group-item input::-moz-placeholder {
+    content: "a";
+    color: white;
+  }
+  div.page-projects form div.input__group div.input__group-item input:-ms-input-placeholder {
+    content: "a";
+    color: white;
+  }
+  div.page-projects form div.input__group div.input__group-item input::placeholder {
+    content: "a";
+    color: white;
+  }
+}
+div.page-projects form div.input__group div.input__group-item input:not([name="created[min]"], [name="created[max]"]) {
+  height: 4rem;
+}
+div.page-projects form div.input__group div.input__group-item select {
   border: 0;
   outline-offset: 0;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
 }
-div.page-projects form div.input select:focus {
+div.page-projects form div.input__group div.input__group-item select:focus {
   outline: none;
   box-shadow: none;
 }
-div.page-projects form div.input select option {
+div.page-projects form div.input__group div.input__group-item select option {
   width: 100%;
   border: 0;
 }
-div.page-projects form div.input label {
+div.page-projects form div.input__group div.input__group-item label {
   color: #3366CC;
 }
-div.page-projects form div.input__projects {
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-div.page-projects form div.input__projects div.input__projects-item {
-  position: relative;
-  flex-basis: 48.5%;
-  height: 4em;
-}
-@media (max-width: 767.98px) {
-  div.page-projects form div.input__projects div.input__projects-item {
-    flex-basis: 100%;
-  }
-}
-div.page-projects table.table__projects-regulatory thead tr:nth-child(2) th {
+div.page-projects table.projects-comments thead tr:nth-child(2) th {
   background-color: rgba(51, 102, 204, 0.5);
 }
-div.page-projects table.table__projects-regulatory thead tr th {
+div.page-projects table.projects-comments thead tr th {
   border: 0;
 }
-div.page-projects table.table__projects-regulatory tbody tr td:last-child strong {
+div.page-projects table.projects-comments tbody tr td:last-child strong {
   display: none;
 }
 div.page-projects ul.pagination {
@@ -21634,6 +21680,11 @@ article.library-virtual {
   article.library-virtual section.library-virtual__content img {
     max-width: 100%;
     height: auto;
+  }
+}
+@media (max-width: 575.98px) {
+  article.library-virtual section.library-virtual__content div.library-virtual__content-image {
+    max-width: 285px;
   }
 }
 article.library-virtual section.library-virtual__content div.library-virtual__content-image ul li {
@@ -21680,6 +21731,11 @@ article.library-virtual section.library-virtual__documents-of-interest {
 article.library-virtual section.library-virtual__documents-of-interest div.library__related-content p.library__related-content-title span {
   color: #F42E62;
 }
+@media (max-width: 575.98px) {
+  article.library-virtual section.library-virtual__documents-of-interest div.library__related-content div.library__related-content-info {
+    max-width: 285px;
+  }
+}
 article.library-virtual section.library-virtual__documents-of-interest div.library__related-content div.library__related-content-info div.content__info-container div.content__info-container-tile-document p.type-document em {
   color: #2F2A7C;
 }
@@ -21694,4 +21750,138 @@ article.library-virtual section.library-virtual__documents-of-interest div#conte
   top: 0;
   height: 100vh;
   width: 100%;
+}
+
+/* ==============================
+VISTA TIPO PAGE
+============================== */
+div.page-library {
+  /* ===== ===== TABLE ===== ===== */
+  /* ===== ===== FORM VIEW ===== ===== */
+}
+@media (min-width: 1200px) {
+  div.page-library {
+    max-width: 1400px;
+  }
+}
+div.page-library table.library-virtual thead tr:nth-child(2) th {
+  background-color: rgba(51, 102, 204, 0.5);
+}
+div.page-library table.library-virtual thead tr th {
+  border: 0;
+}
+div.page-library table.library-virtual tbody tr td:last-child strong {
+  display: none;
+}
+div.page-library form {
+  background-color: #3366CC;
+  padding-inline: 8em;
+  padding-block: 3em;
+}
+@media (max-width: 767.98px) {
+  div.page-library form {
+    padding-inline: 1em;
+    padding-block: 2em;
+  }
+}
+@media (min-width: 768px) {
+  div.page-library form {
+    padding-inline: 2em;
+  }
+}
+@media (min-width: 992px) {
+  div.page-library form {
+    padding-inline: 3em;
+  }
+}
+div.page-library form div.input__primary {
+  height: 3em;
+  background: white;
+  border-radius: 0.25rem;
+}
+div.page-library form div.input__primary input {
+  padding: 1.5em 0;
+  border: 0;
+}
+@media (max-width: 767.98px) {
+  div.page-library form div.input__primary input::-moz-placeholder {
+    content: "a";
+    color: white;
+  }
+  div.page-library form div.input__primary input:-ms-input-placeholder {
+    content: "a";
+    color: white;
+  }
+  div.page-library form div.input__primary input::placeholder {
+    content: "a";
+    color: white;
+  }
+}
+div.page-library form div.input__group {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+  div.page-library form div.input__group fieldset {
+    flex-basis: 48.5%;
+  }
+}
+@media (max-width: 767.98px) {
+  div.page-library form div.input__group fieldset {
+    flex-basis: 100%;
+  }
+}
+div.page-library form div.input__group fieldset legend {
+  margin-bottom: 0;
+}
+div.page-library form div.input__group div.input__group-item {
+  position: relative;
+  background: white;
+  border-radius: 0.25rem;
+  flex-basis: 48.5%;
+  height: 4em;
+}
+@media (max-width: 767.98px) {
+  div.page-library form div.input__group div.input__group-item {
+    flex-basis: 100%;
+  }
+}
+div.page-library form div.input__group div.input__group-item input {
+  border: 0;
+  background-image: none;
+}
+@media (max-width: 767.98px) {
+  div.page-library form div.input__group div.input__group-item input::-moz-placeholder {
+    content: "a";
+    color: white;
+  }
+  div.page-library form div.input__group div.input__group-item input:-ms-input-placeholder {
+    content: "a";
+    color: white;
+  }
+  div.page-library form div.input__group div.input__group-item input::placeholder {
+    content: "a";
+    color: white;
+  }
+}
+div.page-library form div.input__group div.input__group-item input:not([name="created[min]"], [name="created[max]"]) {
+  height: 4rem;
+}
+div.page-library form div.input__group div.input__group-item select {
+  border: 0;
+  outline-offset: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+div.page-library form div.input__group div.input__group-item select:focus {
+  outline: none;
+  box-shadow: none;
+}
+div.page-library form div.input__group div.input__group-item select option {
+  width: 100%;
+  border: 0;
+}
+div.page-library form div.input__group div.input__group-item label {
+  color: #3366CC;
 }

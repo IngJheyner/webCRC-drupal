@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.proyectos_regulatorios.field_interacciones_proyectos
     - field.field.node.proyectos_regulatorios.field_nombre_proyecto
     - field.field.node.proyectos_regulatorios.field_oficina_proyecto
+    - field.field.node.proyectos_regulatorios.field_poll_content_useful
     - field.field.node.proyectos_regulatorios.field_projects_documents_endings
     - field.field.node.proyectos_regulatorios.field_projects_services
     - field.field.node.proyectos_regulatorios.field_resumen_proyecto
@@ -17,6 +18,7 @@ dependencies:
   module:
     - field_group
     - paragraphs
+    - webform
 third_party_settings:
   field_group:
     group_informacion:
@@ -24,6 +26,7 @@ third_party_settings:
         - title
         - field_estado_proyectos
         - created
+        - field_poll_content_useful
         - status
       parent_name: group_field_group_tabs
       weight: 1
@@ -201,6 +204,14 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_poll_content_useful:
+    weight: 5
+    settings:
+      default_data: true
+      webforms: {  }
+    third_party_settings: {  }
+    type: webform_entity_reference_select
+    region: content
   field_projects_documents_endings:
     weight: 2
     settings:
@@ -235,7 +246,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 5
+    weight: 6
     region: content
     third_party_settings: {  }
   title:
