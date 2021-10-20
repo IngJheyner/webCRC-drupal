@@ -872,7 +872,7 @@ display:
   page_projects_comments:
     display_plugin: page
     id: page_projects_comments
-    display_title: 'Proyectos Comentarios'
+    display_title: 'Pagina Proyectos'
     position: 3
     display_options:
       display_extenders: {  }
@@ -960,7 +960,7 @@ display:
       row:
         type: fields
         options: {  }
-      css_class: 'page-projects mt-5 container px-0'
+      css_class: 'page-projects mt-5 container'
       fields:
         title:
           id: title
@@ -1623,7 +1623,7 @@ display:
       pager:
         type: full
         options:
-          items_per_page: 2
+          items_per_page: 10
           offset: 0
           id: 0
           total_pages: null

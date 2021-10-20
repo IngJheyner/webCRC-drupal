@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.full
     - field.field.node.library_virtual.field_library_author
     - field.field.node.library_virtual.field_library_file
+    - field.field.node.library_virtual.field_library_formats
     - field.field.node.library_virtual.field_library_image
     - field.field.node.library_virtual.field_library_information
     - field.field.node.library_virtual.field_library_isbn
@@ -124,6 +125,7 @@ content:
     third_party_settings: {  }
 hidden:
   addtoany: true
+  field_library_formats: true
   langcode: true
   links: true
   search_api_excerpt: true

@@ -53,6 +53,7 @@
   ]
 %}
 
+
 {% if label_hidden %}
   {% if multiple %}
     <div{{ attributes.addClass(classes, 'field__items') }}>
@@ -61,9 +62,9 @@
 
         <div{{ item.attributes.addClass('field__item d-inline-block') }}>          
           {% if not loop.last %}
-          <a href="">{{ item.content }},</a>
+          <a href="/biblioteca-virtual?palabras=&tipo-documento=All&palabras-claves={{ item.content['#plain_text'] }}">{{ item.content }},</a>
           {% else %}
-          <a href="">{{ item.content }}</a>
+          <a href="/biblioteca-virtual?palabras=&tipo-documento=All&palabras-claves={{ item.content['#plain_text'] }}">{{ item.content }}</a>
           {% endif %}
           </div>
 

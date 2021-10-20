@@ -1,0 +1,169 @@
+{#
+/**
+ * @file
+ * Theme override for a main view template.
+ *
+ * Available variables:
+ * - attributes: Remaining HTML attributes for the element.
+ * - css_name: A CSS-safe version of the view name.
+ * - css_class: The user-specified classes names, if any.
+ * - header: The optional header.
+ * - footer: The optional footer.
+ * - rows: The results of the view query, if any.
+ * - empty: The content to display if there are no rows.
+ * - pager: The optional pager next/prev links to display.
+ * - exposed: Exposed widget form/info to display.
+ * - feed_icons: Optional feed icons to display.
+ * - more: An optional link to the next page of results.
+ * - title: Title of the view, only used when displaying in the admin preview.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the view title.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the view title.
+ * - attachment_before: An optional attachment view to be displayed before the
+ *   view content.
+ * - attachment_after: An optional attachment view to be displayed after the
+ *   view content.
+ * - dom_id: Unique id for every view being printed to give unique class for
+ *   JavaScript.
+ *
+ * @see template_preprocess_views_view()
+ */
+#}
+{%
+  set classes = [
+    'view',
+    'view-' ~ id|clean_class,
+    'view-id-' ~ id,
+    'view-display-id-' ~ display_id,
+    dom_id ? 'js-view-dom-id-' ~ dom_id,
+  ]
+%}
+<div{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {% if title %}
+    {{ title }}
+  {% endif %}
+  {{ title_suffix }}
+  {% if header %}
+    <div class="view-header">
+      {{ header }}
+    </div>
+  {% endif %}
+
+  {% if attachment_before %}
+
+    <div class="attachment attachment-before">
+      {{ attachment_before }}
+    </div>
+
+  {% endif %}
+
+    <div class="view-content">
+
+      {# ===== ===== FORMULARIO ===== ===== #}
+      {% if exposed %}
+
+        <div class="view-filters">
+          {{ exposed }}
+        </div>
+
+      {% endif %}
+      
+      {# ===== ===== TABLA ===== ===== #}
+      <div class='page-library-table bg-white rounded-lg shadow mt-5'>
+
+        {# ===== ===== TABLA DE DATOS ===== ===== #}
+        {% if rows %}
+          {{ rows }}
+        {% elseif empty %}
+          <div class="view-empty">{{ empty }} </div>
+        {% endif %} 
+
+        {# ===== ===== PAGINADOR ===== ===== #}
+        {% if pager %}
+          {{ pager }}
+        {% endif %}
+
+      </div>
+
+      {# ===== ===== SECCIONES ===== ===== #}
+      <div class='page-library-sections mt-5'>
+        
+        <div class='row'>
+
+          <div class='col-12 col-md-6'>
+
+            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+              <li class="nav-item mr-sm-3">
+                <a class="nav-link text-decoration-none" id="pills-outstanding-tab" data-toggle="pill" href="#pills-outstanding" role="tab" aria-controls="pills-outstanding" aria-selected="false">{{ 'The most outstanding'|t }}</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-decoration-none active" id="pills-useful-tab" data-toggle="pill" href="#pills-useful" role="tab" aria-controls="pills-useful" aria-selected="true">{{ 'The most useful'|t }}</a>
+              </li>
+            </ul>
+
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade bg-white rounded-lg shadow px-2 px-md-5 py-4" id="pills-outstanding" role="tabpanel" aria-labelledby="pills-outstanding-tab">1</div>
+              <div class="tab-pane fade bg-white rounded-lg shadow px-md-5 py-4 show active" id="pills-useful" role="tabpanel" aria-labelledby="pills-useful-tab">
+                {{ drupal_view('webform_submissions','block_library_most_useful') }}
+              </div>
+            </div>
+
+          </div>
+
+          <div class='col-12 col-md-6 mt-5 mt-md-0'>
+
+            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+
+              <li class="nav-item mr-sm-3">
+                <a class="nav-link text-decoration-none active" id="pills-documents-tab" data-toggle="pill" href="#pills-documents" role="tab" aria-controls="pills-documents" aria-selected="false">{{ 'Types of Documents'|t }}</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link text-decoration-none" id="pills-formats-tab" data-toggle="pill" href="#pills-formats" role="tab" aria-controls="pills-formats" aria-selected="true">{{ 'Formats'|t }}</a>
+              </li>
+
+            </ul>
+
+            <div class="tab-content" id="pills-tabContent">
+
+              <div class="tab-pane fade bg-white rounded-lg shadowpx-2  px-2 px-md-4 px-lg-5 py-4 show active" id="pills-documents" role="tabpanel" aria-labelledby="pills-documents-tab">
+                {{ drupal_view('webcrc_taxonomias','block_library_type_document') }}
+              </div>
+
+              <div class="tab-pane fade bg-white rounded-lg shadow p-3" id="pills-useful" role="tabpanel" aria-labelledby="pills-useful-tab">             </div>
+
+            </div>
+
+          </div>
+
+        </div>
+        
+      </div>
+      
+    </div>
+
+  {% if attachment_after %}
+    <div class="attachment attachment-after">
+      {{ attachment_after }}
+    </div>
+  {% endif %}
+
+  {% if more %}
+    {{ more }}
+  {% endif %}
+
+  {% if footer %}
+    <div class="view-footer">
+      {{ footer }}
+    </div>
+  {% endif %}
+
+  {% if feed_icons %}
+    <div class="feed-icons">
+      {{ feed_icons }}
+    </div>
+  {% endif %}
+
+</div>

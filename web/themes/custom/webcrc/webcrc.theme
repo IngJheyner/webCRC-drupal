@@ -58,13 +58,13 @@ function webcrc_form_views_exposed_form_alter(&$form, FormStateInterface $form_s
     }
 
     $form['actions']['#attributes'] = [
-      'class' => ['text-center mt-3'],
+      'class' => ['text--md-center mt-3'],
     ];
     $form['actions']['submit']['#attributes'] = [
       'class' => ['btn-outline-light'],
     ];
     $form['actions']['reset']['#attributes'] = [
-      'class' => ['btn-outline-light'],
+      'class' => ['btn-outline-light mt-3 mt-md-0'],
     ];
   }
 }

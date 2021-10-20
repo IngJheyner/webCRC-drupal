@@ -113,15 +113,99 @@ article.library-virtual{
 /* ==============================
 VISTA TIPO PAGE
 ============================== */
-
 div.page-library{
 
     @include media-breakpoint-up(xl){       
         max-width: 1400px;        
-    }
-    /* ===== ===== TABLE ===== ===== */
-    @include datable('library-virtual');
+    }  
 
     /* ===== ===== FORM VIEW ===== ===== */
     @include form-view();
+
+    /* ===== ===== TABLE ===== ===== */
+    @include datable('library-virtual');
+
+    /* ===== ===== PAGINADOR ===== ===== */
+    @include pagination();
+
+    
+   
+    /* ===== ===== SECCIONES ===== ===== */
+    div.page-library-sections{
+
+        ul.nav-pills .nav-item .nav-link{
+
+            color: var.$text-color-terciario !important;
+            background-color: var.$bg-color-secundary; 
+
+            &.active {
+                color: white !important;
+                background-color: var.$bg-color-quinario !important;
+            }
+        }
+
+        /* ===== ===== TAB CONTENT ===== ===== */
+        div.tab-content{
+
+            div.tab-pane div.views-element-container{
+                height: 500px;
+                overflow-y: scroll;
+                overflow-x: auto;
+                scrollbar-width: thin;
+                scrollbar-color: var.$bg-color-secundary white;
+
+                &::-webkit-scrollbar{
+                    -webkit-appearance: none;
+                }
+                &::-webkit-scrollbar:vertical{
+                    width: 5px;
+                }
+
+                &::-webkit-scrollbar-track {
+                    border-radius: 10px;  
+                }
+
+                &::-webkit-scrollbar-track-piece  {
+                    background-color: white;
+                }
+                
+                &::-webkit-scrollbar-thumb:vertical {
+                    height: 30px;
+                    border-radius: 20px;
+                    background-color: var.$bg-color-secundary;
+                }
+               
+            }
+        }
+
+        /* ==============================
+        TABS PANE -- LEFT
+        ============================== */
+        /* ===== ===== LOS MAS VISTO ===== ===== */
+        article.most-useful{
+
+            div.node__content{
+                display: grid;
+                grid-template-columns: 1fr;
+
+                @include media-breakpoint-up(lg) {
+                    grid-template-columns: 1fr 2fr;
+                }
+            }
+        }
+
+        /* ==============================
+        TABS PANE -- RIGHT
+        ============================== */
+        div.library-type-document div.view-content{
+            display: grid;
+            grid-template-columns: repeat(1, minmax(min-content, 250px));
+
+            @include media-breakpoint-up(lg) {
+                grid-template-columns: repeat(2, minmax(min-content, 300px));
+            }
+        }
+
+    }
+    
 }

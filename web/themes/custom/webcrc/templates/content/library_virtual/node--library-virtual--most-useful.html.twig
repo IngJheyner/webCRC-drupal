@@ -72,8 +72,8 @@
 #}
 {%
   set classes = [
-    'library-virtual',
-    'node mt-5 container-fluid px-0',
+    'node',
+    'most-useful',
     'node--type-' ~ node.bundle|clean_class,
     node.isPromoted() ? 'node--promoted',
     node.isSticky() ? 'node--sticky',
@@ -83,94 +83,21 @@
 %}
 
 <article{{ attributes.addClass(classes) }}>
-   
-  <section class='library-virtual__content container px-md-0'>
 
-    <div class='row'>
+  <div{{ content_attributes.addClass('node__content my-4') }}>
 
-      <div class='col-12 col-lg-6'>
-
-        <div class="card library-virtual__content-image shadow-lg mx-auto mx-lg">
-
-          {# ===== ===== Imagen ===== ===== #}
-          {{ content.field_library_image }}
-
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-              <a href="{{ content.field_library_file.0 }}" target='_blank' class='d-block text-white text-center text-decoration-none'>
-              {{ 'Download the file'|t }}
-              <img src="/themes/custom/webcrc/src/images/descargar-archivo.svg" onerror='this.remove();'>
-              </a>
-            </li>            
-          </ul>
-         
-        </div>
-
-        {# ===== ===== Compartir ===== ===== #}
-        <div class="library-virtual__content-to--share mt-3">
-          <a class='text-decoration-none text-center d-block share'><img src="/themes/custom/webcrc/src/images/compartir.svg" onerror='this.remove();'>{{'Share'|t}}</a>
-               
-          <div class="a2a_kit a2a_kit_size_32 a2a_default_style mt-1 text-center"> 
-            <a class = "a2a_button_facebook"></a> 
-            <a class = "a2a_button_twitter"></a>
-          </div>
-        </div>  
-
-        {# ===== ===== PALABRAS CLAVES ===== ===== #}
-         <p class='font-weight-bold mb-0 mt-3'>{{'keywords'|t}}</p>
-        {{ content.field_library_keywords }}
-
-      </div>
-
-      <div class='col-12 col-lg-6'>
-          {# ===== ===== RESUMEN O INFORMACION ===== ===== #}
-          <p class='font-weight-bold mt-3 mt-lg-0'>{{'Abstract'|t}}</p>
-          {{ content.field_library_information.0 }}
-
-          {# ===== ===== ISBN ===== ===== #}
-          <p class='font-weight-bold mb-0'>{{'ISBN'|t}}</p>
-          {{ content.field_library_isbn.0 }}
-
-          {# ===== ===== ISSN ===== ===== #}
-          <p class='font-weight-bold mb-0 mt-3'>{{'ISSN'|t}}</p>
-          {{ content.field_library_issn.0 }}
-
-          {# ===== ===== AUTOR ===== ===== #}      
-          {{ content.field_library_author }}
-
-          {# ===== ===== FECHA DE PUBLICACION ===== ===== #}
-          <p class='font-weight-bold mb-0 mt-3'>{{'Date publication'|t}}</p>
-          <time>{{ node.getCreatedTime()|format_date('fecha_corta_webcrc') }}</time>
-
-          {# ===== ===== FECHA DE PUBLICACION ===== ===== #}
-          <p class='font-weight-bold mb-0 mt-3'>{{'Type document'|t}}</p>
-          {{ content.field_library_type_document.0 }}
-
-          {# ===== ===== NOTAS ===== ===== #}
-          <p class='font-weight-bold mb-0 mt-3'>{{'Notes'|t}}</p>
-          {{ content.field_library_notes.0 }}
-      </div>
-
-      <div class='library-virtual__content--links-related col-12 mt-5 py-3 p-md-5 bg-white rounded'>
-
-        <p class='h2 links__related-title'><img src="/themes/custom/webcrc/src/images/enlaces-relacionados.svg" onerror='this.remove();'> <span class='h2'>{{'Links'|t}}</span> {{'related'|t}}</p>
-        {# ===== ===== ENLACES RELACIONADOS ===== ===== #}
-        {{ content.field_library_link_related }}
-
-      </div>
-
-      <div class='col-12 px-xl-0'>
-      {# ===== ===== ENCUESTA ===== ===== #}
-        {{ content.field_poll_content_useful }}
-      </div>
-
+    <div class='node__content-item mx-auto'>
+       {{ content.field_library_image }}
     </div>
-    
-  </section>
 
-  <section class='library-virtual__documents-of-interest mt-5'>
-    <div id='content-related--bg--webcrc'></div>
-    {{ drupal_view('library_virtual', 'block_library_related') }}
-  </section> 
+    <div class='node__content-item text-center text-md-left mt-3 mt-md-0'>
+      {{ content.field_library_keywords }}
+      <a href="{{ url }}" rel="bookmark" class='text-decoration-none'>{{ label }}</a>
+      <p class='mt-3'>
+        <time>{{ node.getCreatedTime()|format_date('fecha_corta_webcrc') }}</time>
+      </p>
+    </div>   
+   
+  </div>
 
 </article>

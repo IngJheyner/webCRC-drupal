@@ -75,7 +75,6 @@ function webcrc_projects_regulatory_preprocess_views_view_field(&$variables) {
 
     if($view->current_display == 'page_projects_comments'){      
         
-      //array_push($my_field_value, end($result->_entity->get('field_interacciones_proyectos')->getValue()));
       if($field->field == 'field_interacciones_proyectos'){
 
         $field = end($row->_entity->get('field_interacciones_proyectos')->getValue());
@@ -117,7 +116,7 @@ function webcrc_projects_regulatory_form_views_exposed_form_alter(&$form, FormSt
     if (isset($form['field_nombre_proyecto_value'])) $form['field_nombre_proyecto_value']['#prefix'] = '<p class="h4 text-center text-white mb-3">'.t('Find the project of your interest.').'</p>';
 
     /* ===== ===== PLACEHOLDER ===== ===== */
-    $form['field_nombre_proyecto_value']['#attributes']['placeholder'] = t('Name or title: Improvement of mobile networks, Analysis of communication media ...');
+    if(isset($form['field_nombre_proyecto_value'])) $form['field_nombre_proyecto_value']['#attributes']['placeholder'] = t('Name or title: Improvement of mobile networks, Analysis of communication media ...');
 
     /* ===== ===== LINEA ===== ===== */
     if (isset($form['field_estado_proyectos_value']))$form['field_estado_proyectos_value']['#prefix'] = '<hr class="bg-white"><div class="input__group d-flex">';
@@ -126,13 +125,13 @@ function webcrc_projects_regulatory_form_views_exposed_form_alter(&$form, FormSt
     if(isset($form['field_projects_services_target_id'])) $form['field_projects_services_target_id']['#suffix'] = '</div>';
 
     $form['actions']['#attributes'] = [
-      'class' => ['text-center mt-3'],
+      'class' => ['text-md-center mt-3'],
     ];
     $form['actions']['submit']['#attributes'] = [
       'class' => ['btn-outline-light'],
     ];
     $form['actions']['reset']['#attributes'] = [
-      'class' => ['btn-outline-light'],
+      'class' => ['btn-outline-light mt-3 mt-sm-0'],
     ];
   }
 }

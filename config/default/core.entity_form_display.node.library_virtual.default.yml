@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.library_virtual.field_library_author
     - field.field.node.library_virtual.field_library_file
+    - field.field.node.library_virtual.field_library_formats
     - field.field.node.library_virtual.field_library_image
     - field.field.node.library_virtual.field_library_information
     - field.field.node.library_virtual.field_library_isbn
@@ -27,6 +28,7 @@ third_party_settings:
     group_grupo_tabs:
       children:
         - group_informacion
+        - group_library_info_relevant
         - group_contenido
         - group_archivos
       parent_name: ''
@@ -62,10 +64,6 @@ third_party_settings:
     group_contenido:
       children:
         - field_library_information
-        - field_library_author
-        - field_library_type_document
-        - field_library_keywords
-        - field_library_link_related
         - field_library_notes
       parent_name: group_grupo_tabs
       weight: 22
@@ -95,6 +93,84 @@ third_party_settings:
         formatter: closed
         required_fields: true
       label: Archivos
+    group_library_info_relevant:
+      children:
+        - group_info_relevant
+      parent_name: group_grupo_tabs
+      weight: 21
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Información Relevante'
+    group_info_relevant:
+      children:
+        - group_relevant_key_doc_more
+        - group_relevant_author
+        - group_relevated_links
+      parent_name: group_library_info_relevant
+      weight: 20
+      format_type: tabs
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        direction: vertical
+        width_breakpoint: 640
+      label: 'Grupo Tabs Relevant'
+    group_relevant_author:
+      children:
+        - field_library_author
+      parent_name: group_info_relevant
+      weight: 23
+      format_type: tab
+      region: content
+      format_settings:
+        description: ''
+        formatter: closed
+        required_fields: true
+        id: ''
+        classes: ''
+        show_empty_fields: false
+      label: Autor(es)
+    group_relevant_key_doc_more:
+      children:
+        - field_library_type_document
+        - field_library_keywords
+        - field_library_formats
+      parent_name: group_info_relevant
+      weight: 22
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Palabras claves, Tipo doc...'
+    group_relevated_links:
+      children:
+        - field_library_link_related
+      parent_name: group_info_relevant
+      weight: 24
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Enlace(s) Relacionados'
 id: node.library_virtual.default
 targetEntityType: node
 bundle: library_virtual
@@ -107,7 +183,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_library_author:
-    weight: 30
+    weight: 32
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -122,6 +198,12 @@ content:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
+    region: content
+  field_library_formats:
+    weight: 23
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   field_library_image:
     weight: 13
@@ -156,7 +238,7 @@ content:
     type: string_textfield
     region: content
   field_library_keywords:
-    weight: 32
+    weight: 22
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -166,7 +248,7 @@ content:
     type: entity_reference_autocomplete_tags
     region: content
   field_library_link_related:
-    weight: 33
+    weight: 24
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -174,7 +256,7 @@ content:
     type: link_default
     region: content
   field_library_notes:
-    weight: 34
+    weight: 31
     settings:
       rows: 5
       placeholder: ''
@@ -182,7 +264,7 @@ content:
     type: string_textarea
     region: content
   field_library_type_document:
-    weight: 31
+    weight: 21
     settings: {  }
     third_party_settings: {  }
     type: options_select

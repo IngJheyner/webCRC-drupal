@@ -81,6 +81,7 @@
         "drupal/search_api_autocomplete": "^1.5",
         "drupal/search_api_page": "^1.0@beta",
         "drupal/simple_sitemap": "^3.8",
+        "drupal/simplify": "^1.2",
         "drupal/slick": "^2.3",
         "drupal/slick_views": "^2.4",
         "drupal/stage_file_proxy": "^1.1",

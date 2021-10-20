@@ -1,9 +1,9 @@
-uuid: 686062d5-d3ae-4243-8142-2c883a459017
+uuid: 975f6f5f-0ec3-4d27-ab3f-33a137eb6f77
 langcode: es
-status: false
+status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.most_useful
     - field.field.node.library_virtual.field_library_author
     - field.field.node.library_virtual.field_library_file
     - field.field.node.library_virtual.field_library_formats
@@ -17,31 +17,48 @@ dependencies:
     - field.field.node.library_virtual.field_library_type_document
     - field.field.node.library_virtual.field_poll_content_useful
     - node.type.library_virtual
+    - responsive_image.styles.card_adaptable_library
   module:
+    - svg_image_responsive
     - user
-id: node.library_virtual.teaser
+id: node.library_virtual.most_useful
 targetEntityType: node
 bundle: library_virtual
-mode: teaser
+mode: most_useful
 content:
-  links:
-    weight: 100
-    settings: {  }
-    third_party_settings: {  }
+  field_library_image:
+    type: responsive_image
+    weight: 1
     region: content
+    label: hidden
+    settings:
+      responsive_image_style: card_adaptable_library
+      image_link: ''
+      svg_render_as_image: '1'
+      svg_attributes:
+        width: ''
+        height: ''
+    third_party_settings: {  }
+  field_library_keywords:
+    type: entity_reference_label
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
 hidden:
   addtoany: true
   field_library_author: true
   field_library_file: true
   field_library_formats: true
-  field_library_image: true
   field_library_information: true
   field_library_isbn: true
   field_library_issn: true
-  field_library_keywords: true
   field_library_link_related: true
   field_library_notes: true
   field_library_type_document: true
   field_poll_content_useful: true
   langcode: true
+  links: true
   search_api_excerpt: true
