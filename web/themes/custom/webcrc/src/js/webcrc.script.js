@@ -76,6 +76,12 @@ import anime from 'animejs/lib/anime.es';
       
       });
 
+      /*===========================================
+      COLOCAR EL DATEPICKER A CAMPO DE TIPO FECHA
+      EN EL SITIO
+      -- created-min
+      -- created-max
+      =============================================*/
       $('#edit-created-min').once('webcrc').each(function () {
         $('#edit-created-min').datepicker({
           language: 'es',

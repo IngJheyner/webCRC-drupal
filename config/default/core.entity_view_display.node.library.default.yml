@@ -1,0 +1,53 @@
+uuid: 218ac9d0-1e1f-4cae-8be4-2e389b767042
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.library.field_library_author
+    - field.field.node.library.field_library_file
+    - field.field.node.library.field_library_formats
+    - field.field.node.library.field_library_image
+    - field.field.node.library.field_library_information
+    - field.field.node.library.field_library_isbn
+    - field.field.node.library.field_library_issn
+    - field.field.node.library.field_library_keywords
+    - field.field.node.library.field_library_link_related
+    - field.field.node.library.field_library_notes
+    - field.field.node.library.field_library_type_document
+    - field.field.node.library.field_poll_content_useful
+    - node.type.library
+  module:
+    - user
+id: node.library.default
+targetEntityType: node
+bundle: library
+mode: default
+content:
+  field_library_formats:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_library_author: true
+  field_library_file: true
+  field_library_image: true
+  field_library_information: true
+  field_library_isbn: true
+  field_library_issn: true
+  field_library_keywords: true
+  field_library_link_related: true
+  field_library_notes: true
+  field_library_type_document: true
+  field_poll_content_useful: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,19 @@
+uuid: 037f1d9a-449f-4eb6-b665-5bad1ce768e4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_library_information
+    - node.type.library
+id: node.library.field_library_information
+field_name: field_library_information
+entity_type: node
+bundle: library
+label: 'Información general de la publicación'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

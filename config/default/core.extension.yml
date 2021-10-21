@@ -38,6 +38,7 @@ module:
   editor: 0
   entity_browser: 0
   entity_reference_revisions: 0
+  entity_type_clone: 0
   entity_usage: 0
   facets: 0
   feeds: 0
@@ -69,6 +70,7 @@ module:
   metatag_facebook: 0
   metatag_open_graph: 0
   metatag_twitter_cards: 0
+  module_filter: 0
   node: 0
   options: 0
   page_cache: 0
@@ -110,6 +112,7 @@ module:
   views_bootstrap: 0
   views_ui: 0
   viewsreference: 0
+  webcrc_library: 0
   webcrc_projects_regulatory: 0
   webform: 0
   webform_submission_log: 0

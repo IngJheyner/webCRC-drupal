@@ -82,9 +82,9 @@ function webcrc_projects_regulatory_preprocess_views_view_field(&$variables) {
         $definition_interactions = $paragraph->get('field_interactions_comments')[0]->getValue()['value'];
 
         if($definition_interactions == 0){
-          $variables['output'] = ['#markup' => '<img src="/themes/custom/webcrc/src/images/aceptan-comentarios.svg" class="mr-3" alt="See interaction" onerror="this.remove();"><span class="d-none">FALSE</span>'];          
+          $variables['output'] = ['#markup' => '<img src="/themes/custom/webcrc/src/images/aceptan-comentarios.svg" class="mr-3" alt="See interaction" onerror="this.remove();">'];          
         }else{
-          $variables['output'] =['#markup' => '<img src="/themes/custom/webcrc/src/images/no-aceptan-comentarios.svg" class="mr-3" alt="See interaction" onerror="this.remove();"><span class="d-none">TRUE</span>'];
+          $variables['output'] =['#markup' => '<img src="/themes/custom/webcrc/src/images/no-aceptan-comentarios.svg" class="mr-3" alt="See interaction" onerror="this.remove();">'];
         }
       }
 
@@ -95,7 +95,7 @@ function webcrc_projects_regulatory_preprocess_views_view_field(&$variables) {
         $dateTime = strtotime($paragraph->get('field_fecha_cierre_iteracciones')[0]->getValue()['value']);
         $variables['output'] = \Drupal::service('date.formatter')->format($dateTime, 'fecha_corta_webcrc');
 
-      }     
+      }
         
     }
   }
@@ -141,42 +141,47 @@ function webcrc_projects_regulatory_form_views_exposed_form_alter(&$form, FormSt
  */
 function webcrc_projects_regulatory_preprocess_form_element(&$variables) {
   /* ===== ===== Nombre de proyecto ===== ===== */
-  if($variables['name'] == 'field_nombre_proyecto_value'){
-    $variables['attributes'] = [
-      'class' => [
-        'input__primary d-flex flex-row',
-      ]
-    ];
+  if(isset($variables['name'])){
 
-    $variables['label']['#attributes'] = [
-      'class' => [
-        'd-none',
-      ]
-    ];
+    /* ===== ===== SELECTOR ===== ===== */
+    switch ($variables['name']) {
 
-    $variables['label']['#prefix'] = '<img src="/themes/custom/webcrc/src/images/icono-lupa.svg" onerror="this.remove();" class="mx-3 my-2">';    
-  }
+      case 'field_nombre_proyecto_value':
 
-  /* ===== ===== SELECTOR ===== ===== */
-  switch ($variables['name']) {
-
-    case 'field_estado_proyectos_value': case 'field_tipo_proyecto_value': case 'field_projects_services_target_id':
-
-      $variables['attributes'] = [
-        'class' => [
-          'my-3 input__group-item',
-        ]
-      ];
-
-      $variables['label']['#prefix'] = '<small>';
-      $variables['label']['#suffix'] = '</small>';
-      $variables['label']['#attributes'] = [
-        'class' => [
-          'm-0 px-3',
-        ]
-      ];
+        $variables['attributes'] = [
+          'class' => [
+            'input__primary d-flex flex-row',
+          ]
+        ];
+    
+        $variables['label']['#attributes'] = [
+          'class' => [
+            'd-none',
+          ]
+        ];
+    
+        $variables['label']['#prefix'] = '<img src="/themes/custom/webcrc/src/images/icono-lupa.svg" onerror="this.remove();" class="mx-3 my-2">';
         
-    break;
+      break;
+
+      case 'field_estado_proyectos_value': case 'field_tipo_proyecto_value': case 'field_projects_services_target_id':
+
+        $variables['attributes'] = [
+          'class' => [
+            'my-3 input__group-item',
+          ]
+        ];
+
+        $variables['label']['#prefix'] = '<small>';
+        $variables['label']['#suffix'] = '</small>';
+        $variables['label']['#attributes'] = [
+          'class' => [
+            'm-0 px-3',
+          ]
+        ];
+          
+      break;
+    }       
   }
 }
 

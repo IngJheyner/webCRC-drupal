@@ -187,24 +187,6 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  block_1:
-    display_plugin: block
-    id: block_1
-    display_title: Block
-    position: 1
-    display_options:
-      display_extenders: {  }
-      title: 'Proyectos Comentarios'
-      defaults:
-        title: false
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - 'user.node_grants:view'
-        - user.permissions
-      tags: {  }
   block_projects_related:
     display_plugin: block
     id: block_projects_related
@@ -1036,7 +1018,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "{% if field_estado_proyectos__value == 1 %}\r\n<span class='d-none'>{{field_estado_proyectos }}</span>\r\n<img src=\"/themes/custom/webcrc/src/images/proyecto-abierto.svg\" alt=\"Proyecto abierto\" onerror=\"this.remove();\">\r\n{% else %}\r\n<span class='d-none'>{{field_estado_proyectos }}</span>\r\n<img src=\"/themes/custom/webcrc/src/images/proyecto-finalizado.svg\" alt=\"Proyecto finalizado\" onerror=\"this.remove();\">\r\n{% endif %}"
+            text: "{% if field_estado_proyectos__value == 1 %}\r\n<img src=\"/themes/custom/webcrc/src/images/proyecto-abierto.svg\" alt=\"Proyecto abierto\" onerror=\"this.remove();\">\r\n{% else %}\r\n<img src=\"/themes/custom/webcrc/src/images/proyecto-finalizado.svg\" alt=\"Proyecto finalizado\" onerror=\"this.remove();\">\r\n{% endif %}"
             make_link: false
             path: ''
             absolute: false
@@ -1097,8 +1079,8 @@ display:
           label: Comentarios
           exclude: false
           alter:
-            alter_text: true
-            text: '{{ field_interacciones_proyectos__target_id }}'
+            alter_text: false
+            text: ''
             make_link: false
             path: ''
             absolute: false
@@ -1119,7 +1101,7 @@ display:
             more_link: false
             more_link_text: ''
             more_link_path: ''
-            strip_tags: true
+            strip_tags: false
             trim: false
             preserve_tags: ''
             html: false
@@ -1127,7 +1109,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: false
@@ -1161,7 +1143,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: ''
+            text: '{{ nothing }}'
             make_link: false
             path: ''
             absolute: false
@@ -1190,10 +1172,10 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false

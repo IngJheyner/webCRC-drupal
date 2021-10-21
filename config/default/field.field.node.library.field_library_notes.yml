@@ -1,0 +1,19 @@
+uuid: ed4c906d-b06a-41cb-b836-14fe2acaf891
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_library_notes
+    - node.type.library
+id: node.library.field_library_notes
+field_name: field_library_notes
+entity_type: node
+bundle: library
+label: Notas
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

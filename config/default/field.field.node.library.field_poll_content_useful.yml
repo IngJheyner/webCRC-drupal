@@ -1,0 +1,32 @@
+uuid: 821453a1-5fa7-464a-bf7a-0a372cbd40a0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_poll_content_useful
+    - node.type.library
+    - webform.webform.poll_content_useful
+  module:
+    - webform
+id: node.library.field_poll_content_useful
+field_name: field_poll_content_useful
+entity_type: node
+bundle: library
+label: Encuesta
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+    target_uuid: 1c81e5e2-aeb9-426e-bca9-30d97c18c5d3
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

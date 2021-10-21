@@ -13,12 +13,12 @@ style:
 # DataTable jquery
 datatable:
   js:
-    src/extra_libraries/DataTables/datatables.min.js: {}
-    src/extra_libraries/DataTables/Responsive-2.2.9/js/responsive.bootstrap4.min.js: {}
+    src/extra_libraries/datables/datatables.min.js: {}
+    src/extra_libraries/datables/Responsive-2.2.9/js/responsive.bootstrap4.min.js: {}
   css:
     component:
-      src/extra_libraries/DataTables/datatables.min.css: {}
-      src/extra_libraries/DataTables/Responsive-2.2.9/css/responsive.bootstrap4.min.css: {}
+      src/extra_libraries/datables/datatables.min.css: {}
+      src/extra_libraries/datables/Responsive-2.2.9/css/responsive.bootstrap4.min.css: {}
 
 #Datepicker
 bootstrap-datepicker:
