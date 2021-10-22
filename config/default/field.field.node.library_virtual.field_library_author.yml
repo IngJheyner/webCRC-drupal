@@ -10,9 +10,9 @@ id: node.library_virtual.field_library_author
 field_name: field_library_author
 entity_type: node
 bundle: library_virtual
-label: Autor
+label: Autor(s)
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

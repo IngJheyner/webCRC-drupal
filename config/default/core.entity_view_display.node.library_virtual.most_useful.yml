@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.library_virtual.field_library_author
     - field.field.node.library_virtual.field_library_file
     - field.field.node.library_virtual.field_library_formats
+    - field.field.node.library_virtual.field_library_highlight
     - field.field.node.library_virtual.field_library_image
     - field.field.node.library_virtual.field_library_information
     - field.field.node.library_virtual.field_library_isbn
@@ -39,22 +40,22 @@ content:
         width: ''
         height: ''
     third_party_settings: {  }
-  field_library_keywords:
-    type: entity_reference_label
+  field_library_information:
+    type: basic_string
     weight: 0
     region: content
-    label: hidden
-    settings:
-      link: false
+    label: above
+    settings: {  }
     third_party_settings: {  }
 hidden:
   addtoany: true
   field_library_author: true
   field_library_file: true
   field_library_formats: true
-  field_library_information: true
+  field_library_highlight: true
   field_library_isbn: true
   field_library_issn: true
+  field_library_keywords: true
   field_library_link_related: true
   field_library_notes: true
   field_library_type_document: true

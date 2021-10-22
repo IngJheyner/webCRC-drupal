@@ -57,12 +57,17 @@
   {% if multiple %}
     <div{{ attributes.addClass(classes, 'field__items') }}>
       {% for item in items %}
-        <div{{ item.attributes.addClass('field__itemsss') }}>{{ item.content }}</div>
+
+        {% set urlAutor = item.content['#plain_text']|replace({' ': '+'}) %}
+
+          <a href="/biblioteca-virtual?palabras=&tipo-documento=All&palabras-claves=&autor={{ urlAutor }}" {{ item.attributes.addClass('field__item') }}>{{ item.content }}</a><br>
+
       {% endfor %}
+
     </div>
   {% else %}
     {% for item in items %}
-      <div{{ attributes.addClass(classes, 'field__itemsss') }}>{{ item.content }}</div>
+      <div{{ attributes.addClass(classes, 'field__item') }}>{{ item.content }}</div>
     {% endfor %}
   {% endif %}
 {% else %}

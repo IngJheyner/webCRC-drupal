@@ -1,0 +1,11 @@
+uuid: 277a6846-83e9-4562-99a5-13e39608cef1
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.themes_interest
+id: block_content.themes_interest
+target_entity_type_id: block_content
+target_bundle: themes_interest
+default_langcode: site_default
+language_alterable: false

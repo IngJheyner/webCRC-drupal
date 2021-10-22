@@ -1,16 +1,16 @@
-uuid: 14220f60-4e36-4edf-9906-d371fad94e72
+uuid: 28f0b787-b11a-4c13-85b8-25d4e021ab44
 langcode: es
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_enlace_proyectos
-    - paragraphs.paragraphs_type.enlaces
+    - field.storage.paragraph.field_interest_link
+    - paragraphs.paragraphs_type.themes_interest
   module:
     - link
-id: paragraph.enlaces.field_enlace_proyectos
-field_name: field_enlace_proyectos
+id: paragraph.themes_interest.field_interest_link
+field_name: field_interest_link
 entity_type: paragraph
-bundle: enlaces
+bundle: themes_interest
 label: Enlace
 description: ''
 required: false

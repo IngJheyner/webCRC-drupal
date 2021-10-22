@@ -11,6 +11,13 @@
 
 use Drupal\Core\Form\FormStateInterface;
 
+/**
+ * Implements hook_form_alter().
+ */
+function webcrc_library_form_alter(&$form, $form_state, $form_id) {
+  
+}
+
  /**
  * Implements hook_form_views_exposed_form_alter()
  *
@@ -77,7 +84,7 @@ function webcrc_library_preprocess_form_element(&$variables) {
 
             break;
 
-            case 'tipo-documento': case 'created[min]':  case 'created[max]':
+            case 'tipo-documento': case 'formatos': case 'created[min]':  case 'created[max]':
 
                 $variables['attributes'] = [
                     'class' => [

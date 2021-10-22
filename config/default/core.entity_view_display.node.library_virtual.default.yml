@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.library_virtual.field_library_author
     - field.field.node.library_virtual.field_library_file
     - field.field.node.library_virtual.field_library_formats
+    - field.field.node.library_virtual.field_library_highlight
     - field.field.node.library_virtual.field_library_image
     - field.field.node.library_virtual.field_library_information
     - field.field.node.library_virtual.field_library_isbn
@@ -22,19 +23,13 @@ id: node.library_virtual.default
 targetEntityType: node
 bundle: library_virtual
 mode: default
-content:
-  field_library_formats:
-    weight: 1
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
+content: {  }
 hidden:
   addtoany: true
   field_library_author: true
   field_library_file: true
+  field_library_formats: true
+  field_library_highlight: true
   field_library_image: true
   field_library_information: true
   field_library_isbn: true

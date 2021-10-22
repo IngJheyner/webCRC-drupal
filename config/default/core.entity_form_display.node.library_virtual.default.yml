@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.library_virtual.field_library_author
     - field.field.node.library_virtual.field_library_file
     - field.field.node.library_virtual.field_library_formats
+    - field.field.node.library_virtual.field_library_highlight
     - field.field.node.library_virtual.field_library_image
     - field.field.node.library_virtual.field_library_information
     - field.field.node.library_virtual.field_library_isbn
@@ -48,9 +49,9 @@ third_party_settings:
         - field_library_isbn
         - field_library_issn
         - created
-        - field_poll_content_useful
+        - group_library_options
       parent_name: group_grupo_tabs
-      weight: 20
+      weight: 1
       format_type: tab
       region: content
       format_settings:
@@ -66,7 +67,7 @@ third_party_settings:
         - field_library_information
         - field_library_notes
       parent_name: group_grupo_tabs
-      weight: 22
+      weight: 4
       format_type: tab
       region: content
       format_settings:
@@ -82,7 +83,7 @@ third_party_settings:
         - field_library_image
         - field_library_file
       parent_name: group_grupo_tabs
-      weight: 23
+      weight: 5
       format_type: tab
       region: content
       format_settings:
@@ -97,7 +98,7 @@ third_party_settings:
       children:
         - group_info_relevant
       parent_name: group_grupo_tabs
-      weight: 21
+      weight: 2
       format_type: tab
       region: content
       format_settings:
@@ -114,7 +115,7 @@ third_party_settings:
         - group_relevant_author
         - group_relevated_links
       parent_name: group_library_info_relevant
-      weight: 20
+      weight: 0
       format_type: tabs
       region: content
       format_settings:
@@ -128,7 +129,7 @@ third_party_settings:
       children:
         - field_library_author
       parent_name: group_info_relevant
-      weight: 23
+      weight: 2
       format_type: tab
       region: content
       format_settings:
@@ -145,7 +146,7 @@ third_party_settings:
         - field_library_keywords
         - field_library_formats
       parent_name: group_info_relevant
-      weight: 22
+      weight: 1
       format_type: tab
       region: content
       format_settings:
@@ -160,7 +161,7 @@ third_party_settings:
       children:
         - field_library_link_related
       parent_name: group_info_relevant
-      weight: 24
+      weight: 3
       format_type: tab
       region: content
       format_settings:
@@ -171,6 +172,22 @@ third_party_settings:
         formatter: closed
         required_fields: true
       label: 'Enlace(s) Relacionados'
+    group_library_options:
+      children:
+        - status
+        - field_library_highlight
+        - field_poll_content_useful
+      parent_name: group_informacion
+      weight: 4
+      format_type: fieldset
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: false
+      label: Opciones
 id: node.library_virtual.default
 targetEntityType: node
 bundle: library_virtual
@@ -178,12 +195,12 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 39
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
   field_library_author:
-    weight: 32
+    weight: 0
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -193,20 +210,27 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_library_file:
-    weight: 14
+    weight: 1
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
     region: content
   field_library_formats:
-    weight: 23
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
+  field_library_highlight:
+    weight: 4
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
   field_library_image:
-    weight: 13
+    weight: 0
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -214,7 +238,7 @@ content:
     type: image_image
     region: content
   field_library_information:
-    weight: 29
+    weight: 0
     settings:
       rows: 5
       placeholder: ''
@@ -222,7 +246,7 @@ content:
     type: string_textarea
     region: content
   field_library_isbn:
-    weight: 37
+    weight: 1
     settings:
       size: 60
       placeholder: ''
@@ -230,7 +254,7 @@ content:
     type: string_textfield
     region: content
   field_library_issn:
-    weight: 38
+    weight: 2
     settings:
       size: 60
       placeholder: ''
@@ -238,7 +262,7 @@ content:
     type: string_textfield
     region: content
   field_library_keywords:
-    weight: 22
+    weight: 1
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -248,7 +272,7 @@ content:
     type: entity_reference_autocomplete_tags
     region: content
   field_library_link_related:
-    weight: 24
+    weight: 0
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -256,7 +280,7 @@ content:
     type: link_default
     region: content
   field_library_notes:
-    weight: 31
+    weight: 1
     settings:
       rows: 5
       placeholder: ''
@@ -264,13 +288,13 @@ content:
     type: string_textarea
     region: content
   field_library_type_document:
-    weight: 21
+    weight: 0
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_poll_content_useful:
-    weight: 40
+    weight: 5
     settings:
       match_operator: CONTAINS
       match_limit: '10'
@@ -281,9 +305,16 @@ content:
     third_party_settings: {  }
     type: webform_entity_reference_autocomplete
     region: content
+  status:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 36
+    weight: 0
     region: content
     settings:
       size: 60
@@ -294,7 +325,6 @@ hidden:
   path: true
   promote: true
   publish_on: true
-  status: true
   sticky: true
   uid: true
   unpublish_on: true

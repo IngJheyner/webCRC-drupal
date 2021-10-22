@@ -62,9 +62,6 @@ article.library-virtual{
                         border-right: 0;
                     }
                 }
-                &:nth-child(3n){
-                    border: 0;
-                }
             }
         }
     }
@@ -115,9 +112,11 @@ VISTA TIPO PAGE
 ============================== */
 div.page-library{
 
-    @include media-breakpoint-up(xl){       
-        max-width: 1400px;        
-    }  
+    @include media-breakpoint-up(xl){
+        div.view-content{
+            max-width: 1400px; 
+        }     
+    } 
 
     /* ===== ===== FORM VIEW ===== ===== */
     @include form-view();

@@ -1,10 +1,10 @@
-uuid: f555e939-34d2-4798-8653-660563e5eac5
+uuid: c020b6d6-a7fa-499f-9e9b-c4ad051470dc
 langcode: es
 status: true
 dependencies:
   config:
-    - field.storage.node.field_library_image
-    - node.type.library
+    - field.storage.paragraph.field_interest_image
+    - paragraphs.paragraphs_type.themes_interest
   module:
     - filefield_paths
     - image
@@ -26,10 +26,10 @@ third_party_settings:
         slashes: false
         pathauto: false
         transliterate: false
-id: node.library.field_library_image
-field_name: field_library_image
-entity_type: node
-bundle: library
+id: paragraph.themes_interest.field_interest_image
+field_name: field_interest_image
+entity_type: paragraph
+bundle: themes_interest
 label: Imagen
 description: ''
 required: false
@@ -37,10 +37,10 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: webcrc/images/library_virtual
+  file_directory: webfinde/images/themes_interest
   file_extensions: 'png gif jpg jpeg'
   max_filesize: '2 mb'
-  max_resolution: 700x700
+  max_resolution: ''
   min_resolution: ''
   alt_field: true
   alt_field_required: false

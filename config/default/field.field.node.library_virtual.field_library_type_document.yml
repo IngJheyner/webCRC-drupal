@@ -12,7 +12,7 @@ entity_type: node
 bundle: library_virtual
 label: 'Tipo de Documento'
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

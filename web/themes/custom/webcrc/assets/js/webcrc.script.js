@@ -22455,9 +22455,6 @@ __webpack_require__.r(__webpack_exports__);
             }, {
               className: "tablet-l desktop",
               targets: 3
-            }, {
-              className: "tablet-l desktop",
-              targets: 4
             }];
             break;
         }

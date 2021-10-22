@@ -352,7 +352,7 @@ display:
         type: views_bootstrap_grid
         options:
           grouping: {  }
-          row_class: ''
+          row_class: 'mb-3 mb-md-0'
           default_row_class: true
           col_xs: none
           col_sm: none
@@ -504,7 +504,7 @@ display:
           exclude: true
           alter:
             alter_text: true
-            text: '<a href=''{{ view_node }}''>{{ field_nombre_proyecto }}</a>'
+            text: '<p><a href=''{{ view_node }}''>{{ field_nombre_proyecto }}</a></p>'
             make_link: false
             path: ''
             absolute: false

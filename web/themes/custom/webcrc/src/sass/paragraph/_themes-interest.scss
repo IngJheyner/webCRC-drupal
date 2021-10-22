@@ -1,0 +1,11 @@
+@use '../base/variables/variables' as var;
+
+div.theme-interest{
+    background-color: var.$bg-color-quinario;
+
+    @include media-breakpoint-up(xl){
+        div.container{
+            max-width: 1400px; 
+        }     
+    } 
+}

@@ -58,8 +58,7 @@ import anime from 'animejs/lib/anime.es';
               { className: "max-desktop", responsivePriority: 1, targets: 0 },
               { className: "max-desktop", responsivePriority: 2, targets: 1 },
               { className: "tablet-l desktop", targets: 2 },
-              { className: "tablet-l desktop", targets: 3 },
-              { className: "tablet-l desktop", targets: 4 }             
+              { className: "tablet-l desktop", targets: 3 },           
             ]
             break;
         }

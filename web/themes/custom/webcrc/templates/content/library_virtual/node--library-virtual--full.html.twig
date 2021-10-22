@@ -117,34 +117,35 @@
         </div>  
 
         {# ===== ===== PALABRAS CLAVES ===== ===== #}
-         <p class='font-weight-bold mb-0 mt-3'>{{'keywords'|t}}</p>
+        <p class='font-weight-bold mb-0 mt-3'>{{'keywords'|t}}</p>
         {{ content.field_library_keywords }}
+
+        {# ===== ===== AUTOR ===== ===== #}
+         <p class='font-weight-bold mb-0 mt-3'>{{'Author'|t}} (s)</p>      
+        {{ content.field_library_author }}
+
+        {# ===== ===== TIPO DE DOCUMENTO ===== ===== #}
+        <p class='font-weight-bold mb-0 mt-3'>{{'Type of document'|t}}</p>
+        <a href="/biblioteca-virtual?palabras=&tipo-documento={{ node.field_library_type_document.target_id }}"> {{ content.field_library_type_document.0 }}</a>
 
       </div>
 
       <div class='col-12 col-lg-6'>
           {# ===== ===== RESUMEN O INFORMACION ===== ===== #}
-          <p class='font-weight-bold mt-3 mt-lg-0'>{{'Abstract'|t}}</p>
+          <p class='font-weight-bold mt-3 mt-lg-0'>{{'Information'|t}}</p>
           {{ content.field_library_information.0 }}
 
           {# ===== ===== ISBN ===== ===== #}
-          <p class='font-weight-bold mb-0'>{{'ISBN'|t}}</p>
+          <p class='font-weight-bold mb-0 mt-3'>{{'ISBN'|t}}</p>
           {{ content.field_library_isbn.0 }}
 
           {# ===== ===== ISSN ===== ===== #}
           <p class='font-weight-bold mb-0 mt-3'>{{'ISSN'|t}}</p>
-          {{ content.field_library_issn.0 }}
-
-          {# ===== ===== AUTOR ===== ===== #}      
-          {{ content.field_library_author }}
+          {{ content.field_library_issn.0 }}      
 
           {# ===== ===== FECHA DE PUBLICACION ===== ===== #}
           <p class='font-weight-bold mb-0 mt-3'>{{'Date publication'|t}}</p>
-          <time>{{ node.getCreatedTime()|format_date('fecha_corta_webcrc') }}</time>
-
-          {# ===== ===== FECHA DE PUBLICACION ===== ===== #}
-          <p class='font-weight-bold mb-0 mt-3'>{{'Type document'|t}}</p>
-          {{ content.field_library_type_document.0 }}
+          <time>{{ node.getCreatedTime()|format_date('fecha_my_webcrc') }}</time>          
 
           {# ===== ===== NOTAS ===== ===== #}
           <p class='font-weight-bold mb-0 mt-3'>{{'Notes'|t}}</p>

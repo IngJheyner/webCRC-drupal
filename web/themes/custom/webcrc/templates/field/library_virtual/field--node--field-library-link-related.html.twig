@@ -59,8 +59,11 @@
 
       {% for item in items %}
 
+        {% if loop.last %}
+        <div{{ item.attributes.addClass('field__item-last mt-4 col-6 col-lg-4') }}>
+        {% else %}
         <div{{ item.attributes.addClass('field__item mt-4 col-6 col-lg-4') }}>          
-         
+        {% endif %}
           {{ item.content }}
           
         </div>

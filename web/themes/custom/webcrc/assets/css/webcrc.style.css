@@ -21358,6 +21358,9 @@ section.header__title {
   }
 }
 
+/* ==============================
+CONTENT
+============================== */
 /* ===== ===== TEXTO ===== ===== */
 /* ===== ===== FONDO ===== ===== */
 /* ===== ===== BOTONES y Anclas ===== ===== */
@@ -21738,9 +21741,6 @@ article.library-virtual section.library-virtual__content div.library-virtual__co
     border-right: 0;
   }
 }
-article.library-virtual section.library-virtual__content div.library-virtual__content--links-related div.field__items div.field__item:nth-child(3n) {
-  border: 0;
-}
 article.library-virtual section.library-virtual__documents-of-interest {
   position: relative;
 }
@@ -21778,7 +21778,7 @@ div.page-library {
   /* ===== ===== SECCIONES ===== ===== */
 }
 @media (min-width: 1200px) {
-  div.page-library {
+  div.page-library div.view-content {
     max-width: 1400px;
   }
 }
@@ -21978,5 +21978,20 @@ div.page-library div.page-library-sections div.library-type-document div.view-co
   div.page-library div.page-library-sections div.library-type-document div.view-content {
     grid-template-columns: repeat(2, minmax(-webkit-min-content, 300px));
     grid-template-columns: repeat(2, minmax(min-content, 300px));
+  }
+}
+
+/* ==============================
+PARAGRAPH
+============================== */
+/* ===== ===== TEXTO ===== ===== */
+/* ===== ===== FONDO ===== ===== */
+/* ===== ===== BOTONES y Anclas ===== ===== */
+div.theme-interest {
+  background-color: #2F2A7C;
+}
+@media (min-width: 1200px) {
+  div.theme-interest div.container {
+    max-width: 1400px;
   }
 }
