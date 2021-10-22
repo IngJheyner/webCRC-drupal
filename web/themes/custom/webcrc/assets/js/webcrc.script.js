@@ -22472,6 +22472,13 @@ __webpack_require__.r(__webpack_exports__);
           "columnDefs": columnDefs
         });
       });
+      /*===========================================
+      COLOCAR EL DATEPICKER A CAMPO DE TIPO FECHA
+      EN EL SITIO
+      -- created-min
+      -- created-max
+      =============================================*/
+
       $('#edit-created-min').once('webcrc').each(function () {
         $('#edit-created-min').datepicker({
           language: 'es',

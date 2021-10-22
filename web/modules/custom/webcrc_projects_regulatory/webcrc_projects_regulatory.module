@@ -87,7 +87,7 @@ function webcrc_projects_regulatory_preprocess_views_view_field(&$variables) {
           $variables['output'] =['#markup' => '<img src="/themes/custom/webcrc/src/images/no-aceptan-comentarios.svg" class="mr-3" alt="See interaction" onerror="this.remove();">'];
         }
       }
-
+      
       if($field->field == 'nothing'){
 
         $field = end($row->_entity->get('field_interacciones_proyectos')->getValue());

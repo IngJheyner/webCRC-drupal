@@ -53,7 +53,15 @@ INTERNAS
 
                     div.file__content-file--item{
                         margin-top: .5em;
-                       
+                        
+                        div.contextual-region{
+
+                            @include media-breakpoint-down(sm) {
+                                max-width: 200px;
+                            }
+
+                            max-width: 600px;
+                        }
                         article.node__normativity-teaser > div.node__content > div.node__content-teaser{
                             max-width: 200px;
                             @include media-breakpoint-up(md) {

@@ -55,62 +55,66 @@ function webcrc_library_form_views_exposed_form_alter(&$form, FormStateInterface
 function webcrc_library_preprocess_form_element(&$variables) {
 
     /* ===== ===== Nombre de proyecto ===== ===== */
-    if($variables['name'] == 'palabras'){
-        $variables['attributes'] = [
-        'class' => [
-            'input__primary d-flex flex-row',
-        ]
-        ];
+    if(isset($variables['name'])){         
+        /* ===== ===== SELECTOR ===== ===== */
+        switch ($variables['name']) {
 
-        $variables['label']['#attributes'] = [
-        'class' => [
-            'd-none',
-        ]
-        ];
+            case 'palabras':
 
-        $variables['label']['#prefix'] = '<img src="/themes/custom/webcrc/src/images/icono-lupa.svg" onerror="this.remove();" class="mx-3 my-2">';    
-    }
-
-    /* ===== ===== SELECTOR ===== ===== */
-    switch ($variables['name']) {
-
-        case 'tipo-documento': case 'created[min]':  case 'created[max]':
-
-        $variables['attributes'] = [
-            'class' => [
-            'my-3 input__group-item',
-            ]
-        ];
-
-        $variables['label']['#prefix'] = '<small>';
-        $variables['label']['#suffix'] = '</small>';
-        $variables['label']['#attributes'] = [
-            'class' => [
-            'm-0 px-3',
-            ]
-        ];
+                $variables['attributes'] = [
+                    'class' => [
+                        'input__primary d-flex flex-row',
+                    ]
+                ];
             
-        break;
+                $variables['label']['#attributes'] = [
+                    'class' => [
+                        'd-none',
+                    ]
+                ];
+            
+                $variables['label']['#prefix'] = '<img src="/themes/custom/webcrc/src/images/icono-lupa.svg" onerror="this.remove();" class="mx-3 my-2">';
 
-        case 'palabras-claves': case 'autor':
+            break;
 
-        $variables['attributes'] = [
-            'class' => [
-            'my-3 input__group-item',
-            ]
-        ];
+            case 'tipo-documento': case 'created[min]':  case 'created[max]':
 
-        $variables['label']['#attributes'] = [
-            'class' => [
-            'd-none',
-            ]
-        ];
+                $variables['attributes'] = [
+                    'class' => [
+                    'my-3 input__group-item',
+                    ]
+                ];
 
-        break;
+                $variables['label']['#prefix'] = '<small>';
+                $variables['label']['#suffix'] = '</small>';
+                $variables['label']['#attributes'] = [
+                    'class' => [
+                    'm-0 px-3',
+                    ]
+                ];
+                
+            break;
+
+            case 'palabras-claves': case 'autor':
+
+                $variables['attributes'] = [
+                    'class' => [
+                    'my-3 input__group-item',
+                    ]
+                ];
+
+                $variables['label']['#attributes'] = [
+                    'class' => [
+                    'd-none',
+                    ]
+                ];
+
+            break;
+        }
     }
 
     /* ===== ===== LABEL ===== ===== */
-    if($variables['name'] == 'created[min]' || $variables['name'] == 'created[max]'){
-        $variables['label']['#title'] = t('Date');
+    if(isset($variables['name'])){
+        if($variables['name'] == 'created[min]' || $variables['name'] == 'created[max]') $variables['label']['#title'] = t('Date');
     }
 }

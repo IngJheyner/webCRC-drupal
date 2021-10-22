@@ -21441,6 +21441,14 @@ article.projects__regulatory section.projects__regulatory-content div.node__cont
 article.projects__regulatory section.projects__regulatory-content div.node__content div.node__content-interactions div#accordion div.card-body div.file__content-file div.file__content-file--item {
   margin-top: 0.5em;
 }
+article.projects__regulatory section.projects__regulatory-content div.node__content div.node__content-interactions div#accordion div.card-body div.file__content-file div.file__content-file--item div.contextual-region {
+  max-width: 600px;
+}
+@media (max-width: 767.98px) {
+  article.projects__regulatory section.projects__regulatory-content div.node__content div.node__content-interactions div#accordion div.card-body div.file__content-file div.file__content-file--item div.contextual-region {
+    max-width: 200px;
+  }
+}
 article.projects__regulatory section.projects__regulatory-content div.node__content div.node__content-interactions div#accordion div.card-body div.file__content-file div.file__content-file--item article.node__normativity-teaser > div.node__content > div.node__content-teaser {
   max-width: 200px;
 }
@@ -21489,6 +21497,14 @@ article.projects__regulatory section.projects__regulatory-content div.node__cont
 }
 article.projects__regulatory section.projects__regulatory-content div.node__content div.node__content-documents div#accordion div.card-body div.file__content-file div.file__content-file--item {
   margin-top: 0.5em;
+}
+article.projects__regulatory section.projects__regulatory-content div.node__content div.node__content-documents div#accordion div.card-body div.file__content-file div.file__content-file--item div.contextual-region {
+  max-width: 600px;
+}
+@media (max-width: 767.98px) {
+  article.projects__regulatory section.projects__regulatory-content div.node__content div.node__content-documents div#accordion div.card-body div.file__content-file div.file__content-file--item div.contextual-region {
+    max-width: 200px;
+  }
 }
 article.projects__regulatory section.projects__regulatory-content div.node__content div.node__content-documents div#accordion div.card-body div.file__content-file div.file__content-file--item article.node__normativity-teaser > div.node__content > div.node__content-teaser {
   max-width: 200px;

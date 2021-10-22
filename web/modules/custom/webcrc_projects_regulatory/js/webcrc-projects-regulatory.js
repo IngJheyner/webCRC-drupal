@@ -15,10 +15,6 @@
                     $(el).find("td:nth-child(2)").find('div.paragraph-type').children('span').html('Interacción ' + (idx + 1));
                     $(el).find("td:nth-child(2)").find('div.paragraph-summary').css("display", "none");                
                 });
-                /* ===== ===== Ocultar o modificar texto de la presentacion de los parrafos en enlaces ===== ===== */
-                $('div.field--name-field-enlaces-proyectos table tbody tr.draggable').each(function (idx, el) {
-                    $(el).find("td:nth-child(2)").find('div.paragraph-type').children('span').html('De tipo:');
-                });
             }
 
             /*===========================================
