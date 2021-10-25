@@ -1,11 +1,42 @@
 @use '../base/variables/variables' as var;
 
 div.theme-interest{
-    background-color: var.$bg-color-quinario;
-
+    position: relative;
+    @include content-related--bg--webcrc();
     @include media-breakpoint-up(xl){
         div.container{
             max-width: 1400px; 
         }     
-    } 
+    }
+
+    div.themes__interest-content{
+        p.title{
+            span{
+                color: var.$text-color-cuaternario;
+            }
+        }
+
+        div.slick{
+            nav.slick__arrow{
+                button.slick-arrow{
+                    top: 100%;
+                    height: 0;
+                    width: 0;
+                    border: 0;
+                    background: none;
+                    box-shadow: none;
+                    margin: 0;
+
+                    &::before{
+                        color: white;
+                        font-size: 3rem;
+                    }
+                }
+
+                button.slick-next{
+                    margin-left: 2rem;
+                }
+            }
+        }
+    }
 }

@@ -21964,6 +21964,18 @@ div.page-library div.page-library-sections article.most-useful div.node__content
   display: grid;
   grid-template-columns: 1fr;
 }
+div.page-library div.page-library-sections article.most-useful div.node__content div.node__content-item--info div.info-abstract {
+  position: relative;
+}
+div.page-library div.page-library-sections article.most-useful div.node__content div.node__content-item--info div.info-abstract p::before {
+  background: linear-gradient(rgba(255, 255, 255, 0) 5px, #fff);
+  content: "";
+  height: calc((100% - 46px));
+  position: absolute;
+  top: 44px;
+  width: 100%;
+  z-index: 1;
+}
 @media (min-width: 992px) {
   div.page-library div.page-library-sections article.most-useful div.node__content {
     grid-template-columns: 1fr 2fr;
@@ -21988,10 +22000,38 @@ PARAGRAPH
 /* ===== ===== FONDO ===== ===== */
 /* ===== ===== BOTONES y Anclas ===== ===== */
 div.theme-interest {
+  position: relative;
+}
+div.theme-interest div#content-related--bg--webcrc {
   background-color: #2F2A7C;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
 }
 @media (min-width: 1200px) {
   div.theme-interest div.container {
     max-width: 1400px;
   }
+}
+div.theme-interest div.themes__interest-content p.title span {
+  color: #F42E62;
+}
+div.theme-interest div.themes__interest-content div.slick nav.slick__arrow button.slick-arrow {
+  top: 100%;
+  height: 0;
+  width: 0;
+  border: 0;
+  background: none;
+  box-shadow: none;
+  margin: 0;
+}
+div.theme-interest div.themes__interest-content div.slick nav.slick__arrow button.slick-arrow::before {
+  color: white;
+  font-size: 3rem;
+}
+div.theme-interest div.themes__interest-content div.slick nav.slick__arrow button.slick-next {
+  margin-left: 2rem;
 }

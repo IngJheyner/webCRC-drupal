@@ -1,6 +1,6 @@
 uuid: 7bae6244-d91b-4ad7-9e49-1f7efbb0bc79
 langcode: es
-status: false
+status: true
 dependencies:
   config:
     - search_api_page.search_api_page.primary_search

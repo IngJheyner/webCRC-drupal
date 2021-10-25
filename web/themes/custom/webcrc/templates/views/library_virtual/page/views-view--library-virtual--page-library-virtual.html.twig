@@ -129,11 +129,13 @@
 
           <div class="tab-content" id="pills-tabContent">
 
-            <div class="tab-pane fade bg-white rounded-lg shadowpx-2  px-2 px-md-4 px-lg-5 py-4 show active" id="pills-documents" role="tabpanel" aria-labelledby="pills-documents-tab">
+            <div class="tab-pane fade bg-white rounded-lg shadowpx-2  px-2 px-md-4 px-lg-5 py-4" id="pills-documents" role="tabpanel" aria-labelledby="pills-documents-tab">
               {{ drupal_view('webcrc_taxonomias','block_library_type_document') }}
             </div>
 
-            <div class="tab-pane fade bg-white rounded-lg shadow p-3" id="pills-useful" role="tabpanel" aria-labelledby="pills-useful-tab">             </div>
+            <div class="tab-pane fade bg-white rounded-lg shadow p-3 show active" id="pills-useful" role="tabpanel" aria-labelledby="pills-useful-tab">
+            {{ drupal_view('webcrc_taxonomias','block_library_formats') }} 
+            </div>
 
           </div>
 
@@ -146,8 +148,10 @@
   </div>
 
   {# ===== ===== TEMAS DE INTERES ===== ===== #}
-  <div class='view-content__theme--interest'>
-    {{ drupal_entity('block', 'themes_interest', check_access=false) }}
+  <div class='view-content__theme--interest theme-interest container-fluid px-0 mt-5'>
+    <div id='content-related--bg--webcrc'></div>
+    {{ drupal_view('themes_interest','block_themes_interest') }}
+    </div>
   </div>
 
   {% if attachment_after %}

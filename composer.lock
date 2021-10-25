@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5666ed2b4534a07a7ce2bb975190461b",
+    "content-hash": "586733f9a267dd07a8ae472118985674",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6113,6 +6113,55 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/slick",
                 "issues": "https://drupal.org/project/issues/slick"
+            }
+        },
+        {
+            "name": "drupal/slick_extras",
+            "version": "1.0.0-rc5",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/slick_extras.git",
+                "reference": "8.x-1.0-rc5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/slick_extras-8.x-1.0-rc5.zip",
+                "reference": "8.x-1.0-rc5",
+                "shasum": "2fd2823cf126b975db430d439d3e241312b88649"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/slick": "*"
+            },
+            "require-dev": {
+                "drupal/slick": "*",
+                "drupal/slick_views": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-rc5",
+                    "datestamp": "1633606496",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "gausarts",
+                    "homepage": "https://www.drupal.org/user/159062"
+                }
+            ],
+            "description": "Provides Slick carousel extras.",
+            "homepage": "https://www.drupal.org/project/slick_extras",
+            "support": {
+                "source": "https://git.drupalcode.org/project/slick_extras"
             }
         },
         {
@@ -18646,6 +18695,7 @@
         "drupal/inline_entity_form": 5,
         "drupal/rabbit_hole": 10,
         "drupal/search_api_page": 10,
+        "drupal/slick_extras": 5,
         "drupal/styleguide": 10,
         "drupal/ultimate_cron": 15,
         "drupal/viewsreference": 10,

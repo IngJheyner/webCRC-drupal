@@ -84,6 +84,7 @@
         "drupal/simple_sitemap": "^3.8",
         "drupal/simplify": "^1.2",
         "drupal/slick": "^2.3",
+        "drupal/slick_extras": "^1.0@RC",
         "drupal/slick_views": "^2.4",
         "drupal/stage_file_proxy": "^1.1",
         "drupal/structure_sync": "^2.0",

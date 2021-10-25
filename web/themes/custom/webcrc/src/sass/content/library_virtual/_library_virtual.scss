@@ -186,6 +186,21 @@ div.page-library{
             div.node__content{
                 display: grid;
                 grid-template-columns: 1fr;
+            
+                div.node__content-item--info{                    
+                    div.info-abstract{
+                        position: relative;
+                        p::before{
+                            background: linear-gradient(rgba(255, 255, 255, 0) 5px, #fff);
+                            content: "";
+                            height: calc((100% - 46px));
+                            position: absolute;
+                            top: 44px;
+                            width: 100%;
+                            z-index: 1;
+                        }
+                    }
+                }
 
                 @include media-breakpoint-up(lg) {
                     grid-template-columns: 1fr 2fr;

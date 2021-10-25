@@ -4,3 +4,5 @@ disable_old_skins: false
 _core:
   default_config_hash: cLsjKifQ40PKqGEvwnTkxwYKAr4t3mkD8UMrJeTSyvk
 langcode: es
+library: slick
+sitewide: 0

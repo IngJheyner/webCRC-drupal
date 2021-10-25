@@ -90,11 +90,15 @@
        <a href="{{ url }}" rel="bookmark">{{ content.field_library_image }}</a>
     </div>
 
-    <div class='node__content-item text-center text-md-left mt-3 mt-md-0'>
+    <div class='node__content-item--info text-center text-md-left mt-3 mt-md-0'>
       <a href="{{ url }}" rel="bookmark" class='text-decoration-none'>{{ label }}</a>
-      <p>{{ content.field_library_information.0['#context']['value']|slice(0, 230) ~ '...'}}
-      <a href="{{ url }}" rel="bookmark">{{ 'Read more'|t }}</a></p>
-      <p>
+      <div class='info-abstract'>
+        <p>
+          {{ content.field_library_information.0['#context']['value']|slice(0, 230) ~ '...'}}          
+        </p>        
+      </div>
+      <p class='d-inline-block'><a href="{{ url }}" rel="bookmark">{{ 'Read more'|t }}</a></p>
+      <p class='d-inline-block ml-3'>
         <time>{{ node.getCreatedTime()|format_date('fecha_my_webcrc') }}</time>
       </p>
     </div>   

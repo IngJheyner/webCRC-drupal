@@ -1,6 +1,6 @@
 uuid: b4d0038c-040a-45c0-abcf-ba8ed6507ca2
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - system.menu.tools
