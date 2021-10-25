@@ -1,0 +1,21 @@
+uuid: d86123b3-8398-4c62-ac41-172d70e73ac1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cont_tipo_cont_simp_transp
+    - node.type.tip_cont_simple_transp
+  module:
+    - text
+id: node.tip_cont_simple_transp.field_cont_tipo_cont_simp_transp
+field_name: field_cont_tipo_cont_simp_transp
+entity_type: node
+bundle: tip_cont_simple_transp
+label: Contenido
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

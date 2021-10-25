@@ -1,0 +1,96 @@
+uuid: 2e56309f-d2f4-4fed-9eb7-b793585b7250
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.parag_menu_transp_acces_infor.field_icono_item_transp
+    - field.field.paragraph.parag_menu_transp_acces_infor.field_parag_nomb_item_menu_trans
+    - field.field.paragraph.parag_menu_transp_acces_infor.field_subitems_menu_transp_acces
+    - paragraphs.paragraphs_type.parag_menu_transp_acces_infor
+  module:
+    - field_group
+    - media_library
+    - paragraphs
+third_party_settings:
+  field_group:
+    group_parag_item_nivel_uno_trans:
+      children:
+        - group_dscrip_ite_level_one_trans
+        - group_subitem_level_items_trans
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      region: content
+      format_settings:
+        direction: horizontal
+        width_breakpoint: 640
+        id: ''
+        classes: ''
+        show_empty_fields: false
+      label: 'Group item nivel 1'
+    group_dscrip_ite_level_one_trans:
+      children:
+        - field_icono_item_transp
+        - field_parag_nomb_item_menu_trans
+      parent_name: group_parag_item_nivel_uno_trans
+      weight: 5
+      format_type: tab
+      region: content
+      format_settings:
+        description: ''
+        formatter: closed
+        required_fields: true
+        id: ''
+        classes: ''
+        show_empty_fields: false
+      label: Información
+    group_subitem_level_items_trans:
+      children:
+        - field_subitems_menu_transp_acces
+      parent_name: group_parag_item_nivel_uno_trans
+      weight: 5
+      format_type: tab
+      region: content
+      format_settings:
+        description: ''
+        formatter: closed
+        required_fields: true
+        id: ''
+        classes: ''
+        show_empty_fields: false
+      label: Sub-Ítems
+id: paragraph.parag_menu_transp_acces_infor.default
+targetEntityType: paragraph
+bundle: parag_menu_transp_acces_infor
+mode: default
+content:
+  field_icono_item_transp:
+    type: media_library_widget
+    weight: 4
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_parag_nomb_item_menu_trans:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_subitems_menu_transp_acces:
+    type: entity_reference_paragraphs
+    weight: 6
+    settings:
+      title: Párrafo
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

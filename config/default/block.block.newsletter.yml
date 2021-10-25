@@ -2,6 +2,10 @@ uuid: 348301d5-ad05-4a77-a412-29800a34900b
 langcode: es
 status: true
 dependencies:
+  content:
+    - 'block_content:newsletter:8df82bb0-b5c2-4fa4-a354-97253c686628'
+  module:
+    - block_content
   theme:
     - webcrc
 id: newsletter

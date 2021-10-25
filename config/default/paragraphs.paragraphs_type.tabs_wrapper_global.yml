@@ -1,0 +1,10 @@
+uuid: 58713758-0ab7-45ec-8e8b-b24f3341ae34
+langcode: es
+status: true
+dependencies: {  }
+id: tabs_wrapper_global
+label: 'Tabs global'
+icon_uuid: null
+icon_default: null
+description: 'Diseño de tabs aplicable para cualquier contenido interno'
+behavior_plugins: {  }

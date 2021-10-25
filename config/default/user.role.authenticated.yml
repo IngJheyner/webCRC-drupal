@@ -1,0 +1,33 @@
+uuid: 99005c98-421e-418b-b928-32819ff19c1a
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - comment
+    - contact
+    - filter
+    - google_analytics
+    - media
+    - shortcut
+    - system
+_core:
+  default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
+id: authenticated
+label: 'Usuario autenticado'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'opt-in or out of google analytics tracking'
+  - 'post comments'
+  - 'skip comment approval'
+  - 'use search_api_autocomplete for search'
+  - 'use text format basic_html'
+  - 'use text format news_crc_editor'
+  - 'view media'
+  - 'view search api pages'

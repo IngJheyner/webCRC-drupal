@@ -1,0 +1,24 @@
+uuid: 1ae69ad5-8d43-4a50-88f3-7dcd27498a6d
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.tip_cont_simple_transp.field_cont_tipo_cont_simp_transp
+    - node.type.tip_cont_simple_transp
+  module:
+    - user
+id: node.tip_cont_simple_transp.teaser
+targetEntityType: node
+bundle: tip_cont_simple_transp
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_cont_tipo_cont_simp_transp: true
+  langcode: true
+  search_api_excerpt: true

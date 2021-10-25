@@ -8,5 +8,5 @@ id: public_files
 label: 'Directorio de archivos públicos'
 type: DrupalFiles
 config:
-  name: 'Public Files Directory'
+  name: 'Directorio de archivos públicos'
   directory: 'public://'

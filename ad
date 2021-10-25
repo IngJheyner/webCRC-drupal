@@ -1,0 +1,171 @@
+[33mcommit c8ef95f375a4a48d94818bf9c5aca12628a2c95f[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: wodby <wodby@example.com>
+Date:   Tue Oct 12 17:06:20 2021 +0000
+
+    Config. page comments
+
+[33mcommit 416b80193b38a028961f16ce4544a62c3f6efc74[m
+Author: wodby <wodby@example.com>
+Date:   Fri Oct 8 15:00:06 2021 +0000
+
+    Config. webform y pmu modules
+
+[33mcommit b75e487e24cd264f917832c2a7d4b84809cb99b9[m
+Merge: 1e013dd d7a6849
+Author: IngJheyner <david-ibagon@hotmail.com>
+Date:   Thu Oct 7 12:12:36 2021 -0500
+
+    Merge branch '3desarrollo'
+
+[33mcommit d7a684923a983938f7b7260679c7ae052206f0ed[m
+Author: wodby <wodby@example.com>
+Date:   Thu Oct 7 17:10:40 2021 +0000
+
+    Proyectos relacionados comentarios
+
+[33mcommit f726dccf9ab0c3be127cedce0045c54c6d3ac1ef[m
+Author: wodby <wodby@example.com>
+Date:   Thu Oct 7 01:26:59 2021 +0000
+
+    Proyectos commentarios relacionados
+
+[33mcommit 1e013dda0a9fb5e44b81a0b72ed4fecf51ed1062[m
+Merge: c39990f 6d7c8ba
+Author: IngJheyner <david-ibagon@hotmail.com>
+Date:   Tue Oct 5 17:22:07 2021 -0500
+
+    Merge branch '3desarrollo'
+
+[33mcommit c39990f70114cfc65d22360b6c754c0e9fad44ae[m
+Author: IngJheyner <david-ibagon@hotmail.com>
+Date:   Tue Oct 5 17:22:00 2021 -0500
+
+    Config. master
+
+[33mcommit 6d7c8ba3e2f8770a02ab35653690f5cdb58bd296[m
+Author: wodby <wodby@example.com>
+Date:   Tue Oct 5 22:19:14 2021 +0000
+
+    Conf. vista productos comments
+
+[33mcommit 4978024c60010da8c3abc82167586b3ec402b9f3[m
+Merge: b0e858b 8fc23ba
+Author: IngJheyner <david-ibagon@hotmail.com>
+Date:   Mon Oct 4 14:50:33 2021 -0500
+
+    Merege jhonny y david
+
+[33mcommit b0e858bb2b7e064ae673bf83d8153d7120b0fd5a[m
+Author: IngJheyner <david-ibagon@hotmail.com>
+Date:   Mon Oct 4 14:41:16 2021 -0500
+
+    Confi. realese projects
+
+[33mcommit 8fc23ba15cdf61485e206b9e342c9f61b0402fdd[m
+Author: programador <programador3d@3dstudioweb.com>
+Date:   Thu Sep 30 15:28:18 2021 -0500
+
+    Cambios para formularios de buscador y boletin de notias
+
+[33mcommit 0e1859b09072cd625cef45e7f82805d7ad0aa5c9[m
+Author: wodby <wodby@example.com>
+Date:   Fri Sep 24 23:01:59 2021 +0000
+
+    Configuracion interacciones
+
+[33mcommit aafef8668f2d1fdd7be6b07e747567c17cae1f46[m
+Author: wodby <wodby@example.com>
+Date:   Thu Sep 23 00:02:14 2021 +0000
+
+    Config. Proyectos relacionados e interaccion
+
+[33mcommit 241596137a67bb7d6561e381e65dd5192ed50181[m
+Merge: aa0ecda 9ccb5da
+Author: IngJheyner <david-ibagon@hotmail.com>
+Date:   Tue Sep 21 15:27:52 2021 -0500
+
+    Merge jhonny master
+
+[33mcommit aa0ecda9187f65ac7d7c82da8d47aa3db7199676[m
+Author: wodby <wodby@example.com>
+Date:   Tue Sep 21 20:15:10 2021 +0000
+
+    Config. estructura interacciones
+
+[33mcommit 564138958b5b52ce4a4116e302fd45dbda789cbb[m
+Author: IngJheyner <david-ibagon@hotmail.com>
+Date:   Tue Sep 21 15:13:06 2021 -0500
+
+    Intereaciones proyectos
+
+[33mcommit 487c7a1436560574f909904d9c7939c1097728bb[m
+Author: IngJheyner <david-ibagon@hotmail.com>
+Date:   Mon Sep 20 11:36:40 2021 -0500
+
+    Beunas practicas
+
+[33mcommit c800300ffd81ab31a63f54b587bbd2d57a4d458a[m
+Author: IngJheyner <david-ibagon@hotmail.com>
+Date:   Mon Sep 20 11:25:29 2021 -0500
+
+    Inicio de proyectos regulatorios
+
+[33mcommit 9ccb5dad406e282c8dc77e6ba826178048a733c4[m
+Author: programador <programador3d@3dstudioweb.com>
+Date:   Fri Sep 17 19:14:00 2021 -0500
+
+    compilare script
+
+[33mcommit 0aa5149bc09ea9edf65987ad7a8fd78f0b93971f[m
+Author: programador <programador3d@3dstudioweb.com>
+Date:   Fri Sep 17 19:04:02 2021 -0500
+
+    Completed contents consulted, indicators
+
+[33mcommit c4b98d1dca62489bdc63bb671fe8c0ca1d5a2382[m[33m ([m[1;31morigin/3dstudio[m[33m)[m
+Author: programador <programador3d@3dstudioweb.com>
+Date:   Tue Aug 31 14:17:06 2021 -0500
+
+    Modificacndo opciones
+
+[33mcommit e0640a08a170ddac85799e88cb0ebf83256649b1[m
+Author: programador <programador3d@3dstudioweb.com>
+Date:   Mon Aug 30 19:18:43 2021 -0500
+
+    Agregando fuente de iconos nueva y editando estilos
+
+[33mcommit 724c778e096647abe8bcb9a97411a07029482313[m
+Author: programador <programador3d@3dstudioweb.com>
+Date:   Fri Aug 27 17:57:52 2021 -0500
+
+    Actualizando backup base de datos
+
+[33mcommit 1adad68911a47212fe8d5339aba6dfdf766e3782[m
+Author: programador <programador3d@3dstudioweb.com>
+Date:   Fri Aug 27 17:51:41 2021 -0500
+
+    Agregando Header y Footer
+
+[33mcommit 3258a405b24d41deab89875873de322673817c79[m
+Author: programador <programador3d@3dstudioweb.com>
+Date:   Mon Aug 23 20:02:32 2021 -0500
+
+    Base de datos inicial
+
+[33mcommit b938219ea2ab9b2c7e5b92f31befd946dc13831d[m
+Author: programador <programador3d@3dstudioweb.com>
+Date:   Mon Aug 23 19:54:18 2021 -0500
+
+    Modificando Informacion
+
+[33mcommit 044d3e79bc84b99109a689d8d8300c3e87fc5184[m
+Author: programador <programador3d@3dstudioweb.com>
+Date:   Mon Aug 23 19:46:19 2021 -0500
+
+    Initial setup
+
+[33mcommit 1fdd55da1881864d67e0214e16f6a3c0b6b7a870[m
+Author: programador <programador3d@3dstudioweb.com>
+Date:   Mon Aug 23 11:40:23 2021 -0500
+
+    Initial commit

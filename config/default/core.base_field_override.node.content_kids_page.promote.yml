@@ -1,0 +1,22 @@
+uuid: 64ad720c-4040-4422-976b-d1da93b05940
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.content_kids_page
+id: node.content_kids_page.promote
+field_name: promote
+entity_type: node
+bundle: content_kids_page
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

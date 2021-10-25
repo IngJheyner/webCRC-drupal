@@ -1,0 +1,8 @@
+uuid: 91549ae2-9d2d-46fe-a136-239023ecca28
+langcode: es
+status: true
+dependencies: {  }
+id: block_menu_transp_acces_public
+label: 'Menu [ transparencia y acceso a la información pública ]'
+revision: 0
+description: 'Menu de transparencia y acceso a la información pública del sitio CRC'

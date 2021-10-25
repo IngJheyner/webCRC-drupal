@@ -1,0 +1,11 @@
+uuid: e6ccfa60-0630-4660-ad74-f72f560127c4
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.logos
+id: media.logos
+target_entity_type_id: media
+target_bundle: logos
+default_langcode: site_default
+language_alterable: false

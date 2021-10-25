@@ -1,6 +1,6 @@
 uuid: b4d0038c-040a-45c0-abcf-ba8ed6507ca2
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.tools
@@ -12,8 +12,8 @@ _core:
   default_config_hash: rH6PpAn7-RScha1rGkohGAYSSh_1OVeZzioJPzPw6O4
 id: webcrc_tools
 theme: webcrc
-region: footer
-weight: -6
+region: disabled
+weight: -4
 provider: null
 plugin: 'system_menu_block:tools'
 settings:

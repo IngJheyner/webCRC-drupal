@@ -1,0 +1,82 @@
+uuid: ddf6079f-ad06-414e-a083-dfd8cf4a17d0
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.editor_cont_transparencia
+  module:
+    - ckeditor
+format: editor_cont_transparencia
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formato
+          items:
+            - Bold
+            - Underline
+            - Strike
+            - Italic
+            - Superscript
+            - Subscript
+            - Styles
+        -
+          name: Enlaces
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Listas
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Media
+          items:
+            - Blockquote
+            - DrupalImage
+            - DrupalMediaLibrary
+        -
+          name: Tools
+          items:
+            - Source
+        -
+          name: Alineación
+          items:
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+            - JustifyBlock
+            - Outdent
+            - Indent
+            - HorizontalRule
+        -
+          name: Portapapeles
+          items:
+            - Cut
+            - Copy
+            - PasteText
+            - PasteFromWord
+            - Paste
+            - Undo
+            - Redo
+        -
+          name: Tablas
+          items:
+            - Table
+            - ShowBlocks
+  plugins:
+    stylescombo:
+      styles: ''
+    language:
+      language_list: un
+image_upload:
+  status: false
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

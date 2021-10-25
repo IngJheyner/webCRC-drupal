@@ -8,5 +8,5 @@ id: private_files
 label: 'Directorio de archivos privados'
 type: DrupalFiles
 config:
-  name: 'Private Files Directory'
+  name: 'Directorio de archivos privados'
   directory: 'private://'

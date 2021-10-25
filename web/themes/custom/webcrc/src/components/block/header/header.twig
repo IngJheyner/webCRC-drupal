@@ -47,14 +47,14 @@
         </a>
       </div>
 
-      <div class="col-6 col-sm-6 col-xl-8 text-center">
+      <div class="col-6 col-sm-6 col-xl-8 text-center search-primary">
         {% block search %}
           {{ search }}
         {% endblock %}
       </div>
 
-      <div class="page__top_a  col-2 col-sm-2 col-md-12 col-lg-12 col-xl-12">
-        <nav id="main_menu" class="nav-main-menu home-menu">
+      <div class="page__top_a col-2 col-sm-2 col-md-12 col-lg-12 col-xl-12 p-0">
+        <nav id="main_menu" class="nav-main-menu {{ is_front ? 'home-menu' : null }}">
           {% block menu %}
             {{ menu }}
           {% endblock %}
@@ -71,42 +71,3 @@
     {% endblock %}
   </div>
 </section>
-
-{# 
-{% set classes = [
-  'block',
-  bundle ? 'block--' ~ bundle|clean_class,
-  id ? 'block--' ~ id|replace({"_": "-"})|clean_class,
-]|merge(utility_classes ? utility_classes : []) %}
-
-{% if html_tag %}
-    <{{ html_tag }}{{ attributes|without('id').addClass(classes) }}>
-{% endif %}
-
-  {% block content %} 
-    <section class="row justify-content-between m-0 header-gov">
-      <div class="col-2 text-center">
-        <img src="{{ file_url(content.field_home_header_logo_govco[0]['#item'].entity.uri.value) }}" class="img-fluid mt-2 mt-lg-0" />
-      </div>
-      <div class="col-2 text-center">
-        <span class="govco-icon govco-icon-language-en-n lang-govco ml-3"></span>
-      </div>
-    </section>
-
-    <section class="row justify-content-between m-0 header-webcrc">
-      <div class="col-7 col-sm-5 col-xl-4 d-xl-block col-3 text-center logo-crc">
-        <a href="{{ url('<front>') }}">
-          <img src="{{ file_url(content.field_home_header_logo_webcrc[0]['#item'].entity.uri.value) }}" class="img-fluid mt-2 mt-lg-0" />
-        </a>
-      </div>
-      <div class="col-7 col-sm-7 col-xl-7 text-center">
-        {{ drupal_view('home_search') }}
-        <i class="fas fa-search"></i>
-      </div>
-    </section>
-  {% endblock %} 
-
-{% if html_tag %}
-    </{{ html_tag }}>
-{% endif %}
-#}

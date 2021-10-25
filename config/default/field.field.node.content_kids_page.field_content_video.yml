@@ -1,0 +1,33 @@
+uuid: 6ac4ad72-c394-4e1d-891f-67cbd171850b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_video
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - node.type.content_kids_page
+id: node.content_kids_page.field_content_video
+field_name: field_content_video
+entity_type: node
+bundle: content_kids_page
+label: 'Imagen o video principal'
+description: 'Imagen o video para el contenido principal de la pagina de niños'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      remote_video: remote_video
+      video: video
+    sort:
+      field: created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: remote_video
+field_type: entity_reference
