@@ -116,9 +116,6 @@ function webcrc_projects_regulatory_form_views_exposed_form_alter(&$form, FormSt
     /* ===== ===== TITULO ===== ===== */
     if (isset($form['field_nombre_proyecto_value'])) $form['field_nombre_proyecto_value']['#prefix'] = '<p class="h4 text-center text-white mb-3">'.t('Find the project of your interest.').'</p>';
 
-    /* ===== ===== PLACEHOLDER ===== ===== */
-    if(isset($form['field_nombre_proyecto_value'])) $form['field_nombre_proyecto_value']['#attributes']['placeholder'] = t('Name or title: Improvement of mobile networks, Analysis of communication media ...');
-
     /* ===== ===== LINEA ===== ===== */
     if (isset($form['field_estado_proyectos_value']))$form['field_estado_proyectos_value']['#prefix'] = '<hr class="bg-white"><div class="input__group d-flex">';
 

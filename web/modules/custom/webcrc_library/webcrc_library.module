@@ -10,7 +10,7 @@
  */
 
 use Drupal\Core\Form\FormStateInterface;
-
+use Drupal\Core\Datetime\DrupalDateTime;
 /**
  * Implements hook_form_alter().
  */
@@ -24,6 +24,7 @@ function webcrc_library_form_alter(&$form, $form_state, $form_id) {
  */
 function webcrc_library_form_views_exposed_form_alter(&$form, FormStateInterface $form_state) {
     //dpm($form);
+    $date = new DrupalDateTime('now');
     if($form['#id'] == 'views-exposed-form-library-virtual-page-library-virtual'){
 
         /* ===== ===== TITULO ===== ===== */
@@ -38,10 +39,16 @@ function webcrc_library_form_views_exposed_form_alter(&$form, FormStateInterface
 
         /* ===== ===== END INPUT__GROUP ===== ===== */
         if(isset($form['created_wrapper'])){
-        $form['created_wrapper']['#suffix'] = '</div>';
-        $form['created_wrapper']['#attributes'] = [
-            'class' => ['d-flex flex-column flex-md-row', 'justify-content-between'],
-        ];
+            $form['created_wrapper']['#suffix'] = '</div>';
+            $form['created_wrapper']['#attributes'] = [
+                'class' => ['d-flex flex-column flex-md-row', 'justify-content-between'],
+            ];
+
+            $m = date('m', $date->getTimestamp());
+            $y = date('Y', $date->getTimestamp());
+
+            $form['created_wrapper']['created']['min']['#attributes']['placeholder'] = "01-01-$y";
+            $form['created_wrapper']['created']['max']['#attributes']['placeholder'] = "30-".$m."-$y";
         }
 
         $form['actions']['#attributes'] = [
@@ -120,8 +127,10 @@ function webcrc_library_preprocess_form_element(&$variables) {
         }
     }
 
-    /* ===== ===== LABEL ===== ===== */
+    /* ===== ===== LABEL CREATED ===== ===== */
     if(isset($variables['name'])){
-        if($variables['name'] == 'created[min]' || $variables['name'] == 'created[max]') $variables['label']['#title'] = t('Date');
+        //dpm($variables);
+        if($variables['name'] == 'created[min]') $variables['label']['#title'] = t('Date I.');
+        if($variables['name'] == 'created[max]') $variables['label']['#title'] = t('Date F.');
     }
 }

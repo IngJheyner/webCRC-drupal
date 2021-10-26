@@ -1473,6 +1473,7 @@ display:
             remember: false
             multiple: false
             remember_roles:
+              authenticated: authenticated
               anonymous: '0'
               administrator: '0'
             placeholder: ''
@@ -1504,7 +1505,7 @@ display:
       pager:
         type: full
         options:
-          items_per_page: 2
+          items_per_page: 12
           offset: 0
           id: 0
           total_pages: null

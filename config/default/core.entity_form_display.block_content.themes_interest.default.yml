@@ -19,18 +19,19 @@ third_party_settings:
       format_type: tabs
       region: content
       format_settings:
-        show_empty_fields: false
+        direction: horizontal
+        width_breakpoint: 640
         id: ''
         classes: ''
-        direction: vertical
-        width_breakpoint: 640
+        show_empty_fields: false
       label: 'Grupo Tabs'
     group_information:
       children:
+        - field_icon
         - info
         - langcode
       parent_name: group_grupo_tabs
-      weight: 20
+      weight: 21
       format_type: tab
       region: content
       format_settings:
@@ -45,9 +46,9 @@ third_party_settings:
       children:
         - field_interest_content
       parent_name: group_grupo_tabs
-      weight: 21
+      weight: 27
       format_type: tab
-      region: hidden
+      region: content
       format_settings:
         show_empty_fields: false
         id: ''
@@ -63,7 +64,7 @@ mode: default
 content:
   field_interest_content:
     type: entity_reference_paragraphs
-    weight: 22
+    weight: 24
     settings:
       title: Párrafo
       title_plural: Paragraphs
@@ -75,7 +76,7 @@ content:
     region: content
   info:
     type: string_textfield
-    weight: 21
+    weight: 24
     region: content
     settings:
       size: 60
@@ -83,7 +84,7 @@ content:
     third_party_settings: {  }
   langcode:
     type: language_select
-    weight: 22
+    weight: 25
     region: content
     settings:
       include_locked: true

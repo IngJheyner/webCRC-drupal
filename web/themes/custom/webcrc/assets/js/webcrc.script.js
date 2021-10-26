@@ -22483,7 +22483,7 @@ __webpack_require__.r(__webpack_exports__);
           language: 'es',
           todayBtn: "linked",
           clearBtn: true,
-          format: "dd/mm/yyyy",
+          format: "dd-mm-yyyy",
           multidate: false,
           todayHighligth: true,
           orientation: "bottom left"
@@ -22494,7 +22494,7 @@ __webpack_require__.r(__webpack_exports__);
           language: 'es',
           todayBtn: "linked",
           clearBtn: true,
-          format: "dd/mm/yyyy",
+          format: "dd-mm-yyyy",
           multidate: false,
           todayHighligth: true,
           orientation: "bottom left"

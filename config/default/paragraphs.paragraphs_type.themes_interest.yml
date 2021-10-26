@@ -1,10 +1,12 @@
 uuid: bdf61cad-3dc5-4df7-a820-c327a582e4e4
 langcode: es
 status: true
-dependencies: {  }
+dependencies:
+  content:
+    - 'file:file:37dd7fdd-03a3-442f-a49c-71d54003f2f0'
 id: themes_interest
 label: 'Temas de interés'
-icon_uuid: null
-icon_default: null
+icon_uuid: 37dd7fdd-03a3-442f-a49c-71d54003f2f0
+icon_default: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTIiIGhlaWdodD0iNTIiIHZpZXdCb3g9IjAgMCA1MiA1MiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQzLjMzMzUgMTIuOTk5M0gyNi4wMDAyTDIxLjY2NjggOC42NjYwMkg4LjY2NjgzQzYuMjgzNSA4LjY2NjAyIDQuMzU1MTYgMTAuNjE2IDQuMzU1MTYgMTIuOTk5M0w0LjMzMzUgMzguOTk5M0M0LjMzMzUgNDEuMzgyNyA2LjI4MzUgNDMuMzMyNyA4LjY2NjgzIDQzLjMzMjdINDUuMDAxOEM0Ni40NzUyIDQzLjMzMjcgNDcuNjY2OCA0Mi4xMTkzIDQ3LjY2NjggNDAuNjY3N1YxNy4zMzI3QzQ3LjY2NjggMTQuOTQ5MyA0NS43MTY4IDEyLjk5OTMgNDMuMzMzNSAxMi45OTkzWk00My4zMzM1IDM4Ljk5OTNIOC42NjY4M1YxMi45OTkzSDE5Ljg2ODVMMjQuMjAxOCAxNy4zMzI3SDQzLjMzMzVWMzguOTk5M1pNMzkuMDAwMiAyNS45OTkzSDEzLjAwMDJWMjEuNjY2SDM5LjAwMDJWMjUuOTk5M1pNMzAuMzMzNSAzNC42NjZIMTMuMDAwMlYzMC4zMzI3SDMwLjMzMzVWMzQuNjY2WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg=='
 description: ''
 behavior_plugins: {  }

@@ -14,7 +14,7 @@ mode: default
 content:
   field_interest_content:
     type: entity_reference_revisions_entity_view
-    weight: 0
+    weight: 1
     label: hidden
     settings:
       view_mode: default

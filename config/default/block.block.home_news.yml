@@ -9,7 +9,7 @@ dependencies:
 id: home_news
 theme: webcrc
 region: bottom_a
-weight: -11
+weight: -13
 provider: null
 plugin: 'block_content:d6b7ca44-d780-4080-8a98-17d98296f931'
 settings:

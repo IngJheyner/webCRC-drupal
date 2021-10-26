@@ -9,7 +9,7 @@ dependencies:
 id: tabs_social_networks
 theme: webcrc
 region: bottom_a
-weight: -10
+weight: -12
 provider: null
 plugin: 'block_content:b78e3423-dddb-49b0-97af-f37d06b61a79'
 settings:

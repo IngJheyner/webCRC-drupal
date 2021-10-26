@@ -585,7 +585,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class='d-flex my-4'>\r\n{{ field_formats_image }}\r\n<a href='/biblioteca-virtual?palabras=&tipo-documento={{ tid }}' class='ml-3 text-decoration-none'>{{ name }}</a>\r\n</div>"
+            text: "<div class='d-flex my-4'>\r\n{{ field_formats_image }}\r\n<a href='/biblioteca-virtual?palabras=&tipo-documento=All&formatos={{ tid }}' class='ml-3 text-decoration-none'>{{ name }}</a>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
