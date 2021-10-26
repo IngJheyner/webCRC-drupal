@@ -21686,9 +21686,6 @@ article.projects__regulatory section.projects__regulatory-related div#content-re
 article.projects__regulatory section.projects__regulatory-related div.projects__related-content p.projects__related-header--title span {
   color: #F42E62 !important;
 }
-article.projects__regulatory section.projects__regulatory-related div.projects__related-content div#projects__related-content--info p.date {
-  border-left: 1px solid #3366CC;
-}
 
 /* ==============================
 VISTA PAGE COMMENTS
@@ -22130,9 +22127,6 @@ article.library-virtual section.library-virtual__documents-of-interest div.libra
 }
 article.library-virtual section.library-virtual__documents-of-interest div.library__related-content div.library__related-content-info div.content__info-container div.content__info-container-tile-document p.type-document em {
   color: #2F2A7C;
-}
-article.library-virtual section.library-virtual__documents-of-interest div.library__related-content div.library__related-content-info div.content__info-container div.content__info-container-tile-document time small {
-  border-left: 1px solid #2F2A7C;
 }
 article.library-virtual section.library-virtual__documents-of-interest div#content-related--bg--webcrc {
   background-color: #2F2A7C;

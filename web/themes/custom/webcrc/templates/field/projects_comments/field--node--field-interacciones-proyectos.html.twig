@@ -54,7 +54,7 @@
 
                       <small class="text-white text-left text-md-center d-block h-100 my-1 text-lowercase">
                         {{'Comment closing date for this iteration'|t }}
-                        <time datetime="{{ item.content['#paragraph'].field_fecha_cierre_iteracciones.value }}"><small class="text-white">{{ item.content['#paragraph'].field_fecha_cierre_iteracciones.value|date('U')|format_date('fecha_corta_webcrc') }}</small></time>
+                        <time datetime="{{ item.content['#paragraph'].field_fecha_cierre_iteracciones.value }}" class='border-0 p-0'><small class="text-white">{{ item.content['#paragraph'].field_fecha_cierre_iteracciones.value|date('U')|format_date('fecha_corta_webcrc') }}</small></time>
                       </small>
 
                     </div>                    

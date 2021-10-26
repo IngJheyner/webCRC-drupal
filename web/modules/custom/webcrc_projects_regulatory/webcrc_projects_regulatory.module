@@ -16,7 +16,8 @@ use Drupal\Core\Render\Markup;
 function webcrc_projects_regulatory_form_alter (&$form, FormStateInterface $form_state, $form_id) {
 
   //Ocultar el campo de encuesta en los nodos del formulario
-  hide($form['field_poll_content_useful']);
+  $form['field_poll_content_useful']['widget'][0]['target_id']['#disabled'] = TRUE;
+  $form['field_poll_content_useful']['widget'][0]['settings']['#open'] = FALSE;
 
   if ($form['#id'] == "node-proyectos-regulatorios-edit-form" || $form['#id'] == "node-proyectos-regulatorios-form") {
     $form['#attached']['library'][] = 'webcrc_projects_regulatory/webcrc_projects_regulatory';
