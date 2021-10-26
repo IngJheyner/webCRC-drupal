@@ -21840,6 +21840,228 @@ div.page-projects ul.pagination li.disabled a {
   color: #EBEBEB !important;
 }
 
+.kids-page .content-kids-page__field-content-background-image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.kids-page .content-kids-page__field-content-background-image > div {
+  padding-bottom: 0 !important;
+  width: 100%;
+  height: 100%;
+}
+.kids-page .content-kids-page__field-content-background-image img {
+  width: 100%;
+  height: auto;
+}
+.kids-page .content-kids-page__field-content-logo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.kids-page .card-body {
+  position: relative;
+  width: 70%;
+  margin: 5rem auto;
+  padding: 20px 70px 20px 65px;
+}
+.kids-page .card-body * {
+  width: 100%;
+  margin: auto;
+  color: white;
+  border-radius: 20px;
+  font-size: 22pt;
+}
+.kids-page .card-body .content-kids-page__field-content-video .media {
+  position: relative;
+  padding-bottom: 50%;
+  height: 0;
+}
+.kids-page .card-body .content-kids-page__field-content-video .media iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.kids-page .tabs-container div.tab-content ul.slide__content li {
+  padding: 15px 35px;
+  width: 100%;
+  max-width: 510px;
+}
+.kids-page .tabs-container div.tab-content ul.slide__content li .grid__content {
+  background: white;
+  border-radius: 10px;
+}
+.kids-page .tabs-container div.tab-content ul.slide__content li .grid__content .field-content > .media {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0;
+}
+.kids-page .tabs-container div.tab-content ul.slide__content li .grid__content .field-content > .media img {
+  padding: 0 10px;
+}
+.kids-page .tabs-container div.tab-content ul.slide__content li .grid__content .field-content > .media .media-body {
+  text-align: left;
+}
+.kids-page .tabs-container div.tab-content ul.slide__content li .grid__content .field-content > .media .media-body h5 {
+  margin-bottom: 30px;
+  color: black;
+  font-size: 12pt;
+}
+.kids-page .tabs-container div.tab-content ul.slide__content li .grid__content .field-content > .media .media-body a {
+  position: relative;
+  background: #2f2a7c !important;
+  color: white !important;
+  padding: 15px 20px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+.kids-page .tabs-container div.tab-content ul.slide__content li:after, .kids-page .tabs-container div.tab-content ul.slide__content li:before {
+  content: none;
+}
+.kids-page .tabs-container div.tab-content ul.slide__content li:hover, .kids-page .tabs-container div.tab-content ul.slide__content li:active, .kids-page .tabs-container div.tab-content ul.slide__content li:visited {
+  background: none;
+  border-radius: 0;
+}
+.kids-page .tabs-container div.tab-content ul.slide__content li:hover img, .kids-page .tabs-container div.tab-content ul.slide__content li:active img, .kids-page .tabs-container div.tab-content ul.slide__content li:visited img {
+  filter: none;
+}
+
+.transparenciaAcceso {
+  background-color: white;
+  width: 100% !important;
+  margin: 0px;
+  margin-top: 50px;
+  max-width: 100%;
+}
+.transparenciaAcceso .transparencia .titulo {
+  background-color: white;
+  padding-left: 5%;
+}
+.transparenciaAcceso .transparencia .titulo h1 {
+  color: #2f2a7c;
+  font-weight: 800;
+  font-size: 2.6rem;
+}
+.transparenciaAcceso .transparencia::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 18px solid #fff;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  position: relative;
+  left: 15%;
+  bottom: -39px;
+  box-shadow: inset 0px 26px 1px -24px rgba(0, 0, 0, 0.1);
+}
+.transparenciaAcceso div.menu.row {
+  flex-direction: row;
+  padding: 5%;
+  background-color: #26216a;
+  max-width: 100%;
+  margin: 0px;
+}
+.transparenciaAcceso div.menu.row .nav-item {
+  padding: 10px !important;
+}
+.transparenciaAcceso div.menu.row .back-menu-transparencia {
+  height: auto;
+  transition: all 0.5s ease 0s;
+  background: repeating-linear-gradient(285deg, white 0px, white 79%, #3649b2 0px, #3649b2);
+}
+.transparenciaAcceso div.menu.row .item_menu {
+  height: 5.5rem;
+  border-radius: 13px;
+  background-color: #ffffff;
+  border-color: none;
+  margin: 10px 0px;
+}
+.transparenciaAcceso div.menu.row .item_menu span {
+  width: 100% !important;
+  white-space: normal;
+}
+.transparenciaAcceso div.menu.row .dropdown-toggle::after {
+  display: none;
+}
+.transparenciaAcceso div.menu.row a.nav-link {
+  text-decoration: none;
+  font-weight: bolder;
+  padding: 100px;
+  border: 0px !important;
+}
+.transparenciaAcceso div.menu.row li.dropdown.show a.nav-link {
+  background: repeating-linear-gradient(285deg, white 0px, white 79%, #f42e62 0px, #f42e62) !important;
+}
+.transparenciaAcceso .dropdown.navbar-nav {
+  background-color: white !important;
+}
+.transparenciaAcceso .navbar-nav a:hover {
+  background-color: white !important;
+}
+.transparenciaAcceso .navbar-nav a:hover.back-menu-transparencia {
+  background: repeating-linear-gradient(285deg, white 0px, white 79%, #3649b2 0px, #3649b2) !important;
+}
+.transparenciaAcceso .navbar-nav a:focus {
+  background-color: white !important;
+}
+.transparenciaAcceso .navbar-nav a:focus.back-menu-transparencia {
+  background: repeating-linear-gradient(285deg, white 0px, white 79%, #3649b2 0px, #3649b2) !important;
+}
+.transparenciaAcceso .dropdown-menu {
+  width: 100%;
+  padding: 0px 30px 0px 0px;
+  background-color: transparent;
+}
+.transparenciaAcceso .dropdown-menu > div {
+  background-color: white;
+  padding: 15px;
+}
+.transparenciaAcceso .dropdown-menu.show {
+  margin: 0px;
+  top: -2px !important;
+  background-color: transparent;
+}
+.transparenciaAcceso .description-content {
+  max-width: 100%;
+  background-color: #ebebeb;
+  padding: 60px;
+  padding-left: 5%;
+  box-shadow: inset 0px 26px 1px -24px rgba(0, 0, 0, 0.1);
+}
+.transparenciaAcceso .description-content .links_descripcion {
+  margin-top: 10px;
+}
+.transparenciaAcceso .description-content .links_descripcion .icon-link {
+  margin-right: 10px;
+  height: 42px;
+  padding: 5px;
+  border-radius: 25px;
+  background-color: var(--colorGinPrimaryActive);
+}
+.transparenciaAcceso .description-content .links_descripcion .icon-link span.material-icons {
+  color: white;
+  font-size: 2rem;
+}
+.transparenciaAcceso .breadcrumbs {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding-left: 5%;
+}
+.transparenciaAcceso .titleForItemTransparencia {
+  background-color: #f42e62;
+  padding: 28px;
+  padding-left: 5%;
+  color: white;
+}
+.transparenciaAcceso .titleForItemTransparencia h1 {
+  color: white;
+}
+
 /* ===== ===== TEXTO ===== ===== */
 /* ===== ===== FONDO ===== ===== */
 /* ===== ===== BOTONES y Anclas ===== ===== */

@@ -70,6 +70,7 @@ content:
     type: blazy_media
     region: content
 hidden:
+  addtoany: true
   langcode: true
   links: true
   search_api_excerpt: true

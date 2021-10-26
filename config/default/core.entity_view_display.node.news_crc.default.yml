@@ -130,6 +130,7 @@ content:
     type: entity_reference_label
     region: content
 hidden:
+  addtoany: true
   langcode: true
   links: true
   search_api_excerpt: true
