@@ -634,7 +634,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class='bg-white p-4  rounded-lg' id='projects__related-content--info'>\r\n{{ field_nombre_proyecto }}\r\n<p class='date pl-2'><b>{{'deadline'|t}}:</b><time>{{ field_interacciones_proyectos|replace({'FALSE':' ','TRUE':' ' }) }}</time></p>\r\n</div>"
+            text: "<div class='bg-white p-4  rounded-lg' id='projects__related-content--info'>\r\n{{ field_nombre_proyecto }}\r\n<p class='date pl-2'><b>{{'deadline'|t}}:</b><time class='border-0 p-0'>{{ field_interacciones_proyectos|replace({'FALSE':' ','TRUE':' ' }) }}</time></p>\r\n</div>"
             make_link: false
             path: ''
             absolute: false

@@ -27,8 +27,7 @@ third_party_settings:
         - title
         - field_estado_proyectos
         - created
-        - field_poll_content_useful
-        - status
+        - group_projects_options
       parent_name: group_field_group_tabs
       weight: 1
       format_type: tab
@@ -82,7 +81,6 @@ third_party_settings:
         - field_email_proyectos
         - field_oficina_proyecto
         - field_projects_links
-        - field_enlaces_proyectos
       parent_name: group_field_group_tabs
       weight: 3
       format_type: tab
@@ -125,6 +123,21 @@ third_party_settings:
         formatter: closed
         required_fields: true
       label: 'Documentos Finales'
+    group_projects_options:
+      children:
+        - status
+        - field_poll_content_useful
+      parent_name: group_informacion
+      weight: 5
+      format_type: fieldset
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Opciones
 id: node.proyectos_regulatorios.default
 targetEntityType: node
 bundle: proyectos_regulatorios
@@ -186,7 +199,7 @@ content:
     type: string_textfield
     region: content
   field_poll_content_useful:
-    weight: 5
+    weight: 8
     settings:
       default_data: true
       webforms: {  }
@@ -222,7 +235,7 @@ content:
     type: options_buttons
     region: content
   field_resumen_proyecto:
-    weight: 34
+    weight: 35
     settings:
       rows: 5
       placeholder: ''
@@ -239,7 +252,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 6
+    weight: 7
     region: content
     third_party_settings: {  }
   title:

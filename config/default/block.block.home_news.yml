@@ -2,10 +2,7 @@ uuid: c7501c52-390a-4f19-a5b4-7fdaf284a372
 langcode: es
 status: true
 dependencies:
-  content:
-    - 'block_content:last_news:d6b7ca44-d780-4080-8a98-17d98296f931'
   module:
-    - block_content
     - system
   theme:
     - webcrc
