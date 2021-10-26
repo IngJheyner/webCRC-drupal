@@ -1,0 +1,18 @@
+uuid: 68a29ca0-b4bd-4576-8a62-60746c7aa2ca
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_library_highlight
+field_name: field_library_highlight
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

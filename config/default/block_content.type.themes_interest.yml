@@ -1,0 +1,8 @@
+uuid: c6401869-a103-4587-a95d-ddd424e2a04d
+langcode: es
+status: true
+dependencies: {  }
+id: themes_interest
+label: ' Temas de interés'
+revision: 0
+description: 'Temas de interés del sitio, categorias, contenidos y mas que deseen que se visualiza en esta seccion.'

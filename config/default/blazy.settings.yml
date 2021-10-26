@@ -1,8 +1,8 @@
 admin_css: true
-fx: ''
+fx: blur
 decode: false
 noscript: false
-responsive_image: false
+responsive_image: true
 one_pixel: true
 placeholder: ''
 unstyled_extensions: ''

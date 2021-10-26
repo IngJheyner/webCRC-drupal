@@ -1,0 +1,8 @@
+uuid: b8468558-7755-4e93-bba7-f1bf3129f346
+langcode: es
+status: true
+dependencies: {  }
+id: fecha_my_webcrc
+label: 'Fecha M/Y - Webcrc'
+locked: false
+pattern: M/Y

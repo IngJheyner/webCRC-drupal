@@ -1,0 +1,6 @@
+name: Library virtual
+type: module
+description: Custom configuration for virtual library content type.
+package: Webcrc
+core: 8.x
+core_version_requirement: ^8 || ^9

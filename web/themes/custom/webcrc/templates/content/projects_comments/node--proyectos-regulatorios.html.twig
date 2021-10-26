@@ -107,7 +107,7 @@
         </div>
 
         {# ===== ===== SERVICES ===== ===== #}
-        <div class="node__content-info--items services order-lg-2 order-lg-2 px-lg-2">         
+        <div class="node__content-info--items services order-lg-2 order-lg-2 px-md-2 mt-3 mt-md-0">         
           {{ content.field_projects_services }}         
         </div>
 
@@ -118,7 +118,7 @@
             {% if loop.last %}
               {% set dateClose = content.field_interacciones_proyectos[key]['#paragraph'].field_fecha_cierre_iteracciones.value %}
 
-              <div class="node__content-info--items date-comments order-2 order-lg-3 d-flex mb-2 mb-lg-0 px-lg-2">
+              <div class="node__content-info--items date-comments order-2 order-lg-3 d-flex mb-2 mb-lg-0 px-lg-2 mt-3 mt-md-0">
 
                 <img src="/themes/custom/webcrc/src/images/aceptan-comentarios.svg" alt="{{ 'Comments are accepted until'|t }}"> 
 
@@ -138,18 +138,24 @@
       {# ===== ===== TITLE PROJECTS ===== ===== #}
       <h1 class="node__content-title">{{ content.field_nombre_proyecto.0 }}</h1>
 
-      {# ===== ===== RESUMEN Y MECANISMOS DE PARTICIPACION E INTERACCIONES ===== ===== #}
-      <div class="row">    
+      {# ============================================
+      RESUMEN Y MECANISMOS DE PARTICIPACION E INTERACCIONES
+      =============================================== #}
+      <div class="row">
+
         <div class="col-12 col-lg-8">
 
           {# ===== ===== TIPO DE PROYECTO ===== ===== #}
-          {{ content.field_tipo_proyecto}}
+          <div class="node__content-type-project">
+            <p class='font-weight-bold mb-0'>{{'Type project'|t}}</p>
+            {{ content.field_tipo_proyecto.0}}
+          </div>
           <hr class="my-3">
 
           {# ===== ===== RESUMEN ===== ===== #}
           <div class="node__content-abstract">
-            {{ content.field_resumen_proyecto }}
-            
+             <p class='font-weight-bold'>{{'Abstract'|t}}</p>
+            {{ content.field_resumen_proyecto.0 }}            
           </div>          
 
           {# ===== ===== DOCUMENTACION FINAL ===== ===== #}
@@ -184,7 +190,7 @@
           {# ===== ===== INTERACCIONES ===== ===== #}
           <div class="node__content-interactions">
 
-            <h3>{{ 'Interactions'|t }}</h3>
+            <h3 class='mb-3'>{{ 'Interactions'|t }}</h3>
 
             {{ content.field_interacciones_proyectos }} 
             
@@ -193,19 +199,28 @@
         </div>
 
         {# ===== ===== MECANISMOS DE PARTICIPACION ===== ===== #}
-        <div class="col-12 col-lg-4 node__content-mechanisms mt-4 mt-md-0">
+        <div class="col-12 col-lg-4 node__content-mechanisms mt-5 mt-lg-0">
 
           <ul class="list-group">
 
             <li class="list-group-item active font-weigth-bold text-left text-md-center px-2 px-md-4"><i class="fas fa-inbox text-white"></i> {{ 'Mechanisms for participation'|trans }}</li>
-            <li class="list-group-item node__content-mechanisms--email pt-3 pb-1 px-2 px-md-4"><img src="/themes/custom/webcrc/src/images/email.svg"><a href="mailto:{{ content.field_email_proyectos.0 }}?Subject=Cordial%20saludo%20señores%20de%20la%20CRC" class="text mx-2 font-weight-bold">{{ content.field_email_proyectos.0 }}</a></li>
-            <li class="list-group-item node__content-mechanisms--enlaces py-1 px-2 px-md-4">            
-              {{ content.field_enlaces_proyectos }}
-            </li>
-            <li class="list-group-item node__content-mechanisms--email pt-0 pb-3 px-2 px-md-4"><img src="/themes/custom/webcrc/src/images/Direccion.svg"><u class="text mx-2 font-weight-bold">{{ content.field_oficina_proyecto.0 }}</u></li>
+
+            <li class="list-group-item node__content-mechanisms--email pt-3 pb-1 px-2 px-md-4"><img src="/themes/custom/webcrc/src/images/email.svg" onerror='this.remove();'><a href="mailto:{{ content.field_email_proyectos.0 }}?Subject=Cordial%20saludo%20señores%20de%20la%20CRC" class="text mx-2 font-weight-bold">{{ content.field_email_proyectos.0 }}</a></li>
+
+            <li class="list-group-item node__content-mechanisms--enlaces py-1 px-2 px-md-4">{{ content.field_projects_links }}</li>
+            
+            <li class="list-group-item node__content-mechanisms--facebook py-1 pb-1 px-2 px-md-4"><img src="/themes/custom/webcrc/src/images/Facebook.svg" onerror='this.remove();'><a href="javascript:void(0)" class="text mx-2 font-weight-bold">Facebook</a></li>
+
+            <li class="list-group-item node__content-mechanisms--twitter py-1 pb-1 px-2 px-md-4"><img src="/themes/custom/webcrc/src/images/Twitter.svg" onerror='this.remove();'><a href="javascript:void(0)" class="text mx-2 font-weight-bold">Twitter</a></li>
+
+            <li class="list-group-item node__content-mechanisms--email pb-3 px-2 px-md-4"><img src="/themes/custom/webcrc/src/images/Direccion.svg"><a class="text mx-2 font-weight-bold text-decoration-none" href='javascript:void(0)'>{{ content.field_oficina_proyecto.0 }}</a></li>
             
           </ul>
 
+        </div>
+
+        <div class='col-12 node__content-useful'>
+          {{ content.field_poll_content_useful.0 }}
         </div>
 
       </div>
@@ -215,7 +230,7 @@
   </section>
 
   <section class="projects__regulatory-related container-fluid px-0 mt-5">
-    <div id='projects__regulatory-related--bg'></div>
+    <div id='content-related--bg--webcrc'></div>
     {{ drupal_view('projects_comments', 'block_projects_related') }}    
   </section>  
 

@@ -3,28 +3,42 @@ langcode: es
 status: true
 dependencies:
   config:
-    - field.field.node.library_virtual.body
+    - field.field.node.library_virtual.field_library_author
+    - field.field.node.library_virtual.field_library_file
+    - field.field.node.library_virtual.field_library_formats
+    - field.field.node.library_virtual.field_library_highlight
+    - field.field.node.library_virtual.field_library_image
+    - field.field.node.library_virtual.field_library_information
+    - field.field.node.library_virtual.field_library_isbn
+    - field.field.node.library_virtual.field_library_issn
+    - field.field.node.library_virtual.field_library_keywords
+    - field.field.node.library_virtual.field_library_link_related
+    - field.field.node.library_virtual.field_library_notes
+    - field.field.node.library_virtual.field_library_type_document
+    - field.field.node.library_virtual.field_poll_content_useful
     - node.type.library_virtual
   module:
-    - text
     - user
 id: node.library_virtual.default
 targetEntityType: node
 bundle: library_virtual
 mode: default
-content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 101
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  links:
-    weight: 100
-    settings: {  }
-    third_party_settings: {  }
-    region: content
+content: {  }
 hidden:
+  addtoany: true
+  field_library_author: true
+  field_library_file: true
+  field_library_formats: true
+  field_library_highlight: true
+  field_library_image: true
+  field_library_information: true
+  field_library_isbn: true
+  field_library_issn: true
+  field_library_keywords: true
+  field_library_link_related: true
+  field_library_notes: true
+  field_library_type_document: true
+  field_poll_content_useful: true
   langcode: true
+  links: true
   search_api_excerpt: true

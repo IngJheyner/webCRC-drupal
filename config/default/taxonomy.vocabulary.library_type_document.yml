@@ -1,0 +1,8 @@
+uuid: 6f047856-03e6-4266-b564-40bec4d72db1
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo de Documento'
+vid: library_type_document
+description: 'Biblioteca Virtual'
+weight: 0

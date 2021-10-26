@@ -1,0 +1,15 @@
+uuid: c8f94a04-3835-4d3d-8abb-8bfd64ead146
+langcode: es
+status: true
+dependencies: {  }
+name: mobile_landscape_520px
+label: 'Mobile landscape (510px)'
+effects:
+  11afc15c-ceb6-4188-879b-78f14b0cf04d:
+    uuid: 11afc15c-ceb6-4188-879b-78f14b0cf04d
+    id: image_scale
+    weight: 2
+    data:
+      width: 510
+      height: null
+      upscale: false

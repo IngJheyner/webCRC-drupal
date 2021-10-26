@@ -1,0 +1,19 @@
+uuid: 5a0e72ad-6cbc-4da4-9350-00329cf9e5d5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_library_issn
+    - node.type.library_virtual
+id: node.library_virtual.field_library_issn
+field_name: field_library_issn
+entity_type: node
+bundle: library_virtual
+label: ISSN
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

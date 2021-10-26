@@ -1,0 +1,10 @@
+uuid: bdf61cad-3dc5-4df7-a820-c327a582e4e4
+langcode: es
+status: true
+dependencies: {  }
+id: themes_interest
+label: 'Temas de interés'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

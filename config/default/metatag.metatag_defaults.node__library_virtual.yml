@@ -1,0 +1,26 @@
+uuid: 1bc78f6a-56cd-42fe-afb8-5c71e233fde1
+langcode: es
+status: true
+dependencies: {  }
+id: node__library_virtual
+label: 'Content: Biblioteca Virtual'
+tags:
+  description: '[node:field_library_information]'
+  keywords: '[node:field_library_keywords]'
+  title: '[node:title]'
+  og_image: '[nodo:field_library_image]'
+  book_tag: '[nodo: field_library_keywords]'
+  og_description: '[node:field_library_information]'
+  book_author: '[nodo: field_library_author]'
+  og_site_name: CRC
+  og_image_type: image/png
+  og_type: '[nodo: tipo de contenido]'
+  og_determiner: Automatic
+  og_title: '[node:title]'
+  article_author: '[nodo: field_library_author]'
+  og_url: '[node:url:absolute]'
+  twitter_cards_title: '[nodo: título]'
+  twitter_cards_page_url: '[nodo: url: absoluto]'
+  twitter_cards_description: '[nodo: field_library_information]'
+  twitter_cards_image: '[nodo: field_library_image]'
+  twitter_cards_type: summary_large_image

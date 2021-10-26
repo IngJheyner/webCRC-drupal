@@ -15,10 +15,6 @@
                     $(el).find("td:nth-child(2)").find('div.paragraph-type').children('span').html('Interacción ' + (idx + 1));
                     $(el).find("td:nth-child(2)").find('div.paragraph-summary').css("display", "none");                
                 });
-                /* ===== ===== Ocultar o modificar texto de la presentacion de los parrafos en enlaces ===== ===== */
-                $('div.field--name-field-enlaces-proyectos table tbody tr.draggable').each(function (idx, el) {
-                    $(el).find("td:nth-child(2)").find('div.paragraph-type').children('span').html('De tipo:');
-                });
             }
 
             /*===========================================
@@ -131,46 +127,6 @@
                 ftnInter(code, iframeC, nameRouteFile);
                         
             });
-            
-            /*===========================================
-            TABLE JQUERY VIEW PROJECTS COMMENTS
-            =============================================*/
-            //$('[data-toggle="tooltip"]').tooltip();
-             
-            function filterColumn ( i ) {
-                $('#table__projects-regulatory').DataTable().column( i ).search(
-                    $('#col'+i+'_filter').val(),
-                    //$('#col'+i+'_regex').prop('checked'),
-                    //$('#col'+i+'_smart').prop('checked')
-                ).draw();
-            }
-             
-            $('#table__projects-regulatory').once('webcrc').each(function () {
-                $('#table__projects-regulatory').dataTable({
-                    "searching": false,
-                    "order": [],
-                    "info": false,
-                    "paging": false,
-                    "lengthChange": false,
-                    "responsive": true,
-                    "columnDefs": [
-                        { className: "max-desktop", responsivePriority: 1, targets: 0 },
-                        { className: "max-desktop", responsivePriority: 2, targets: 1 },
-                        { className: "tablet-l desktop", targets: 2 },
-                        { className: "tablet-l desktop", targets: 3 },
-                        { className: "tablet-l desktop", targets: 4 },
-                        { className: "tablet-l desktop", targets: 5 },
-                        { className: "tablet-l desktop", targets: 6 }
-                    ],
-                });
-
-                $('input.column_filter').on( 'keyup click', function () {
-                    filterColumn( $(this).parents('div').attr('data-column') );
-                });
-                $('select.column_filter').on( 'change', function () {
-                    filterColumn( $(this).parents('div').attr('data-column') );
-                });
-            }); 
 
         }
     };

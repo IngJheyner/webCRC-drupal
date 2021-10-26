@@ -1,0 +1,22 @@
+uuid: 3512cf68-17df-46a4-b2ce-b5608f74c85f
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: library_virtual
+label: 'Biblioteca Virtual'
+type: 'canonical_entities:node'
+pattern: 'biblioteca-virtual/[node:title]'
+selection_criteria:
+  2003fbbf-4e49-4f62-b3f9-b219fe7bbb3d:
+    id: node_type
+    bundles:
+      library_virtual: library_virtual
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 2003fbbf-4e49-4f62-b3f9-b219fe7bbb3d
+selection_logic: and
+weight: -5
+relationships: {  }

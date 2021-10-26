@@ -1,0 +1,7 @@
+entity_type_groups:
+  node:
+    library_virtual:
+      basic: basic
+      open_graph: open_graph
+      facebook: facebook
+      twitter_cards: twitter_cards

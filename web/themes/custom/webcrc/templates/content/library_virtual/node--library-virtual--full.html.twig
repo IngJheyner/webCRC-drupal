@@ -1,0 +1,177 @@
+{#
+/**
+ * @file
+ * Theme override to display a node.
+ *
+ * Available variables:
+ * - node: The node entity with limited access to object properties and methods.
+ *   Only method names starting with "get", "has", or "is" and a few common
+ *   methods such as "id", "label", and "bundle" are available. For example:
+ *   - node.getCreatedTime() will return the node creation timestamp.
+ *   - node.hasField('field_example') returns TRUE if the node bundle includes
+ *     field_example. (This does not indicate the presence of a value in this
+ *     field.)
+ *   - node.isPublished() will return whether the node is published or not.
+ *   Calling other methods, such as node.delete(), will result in an exception.
+ *   See \Drupal\node\Entity\Node for a full list of public properties and
+ *   methods for the node object.
+ * - label: (optional) The title of the node.
+ * - content: All node items. Use {{ content }} to print them all,
+ *   or print a subset such as {{ content.field_example }}. Use
+ *   {{ content|without('field_example') }} to temporarily suppress the printing
+ *   of a given child element.
+ * - author_picture: The node author user entity, rendered using the "compact"
+ *   view mode.
+ * - metadata: Metadata for this node.
+ * - date: (optional) Themed creation date field.
+ * - author_name: (optional) Themed author name field.
+ * - url: Direct URL of the current node.
+ * - display_submitted: Whether submission information should be displayed.
+ * - attributes: HTML attributes for the containing element.
+ *   The attributes.class element may contain one or more of the following
+ *   classes:
+ *   - node: The current template type (also known as a "theming hook").
+ *   - node--type-[type]: The current node type. For example, if the node is an
+ *     "Article" it would result in "node--type-article". Note that the machine
+ *     name will often be in a short form of the human readable label.
+ *   - node--view-mode-[view_mode]: The View Mode of the node; for example, a
+ *     teaser would result in: "node--view-mode-teaser", and
+ *     full: "node--view-mode-full".
+ *   The following are controlled through the node publishing options.
+ *   - node--promoted: Appears on nodes promoted to the front page.
+ *   - node--sticky: Appears on nodes ordered above other non-sticky nodes in
+ *     teaser listings.
+ *   - node--unpublished: Appears on unpublished nodes visible only to site
+ *     admins.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - content_attributes: Same as attributes, except applied to the main
+ *   content tag that appears in the template.
+ * - author_attributes: Same as attributes, except applied to the author of
+ *   the node tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ * - view_mode: View mode; for example, "teaser" or "full".
+ * - teaser: Flag for the teaser state. Will be true if view_mode is 'teaser'.
+ * - page: Flag for the full page state. Will be true if view_mode is 'full'.
+ * - readmore: Flag for more state. Will be true if the teaser content of the
+ *   node cannot hold the main body content.
+ * - logged_in: Flag for authenticated user status. Will be true when the
+ *   current user is a logged-in member.
+ * - is_admin: Flag for admin user status. Will be true when the current user
+ *   is an administrator.
+ *
+ * @see template_preprocess_node()
+ *
+ * @todo Remove the id attribute (or make it a class), because if that gets
+ *   rendered twice on a page this is invalid CSS for example: two lists
+ *   in different view modes.
+ */
+#}
+{%
+  set classes = [
+    'library-virtual',
+    'node mt-5 container-fluid px-0',
+    'node--type-' ~ node.bundle|clean_class,
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+  ]
+%}
+
+<article{{ attributes.addClass(classes) }}>
+   
+  <section class='library-virtual__content container px-md-0'>
+
+    <div class='row'>
+
+      <div class='col-12 col-lg-6'>
+
+        <div class="card library-virtual__content-image shadow-lg mx-auto mx-lg">
+
+          {# ===== ===== Imagen ===== ===== #}
+          {{ content.field_library_image }}
+
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <a href="{{ content.field_library_file.0 }}" target='_blank' class='d-block text-white text-center text-decoration-none'>
+              {{ 'Download the file'|t }}
+              <img src="/themes/custom/webcrc/src/images/descargar-archivo.svg" onerror='this.remove();'>
+              </a>
+            </li>            
+          </ul>
+         
+        </div>
+
+        {# ===== ===== Compartir ===== ===== #}
+        <div class="library-virtual__content-to--share mt-3">
+          <a class='text-decoration-none text-center d-block share'><img src="/themes/custom/webcrc/src/images/compartir.svg" onerror='this.remove();'>{{'Share'|t}}</a>
+               
+          <div class="a2a_kit a2a_kit_size_32 a2a_default_style mt-1 text-center"> 
+            <a class = "a2a_button_facebook"></a> 
+            <a class = "a2a_button_twitter"></a>
+          </div>
+        </div>  
+
+        {# ===== ===== PALABRAS CLAVES ===== ===== #}
+        <p class='font-weight-bold mb-0 mt-3'>{{'keywords'|t}}</p>
+        {{ content.field_library_keywords }}
+
+        {# ===== ===== AUTOR ===== ===== #}
+         <p class='font-weight-bold mb-0 mt-3'>{{'Author'|t}} (s)</p>      
+        {{ content.field_library_author }}
+
+        {# ===== ===== TIPO DE DOCUMENTO ===== ===== #}
+        <p class='font-weight-bold mb-0 mt-3'>{{'Type of document'|t}}</p>
+        <a href="/biblioteca-virtual?palabras=&tipo-documento={{ node.field_library_type_document.target_id }}"> {{ content.field_library_type_document.0 }}</a>
+
+      </div>
+
+      <div class='col-12 col-lg-6'>
+          {# ===== ===== RESUMEN O INFORMACION ===== ===== #}
+          <p class='font-weight-bold mt-3 mt-lg-0'>{{'Information'|t}}</p>
+          {{ content.field_library_information.0 }}
+
+          {# ===== ===== ISBN ===== ===== #}
+          <p class='font-weight-bold mb-0 mt-3'>{{'ISBN'|t}}</p>
+          {{ content.field_library_isbn.0 }}
+
+          {# ===== ===== ISSN ===== ===== #}
+          <p class='font-weight-bold mb-0 mt-3'>{{'ISSN'|t}}</p>
+          {{ content.field_library_issn.0 }}      
+
+          {# ===== ===== FECHA DE PUBLICACION ===== ===== #}
+          <p class='font-weight-bold mb-0 mt-3'>{{'Date publication'|t}}</p>
+          <time>{{ node.getCreatedTime()|format_date('fecha_my_webcrc') }}</time>          
+
+          {# ===== ===== NOTAS ===== ===== #}
+          <p class='font-weight-bold mb-0 mt-3'>{{'Notes'|t}}</p>
+          {{ content.field_library_notes.0 }}
+      </div>
+
+      <div class='library-virtual__content--links-related col-12 mt-5 py-3 p-md-5 bg-white rounded'>
+
+        <p class='h2 links__related-title'><img src="/themes/custom/webcrc/src/images/enlaces-relacionados.svg" onerror='this.remove();'> <span class='h2'>{{'Links'|t}}</span> {{'related'|t}}</p>
+        {# ===== ===== ENLACES RELACIONADOS ===== ===== #}
+        {{ content.field_library_link_related }}
+
+      </div>
+
+      <div class='col-12 px-xl-0'>
+      {# ===== ===== ENCUESTA ===== ===== #}
+        {{ content.field_poll_content_useful }}
+      </div>
+
+    </div>
+    
+  </section>
+
+  <section class='library-virtual__documents-of-interest mt-5'>
+    <div id='content-related--bg--webcrc'></div>
+    {{ drupal_view('library_virtual', 'block_library_related') }}
+  </section> 
+
+</article>

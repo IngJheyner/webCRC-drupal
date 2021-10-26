@@ -4,19 +4,22 @@ status: true
 dependencies:
   config:
     - field.field.node.proyectos_regulatorios.field_email_proyectos
-    - field.field.node.proyectos_regulatorios.field_enlaces_proyectos
     - field.field.node.proyectos_regulatorios.field_estado_proyectos
     - field.field.node.proyectos_regulatorios.field_interacciones_proyectos
     - field.field.node.proyectos_regulatorios.field_nombre_proyecto
     - field.field.node.proyectos_regulatorios.field_oficina_proyecto
+    - field.field.node.proyectos_regulatorios.field_poll_content_useful
     - field.field.node.proyectos_regulatorios.field_projects_documents_endings
+    - field.field.node.proyectos_regulatorios.field_projects_links
     - field.field.node.proyectos_regulatorios.field_projects_services
     - field.field.node.proyectos_regulatorios.field_resumen_proyecto
     - field.field.node.proyectos_regulatorios.field_tipo_proyecto
     - node.type.proyectos_regulatorios
   module:
     - field_group
+    - link
     - paragraphs
+    - webform
 third_party_settings:
   field_group:
     group_informacion:
@@ -24,20 +27,19 @@ third_party_settings:
         - title
         - field_estado_proyectos
         - created
+        - field_poll_content_useful
         - status
       parent_name: group_field_group_tabs
       weight: 1
       format_type: tab
       region: content
       format_settings:
-        show_empty_fields: false
+        description: ''
+        formatter: open
+        required_fields: true
         id: ''
         classes: ''
-        direction: horizontal
-        width_breakpoint: 640
-        formatter: closed
-        description: ''
-        required_fields: true
+        show_empty_fields: false
       label: Información
     group_field_group_tabs:
       children:
@@ -79,6 +81,7 @@ third_party_settings:
       children:
         - field_email_proyectos
         - field_oficina_proyecto
+        - field_projects_links
         - field_enlaces_proyectos
       parent_name: group_field_group_tabs
       weight: 3
@@ -101,7 +104,7 @@ third_party_settings:
       region: content
       format_settings:
         description: ''
-        formatter: open
+        formatter: closed
         required_fields: true
         id: ''
         classes: ''
@@ -140,25 +143,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: email_default
-    region: content
-  field_enlaces_proyectos:
-    type: paragraphs
-    weight: 30
-    settings:
-      title: Párrafo
-      title_plural: Paragraphs
-      edit_mode: closed_expand_nested
-      closed_mode: preview
-      autocollapse: none
-      closed_mode_threshold: 0
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: enlaces
-      features:
-        add_above: '0'
-        collapse_edit_all: collapse_edit_all
-        duplicate: duplicate
-    third_party_settings: {  }
     region: content
   field_estado_proyectos:
     weight: 3
@@ -201,6 +185,18 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_poll_content_useful:
+    weight: 5
+    settings:
+      default_data: true
+      webforms: {  }
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: webform_entity_reference_autocomplete
+    region: content
   field_projects_documents_endings:
     weight: 2
     settings:
@@ -210,6 +206,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_projects_links:
+    weight: 30
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
     region: content
   field_projects_services:
     weight: 32
@@ -235,7 +239,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 5
+    weight: 6
     region: content
     third_party_settings: {  }
   title:

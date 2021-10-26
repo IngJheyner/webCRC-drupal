@@ -1,0 +1,10 @@
+uuid: 3c15d21d-eb68-4fb9-9936-9a5918c9a169
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.most_useful
+label: 'Lo más útil y destacado'
+targetEntityType: node
+cache: true

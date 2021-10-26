@@ -305,7 +305,7 @@ display:
           relationship: revision_uid
           group_type: group
           admin_label: ''
-          label: Author
+          label: Autor
           exclude: false
           alter:
             alter_text: false

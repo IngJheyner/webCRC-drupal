@@ -1,0 +1,225 @@
+@use '../../base/variables/variables' as var;
+
+article.library-virtual{
+    
+    section.library-virtual__content{
+        @include media-breakpoint-up(lg) {
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        div.library-virtual__content-image{
+            @include media-breakpoint-down(xs) {
+                max-width: 285px;
+            }
+            ul li{
+                background-color: var.$bg-color-quinario;
+            }
+        }
+
+        div.library-virtual__content-to--share{ 
+            cursor: pointer;
+            height: 35px;
+            position: relative;
+            &:hover{    
+
+                a.share{
+                   height: 0;
+                   opacity: 0;
+                   transition: height .1s;                 
+                }
+                div.a2a_kit a span{
+                    height: 32px;
+                }
+            }           
+
+            div.a2a_kit{
+                position: absolute;   
+                top: 0;
+                a span{           
+                    height: 0px;               
+                    transition: height .4s;
+                }
+            }
+        }
+
+        div.library-virtual__content--links-related{
+
+            p.links__related-title{
+                span{
+                    color: var.$text-color-cuaternario;
+                }
+            }
+
+            div.field__items div.field__item{
+
+                border-right: 1px solid var.$bg-color-secundary;
+
+                @include media-breakpoint-down(md) {
+                    &:nth-child(2n){
+                        border-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    /* ==============================
+    VISTA DE TIPO BLOQUE 
+    OTROS DOCUMENTOS DE INTERES
+    ============================== */
+    section.library-virtual__documents-of-interest{
+        position: relative;
+
+        div.library__related-content{            
+
+            p.library__related-content-title{
+                span{
+                    color: var.$text-color-cuaternario;
+                }
+            }
+
+            div.library__related-content-info{                
+
+                @include media-breakpoint-down(xs) {
+                    max-width: 285px;
+                }
+                
+                div.content__info-container{
+
+                    div.content__info-container-tile-document{
+
+                        p.type-document em{
+                            color: var.$text-color-quinario;
+                        }
+
+                        time small{
+                            border-left: 1px solid var.$bg-color-quinario;
+                        }
+                    }
+                }
+            }
+        }
+
+        @include content-related--bg--webcrc();
+    }
+}
+
+/* ==============================
+VISTA TIPO PAGE
+============================== */
+div.page-library{
+
+    @include media-breakpoint-up(xl){
+        div.view-content{
+            max-width: 1400px; 
+        }     
+    } 
+
+    /* ===== ===== FORM VIEW ===== ===== */
+    @include form-view();
+
+    /* ===== ===== TABLE ===== ===== */
+    @include datable('library-virtual');
+
+    /* ===== ===== PAGINADOR ===== ===== */
+    @include pagination();
+
+    
+   
+    /* ===== ===== SECCIONES ===== ===== */
+    div.page-library-sections{
+
+        ul.nav-pills .nav-item .nav-link{
+
+            color: var.$text-color-terciario !important;
+            background-color: var.$bg-color-secundary; 
+
+            &.active {
+                color: white !important;
+                background-color: var.$bg-color-quinario !important;
+            }
+        }
+
+        /* ===== ===== TAB CONTENT ===== ===== */
+        div.tab-content{
+
+            div.tab-pane div.views-element-container{
+                height: 500px;
+                overflow-y: scroll;
+                overflow-x: auto;
+                scrollbar-width: thin;
+                scrollbar-color: var.$bg-color-secundary white;
+
+                &::-webkit-scrollbar{
+                    -webkit-appearance: none;
+                }
+                &::-webkit-scrollbar:vertical{
+                    width: 5px;
+                }
+
+                &::-webkit-scrollbar-track {
+                    border-radius: 10px;  
+                }
+
+                &::-webkit-scrollbar-track-piece  {
+                    background-color: white;
+                }
+                
+                &::-webkit-scrollbar-thumb:vertical {
+                    height: 30px;
+                    border-radius: 20px;
+                    background-color: var.$bg-color-secundary;
+                }
+               
+            }
+        }
+
+        /* ==============================
+        TABS PANE -- LEFT
+        ============================== */
+        /* ===== ===== LOS MAS VISTO ===== ===== */
+        article.most-useful{
+
+            div.node__content{
+                display: grid;
+                grid-template-columns: 1fr;
+            
+                div.node__content-item--info{                    
+                    div.info-abstract{
+                        position: relative;
+                        p::before{
+                            background: linear-gradient(rgba(255, 255, 255, 0) 5px, #fff);
+                            content: "";
+                            height: calc((100% - 46px));
+                            position: absolute;
+                            top: 44px;
+                            width: 100%;
+                            z-index: 1;
+                        }
+                    }
+                }
+
+                @include media-breakpoint-up(lg) {
+                    grid-template-columns: 1fr 2fr;
+                }
+            }
+        }
+
+        /* ==============================
+        TABS PANE -- RIGHT
+        ============================== */
+        div.library-type-document div.view-content{
+            display: grid;
+            grid-template-columns: repeat(1, minmax(min-content, 250px));
+
+            @include media-breakpoint-up(lg) {
+                grid-template-columns: repeat(2, minmax(min-content, 300px));
+            }
+        }
+
+    }
+    
+}

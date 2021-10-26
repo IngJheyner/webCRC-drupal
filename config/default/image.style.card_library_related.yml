@@ -1,0 +1,15 @@
+uuid: fa4f4385-2440-4362-9838-3961de4ac933
+langcode: es
+status: true
+dependencies: {  }
+name: card_library_related
+label: 'Card biblioteca ( 300px )'
+effects:
+  edd7d0e7-15ab-4a5f-8a9b-8b909b1a1f92:
+    uuid: edd7d0e7-15ab-4a5f-8a9b-8b909b1a1f92
+    id: image_scale
+    weight: 1
+    data:
+      width: 300
+      height: 300
+      upscale: true

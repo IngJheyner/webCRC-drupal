@@ -14,6 +14,10 @@ use Drupal\Core\Render\Markup;
 * Implements hook_form_alter().
 */
 function webcrc_projects_regulatory_form_alter (&$form, FormStateInterface $form_state, $form_id) {
+
+  //Ocultar el campo de encuesta en los nodos del formulario
+  hide($form['field_poll_content_useful']);
+
   if ($form['#id'] == "node-proyectos-regulatorios-edit-form" || $form['#id'] == "node-proyectos-regulatorios-form") {
     $form['#attached']['library'][] = 'webcrc_projects_regulatory/webcrc_projects_regulatory';
   }
@@ -71,7 +75,6 @@ function webcrc_projects_regulatory_preprocess_views_view_field(&$variables) {
 
     if($view->current_display == 'page_projects_comments'){      
         
-      //array_push($my_field_value, end($result->_entity->get('field_interacciones_proyectos')->getValue()));
       if($field->field == 'field_interacciones_proyectos'){
 
         $field = end($row->_entity->get('field_interacciones_proyectos')->getValue());
@@ -79,12 +82,12 @@ function webcrc_projects_regulatory_preprocess_views_view_field(&$variables) {
         $definition_interactions = $paragraph->get('field_interactions_comments')[0]->getValue()['value'];
 
         if($definition_interactions == 0){
-          $variables['output'] = ['#markup' => '<img src="/themes/custom/webcrc/src/images/aceptan-comentarios.svg" class="mr-3" alt="See interaction" onerror="this.remove();"><span class="d-none">FALSE</span>'];          
+          $variables['output'] = ['#markup' => '<img src="/themes/custom/webcrc/src/images/aceptan-comentarios.svg" class="mr-3" alt="See interaction" onerror="this.remove();">'];          
         }else{
-          $variables['output'] =['#markup' => '<img src="/themes/custom/webcrc/src/images/no-aceptan-comentarios.svg" class="mr-3" alt="See interaction" onerror="this.remove();"><span class="d-none">TRUE</span>'];
+          $variables['output'] =['#markup' => '<img src="/themes/custom/webcrc/src/images/no-aceptan-comentarios.svg" class="mr-3" alt="See interaction" onerror="this.remove();">'];
         }
       }
-
+      
       if($field->field == 'nothing'){
 
         $field = end($row->_entity->get('field_interacciones_proyectos')->getValue());
@@ -92,7 +95,7 @@ function webcrc_projects_regulatory_preprocess_views_view_field(&$variables) {
         $dateTime = strtotime($paragraph->get('field_fecha_cierre_iteracciones')[0]->getValue()['value']);
         $variables['output'] = \Drupal::service('date.formatter')->format($dateTime, 'fecha_corta_webcrc');
 
-      }     
+      }
         
     }
   }
@@ -106,28 +109,30 @@ function webcrc_projects_regulatory_preprocess_views_view_field(&$variables) {
  *
  */
 function webcrc_projects_regulatory_form_views_exposed_form_alter(&$form, FormStateInterface $form_state) {
+  //dpm($form);
   if($form['#id'] == 'views-exposed-form-projects-comments-page-projects-comments'){
 
-    /* ===== ===== Nombre de proyecto ===== ===== */
-    $form['field_nombre_proyecto_value']['#prefix'] = '<p class="h4 text-center text-white mb-3">'.t('Find the project of your interest.').'</p>';
-    $form['field_nombre_proyecto_value']['#attributes']['placeholder'] = t('Name or title: Improvement of mobile networks, Analysis of communication media ...');
+    /* ===== ===== TITULO ===== ===== */
+    if (isset($form['field_nombre_proyecto_value'])) $form['field_nombre_proyecto_value']['#prefix'] = '<p class="h4 text-center text-white mb-3">'.t('Find the project of your interest.').'</p>';
 
-    /* ===== ===== Estado ===== ===== */
-    $form['field_estado_proyectos_value']['#prefix'] = '<hr class="bg-white"><div class="input__projects d-flex">';
+    /* ===== ===== PLACEHOLDER ===== ===== */
+    if(isset($form['field_nombre_proyecto_value'])) $form['field_nombre_proyecto_value']['#attributes']['placeholder'] = t('Name or title: Improvement of mobile networks, Analysis of communication media ...');
 
-    /* ===== =====  ===== ===== */
-    $form['field_projects_services_target_id']['#suffix'] = '</div>';
+    /* ===== ===== LINEA ===== ===== */
+    if (isset($form['field_estado_proyectos_value']))$form['field_estado_proyectos_value']['#prefix'] = '<hr class="bg-white"><div class="input__group d-flex">';
+
+    /* ===== ===== END INPUT__GROUP ===== ===== */
+    if(isset($form['field_projects_services_target_id'])) $form['field_projects_services_target_id']['#suffix'] = '</div>';
 
     $form['actions']['#attributes'] = [
-      'class' => ['text-center mt-3'],
+      'class' => ['text-md-center mt-3'],
     ];
     $form['actions']['submit']['#attributes'] = [
       'class' => ['btn-outline-light'],
     ];
     $form['actions']['reset']['#attributes'] = [
-      'class' => ['btn-outline-light'],
+      'class' => ['btn-outline-light mt-3 mt-sm-0'],
     ];
-    //dpm($form['actions']);
   }
 }
 
@@ -136,40 +141,48 @@ function webcrc_projects_regulatory_form_views_exposed_form_alter(&$form, FormSt
  */
 function webcrc_projects_regulatory_preprocess_form_element(&$variables) {
   /* ===== ===== Nombre de proyecto ===== ===== */
-  if($variables['name'] == 'field_nombre_proyecto_value'){
-    $variables['attributes'] = [
-      'class' => [
-        'input__projects-code d-flex flex-row input',
-      ]
-    ];
+  if(isset($variables['name'])){
 
-    $variables['label']['#attributes'] = [
-      'class' => [
-        'd-none',
-      ]
-    ];
+    /* ===== ===== SELECTOR ===== ===== */
+    switch ($variables['name']) {
 
-    $variables['label']['#prefix'] = '<img src="/themes/custom/webcrc/src/images/icono-lupa.svg" onerror="this.remove();" class="mx-3 my-2">';    
+      case 'field_nombre_proyecto_value':
+
+        $variables['attributes'] = [
+          'class' => [
+            'input__primary d-flex flex-row',
+          ]
+        ];
+    
+        $variables['label']['#attributes'] = [
+          'class' => [
+            'd-none',
+          ]
+        ];
+    
+        $variables['label']['#prefix'] = '<img src="/themes/custom/webcrc/src/images/icono-lupa.svg" onerror="this.remove();" class="mx-3 my-2">';
+        
+      break;
+
+      case 'field_estado_proyectos_value': case 'field_tipo_proyecto_value': case 'field_projects_services_target_id':
+
+        $variables['attributes'] = [
+          'class' => [
+            'my-3 input__group-item',
+          ]
+        ];
+
+        $variables['label']['#prefix'] = '<small>';
+        $variables['label']['#suffix'] = '</small>';
+        $variables['label']['#attributes'] = [
+          'class' => [
+            'm-0 px-3',
+          ]
+        ];
+          
+      break;
+    }       
   }
-
-  if($variables['name'] == 'field_estado_proyectos_value' ||
-  $variables['name'] == 'field_tipo_proyecto_value' ||
-  $variables['name'] == 'field_projects_services_target_id'){
-
-    $variables['attributes'] = [
-      'class' => [
-        'my-3 input__projects-item input',
-      ]
-    ];
-    $variables['label']['#prefix'] = '<small>';
-    $variables['label']['#suffix'] = '</small>';
-    $variables['label']['#attributes'] = [
-      'class' => [
-        'm-0 px-3',
-      ]
-    ];
-  }
-  //dpm($variables);
 }
 
   

@@ -1,0 +1,38 @@
+uuid: 9e20fd1e-c37a-4fb9-97ce-252fa4a8bb99
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.library_type_document.field_type_document_image
+    - taxonomy.vocabulary.library_type_document
+  module:
+    - svg_image
+    - text
+id: taxonomy_term.library_type_document.default
+targetEntityType: taxonomy_term
+bundle: library_type_document
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_type_document_image:
+    weight: 1
+    label: above
+    settings:
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

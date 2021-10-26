@@ -1,0 +1,41 @@
+uuid: 293940b4-30ff-4353-81ac-0c828d254ab7
+langcode: es
+status: true
+dependencies:
+  config:
+    - image.style.card_library
+    - image.style.card_library_related
+    - image.style.mobile_285px
+    - image.style.mobile_landscape_520px
+  theme:
+    - webcrc
+id: card_adaptable_library
+label: 'Card Adaptable Biblioteca'
+image_style_mappings:
+  -
+    breakpoint_id: default.xl
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: card_library
+  -
+    breakpoint_id: default.lg
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: card_library
+  -
+    breakpoint_id: default.md
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: card_library_related
+  -
+    breakpoint_id: default.sm
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: mobile_landscape_520px
+  -
+    breakpoint_id: default.xs
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: mobile_285px
+breakpoint_group: webcrc
+fallback_image_style: '_original image_'

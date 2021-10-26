@@ -1,0 +1,15 @@
+uuid: 7140856f-f0eb-45e5-b356-4711bb284178
+langcode: es
+status: true
+dependencies: {  }
+name: tablets_768px
+label: 'Tablets( 718px )'
+effects:
+  85a28aa9-0019-4500-99a3-f89acfeda1da:
+    uuid: 85a28aa9-0019-4500-99a3-f89acfeda1da
+    id: image_scale
+    weight: 1
+    data:
+      width: 718
+      height: 819
+      upscale: true

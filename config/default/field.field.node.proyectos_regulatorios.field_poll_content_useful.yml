@@ -1,0 +1,32 @@
+uuid: 73b21450-27ac-431e-ad0a-98292a08b7f6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_poll_content_useful
+    - node.type.proyectos_regulatorios
+    - webform.webform.poll_content_useful
+  module:
+    - webform
+id: node.proyectos_regulatorios.field_poll_content_useful
+field_name: field_poll_content_useful
+entity_type: node
+bundle: proyectos_regulatorios
+label: 'Encuesta de contenido útil'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+    target_uuid: 1c81e5e2-aeb9-426e-bca9-30d97c18c5d3
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

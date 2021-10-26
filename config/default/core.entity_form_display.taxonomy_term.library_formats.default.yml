@@ -1,0 +1,42 @@
+uuid: 8bb5e801-0169-4426-81f6-d5ce3e7493c1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.library_formats.field_formats_image
+    - image.style.thumbnail
+    - taxonomy.vocabulary.library_formats
+  module:
+    - svg_image
+id: taxonomy_term.library_formats.default
+targetEntityType: taxonomy_term
+bundle: library_formats
+mode: default
+content:
+  field_formats_image:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 2
+    region: content
+    third_party_settings: {  }
+hidden:
+  description: true
+  langcode: true
+  path: true

@@ -1,0 +1,29 @@
+uuid: 32deac97-83b3-4820-bc6e-905ec9dd83aa
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_library_type_document
+    - node.type.library_virtual
+    - taxonomy.vocabulary.library_type_document
+id: node.library_virtual.field_library_type_document
+field_name: field_library_type_document
+entity_type: node
+bundle: library_virtual
+label: 'Tipo de Documento'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      library_type_document: library_type_document
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -8,13 +8,3 @@ webcrc_projects_regulatory:
       css/webcrc-projects-regulatory.css: {}
   dependencies:
     - core/drupalSettings
-
-# DataTable jquery
-webcrc_projects_datatable:
-  js:
-    lib/DataTables/datatables.min.js: {}
-    lib/DataTables/Responsive-2.2.9/js/responsive.bootstrap4.min.js: {}
-  css:
-    component:
-      lib/DataTables/datatables.min.css: {}
-      lib/DataTables/Responsive-2.2.9/css/responsive.bootstrap4.min.css: {}

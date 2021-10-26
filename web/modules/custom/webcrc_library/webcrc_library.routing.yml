@@ -1,0 +1,7 @@
+webcrc_library.example:
+  path: '/webcrc-library/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\webcrc_library\Controller\WebcrcLibraryController::build'
+  requirements:
+    _permission: 'access content'

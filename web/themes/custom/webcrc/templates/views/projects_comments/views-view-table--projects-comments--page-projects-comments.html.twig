@@ -36,20 +36,19 @@
   set classes = [
     'cols-' ~ header|length,    
     sticky ? 'sticky-enabled',
-    'table__projects-regulatory',
-    'text-center display table hover'
+    'projects-comments',
+    'text-md-center display table hover'
   ]
 %}
 
-
-{{ attach_library('webcrc_projects_regulatory/webcrc_projects_datatable') }}
-{{ attach_library('webcrc_projects_regulatory/webcrc_projects_regulatory') }}
+{{ attach_library('webcrc/datatable') }}
 
 {%
-  set data_empty = rows|length > 1 ? "table__projects-regulatory" : "table__projects-empty"
+  set data_empty = rows|length > 1 ? "datable-webcrc" : "datable-webcrc-empty"
 %}
 
-<table{{ attributes.addClass(classes) }} id="{{ data_empty }}" style="width:100%"> 
+<div class="table-responsive">
+<table{{ attributes.addClass(classes) }} id="{{ data_empty }}" style="width:100%" id-table='projects-comments'> 
   {% if header %}
     <thead> 
       <tr>
@@ -126,9 +125,11 @@
               {% endfor %}
             {%- endif %}
           </td>
+
         {% endfor %}          
       </tr>
     {% endfor %}
   </tbody>
 </table>
+</div>
 

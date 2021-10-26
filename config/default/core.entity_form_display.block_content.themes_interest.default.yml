@@ -1,0 +1,91 @@
+uuid: 106ae1e4-301d-47aa-8923-eaf7988dce85
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.themes_interest
+    - field.field.block_content.themes_interest.field_interest_content
+  module:
+    - field_group
+    - paragraphs
+third_party_settings:
+  field_group:
+    group_grupo_tabs:
+      children:
+        - group_information
+        - group_interest_tab
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        direction: vertical
+        width_breakpoint: 640
+      label: 'Grupo Tabs'
+    group_information:
+      children:
+        - info
+        - langcode
+      parent_name: group_grupo_tabs
+      weight: 20
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Información
+    group_interest_tab:
+      children:
+        - field_interest_content
+      parent_name: group_grupo_tabs
+      weight: 21
+      format_type: tab
+      region: hidden
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Agregar temas de interés'
+id: block_content.themes_interest.default
+targetEntityType: block_content
+bundle: themes_interest
+mode: default
+content:
+  field_interest_content:
+    type: entity_reference_paragraphs
+    weight: 22
+    settings:
+      title: Párrafo
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  info:
+    type: string_textfield
+    weight: 21
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 22
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,23 @@
+uuid: 1ab0abef-b3c3-4e59-8b5d-46544f09cc4f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_projects_links
+    - node.type.proyectos_regulatorios
+  module:
+    - link
+id: node.proyectos_regulatorios.field_projects_links
+field_name: field_projects_links
+entity_type: node
+bundle: proyectos_regulatorios
+label: Enlaces
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link
