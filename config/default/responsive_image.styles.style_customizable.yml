@@ -5,7 +5,6 @@ dependencies:
   config:
     - image.style.mobile_285px
     - image.style.mobile_landscape_520px
-    - image.style.tablets_768px
   theme:
     - webcrc
 id: style_customizable
@@ -15,7 +14,7 @@ image_style_mappings:
     breakpoint_id: default.md
     multiplier: 1x
     image_mapping_type: image_style
-    image_mapping: tablets_768px
+    image_mapping: mobile_landscape_520px
   -
     breakpoint_id: default.sm
     multiplier: 1x

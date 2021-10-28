@@ -59,10 +59,10 @@ content:
     settings:
       responsive_image_style: style_customizable
       image_link: ''
-      svg_render_as_image: '1'
       svg_attributes:
         width: ''
         height: ''
+      svg_render_as_image: 0
     third_party_settings: {  }
     type: responsive_image
     region: content

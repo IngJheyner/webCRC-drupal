@@ -21,6 +21,7 @@ function webcrc_projects_regulatory_form_alter (&$form, FormStateInterface $form
 
   if ($form['#id'] == "node-proyectos-regulatorios-edit-form" || $form['#id'] == "node-proyectos-regulatorios-form") {
     $form['#attached']['library'][] = 'webcrc_projects_regulatory/webcrc_projects_regulatory';
+    $form['field_resumen_proyecto']['widget'][0]['value']['#rows'] = 15;
   }
 }
 

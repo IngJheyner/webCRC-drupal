@@ -17,7 +17,7 @@ mode: default
 content:
   field_interest_image:
     weight: 0
-    label: above
+    label: hidden
     settings:
       image_style: max_325x325
       image_link: ''
@@ -30,7 +30,7 @@ content:
     region: content
   field_interest_link:
     weight: 1
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false

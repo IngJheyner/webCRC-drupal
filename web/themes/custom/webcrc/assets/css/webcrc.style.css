@@ -22079,6 +22079,11 @@ article.library-virtual {
     max-width: 285px;
   }
 }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  article.library-virtual section.library-virtual__content div.library-virtual__content-image {
+    max-width: 510px;
+  }
+}
 article.library-virtual section.library-virtual__content div.library-virtual__content-image ul li {
   background-color: #2F2A7C;
 }
@@ -22117,8 +22122,14 @@ article.library-virtual section.library-virtual__content div.library-virtual__co
 article.library-virtual section.library-virtual__documents-of-interest {
   position: relative;
 }
-article.library-virtual section.library-virtual__documents-of-interest div.library__related-content p.library__related-content-title span {
+article.library-virtual section.library-virtual__documents-of-interest div.library__related-content div.library__related-content-title img {
+  width: initial;
+}
+article.library-virtual section.library-virtual__documents-of-interest div.library__related-content div.library__related-content-title p span {
   color: #F42E62;
+}
+article.library-virtual section.library-virtual__documents-of-interest div.library__related-content div.library__related-content-info:hover {
+  box-shadow: 0 0.2rem 0.5rem #F42E62;
 }
 @media (max-width: 575.98px) {
   article.library-virtual section.library-virtual__documents-of-interest div.library__related-content div.library__related-content-info {
@@ -22389,8 +22400,19 @@ div.theme-interest div#content-related--bg--webcrc {
 div.theme-interest div.themes__interest-content p.title span {
   color: #F42E62;
 }
+div.theme-interest div.themes__interest-content div.slick div.slide__content img {
+  transform: scale(1, 1);
+  transition: 1s all;
+}
+div.theme-interest div.themes__interest-content div.slick div.slide__content img:hover {
+  transform: scale(1.1, 1.1);
+  transition: 1s all;
+}
+div.theme-interest div.themes__interest-content div.slick nav.slick__arrow {
+  margin-top: 1rem;
+}
 div.theme-interest div.themes__interest-content div.slick nav.slick__arrow button.slick-arrow {
-  top: 100%;
+  top: 105%;
   height: 0;
   width: 0;
   border: 0;
@@ -22401,6 +22423,12 @@ div.theme-interest div.themes__interest-content div.slick nav.slick__arrow butto
 div.theme-interest div.themes__interest-content div.slick nav.slick__arrow button.slick-arrow::before {
   color: white;
   font-size: 3rem;
+}
+div.theme-interest div.themes__interest-content div.slick nav.slick__arrow button.slick-arrow:focus {
+  outline: none;
+}
+div.theme-interest div.themes__interest-content div.slick nav.slick__arrow button.slick-arrow:hover::before {
+  color: #F42E62;
 }
 div.theme-interest div.themes__interest-content div.slick nav.slick__arrow button.slick-next {
   margin-left: 2rem;

@@ -15,7 +15,12 @@ use Drupal\Core\Datetime\DrupalDateTime;
  * Implements hook_form_alter().
  */
 function webcrc_library_form_alter(&$form, $form_state, $form_id) {
-  
+  //dpm($form);
+  if($form_id == 'node_library_virtual_edit_form' || $form_id == 'node_library_virtual_form'){
+    $form['field_library_notes']['widget'][0]['value']['#rows'] = 15;
+    $form['field_library_information']['widget'][0]['value']['#rows'] = 15;
+  }
+    
 }
 
  /**

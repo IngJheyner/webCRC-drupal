@@ -27,7 +27,6 @@ third_party_settings:
       label: 'Grupo Tabs'
     group_information:
       children:
-        - field_icon
         - info
         - langcode
       parent_name: group_grupo_tabs
@@ -63,15 +62,22 @@ bundle: themes_interest
 mode: default
 content:
   field_interest_content:
-    type: entity_reference_paragraphs
+    type: paragraphs
     weight: 24
     settings:
       title: Párrafo
       title_plural: Paragraphs
-      edit_mode: open
+      edit_mode: closed_expand_nested
+      closed_mode: preview
+      autocollapse: none
+      closed_mode_threshold: 0
       add_mode: dropdown
       form_display_mode: default
-      default_paragraph_type: ''
+      default_paragraph_type: themes_interest
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        duplicate: '0'
     third_party_settings: {  }
     region: content
   info:

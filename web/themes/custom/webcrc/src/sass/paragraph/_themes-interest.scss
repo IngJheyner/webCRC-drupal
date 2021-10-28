@@ -17,9 +17,22 @@ div.theme-interest{
         }
 
         div.slick{
+            div.slide__content{
+                img{
+
+                    transform: scale(1, 1);
+                    transition: 1s all;
+
+                    &:hover {
+                    transform: scale(1.1, 1.1);
+                    transition: 1s all;
+                    }
+                }
+            }
             nav.slick__arrow{
+                margin-top: 1rem;
                 button.slick-arrow{
-                    top: 100%;
+                    top: 105%;
                     height: 0;
                     width: 0;
                     border: 0;
@@ -29,8 +42,17 @@ div.theme-interest{
 
                     &::before{
                         color: white;
-                        font-size: 3rem;
+                        font-size: 3rem;                        
                     }
+
+                    &:focus{
+                        outline: none;
+                    }
+
+                    &:hover::before{
+                        color: var.$text-color-cuaternario;
+                    }
+                   
                 }
 
                 button.slick-next{

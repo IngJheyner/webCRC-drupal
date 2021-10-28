@@ -14,6 +14,9 @@ article.library-virtual{
             @include media-breakpoint-down(xs) {
                 max-width: 285px;
             }
+            @include media-breakpoint-only(md){
+                max-width: 510px;
+            }
             ul li{
                 background-color: var.$bg-color-quinario;
             }
@@ -75,13 +78,20 @@ article.library-virtual{
 
         div.library__related-content{            
 
-            p.library__related-content-title{
-                span{
+            div.library__related-content-title{
+                img{
+                    width: initial;
+                }
+                p span{
                     color: var.$text-color-cuaternario;
                 }
             }
 
-            div.library__related-content-info{                
+            div.library__related-content-info{ 
+                
+                &:hover{
+                    box-shadow: 0 .2rem .5rem var.$bg-color-sextario
+                }
 
                 @include media-breakpoint-down(xs) {
                     max-width: 285px;

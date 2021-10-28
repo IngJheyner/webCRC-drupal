@@ -389,7 +389,7 @@ display:
           admin_label: Titulo
           empty: false
           tokenize: true
-          content: '<p class=''h2 text-white title pt-4''><img src=''/themes/custom/webcrc/src/images/icono-temas-de-interes.svg'' onerror=''this.remove();''><span class=''h2''> {{''Themes''|t}}</span> {{''of interest''|t}}</p>'
+          content: '<p class=''h2 text-white title pt-4 mb-4''><img src=''/themes/custom/webcrc/src/images/icono-temas-de-interes.svg'' onerror=''this.remove();''><span class=''h2''> {{''Themes''|t}}</span> {{''of interest''|t}}</p>'
           plugin_id: text_custom
       footer: {  }
       empty: {  }
@@ -413,6 +413,7 @@ display:
     display_options:
       display_extenders: {  }
       display_description: ''
+      display_comment: "@see \r\n- views-view--library-virtual--page-library-virtual.html.twig "
     cache_metadata:
       max-age: -1
       contexts:
