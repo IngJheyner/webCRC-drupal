@@ -1,0 +1,28 @@
+uuid: 6b600031-280b-4d44-b32a-1c2fe89a7099
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_url
+    - paragraphs.paragraphs_type.quick_access
+  module:
+    - link
+id: paragraph.quick_access.field_url
+field_name: field_url
+entity_type: paragraph
+bundle: quick_access
+label: Enlace
+description: 'Ruta para el acceso directo'
+required: false
+translatable: true
+default_value:
+  -
+    attributes: {  }
+    uri: 'route:<nolink>'
+    title: ''
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

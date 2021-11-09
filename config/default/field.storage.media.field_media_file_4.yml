@@ -1,0 +1,23 @@
+uuid: bcb456c7-7212-41e1-b32f-fa1bd67ccb5c
+langcode: es
+status: true
+dependencies:
+  module:
+    - file
+    - media
+id: media.field_media_file_4
+field_name: field_media_file_4
+entity_type: media
+type: file
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

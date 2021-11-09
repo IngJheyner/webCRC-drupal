@@ -1,0 +1,73 @@
+uuid: 8164efe9-1ff4-4c15-8a98-3a349e325f54
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_quick_access
+    - node.type.microsite_crc
+    - paragraphs.paragraphs_type.quick_access
+  module:
+    - entity_reference_revisions
+id: node.microsite_crc.field_content_quick_access
+field_name: field_content_quick_access
+entity_type: node
+bundle: microsite_crc
+label: 'Accesos rapidos'
+description: 'Accesos rapidos para el micrositio'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      quick_access: quick_access
+    target_bundles_drag_drop:
+      enlaces:
+        weight: 16
+        enabled: false
+      from_library:
+        weight: 17
+        enabled: false
+      iterecciones_proyectos:
+        weight: 18
+        enabled: false
+      list_social_networks:
+        weight: 19
+        enabled: false
+      navigation_microsites:
+        weight: 20
+        enabled: false
+      postdata_indicators:
+        weight: 21
+        enabled: false
+      quick_access:
+        enabled: true
+        weight: 22
+      slideshow_crc:
+        weight: 23
+        enabled: false
+      tab_content:
+        weight: 28
+        enabled: false
+      tab_header:
+        weight: 29
+        enabled: false
+      tabs_wrapper:
+        weight: 24
+        enabled: false
+      tabs_wrapper_global:
+        weight: 25
+        enabled: false
+      tabs_wrapper_secondary:
+        weight: 26
+        enabled: false
+      tabs_wrapper_vertical:
+        weight: 27
+        enabled: false
+      themes_interest:
+        weight: 30
+        enabled: false
+field_type: entity_reference_revisions

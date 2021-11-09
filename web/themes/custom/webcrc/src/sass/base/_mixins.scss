@@ -28,7 +28,7 @@
   }
 }
 
-@mixin large {
+@mixin large-lg {
   @media only screen and (min-width: 1440px) {
     @content;
   }

@@ -1,0 +1,79 @@
+uuid: a194735b-238d-424e-b138-d53f4974818a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_microsite_block
+    - paragraphs.paragraphs_type.microsite_block
+    - paragraphs.paragraphs_type.page_wrapper_micrositie
+  module:
+    - entity_reference_revisions
+id: paragraph.page_wrapper_micrositie.field_microsite_block
+field_name: field_microsite_block
+entity_type: paragraph
+bundle: page_wrapper_micrositie
+label: 'Bloque micrositio'
+description: 'Bloque para el micrositio'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      microsite_block: microsite_block
+    target_bundles_drag_drop:
+      enlaces:
+        weight: 18
+        enabled: false
+      from_library:
+        weight: 19
+        enabled: false
+      iterecciones_proyectos:
+        weight: 20
+        enabled: false
+      list_social_networks:
+        weight: 21
+        enabled: false
+      microsite_block:
+        enabled: true
+        weight: 22
+      navigation_microsites:
+        weight: 23
+        enabled: false
+      page_wrapper_micrositie:
+        weight: 24
+        enabled: false
+      postdata_indicators:
+        weight: 25
+        enabled: false
+      quick_access:
+        weight: 26
+        enabled: false
+      slideshow_crc:
+        weight: 27
+        enabled: false
+      tab_content:
+        weight: 32
+        enabled: false
+      tab_header:
+        weight: 33
+        enabled: false
+      tabs_wrapper:
+        weight: 28
+        enabled: false
+      tabs_wrapper_global:
+        weight: 29
+        enabled: false
+      tabs_wrapper_secondary:
+        weight: 30
+        enabled: false
+      tabs_wrapper_vertical:
+        weight: 31
+        enabled: false
+      themes_interest:
+        weight: 34
+        enabled: false
+field_type: entity_reference_revisions

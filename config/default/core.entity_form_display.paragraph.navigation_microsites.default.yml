@@ -1,0 +1,25 @@
+uuid: b58bab9c-a121-43b5-b5ab-91cf1d148b69
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.navigation_microsites.field_url
+    - paragraphs.paragraphs_type.navigation_microsites
+  module:
+    - link
+id: paragraph.navigation_microsites.default
+targetEntityType: paragraph
+bundle: navigation_microsites
+mode: default
+content:
+  field_url:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  status: true

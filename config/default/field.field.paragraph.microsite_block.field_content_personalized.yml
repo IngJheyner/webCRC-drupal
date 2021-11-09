@@ -1,0 +1,21 @@
+uuid: 6e38cf2b-c66d-41b6-b3c6-4b5f940b43bb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content_personalized
+    - paragraphs.paragraphs_type.microsite_block
+  module:
+    - text
+id: paragraph.microsite_block.field_content_personalized
+field_name: field_content_personalized
+entity_type: paragraph
+bundle: microsite_block
+label: 'Conteido Personalizado'
+description: 'Seccion personalizable para incluir en el bloque del micrositio'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

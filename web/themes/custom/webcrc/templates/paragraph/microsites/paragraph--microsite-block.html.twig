@@ -1,0 +1,70 @@
+{#
+/**
+ * @file
+ * Template for the block microsites paragraph.
+ */
+#}
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+
+{% set background_type = content.field_content_background_type.0['#markup']|upper|replace({' ':'_'}) %}
+{% set background = 'backgorund-gray' %}
+
+{% if background_type == 'BLANCO' %}
+  {% set background = 'backgorund-white' %}
+{% elseif background_type == 'AZUL_DEGRADE' %}
+  {% set background = 'backgorund-gradient-blue' %}
+{% endif %}
+
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+      <div class="{{ background }}">
+        {% if content.field_content_title.0 or content.field_content_icon.0 %}
+          <div class="d-flex mx-5 px-5 pt-5">
+            <div class="media">
+              <span class="align-self-center">
+                {{ content.field_content_icon }}
+              </span>
+              <div class="media-body ml-3 align-self-center">
+                {% for block_title in content.field_content_title.0['#context'] %}
+                  {% set title = block_title|split('|') %}
+                  {% if title|length > 1 %}
+                    <h2 class="mb-0 title-two-colors">
+                      <span>{{ title[0] }}</span>
+                      <span>{{ title[1] }}</span>
+                    </h2>
+                  {% else %}
+                    <h2 class="mb-0">
+                      <span>{{ title[0] }}</span>
+                    </h2>
+                  {% endif %}
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        {% endif %}
+
+        {% set classes_content_bock = '' %}
+        {% set type_view = content.field_content_type_view.0.contents['#display_id'] %}
+
+        {% if type_view != 'slideshow_microsites' and type_view != 'navigation_microsites' %}
+          {% set classes_content_bock = 'mx-5 px-5 pb-2' %}
+        {% endif %}
+
+        <div class="{{ classes_content_bock }}">
+          {{ content.field_content_type_view }}
+          {{ content.field_content_view_news }}
+          {{ content.field_content_personalized }}
+        </div>
+        
+      </div>
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

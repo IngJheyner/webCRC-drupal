@@ -1,0 +1,14 @@
+uuid: 850dc89e-580f-4c0d-9d40-9c0b25206c2e
+langcode: es
+status: true
+dependencies: {  }
+id: slideshow
+label: Slideshow
+description: 'Imagenes para los slides de full pantalla'
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image_2
+field_map:
+  name: name

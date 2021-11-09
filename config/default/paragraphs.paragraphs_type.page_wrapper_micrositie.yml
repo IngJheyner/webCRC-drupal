@@ -1,0 +1,10 @@
+uuid: 67301e1f-0351-4107-80a7-ae278593ecc9
+langcode: es
+status: true
+dependencies: {  }
+id: page_wrapper_micrositie
+label: 'Pagina micrositio'
+icon_uuid: null
+icon_default: null
+description: 'Contenedor principal para los bloques del micrositio'
+behavior_plugins: {  }

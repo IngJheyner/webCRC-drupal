@@ -1,0 +1,10 @@
+uuid: e26f5212-87ee-411f-b6ac-0a3d3ff2d2e5
+langcode: es
+status: true
+dependencies: {  }
+id: slideshow_crc
+label: Slideshow
+icon_uuid: null
+icon_default: null
+description: 'Slideshow principal crc'
+behavior_plugins: {  }

@@ -5,11 +5,14 @@ dependencies:
   config:
     - field.field.paragraph.themes_interest.field_interest_image
     - field.field.paragraph.themes_interest.field_interest_link
+    - field.field.paragraph.themes_interest.field_content_image
+    - field.field.paragraph.themes_interest.field_url
     - image.style.thumbnail
     - paragraphs.paragraphs_type.themes_interest
   module:
     - link
     - svg_image
+    - media_library
 id: paragraph.themes_interest.default
 targetEntityType: paragraph
 bundle: themes_interest
@@ -24,6 +27,14 @@ content:
     type: image_image
     region: content
   field_interest_link:
+  field_content_image:
+    weight: 0
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
+  field_url:
     weight: 1
     settings:
       placeholder_url: ''

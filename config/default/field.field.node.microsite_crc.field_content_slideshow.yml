@@ -1,0 +1,73 @@
+uuid: 05c055b9-87bb-49de-9e28-506f718d2f26
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_slideshow
+    - node.type.microsite_crc
+    - paragraphs.paragraphs_type.slideshow_crc
+  module:
+    - entity_reference_revisions
+id: node.microsite_crc.field_content_slideshow
+field_name: field_content_slideshow
+entity_type: node
+bundle: microsite_crc
+label: Slideshow
+description: 'Slideshow principal para micrositios'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      slideshow_crc: slideshow_crc
+    target_bundles_drag_drop:
+      enlaces:
+        weight: 16
+        enabled: false
+      from_library:
+        weight: 17
+        enabled: false
+      iterecciones_proyectos:
+        weight: 18
+        enabled: false
+      list_social_networks:
+        weight: 19
+        enabled: false
+      navigation_microsites:
+        weight: 20
+        enabled: false
+      postdata_indicators:
+        weight: 21
+        enabled: false
+      quick_access:
+        weight: 22
+        enabled: false
+      slideshow_crc:
+        enabled: true
+        weight: 23
+      tab_content:
+        weight: 28
+        enabled: false
+      tab_header:
+        weight: 29
+        enabled: false
+      tabs_wrapper:
+        weight: 24
+        enabled: false
+      tabs_wrapper_global:
+        weight: 25
+        enabled: false
+      tabs_wrapper_secondary:
+        weight: 26
+        enabled: false
+      tabs_wrapper_vertical:
+        weight: 27
+        enabled: false
+      themes_interest:
+        weight: 30
+        enabled: false
+field_type: entity_reference_revisions

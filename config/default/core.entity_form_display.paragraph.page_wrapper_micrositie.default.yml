@@ -1,0 +1,29 @@
+uuid: 616392b8-75a8-4381-824a-82b6fa238a32
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.page_wrapper_micrositie.field_microsite_block
+    - paragraphs.paragraphs_type.page_wrapper_micrositie
+  module:
+    - paragraphs
+id: paragraph.page_wrapper_micrositie.default
+targetEntityType: paragraph
+bundle: page_wrapper_micrositie
+mode: default
+content:
+  field_microsite_block:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

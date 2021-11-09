@@ -4,8 +4,10 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.news_crc.feeds_item
     - field.field.node.news_crc.field_category
     - field.field.node.news_crc.field_content
+    - field.field.node.news_crc.field_content_featured
     - field.field.node.news_crc.field_image_content
     - field.field.node.news_crc.field_introduccion_contenido
     - field.field.node.news_crc.field_introduction_image
@@ -24,8 +26,10 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  feeds_item: true
   field_category: true
   field_content: true
+  field_content_featured: true
   field_image_content: true
   field_introduccion_contenido: true
   field_introduction_image: true

@@ -1,13 +1,16 @@
-uuid: ca129c95-9ca7-45ec-9dab-6fa777eb4e3a
+uuid: e129bd93-b6ed-48f5-b1fb-59e08c5a9629
 langcode: es
 status: true
 dependencies:
   config:
     - field.field.paragraph.themes_interest.field_interest_image
     - field.field.paragraph.themes_interest.field_interest_link
+    - field.field.paragraph.themes_interest.field_content_image
+    - field.field.paragraph.themes_interest.field_url
     - image.style.max_325x325
     - paragraphs.paragraphs_type.themes_interest
   module:
+    - blazy
     - link
     - svg_image
 id: paragraph.themes_interest.default
@@ -31,6 +34,49 @@ content:
   field_interest_link:
     weight: 1
     label: above
+  field_content_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      class: ''
+      id: ''
+      image: ''
+      link: ''
+      overlay: ''
+      title: ''
+      vanilla: false
+      icon: ''
+      layout: ''
+      view_mode: ''
+      cache: 0
+      current_view_mode: ''
+      skin: ''
+      fx: ''
+      style: ''
+      background: false
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      caption: {  }
+      responsive_image_style: ''
+      box_style: ''
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
+      _uri: ''
+      breakpoints: {  }
+      sizes: ''
+      grid_header: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
+    third_party_settings: {  }
+    type: blazy_media
+    region: content
+  field_url:
+    weight: 1
+    label: hidden
     settings:
       trim_length: 80
       url_only: false

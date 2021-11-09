@@ -1,0 +1,116 @@
+uuid: 4a5798db-dab0-4b67-a6f5-ba2d52e6d02a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.microsite_block.field_content_background_type
+    - field.field.paragraph.microsite_block.field_content_icon
+    - field.field.paragraph.microsite_block.field_content_personalized
+    - field.field.paragraph.microsite_block.field_content_title
+    - field.field.paragraph.microsite_block.field_content_type_view
+    - field.field.paragraph.microsite_block.field_content_view_news
+    - paragraphs.paragraphs_type.microsite_block
+  module:
+    - blazy
+    - options
+    - text
+    - viewsreference
+id: paragraph.microsite_block.default
+targetEntityType: paragraph
+bundle: microsite_block
+mode: default
+content:
+  field_content_background_type:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_content_icon:
+    type: blazy_media
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      image_style: ''
+      responsive_image_style: ''
+      media_switch: ''
+      thumbnail_style: ''
+      ratio: ''
+      view_mode: default
+      current_view_mode: default
+      background: false
+      class: ''
+      id: ''
+      image: ''
+      link: ''
+      overlay: ''
+      title: ''
+      vanilla: false
+      icon: ''
+      layout: ''
+      cache: 0
+      skin: ''
+      fx: ''
+      style: ''
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      caption: {  }
+      box_style: ''
+      _uri: ''
+      breakpoints: {  }
+      sizes: ''
+      grid_header: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
+    third_party_settings: {  }
+  field_content_personalized:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_content_title:
+    type: string
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_content_type_view:
+    weight: 3
+    label: hidden
+    settings:
+      plugin_types:
+        block: block
+        default: 0
+        feed: 0
+        page: 0
+        entity_browser: 0
+        entity_reference: 0
+        embed: 0
+    third_party_settings: {  }
+    type: viewsreference_formatter
+    region: content
+  field_content_view_news:
+    weight: 4
+    label: hidden
+    settings:
+      plugin_types:
+        block: block
+        default: 0
+        feed: 0
+        page: 0
+        entity_browser: 0
+        entity_reference: 0
+        embed: 0
+    third_party_settings: {  }
+    type: viewsreference_formatter
+    region: content
+hidden:
+  search_api_excerpt: true

@@ -1,0 +1,28 @@
+uuid: 32cc2365-3951-41a7-b94b-9b6abf55bfed
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_url
+    - paragraphs.paragraphs_type.navigation_microsites
+  module:
+    - link
+id: paragraph.navigation_microsites.field_url
+field_name: field_url
+entity_type: paragraph
+bundle: navigation_microsites
+label: Enlace
+description: 'Enlace para el item de menu'
+required: false
+translatable: true
+default_value:
+  -
+    attributes: {  }
+    uri: 'route:<nolink>'
+    title: ''
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

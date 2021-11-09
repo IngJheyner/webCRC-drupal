@@ -1,0 +1,23 @@
+uuid: 8c1a9960-7d9c-41ae-bf33-f7e11a0c8e1e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content_background_type
+    - paragraphs.paragraphs_type.microsite_block
+  module:
+    - options
+id: paragraph.microsite_block.field_content_background_type
+field_name: field_content_background_type
+entity_type: paragraph
+bundle: microsite_block
+label: 'Tipo de fondo'
+description: 'Color de fondo que llevara todo el bloque'
+required: true
+translatable: false
+default_value:
+  -
+    value: '1'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

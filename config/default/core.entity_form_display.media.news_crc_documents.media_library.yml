@@ -1,0 +1,28 @@
+uuid: 1dff293a-5279-448c-b436-3f80b99ff995
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.news_crc_documents.field_media_file_4
+    - media.type.news_crc_documents
+id: media.news_crc_documents.media_library
+targetEntityType: media
+bundle: news_crc_documents
+mode: media_library
+content:
+  name:
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    weight: 0
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_media_file_4: true
+  langcode: true
+  path: true
+  status: true
+  uid: true

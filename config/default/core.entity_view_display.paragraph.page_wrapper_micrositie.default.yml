@@ -1,0 +1,25 @@
+uuid: 6d91af36-1de9-4f25-a872-caaa3348a921
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.page_wrapper_micrositie.field_microsite_block
+    - paragraphs.paragraphs_type.page_wrapper_micrositie
+  module:
+    - entity_reference_revisions
+id: paragraph.page_wrapper_micrositie.default
+targetEntityType: paragraph
+bundle: page_wrapper_micrositie
+mode: default
+content:
+  field_microsite_block:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  search_api_excerpt: true
