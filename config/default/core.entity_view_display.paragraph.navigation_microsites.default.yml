@@ -1,0 +1,28 @@
+uuid: 049d00d6-1e0d-4525-986b-186f77a2cc89
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.navigation_microsites.field_url
+    - paragraphs.paragraphs_type.navigation_microsites
+  module:
+    - link
+id: paragraph.navigation_microsites.default
+targetEntityType: paragraph
+bundle: navigation_microsites
+mode: default
+content:
+  field_url:
+    weight: 1
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  search_api_excerpt: true

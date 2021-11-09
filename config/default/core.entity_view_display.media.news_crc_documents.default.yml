@@ -1,0 +1,29 @@
+uuid: 6670ca84-cd3a-4c65-aad1-a1c3f8e282bc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.media.news_crc_documents.field_media_file_4
+    - media.type.news_crc_documents
+  module:
+    - file
+id: media.news_crc_documents.default
+targetEntityType: media
+bundle: news_crc_documents
+mode: default
+content:
+  field_media_file_4:
+    label: visually_hidden
+    weight: 0
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

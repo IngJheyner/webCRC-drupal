@@ -1,0 +1,29 @@
+uuid: 1b966020-d4b3-4650-9def-d1a526f3428f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content_image
+    - media.type.image
+    - paragraphs.paragraphs_type.themes_interest
+id: paragraph.themes_interest.field_content_image
+field_name: field_content_image
+entity_type: paragraph
+bundle: themes_interest
+label: Imagen
+description: 'Imagen para el tema de interes'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

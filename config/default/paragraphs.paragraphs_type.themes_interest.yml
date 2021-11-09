@@ -1,0 +1,10 @@
+uuid: c8256fce-1851-4353-94be-b8f9daa7e919
+langcode: es
+status: true
+dependencies: {  }
+id: themes_interest
+label: 'Temas de interes'
+icon_uuid: null
+icon_default: null
+description: 'Temas de interes general'
+behavior_plugins: {  }

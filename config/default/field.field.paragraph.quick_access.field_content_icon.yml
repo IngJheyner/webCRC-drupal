@@ -1,0 +1,29 @@
+uuid: 412b00c1-e5e0-4ffe-8d1a-5cee4008af1d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content_icon
+    - media.type.images_icons
+    - paragraphs.paragraphs_type.quick_access
+id: paragraph.quick_access.field_content_icon
+field_name: field_content_icon
+entity_type: paragraph
+bundle: quick_access
+label: Icono
+description: 'Incono para el acceso rapido'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      images_icons: images_icons
+    sort:
+      field: created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: images_icons
+field_type: entity_reference

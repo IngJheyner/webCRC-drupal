@@ -1,0 +1,30 @@
+uuid: 0cfb43a6-155c-4f4d-97e2-181cdaf41d8d
+langcode: es
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_content_background_type
+field_name: field_content_background_type
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: Blanco
+    -
+      value: '2'
+      label: Gris
+    -
+      value: '3'
+      label: 'Azul degrade'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

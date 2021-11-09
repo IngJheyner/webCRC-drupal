@@ -1,0 +1,31 @@
+uuid: ba652612-405e-40be-b66a-3e66205f8956
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.slideshow.field_media_image_2
+    - image.style.thumbnail
+    - media.type.slideshow
+  module:
+    - svg_image
+id: media.slideshow.media_library
+targetEntityType: media
+bundle: slideshow
+mode: media_library
+content:
+  field_media_image_2:
+    weight: -50
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  path: true
+  status: true
+  uid: true

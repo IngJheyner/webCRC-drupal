@@ -1,0 +1,38 @@
+uuid: df152c43-4bb6-4d45-9164-4d25459afd3c
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.microsite_crc.field_content_featured
+    - field.field.node.microsite_crc.field_content_links_menu
+    - field.field.node.microsite_crc.field_content_microsite_page
+    - field.field.node.microsite_crc.field_content_news_category
+    - field.field.node.microsite_crc.field_content_quick_access
+    - field.field.node.microsite_crc.field_content_slideshow
+    - field.field.node.microsite_crc.field_content_themes_interest
+    - field.field.node.microsite_crc.field_image_content
+    - node.type.microsite_crc
+  module:
+    - user
+id: node.microsite_crc.teaser
+targetEntityType: node
+bundle: microsite_crc
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_content_featured: true
+  field_content_links_menu: true
+  field_content_microsite_page: true
+  field_content_news_category: true
+  field_content_quick_access: true
+  field_content_slideshow: true
+  field_content_themes_interest: true
+  field_image_content: true
+  langcode: true
+  search_api_excerpt: true

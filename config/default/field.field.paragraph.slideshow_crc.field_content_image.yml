@@ -1,0 +1,29 @@
+uuid: 420b0613-cfcf-44ce-a171-b1897086a87e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content_image
+    - media.type.slideshow
+    - paragraphs.paragraphs_type.slideshow_crc
+id: paragraph.slideshow_crc.field_content_image
+field_name: field_content_image
+entity_type: paragraph
+bundle: slideshow_crc
+label: Imagen
+description: 'Benner para el slideshow'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      slideshow: slideshow
+    sort:
+      field: created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,130 @@
+// Estilo Menu general
+nav.primary-menu {
+  ul.sf-menu,
+  ul#superfish-main-accordion {
+    float: none;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 1);
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+
+    li {
+      background: transparent;
+      
+      a,
+      a:visited {
+        font-size: 1.2rem;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      a.is-active,
+      a.is-active:hover,
+      a.is-active:active,
+      a.is-active:focus,
+      a:hover, 
+      a:active, 
+      a:focus {
+        color: rgba(0,0,0,1);
+        text-decoration: underline;
+      }
+
+      a.is-active {
+        color: rgba(255,255,255,1);
+        background: transparent;
+      }
+    }
+
+    .sf-sub-indicator:after {
+      font-family: "Material Icons";
+      content: "expand_more";
+      position: absolute;
+      top: 0;
+      left: 0;
+      line-height: 1;
+      color: rgb(255, 255, 255);
+    }
+
+    .sfHover > ul {
+      min-width: 100% !important;
+      background: rgb(240, 240, 240);
+    }
+
+    .sfHover a,
+    .sfHover a:visited,
+    .sfhover li a,
+    .sfHover .sf-sub-indicator:after,
+    .sf-expanded .sf-sub-indicator:after,
+    a:hover .sf-sub-indicator:after
+    {
+      color: rgba(0,0,0,1);
+    }
+  }
+
+  ul.sf-menu:after {
+    display: none;
+  }
+
+  // Estilos menu responsive
+  .sf-accordion-toggle {
+    a#superfish-main-toggle {
+      background: rgb(47, 42, 124);
+      color: rgb(255,255,255);
+      border: none;
+      padding: 2rem;
+      border-radius: 50%;
+
+      span {
+        display: none;
+        visibility: hidden;
+        color: transparent;
+      }
+    }
+
+    a#superfish-main-toggle:after {
+      font-family: "Material Icons";
+      content: "menu";
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+  }
+
+  ul#superfish-main-accordion {
+    padding: 0;
+    a.is-active {
+      color: rgba(255,255,255,1) !important;
+    }
+
+    li {
+      ul {
+        li:first-child {
+          display: none;
+          visibility: none;
+        }
+      }
+    }
+  }
+}
+
+// Estilos menu pagina Home
+nav.nav-main-menu.home-menu {
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 1;
+
+  ul.sf-menu {
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(180deg, rgba(0,0,0,0.7) 60%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0,0,0,0.7) 60%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,0.7) 60%, rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1); 
+  }
+}

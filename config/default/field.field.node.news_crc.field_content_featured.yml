@@ -1,0 +1,23 @@
+uuid: 49acceeb-1e47-4e00-9a7d-36db7da034f3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_featured
+    - node.type.news_crc
+id: node.news_crc.field_content_featured
+field_name: field_content_featured
+entity_type: node
+bundle: news_crc
+label: Destacado
+description: 'Destacar noticia para que se visualize en los primeros items de las ultimas noticias'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: SI
+  off_label: 'NO'
+field_type: boolean

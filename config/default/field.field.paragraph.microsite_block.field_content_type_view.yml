@@ -1,0 +1,71 @@
+uuid: 28334b7d-46e0-445d-83e2-9702dbf1000c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content_type_view
+    - paragraphs.paragraphs_type.microsite_block
+  module:
+    - viewsreference
+id: paragraph.microsite_block.field_content_type_view
+field_name: field_content_type_view
+entity_type: paragraph
+bundle: microsite_block
+label: 'Sección predefinida'
+description: 'Tipo de vista predefinida para mostrar dentro del bloque del micrositio '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: 0
+  plugin_types:
+    block: block
+    default: 0
+    feed: 0
+    page: 0
+    entity_browser: 0
+    entity_reference: 0
+    embed: 0
+  preselect_views:
+    microsites_crc: microsites_crc
+    aggregator_rss_feed: 0
+    aggregator_sources: 0
+    block_content: 0
+    comment: 0
+    comments_recent: 0
+    content: 0
+    content_recent: 0
+    feeds_feed: 0
+    files: 0
+    frontpage: 0
+    home_slideshow: 0
+    media: 0
+    media_library: 0
+    news: 0
+    paragraphs_library: 0
+    paragraphs_library_browser: 0
+    projects_comments: 0
+    redirect: 0
+    rss_pruebas: 0
+    scheduler_scheduled_content: 0
+    search_view: 0
+    tabs_contents_consulted: 0
+    tabs_content_kids: 0
+    tags: 0
+    taxonomy_term: 0
+    user_admin_people: 0
+    watchdog: 0
+    webform_submissions: 0
+    who_s_new: 0
+    who_s_online: 0
+  enabled_settings:
+    argument: 0
+    limit: 0
+    offset: 0
+    title: 0
+    pager: 0
+field_type: viewsreference

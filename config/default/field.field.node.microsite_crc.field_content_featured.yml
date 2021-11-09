@@ -1,0 +1,23 @@
+uuid: 29e74fe7-37c6-4a08-b2f9-ab0da8011040
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_featured
+    - node.type.microsite_crc
+id: node.microsite_crc.field_content_featured
+field_name: field_content_featured
+entity_type: node
+bundle: microsite_crc
+label: Destacado
+description: 'Si esta activo se mostrara los datos que se encuentran en la pestaña "Portada" en la seccion "Lo mas importante en la crc" del inicio de la pagina'
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: SI
+  off_label: 'NO'
+field_type: boolean

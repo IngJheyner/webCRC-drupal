@@ -1,0 +1,11 @@
+uuid: b337943e-47d0-4c9c-92ac-309579108577
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.news_crc_documents
+id: media.news_crc_documents
+target_entity_type_id: media
+target_bundle: news_crc_documents
+default_langcode: site_default
+language_alterable: false

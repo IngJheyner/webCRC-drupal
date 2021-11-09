@@ -1,0 +1,76 @@
+uuid: 3cf9309e-d82d-4712-9ea0-b652e252d2b1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_links_menu
+    - node.type.microsite_crc
+    - paragraphs.paragraphs_type.navigation_microsites
+  module:
+    - entity_reference_revisions
+id: node.microsite_crc.field_content_links_menu
+field_name: field_content_links_menu
+entity_type: node
+bundle: microsite_crc
+label: 'Enlaces menu'
+description: 'Menu generico de un solo nivel para los microstios de la crc'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      navigation_microsites: navigation_microsites
+    target_bundles_drag_drop:
+      enlaces:
+        weight: 17
+        enabled: false
+      from_library:
+        weight: 18
+        enabled: false
+      iterecciones_proyectos:
+        weight: 19
+        enabled: false
+      list_social_networks:
+        weight: 20
+        enabled: false
+      microsites_page:
+        weight: 21
+        enabled: false
+      navigation_microsites:
+        enabled: true
+        weight: 22
+      postdata_indicators:
+        weight: 23
+        enabled: false
+      quick_access:
+        weight: 24
+        enabled: false
+      slideshow_crc:
+        weight: 25
+        enabled: false
+      tab_content:
+        weight: 30
+        enabled: false
+      tab_header:
+        weight: 31
+        enabled: false
+      tabs_wrapper:
+        weight: 26
+        enabled: false
+      tabs_wrapper_global:
+        weight: 27
+        enabled: false
+      tabs_wrapper_secondary:
+        weight: 28
+        enabled: false
+      tabs_wrapper_vertical:
+        weight: 29
+        enabled: false
+      themes_interest:
+        weight: 32
+        enabled: false
+field_type: entity_reference_revisions

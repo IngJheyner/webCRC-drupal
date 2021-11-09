@@ -1,0 +1,19 @@
+uuid: c0d111dc-a869-49b9-9138-cac0236f57a6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content_title
+    - paragraphs.paragraphs_type.microsite_block
+id: paragraph.microsite_block.field_content_title
+field_name: field_content_title
+entity_type: paragraph
+bundle: microsite_block
+label: Titulo
+description: 'Titulo principal para el bloque del micrositio'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
