@@ -1,0 +1,8 @@
+uuid: b52c6e14-0d02-45cf-be08-ab02011efc41
+langcode: es
+status: true
+dependencies: {  }
+id: bloq_descrip_menu_transparencia
+label: 'Descripción menu transparencia'
+revision: 0
+description: ''

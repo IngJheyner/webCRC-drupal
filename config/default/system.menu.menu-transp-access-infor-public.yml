@@ -1,0 +1,8 @@
+uuid: 9a202d47-7053-48c8-a702-6b8bcec6b279
+langcode: es
+status: true
+dependencies: {  }
+id: menu-transp-access-infor-public
+label: 'Transparencia y acceso a la información pública'
+description: 'Menu de sección de transparencia  y acceso a la información pública'
+locked: false

@@ -9,7 +9,7 @@ dependencies:
 id: tabs_important_content_crc
 theme: webcrc
 region: top_b
-weight: -10
+weight: -14
 provider: null
 plugin: 'block_content:f054bf59-bf4c-47a8-a4c3-aebdbb350de5'
 settings:
