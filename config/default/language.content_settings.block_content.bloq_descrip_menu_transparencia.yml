@@ -1,0 +1,11 @@
+uuid: ccd3aeb3-2f6e-4a82-b3e2-2f6a73af8b4e
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.bloq_descrip_menu_transparencia
+id: block_content.bloq_descrip_menu_transparencia
+target_entity_type_id: block_content
+target_bundle: bloq_descrip_menu_transparencia
+default_langcode: site_default
+language_alterable: false

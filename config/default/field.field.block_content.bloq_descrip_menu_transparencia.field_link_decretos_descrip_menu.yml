@@ -1,0 +1,23 @@
+uuid: 23f81c40-27bf-40e0-b036-532e8d186e9d
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.bloq_descrip_menu_transparencia
+    - field.storage.block_content.field_link_decretos_descrip_menu
+  module:
+    - link
+id: block_content.bloq_descrip_menu_transparencia.field_link_decretos_descrip_menu
+field_name: field_link_decretos_descrip_menu
+entity_type: block_content
+bundle: bloq_descrip_menu_transparencia
+label: 'Enlaces a decretos'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

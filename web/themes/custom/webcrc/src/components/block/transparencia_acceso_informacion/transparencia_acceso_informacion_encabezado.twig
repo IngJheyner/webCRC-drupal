@@ -1,0 +1,46 @@
+{%
+  set classes = [
+    'block',
+    'transparenciaAcceso',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class
+  ]
+%}
+{% if html_tag %}
+  <{{ html_tag }}{{ attributes|without('id').addClass(classes) }}>
+{% endif %}
+
+
+{% block content %}
+  <div class="transparencia">
+    <div class="titulo">
+      <h1 class="tituloEncabezado">{{ label }}</h1>   
+    </div>
+    <div class="breadcrumbs">
+      {# ==== Migas de pan ==== #}
+      <span>{{ drupal_breadcrumb() }}</span>
+    </div>
+  </div>
+  <div class="description-content">
+    <div>
+      <span>{{ content.body }}</span>
+    </div>
+    <div class="links_descripcion ">
+      <div class="d-flex align-items-center">
+        <div class="d-block icon-link">
+          <span class="material-icons material-icons-outlined sp">
+            link
+          </span>
+        </div>
+        <div>
+          {{ content.field_link_decretos_descrip_menu }}
+        </div>
+      </div>
+    </div>
+    
+  </div>
+{% endblock %}
+
+{% if html_tag %}
+  </{{ html_tag }}>
+{% endif %}

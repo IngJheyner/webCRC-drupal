@@ -2,10 +2,7 @@ uuid: 7f62d53e-93d3-47ef-8fd1-294da5d826ba
 langcode: es
 status: true
 dependencies:
-  content:
-    - 'block_content:tabs_social_networks:b78e3423-dddb-49b0-97af-f37d06b61a79'
   module:
-    - block_content
     - system
   theme:
     - webcrc

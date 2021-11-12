@@ -1,6 +1,6 @@
 uuid: 12c2e77d-4b48-4d37-ba52-031a74687d1b
 langcode: en
-status: true
+status: false
 dependencies:
   theme:
     - webcrc
@@ -9,7 +9,7 @@ _core:
 id: webcrc_page_title
 theme: webcrc
 region: disabled
-weight: -13
+weight: -5
 provider: null
 plugin: page_title_block
 settings:

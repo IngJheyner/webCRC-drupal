@@ -1,0 +1,38 @@
+uuid: a9d17aca-a4e9-47f4-9d12-26b9b4a23ea7
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.bloq_descrip_menu_transparencia
+    - field.field.block_content.bloq_descrip_menu_transparencia.body
+    - field.field.block_content.bloq_descrip_menu_transparencia.field_link_decretos_descrip_menu
+  module:
+    - link
+    - text
+id: block_content.bloq_descrip_menu_transparencia.default
+targetEntityType: block_content
+bundle: bloq_descrip_menu_transparencia
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_link_decretos_descrip_menu:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,39 @@
+uuid: 3c3a1a5f-353b-4771-8c0d-4c80cb482477
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.menu-transp-access-infor-public.field_icono_de_enlace
+    - field.field.menu_link_content.menu-transp-access-infor-public.field_menu_docum_transp
+    - system.menu.menu-transp-access-infor-public
+id: menu_link_content.menu-transp-access-infor-public.default
+targetEntityType: menu_link_content
+bundle: menu-transp-access-infor-public
+mode: default
+content:
+  children:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_icono_de_enlace:
+    type: entity_reference_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_menu_docum_transp:
+    type: entity_reference_entity_view
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

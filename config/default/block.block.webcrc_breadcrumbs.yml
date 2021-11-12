@@ -11,7 +11,7 @@ _core:
 id: webcrc_breadcrumbs
 theme: webcrc
 region: disabled
-weight: -7
+weight: -14
 provider: null
 plugin: system_breadcrumb_block
 settings:

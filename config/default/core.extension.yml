@@ -63,6 +63,7 @@ module:
   media: 0
   media_entity_instagram: 0
   media_library: 0
+  menu_item_extras: 0
   menu_link_content: 0
   menu_ui: 0
   metatag: 0

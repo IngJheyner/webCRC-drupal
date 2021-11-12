@@ -2,11 +2,10 @@
   background-color: white;
   width: 100% !important;
   margin: 0px;
-  margin-top: 50px;
   max-width: 100%;
 
   .transparencia{
-    
+    padding-top: 25px;
     .titulo {
       background-color: white;
       padding-left: 5%;
@@ -19,30 +18,24 @@
     }
     &::after {
       content : '';
-      width: 0;
-      height: 0;
-      border-top: 18px solid #fff;
-      border-left: 16px solid transparent;
-      border-right: 16px solid transparent;
-      position: relative;
+      border-top: 15px solid #fff;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      position: absolute;
       left: 15%;
-      bottom: -39px;
       -webkit-box-shadow: inset 0px 26px 1px -24px rgba(0,0,0,0.1);
       -moz-box-shadow: inset 0px 26px 1px -24px rgba(0,0,0,0.1);
       box-shadow: inset 0px 26px 1px -24px rgba(0,0,0,0.1);
       
     }  
   }
-  div.menu.row{
+  ul.menu.row{
     flex-direction: row;
     padding: 5%;
     background-color: #26216a;
     max-width: 100%;
     margin: 0px;
-    .nav-item{
-      padding: 10px !important;
-
-    }
+    
 
     .back-menu-transparencia{
       height: auto;
@@ -96,16 +89,25 @@
       &.back-menu-transparencia{
         background: repeating-linear-gradient(285deg, white 0px, white 79%, rgb(54,73,178) 0px, rgb(54,73,178)) !important;
       }
+    }
+    a.back-menu-transparencia{
+      .col-md-9{
+        padding-left: 5%;
+      }
     }            
   }
 
   .dropdown-menu{
     width: 100%;
-    padding: 0px 30px 0px 0px;
+    padding: 0px 40px 0px 0px;
     background-color: transparent;
+    border: none;
     > div{
       background-color: white;
       padding: 15px;
+    }
+    a.dropdown-item{
+      white-space: normal !important;
     }
   }
 
@@ -143,6 +145,17 @@
     margin-top: 2px;
     margin-bottom: 2px;
     padding-left: 5%;
+    background-color: white;
+  }
+
+  .navbar-nav .nav-item:hover {
+    background-color: transparent !important;
+    a {
+      font-weight: bolder !important;
+    }
+    .dropdown-menu a{
+      font-weight: normal !important;
+    }
   }
 
   .titleForItemTransparencia{
@@ -155,8 +168,56 @@
       color: white;
     }
   }
-  
+  .zoneTitleItem{
+    
+    &::after {
+      content : '';
+      border-top: 15px solid #f42e62;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      position: absolute;
+      left: 25%;
+      -webkit-box-shadow: inset 0px 26px 1px -24px rgba(0,0,0,0.1);
+      -moz-box-shadow: inset 0px 26px 1px -24px rgba(0,0,0,0.1);
+      box-shadow: inset 0px 26px 1px -24px rgba(0,0,0,0.1);
+      z-index: 5;
+      
+    }
+    .icon-zone-item{
+      position: relative;
+      top: -11px;
+    }
+  }
+
 }
 
+.transparenciaAcceso_content_simple{
+  padding: 5% 5% 1% 5%;
+  
+  .titleContentSimple{
+    margin-bottom: 30px;
+  }
+}
+
+.transparenciaAcceso.pages{
+  padding-left: 5%;
+  background-color: transparent;
+  * {
+    background-color: transparent;
+  }
+  ul {
+    padding-left: 0px;
+    li{
+      h4.mb-2 {
+        a {
+          font-size: 1.3rem !important;
+        }
+      }
+      span.categoria a{
+        font-size:0.9rem !important;
+      }
+    } 
+  }
+}
 
 

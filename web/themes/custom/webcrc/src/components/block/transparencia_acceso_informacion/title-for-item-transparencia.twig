@@ -12,10 +12,11 @@
 {% endif %}
 
 {% block content %}
-    {% if paragraph_items_menu %}
-        {% set items_menu = paragraph_items_menu %}
-    {% endif %}
-    <h1> 1. Información de la entidad</h1>
+  <div class="d-inline-block icon-zone-item" id="icon-zone-title-item">
+  </div>
+  <div class="d-inline-block">
+    <h1 id="idTitleItemPage"> </h1>
+  </div>
 {% endblock %}
 
 {% if html_tag %}

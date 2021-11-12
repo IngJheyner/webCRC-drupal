@@ -1,0 +1,28 @@
+{%
+  set classes = [
+    'block',
+    'transparenciaAcceso',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class
+  ]
+%}
+{% if html_tag %}
+  <{{ html_tag }}{{ attributes|without('id').addClass(classes) }}>
+{% endif %}
+
+
+{% block content %}
+  <ul class="menu row navbar-nav ">
+    {{ drupal_menu('menu-transp-access-infor-public') }}
+  </ul>
+  <div class="zoneTitleItem">
+    {% include '@webcrc/block/transparencia_acceso_informacion/title-for-item-transparencia.twig' with {
+      html_tag: 'div',
+      paragraph_items_menu : content.field_items_menu_transp_acces
+    } %}
+  </div>
+{% endblock %}
+
+{% if html_tag %}
+  </{{ html_tag }}>
+{% endif %}
