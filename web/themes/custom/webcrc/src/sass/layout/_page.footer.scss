@@ -105,6 +105,12 @@ footer.page__footer {
 
   .block--home-footer {
 
+    .footer_logo_webcrc {
+      img {
+        max-width: 250px;
+      }
+    }
+
     > * {
       margin: 0 auto 30px;
     }

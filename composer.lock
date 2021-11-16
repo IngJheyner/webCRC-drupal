@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "edd81badc678704465d11ce824e74d22",
+    "content-hash": "38edcac45dc52added3c56c518f35b5c",
     "packages": [
         {
             "name": "amphp/amp",
@@ -2847,17 +2847,17 @@
         },
         {
             "name": "drupal/ckeditor_bs_grid",
-            "version": "2.0.5",
+            "version": "2.0.6",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/ckeditor_bs_grid.git",
-                "reference": "2.0.5"
+                "reference": "2.0.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ckeditor_bs_grid-2.0.5.zip",
-                "reference": "2.0.5",
-                "shasum": "7caa6ac044879b582a4e0a745a362b139984bfbd"
+                "url": "https://ftp.drupal.org/files/projects/ckeditor_bs_grid-2.0.6.zip",
+                "reference": "2.0.6",
+                "shasum": "5feb6eb914270814fb2a2bc67538eb07764aad92"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
@@ -2865,8 +2865,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.5",
-                    "datestamp": "1608228702",
+                    "version": "2.0.6",
+                    "datestamp": "1636588629",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2883,7 +2883,7 @@
                     "homepage": "https://www.drupal.org/user/2512258"
                 }
             ],
-            "description": "Ckeditor plugin for adding Bootstrap grids inline",
+            "description": "Allows creating rows and columns within CKEditor using Bootstrap syntax.",
             "homepage": "https://www.drupal.org/project/ckeditor_bs_grid",
             "support": {
                 "source": "https://git.drupalcode.org/project/ckeditor_bs_grid"
@@ -5455,6 +5455,76 @@
             }
         },
         {
+            "name": "drupal/menu_item_extras",
+            "version": "2.16.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/menu_item_extras.git",
+                "reference": "8.x-2.16"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/menu_item_extras-8.x-2.16.zip",
+                "reference": "8.x-2.16",
+                "shasum": "4ec194392abd534b9e917a29612be5f80a7993a0"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.16",
+                    "datestamp": "1629830739",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Andriy Khomych",
+                    "homepage": "https://www.drupal.org/u/andriy-khomych",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Bogdan Hepting",
+                    "homepage": "https://www.drupal.org/u/bogdan-hepting",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Oleh Vehera",
+                    "homepage": "https://www.drupal.org/u/voleger",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Mykhailo Gurei",
+                    "homepage": "https://www.drupal.org/u/ozin",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Provide an additional custom fields which can be used on Menu link",
+            "homepage": "https://www.drupal.org/project/menu_item_extras",
+            "keywords": [
+                "Drupal",
+                "Mega Menu"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/menu_item_extras",
+                "issues": "https://www.drupal.org/project/issues/menu_item_extras"
+            }
+        },
+        {
             "name": "drupal/metatag",
             "version": "1.16.0",
             "source": {
@@ -5791,17 +5861,17 @@
         },
         {
             "name": "drupal/private_files_download_permission",
-            "version": "3.0.3",
+            "version": "3.0.4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/private_files_download_permission.git",
-                "reference": "3.0.3"
+                "reference": "3.0.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/private_files_download_permission-3.0.3.zip",
-                "reference": "3.0.3",
-                "shasum": "12e1054f250d27949ecc0362213321a5ebd89d2b"
+                "url": "https://ftp.drupal.org/files/projects/private_files_download_permission-3.0.4.zip",
+                "reference": "3.0.4",
+                "shasum": "240edba2a17b55e75fda717e75c9c46b189cdce6"
             },
             "require": {
                 "drupal/core": "^8.8.3 || ^9"
@@ -5809,8 +5879,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.3",
-                    "datestamp": "1629550416",
+                    "version": "3.0.4",
+                    "datestamp": "1636812381",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6723,17 +6793,17 @@
         },
         {
             "name": "drupal/stage_file_proxy",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/stage_file_proxy.git",
-                "reference": "8.x-1.1"
+                "reference": "8.x-1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/stage_file_proxy-8.x-1.1.zip",
-                "reference": "8.x-1.1",
-                "shasum": "bad4d500e56f4e77adb2704ec5d4efdf52340df8"
+                "url": "https://ftp.drupal.org/files/projects/stage_file_proxy-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "a0bea520c139a4b0b67738b0c54e7ee21af081da"
             },
             "require": {
                 "drupal/core": ">=8.7.7"
@@ -6741,8 +6811,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.1",
-                    "datestamp": "1601040759",
+                    "version": "8.x-1.2",
+                    "datestamp": "1637007759",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -14646,16 +14716,16 @@
         },
         {
             "name": "metadrop/behat-contexts",
-            "version": "v1.6.0",
+            "version": "v1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Metadrop/behat-contexts.git",
-                "reference": "eb41604afaafb79d77f91db35d1133b23fdb7b4b"
+                "reference": "1f13a1f78d37dc619f659e4f7106f5f61cc62565"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Metadrop/behat-contexts/zipball/eb41604afaafb79d77f91db35d1133b23fdb7b4b",
-                "reference": "eb41604afaafb79d77f91db35d1133b23fdb7b4b",
+                "url": "https://api.github.com/repos/Metadrop/behat-contexts/zipball/1f13a1f78d37dc619f659e4f7106f5f61cc62565",
+                "reference": "1f13a1f78d37dc619f659e4f7106f5f61cc62565",
                 "shasum": ""
             },
             "require": {
@@ -14668,6 +14738,9 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
             "authors": [
                 {
                     "name": "Metadrop",
@@ -14677,9 +14750,9 @@
             "description": "Contexts that we use with Behat 3.x tests on Drupal sites.",
             "support": {
                 "issues": "https://github.com/Metadrop/behat-contexts/issues",
-                "source": "https://github.com/Metadrop/behat-contexts/tree/v1.6.0"
+                "source": "https://github.com/Metadrop/behat-contexts/tree/v1.7.0"
             },
-            "time": "2021-10-27T09:31:41+00:00"
+            "time": "2021-11-11T10:01:21+00:00"
         },
         {
             "name": "metadrop/drupal-dev",
@@ -14769,16 +14842,16 @@
         },
         {
             "name": "metadrop/scripthor",
-            "version": "v2.0.0",
+            "version": "v2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Metadrop/scripthor.git",
-                "reference": "3077c6bedd3ea69a92f08c8b245cca55011af662"
+                "reference": "a11a05a7a0fd68c2b086d01f679157869db8b3ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Metadrop/scripthor/zipball/3077c6bedd3ea69a92f08c8b245cca55011af662",
-                "reference": "3077c6bedd3ea69a92f08c8b245cca55011af662",
+                "url": "https://api.github.com/repos/Metadrop/scripthor/zipball/a11a05a7a0fd68c2b086d01f679157869db8b3ae",
+                "reference": "a11a05a7a0fd68c2b086d01f679157869db8b3ae",
                 "shasum": ""
             },
             "require": {
@@ -14813,22 +14886,22 @@
             "description": "Swiss knife of scripts for speed up the development on drupal projects.",
             "support": {
                 "issues": "https://github.com/Metadrop/scripthor/issues",
-                "source": "https://github.com/Metadrop/scripthor/tree/v2.0.0"
+                "source": "https://github.com/Metadrop/scripthor/tree/v2.0.1"
             },
-            "time": "2021-11-04T21:13:15+00:00"
+            "time": "2021-11-11T10:56:28+00:00"
         },
         {
             "name": "mglaman/drupal-check",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mglaman/drupal-check.git",
-                "reference": "d2e57a7fb78f8c3b92f31a610e44bc70d4d98b87"
+                "reference": "7389b1550a4968dbfe3f6689f147e72077e3462a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mglaman/drupal-check/zipball/d2e57a7fb78f8c3b92f31a610e44bc70d4d98b87",
-                "reference": "d2e57a7fb78f8c3b92f31a610e44bc70d4d98b87",
+                "url": "https://api.github.com/repos/mglaman/drupal-check/zipball/7389b1550a4968dbfe3f6689f147e72077e3462a",
+                "reference": "7389b1550a4968dbfe3f6689f147e72077e3462a",
                 "shasum": ""
             },
             "require": {
@@ -14874,7 +14947,7 @@
             "description": "CLI tool for running checks on a Drupal code base",
             "support": {
                 "issues": "https://github.com/mglaman/drupal-check/issues",
-                "source": "https://github.com/mglaman/drupal-check/tree/1.2.0"
+                "source": "https://github.com/mglaman/drupal-check/tree/1.2.1"
             },
             "funding": [
                 {
@@ -14890,20 +14963,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-11-01T16:01:08+00:00"
+            "time": "2021-11-15T15:15:13+00:00"
         },
         {
             "name": "mglaman/phpstan-drupal",
-            "version": "1.0.0",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mglaman/phpstan-drupal.git",
-                "reference": "ffdf3686f3cc3d8c3b3cfece7896dfc5e77d9e51"
+                "reference": "20b043c99d1324e94ead226657fca936486acba4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mglaman/phpstan-drupal/zipball/ffdf3686f3cc3d8c3b3cfece7896dfc5e77d9e51",
-                "reference": "ffdf3686f3cc3d8c3b3cfece7896dfc5e77d9e51",
+                "url": "https://api.github.com/repos/mglaman/phpstan-drupal/zipball/20b043c99d1324e94ead226657fca936486acba4",
+                "reference": "20b043c99d1324e94ead226657fca936486acba4",
                 "shasum": ""
             },
             "require": {
@@ -14975,7 +15048,7 @@
             "description": "Drupal extension and rules for PHPStan",
             "support": {
                 "issues": "https://github.com/mglaman/phpstan-drupal/issues",
-                "source": "https://github.com/mglaman/phpstan-drupal/tree/1.0.0"
+                "source": "https://github.com/mglaman/phpstan-drupal/tree/1.0.3"
             },
             "funding": [
                 {
@@ -14991,7 +15064,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-11-01T15:20:04+00:00"
+            "time": "2021-11-12T19:45:49+00:00"
         },
         {
             "name": "mikey179/vfsstream",
@@ -17492,16 +17565,16 @@
         },
         {
             "name": "sebastian/exporter",
-            "version": "4.0.3",
+            "version": "4.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/exporter.git",
-                "reference": "d89cc98761b8cb5a1a235a6b703ae50d34080e65"
+                "reference": "65e8b7db476c5dd267e65eea9cab77584d3cfff9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/d89cc98761b8cb5a1a235a6b703ae50d34080e65",
-                "reference": "d89cc98761b8cb5a1a235a6b703ae50d34080e65",
+                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/65e8b7db476c5dd267e65eea9cab77584d3cfff9",
+                "reference": "65e8b7db476c5dd267e65eea9cab77584d3cfff9",
                 "shasum": ""
             },
             "require": {
@@ -17550,14 +17623,14 @@
                 }
             ],
             "description": "Provides the functionality to export PHP variables for visualization",
-            "homepage": "http://www.github.com/sebastianbergmann/exporter",
+            "homepage": "https://www.github.com/sebastianbergmann/exporter",
             "keywords": [
                 "export",
                 "exporter"
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/exporter/issues",
-                "source": "https://github.com/sebastianbergmann/exporter/tree/4.0.3"
+                "source": "https://github.com/sebastianbergmann/exporter/tree/4.0.4"
             },
             "funding": [
                 {
@@ -17565,7 +17638,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-28T05:24:23+00:00"
+            "time": "2021-11-11T14:18:36+00:00"
         },
         {
             "name": "sebastian/global-state",
