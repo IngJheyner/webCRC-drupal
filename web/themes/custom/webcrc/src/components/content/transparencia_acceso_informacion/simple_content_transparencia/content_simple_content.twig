@@ -1,0 +1,22 @@
+{%
+  set classes = [
+    'block',
+    'transparenciaAcceso_content_simple',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class
+  ]
+%}
+{% if html_tag %}
+  <{{ html_tag }}{{ attributes|without('id').addClass(classes) }}>
+{% endif %}
+
+{% block content %}
+  <div class="titleContentSimple">
+    <h1>{{ label }}</h1>
+  </div>
+    <p>{{ content.field_cont_tipo_cont_simp_transp}}</p>
+{% endblock %}
+
+{% if html_tag %}
+  </{{ html_tag }}>
+{% endif %}

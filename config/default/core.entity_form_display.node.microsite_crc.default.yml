@@ -1,0 +1,310 @@
+uuid: 3c26ff7e-7096-4b4b-81f3-434ffd9d18f6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.microsite_crc.field_content_featured
+    - field.field.node.microsite_crc.field_content_links_menu
+    - field.field.node.microsite_crc.field_content_microsite_page
+    - field.field.node.microsite_crc.field_content_news_category
+    - field.field.node.microsite_crc.field_content_quick_access
+    - field.field.node.microsite_crc.field_content_slideshow
+    - field.field.node.microsite_crc.field_content_themes_interest
+    - field.field.node.microsite_crc.field_image_content
+    - node.type.microsite_crc
+  module:
+    - field_group
+    - media_library
+    - paragraphs
+    - path
+    - scheduler
+third_party_settings:
+  field_group:
+    group_content_microsite:
+      children:
+        - group_microsite_presentation
+        - group_microsite_slideshow
+        - group_microsites_menu
+        - group_quick_access
+        - group_news
+        - group_themes_interest
+        - group_microsite_page
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      region: content
+      format_settings:
+        direction: horizontal
+        width_breakpoint: 640
+        id: ''
+        classes: ''
+        show_empty_fields: false
+      label: 'Contenido Micrositio'
+    group_microsite_presentation:
+      children:
+        - title
+        - field_image_content
+        - field_content_featured
+      parent_name: group_content_microsite
+      weight: 13
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: 'Informacion que se visualiza en el slide de la pagina de inicio de la crc'
+        formatter: closed
+        required_fields: true
+      label: Presentación
+    group_microsite_slideshow:
+      children:
+        - field_content_slideshow
+      parent_name: group_content_microsite
+      weight: 14
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Slideshow
+    group_news:
+      children:
+        - field_content_news_category
+      parent_name: group_content_microsite
+      weight: 17
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Noticias
+    group_microsites_menu:
+      children:
+        - field_content_links_menu
+      parent_name: group_content_microsite
+      weight: 15
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: 'Menu de un solo nivel que se visualizara en cada micrositio creado'
+        formatter: closed
+        required_fields: true
+      label: Menu
+    group_quick_access:
+      children:
+        - field_content_quick_access
+      parent_name: group_content_microsite
+      weight: 16
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Accessos rapidos'
+    group_themes_interest:
+      children:
+        - field_content_themes_interest
+      parent_name: group_content_microsite
+      weight: 18
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Temas de interes'
+    group_microsite_page:
+      children:
+        - field_content_microsite_page
+      parent_name: group_content_microsite
+      weight: 19
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Gestionar presentacion'
+id: node.microsite_crc.default
+targetEntityType: node
+bundle: microsite_crc
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_content_featured:
+    weight: 3
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_content_links_menu:
+    type: entity_reference_paragraphs
+    weight: 31
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_content_microsite_page:
+    type: entity_reference_paragraphs
+    weight: 32
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_content_news_category:
+    weight: 27
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_content_quick_access:
+    type: entity_reference_paragraphs
+    weight: 29
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_content_slideshow:
+    type: entity_reference_paragraphs
+    weight: 28
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_content_themes_interest:
+    type: entity_reference_paragraphs
+    weight: 30
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_image_content:
+    weight: 2
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    region: content
+    third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 11
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 6
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  url_redirects:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

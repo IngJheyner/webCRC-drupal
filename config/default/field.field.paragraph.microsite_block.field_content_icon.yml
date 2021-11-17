@@ -1,0 +1,29 @@
+uuid: c3e8f9f9-f932-45f0-9a7a-407f54f34ec0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content_icon
+    - media.type.images_icons
+    - paragraphs.paragraphs_type.microsite_block
+id: paragraph.microsite_block.field_content_icon
+field_name: field_content_icon
+entity_type: paragraph
+bundle: microsite_block
+label: Icono
+description: 'Icono principal para el bloque del micrositio'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      images_icons: images_icons
+    sort:
+      field: created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

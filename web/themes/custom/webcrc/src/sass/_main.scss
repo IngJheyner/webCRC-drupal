@@ -150,6 +150,10 @@
           width: 50%;
           margin: auto;
           min-width: 350px;
+
+          .field[data-blazy] {
+            min-width: 20%;
+          }
         }
 
         .description
@@ -698,7 +702,6 @@
 }
 
 // TODAS LAS NOTICIAS
-
 .news-all {
   max-width: 1600px;
   margin: auto;

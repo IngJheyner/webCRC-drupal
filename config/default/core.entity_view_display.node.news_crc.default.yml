@@ -3,8 +3,10 @@ langcode: es
 status: true
 dependencies:
   config:
+    - field.field.node.news_crc.feeds_item
     - field.field.node.news_crc.field_category
     - field.field.node.news_crc.field_content
+    - field.field.node.news_crc.field_content_featured
     - field.field.node.news_crc.field_image_content
     - field.field.node.news_crc.field_introduccion_contenido
     - field.field.node.news_crc.field_introduction_image
@@ -33,6 +35,16 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
+    region: content
+  field_content_featured:
+    weight: 6
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
     region: content
   field_image_content:
     type: blazy_media
@@ -130,7 +142,7 @@ content:
     type: entity_reference_label
     region: content
 hidden:
-  addtoany: true
+  feeds_item: true
   langcode: true
   links: true
   search_api_excerpt: true

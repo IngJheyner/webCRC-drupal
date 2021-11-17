@@ -1,0 +1,10 @@
+uuid: d7093a83-1112-4ccb-a2bf-5bb06cb35318
+langcode: es
+status: true
+dependencies: {  }
+id: microsite_block
+label: 'Bloque micrositio'
+icon_uuid: null
+icon_default: null
+description: 'Bloque para la pagina del micrositio'
+behavior_plugins: {  }

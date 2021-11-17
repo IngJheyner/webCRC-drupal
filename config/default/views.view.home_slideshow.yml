@@ -8,10 +8,10 @@ dependencies:
     - field.storage.node.field_home_slideshow_url
     - node.type.home_slideshow
   module:
+    - blazy
     - link
     - node
     - slick_views
-    - svg_image
     - user
 id: home_slideshow
 label: 'Home [Slideshow]'
@@ -65,10 +65,10 @@ display:
           skin: grid
           layout: below
           caption:
+            field_home_slideshow_imagen: field_home_slideshow_imagen
             nothing: nothing
-            field_home_slideshow_url: '0'
+            field_home_slideshow_url: field_home_slideshow_url
             field_home_slideshow_description: '0'
-            field_home_slideshow_imagen: '0'
           optionset_thumbnail: ''
           skin_thumbnail: ''
           thumbnail_position: ''
@@ -100,73 +100,6 @@ display:
       row:
         type: fields
       fields:
-        field_home_slideshow_url:
-          id: field_home_slideshow_url
-          table: node__field_home_slideshow_url
-          field: field_home_slideshow_url
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: uri
-          type: link
-          settings:
-            trim_length: 80
-            url_only: true
-            url_plain: true
-            rel: '0'
-            target: '0'
-          group_column: ''
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
         field_home_slideshow_description:
           id: field_home_slideshow_description
           table: node__field_home_slideshow_description
@@ -237,7 +170,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
@@ -266,7 +199,7 @@ display:
             preserve_tags: ''
             html: false
           element_type: ''
-          element_class: ''
+          element_class: slideshow-image-full
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -278,9 +211,18 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image_url
+          type: blazy
           settings:
+            background: false
+            caption:
+              title: '0'
+              alt: '0'
             image_style: ''
+            thumbnail_style: ''
+            responsive_image_style: ''
+            media_switch: ''
+            ratio: ''
+            current_view_mode: _custom
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -303,7 +245,56 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<a href=\"{{ field_home_slideshow_url }}\">\r\n<img src=\"{{ field_home_slideshow_imagen }}\" >\r\n<div>\r\n<p>{{ field_home_slideshow_description }} </p>\r\n</div>\r\n</a>\r\n"
+            text: "<p>{{ field_home_slideshow_description }} </p>\r\n"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: div
+          element_class: slideshow-content
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
+          plugin_id: custom
+        field_home_slideshow_url:
+          id: field_home_slideshow_url
+          table: node__field_home_slideshow_url
+          field: field_home_slideshow_url
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
             make_link: false
             path: ''
             absolute: false
@@ -329,7 +320,7 @@ display:
             preserve_tags: ''
             html: false
           element_type: ''
-          element_class: ''
+          element_class: slideshow-url
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -339,8 +330,26 @@ display:
           empty: ''
           hide_empty: false
           empty_zero: false
-          hide_alter_empty: false
-          plugin_id: custom
+          hide_alter_empty: true
+          click_sort_column: uri
+          type: link
+          settings:
+            trim_length: 80
+            url_only: false
+            url_plain: false
+            rel: '0'
+            target: '0'
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
       filters:
         status:
           value: '1'
@@ -391,6 +400,7 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      css_class: slideshow_primary
     cache_metadata:
       max-age: -1
       contexts:

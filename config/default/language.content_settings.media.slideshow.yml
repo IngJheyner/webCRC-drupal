@@ -1,0 +1,11 @@
+uuid: 703908d4-7c26-4634-9079-daa953a9e34f
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.slideshow
+id: media.slideshow
+target_entity_type_id: media
+target_bundle: slideshow
+default_langcode: site_default
+language_alterable: false

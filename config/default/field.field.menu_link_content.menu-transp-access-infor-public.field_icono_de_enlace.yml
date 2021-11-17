@@ -1,0 +1,29 @@
+uuid: be814681-231e-4203-8d5b-2d0256af8c50
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.menu_link_content.field_icono_de_enlace
+    - media.type.images_icons
+    - system.menu.menu-transp-access-infor-public
+id: menu_link_content.menu-transp-access-infor-public.field_icono_de_enlace
+field_name: field_icono_de_enlace
+entity_type: menu_link_content
+bundle: menu-transp-access-infor-public
+label: 'Icono de Enlace'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      images_icons: images_icons
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

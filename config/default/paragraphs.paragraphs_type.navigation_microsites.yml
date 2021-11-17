@@ -1,0 +1,10 @@
+uuid: 7504259d-6a9e-4c59-b77e-cec28a16515d
+langcode: es
+status: true
+dependencies: {  }
+id: navigation_microsites
+label: 'Navegacion Micrositios'
+icon_uuid: null
+icon_default: null
+description: 'Menu general para los micrositios'
+behavior_plugins: {  }

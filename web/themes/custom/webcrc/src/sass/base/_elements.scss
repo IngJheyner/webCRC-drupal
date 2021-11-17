@@ -84,3 +84,12 @@ time {
   padding: 0 10px;
   margin: 0 auto 20px;
 }
+
+sub {
+
+  > * {
+    color: rgba(40, 55, 137, 1);
+    font-style: oblique;
+    font-weight: bold;
+  }
+}

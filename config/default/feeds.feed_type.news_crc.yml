@@ -1,0 +1,121 @@
+uuid: 895e6d04-ba2f-4606-a0f5-7bcdf0e34555
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.news_crc.title
+    - field.field.node.news_crc.field_category
+    - field.field.node.news_crc.field_content
+    - field.field.node.news_crc.field_image_content
+    - field.field.node.news_crc.field_introduccion_contenido
+    - field.field.node.news_crc.field_introduction_image
+    - node.type.news_crc
+  module:
+    - node
+id: news_crc
+label: 'Noticias crc'
+description: 'Importar datos de las noticias principales de la crc'
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ;
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  langcode: es
+  update_existing: 2
+  update_non_existent: _keep
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+  authorize: true
+  skip_hash_check: false
+  values:
+    type: news_crc
+custom_sources:
+  news_title:
+    label: TITULO
+    value: TITULO
+    machine_name: news_title
+  news_category:
+    label: CATEGORIA
+    value: CATEGORIA
+    machine_name: news_category
+  news_created:
+    label: FECHA_CREACION
+    value: FECHA_CREACION
+    machine_name: news_created
+  news_content:
+    label: CONTENIDO
+    value: CONTENIDO
+    machine_name: news_content
+  news_introduction_image:
+    label: IMAGEN_INTRODUCCION
+    value: IMAGEN_INTRODUCCION
+    machine_name: news_introduction_image
+  news_image:
+    label: IMAGEN
+    value: IMAGEN
+    machine_name: news_image
+  news_introduction:
+    label: INTRODUCCION
+    value: INTRODUCCION
+    machine_name: news_introduction
+mappings:
+  -
+    target: title
+    map:
+      value: news_title
+    unique: {  }
+    settings:
+      language: null
+  -
+    target: field_category
+    map:
+      target_id: news_category
+    settings:
+      language: ''
+      reference_by: name
+      autocreate: 0
+  -
+    target: created
+    map:
+      value: news_created
+    settings:
+      language: ''
+      timezone: America/Bogota
+  -
+    target: field_content
+    map:
+      value: news_content
+    settings:
+      language: ''
+      format: news_crc_editor
+  -
+    target: field_introduction_image
+    map:
+      target_id: news_introduction_image
+    settings:
+      language: ''
+      reference_by: name
+      autocreate: 0
+  -
+    target: field_image_content
+    map:
+      target_id: news_image
+    settings:
+      language: null
+      reference_by: name
+      autocreate: false
+  -
+    target: field_introduccion_contenido
+    map:
+      value: news_introduction
+    settings:
+      language: null

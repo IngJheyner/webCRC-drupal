@@ -1,0 +1,86 @@
+{% import _self as menus %}
+
+{{ menus.menu_links(items, attributes, 0) }}
+{% macro menu_links(items, attributes, menu_level) %}
+  {% import _self as menus %}
+  {% if items %}
+    {% set iterar = 0 %}
+    {% for item in items %}
+      {% set iterar = iterar + 1 %}
+      {% if menu_level == 0 %}
+      {% set titleId = item.title|replace({' ': '-'}) %}
+        {% set titleId = titleId|split('.')[1] %}
+        <li class="nav-item dropdown col-md-4" id="{{titleId|lower}}-div">
+          {% if item.below %}
+            <a class="nav-link dropdown-toggle border p-2 back-menu-transparencia item_menu" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          {% else %}
+            {% if item.url.external != false %}
+              <a class="nav-link dropdown-toggle border p-2 back-menu-transparencia item_menu" href="{{item.url.uri}}">
+            {% else %}
+              {% if item.url.routeName != "<nolink>" %}
+                <a class="nav-link dropdown-toggle border p-2 back-menu-transparencia item_menu" href="{{item.uri}}">
+              {% else %}
+                {% if item.content.field_menu_docum_transp[0]['#media'].field_media_document.entity.uri.value  != null %}
+                  <a class="nav-link dropdown-toggle border p-2 back-menu-transparencia item_menu" href="{{file_url(item.content.field_menu_docum_transp[0]['#media'].field_media_document.entity.uri.value)}}">
+                {% else %}
+                  <a class="nav-link dropdown-toggle border p-2 back-menu-transparencia item_menu">
+                {% endif %}
+              {% endif %}
+            {% endif %}
+          {% endif %}
+            <div class=" d-flex align-items-center">
+            {#{% set titleId = titleId|normalize('NFD')|replace(/[\u0300-\u036f]/g, "") %}#}
+              <div class="col-md-2 p-2 m-0 " id="{{titleId|lower}}-icon">
+                {{ item.content.field_icono_de_enlace }}
+              </div>
+              <div class="col-md-9">
+                  <div class="align-items-center">
+                      <div class="d-flex align-items-center">
+                          <span id="{{titleId|lower}}-title" toggle-nav-transp="true" >{{item.title|replace({'.': '. '}) }}</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-1 p-0">
+                  <span class="material-icons material-icons-outlined">
+                      expand_more
+                  </span>
+              </div>
+            </div>
+          </a>
+          {% if item.below %}
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div>
+          {% endif %}
+      {% endif %}
+      {% if menu_level == 1 %}
+      
+        {% if item.url.external != false %}
+          <a class="dropdown-item" href="{{item.url.uri}}">{{item.title}}</a>
+        {% else %}
+          {% if item.url.routeName != "<nolink>" %}
+          
+            <a class="dropdown-item" href="{{item.url}}">{{item.title}}</a>
+          {% else %}
+            {% if item.content.field_menu_docum_transp[0]['#media'].field_media_document.entity.uri.value  != null %}
+              <a class="dropdown-item" href="{{file_url(item.content.field_menu_docum_transp[0]['#media'].field_media_document.entity.uri.value)}}">{{item.title}}</a>
+            {% else %}
+              <a class="dropdown-item" >{{item.title}}</a>
+            {% endif %}
+          {% endif %}
+        {% endif %}
+      {% endif %}
+
+      {% if item.below %}
+        {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
+      {% endif %}
+
+      {% if menu_level == 0 %}
+        {% if item.below %}
+            </div>
+          </div>
+        {% endif %}
+        </li>
+      {% endif %}      
+    {% endfor %}
+  {% endif %}
+{% endmacro %}

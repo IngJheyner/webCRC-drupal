@@ -1,0 +1,13 @@
+uuid: 8cd18e80-1658-4c3d-b08e-f93e528926c3
+langcode: es
+status: true
+dependencies: {  }
+id: news_crc_documents
+label: 'Noticias crc documentos'
+description: 'Documentos para las noticias principales del crc'
+source: file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_file_4
+field_map: {  }

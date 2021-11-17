@@ -1,0 +1,29 @@
+uuid: 5d816b1c-fbbd-43ee-9956-c3366c95128e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.menu_link_content.field_menu_docum_transp
+    - media.type.document
+    - system.menu.menu-transp-access-infor-public
+id: menu_link_content.menu-transp-access-infor-public.field_menu_docum_transp
+field_name: field_menu_docum_transp
+entity_type: menu_link_content
+bundle: menu-transp-access-infor-public
+label: Documento
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

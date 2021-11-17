@@ -1,0 +1,19 @@
+uuid: 487fe96a-1d12-4bfd-929d-f6890ee70304
+langcode: es
+status: true
+dependencies:
+  module:
+    - block_content
+    - link
+id: block_content.field_link_decretos_descrip_menu
+field_name: field_link_decretos_descrip_menu
+entity_type: block_content
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

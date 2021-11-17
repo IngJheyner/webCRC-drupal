@@ -11,7 +11,7 @@ dependencies:
 id: home_main_menu
 theme: webcrc
 region: main_menu
-weight: -12
+weight: -15
 provider: null
 plugin: 'superfish:main'
 settings:

@@ -1,0 +1,10 @@
+uuid: d688b87c-4413-4516-bec5-a10e3e160776
+langcode: es
+status: true
+dependencies: {  }
+id: quick_access
+label: 'Accesos rapidos'
+icon_uuid: null
+icon_default: null
+description: 'Accesos rapidos para paginas internas o externas'
+behavior_plugins: {  }

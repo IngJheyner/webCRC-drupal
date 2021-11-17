@@ -1,0 +1,24 @@
+uuid: eb236cd9-e35f-482d-a313-e52f62bb2ec1
+langcode: es
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - webcrc
+id: breadcrumbs_secundary
+theme: webcrc
+region: top_a
+weight: -14
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'breadcrumbs secundario'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true

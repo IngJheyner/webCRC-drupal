@@ -1,0 +1,50 @@
+uuid: 4d91acd1-7d88-40fc-a326-adf301531f36
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.bloq_descrip_menu_transparencia
+    - field.field.block_content.bloq_descrip_menu_transparencia.body
+    - field.field.block_content.bloq_descrip_menu_transparencia.field_link_decretos_descrip_menu
+  module:
+    - link
+    - text
+id: block_content.bloq_descrip_menu_transparencia.default
+targetEntityType: block_content
+bundle: bloq_descrip_menu_transparencia
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  field_link_decretos_descrip_menu:
+    weight: 27
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

@@ -26,6 +26,7 @@ permissions:
   - 'skip comment approval'
   - 'use search_api_autocomplete for search'
   - 'use text format basic_html'
+  - 'use text format microsites_editor'
   - 'use text format news_crc_editor'
   - 'view media'
   - 'view search api pages'
