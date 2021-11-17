@@ -1,0 +1,72 @@
+uuid: 3c3d3db8-b3a8-4aa9-b609-e5fac8139ec5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.iterecciones_proyectos.field_fases_interacciones
+    - field.field.paragraph.iterecciones_proyectos.field_fecha_cierre_iteracciones
+    - field.field.paragraph.iterecciones_proyectos.field_propuestas_interacciones
+    - paragraphs.paragraphs_type.iterecciones_proyectos
+  module:
+    - paragraphs
+id: interactions_paragraph
+label: 'Interacciones [ Paragraph ]'
+description: 'Agregar contenido de tipo parrafos que se utilizan en proyectos comentarios campo interacciones.'
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds/projects_comments/interactions'
+parser: csv
+parser_configuration:
+  delimiter: ;
+  no_headers: false
+  line_limit: 100
+processor: 'entity:paragraph'
+processor_configuration:
+  langcode: es
+  update_existing: 2
+  update_non_existent: _keep
+  expire: -1
+  owner_feed_author: false
+  owner_id: 50
+  authorize: true
+  skip_hash_check: false
+  values:
+    type: iterecciones_proyectos
+custom_sources:
+  fases:
+    label: fases
+    value: fases
+    machine_name: fases
+  fecha_cierre:
+    label: fecha_cierre
+    value: fecha_cierre
+    machine_name: fecha_cierre
+  propuestas:
+    label: propuestas
+    value: propuestas
+    machine_name: propuestas
+mappings:
+  -
+    target: field_fases_interacciones
+    map:
+      value: fases
+    settings:
+      language: null
+  -
+    target: field_fecha_cierre_iteracciones
+    map:
+      value: fecha_cierre
+    settings:
+      language: es
+      timezone: America/Bogota
+  -
+    target: field_propuestas_interacciones
+    map:
+      target_id: propuestas
+    settings:
+      language: ''
+      reference_by: name
+      autocreate: 0

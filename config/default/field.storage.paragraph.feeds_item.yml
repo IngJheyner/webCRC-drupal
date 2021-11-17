@@ -1,0 +1,20 @@
+uuid: 00901de0-82f6-43be-b7b7-570197053d6d
+langcode: es
+status: true
+dependencies:
+  module:
+    - feeds
+    - paragraphs
+id: paragraph.feeds_item
+field_name: feeds_item
+entity_type: paragraph
+type: feeds_item
+settings:
+  target_type: feeds_feed
+module: feeds
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

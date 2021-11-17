@@ -1,0 +1,23 @@
+uuid: 04945113-6100-49ad-9107-04c057baeaa2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.feeds_item
+    - paragraphs.paragraphs_type.iterecciones_proyectos
+  module:
+    - feeds
+id: paragraph.iterecciones_proyectos.feeds_item
+field_name: feeds_item
+entity_type: paragraph
+bundle: iterecciones_proyectos
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

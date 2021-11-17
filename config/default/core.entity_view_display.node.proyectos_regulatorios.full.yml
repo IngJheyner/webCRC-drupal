@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.full
+    - field.field.node.proyectos_regulatorios.feeds_item
     - field.field.node.proyectos_regulatorios.field_email_proyectos
     - field.field.node.proyectos_regulatorios.field_estado_proyectos
     - field.field.node.proyectos_regulatorios.field_interacciones_proyectos
@@ -120,6 +121,7 @@ content:
     third_party_settings: {  }
 hidden:
   addtoany: true
+  feeds_item: true
   langcode: true
   links: true
   search_api_excerpt: true

@@ -1,0 +1,64 @@
+uuid: 22700196-afea-4d3a-83e7-28a96c6aa107
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.proyectos_regulatorios.title
+    - field.field.node.proyectos_regulatorios.field_interacciones_proyectos
+    - node.type.proyectos_regulatorios
+  module:
+    - node
+    - paragraphs
+id: projects_comments
+label: 'Proyectos Comentarios'
+description: 'Se crea nodo de tipo de contenido proyectos comentarios.'
+help: ''
+import_period: 3600
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds/projects_comments'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  langcode: es
+  update_existing: 2
+  update_non_existent: _keep
+  expire: -1
+  owner_feed_author: false
+  owner_id: 50
+  authorize: true
+  skip_hash_check: false
+  values:
+    type: proyectos_regulatorios
+custom_sources:
+  projects_interactions:
+    label: interacciones
+    value: interacciones
+    machine_name: projects_interactions
+  projects_title:
+    label: title
+    value: title
+    machine_name: projects_title
+mappings:
+  -
+    target: field_interacciones_proyectos
+    map:
+      value: 'parent:fid'
+    settings:
+      paragraphs_type: iterecciones_proyectos
+      language: ''
+      format: plain_text
+      paragraph_field: ''
+  -
+    target: title
+    map:
+      value: projects_title
+    unique:
+      value: '1'
+    settings:
+      language: null

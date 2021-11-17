@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - entity_browser.browser.propuesta_interacciones_media
+    - field.field.paragraph.iterecciones_proyectos.feeds_item
     - field.field.paragraph.iterecciones_proyectos.field_comentarios_interacciones
     - field.field.paragraph.iterecciones_proyectos.field_fases_interacciones
     - field.field.paragraph.iterecciones_proyectos.field_fecha_cierre_iteracciones
@@ -164,4 +165,5 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  feeds_item: true
   status: true

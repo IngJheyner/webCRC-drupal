@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.paragraph.token
+    - field.field.paragraph.iterecciones_proyectos.feeds_item
     - field.field.paragraph.iterecciones_proyectos.field_comentarios_interacciones
     - field.field.paragraph.iterecciones_proyectos.field_fases_interacciones
     - field.field.paragraph.iterecciones_proyectos.field_fecha_cierre_iteracciones
@@ -38,6 +39,7 @@ content:
       format_custom_true: ''
     third_party_settings: {  }
 hidden:
+  feeds_item: true
   field_comentarios_interacciones: true
   field_fases_interacciones: true
   field_interaction_extemporaneous: true
