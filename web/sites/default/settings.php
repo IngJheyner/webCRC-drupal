@@ -256,21 +256,6 @@ $databases = [];
 $settings['config_sync_directory'] = '../config/default/';
 
 /**
- * Location of the site content files.
- *
- * The $content_directories['sync'] specifies the location of file system
- * directory used for syncing content data. On install, the directory is
- * created. This is used for content imports.
- *
- * The default location for this directory is inside a randomly-named
- * directory in the public files path. The setting below allows you to set
- * its location.
- */
-global $content_directories;
-
-$content_directories['sync'] = '../content/default/';
-
-/**
  * Settings:
  *
  * $settings contains environment-specific configuration, such as the files
@@ -781,9 +766,7 @@ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
   include $app_root . '/' . $site_path . '/settings.local.php';
 }
 
-$config['config_split.config_split.local']['status'] = FALSE;
-
-/* $databases['default']['default'] = array (
+$databases['default']['default'] = array (
   'database' => 'webcrc',
   'username' => 'crcweb',
   'password' => 'rootcrc',
@@ -792,20 +775,7 @@ $config['config_split.config_split.local']['status'] = FALSE;
   'port' => '3306',
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
-); */
-
-if (getenv('DB_NAME') != NULL) {
-  $databases['default']['default'] = [
-    'database' => getenv('DB_NAME'),
-    'username' => getenv('DB_USER'),
-    'password' => getenv('DB_PASSWORD'),
-    'prefix' => '',
-    'host' => getenv('DB_HOST'),
-    'port' => getenv('DB_PORT'),
-    'namespace' => 'Drupal\\Core\\Database\\Driver\\' . getenv('DB_DRIVER'),
-    'driver' => getenv('DB_DRIVER'),
-  ];
-} 
+);
 
 $settings['redis.connection']['host'] = 'redis';
 $settings['redis.connection']['port'] = '6379';
