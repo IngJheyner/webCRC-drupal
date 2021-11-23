@@ -6,6 +6,7 @@ dependencies:
     - blazy
     - editor
     - media
+    - slick
 name: 'Noticias crc'
 format: news_crc_editor
 weight: 0
@@ -91,4 +92,26 @@ filters:
     weight: 4
     settings:
       optionset: default
+      skin: ''
+      background: false
+      layout: ''
+      optionset_thumbnail: ''
+      skin_thumbnail: ''
+      thumbnail_position: ''
+      thumbnail_caption: ''
+      image_style: ''
+      thumbnail_style: ''
+      responsive_image_style: ''
+      thumbnail_effect: ''
       media_switch: ''
+      ratio: ''
+      override: false
+      overridables:
+        arrows: '0'
+        autoplay: '0'
+        dots: '0'
+        draggable: '0'
+        infinite: '0'
+        mouseWheel: '0'
+        randomize: '0'
+        variableWidth: '0'

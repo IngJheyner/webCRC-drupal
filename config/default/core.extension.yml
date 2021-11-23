@@ -21,7 +21,6 @@ module:
   block_content: 0
   breakpoint: 0
   ckeditor: 0
-  ckeditor_bs_grid: 0
   ckeditor_templates: 0
   ckeditor_templates_ui: 0
   color: 0
@@ -32,10 +31,14 @@ module:
   config_split: 0
   config_translation: 0
   contact: 0
+  content_sync: 0
   contextual: 0
   ctools: 0
   datetime: 0
   dblog: 0
+  devel: 0
+  devel_entity_updates: 0
+  devel_generate: 0
   dropzonejs: 0
   dropzonejs_eb_widget: 0
   dynamic_page_cache: 0
@@ -44,6 +47,7 @@ module:
   entity_browser: 0
   entity_reference_revisions: 0
   entity_type_clone: 0
+  entity_update: 0
   entity_usage: 0
   facets: 0
   feed_block: 0

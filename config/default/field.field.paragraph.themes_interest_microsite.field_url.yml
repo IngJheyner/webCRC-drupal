@@ -1,0 +1,28 @@
+uuid: 85fcea6d-d9d3-40f1-a0d3-e1b95b5318a2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_url
+    - paragraphs.paragraphs_type.themes_interest_microsite
+  module:
+    - link
+id: paragraph.themes_interest_microsite.field_url
+field_name: field_url
+entity_type: paragraph
+bundle: themes_interest_microsite
+label: Enlace
+description: 'Enlace interno y externo para los temas de interes del micrositio'
+required: false
+translatable: true
+default_value:
+  -
+    attributes: {  }
+    uri: 'route:<nolink>'
+    title: ''
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

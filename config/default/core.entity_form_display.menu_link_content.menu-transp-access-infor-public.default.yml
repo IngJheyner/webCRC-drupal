@@ -5,11 +5,10 @@ dependencies:
   config:
     - field.field.menu_link_content.menu-transp-access-infor-public.field_icono_de_enlace
     - field.field.menu_link_content.menu-transp-access-infor-public.field_menu_docum_transp
-    - system.menu.menu-transp-access-infor-public
   module:
     - link
     - media_library
-    - menu_item_extras
+    - menu_link_content
 id: menu_link_content.menu-transp-access-infor-public.default
 targetEntityType: menu_link_content
 bundle: menu-transp-access-infor-public
@@ -45,9 +44,11 @@ content:
       placeholder: ''
     third_party_settings: {  }
   view_mode:
-    type: menu_item_extras_view_mode_selector_select
-    weight: 3
-    region: content
-    settings: {  }
+    weight: 21
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
+    type: string_textfield
+    region: content
 hidden: {  }

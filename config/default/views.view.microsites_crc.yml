@@ -11,7 +11,7 @@ dependencies:
     - paragraphs.paragraphs_type.navigation_microsites
     - paragraphs.paragraphs_type.quick_access
     - paragraphs.paragraphs_type.slideshow_crc
-    - paragraphs.paragraphs_type.themes_interest
+    - paragraphs.paragraphs_type.themes_interest_microsite
   module:
     - blazy
     - link
@@ -1540,7 +1540,7 @@ display:
           admin_label: ''
           operator: in
           value:
-            themes_interest: themes_interest
+            themes_interest_microsite: themes_interest_microsite
           group: 1
           exposed: false
           expose:

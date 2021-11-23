@@ -1,0 +1,11 @@
+uuid: c70ce168-b100-4488-9b00-8c29dbe8a60e
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.audio_news_crc
+id: media.audio_news_crc
+target_entity_type_id: media
+target_bundle: audio_news_crc
+default_langcode: site_default
+language_alterable: false

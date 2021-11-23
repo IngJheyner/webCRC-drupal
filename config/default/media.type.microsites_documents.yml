@@ -1,0 +1,14 @@
+uuid: 31e0fbaf-f34c-4a11-b7a6-a4ce8b3d25e4
+langcode: es
+status: true
+dependencies: {  }
+id: microsites_documents
+label: Micrositios
+description: ''
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image
+field_map:
+  name: name

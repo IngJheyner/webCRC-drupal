@@ -18,22 +18,6 @@ targetEntityType: paragraph
 bundle: themes_interest
 mode: default
 content:
-  field_interest_image:
-    weight: 0
-    label: above
-    settings:
-      image_style: max_325x325
-      image_link: ''
-      svg_render_as_image: true
-      svg_attributes:
-        width: null
-        height: null
-    third_party_settings: {  }
-    type: image
-    region: content
-  field_interest_link:
-    weight: 1
-    label: above
   field_content_image:
     weight: 0
     label: hidden
@@ -73,6 +57,23 @@ content:
       grid_small: ''
     third_party_settings: {  }
     type: blazy_media
+    region: content
+  field_interest_image:
+    weight: 0
+    label: above
+    settings:
+      image_style: max_325x325
+      image_link: ''
+      svg_render_as_image: true
+      svg_attributes:
+        width: null
+        height: null
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_interest_link:
+    weight: 1
+    label: above
     region: content
   field_url:
     weight: 1

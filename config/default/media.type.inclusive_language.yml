@@ -1,0 +1,14 @@
+uuid: c92691ec-d247-47bd-ac6d-63204f8ca6b8
+langcode: es
+status: true
+dependencies: {  }
+id: inclusive_language
+label: 'Lenguaje inclusivo'
+description: 'Iconos en formato gif de lenguaje de señas'
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image
+field_map:
+  name: name

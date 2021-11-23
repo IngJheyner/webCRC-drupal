@@ -1,0 +1,36 @@
+uuid: c59fe1a6-ef05-4833-a155-64cde516918d
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.images_news_crc.field_media_image
+    - image.style.medium
+    - media.type.images_news_crc
+  module:
+    - svg_image
+id: media.images_news_crc.media_library
+targetEntityType: media
+bundle: images_news_crc
+mode: media_library
+content:
+  thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    weight: 0
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_media_image: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  uid: true

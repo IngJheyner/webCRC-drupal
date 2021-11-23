@@ -1,0 +1,45 @@
+uuid: 86831454-15c2-40b0-99c1-bae4469a7bbe
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.media.microsites_documents.field_media_audio_file
+    - field.field.media.microsites_documents.field_media_image
+    - image.style.large
+    - media.type.microsites_documents
+  module:
+    - file
+    - svg_image
+id: media.microsites_documents.default
+targetEntityType: media
+bundle: microsites_documents
+mode: default
+content:
+  field_media_audio_file:
+    weight: 1
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_media_image:
+    label: visually_hidden
+    weight: 0
+    settings:
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

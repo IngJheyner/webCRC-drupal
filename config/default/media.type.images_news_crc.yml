@@ -1,0 +1,14 @@
+uuid: 5ad116a3-47ee-4a32-b762-8a7e4091808b
+langcode: es
+status: true
+dependencies: {  }
+id: images_news_crc
+label: 'Noticias CRC [Imagenes]'
+description: 'Tipo de multimedia que almacenara todas las imagenes para las noticas del crc '
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image
+field_map:
+  name: name

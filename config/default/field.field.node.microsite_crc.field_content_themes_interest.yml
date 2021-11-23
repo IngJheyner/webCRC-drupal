@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_content_themes_interest
     - node.type.microsite_crc
-    - paragraphs.paragraphs_type.themes_interest
+    - paragraphs.paragraphs_type.themes_interest_microsite
   module:
     - entity_reference_revisions
 id: node.microsite_crc.field_content_themes_interest
@@ -23,11 +23,8 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      themes_interest: themes_interest
+      themes_interest_microsite: themes_interest_microsite
     target_bundles_drag_drop:
-      enlaces:
-        weight: 16
-        enabled: false
       from_library:
         weight: 17
         enabled: false
@@ -37,8 +34,14 @@ settings:
       list_social_networks:
         weight: 19
         enabled: false
+      microsite_block:
+        weight: 21
+        enabled: false
       navigation_microsites:
         weight: 20
+        enabled: false
+      page_wrapper_micrositie:
+        weight: 23
         enabled: false
       postdata_indicators:
         weight: 21
@@ -68,6 +71,9 @@ settings:
         weight: 27
         enabled: false
       themes_interest:
-        enabled: true
         weight: 30
+        enabled: false
+      themes_interest_microsite:
+        enabled: true
+        weight: 34
 field_type: entity_reference_revisions

@@ -1,0 +1,14 @@
+uuid: f98b5f13-5ce8-4d57-81a5-7820ea619d14
+langcode: es
+status: true
+dependencies: {  }
+id: audio_news_crc
+label: 'Noticias CRC [Audio]'
+description: 'Tipo de multimedia que almacenara todas los audios para las noticas del crc'
+source: audio_file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_audio_file
+field_map:
+  name: name

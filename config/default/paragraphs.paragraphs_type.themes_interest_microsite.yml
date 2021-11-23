@@ -1,0 +1,10 @@
+uuid: 2a77625f-173d-4977-add7-64bf6dd233ba
+langcode: es
+status: true
+dependencies: {  }
+id: themes_interest_microsite
+label: 'Temas de interes micrositio'
+icon_uuid: null
+icon_default: null
+description: 'Temas de interes para los micrositios'
+behavior_plugins: {  }
