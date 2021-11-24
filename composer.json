@@ -96,7 +96,8 @@
         "drupal/webform_views": "^5.0@alpha",
         "drupal/xmlsitemap": "^1.0",
         "drush/drush": "^10.3",
-        "kint-php/kint": "^3.3"
+        "kint-php/kint": "^3.3",
+        "symfony/dotenv": "^4.4"
     },
     "require-dev": {
         "metadrop/drupal-dev": "^0.1"
