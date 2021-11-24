@@ -783,9 +783,9 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
  * Keep this code block at the end of this file to take full effect.
  */
 #
-if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+/* if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
   include $app_root . '/' . $site_path . '/settings.local.php';
-}
+} */
 
 $databases['default']['default'] = [
   'database' => getenv('DB_NAME'),
@@ -800,7 +800,7 @@ $databases['default']['default'] = [
 
 $config['config_split.config_split.local']['status'] = FALSE;
 
-$settings['redis.connection']['host'] = 'redis';
+/* $settings['redis.connection']['host'] = 'redis';
 $settings['redis.connection']['port'] = '6379';
 //$settings['redis.connection']['password'] = '';
 $settings['redis.connection']['base'] = 0;
@@ -810,4 +810,4 @@ $settings['cache']['default'] = 'cache.backend.redis';
 $settings['cache']['bins']['bootstrap'] = 'cache.backend.chainedfast';
 $settings['cache']['bins']['discovery'] = 'cache.backend.chainedfast';
 $settings['cache']['bins']['config'] = 'cache.backend.chainedfast';
-$settings['container_yamls'][] = "sites/default/redis.services.yml";
+$settings['container_yamls'][] = "sites/default/redis.services.yml"; */
