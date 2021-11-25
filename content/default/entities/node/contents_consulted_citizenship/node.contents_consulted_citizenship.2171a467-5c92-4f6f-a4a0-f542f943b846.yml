@@ -1,0 +1,77 @@
+uuid:
+  -
+    value: 2171a467-5c92-4f6f-a4a0-f542f943b846
+langcode:
+  -
+    value: es
+type:
+  -
+    target_id: contents_consulted_citizenship
+    target_type: node_type
+    target_uuid: b20e8a5d-ff0d-48b0-bccc-83cc8b2d5a6e
+revision_timestamp:
+  -
+    value: '2021-09-07T21:41:34+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+revision_log: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+title:
+  -
+    value: 'Ventanilla única de trámites'
+created:
+  -
+    value: '2021-09-07T21:40:31+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2021-09-15T19:13:52+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: false
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+metatag:
+  value:
+    canonical_url: 'http://default/es/node/7'
+    title: 'Ventanilla única de trámites | Webcrc'
+path:
+  -
+    alias: null
+    pid: null
+    langcode: es
+publish_on: {  }
+unpublish_on: {  }
+field_consulted_content_url:
+  -
+    uri: 'route:<nolink>'
+    title: ''
+    options: {  }
+field_consulted_content_icon:
+  -
+    target_type: media
+    target_uuid: 69eba807-8b45-4e7a-8162-db1554dbd195
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+    media:
+      - media.images_icons.69eba807-8b45-4e7a-8162-db1554dbd195

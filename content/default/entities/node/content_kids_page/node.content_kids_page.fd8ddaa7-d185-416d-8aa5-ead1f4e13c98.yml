@@ -1,0 +1,89 @@
+uuid:
+  -
+    value: fd8ddaa7-d185-416d-8aa5-ead1f4e13c98
+langcode:
+  -
+    value: es
+type:
+  -
+    target_id: content_kids_page
+    target_type: node_type
+    target_uuid: 3b4d5b31-5ce4-4cf5-9062-fdb8d8cb65db
+revision_timestamp:
+  -
+    value: '2021-10-02T01:00:16+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+revision_log: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+title:
+  -
+    value: 'CRC Niños'
+created:
+  -
+    value: '2021-10-02T01:00:08+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2021-10-08T20:02:31+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: false
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+metatag:
+  value:
+    canonical_url: 'http://default/es/ninos'
+    title: 'CRC Niños | Webcrc'
+path:
+  -
+    alias: /ninos
+publish_on: {  }
+unpublish_on: {  }
+field_content_logo:
+  -
+    target_type: media
+    target_uuid: 19745296-b957-4ba5-adaf-c6ff3ef83ec9
+field_content_tabs:
+  -
+    target_type: paragraph
+    target_uuid: d4930bf6-7c06-440c-8cac-a6dcc829970c
+field_content_video:
+  -
+    target_type: media
+    target_uuid: 87fd1f7d-f93b-45d9-94e9-37b167c32dd1
+field_introduccion_contenido:
+  -
+    value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac lorem at nibh auctor blandit. Maecenas viverra pharetra ligula nec imperdiet. Nulla faucibus sapien a vehicula tempus.'
+field_content_background_image:
+  -
+    target_type: media
+    target_uuid: 433a0e17-c595-4d49-9725-acd6fe16e558
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+    media:
+      - media.logos.19745296-b957-4ba5-adaf-c6ff3ef83ec9
+      - media.remote_video.87fd1f7d-f93b-45d9-94e9-37b167c32dd1
+      - media.image.433a0e17-c595-4d49-9725-acd6fe16e558
+    paragraph:
+      - paragraph.tabs_wrapper_global.d4930bf6-7c06-440c-8cac-a6dcc829970c

@@ -1,0 +1,49 @@
+uuid:
+  -
+    value: d4930bf6-7c06-440c-8cac-a6dcc829970c
+langcode:
+  -
+    value: es
+type:
+  -
+    target_id: tabs_wrapper_global
+    target_type: paragraphs_type
+    target_uuid: 58713758-0ab7-45ec-8e8b-b24f3341ae34
+status:
+  -
+    value: true
+created:
+  -
+    value: '2021-10-02T01:00:16+00:00'
+    format: 'Y-m-d\TH:i:sP'
+parent_id:
+  -
+    value: '15'
+parent_type:
+  -
+    value: node
+parent_field_name:
+  -
+    value: field_content_tabs
+behavior_settings:
+  -
+    value: {  }
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_tabs_content:
+  -
+    target_type: paragraph
+    target_uuid: 94369351-4f45-4920-b4d4-43a3a20b0244
+  -
+    target_type: paragraph
+    target_uuid: 16c275dd-b5a3-463e-817f-19dfe1f20059
+_content_sync:
+  entity_type: paragraph
+  entity_dependencies:
+    paragraph:
+      - paragraph.tab_header.94369351-4f45-4920-b4d4-43a3a20b0244
+      - paragraph.tab_header.16c275dd-b5a3-463e-817f-19dfe1f20059

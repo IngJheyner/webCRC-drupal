@@ -1,0 +1,59 @@
+uuid:
+  -
+    value: 87fd1f7d-f93b-45d9-94e9-37b167c32dd1
+langcode:
+  -
+    value: es
+bundle:
+  -
+    target_id: remote_video
+    target_type: media_type
+    target_uuid: f10c121b-66e6-41c3-ad49-69552149685c
+revision_created:
+  -
+    value: '2021-10-04T15:18:11+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+revision_log_message: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+name:
+  -
+    value: 'Portal de la CRC para los niños'
+thumbnail:
+  -
+    alt: ''
+    title: null
+    width: 480
+    height: 360
+    target_type: file
+    target_uuid: 12026169-5ca8-468b-a5ed-374fc45238b5
+created:
+  -
+    value: '2021-10-04T15:18:09+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2021-10-04T15:18:09+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_oembed_video:
+  -
+    value: 'https://youtu.be/bSn1dJZPvMw'
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+    file:
+      - file.file.12026169-5ca8-468b-a5ed-374fc45238b5

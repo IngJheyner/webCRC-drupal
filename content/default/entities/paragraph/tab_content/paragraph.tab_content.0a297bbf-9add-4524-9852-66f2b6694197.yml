@@ -1,0 +1,47 @@
+uuid:
+  -
+    value: 0a297bbf-9add-4524-9852-66f2b6694197
+langcode:
+  -
+    value: es
+type:
+  -
+    target_id: tab_content
+    target_type: paragraphs_type
+    target_uuid: 3e5560c8-45cc-4ed0-8d28-ece2ef74d8db
+status:
+  -
+    value: true
+created:
+  -
+    value: '2021-10-02T01:02:54+00:00'
+    format: 'Y-m-d\TH:i:sP'
+parent_id:
+  -
+    value: '56'
+parent_type:
+  -
+    value: paragraph
+parent_field_name:
+  -
+    value: field_tab_content
+behavior_settings:
+  -
+    value: {  }
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_content_personalized: {  }
+field_tab_type_view:
+  -
+    target_id: tabs_content_kids
+    display_id: juegos_pagina_infantes
+    data: 'a:5:{s:8:"argument";N;s:5:"limit";N;s:6:"offset";N;s:5:"title";N;s:5:"pager";N;}'
+    target_type: view
+    target_uuid: 994b442e-499b-455f-b440-22ade17744e6
+_content_sync:
+  entity_type: paragraph
+  entity_dependencies: {  }

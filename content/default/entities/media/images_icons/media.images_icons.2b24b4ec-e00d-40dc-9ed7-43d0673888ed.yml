@@ -1,0 +1,73 @@
+uuid:
+  -
+    value: 2b24b4ec-e00d-40dc-9ed7-43d0673888ed
+langcode:
+  -
+    value: es
+bundle:
+  -
+    target_id: images_icons
+    target_type: media_type
+    target_uuid: 0e378669-b385-4b74-a177-1947821cb21c
+revision_created:
+  -
+    value: '2021-09-07T21:39:05+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+revision_log_message: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+name:
+  -
+    value: eventos-comision-de-regulacion-de-comunicaciones.svg
+thumbnail:
+  -
+    alt: eventos-comision-de-regulacion-de-comunicaciones-crc
+    title: null
+    width: null
+    height: null
+    target_type: file
+    target_uuid: 1984e6fc-1529-4c47-bb9d-a90b04fbdf7d
+created:
+  -
+    value: '2021-09-07T21:38:55+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2021-09-07T21:38:55+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+metatag:
+  value:
+    canonical_url: 'http://default/es/index'
+    title: '| Webcrc'
+path:
+  -
+    alias: null
+    pid: null
+    langcode: es
+field_media_image:
+  -
+    alt: eventos-comision-de-regulacion-de-comunicaciones-crc
+    title: ''
+    width: 44
+    height: 44
+    target_type: file
+    target_uuid: 1984e6fc-1529-4c47-bb9d-a90b04fbdf7d
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+    file:
+      - file.file.1984e6fc-1529-4c47-bb9d-a90b04fbdf7d
