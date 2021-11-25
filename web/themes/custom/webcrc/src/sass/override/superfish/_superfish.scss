@@ -14,6 +14,17 @@ nav.primary-menu {
 
     li {
       background: transparent;
+
+      .field--name-field-content-animated-icon {
+        position: absolute;
+        display: none;
+        max-width: 100px;
+        min-width: auto;
+        right: 0;
+        left: 0;
+        margin: auto;
+        bottom: 100%;
+      }
       
       a,
       a:visited {
@@ -63,6 +74,12 @@ nav.primary-menu {
     a:hover .sf-sub-indicator:after
     {
       color: rgba(0,0,0,1);
+    }
+
+    &:hover {
+      .field--name-field-content-animated-icon {
+        display: block;
+      }
     }
   }
 

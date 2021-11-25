@@ -1,0 +1,33 @@
+uuid: 395596e5-e269-4c1b-bf7e-20a0f8f9f016
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.microsites_documents.field_media_audio_file
+    - field.field.media.microsites_documents.field_media_image
+    - image.style.thumbnail
+    - media.type.microsites_documents
+  module:
+    - svg_image
+id: media.microsites_documents.media_library
+targetEntityType: media
+bundle: microsites_documents
+mode: media_library
+content:
+  field_media_image:
+    weight: -50
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  field_media_audio_file: true
+  langcode: true
+  name: true
+  path: true
+  status: true
+  uid: true

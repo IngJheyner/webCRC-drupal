@@ -1,0 +1,11 @@
+uuid: 030426d3-bb8b-4c30-9049-a650005fa5cb
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.microsites_documents
+id: media.microsites_documents
+target_entity_type_id: media
+target_bundle: microsites_documents
+default_langcode: site_default
+language_alterable: false

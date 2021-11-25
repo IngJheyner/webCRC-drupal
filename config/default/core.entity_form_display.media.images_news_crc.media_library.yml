@@ -1,0 +1,31 @@
+uuid: 04270a3b-2c65-4094-9828-a435cf8b67a2
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.images_news_crc.field_media_image
+    - image.style.thumbnail
+    - media.type.images_news_crc
+  module:
+    - svg_image
+id: media.images_news_crc.media_library
+targetEntityType: media
+bundle: images_news_crc
+mode: media_library
+content:
+  field_media_image:
+    weight: -50
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  path: true
+  status: true
+  uid: true

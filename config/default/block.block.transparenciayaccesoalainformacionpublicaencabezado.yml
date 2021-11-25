@@ -2,8 +2,6 @@ uuid: 4bc3cd34-7f46-461a-89c5-d6c306d857ac
 langcode: es
 status: true
 dependencies:
-  content:
-    - 'block_content:bloq_descrip_menu_transparencia:63d3fd79-a7e3-4ce3-aba1-af6e05bc66e2'
   module:
     - system
   theme:

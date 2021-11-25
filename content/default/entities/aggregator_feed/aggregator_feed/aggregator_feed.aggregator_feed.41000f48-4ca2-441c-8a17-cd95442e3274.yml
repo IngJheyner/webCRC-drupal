@@ -1,0 +1,41 @@
+uuid:
+  -
+    value: 41000f48-4ca2-441c-8a17-cd95442e3274
+langcode:
+  -
+    value: es
+title:
+  -
+    value: 'Rss ultimas noticias de postdata'
+url:
+  -
+    value: 'https://www.postdata.gov.co/postdata-rss.xml'
+refresh:
+  -
+    value: 86400
+checked:
+  -
+    value: '2021-11-24T14:59:47+00:00'
+    format: 'Y-m-d\TH:i:sP'
+queued:
+  -
+    value: '1970-01-01T00:00:00+00:00'
+    format: 'Y-m-d\TH:i:sP'
+link:
+  -
+    value: 'https://www.postdata.gov.co/postdata-rss'
+description:
+  -
+    value: 'Listado de últimos informes y data flash publicados en Postdata'
+image: {  }
+hash:
+  -
+    value: d0ce70e098ea23ede82f65fd11e9d0f49644e905227fecf9b0e4063297d48336
+etag: {  }
+modified: {  }
+metatag:
+  value:
+    canonical_url: 'http://default/es/index'
+    title: '| Webcrc'
+_content_sync:
+  entity_type: aggregator_feed

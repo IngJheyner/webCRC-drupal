@@ -1,0 +1,70 @@
+uuid: b96a6e37-216c-406e-9122-961887464a40
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.themes_interest_microsite.field_content_image
+    - field.field.paragraph.themes_interest_microsite.field_url
+    - paragraphs.paragraphs_type.themes_interest_microsite
+  module:
+    - blazy
+    - link
+id: paragraph.themes_interest_microsite.default
+targetEntityType: paragraph
+bundle: themes_interest_microsite
+mode: default
+content:
+  field_content_image:
+    weight: 0
+    label: hidden
+    settings:
+      link: '1'
+      class: ''
+      id: ''
+      image: ''
+      overlay: ''
+      title: ''
+      vanilla: false
+      icon: ''
+      layout: ''
+      view_mode: ''
+      cache: 0
+      current_view_mode: ''
+      skin: ''
+      fx: ''
+      style: ''
+      background: false
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      caption: {  }
+      responsive_image_style: ''
+      box_style: ''
+      image_style: ''
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
+      _uri: ''
+      breakpoints: {  }
+      sizes: ''
+      grid_header: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
+    third_party_settings: {  }
+    type: blazy_media
+    region: content
+  field_url:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  search_api_excerpt: true

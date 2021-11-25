@@ -1,0 +1,35 @@
+uuid:
+  -
+    value: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+langcode:
+  -
+    value: en
+name:
+  -
+    value: admin-crc
+created:
+  -
+    value: '2021-08-23T16:38:38+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2021-08-23T16:58:02+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+user_picture: {  }
+_content_sync:
+  entity_type: user
+  entity_dependencies: {  }
+pass:
+  -
+    value: $S$E8/mVrvWEBetAtEUoFOiyd1AalsjSIIg88.3Wl37Zpf6DrTCG0nW
+    pre_hashed: true
+mail:
+  value: programador3d@3dstudioweb.com
+status:
+  value: '1'
+roles:
+  - authenticated
+  - administrator

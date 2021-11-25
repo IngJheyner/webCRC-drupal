@@ -43,6 +43,12 @@
       {% endif %}
     {% endblock %}
 
+    {% block breadcrumbs %}
+      {% if page.breadcrumbs %}
+        {{ page.breadcrumbs }}
+      {% endif %}
+    {% endblock %}
+
     {% block top_a %}
       {% if page.top_a %}
         {{ page.top_a }}

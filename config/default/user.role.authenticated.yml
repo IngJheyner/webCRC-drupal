@@ -1,16 +1,7 @@
 uuid: 99005c98-421e-418b-b928-32819ff19c1a
 langcode: es
 status: true
-dependencies:
-  config:
-    - filter.format.basic_html
-  module:
-    - comment
-    - contact
-    - filter
-    - media
-    - shortcut
-    - system
+dependencies: {  }
 _core:
   default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
 id: authenticated

@@ -1,0 +1,21 @@
+uuid: 06c7f4a0-5586-4a08-b659-7a466e9bbd92
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.audio_news_crc.field_media_audio_file
+    - media.type.audio_news_crc
+id: media.audio_news_crc.media_library
+targetEntityType: media
+bundle: audio_news_crc
+mode: media_library
+content: {  }
+hidden:
+  created: true
+  field_media_audio_file: true
+  langcode: true
+  name: true
+  path: true
+  status: true
+  uid: true

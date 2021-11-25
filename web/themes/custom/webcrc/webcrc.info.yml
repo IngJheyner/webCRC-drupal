@@ -13,6 +13,7 @@ regions:
   logo: 'Logo'
   search: 'Buscador'
   main_menu: 'Menu'
+  breadcrumbs: 'Breadcrumbs'
   top_a: 'Top a'
   top_b: 'Top b'
   content: Content
@@ -21,11 +22,6 @@ regions:
   footer_right: 'Footer right'
   footer_bottom: 'Footer bottom'
   disabled: 'Desactivado'
-
-
-  navbar_branding: Navbar branding
-  navbar_left:  Navbar left
-  navbar_right: Navbar right
   
   page_bottom: Page bottom
   footer: Footer

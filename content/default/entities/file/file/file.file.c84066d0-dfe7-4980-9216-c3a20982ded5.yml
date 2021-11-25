@@ -1,0 +1,42 @@
+uuid:
+  -
+    value: c84066d0-dfe7-4980-9216-c3a20982ded5
+langcode:
+  -
+    value: es
+uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+filename:
+  -
+    value: noticia-1-crc.PNG
+uri:
+  -
+    value: 'public://webcrc/images/noticia-1-crc.PNG'
+    url: /sites/default/files/webcrc/images/noticia-1-crc.PNG
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 514365
+status:
+  -
+    value: true
+created:
+  -
+    value: '2021-09-21T15:38:43+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2021-09-21T15:38:50+00:00'
+    format: 'Y-m-d\TH:i:sP'
+origname:
+  -
+    value: noticia-1-crc.PNG
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf

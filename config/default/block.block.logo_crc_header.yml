@@ -1,0 +1,25 @@
+uuid: eb7a8df3-0844-4407-bfd9-500b2e282f58
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:home_header:06f5900d-1d33-41c8-a2b4-222862ad15a8'
+  module:
+    - block_content
+  theme:
+    - webcrc
+id: logo_crc_header
+theme: webcrc
+region: logo
+weight: 0
+provider: null
+plugin: 'block_content:06f5900d-1d33-41c8-a2b4-222862ad15a8'
+settings:
+  id: 'block_content:06f5900d-1d33-41c8-a2b4-222862ad15a8'
+  label: 'Logo CRC'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

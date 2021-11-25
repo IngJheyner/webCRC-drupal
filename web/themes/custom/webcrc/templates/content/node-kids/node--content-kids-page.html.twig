@@ -17,13 +17,19 @@
 %}
 <article{{ attributes.addClass(classes) }}>
   {% block content %}
-    <div class="card text-left">
-      {{ content.field_content_background_image }}
+    <div class="card border-0 text-left">
+      <div class="content-kids-page__field-content-background-image">
+        {{ content.field_content_background_image }}
+      </div>
       <div class="card-body">
-        {{ content.field_content_video }}
+        <div class="content-kids-page__field-content-video">
+          {{ content.field_content_video }}
+        </div>
         {{ content.field_introduccion_contenido }}
       </div>
-      {{ content.field_content_logo }}
+      <div class="content-kids-page__field-content-logo">
+        {{ content.field_content_logo }}
+      </div>
     </div>
     {{ content.field_content_tabs }}
   {% endblock %}

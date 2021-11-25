@@ -11,7 +11,7 @@ _core:
 id: webcrc_messages
 theme: webcrc
 region: disabled
-weight: -10
+weight: -12
 provider: null
 plugin: system_messages_block
 settings:

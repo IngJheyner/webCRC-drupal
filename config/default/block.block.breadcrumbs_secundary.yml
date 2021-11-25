@@ -8,8 +8,8 @@ dependencies:
     - webcrc
 id: breadcrumbs_secundary
 theme: webcrc
-region: top_a
-weight: -14
+region: disabled
+weight: -15
 provider: null
 plugin: page_title_block
 settings:

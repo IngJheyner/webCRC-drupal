@@ -1,0 +1,91 @@
+uuid:
+  -
+    value: 68169704-dc90-4655-8c32-ba5034fc5475
+langcode:
+  -
+    value: es
+type:
+  -
+    target_id: news_crc
+    target_type: node_type
+    target_uuid: ccc472f6-c6a5-4123-a175-760f18f5a9ad
+revision_timestamp:
+  -
+    value: '2021-09-22T17:40:00+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+revision_log: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+title:
+  -
+    value: 'Publicado los comentarios a la propuesta regulatoria que actualiza el Revisión del Régimen de Acceso, Uso e Interconexión'
+created:
+  -
+    value: '2021-09-22T17:39:54+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2021-10-08T21:59:33+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: false
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+metatag:
+  value:
+    canonical_url: 'http://default/es/noticias/movilidad/publicado-comentarios-propuesta-regulatoria-actualiza-revision-regimen-acceso'
+    title: 'Publicado los comentarios a la propuesta regulatoria que actualiza el Revisión del Régimen de Acceso, Uso e Interconexión | Webcrc'
+path:
+  -
+    alias: /noticias/movilidad/publicado-comentarios-propuesta-regulatoria-actualiza-revision-regimen-acceso
+publish_on: {  }
+unpublish_on: {  }
+feeds_item: {  }
+field_category:
+  -
+    target_type: taxonomy_term
+    target_uuid: ef06cb2d-6af9-498f-a37a-3543c4c8d1ee
+field_content:
+  -
+    value: "<p>pruebas</p>\r\n"
+    format: basic_html
+    processed: '<p>pruebas</p>'
+field_content_featured: {  }
+field_image_content:
+  -
+    target_type: media
+    target_uuid: eeb77d03-03d7-4686-9066-c4183b46869d
+field_introduccion_contenido:
+  -
+    value: pruebas
+field_introduction_image:
+  -
+    target_type: media
+    target_uuid: eeb77d03-03d7-4686-9066-c4183b46869d
+field_tags: {  }
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+    taxonomy_term:
+      - taxonomy_term.news_tags.ef06cb2d-6af9-498f-a37a-3543c4c8d1ee
+    media:
+      - media.image.eeb77d03-03d7-4686-9066-c4183b46869d

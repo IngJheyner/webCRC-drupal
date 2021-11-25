@@ -1,15 +1,17 @@
 uuid: 12c2e77d-4b48-4d37-ba52-031a74687d1b
 langcode: en
-status: false
+status: true
 dependencies:
+  module:
+    - system
   theme:
     - webcrc
 _core:
   default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
 id: webcrc_page_title
 theme: webcrc
-region: content
-weight: -11
+region: breadcrumbs
+weight: -15
 provider: null
 plugin: page_title_block
 settings:
@@ -17,4 +19,8 @@ settings:
   label: 'Título de páginas'
   provider: core
   label_display: '0'
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true

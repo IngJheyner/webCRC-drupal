@@ -48,6 +48,7 @@ mix.browserSync({
       .copy('node_modules/slick-carousel/slick/slick-theme.css', '../../../libraries/slick/slick/slick-theme.css')
       .copy('node_modules/slick-carousel/slick/ajax-loader.gif', '../../../libraries/slick/slick/ajax-loader.gif')
       .copy('node_modules/slick-carousel/slick/fonts/', '../../../libraries/slick/slick/fonts/')
+      .copy('node_modules/slick-carousel/package.json', '../../../libraries/slick/package.json')
       .copy('node_modules/a11y-accordion-tabs/a11y-accordion-tabs.min.js', '../../../libraries/a11y-accordion-tabs/a11y-accordion-tabs.js')
       .copy('src/extra_libraries/superfish/', '../../../libraries/superfish/')
       .copy('src/extra_libraries/d3/', '../../../libraries/d3/')
