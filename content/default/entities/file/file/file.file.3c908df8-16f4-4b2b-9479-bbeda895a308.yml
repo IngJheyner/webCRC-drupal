@@ -1,0 +1,42 @@
+uuid:
+  -
+    value: 3c908df8-16f4-4b2b-9479-bbeda895a308
+langcode:
+  -
+    value: es
+uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+filename:
+  -
+    value: slide-1-crc.png
+uri:
+  -
+    value: 'public://webcrc/images/slideshow/slide-1-crc.png'
+    url: /sites/default/files/webcrc/images/slideshow/slide-1-crc.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 702400
+status:
+  -
+    value: true
+created:
+  -
+    value: '2021-08-24T23:52:24+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2021-08-24T23:53:12+00:00'
+    format: 'Y-m-d\TH:i:sP'
+origname:
+  -
+    value: slide-1-crc.png
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
