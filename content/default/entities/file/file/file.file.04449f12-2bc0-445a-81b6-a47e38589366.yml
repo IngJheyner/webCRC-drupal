@@ -1,0 +1,42 @@
+uuid:
+  -
+    value: 04449f12-2bc0-445a-81b6-a47e38589366
+langcode:
+  -
+    value: es
+uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+filename:
+  -
+    value: biblioteca-virtual-comision-de-regulacion-de-comunicaciones.svg
+uri:
+  -
+    value: 'public://webcrc/images/iconos/biblioteca-virtual-comision-de-regulacion-de-comunicaciones.svg'
+    url: /sites/default/files/webcrc/images/iconos/biblioteca-virtual-comision-de-regulacion-de-comunicaciones.svg
+filemime:
+  -
+    value: image/svg+xml
+filesize:
+  -
+    value: 617
+status:
+  -
+    value: true
+created:
+  -
+    value: '2021-09-07T21:36:25+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2021-09-07T21:36:38+00:00'
+    format: 'Y-m-d\TH:i:sP'
+origname:
+  -
+    value: biblioteca-virtual-comision-de-regulacion-de-comunicaciones.svg
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf

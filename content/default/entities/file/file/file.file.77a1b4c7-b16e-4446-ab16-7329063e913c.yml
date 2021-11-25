@@ -1,0 +1,42 @@
+uuid:
+  -
+    value: 77a1b4c7-b16e-4446-ab16-7329063e913c
+langcode:
+  -
+    value: es
+uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+filename:
+  -
+    value: ventanilla-unica-de-regulacion-de-comunicaciones.svg
+uri:
+  -
+    value: 'public://webcrc/images/iconos/ventanilla-unica-de-regulacion-de-comunicaciones.svg'
+    url: /sites/default/files/webcrc/images/iconos/ventanilla-unica-de-regulacion-de-comunicaciones.svg
+filemime:
+  -
+    value: image/svg+xml
+filesize:
+  -
+    value: 648
+status:
+  -
+    value: true
+created:
+  -
+    value: '2021-09-07T21:41:41+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2021-09-07T21:41:51+00:00'
+    format: 'Y-m-d\TH:i:sP'
+origname:
+  -
+    value: ventanilla-unica-de-regulacion-de-comunicaciones.svg
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf

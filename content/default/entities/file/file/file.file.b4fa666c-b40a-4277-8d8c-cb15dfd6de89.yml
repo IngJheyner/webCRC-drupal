@@ -1,0 +1,42 @@
+uuid:
+  -
+    value: b4fa666c-b40a-4277-8d8c-cb15dfd6de89
+langcode:
+  -
+    value: es
+uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+filename:
+  -
+    value: normatividad-de-regulacion-de-comunicaciones.svg
+uri:
+  -
+    value: 'public://webcrc/images/iconos/normatividad-de-regulacion-de-comunicaciones.svg'
+    url: /sites/default/files/webcrc/images/iconos/normatividad-de-regulacion-de-comunicaciones.svg
+filemime:
+  -
+    value: image/svg+xml
+filesize:
+  -
+    value: 476
+status:
+  -
+    value: true
+created:
+  -
+    value: '2021-09-07T21:40:09+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2021-09-07T21:40:20+00:00'
+    format: 'Y-m-d\TH:i:sP'
+origname:
+  -
+    value: normatividad-de-regulacion-de-comunicaciones.svg
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
