@@ -1,13 +1,13 @@
-uuid: 9c3c2f19-78f4-43b3-a161-3b076b1b65ac
+uuid: de0585b9-8ad1-450c-a66d-dcfa6e220837
 langcode: es
 status: true
 dependencies:
   module:
     - feeds
-    - paragraphs
-id: paragraph.feeds_item
+    - media
+id: media.feeds_item
 field_name: feeds_item
-entity_type: paragraph
+entity_type: media
 type: feeds_item
 settings:
   target_type: feeds_feed

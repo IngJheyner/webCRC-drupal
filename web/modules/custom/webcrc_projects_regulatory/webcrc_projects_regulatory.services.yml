@@ -1,0 +1,5 @@
+services:
+  webcrc_projects_regulatory.feeds_subscriber:
+    class: Drupal\webcrc_projects_regulatory\EventSubscriber\FeedsSubscriber
+    tags:
+      - { name: event_subscriber }

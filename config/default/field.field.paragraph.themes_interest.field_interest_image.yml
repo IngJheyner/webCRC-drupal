@@ -37,7 +37,7 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: webfinde/images/themes_interest
+  file_directory: webcrc/images/themes_interest
   file_extensions: 'png gif jpg jpeg'
   max_filesize: '2 mb'
   max_resolution: 320x150

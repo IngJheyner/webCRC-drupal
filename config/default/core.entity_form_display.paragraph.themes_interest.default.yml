@@ -3,30 +3,21 @@ langcode: es
 status: true
 dependencies:
   config:
+    - field.field.paragraph.themes_interest.field_content_image
     - field.field.paragraph.themes_interest.field_interest_image
     - field.field.paragraph.themes_interest.field_interest_link
-    - field.field.paragraph.themes_interest.field_content_image
     - field.field.paragraph.themes_interest.field_url
     - image.style.thumbnail
     - paragraphs.paragraphs_type.themes_interest
   module:
     - link
-    - svg_image
     - media_library
+    - svg_image
 id: paragraph.themes_interest.default
 targetEntityType: paragraph
 bundle: themes_interest
 mode: default
 content:
-  field_interest_image:
-    weight: 0
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
-    region: content
-  field_interest_link:
   field_content_image:
     weight: 0
     settings:
@@ -34,8 +25,24 @@ content:
     third_party_settings: {  }
     type: media_library_widget
     region: content
-  field_url:
+  field_interest_image:
     weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_interest_link:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_url:
+    weight: 3
     settings:
       placeholder_url: ''
       placeholder_title: ''

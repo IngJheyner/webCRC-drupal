@@ -909,9 +909,9 @@ display:
           table: webform_submission_field_poll_content_useful_radios_button
           field: webform_submission_value
           relationship: none
-          group_type: group
+          group_type: count
           admin_label: ''
-          order: ASC
+          order: DESC
           exposed: false
           expose:
             label: ''
@@ -955,10 +955,16 @@ display:
         - 'config:core.entity_view_display.node.contents_consulted_government.teaser'
         - 'config:core.entity_view_display.node.contents_consulted_industry.default'
         - 'config:core.entity_view_display.node.contents_consulted_industry.teaser'
+        - 'config:core.entity_view_display.node.content_kids_page.default'
+        - 'config:core.entity_view_display.node.content_kids_page.teaser'
+        - 'config:core.entity_view_display.node.game_kids.default'
+        - 'config:core.entity_view_display.node.game_kids.teaser'
         - 'config:core.entity_view_display.node.home_slideshow.default'
         - 'config:core.entity_view_display.node.home_slideshow.teaser'
         - 'config:core.entity_view_display.node.library_virtual.full'
         - 'config:core.entity_view_display.node.library_virtual.teaser'
+        - 'config:core.entity_view_display.node.microsite_crc.default'
+        - 'config:core.entity_view_display.node.microsite_crc.teaser'
         - 'config:core.entity_view_display.node.news_crc.default'
         - 'config:core.entity_view_display.node.news_crc.teaser'
         - 'config:core.entity_view_display.node.normatividad.default'
@@ -969,6 +975,8 @@ display:
         - 'config:core.entity_view_display.node.proyectos_regulatorios.default'
         - 'config:core.entity_view_display.node.proyectos_regulatorios.full'
         - 'config:core.entity_view_display.node.proyectos_regulatorios.teaser'
+        - 'config:core.entity_view_display.node.tip_cont_simple_transp.default'
+        - 'config:core.entity_view_display.node.tip_cont_simple_transp.teaser'
   embed_administer:
     display_plugin: embed
     id: embed_administer

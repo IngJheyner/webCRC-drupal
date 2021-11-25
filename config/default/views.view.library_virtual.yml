@@ -1570,9 +1570,10 @@ display:
             remember: false
             multiple: false
             remember_roles:
+              authenticated: authenticated
               anonymous: '0'
               administrator: '0'
-            placeholder: 'ISBN, ISSN, Titulo, Resumen o Notas'
+            placeholder: 'ISBN, ISSN, Titulo'
           is_grouped: false
           group_info:
             label: ''
@@ -1706,6 +1707,7 @@ display:
             remember: false
             multiple: true
             remember_roles:
+              authenticated: authenticated
               anonymous: '0'
               administrator: '0'
             reduce: false
@@ -1721,7 +1723,7 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          reduce_duplicates: false
+          reduce_duplicates: true
           type: textfield
           limit: true
           vid: library_keywords
@@ -1752,6 +1754,7 @@ display:
             remember: false
             multiple: false
             remember_roles:
+              authenticated: authenticated
               anonymous: '0'
               administrator: '0'
             reduce: false
@@ -1767,7 +1770,7 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          reduce_duplicates: false
+          reduce_duplicates: true
           type: textfield
           limit: true
           vid: library_author

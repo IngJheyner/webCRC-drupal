@@ -14,7 +14,7 @@ entity_type: node
 bundle: proyectos_regulatorios
 label: 'Propuestas, Comentarios y Com. extemporáneo.'
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
@@ -25,17 +25,32 @@ settings:
     target_bundles:
       iterecciones_proyectos: iterecciones_proyectos
     target_bundles_drag_drop:
-      enlaces:
-        weight: 8
-        enabled: false
       from_library:
         weight: 9
         enabled: false
       iterecciones_proyectos:
         enabled: true
         weight: 11
+      list_social_networks:
+        weight: 19
+        enabled: false
+      microsite_block:
+        weight: 20
+        enabled: false
+      navigation_microsites:
+        weight: 21
+        enabled: false
+      page_wrapper_micrositie:
+        weight: 22
+        enabled: false
       postdata_indicators:
         weight: 11
+        enabled: false
+      quick_access:
+        weight: 24
+        enabled: false
+      slideshow_crc:
+        weight: 25
         enabled: false
       tab_content:
         weight: 13
@@ -45,5 +60,17 @@ settings:
         enabled: false
       tabs_wrapper:
         weight: 12
+        enabled: false
+      tabs_wrapper_global:
+        weight: 27
+        enabled: false
+      tabs_wrapper_secondary:
+        weight: 28
+        enabled: false
+      tabs_wrapper_vertical:
+        weight: 29
+        enabled: false
+      themes_interest:
+        weight: 32
         enabled: false
 field_type: entity_reference_revisions

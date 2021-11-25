@@ -3,6 +3,7 @@ langcode: es
 status: true
 dependencies:
   config:
+    - field.field.media.propuesta_interaccion_proyectos_.feeds_item
     - field.field.media.propuesta_interaccion_proyectos_.field_media_file_1
     - field.field.media.propuesta_interaccion_proyectos_.field_ruta_file_propuestas
     - media.type.propuesta_interaccion_proyectos_
@@ -54,6 +55,7 @@ content:
     type: string_textfield
     region: content
 hidden:
+  feeds_item: true
   langcode: true
   name: true
   path: true

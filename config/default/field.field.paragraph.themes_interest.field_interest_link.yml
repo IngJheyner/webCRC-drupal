@@ -11,7 +11,7 @@ id: paragraph.themes_interest.field_interest_link
 field_name: field_interest_link
 entity_type: paragraph
 bundle: themes_interest
-label: Enlace
+label: 'Enlace Link'
 description: ''
 required: false
 translatable: false

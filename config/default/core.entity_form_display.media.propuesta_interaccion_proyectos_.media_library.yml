@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_form_mode.media.media_library
+    - field.field.media.propuesta_interaccion_proyectos_.feeds_item
     - field.field.media.propuesta_interaccion_proyectos_.field_media_file_1
     - field.field.media.propuesta_interaccion_proyectos_.field_ruta_file_propuestas
     - media.type.propuesta_interaccion_proyectos_
@@ -14,6 +15,7 @@ mode: media_library
 content: {  }
 hidden:
   created: true
+  feeds_item: true
   field_media_file_1: true
   field_ruta_file_propuestas: true
   langcode: true

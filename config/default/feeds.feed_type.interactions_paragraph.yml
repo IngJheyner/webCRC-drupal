@@ -1,8 +1,9 @@
-uuid: 3c3d3db8-b3a8-4aa9-b609-e5fac8139ec5
+uuid: 18ce3eb6-e2e9-4c69-80da-ac53141f529a
 langcode: es
 status: true
 dependencies:
   config:
+    - field.field.paragraph.iterecciones_proyectos.feeds_item
     - field.field.paragraph.iterecciones_proyectos.field_fases_interacciones
     - field.field.paragraph.iterecciones_proyectos.field_fecha_cierre_iteracciones
     - field.field.paragraph.iterecciones_proyectos.field_propuestas_interacciones
@@ -13,7 +14,7 @@ id: interactions_paragraph
 label: 'Interacciones [ Paragraph ]'
 description: 'Agregar contenido de tipo parrafos que se utilizan en proyectos comentarios campo interacciones.'
 help: ''
-import_period: -1
+import_period: 3600
 fetcher: upload
 fetcher_configuration:
   allowed_extensions: 'txt csv tsv xml opml'
@@ -31,42 +32,100 @@ processor_configuration:
   expire: -1
   owner_feed_author: false
   owner_id: 50
-  authorize: true
+  authorize: false
   skip_hash_check: false
   values:
     type: iterecciones_proyectos
 custom_sources:
+  parent_id:
+    label: parent_id
+    value: parent_id
+    machine_name: parent_id
+  parent_field_name:
+    label: parent_field_name
+    value: parent_field_name
+    machine_name: parent_field_name
+  parent_type:
+    label: parent_type
+    value: parent_type
+    machine_name: parent_type
   fases:
     label: fases
     value: fases
     machine_name: fases
-  fecha_cierre:
+  phases:
+    label: fases
+    value: fases
+    machine_name: phases
+  ' closing date':
     label: fecha_cierre
     value: fecha_cierre
-    machine_name: fecha_cierre
-  propuestas:
+    machine_name: ' closing date'
+  closing_date:
+    label: fecha_cierre
+    value: fecha_cierre
+    machine_name: closing_date
+  proposals:
     label: propuestas
     value: propuestas
-    machine_name: propuestas
+    machine_name: proposals
+  id:
+    label: id
+    value: id
+    machine_name: id
+  delta:
+    label: delta
+    value: delta
+    machine_name: delta
 mappings:
+  -
+    target: parent_id
+    map:
+      value: parent_id
+    unique: {  }
+    settings: {  }
+  -
+    target: parent_field_name
+    map:
+      value: parent_field_name
+    unique: {  }
+    settings: {  }
+  -
+    target: parent_type
+    map:
+      value: parent_type
+    unique: {  }
+    settings: {  }
   -
     target: field_fases_interacciones
     map:
-      value: fases
+      value: phases
     settings:
       language: null
   -
     target: field_fecha_cierre_iteracciones
     map:
-      value: fecha_cierre
+      value: closing_date
     settings:
-      language: es
-      timezone: America/Bogota
+      language: null
+      timezone: UTC
   -
     target: field_propuestas_interacciones
     map:
-      target_id: propuestas
+      target_id: proposals
     settings:
-      language: ''
+      language: null
       reference_by: name
-      autocreate: 0
+      autocreate: false
+  -
+    target: feeds_item
+    map:
+      url: ''
+      guid: parent_id
+    unique: {  }
+    settings: {  }
+  -
+    target: behavior_settings
+    map:
+      value: delta
+    settings: {  }

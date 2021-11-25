@@ -52,17 +52,23 @@
     {% block content %}
 
      {% if content.field_interactions_comments[0]['#markup'] == 'TRUE' %}
+
+      {{ content.field_interaction_extemporaneous }}
+
       <hr>
+
       <p class="my-4">
         <img src="/themes/custom/webcrc/src/images/no-aceptan-comentarios.svg" class="mr-3" alt="{{'See interaction'|t}}" onerror="this.remove();">
         {{ 'No comment'|t }}
       </p>
+
       <hr>
+      
       {{ content.field_propuestas_interacciones }}
 
      {% else %}
 
-      {{ content.field_interaction_extemporaneous}} <hr> {{ content.field_comentarios_interacciones}} <hr>{{ content.field_propuestas_interacciones }}
+      {% if content.field_interaction_extemporaneous.value %} {{ content.field_interaction_extemporaneous }} <hr> {% endif %} {% if content.field_comentarios_interacciones.value %} {{ content.field_comentarios_interacciones}} <hr> {% endif %} {{ content.field_propuestas_interacciones }}
 
      {% endif %}
 

@@ -1,16 +1,16 @@
-uuid: 649e3ac6-c870-44e4-bbe1-1bab0fc168ee
+uuid: cf335c36-f7fe-467f-8634-3d99ca210a7f
 langcode: es
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.feeds_item
-    - paragraphs.paragraphs_type.iterecciones_proyectos
+    - field.storage.media.feeds_item
+    - media.type.propuesta_interaccion_proyectos_
   module:
     - feeds
-id: paragraph.iterecciones_proyectos.feeds_item
+id: media.propuesta_interaccion_proyectos_.feeds_item
 field_name: feeds_item
-entity_type: paragraph
-bundle: iterecciones_proyectos
+entity_type: media
+bundle: propuesta_interaccion_proyectos_
 label: 'Feeds item'
 description: ''
 required: false

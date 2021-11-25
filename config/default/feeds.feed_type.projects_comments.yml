@@ -4,11 +4,29 @@ status: true
 dependencies:
   config:
     - core.base_field_override.node.proyectos_regulatorios.title
-    - field.field.node.proyectos_regulatorios.field_interacciones_proyectos
+    - field.field.node.proyectos_regulatorios.field_email_proyectos
+    - field.field.node.proyectos_regulatorios.field_estado_proyectos
+    - field.field.node.proyectos_regulatorios.field_nombre_proyecto
+    - field.field.node.proyectos_regulatorios.field_oficina_proyecto
+    - field.field.node.proyectos_regulatorios.field_projects_links
+    - field.field.node.proyectos_regulatorios.field_projects_services
+    - field.field.node.proyectos_regulatorios.field_resumen_proyecto
+    - field.field.node.proyectos_regulatorios.field_tipo_proyecto
     - node.type.proyectos_regulatorios
   module:
+    - feeds_tamper
     - node
-    - paragraphs
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      50876f0a-9b16-4199-af58-c4b0f93f00a8:
+        separator: '~'
+        limit: null
+        plugin: explode
+        source: services
+        weight: 0
+        label: 'Tomar el nombre de varios servicios para el proyecto.'
+        uuid: 50876f0a-9b16-4199-af58-c4b0f93f00a8
 id: projects_comments
 label: 'Proyectos Comentarios'
 description: 'Se crea nodo de tipo de contenido proyectos comentarios.'
@@ -20,7 +38,7 @@ fetcher_configuration:
   directory: 'private://feeds/projects_comments'
 parser: csv
 parser_configuration:
-  delimiter: ','
+  delimiter: ;
   no_headers: false
   line_limit: 100
 processor: 'entity:node'
@@ -44,16 +62,59 @@ custom_sources:
     label: title
     value: title
     machine_name: projects_title
+  id_interactions:
+    label: id_interaccion
+    value: id_interaccion
+    machine_name: id_interactions
+  state:
+    label: estado
+    value: estado
+    machine_name: state
+  created:
+    label: fecha
+    value: fecha
+    machine_name: created
+  type_project:
+    label: tipo_proyecto
+    value: tipo_proyecto
+    machine_name: type_project
+  name_project:
+    label: nombre_proyecto
+    value: nombre_proyecto
+    machine_name: name_project
+  abstract:
+    label: abstract
+    value: abstract
+    machine_name: abstract
+  email:
+    label: correo_electronico
+    value: correo_electronico
+    machine_name: email
+  office:
+    label: oficina
+    value: oficina
+    machine_name: office
+  url:
+    label: url
+    value: url
+    machine_name: url
+  text_url:
+    label: texto_url
+    value: texto_url
+    machine_name: text_url
+  services:
+    label: servicios
+    value: servicios
+    machine_name: services
+  nid:
+    label: nid
+    value: nid
+    machine_name: nid
+  '':
+    label: ''
+    value: ''
+    machine_name: ''
 mappings:
-  -
-    target: field_interacciones_proyectos
-    map:
-      value: 'parent:fid'
-    settings:
-      paragraphs_type: iterecciones_proyectos
-      language: ''
-      format: plain_text
-      paragraph_field: ''
   -
     target: title
     map:
@@ -62,3 +123,78 @@ mappings:
       value: '1'
     settings:
       language: null
+  -
+    target: field_estado_proyectos
+    map:
+      value: state
+    settings:
+      language: null
+  -
+    target: created
+    map:
+      value: created
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: field_tipo_proyecto
+    map:
+      value: type_project
+    settings:
+      language: null
+  -
+    target: field_nombre_proyecto
+    map:
+      value: name_project
+    unique: {  }
+    settings:
+      language: null
+  -
+    target: field_resumen_proyecto
+    map:
+      value: abstract
+    settings:
+      language: null
+  -
+    target: field_email_proyectos
+    map:
+      value: email
+    unique: {  }
+    settings:
+      language: null
+      defuse: false
+  -
+    target: field_oficina_proyecto
+    map:
+      value: office
+    unique: {  }
+    settings:
+      language: null
+  -
+    target: field_projects_links
+    map:
+      uri: url
+      title: text_url
+    settings:
+      language: null
+  -
+    target: field_projects_services
+    map:
+      target_id: services
+    settings:
+      language: null
+      reference_by: name
+      autocreate: false
+  -
+    target: nid
+    map:
+      value: nid
+    unique:
+      value: '1'
+    settings: {  }
+  -
+    target: vid
+    map:
+      value: nid
+    unique: {  }
+    settings: {  }

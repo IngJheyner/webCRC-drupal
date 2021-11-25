@@ -20,10 +20,10 @@ filters:
         img: img
         iframe: iframe
       media_switch: ''
-      hybrid_style: ''
       box_style: ''
-      box_caption: ''
+      hybrid_style: ''
       use_data_uri: '0'
+      box_caption: ''
   editor_file_reference:
     id: editor_file_reference
     provider: editor
@@ -50,9 +50,17 @@ filters:
     weight: 100
     settings:
       default_view_mode: default
+      allowed_view_modes: {  }
       allowed_media_types:
         image: image
         images_icons: images_icons
         remote_video: remote_video
         video: video
-      allowed_view_modes: {  }
+  slick_filter:
+    id: slick_filter
+    provider: slick
+    status: false
+    weight: 4
+    settings:
+      optionset: default
+      media_switch: ''
