@@ -26,21 +26,13 @@ content:
     type: media_library_widget
     region: content
   field_interest_image:
-    weight: 1
+    weight: 0
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
     region: content
-  field_interest_link:
-    type: link_default
-    weight: 2
-    region: content
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
   field_url:
     weight: 3
     settings:
@@ -51,4 +43,5 @@ content:
     region: content
 hidden:
   created: true
+  field_interest_link: true
   status: true

@@ -26,16 +26,16 @@ elements: |-
     '#minlength': 1
     '#maxlength': 150
     '#autocomplete': 'off'
-    '#placeholder': 'Jorge Perez, María Duarte ...'
+    '#placeholder': 'Jorge Perez'
   newsletter_user_email:
     '#type': email
-    '#title': Email
+    '#title': 'Email (*)'
     '#description': 'Correo electronico'
     '#description_display': tooltip
     '#minlength': 1
     '#maxlength': 150
+    '#placeholder': micorreo@dominio.com
     '#autocomplete': 'off'
-    '#placeholder': 'micorreo@dominio.com ...'
     '#required': true
     '#required_error': 'El email es obligatorio'
   newsletter_user_occupation:
@@ -45,10 +45,10 @@ elements: |-
     '#description_display': tooltip
     '#maxlength': 150
     '#autocomplete': 'off'
-    '#placeholder': 'Ingeniero, Estudiante, Maestro ...'
+    '#placeholder': Ingeniero
   newsletter_user_politics:
     '#type': checkbox
-    '#title': 'Acepta términos y condiciones'
+    '#title': 'Acepta términos y condiciones (*)'
     '#required': true
     '#required_error': 'Debe de aceptar los términos y condiciones primero'
   actions:

@@ -6,6 +6,7 @@ dependencies:
     - blazy
     - editor
     - media
+    - slick
 name: Micrositios
 format: microsites_editor
 weight: 0
@@ -56,6 +57,16 @@ filters:
         images_icons: images_icons
         remote_video: remote_video
         video: video
+      allowed_view_modes: {  }
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: false
+    weight: -10
+    settings:
+      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol type start> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <drupal-media data-entity-type data-entity-uuid data-view-mode data-align data-caption alt title> <div>'
+      filter_html_help: true
+      filter_html_nofollow: false
   slick_filter:
     id: slick_filter
     provider: slick
@@ -63,4 +74,26 @@ filters:
     weight: 4
     settings:
       optionset: default
+      skin: ''
+      background: false
+      layout: ''
+      optionset_thumbnail: ''
+      skin_thumbnail: ''
+      thumbnail_position: ''
+      thumbnail_caption: ''
+      image_style: ''
+      thumbnail_style: ''
+      responsive_image_style: ''
+      thumbnail_effect: ''
       media_switch: ''
+      ratio: ''
+      override: false
+      overridables:
+        arrows: '0'
+        autoplay: '0'
+        dots: '0'
+        draggable: '0'
+        infinite: '0'
+        mouseWheel: '0'
+        randomize: '0'
+        variableWidth: '0'
