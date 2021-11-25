@@ -7,7 +7,6 @@ label: local
 description: 'Configuracion del entorno de desarrollo'
 folder: ../config/envs/local
 module:
-  content_sync: 0
   devel: 0
   devel_entity_updates: 0
   devel_generate: 0

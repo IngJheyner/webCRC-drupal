@@ -1,0 +1,42 @@
+uuid:
+  -
+    value: 830a33c1-7cf0-445e-bb5a-f15d94b2b072
+langcode:
+  -
+    value: es
+uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+filename:
+  -
+    value: destacado-2-despliegue-infraestructura-comision-de-regulacion-de-comunicaciones.png
+uri:
+  -
+    value: 'public://webcrc/images/destacado-2-despliegue-infraestructura-comision-de-regulacion-de-comunicaciones.png'
+    url: /sites/default/files/webcrc/images/destacado-2-despliegue-infraestructura-comision-de-regulacion-de-comunicaciones.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 362941
+status:
+  -
+    value: true
+created:
+  -
+    value: '2021-10-26T20:49:50+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2021-10-26T20:50:00+00:00'
+    format: 'Y-m-d\TH:i:sP'
+origname:
+  -
+    value: destacado-2-despliegue-infraestructura-comision-de-regulacion-de-comunicaciones.png
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf

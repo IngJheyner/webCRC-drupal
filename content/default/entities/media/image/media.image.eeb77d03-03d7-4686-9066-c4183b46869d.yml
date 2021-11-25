@@ -1,0 +1,64 @@
+uuid:
+  -
+    value: eeb77d03-03d7-4686-9066-c4183b46869d
+langcode:
+  -
+    value: es
+bundle:
+  -
+    target_id: image
+    target_type: media_type
+    target_uuid: 6473277e-3612-4d03-a295-8a39475ca58d
+revision_created:
+  -
+    value: '2021-09-21T15:38:50+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+revision_log_message: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+name:
+  -
+    value: noticia-1-crc.PNG
+thumbnail:
+  -
+    alt: noticia-1-crc
+    title: null
+    width: 589
+    height: 332
+    target_type: file
+    target_uuid: c84066d0-dfe7-4980-9216-c3a20982ded5
+created:
+  -
+    value: '2021-09-21T15:38:43+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2021-09-21T15:38:43+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    alt: noticia-1-crc
+    title: ''
+    width: 589
+    height: 332
+    target_type: file
+    target_uuid: c84066d0-dfe7-4980-9216-c3a20982ded5
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+    file:
+      - file.file.c84066d0-dfe7-4980-9216-c3a20982ded5

@@ -1,0 +1,94 @@
+uuid:
+  -
+    value: f182896b-e5d8-49de-a6bf-94bc265af776
+langcode:
+  -
+    value: es
+type:
+  -
+    target_id: news_crc
+    target_type: node_type
+    target_uuid: ccc472f6-c6a5-4123-a175-760f18f5a9ad
+revision_timestamp:
+  -
+    value: '2021-11-23T15:24:40+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+revision_log: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+title:
+  -
+    value: 'Comentarios recibidos a la Propuesta de Agenda Regulatoria 2022-2023'
+created:
+  -
+    value: '2021-11-23T15:24:29+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2021-11-23T15:28:22+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: true
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+metatag:
+  value:
+    canonical_url: 'http://default/es/noticias/movilidad/comentarios-recibidos-propuesta-agenda-regulatoria-2022-2023'
+    title: 'Comentarios recibidos a la Propuesta de Agenda Regulatoria 2022-2023 | Webcrc'
+path:
+  -
+    alias: /noticias/movilidad/comentarios-recibidos-propuesta-agenda-regulatoria-2022-2023
+publish_on: {  }
+unpublish_on: {  }
+feeds_item: {  }
+field_category:
+  -
+    target_type: taxonomy_term
+    target_uuid: ef06cb2d-6af9-498f-a37a-3543c4c8d1ee
+field_content:
+  -
+    value: "<p>Para conocimiento de todos los interesados, la CRC publica los comentarios y observaciones recibidas respecto a la Propuesta de Agenda Regulatoria 2022-2023.Consulte los comentarios ingresando al proyecto <a href=\"https://www.crcom.gov.co/es/pagina/agenda-regulatoria-2022-2023\">Agenda Regulatoria 2022-2023</a></p>\r\n"
+    format: editor_cont_transparencia
+    processed: |
+      <p>Para conocimiento de todos los interesados, la CRC publica los comentarios y observaciones recibidas respecto a la Propuesta de Agenda Regulatoria 2022-2023.Consulte los comentarios ingresando al proyecto <a href="https://www.crcom.gov.co/es/pagina/agenda-regulatoria-2022-2023">Agenda Regulatoria 2022-2023</a></p>
+field_content_featured:
+  -
+    value: true
+field_image_content:
+  -
+    target_type: media
+    target_uuid: eeb77d03-03d7-4686-9066-c4183b46869d
+field_introduccion_contenido:
+  -
+    value: 'Para conocimiento de todos los interesados, la CRC publica los comentarios y observaciones recibidas respecto a la Propuesta de Agenda Regulatoria 2022-2023.'
+field_introduction_image:
+  -
+    target_type: media
+    target_uuid: eeb77d03-03d7-4686-9066-c4183b46869d
+field_tags: {  }
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+    taxonomy_term:
+      - taxonomy_term.news_tags.ef06cb2d-6af9-498f-a37a-3543c4c8d1ee
+    media:
+      - media.image.eeb77d03-03d7-4686-9066-c4183b46869d

@@ -1,0 +1,97 @@
+uuid:
+  -
+    value: 843aab77-c987-4351-b815-cbecb666d8a4
+langcode:
+  -
+    value: es
+type:
+  -
+    target_id: news_crc
+    target_type: node_type
+    target_uuid: ccc472f6-c6a5-4123-a175-760f18f5a9ad
+revision_timestamp:
+  -
+    value: '2021-09-21T16:01:59+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+revision_log: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+title:
+  -
+    value: 'CRC publica los lineamientos para la inscripción del registro de canales satelitales temáticos'
+created:
+  -
+    value: '2021-09-21T16:01:51+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2021-11-23T15:44:40+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: false
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+metatag:
+  value:
+    canonical_url: 'http://default/es/noticias/ciudadania/crc-publica-lineamientos-para-inscripcion-registro-canales-satelitales'
+    title: 'CRC publica los lineamientos para la inscripción del registro de canales satelitales temáticos | Webcrc'
+path:
+  -
+    alias: /noticias/ciudadania/crc-publica-lineamientos-para-inscripcion-registro-canales-satelitales
+publish_on: {  }
+unpublish_on: {  }
+feeds_item: {  }
+field_category:
+  -
+    target_type: taxonomy_term
+    target_uuid: 934562d1-2649-496e-b054-3fbd33c37add
+field_content:
+  -
+    value: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at neque vel elit scelerisque faucibus. Curabitur ultrices, massa quis porttitor pellentesque, magna enim accumsan erat, et dictum dui erat quis nulla. Nulla facilisi. Nulla ut felis sit amet lectus vulputate suscipit. Etiam elementum, est pretium pharetra dignissim, tellus libero blandit est, ornare dapibus nibh magna pellentesque lectus. Nam iaculis efficitur turpis, eget efficitur dolor malesuada sed. Vestibulum massa justo, imperdiet non tortor et, fringilla fermentum libero. Ut ac ullamcorper nunc. Ut et consequat mi. Donec sagittis erat quis lorem pellentesque, sed imperdiet orci ultrices. Maecenas egestas hendrerit felis quis porttitor. Curabitur porta justo at est eleifend, vitae rutrum velit auctor.</p>\r\n\r\n<p>Fusce in pulvinar sapien. Praesent auctor diam in sollicitudin tincidunt. Vestibulum convallis ultrices mauris, congue lacinia enim tincidunt suscipit. Etiam quis est pretium, sodales ex porta, ultricies erat. Donec tincidunt quam nec enim rhoncus, vitae aliquam sapien faucibus. Praesent metus arcu, finibus non accumsan eu, dignissim nec urna. Aliquam vestibulum pharetra elit et dapibus. Mauris eu justo vel velit consectetur ultrices a eu ex. Morbi imperdiet massa lacinia lectus viverra pulvinar. In sagittis tempor nisl, at lobortis libero molestie at. Nulla iaculis dapibus est. Morbi placerat egestas libero. Duis eget massa molestie, consectetur nulla lobortis, imperdiet velit. Aliquam accumsan, arcu et fermentum vulputate, velit neque bibendum quam, id tristique ante elit quis ligula. Mauris imperdiet diam vel varius cursus.</p>\r\n"
+    format: basic_html
+    processed: |-
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at neque vel elit scelerisque faucibus. Curabitur ultrices, massa quis porttitor pellentesque, magna enim accumsan erat, et dictum dui erat quis nulla. Nulla facilisi. Nulla ut felis sit amet lectus vulputate suscipit. Etiam elementum, est pretium pharetra dignissim, tellus libero blandit est, ornare dapibus nibh magna pellentesque lectus. Nam iaculis efficitur turpis, eget efficitur dolor malesuada sed. Vestibulum massa justo, imperdiet non tortor et, fringilla fermentum libero. Ut ac ullamcorper nunc. Ut et consequat mi. Donec sagittis erat quis lorem pellentesque, sed imperdiet orci ultrices. Maecenas egestas hendrerit felis quis porttitor. Curabitur porta justo at est eleifend, vitae rutrum velit auctor.</p>
+
+      <p>Fusce in pulvinar sapien. Praesent auctor diam in sollicitudin tincidunt. Vestibulum convallis ultrices mauris, congue lacinia enim tincidunt suscipit. Etiam quis est pretium, sodales ex porta, ultricies erat. Donec tincidunt quam nec enim rhoncus, vitae aliquam sapien faucibus. Praesent metus arcu, finibus non accumsan eu, dignissim nec urna. Aliquam vestibulum pharetra elit et dapibus. Mauris eu justo vel velit consectetur ultrices a eu ex. Morbi imperdiet massa lacinia lectus viverra pulvinar. In sagittis tempor nisl, at lobortis libero molestie at. Nulla iaculis dapibus est. Morbi placerat egestas libero. Duis eget massa molestie, consectetur nulla lobortis, imperdiet velit. Aliquam accumsan, arcu et fermentum vulputate, velit neque bibendum quam, id tristique ante elit quis ligula. Mauris imperdiet diam vel varius cursus.</p>
+field_content_featured:
+  -
+    value: false
+field_image_content:
+  -
+    target_type: media
+    target_uuid: eeb77d03-03d7-4686-9066-c4183b46869d
+field_introduccion_contenido:
+  -
+    value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at neque vel elit scelerisque faucibus. Curabitur ultrices, massa quis porttitor pellentesque, magna enim accumsan erat, et dictum dui erat quis nulla. Nulla facilisi.'
+field_introduction_image:
+  -
+    target_type: media
+    target_uuid: b4ad9405-9269-4094-9e8d-ae13c0431305
+field_tags: {  }
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+    taxonomy_term:
+      - taxonomy_term.news_tags.934562d1-2649-496e-b054-3fbd33c37add
+    media:
+      - media.image.eeb77d03-03d7-4686-9066-c4183b46869d
+      - media.image.b4ad9405-9269-4094-9e8d-ae13c0431305
