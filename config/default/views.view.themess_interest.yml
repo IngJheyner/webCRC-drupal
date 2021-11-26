@@ -1,22 +1,23 @@
-uuid: cb4400f4-07a4-4eef-8083-633f37fb06cb
+uuid: e9b54716-bf6a-4d32-ae0d-cec3efdfb78d
 langcode: es
 status: true
 dependencies:
   config:
+    - block_content.type.themes_interest
     - field.storage.paragraph.field_interest_image
     - field.storage.paragraph.field_interest_link
-    - paragraphs.paragraphs_type.themes_interest
   module:
+    - block_content
     - link
     - paragraphs
     - slick_views
     - svg_image
-id: themes_interest
+id: themess_interest
 label: 'Temas de interés'
 module: views
 description: ''
 tag: ''
-base_table: paragraphs_item_field_data
+base_table: block_content_field_data
 base_field: id
 display:
   default:
@@ -42,7 +43,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Aplicar
+          submit_button: Apply
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -52,6 +53,7 @@ display:
       pager:
         type: none
         options:
+          items_per_page: 0
           offset: 0
       style:
         type: slick
@@ -63,16 +65,15 @@ display:
           layout: ''
           caption:
             nothing: nothing
-            id: '0'
-            field_interest_image: '0'
             field_interest_link: '0'
+            field_interest_image: '0'
           optionset_thumbnail: ''
           skin_thumbnail: ''
           thumbnail_position: ''
           grid: ''
-          grid_medium: '2'
-          grid_small: '1'
-          visible_items: 4
+          grid_medium: ''
+          grid_small: ''
+          visible_items: null
           preserve_keys: false
           image: ''
           thumbnail: ''
@@ -92,25 +93,16 @@ display:
             randomize: '0'
             variableWidth: '0'
           cache: 0
-          current_view_mode: block_themes_interest
+          current_view_mode: block_1
           thumbnail_effect: ''
       row:
         type: fields
-        options:
-          default_field_elements: true
-          inline:
-            field_interest_image: field_interest_image
-          separator: ''
-          hide_empty: false
       fields:
-        id:
-          table: paragraphs_item_field_data
-          field: id
-          id: id
-          entity_type: null
-          entity_field: id
-          plugin_id: field
-          relationship: none
+        field_interest_link:
+          id: field_interest_link
+          table: paragraph__field_interest_link
+          field: field_interest_link
+          relationship: field_interest_content
           group_type: group
           admin_label: ''
           label: ''
@@ -146,7 +138,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -154,10 +146,15 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: value
-          type: number_integer
-          settings: {  }
-          group_column: value
+          click_sort_column: uri
+          type: link
+          settings:
+            trim_length: 80
+            url_only: true
+            url_plain: true
+            rel: '0'
+            target: _blank
+          group_column: ''
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -167,11 +164,12 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          plugin_id: field
         field_interest_image:
           id: field_interest_image
           table: paragraph__field_interest_image
           field: field_interest_image
-          relationship: none
+          relationship: field_interest_content
           group_type: group
           admin_label: ''
           label: ''
@@ -235,73 +233,6 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_interest_link:
-          id: field_interest_link
-          table: paragraph__field_interest_link
-          field: field_interest_link
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: uri
-          type: link
-          settings:
-            trim_length: 80
-            url_only: true
-            url_plain: true
-            rel: '0'
-            target: _blank
-          group_column: ''
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
         nothing:
           id: nothing
           table: views
@@ -354,10 +285,10 @@ display:
       filters:
         status:
           value: '1'
-          table: paragraphs_item_field_data
+          table: block_content_field_data
           field: status
           plugin_id: boolean
-          entity_type: paragraph
+          entity_type: block_content
           entity_field: status
           id: status
           expose:
@@ -365,35 +296,57 @@ display:
             operator_limit_selection: false
             operator_list: {  }
           group: 1
+        reusable:
+          id: reusable
+          plugin_id: boolean
+          table: block_content_field_data
+          field: reusable
+          value: '1'
+          entity_type: block_content
+          entity_field: reusable
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
         type:
           id: type
-          table: paragraphs_item_field_data
+          table: block_content_field_data
           field: type
           value:
             themes_interest: themes_interest
-          entity_type: paragraph
+          entity_type: block_content
           entity_field: type
           plugin_id: bundle
           expose:
             operator_limit_selection: false
             operator_list: {  }
       sorts: {  }
-      title: 'Temas de interés'
+      title: 'Temas de interes'
       header:
-        area_text_custom:
-          id: area_text_custom
+        area:
+          id: area
           table: views
-          field: area_text_custom
+          field: area
           relationship: none
           group_type: group
           admin_label: Titulo
           empty: false
           tokenize: true
-          content: '<p class=''h2 text-white title pt-4 mb-4''><img src=''/themes/custom/webcrc/src/images/icono-temas-de-interes.svg'' onerror=''this.remove();''><span class=''h2''> {{''Themes''|t}}</span> {{''of interest''|t}}</p>'
-          plugin_id: text_custom
+          content:
+            value: '<p class=''h2 text-white title pt-4''><img src=''/themes/custom/webcrc/src/images/icono-temas-de-interes.svg'' onerror=''this.remove();''><span class=''h2''> {{''Themes''|t}}</span> {{''of interest''|t}}</p>'
+            format: editor_cont_transparencia
+          plugin_id: text
       footer: {  }
       empty: {  }
-      relationships: {  }
+      relationships:
+        field_interest_content:
+          id: field_interest_content
+          table: block_content__field_interest_content
+          field: field_interest_content
+          relationship: none
+          group_type: group
+          admin_label: 'field_interest_content: Párrafo'
+          required: true
+          plugin_id: standard
       arguments: {  }
       display_extenders: {  }
       css_class: 'themes__interest-content container'
@@ -412,8 +365,8 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      display_description: ''
       display_comment: "@see \r\n- views-view--library-virtual--page-library-virtual.html.twig "
+      display_description: ''
     cache_metadata:
       max-age: -1
       contexts:

@@ -68,7 +68,7 @@
 
      {% else %}
 
-      {% if content.field_interaction_extemporaneous.value %} {{ content.field_interaction_extemporaneous }} <hr> {% endif %} {% if content.field_comentarios_interacciones.value %} {{ content.field_comentarios_interacciones}} <hr> {% endif %} {{ content.field_propuestas_interacciones }}
+      {% if content.field_interaction_extemporaneous[0] %} {{ content.field_interaction_extemporaneous }} <hr> {% endif %} {% if content.field_comentarios_interacciones[0] %} {{ content.field_comentarios_interacciones}} <hr> {% endif %} {{ content.field_propuestas_interacciones }}
 
      {% endif %}
 

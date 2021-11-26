@@ -36,9 +36,6 @@ module:
   ctools: 0
   datetime: 0
   dblog: 0
-  devel: 0
-  devel_entity_updates: 0
-  devel_generate: 0
   dropzonejs: 0
   dropzonejs_eb_widget: 0
   dynamic_page_cache: 0
@@ -47,7 +44,6 @@ module:
   entity_browser: 0
   entity_reference_revisions: 0
   entity_type_clone: 0
-  entity_update: 0
   entity_usage: 0
   facets: 0
   feed_block: 0
