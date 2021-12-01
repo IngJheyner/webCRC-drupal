@@ -1,0 +1,8 @@
+uuid: 87c1a2f4-8406-4fef-b69f-de34503160db
+langcode: es
+status: true
+dependencies: {  }
+id: transp_presup_general_encabezado
+label: 'Transparencia: Presupuesto general de ingresos, gastos e inversion [ Encabezado ]'
+revision: 0
+description: 'Bloque de encabezado para la vista del contenido Presupuesto general de ingresos, gastos e inversión de la sección de transparencia'

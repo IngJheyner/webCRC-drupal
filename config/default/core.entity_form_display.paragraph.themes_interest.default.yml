@@ -18,6 +18,13 @@ targetEntityType: paragraph
 bundle: themes_interest
 mode: default
 content:
+  field_content_image:
+    weight: 0
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
   field_interest_image:
     weight: 0
     settings:
@@ -25,14 +32,6 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
-    region: content
-  field_interest_link:
-  field_content_image:
-    weight: 0
-    settings:
-      media_types: {  }
-    third_party_settings: {  }
-    type: media_library_widget
     region: content
   field_url:
     weight: 1
@@ -44,4 +43,5 @@ content:
     region: content
 hidden:
   created: true
+  field_interest_link: true
   status: true

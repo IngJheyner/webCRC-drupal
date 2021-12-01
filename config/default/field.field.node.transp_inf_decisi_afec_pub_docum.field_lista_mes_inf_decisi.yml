@@ -1,0 +1,21 @@
+uuid: 268f8f17-a001-4c1d-8aea-2a01fa387a60
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lista_mes_inf_decisi
+    - node.type.transp_inf_decisi_afec_pub_docum
+  module:
+    - options
+id: node.transp_inf_decisi_afec_pub_docum.field_lista_mes_inf_decisi
+field_name: field_lista_mes_inf_decisi
+entity_type: node
+bundle: transp_inf_decisi_afec_pub_docum
+label: Mes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

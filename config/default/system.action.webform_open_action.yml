@@ -1,0 +1,11 @@
+uuid: 90c98383-8ad7-4eda-b0de-fb76f605b8b1
+langcode: en
+status: true
+dependencies:
+  module:
+    - webform
+id: webform_open_action
+label: 'Open webform'
+type: webform
+plugin: webform_open_action
+configuration: {  }

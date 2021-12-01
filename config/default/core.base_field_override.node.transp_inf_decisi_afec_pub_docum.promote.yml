@@ -1,0 +1,22 @@
+uuid: ecde5e7f-d804-469d-92a3-3b31b93762b4
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_inf_decisi_afec_pub_docum
+id: node.transp_inf_decisi_afec_pub_docum.promote
+field_name: promote
+entity_type: node
+bundle: transp_inf_decisi_afec_pub_docum
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

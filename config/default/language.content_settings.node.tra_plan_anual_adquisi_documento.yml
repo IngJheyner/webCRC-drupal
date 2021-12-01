@@ -1,0 +1,11 @@
+uuid: aee1b19a-5a30-4039-b835-b39dc8f1f981
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.tra_plan_anual_adquisi_documento
+id: node.tra_plan_anual_adquisi_documento
+target_entity_type_id: node
+target_bundle: tra_plan_anual_adquisi_documento
+default_langcode: site_default
+language_alterable: false

@@ -5,6 +5,7 @@ dependencies:
   content:
     - 'block_content:bloq_descrip_menu_transparencia:63d3fd79-a7e3-4ce3-aba1-af6e05bc66e2'
   module:
+    - block_content
     - system
   theme:
     - webcrc

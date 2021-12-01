@@ -1,0 +1,31 @@
+uuid: 6538bb2a-ded9-4db7-9cd9-e05501eef167
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.transp_ejec_presu_docum.field_doc_file_info_decisi_publi
+    - field.field.node.transp_ejec_presu_docum.field_list_anio_infor_decisi
+    - field.field.node.transp_ejec_presu_docum.field_list_cat_ejec_presupue
+    - field.field.node.transp_ejec_presu_docum.field_lista_mes_inf_decisi
+    - node.type.transp_ejec_presu_docum
+  module:
+    - user
+id: node.transp_ejec_presu_docum.teaser
+targetEntityType: node
+bundle: transp_ejec_presu_docum
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_doc_file_info_decisi_publi: true
+  field_list_anio_infor_decisi: true
+  field_list_cat_ejec_presupue: true
+  field_lista_mes_inf_decisi: true
+  langcode: true
+  search_api_excerpt: true

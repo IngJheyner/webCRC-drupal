@@ -1,0 +1,8 @@
+uuid: d70cf6d4-499e-4978-a5fa-1505da763b18
+langcode: es
+status: true
+dependencies: {  }
+name: 'Transparencia: Tipo Documento o Link'
+vid: tipo_documento_o_link_transparen
+description: 'Contenido tipos de documento o link en Transparencia'
+weight: 0

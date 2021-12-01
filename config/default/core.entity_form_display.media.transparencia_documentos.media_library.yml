@@ -1,0 +1,28 @@
+uuid: a5efdaa2-be3d-49a4-aab3-077a2294c160
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.transparencia_documentos.field_media_file_5
+    - media.type.transparencia_documentos
+id: media.transparencia_documentos.media_library
+targetEntityType: media
+bundle: transparencia_documentos
+mode: media_library
+content:
+  name:
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    weight: 0
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_media_file_5: true
+  langcode: true
+  path: true
+  status: true
+  uid: true

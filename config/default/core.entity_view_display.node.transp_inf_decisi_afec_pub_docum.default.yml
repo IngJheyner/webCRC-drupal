@@ -1,0 +1,81 @@
+uuid: 839370e1-5814-4acf-8f63-a67343613b16
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.transp_inf_decisi_afec_pub_docum.body
+    - field.field.node.transp_inf_decisi_afec_pub_docum.field_categ_infor_decision_publi
+    - field.field.node.transp_inf_decisi_afec_pub_docum.field_doc_file_info_decisi_publi
+    - field.field.node.transp_inf_decisi_afec_pub_docum.field_link_sitie
+    - field.field.node.transp_inf_decisi_afec_pub_docum.field_list_anio_infor_decisi
+    - field.field.node.transp_inf_decisi_afec_pub_docum.field_lista_mes_inf_decisi
+    - node.type.transp_inf_decisi_afec_pub_docum
+  module:
+    - file
+    - link
+    - options
+    - text
+    - user
+id: node.transp_inf_decisi_afec_pub_docum.default
+targetEntityType: node
+bundle: transp_inf_decisi_afec_pub_docum
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_categ_infor_decision_publi:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_doc_file_info_decisi_publi:
+    weight: 102
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_link_sitie:
+    weight: 103
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_list_anio_infor_decisi:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_lista_mes_inf_decisi:
+    weight: 107
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  langcode: true
+  search_api_excerpt: true

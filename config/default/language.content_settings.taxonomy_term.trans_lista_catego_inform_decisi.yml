@@ -1,0 +1,11 @@
+uuid: faa76610-795d-47a9-a049-22a3aa4283b8
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.trans_lista_catego_inform_decisi
+id: taxonomy_term.trans_lista_catego_inform_decisi
+target_entity_type_id: taxonomy_term
+target_bundle: trans_lista_catego_inform_decisi
+default_langcode: site_default
+language_alterable: false

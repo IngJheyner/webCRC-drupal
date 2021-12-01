@@ -1,0 +1,28 @@
+uuid: 7210baa4-4483-4bd7-b823-1cd2c540a63e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.media.transparencia_documentos.field_media_file_5
+    - media.type.transparencia_documentos
+  module:
+    - file
+id: media.transparencia_documentos.default
+targetEntityType: media
+bundle: transparencia_documentos
+mode: default
+content:
+  field_media_file_5:
+    label: visually_hidden
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: file_url_plain
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

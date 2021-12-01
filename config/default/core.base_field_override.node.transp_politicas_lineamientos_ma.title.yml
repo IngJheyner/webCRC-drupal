@@ -1,0 +1,18 @@
+uuid: 6687ab31-a492-409b-be99-f187eeaf37e2
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_politicas_lineamientos_ma
+id: node.transp_politicas_lineamientos_ma.title
+field_name: title
+entity_type: node
+bundle: transp_politicas_lineamientos_ma
+label: 'Nombre de documento'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

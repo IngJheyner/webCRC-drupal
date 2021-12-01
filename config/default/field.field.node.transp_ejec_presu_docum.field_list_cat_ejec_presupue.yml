@@ -1,0 +1,29 @@
+uuid: d60cdfcb-005b-419b-80e1-6830fb5ab13c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_list_cat_ejec_presupue
+    - node.type.transp_ejec_presu_docum
+    - taxonomy.vocabulary.transp_list_cat_ejec_presu
+id: node.transp_ejec_presu_docum.field_list_cat_ejec_presupue
+field_name: field_list_cat_ejec_presupue
+entity_type: node
+bundle: transp_ejec_presu_docum
+label: Categoría
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      transp_list_cat_ejec_presu: transp_list_cat_ejec_presu
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

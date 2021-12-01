@@ -1,0 +1,18 @@
+uuid: 15ff1c10-afa0-403a-b71f-a9f948833894
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.trans_presup_gen_ing_gast_inver
+id: node.trans_presup_gen_ing_gast_inver.title
+field_name: title
+entity_type: node
+bundle: trans_presup_gen_ing_gast_inver
+label: title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

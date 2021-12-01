@@ -1,0 +1,11 @@
+uuid: 7e3fc0f8-2841-4c50-952f-b08adf88e0a7
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_documento_o_link_transparen
+id: taxonomy_term.tipo_documento_o_link_transparen
+target_entity_type_id: taxonomy_term
+target_bundle: tipo_documento_o_link_transparen
+default_langcode: site_default
+language_alterable: false

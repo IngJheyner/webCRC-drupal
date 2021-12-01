@@ -1,0 +1,23 @@
+uuid: fcfae7e7-69e4-4913-8aba-bb65c0454495
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_list_anio_infor_decisi
+    - node.type.transp_inf_decisi_afec_pub_docum
+  module:
+    - options
+id: node.transp_inf_decisi_afec_pub_docum.field_list_anio_infor_decisi
+field_name: field_list_anio_infor_decisi
+entity_type: node
+bundle: transp_inf_decisi_afec_pub_docum
+label: Año
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 2021
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

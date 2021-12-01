@@ -1,0 +1,23 @@
+uuid: 7802cc14-e359-4bb6-9a45-4dbae0d26aaa
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_list_anio_infor_decisi
+    - node.type.trans_presup_gen_ing_gast_inver
+  module:
+    - options
+id: node.trans_presup_gen_ing_gast_inver.field_list_anio_infor_decisi
+field_name: field_list_anio_infor_decisi
+entity_type: node
+bundle: trans_presup_gen_ing_gast_inver
+label: Año
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 2021
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

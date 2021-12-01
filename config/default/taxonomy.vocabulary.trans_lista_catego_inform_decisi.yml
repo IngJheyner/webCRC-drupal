@@ -1,0 +1,8 @@
+uuid: 7cd94de8-6678-44b2-af93-624b6ed59526
+langcode: es
+status: true
+dependencies: {  }
+name: 'Transparencia: Lista categorías [ Información sobre decisiones que puede afectar al público ]'
+vid: trans_lista_catego_inform_decisi
+description: 'Transparencia: Lista categorías contenido Información sobre decisiones que puede afectar al público '
+weight: 0

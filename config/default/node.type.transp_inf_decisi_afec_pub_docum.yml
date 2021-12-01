@@ -1,0 +1,31 @@
+uuid: 8fd2a90b-21a9-4981-9de7-7fc81288019b
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - scheduler
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: false
+    publish_past_date: error
+    publish_past_date_created: false
+    publish_required: false
+    publish_revision: false
+    publish_touch: false
+    show_message_after_update: true
+    unpublish_enable: false
+    unpublish_required: false
+    unpublish_revision: false
+name: 'Transparencia: Información sobre decisiones que puede afectar al público [ Documentos ]'
+type: transp_inf_decisi_afec_pub_docum
+description: 'Contenido para subir documento Información sobre decisiones que puede afectar al público [ Documentos ]'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,58 @@
+uuid: b9b7334a-a475-485c-9705-4fc88ddffcdc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.transp_ejec_presu_docum.field_doc_file_info_decisi_publi
+    - field.field.node.transp_ejec_presu_docum.field_list_anio_infor_decisi
+    - field.field.node.transp_ejec_presu_docum.field_list_cat_ejec_presupue
+    - field.field.node.transp_ejec_presu_docum.field_lista_mes_inf_decisi
+    - node.type.transp_ejec_presu_docum
+  module:
+    - file
+    - options
+    - user
+id: node.transp_ejec_presu_docum.default
+targetEntityType: node
+bundle: transp_ejec_presu_docum
+mode: default
+content:
+  field_doc_file_info_decisi_publi:
+    weight: 101
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_list_anio_infor_decisi:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_list_cat_ejec_presupue:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_lista_mes_inf_decisi:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  langcode: true
+  search_api_excerpt: true

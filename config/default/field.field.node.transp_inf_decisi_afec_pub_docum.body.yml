@@ -1,0 +1,23 @@
+uuid: 5a6b432f-c302-44e8-ae9e-fbbc758c609b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.transp_inf_decisi_afec_pub_docum
+  module:
+    - text
+id: node.transp_inf_decisi_afec_pub_docum.body
+field_name: body
+entity_type: node
+bundle: transp_inf_decisi_afec_pub_docum
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary
