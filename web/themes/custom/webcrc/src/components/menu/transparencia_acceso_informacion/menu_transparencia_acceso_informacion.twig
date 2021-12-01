@@ -10,9 +10,9 @@
       {% if menu_level == 0 %}
       {% set titleId = item.title|replace({' ': '-'}) %}
         {% set titleId = titleId|split('.')[1] %}
-        <li class="nav-item dropdown col-md-4" id="{{titleId|lower}}-div">
+        <li class="nav-item col-md-4 dropdown" id="{{titleId|lower}}-div">
           {% if item.below %}
-            <a class="nav-link dropdown-toggle border p-2 back-menu-transparencia item_menu" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle border p-2 back-menu-transparencia item_menu" href="#" id="navbarDropdown{{iterar}}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           {% else %}
             {% if item.url.external != false %}
               <a class="nav-link dropdown-toggle border p-2 back-menu-transparencia item_menu" href="{{item.url.uri}}">
@@ -41,14 +41,16 @@
                   </div>
               </div>
               <div class="col-md-1 p-0">
+                {% if item.below %}
                   <span class="material-icons material-icons-outlined">
                       expand_more
                   </span>
+                {% endif %}
               </div>
             </div>
           </a>
           {% if item.below %}
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <div class="dropdown-menu dropdown-menu-bottom" aria-labelledby="navbarDropdown{{iterar}}">
               <div>
           {% endif %}
       {% endif %}

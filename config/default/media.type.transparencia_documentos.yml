@@ -1,0 +1,13 @@
+uuid: 0f1beb39-d6e0-4cc7-b25c-fef95767eaf0
+langcode: es
+status: true
+dependencies: {  }
+id: transparencia_documentos
+label: 'Transparencia Documentos '
+description: 'Documentos/Archivos para contenido de la sección de Transparencia'
+source: file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_file_5
+field_map: {  }

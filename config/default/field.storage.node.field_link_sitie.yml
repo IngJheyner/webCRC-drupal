@@ -1,0 +1,19 @@
+uuid: b2f51b6d-d462-42e0-98f4-eb74ccd866e2
+langcode: es
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_link_sitie
+field_name: field_link_sitie
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

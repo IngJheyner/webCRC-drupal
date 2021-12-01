@@ -1,0 +1,42 @@
+uuid:
+  -
+    value: 12026169-5ca8-468b-a5ed-374fc45238b5
+langcode:
+  -
+    value: es
+uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+filename:
+  -
+    value: x2ITOc6UkwrLz5X2v9GWFs7aO2KWbgWnqnanyv6VU6w.jpg
+uri:
+  -
+    value: 'public://oembed_thumbnails/x2ITOc6UkwrLz5X2v9GWFs7aO2KWbgWnqnanyv6VU6w.jpg'
+    url: /sites/default/files/oembed_thumbnails/x2ITOc6UkwrLz5X2v9GWFs7aO2KWbgWnqnanyv6VU6w.jpg
+filemime:
+  -
+    value: image/jpeg
+filesize:
+  -
+    value: 16086
+status:
+  -
+    value: true
+created:
+  -
+    value: '2021-10-04T15:00:11+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2021-10-04T15:00:11+00:00'
+    format: 'Y-m-d\TH:i:sP'
+origname:
+  -
+    value: x2ITOc6UkwrLz5X2v9GWFs7aO2KWbgWnqnanyv6VU6w.jpg
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf

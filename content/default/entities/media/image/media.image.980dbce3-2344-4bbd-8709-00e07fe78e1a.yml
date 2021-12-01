@@ -1,0 +1,64 @@
+uuid:
+  -
+    value: 980dbce3-2344-4bbd-8709-00e07fe78e1a
+langcode:
+  -
+    value: es
+bundle:
+  -
+    target_id: image
+    target_type: media_type
+    target_uuid: 6473277e-3612-4d03-a295-8a39475ca58d
+revision_created:
+  -
+    value: '2021-10-08T17:43:31+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+revision_log_message: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+name:
+  -
+    value: juego-4-comision-de-regulacion-de-comunicaciones.png
+thumbnail:
+  -
+    alt: juego-4-comision-de-regulacion-de-comunicaciones-crc
+    title: null
+    width: 118
+    height: 178
+    target_type: file
+    target_uuid: b0cce6b6-8241-4eee-a484-26283857dd78
+created:
+  -
+    value: '2021-10-08T17:43:21+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2021-10-08T17:43:21+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    alt: juego-4-comision-de-regulacion-de-comunicaciones-crc
+    title: ''
+    width: 118
+    height: 178
+    target_type: file
+    target_uuid: b0cce6b6-8241-4eee-a484-26283857dd78
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+    file:
+      - file.file.b0cce6b6-8241-4eee-a484-26283857dd78

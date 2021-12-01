@@ -1,0 +1,27 @@
+uuid: 2c917a5c-0716-4300-8f85-fa3e54373f1f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_file_5
+    - media.type.transparencia_documentos
+  module:
+    - file
+id: media.transparencia_documentos.field_media_file_5
+field_name: field_media_file_5
+entity_type: media
+bundle: transparencia_documentos
+label: Archivo
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: 'txt doc docx pdf'
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

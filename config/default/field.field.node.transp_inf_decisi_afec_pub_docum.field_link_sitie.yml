@@ -1,0 +1,23 @@
+uuid: 79ce8dc8-a4ce-48d7-9e07-0d80c8f8fbd6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_sitie
+    - node.type.transp_inf_decisi_afec_pub_docum
+  module:
+    - link
+id: node.transp_inf_decisi_afec_pub_docum.field_link_sitie
+field_name: field_link_sitie
+entity_type: node
+bundle: transp_inf_decisi_afec_pub_docum
+label: 'Link a sitio '
+description: 'Link a sitio interno o externo'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

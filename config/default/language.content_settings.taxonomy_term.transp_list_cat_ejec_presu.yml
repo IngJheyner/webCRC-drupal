@@ -1,0 +1,11 @@
+uuid: 16dcd654-09a2-4866-8ba3-e34da7a50377
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.transp_list_cat_ejec_presu
+id: taxonomy_term.transp_list_cat_ejec_presu
+target_entity_type_id: taxonomy_term
+target_bundle: transp_list_cat_ejec_presu
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,41 @@
+uuid: 34cde18e-660e-4600-a5b4-4661109be66f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.transp_politicas_lineamientos_ma.field_docum_archi
+    - field.field.node.transp_politicas_lineamientos_ma.field_tipo_doc_paragraph
+    - node.type.transp_politicas_lineamientos_ma
+  module:
+    - file
+    - user
+id: node.transp_politicas_lineamientos_ma.default
+targetEntityType: node
+bundle: transp_politicas_lineamientos_ma
+mode: default
+content:
+  field_docum_archi:
+    weight: 103
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_tipo_doc_paragraph:
+    weight: 101
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  langcode: true
+  search_api_excerpt: true

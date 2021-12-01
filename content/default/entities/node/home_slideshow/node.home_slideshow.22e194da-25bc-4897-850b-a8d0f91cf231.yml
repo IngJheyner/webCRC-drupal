@@ -1,0 +1,75 @@
+uuid:
+  -
+    value: 22e194da-25bc-4897-850b-a8d0f91cf231
+langcode:
+  -
+    value: es
+type:
+  -
+    target_id: home_slideshow
+    target_type: node_type
+    target_uuid: 39671806-b5dd-478c-b348-e9a481df893e
+revision_timestamp:
+  -
+    value: '2021-08-24T23:52:24+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+revision_log: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+title:
+  -
+    value: 'Slideshow 1'
+created:
+  -
+    value: '2021-08-24T23:50:22+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2021-10-08T22:00:31+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: false
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+publish_on: {  }
+unpublish_on: {  }
+field_home_slideshow_description:
+  -
+    value: 'La CAF destaca a la CRC como ejemplo de estado ágil en América Latina'
+field_home_slideshow_imagen:
+  -
+    alt: caf-destaca-crc-america-latina
+    title: ''
+    width: 1440
+    height: 449
+    target_type: file
+    target_uuid: 3c908df8-16f4-4b2b-9479-bbeda895a308
+field_home_slideshow_url:
+  -
+    uri: 'internal:#'
+    title: ''
+    options: {  }
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+    file:
+      - file.file.3c908df8-16f4-4b2b-9479-bbeda895a308

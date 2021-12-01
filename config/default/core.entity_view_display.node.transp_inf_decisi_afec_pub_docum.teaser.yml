@@ -1,0 +1,43 @@
+uuid: 413896a4-faf1-4d47-9045-db3bb63c4890
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.transp_inf_decisi_afec_pub_docum.body
+    - field.field.node.transp_inf_decisi_afec_pub_docum.field_categ_infor_decision_publi
+    - field.field.node.transp_inf_decisi_afec_pub_docum.field_doc_file_info_decisi_publi
+    - field.field.node.transp_inf_decisi_afec_pub_docum.field_link_sitie
+    - field.field.node.transp_inf_decisi_afec_pub_docum.field_list_anio_infor_decisi
+    - field.field.node.transp_inf_decisi_afec_pub_docum.field_lista_mes_inf_decisi
+    - node.type.transp_inf_decisi_afec_pub_docum
+  module:
+    - text
+    - user
+id: node.transp_inf_decisi_afec_pub_docum.teaser
+targetEntityType: node
+bundle: transp_inf_decisi_afec_pub_docum
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_categ_infor_decision_publi: true
+  field_doc_file_info_decisi_publi: true
+  field_link_sitie: true
+  field_list_anio_infor_decisi: true
+  field_lista_mes_inf_decisi: true
+  langcode: true
+  search_api_excerpt: true

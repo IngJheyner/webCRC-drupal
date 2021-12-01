@@ -1,0 +1,20 @@
+uuid: c2cc6d9b-88a2-4a60-b980-37121271f8c1
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_categ_infor_decision_publi
+field_name: field_categ_infor_decision_publi
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

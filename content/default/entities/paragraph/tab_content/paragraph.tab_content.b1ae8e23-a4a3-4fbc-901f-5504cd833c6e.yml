@@ -1,0 +1,45 @@
+uuid:
+  -
+    value: b1ae8e23-a4a3-4fbc-901f-5504cd833c6e
+langcode:
+  -
+    value: es
+type:
+  -
+    target_id: tab_content
+    target_type: paragraphs_type
+    target_uuid: 3e5560c8-45cc-4ed0-8d28-ece2ef74d8db
+status:
+  -
+    value: true
+created:
+  -
+    value: '2021-10-02T01:00:16+00:00'
+    format: 'Y-m-d\TH:i:sP'
+parent_id:
+  -
+    value: '54'
+parent_type:
+  -
+    value: paragraph
+parent_field_name:
+  -
+    value: field_tab_content
+behavior_settings:
+  -
+    value: {  }
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_content_personalized:
+  -
+    value: "<p>dsfksdnfksndkfdskfnkldsnlfndslfnldksnfldsnlfnldsnfldlfndsklfdslfdslfldslkfdlfjdslfjdjfldlsfld</p>\r\n"
+    format: basic_html
+    processed: '<p>dsfksdnfksndkfdskfnkldsnlfndslfnldksnfldsnlfnldsnfldlfndsklfdslfdslfldslkfdlfjdslfjdjfldlsfld</p>'
+field_tab_type_view: {  }
+_content_sync:
+  entity_type: paragraph
+  entity_dependencies: {  }

@@ -1,0 +1,42 @@
+uuid:
+  -
+    value: 4471430b-fe5e-4f15-af2a-cc14313f2cd3
+langcode:
+  -
+    value: es
+uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+filename:
+  -
+    value: derechos-ciudadanos-de-regulacion-de-comunicaciones.svg
+uri:
+  -
+    value: 'public://webcrc/images/iconos/derechos-ciudadanos-de-regulacion-de-comunicaciones.svg'
+    url: /sites/default/files/webcrc/images/iconos/derechos-ciudadanos-de-regulacion-de-comunicaciones.svg
+filemime:
+  -
+    value: image/svg+xml
+filesize:
+  -
+    value: 661
+status:
+  -
+    value: true
+created:
+  -
+    value: '2021-09-07T21:43:05+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2021-09-07T21:43:15+00:00'
+    format: 'Y-m-d\TH:i:sP'
+origname:
+  -
+    value: derechos-ciudadanos-de-regulacion-de-comunicaciones.svg
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf

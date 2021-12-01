@@ -1,0 +1,22 @@
+uuid: cf407912-60e9-47a1-97b0-3d864dc616ac
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_politicas_lineamientos_ma
+id: node.transp_politicas_lineamientos_ma.promote
+field_name: promote
+entity_type: node
+bundle: transp_politicas_lineamientos_ma
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

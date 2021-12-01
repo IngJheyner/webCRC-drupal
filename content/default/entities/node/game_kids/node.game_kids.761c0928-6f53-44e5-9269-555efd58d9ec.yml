@@ -1,0 +1,77 @@
+uuid:
+  -
+    value: 761c0928-6f53-44e5-9269-555efd58d9ec
+langcode:
+  -
+    value: es
+type:
+  -
+    target_id: game_kids
+    target_type: node_type
+    target_uuid: bff42313-f024-4db6-8800-14c4bebea83c
+revision_timestamp:
+  -
+    value: '2021-10-05T00:40:08+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+revision_log: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+title:
+  -
+    value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+created:
+  -
+    value: '2021-10-05T00:40:04+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2021-10-08T17:42:41+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: false
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+metatag:
+  value:
+    canonical_url: 'http://default/es/node/22'
+    title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. | Webcrc'
+path:
+  -
+    alias: null
+    pid: null
+    langcode: es
+publish_on: {  }
+unpublish_on: {  }
+field_content_url:
+  -
+    uri: 'internal:/'
+    title: Jugar
+    options: {  }
+field_image_content:
+  -
+    target_type: media
+    target_uuid: 249611a8-52ba-477e-a7e8-e7e809950fec
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+    media:
+      - media.image.249611a8-52ba-477e-a7e8-e7e809950fec

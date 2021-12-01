@@ -1,0 +1,64 @@
+uuid:
+  -
+    value: 433a0e17-c595-4d49-9725-acd6fe16e558
+langcode:
+  -
+    value: es
+bundle:
+  -
+    target_id: image
+    target_type: media_type
+    target_uuid: 6473277e-3612-4d03-a295-8a39475ca58d
+revision_created:
+  -
+    value: '2021-10-08T17:39:12+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+revision_log_message: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+name:
+  -
+    value: pagina-niños-comision-de-regulacion-de-comunicaciones.png
+thumbnail:
+  -
+    alt: pagina-niños-comision-de-regulacion-de-comunicaciones-crc
+    title: null
+    width: 1440
+    height: 697
+    target_type: file
+    target_uuid: 3a74f329-f338-4566-ab98-d9bbaaa1f3aa
+created:
+  -
+    value: '2021-10-08T17:39:03+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2021-10-08T17:39:03+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    alt: pagina-niños-comision-de-regulacion-de-comunicaciones-crc
+    title: ''
+    width: 1440
+    height: 697
+    target_type: file
+    target_uuid: 3a74f329-f338-4566-ab98-d9bbaaa1f3aa
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+    file:
+      - file.file.3a74f329-f338-4566-ab98-d9bbaaa1f3aa

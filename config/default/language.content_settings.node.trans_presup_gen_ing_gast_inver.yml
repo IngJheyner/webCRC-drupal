@@ -1,0 +1,11 @@
+uuid: 36ef8dbb-60ac-488c-a90b-0f8a52dad62a
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.trans_presup_gen_ing_gast_inver
+id: node.trans_presup_gen_ing_gast_inver
+target_entity_type_id: node
+target_bundle: trans_presup_gen_ing_gast_inver
+default_langcode: site_default
+language_alterable: false

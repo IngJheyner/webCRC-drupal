@@ -1,0 +1,77 @@
+uuid:
+  -
+    value: 00e60927-c387-4153-b938-45a04231ce81
+langcode:
+  -
+    value: es
+type:
+  -
+    target_id: contents_consulted_citizenship
+    target_type: node_type
+    target_uuid: b20e8a5d-ff0d-48b0-bccc-83cc8b2d5a6e
+revision_timestamp:
+  -
+    value: '2021-09-07T21:36:20+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+revision_log: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+title:
+  -
+    value: 'Biblioteca Virtual'
+created:
+  -
+    value: '2021-09-07T21:36:02+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2021-09-15T19:10:51+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: false
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+metatag:
+  value:
+    canonical_url: 'http://default/es/node/4'
+    title: 'Biblioteca Virtual | Webcrc'
+path:
+  -
+    alias: null
+    pid: null
+    langcode: es
+publish_on: {  }
+unpublish_on: {  }
+field_consulted_content_url:
+  -
+    uri: 'route:<nolink>'
+    title: ''
+    options: {  }
+field_consulted_content_icon:
+  -
+    target_type: media
+    target_uuid: ef33c93f-dcb8-4f2e-b6eb-a778a91ce1c8
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+    media:
+      - media.images_icons.ef33c93f-dcb8-4f2e-b6eb-a778a91ce1c8

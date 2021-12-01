@@ -1,0 +1,75 @@
+uuid:
+  -
+    value: e85fdbcb-f7a7-40f8-9c87-ebbe415e81ce
+langcode:
+  -
+    value: es
+type:
+  -
+    target_id: home_slideshow
+    target_type: node_type
+    target_uuid: 39671806-b5dd-478c-b348-e9a481df893e
+revision_timestamp:
+  -
+    value: '2021-08-24T23:54:48+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+revision_log: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+title:
+  -
+    value: 'Slideshow 2'
+created:
+  -
+    value: '2021-08-24T23:53:23+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2021-10-08T22:00:42+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: false
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+publish_on: {  }
+unpublish_on: {  }
+field_home_slideshow_description:
+  -
+    value: 'Propuesta Regulatoria ¨Compilación y simplificación en materia de televisión¨'
+field_home_slideshow_imagen:
+  -
+    alt: propuesta-regulatoria-materia-television
+    title: ''
+    width: 1440
+    height: 449
+    target_type: file
+    target_uuid: 81663a01-61ee-43ba-9d9d-68b2cb3ce071
+field_home_slideshow_url:
+  -
+    uri: 'internal:#'
+    title: ''
+    options: {  }
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+    file:
+      - file.file.81663a01-61ee-43ba-9d9d-68b2cb3ce071

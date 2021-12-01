@@ -1,0 +1,8 @@
+uuid: 88b11772-240a-4f6c-8c8c-b31f4b5fecac
+langcode: es
+status: true
+dependencies: {  }
+id: trans_plan_anual_adquisi_encabez
+label: 'Transparencia: Plan anual de adquisiciones [ Encabezado]'
+revision: 0
+description: 'Bloque de encabezado para vista Plan anual de adquisiciones de la sección de Transparencia'

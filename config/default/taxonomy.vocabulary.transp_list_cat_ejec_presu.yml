@@ -1,0 +1,8 @@
+uuid: f36591a0-c031-468e-9596-1812e67d1eb0
+langcode: es
+status: true
+dependencies: {  }
+name: 'Transparencia: Lista categorías [ ejecución presupuestal ]'
+vid: transp_list_cat_ejec_presu
+description: ''
+weight: 0

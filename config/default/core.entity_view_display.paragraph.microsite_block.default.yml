@@ -60,12 +60,12 @@ content:
       caption: {  }
       box_style: ''
       _uri: ''
-      breakpoints: {  }
-      sizes: ''
-      grid_header: ''
       grid: ''
       grid_medium: ''
       grid_small: ''
+      breakpoints: {  }
+      sizes: ''
+      grid_header: ''
     third_party_settings: {  }
   field_content_personalized:
     weight: 5

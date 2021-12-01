@@ -3,6 +3,7 @@ langcode: es
 status: true
 dependencies:
   module:
+    - block_content
     - system
   theme:
     - webcrc

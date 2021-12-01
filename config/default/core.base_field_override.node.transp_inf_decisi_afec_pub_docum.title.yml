@@ -1,0 +1,18 @@
+uuid: d1abea94-3462-4edd-9b71-a0c39ebd142d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_inf_decisi_afec_pub_docum
+id: node.transp_inf_decisi_afec_pub_docum.title
+field_name: title
+entity_type: node
+bundle: transp_inf_decisi_afec_pub_docum
+label: Titulo
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

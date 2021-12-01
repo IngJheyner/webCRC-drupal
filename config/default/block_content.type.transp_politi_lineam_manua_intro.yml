@@ -1,0 +1,8 @@
+uuid: 18f34554-622e-4235-8ad4-dde17e8d6bba
+langcode: es
+status: true
+dependencies: {  }
+id: transp_politi_lineam_manua_intro
+label: 'Transparencia: Políticas, lineamientos y manuales [ Introducción ]'
+revision: 0
+description: 'Texto intoductorio sobre el contenido Políticas, lineamientos y manuales de la sección de transparencia'

@@ -3,6 +3,7 @@ langcode: es
 status: true
 dependencies:
   config:
+    - field.field.paragraph.themes_interest.field_content_image
     - field.field.paragraph.themes_interest.field_interest_image
     - field.field.paragraph.themes_interest.field_interest_link
     - image.style.max_325x325

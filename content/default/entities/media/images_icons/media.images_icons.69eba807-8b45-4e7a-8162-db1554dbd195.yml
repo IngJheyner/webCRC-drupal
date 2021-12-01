@@ -1,0 +1,73 @@
+uuid:
+  -
+    value: 69eba807-8b45-4e7a-8162-db1554dbd195
+langcode:
+  -
+    value: es
+bundle:
+  -
+    target_id: images_icons
+    target_type: media_type
+    target_uuid: 0e378669-b385-4b74-a177-1947821cb21c
+revision_created:
+  -
+    value: '2021-09-07T21:41:51+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+revision_log_message: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+name:
+  -
+    value: ventanilla-unica-de-regulacion-de-comunicaciones.svg
+thumbnail:
+  -
+    alt: ventanilla-unica-de-regulacion-de-comunicaciones-crc
+    title: null
+    width: null
+    height: null
+    target_type: file
+    target_uuid: 77a1b4c7-b16e-4446-ab16-7329063e913c
+created:
+  -
+    value: '2021-09-07T21:41:41+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2021-09-07T21:41:41+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+metatag:
+  value:
+    canonical_url: 'http://default/es/index'
+    title: '| Webcrc'
+path:
+  -
+    alias: null
+    pid: null
+    langcode: es
+field_media_image:
+  -
+    alt: ventanilla-unica-de-regulacion-de-comunicaciones-crc
+    title: ''
+    width: 44
+    height: 44
+    target_type: file
+    target_uuid: 77a1b4c7-b16e-4446-ab16-7329063e913c
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+    file:
+      - file.file.77a1b4c7-b16e-4446-ab16-7329063e913c

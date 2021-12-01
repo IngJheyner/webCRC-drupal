@@ -1,0 +1,50 @@
+uuid:
+  -
+    value: 94369351-4f45-4920-b4d4-43a3a20b0244
+langcode:
+  -
+    value: es
+type:
+  -
+    target_id: tab_header
+    target_type: paragraphs_type
+    target_uuid: 7d932993-a4c5-4ca3-880f-6185c80bbe07
+status:
+  -
+    value: true
+created:
+  -
+    value: '2021-10-02T01:02:54+00:00'
+    format: 'Y-m-d\TH:i:sP'
+parent_id:
+  -
+    value: '57'
+parent_type:
+  -
+    value: paragraph
+parent_field_name:
+  -
+    value: field_tabs_content
+behavior_settings:
+  -
+    value: {  }
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_tab_description: {  }
+field_tab_icon: {  }
+field_tab_title:
+  -
+    value: Juegos
+field_tab_content:
+  -
+    target_type: paragraph
+    target_uuid: 0a297bbf-9add-4524-9852-66f2b6694197
+_content_sync:
+  entity_type: paragraph
+  entity_dependencies:
+    paragraph:
+      - paragraph.tab_content.0a297bbf-9add-4524-9852-66f2b6694197

@@ -1,0 +1,11 @@
+uuid: 30066a47-5312-4c29-b12c-6ce053520aa2
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.transparencia_lista_categorias_p
+id: taxonomy_term.transparencia_lista_categorias_p
+target_entity_type_id: taxonomy_term
+target_bundle: transparencia_lista_categorias_p
+default_langcode: site_default
+language_alterable: false

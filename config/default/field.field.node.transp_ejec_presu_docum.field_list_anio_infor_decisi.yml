@@ -1,0 +1,23 @@
+uuid: ee61a100-e075-4e08-b852-03e8438ecb32
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_list_anio_infor_decisi
+    - node.type.transp_ejec_presu_docum
+  module:
+    - options
+id: node.transp_ejec_presu_docum.field_list_anio_infor_decisi
+field_name: field_list_anio_infor_decisi
+entity_type: node
+bundle: transp_ejec_presu_docum
+label: Año
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 2021
+default_value_callback: ''
+settings: {  }
+field_type: list_integer
