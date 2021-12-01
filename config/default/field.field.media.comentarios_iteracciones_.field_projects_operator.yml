@@ -1,0 +1,29 @@
+uuid: 831fc224-7eb2-4571-a5e7-93bbc8b15b16
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_projects_operator
+    - media.type.comentarios_iteracciones_
+    - taxonomy.vocabulary.projects_operator
+id: media.comentarios_iteracciones_.field_projects_operator
+field_name: field_projects_operator
+entity_type: media
+bundle: comentarios_iteracciones_
+label: Operador
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      projects_operator: projects_operator
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

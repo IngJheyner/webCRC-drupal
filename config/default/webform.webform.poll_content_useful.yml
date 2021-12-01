@@ -29,13 +29,20 @@ elements: |-
       '#title': '¿Este contenido fue útil?'
       '#options': yes_no
       '#options_display': side_by_side
+      '#required': true
+      '#required_error': '¿Este contenido fue útil?, debes seleccionar una opción.'
       '#wrapper_type': form_element
       '#wrapper_attributes':
         class:
-          - 'd-flex flex-column flex-lg-row mb-0 align-items-center'
+          - d-flex
+          - flex-column
+          - flex-lg-row
+          - mb-0
+          - align-items-center
       '#label_attributes':
         class:
-          - 'mr-lg-3 mb-lg-0'
+          - mr-lg-3
+          - mb-lg-0
       '#access_create_roles':
         - anonymous
         - administrator
@@ -76,10 +83,10 @@ settings:
   page_confirm_path: ''
   page_theme_name: ''
   form_title: source_entity_webform
-  form_submit_once: false
+  form_submit_once: true
   form_exception_message: ''
   form_open_message: ''
-  form_close_message: ''
+  form_close_message: 'El formulario ha sido cerrado para el usuario&nbsp;[current-user:account-name]'
   form_previous_submissions: false
   form_confidential: false
   form_confidential_message: ''
@@ -167,7 +174,7 @@ settings:
   draft_pending_multiple_message: ''
   confirmation_type: message
   confirmation_title: ''
-  confirmation_message: ''
+  confirmation_message: 'Tu opini&oacute;n es muy importante para nosotros, gracias por visitarnos.'
   confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true
@@ -180,9 +187,9 @@ settings:
   limit_total_interval: null
   limit_total_message: ''
   limit_total_unique: false
-  limit_user: null
-  limit_user_interval: null
-  limit_user_message: ''
+  limit_user: 1
+  limit_user_interval: 3600
+  limit_user_message: '<p>Ya hemos obtenido una opini&oacute;n o respuesta a este contenido, gracias por visitarnos.</p>'
   limit_user_unique: false
   entity_limit_total: null
   entity_limit_total_interval: null

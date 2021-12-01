@@ -61,8 +61,8 @@ display:
           vanilla: false
           optionset: theme_interest
           style: ''
-          skin: ''
-          layout: ''
+          skin: grid
+          layout: split-right
           caption:
             nothing: nothing
             field_interest_link: '0'
@@ -82,18 +82,18 @@ display:
           link: ''
           class: ''
           id: '1'
-          override: false
+          override: true
           overridables:
-            arrows: '0'
+            arrows: arrows
+            draggable: draggable
+            infinite: infinite
+            variableWidth: variableWidth
             autoplay: '0'
             dots: '0'
-            draggable: '0'
-            infinite: '0'
             mouseWheel: '0'
             randomize: '0'
-            variableWidth: '0'
           cache: 0
-          current_view_mode: block_1
+          current_view_mode: block_themes_interest
           thumbnail_effect: ''
       row:
         type: fields
@@ -332,7 +332,7 @@ display:
           empty: false
           tokenize: true
           content:
-            value: '<p class=''h2 text-white title pt-4''><img src=''/themes/custom/webcrc/src/images/icono-temas-de-interes.svg'' onerror=''this.remove();''><span class=''h2''> {{''Themes''|t}}</span> {{''of interest''|t}}</p>'
+            value: '<p class=''h2 text-white title pt-5''><img src=''/themes/custom/webcrc/src/images/icono-temas-de-interes.svg'' onerror=''this.remove();''><span class=''h2''> {{''Themes''|t}}</span> {{''of interest''|t}}</p>'
             format: editor_cont_transparencia
           plugin_id: text
       footer: {  }

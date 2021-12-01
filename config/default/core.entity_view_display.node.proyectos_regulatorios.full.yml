@@ -15,7 +15,7 @@ dependencies:
     - field.field.node.proyectos_regulatorios.field_projects_links
     - field.field.node.proyectos_regulatorios.field_projects_services
     - field.field.node.proyectos_regulatorios.field_resumen_proyecto
-    - field.field.node.proyectos_regulatorios.field_tipo_proyecto
+    - field.field.node.proyectos_regulatorios.field_type_projects_comments
     - node.type.proyectos_regulatorios
   module:
     - entity_reference_revisions
@@ -37,14 +37,14 @@ content:
     third_party_settings: {  }
   field_estado_proyectos:
     type: list_default
-    weight: 2
+    weight: 1
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   field_interacciones_proyectos:
     type: entity_reference_revisions_entity_view
-    weight: 8
+    weight: 7
     region: content
     label: hidden
     settings:
@@ -53,7 +53,7 @@ content:
     third_party_settings: {  }
   field_nombre_proyecto:
     type: string
-    weight: 3
+    weight: 2
     region: content
     label: above
     settings:
@@ -61,7 +61,7 @@ content:
     third_party_settings: {  }
   field_oficina_proyecto:
     type: string
-    weight: 4
+    weight: 3
     region: content
     label: above
     settings:
@@ -69,7 +69,7 @@ content:
     third_party_settings: {  }
   field_poll_content_useful:
     type: webform_entity_reference_entity_view
-    weight: 7
+    weight: 6
     region: content
     label: above
     settings:
@@ -77,7 +77,7 @@ content:
     third_party_settings: {  }
   field_projects_documents_endings:
     type: entity_reference_entity_view
-    weight: 9
+    weight: 8
     region: content
     label: hidden
     settings:
@@ -98,7 +98,7 @@ content:
     third_party_settings: {  }
   field_projects_services:
     type: entity_reference_entity_view
-    weight: 6
+    weight: 5
     region: content
     label: hidden
     settings:
@@ -107,17 +107,18 @@ content:
     third_party_settings: {  }
   field_resumen_proyecto:
     type: basic_string
-    weight: 5
+    weight: 4
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
-  field_tipo_proyecto:
-    type: list_default
-    weight: 1
+  field_type_projects_comments:
+    type: entity_reference_label
+    weight: 9
     region: content
-    label: above
-    settings: {  }
+    label: hidden
+    settings:
+      link: false
     third_party_settings: {  }
 hidden:
   addtoany: true

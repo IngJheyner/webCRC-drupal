@@ -1,0 +1,8 @@
+uuid: d5f8ac6f-1fde-48ef-8c97-4c9c0bc565dc
+langcode: es
+status: true
+dependencies: {  }
+name: Operador
+vid: projects_operator
+description: 'Proyectos Comentarios.'
+weight: 0

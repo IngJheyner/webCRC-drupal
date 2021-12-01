@@ -1,0 +1,11 @@
+uuid: 5eabe183-a195-4652-80ed-639dc65466b0
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.projects_operator
+id: taxonomy_term.projects_operator
+target_entity_type_id: taxonomy_term
+target_bundle: projects_operator
+default_langcode: site_default
+language_alterable: false

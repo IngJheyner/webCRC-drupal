@@ -78,10 +78,12 @@
     <div class='page-library-table bg-white rounded-lg shadow mt-5'>
 
       {# ===== ===== TABLA DE DATOS ===== ===== #}
-      {% if rows %}
-        {{ rows }}
-      {% elseif empty %}
-        <div class="view-empty">{{ empty }} </div>
+      {#% if rows %#}
+      {{ rows }}
+      {% if empty %}
+        <div class="view-empty">
+          {{ empty }}
+        </div>
       {% endif %} 
 
       {# ===== ===== PAGINADOR ===== ===== #}

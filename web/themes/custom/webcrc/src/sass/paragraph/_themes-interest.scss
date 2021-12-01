@@ -25,20 +25,17 @@ div.theme-interest{
 
                     &:hover {
                     transform: scale(1.1, 1.1);
-                    transition: 1s all;
+                    transition: .5s all;
                     }
                 }
             }
             nav.slick__arrow{
-                margin-top: 1rem;
+                
+                position:initial !important;
+
                 button.slick-arrow{
-                    top: 105%;
                     height: 0;
-                    width: 0;
-                    border: 0;
-                    background: none;
-                    box-shadow: none;
-                    margin: 0;
+                    position: initial;
 
                     &::before{
                         color: white;
@@ -56,7 +53,7 @@ div.theme-interest{
                 }
 
                 button.slick-next{
-                    margin-left: 2rem;
+                    margin-left: 3rem;
                 }
             }
         }

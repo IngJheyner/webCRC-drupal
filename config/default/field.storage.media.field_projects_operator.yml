@@ -1,0 +1,20 @@
+uuid: 681d8928-1c88-44c5-bd07-f2b33531d0a0
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+    - taxonomy
+id: media.field_projects_operator
+field_name: field_projects_operator
+entity_type: media
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

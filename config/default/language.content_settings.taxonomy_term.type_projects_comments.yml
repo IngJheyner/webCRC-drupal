@@ -1,0 +1,11 @@
+uuid: 9a62317e-ac54-48c6-aa19-245cd6365357
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.type_projects_comments
+id: taxonomy_term.type_projects_comments
+target_entity_type_id: taxonomy_term
+target_bundle: type_projects_comments
+default_langcode: site_default
+language_alterable: false

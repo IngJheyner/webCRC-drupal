@@ -14,14 +14,24 @@ use Drupal\Core\Render\Markup;
 * Implements hook_form_alter().
 */
 function webcrc_projects_regulatory_form_alter (&$form, FormStateInterface $form_state, $form_id) {
-
   //Ocultar el campo de encuesta en los nodos del formulario
   $form['field_poll_content_useful']['widget'][0]['target_id']['#disabled'] = TRUE;
   $form['field_poll_content_useful']['widget'][0]['settings']['#open'] = FALSE;
+  //dpm($form_state);  
+}
 
-  if ($form['#id'] == "node-proyectos-regulatorios-edit-form" || $form['#id'] == "node-proyectos-regulatorios-form") {
+/**
+ * Implements hook_form_BASE_FORM_ID_alter().
+ */
+function webcrc_projects_regulatory_form_node_form_alter(&$form, $form_state, $form_id) {
+
+  $node = $form_state->getFormObject()->getEntity();
+  
+  if($node->getType() == 'proyectos_regulatorios'){   
+    
     $form['#attached']['library'][] = 'webcrc_projects_regulatory/webcrc_projects_regulatory';
     $form['field_resumen_proyecto']['widget'][0]['value']['#rows'] = 15;
+    
   }
 }
 
@@ -115,16 +125,16 @@ function webcrc_projects_regulatory_form_views_exposed_form_alter(&$form, FormSt
   if($form['#id'] == 'views-exposed-form-projects-comments-page-projects-comments'){
 
     /* ===== ===== TITULO ===== ===== */
-    if (isset($form['field_nombre_proyecto_value'])) $form['field_nombre_proyecto_value']['#prefix'] = '<p class="h4 text-center text-white mb-3">'.t('Find the project of your interest.').'</p>';
+    if (isset($form['nombre_proyecto'])) $form['nombre_proyecto']['#prefix'] = '<p class="h4 text-center text-white mb-3">'.t('Find the project of your interest.').'</p>';
 
     /* ===== ===== LINEA ===== ===== */
-    if (isset($form['field_estado_proyectos_value']))$form['field_estado_proyectos_value']['#prefix'] = '<hr class="bg-white"><div class="input__group d-flex">';
+    if (isset($form['estado_proyecto']))$form['estado_proyecto']['#prefix'] = '<hr class="bg-white"><div class="input__group d-flex">';
 
     /* ===== ===== END INPUT__GROUP ===== ===== */
-    if(isset($form['field_projects_services_target_id'])) $form['field_projects_services_target_id']['#suffix'] = '</div>';
+    if(isset($form['servicio_proyecto'])) $form['servicio_proyecto']['#suffix'] = '</div>';
 
     $form['actions']['#attributes'] = [
-      'class' => ['text-md-center mt-3'],
+      'class' => ['mt-3'],
     ];
     $form['actions']['submit']['#attributes'] = [
       'class' => ['btn-outline-light'],
@@ -145,7 +155,7 @@ function webcrc_projects_regulatory_preprocess_form_element(&$variables) {
     /* ===== ===== SELECTOR ===== ===== */
     switch ($variables['name']) {
 
-      case 'field_nombre_proyecto_value':
+      case 'nombre_proyecto':
 
         $variables['attributes'] = [
           'class' => [
@@ -163,7 +173,7 @@ function webcrc_projects_regulatory_preprocess_form_element(&$variables) {
         
       break;
 
-      case 'field_estado_proyectos_value': case 'field_tipo_proyecto_value': case 'field_projects_services_target_id':
+      case 'estado_proyecto': case 'tipo_proyecto': case 'servicio_proyecto':
 
         $variables['attributes'] = [
           'class' => [

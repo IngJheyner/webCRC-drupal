@@ -15,7 +15,7 @@ dependencies:
     - field.field.node.proyectos_regulatorios.field_projects_links
     - field.field.node.proyectos_regulatorios.field_projects_services
     - field.field.node.proyectos_regulatorios.field_resumen_proyecto
-    - field.field.node.proyectos_regulatorios.field_tipo_proyecto
+    - field.field.node.proyectos_regulatorios.field_type_projects_comments
     - node.type.proyectos_regulatorios
   module:
     - user
@@ -42,6 +42,6 @@ hidden:
   field_projects_links: true
   field_projects_services: true
   field_resumen_proyecto: true
-  field_tipo_proyecto: true
+  field_type_projects_comments: true
   langcode: true
   search_api_excerpt: true

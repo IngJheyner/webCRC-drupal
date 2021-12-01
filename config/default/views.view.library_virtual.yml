@@ -549,6 +549,7 @@ display:
         arguments: false
         header: false
         css_class: false
+        sorts: false
       style:
         type: default
         options:
@@ -661,6 +662,22 @@ display:
       arguments: {  }
       header: {  }
       css_class: library__highlight-content
+      sorts:
+        changed:
+          id: changed
+          table: node_field_data
+          field: changed
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: false
+          expose:
+            label: ''
+          granularity: second
+          entity_type: node
+          entity_field: changed
+          plugin_id: date
     cache_metadata:
       max-age: -1
       contexts:
@@ -1099,7 +1116,7 @@ display:
           default_row_class: false
           override: true
           sticky: false
-          caption: 'Resultados de búsqueda'
+          caption: 'Lista de documentos.'
           summary: ''
           description: ''
           columns:
@@ -1108,7 +1125,6 @@ display:
             title: title
             field_library_author: field_library_author
             created: created
-            field_library_type_document: field_library_type_document
           info:
             field_library_isbn:
               sortable: false
@@ -1143,15 +1159,8 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
-            field_library_type_document:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
           default: '-1'
-          empty_table: false
+          empty_table: true
       defaults:
         style: false
         row: false
@@ -1865,18 +1874,7 @@ display:
           expose_sort_order: false
           sort_asc_label: Asc
           sort_desc_label: Desc
-      empty:
-        area_text_custom:
-          id: area_text_custom
-          table: views
-          field: area_text_custom
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: true
-          tokenize: true
-          content: "<table class='table' style=\"width:100%\" id=\"library-virtual\">\r\n  <thead>\r\n     <tr><th><p class=\"h4 text-left p-md-3\">Resultados de la búsqueda</p></th></tr>\r\n  </thead> \r\n <tbody>\r\n     <tr><td><p>No se encontraron resultados.</p></td></tr>\r\n  </tbody>\r\n</table>"
-          plugin_id: text_custom
+      empty: {  }
     cache_metadata:
       max-age: -1
       contexts:

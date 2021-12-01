@@ -46,7 +46,7 @@
 {%
   set data_empty = rows|length > 1 ? "datable-webcrc" : "datable-webcrc-empty"
 %}
-
+<div class="table-responsive">
 <table{{ attributes.addClass(classes) }} id="{{ data_empty }}" style="width:100%" id-table='library-virtual'>
   {% if header %}
     <thead>
@@ -121,6 +121,9 @@
               </{{ column.wrapper_element }}>
             {%- else -%}
               {% for content in column.content %}
+                {% if column.attributes.storage["class"][0] == 'views-empty' %}
+                  {{ 'No se encontraron resultados.' }}
+                {% endif %}
                 {{- content.separator }}{{ content.field_output -}}
               {% endfor %}
             {%- endif %}
@@ -130,3 +133,4 @@
     {% endfor %}
   </tbody>
 </table>
+</div>

@@ -1,0 +1,29 @@
+uuid: 576ae175-6b2f-4758-b115-0a2b256b9be6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_projects_comments
+    - node.type.proyectos_regulatorios
+    - taxonomy.vocabulary.type_projects_comments
+id: node.proyectos_regulatorios.field_type_projects_comments
+field_name: field_type_projects_comments
+entity_type: node
+bundle: proyectos_regulatorios
+label: 'Tipo de Proyecto'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      type_projects_comments: type_projects_comments
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

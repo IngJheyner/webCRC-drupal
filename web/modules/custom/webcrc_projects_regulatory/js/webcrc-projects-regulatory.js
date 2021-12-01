@@ -99,23 +99,26 @@
             let iframeC = undefined;
             let nameRouteFile = undefined;
 
-            $("div.field--name-field-interacciones-proyectos table tbody div.field-group-tabs-wrapper input.entity-browser-processed").on("click", function () {
+            $('div.field--name-field-interacciones-proyectos table tbody div.field-group-tabs-wrapper input.entity-browser-processed').once('webcrc').each(function (){
 
-                if($(this).attr('value') == 'Gestionar Propuestas') {
-                    
-                    iframeC = 'iframe#entity_browser_iframe_propuesta_interacciones_media';
-                    nameRouteFile = 'div.field--name-field-ruta-file-propuestas';
+                $(this).on("click", function () {
 
-                }else if($(this).attr('value') == 'Gestionar Comentarios'){
+                    if($(this).attr('value') == 'Gestionar Propuestas') {
+                        
+                        iframeC = 'iframe#entity_browser_iframe_propuesta_interacciones_media';
+                        nameRouteFile = 'div.field--name-field-ruta-file-propuestas';
 
-                    iframeC = 'iframe#entity_browser_iframe_comentarios_interacciones_media';
-                    nameRouteFile = 'div.field--name-field-ruta-archivo-comentarios';
+                    }else if($(this).attr('value') == 'Gestionar Comentarios'){
 
-                }else{
-                    iframeC = 'iframe#entity_browser_iframe_interactions_extemporaneous';
-                    nameRouteFile = 'div.field--name-field-extemporaneous-route-file';
-                }
+                        iframeC = 'iframe#entity_browser_iframe_comentarios_interacciones_media';
+                        nameRouteFile = 'div.field--name-field-ruta-archivo-comentarios';
 
+                    }else{
+                        iframeC = 'iframe#entity_browser_iframe_interactions_extemporaneous';
+                        nameRouteFile = 'div.field--name-field-extemporaneous-route-file';
+                    }
+
+                });
             });
 
             $(document, context).ajaxComplete( function () {

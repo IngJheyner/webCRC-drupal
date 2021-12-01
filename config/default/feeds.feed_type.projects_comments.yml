@@ -11,7 +11,6 @@ dependencies:
     - field.field.node.proyectos_regulatorios.field_projects_links
     - field.field.node.proyectos_regulatorios.field_projects_services
     - field.field.node.proyectos_regulatorios.field_resumen_proyecto
-    - field.field.node.proyectos_regulatorios.field_tipo_proyecto
     - node.type.proyectos_regulatorios
   module:
     - feeds_tamper
@@ -136,12 +135,6 @@ mappings:
     settings:
       language: null
       timezone: UTC
-  -
-    target: field_tipo_proyecto
-    map:
-      value: type_project
-    settings:
-      language: null
   -
     target: field_nombre_proyecto
     map:

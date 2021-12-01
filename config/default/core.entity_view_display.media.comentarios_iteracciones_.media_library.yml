@@ -5,12 +5,11 @@ dependencies:
   config:
     - core.entity_view_mode.media.media_library
     - field.field.media.comentarios_iteracciones_.field_media_file_2
-    - field.field.media.comentarios_iteracciones_.field_operador_comentarios
+    - field.field.media.comentarios_iteracciones_.field_projects_operator
     - field.field.media.comentarios_iteracciones_.field_ruta_archivo_comentarios
     - media.type.comentarios_iteracciones_
   module:
     - file
-    - options
 id: media.comentarios_iteracciones_.media_library
 targetEntityType: media
 bundle: comentarios_iteracciones_
@@ -24,15 +23,9 @@ content:
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-  field_operador_comentarios:
-    type: list_default
-    weight: 0
-    region: content
-    label: above
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   created: true
+  field_projects_operator: true
   field_ruta_archivo_comentarios: true
   langcode: true
   name: true

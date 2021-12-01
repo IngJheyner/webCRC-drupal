@@ -1,0 +1,8 @@
+uuid: c64f5d98-358c-49aa-a2ce-038ea32ef15b
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo de Proyecto Comentarios'
+vid: type_projects_comments
+description: 'Proyectos Comentarios.'
+weight: 0
