@@ -14,7 +14,7 @@ bundle: themes_interest
 label: Enlace
 description: 'Enlace para el tema de interes'
 required: false
-translatable: true
+translatable: false
 default_value:
   -
     attributes: {  }

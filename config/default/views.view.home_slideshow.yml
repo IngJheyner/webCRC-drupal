@@ -62,6 +62,7 @@ display:
         options:
           vanilla: false
           optionset: default
+          style: ''
           skin: grid
           layout: below
           caption:

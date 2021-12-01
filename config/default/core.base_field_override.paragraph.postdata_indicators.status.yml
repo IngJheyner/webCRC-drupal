@@ -1,0 +1,22 @@
+uuid: 41a48a03-14c4-451c-afcf-461f99ae0a03
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.postdata_indicators
+id: paragraph.postdata_indicators.status
+field_name: status
+entity_type: paragraph
+bundle: postdata_indicators
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

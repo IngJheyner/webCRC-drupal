@@ -1,0 +1,22 @@
+uuid: 0b37a923-90a9-4bc6-8163-cb424830602d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.microsite_crc
+id: node.microsite_crc.status
+field_name: status
+entity_type: node
+bundle: microsite_crc
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

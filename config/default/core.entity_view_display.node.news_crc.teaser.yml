@@ -26,7 +26,6 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  addtoany: true
   feeds_item: true
   field_category: true
   field_content: true

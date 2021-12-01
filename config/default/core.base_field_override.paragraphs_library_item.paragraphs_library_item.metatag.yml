@@ -1,0 +1,18 @@
+uuid: 05d6a3c8-3d1d-428e-9d26-e0b8fe680d49
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs_library
+id: paragraphs_library_item.paragraphs_library_item.metatag
+field_name: metatag
+entity_type: paragraphs_library_item
+bundle: paragraphs_library_item
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

@@ -4,6 +4,13 @@ status: true
 dependencies:
   config:
     - media.type.comentarios_iteracciones_
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
 id: media.comentarios_iteracciones_
 target_entity_type_id: media
 target_bundle: comentarios_iteracciones_

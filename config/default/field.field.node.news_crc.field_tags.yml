@@ -13,7 +13,7 @@ bundle: news_crc
 label: Etiquetas
 description: 'Relación de la noticia con otros tipos de categorias'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

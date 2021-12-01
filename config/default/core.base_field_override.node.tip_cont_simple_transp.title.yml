@@ -1,0 +1,18 @@
+uuid: 6f5f5c99-3ea2-4b85-8ec2-5ed666a10c55
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.tip_cont_simple_transp
+id: node.tip_cont_simple_transp.title
+field_name: title
+entity_type: node
+bundle: tip_cont_simple_transp
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

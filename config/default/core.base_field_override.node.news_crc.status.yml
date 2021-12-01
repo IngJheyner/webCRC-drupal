@@ -1,0 +1,22 @@
+uuid: df87ea66-2873-47e6-98fa-30557ac224f4
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.news_crc
+id: node.news_crc.status
+field_name: status
+entity_type: node
+bundle: news_crc
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

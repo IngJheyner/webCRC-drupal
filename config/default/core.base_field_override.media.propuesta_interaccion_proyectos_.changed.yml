@@ -1,0 +1,18 @@
+uuid: f001c2b4-673b-4cd8-9105-3be56a2c7403
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.propuesta_interaccion_proyectos_
+id: media.propuesta_interaccion_proyectos_.changed
+field_name: changed
+entity_type: media
+bundle: propuesta_interaccion_proyectos_
+label: Changed
+description: 'El momento en el cual el elemento multimedia fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

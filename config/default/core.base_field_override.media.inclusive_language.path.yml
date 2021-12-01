@@ -1,0 +1,20 @@
+uuid: 96000f2c-a6c0-407e-bf91-0412d3cb0882
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.inclusive_language
+  module:
+    - path
+id: media.inclusive_language.path
+field_name: path
+entity_type: media
+bundle: inclusive_language
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

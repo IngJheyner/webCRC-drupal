@@ -1,0 +1,20 @@
+uuid: 03fd25db-2662-4a54-930e-890e23ca8a8a
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.comentarios_iteracciones_
+id: media.comentarios_iteracciones_.uid
+field_name: uid
+entity_type: media
+bundle: comentarios_iteracciones_
+label: 'Escrito por'
+description: 'El ID de usuario del autor.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

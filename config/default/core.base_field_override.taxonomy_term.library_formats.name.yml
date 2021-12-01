@@ -1,0 +1,18 @@
+uuid: 15528285-7e5b-4531-9f14-e61f1456c622
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.library_formats
+id: taxonomy_term.library_formats.name
+field_name: name
+entity_type: taxonomy_term
+bundle: library_formats
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,22 @@
+uuid: cd640e6f-abe9-4279-ae6b-c251c38b4378
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.images_icons
+id: media.images_icons.status
+field_name: status
+entity_type: media
+bundle: images_icons
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

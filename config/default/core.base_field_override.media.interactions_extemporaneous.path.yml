@@ -1,0 +1,20 @@
+uuid: 0fe77ea2-7ed5-4424-be65-1804f18b9ad9
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.interactions_extemporaneous
+  module:
+    - path
+id: media.interactions_extemporaneous.path
+field_name: path
+entity_type: media
+bundle: interactions_extemporaneous
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

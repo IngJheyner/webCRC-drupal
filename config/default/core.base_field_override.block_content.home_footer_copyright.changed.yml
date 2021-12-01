@@ -1,0 +1,18 @@
+uuid: b06ccbd7-cb65-4f3c-a3ca-5f805b07d4e0
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.home_footer_copyright
+id: block_content.home_footer_copyright.changed
+field_name: changed
+entity_type: block_content
+bundle: home_footer_copyright
+label: Changed
+description: 'La fecha en la que el bloque personalizado se editó por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

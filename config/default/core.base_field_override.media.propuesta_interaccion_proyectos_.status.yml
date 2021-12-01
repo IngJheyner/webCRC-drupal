@@ -1,0 +1,22 @@
+uuid: f1300f90-6ed6-4f18-ac11-728322cec9a8
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.propuesta_interaccion_proyectos_
+id: media.propuesta_interaccion_proyectos_.status
+field_name: status
+entity_type: media
+bundle: propuesta_interaccion_proyectos_
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

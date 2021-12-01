@@ -1,0 +1,29 @@
+uuid: 9a8ff8a4-ef0d-4983-ac9e-124042869000
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content_icon
+    - media.type.images_icons
+    - paragraphs.paragraphs_type.accessibility_toolbar
+id: paragraph.accessibility_toolbar.field_content_icon
+field_name: field_content_icon
+entity_type: paragraph
+bundle: accessibility_toolbar
+label: Icono
+description: 'icono barra de accesibilidad'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      images_icons: images_icons
+    sort:
+      field: created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

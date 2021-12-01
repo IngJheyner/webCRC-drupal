@@ -1,0 +1,20 @@
+uuid: 4fef2561-a3ff-4928-872e-c73bdca68e69
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.tip_cont_simple_transp
+id: node.tip_cont_simple_transp.uid
+field_name: uid
+entity_type: node
+bundle: tip_cont_simple_transp
+label: 'Escrito por'
+description: 'El nombre de usuario del autor del contenido.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

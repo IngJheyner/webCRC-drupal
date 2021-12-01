@@ -1,0 +1,20 @@
+uuid: a93792cd-36c2-4acd-9c0c-85389b9cec00
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.interactions_extemporaneous
+id: media.interactions_extemporaneous.name
+field_name: name
+entity_type: media
+bundle: interactions_extemporaneous
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

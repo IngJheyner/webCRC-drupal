@@ -1,0 +1,18 @@
+uuid: f0d48122-33fe-4743-91ce-ff186ee236e3
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.interactions_extemporaneous
+id: media.interactions_extemporaneous.metatag
+field_name: metatag
+entity_type: media
+bundle: interactions_extemporaneous
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

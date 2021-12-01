@@ -1,0 +1,10 @@
+uuid: 425c559c-be96-4434-8726-134368419274
+langcode: es
+status: true
+dependencies: {  }
+id: accessibility_toolbar
+label: 'Barra de herramientas de accesibilidad'
+icon_uuid: null
+icon_default: null
+description: 'Barra de herramientas de accesibilidad'
+behavior_plugins: {  }

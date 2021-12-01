@@ -1,0 +1,22 @@
+uuid: 01ae783a-6a5d-4021-9e28-77dc6a685e6f
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.newsletter
+id: block_content.newsletter.status
+field_name: status
+entity_type: block_content
+bundle: newsletter
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

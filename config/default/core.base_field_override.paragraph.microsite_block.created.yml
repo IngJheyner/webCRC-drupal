@@ -1,0 +1,18 @@
+uuid: ff07c951-e66e-4883-9d4d-3604b9be37cb
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.microsite_block
+id: paragraph.microsite_block.created
+field_name: created
+entity_type: paragraph
+bundle: microsite_block
+label: Fecha
+description: 'La hora en que se creó el Paragraph.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

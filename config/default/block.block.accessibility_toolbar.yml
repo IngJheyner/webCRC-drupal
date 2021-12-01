@@ -1,0 +1,25 @@
+uuid: 534fc9f4-9634-4382-8433-2f5b3ba9d106
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:accessibility_toolbar:5f7d8273-ea74-440c-8298-73ef2972b5a7'
+  module:
+    - block_content
+  theme:
+    - webcrc
+id: accessibility_toolbar
+theme: webcrc
+region: extra
+weight: 0
+provider: null
+plugin: 'block_content:5f7d8273-ea74-440c-8298-73ef2972b5a7'
+settings:
+  id: 'block_content:5f7d8273-ea74-440c-8298-73ef2972b5a7'
+  label: 'Barra de accesibilidad'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

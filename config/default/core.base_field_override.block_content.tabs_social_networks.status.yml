@@ -1,0 +1,22 @@
+uuid: c2c5aab2-d195-45cf-b5e5-601bd1e4a3b8
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.tabs_social_networks
+id: block_content.tabs_social_networks.status
+field_name: status
+entity_type: block_content
+bundle: tabs_social_networks
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

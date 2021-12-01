@@ -1,0 +1,22 @@
+uuid: 4d70539f-2c65-4564-8db6-1e50800f77c4
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.news_crc_documents
+id: media.news_crc_documents.status
+field_name: status
+entity_type: media
+bundle: news_crc_documents
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

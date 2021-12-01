@@ -1,0 +1,18 @@
+uuid: 83354bac-0d34-4e5a-adab-b85e61521c4b
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.themes_interest_microsite
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.themes_interest_microsite
+target_entity_type_id: paragraph
+target_bundle: themes_interest_microsite
+default_langcode: site_default
+language_alterable: false

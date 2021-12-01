@@ -1,0 +1,20 @@
+uuid: a650b81c-b275-4670-b78a-818d2822bd3a
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.audio_news_crc
+  module:
+    - path
+id: media.audio_news_crc.path
+field_name: path
+entity_type: media
+bundle: audio_news_crc
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

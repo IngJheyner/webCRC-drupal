@@ -1,0 +1,18 @@
+uuid: 0af3fa89-a49d-43a6-aadc-0a15ad5f0524
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.slideshow
+id: media.slideshow.changed
+field_name: changed
+entity_type: media
+bundle: slideshow
+label: Changed
+description: 'El momento en el cual el elemento multimedia fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

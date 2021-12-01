@@ -1,0 +1,22 @@
+uuid: 29ad34a5-1210-41d5-b7ad-eeb82a124376
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.list_social_networks
+id: paragraph.list_social_networks.status
+field_name: status
+entity_type: paragraph
+bundle: list_social_networks
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

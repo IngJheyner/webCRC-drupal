@@ -1,0 +1,18 @@
+uuid: 3f99d839-b464-4dc7-a8a3-1aa0609f414b
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-transp-access-infor-public
+id: menu_link_content.menu-transp-access-infor-public.title
+field_name: title
+entity_type: menu_link_content
+bundle: menu-transp-access-infor-public
+label: 'Título del enlace del menú.'
+description: 'El texto que se usará en el menú para este enlace.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

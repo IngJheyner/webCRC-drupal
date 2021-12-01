@@ -1,0 +1,18 @@
+uuid: 252ed0dc-87d7-4d44-a228-e60df6b5d44a
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.iterecciones_proyectos
+id: paragraph.iterecciones_proyectos.created
+field_name: created
+entity_type: paragraph
+bundle: iterecciones_proyectos
+label: Fecha
+description: 'La hora en que se creó el Paragraph.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

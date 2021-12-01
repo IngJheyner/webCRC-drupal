@@ -1,0 +1,38 @@
+uuid: 9d3d1481-d044-4dc8-89b8-63f0d00b57cf
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.accessibility_toolbar.field_content_icon
+    - field.field.paragraph.accessibility_toolbar.field_url
+    - paragraphs.paragraphs_type.accessibility_toolbar
+  module:
+    - link
+id: paragraph.accessibility_toolbar.default
+targetEntityType: paragraph
+bundle: accessibility_toolbar
+mode: default
+content:
+  field_content_icon:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_url:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  search_api_excerpt: true

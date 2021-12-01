@@ -1,0 +1,22 @@
+uuid: 2a4eece3-39cd-43a8-8bc9-f0b994d16178
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.themes_interest
+id: paragraph.themes_interest.status
+field_name: status
+entity_type: paragraph
+bundle: themes_interest
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

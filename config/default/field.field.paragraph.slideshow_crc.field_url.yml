@@ -14,7 +14,7 @@ bundle: slideshow_crc
 label: Enlace
 description: 'Enlace para el slideshow'
 required: false
-translatable: true
+translatable: false
 default_value:
   -
     attributes: {  }

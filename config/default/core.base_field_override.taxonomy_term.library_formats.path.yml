@@ -1,0 +1,20 @@
+uuid: 3bc2b4c6-1deb-45d6-9dc9-6b7657c3a408
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.library_formats
+  module:
+    - path
+id: taxonomy_term.library_formats.path
+field_name: path
+entity_type: taxonomy_term
+bundle: library_formats
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

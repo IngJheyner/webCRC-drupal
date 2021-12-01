@@ -1,0 +1,20 @@
+uuid: f303616c-4d62-4f2a-8f40-c11815e971fd
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.proyectos_regulatorios
+id: node.proyectos_regulatorios.menu_link
+field_name: menu_link
+entity_type: node
+bundle: proyectos_regulatorios
+label: 'Enlace del menu'
+description: 'Enlace de menú calculado para el nodo (solo disponible durante el guardado del nodo).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

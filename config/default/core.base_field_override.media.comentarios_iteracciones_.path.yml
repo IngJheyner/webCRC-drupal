@@ -1,0 +1,20 @@
+uuid: d1c9bc08-3197-4f23-a3ac-d2a1f496785e
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.comentarios_iteracciones_
+  module:
+    - path
+id: media.comentarios_iteracciones_.path
+field_name: path
+entity_type: media
+bundle: comentarios_iteracciones_
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

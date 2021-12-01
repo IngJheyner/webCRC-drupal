@@ -1,0 +1,18 @@
+uuid: 875d66b4-67ab-4201-ad15-d48900737b38
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.tip_cont_simple_transp
+id: node.tip_cont_simple_transp.publish_on
+field_name: publish_on
+entity_type: node
+bundle: tip_cont_simple_transp
+label: 'Publicar en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

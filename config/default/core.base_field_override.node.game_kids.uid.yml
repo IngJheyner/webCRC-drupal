@@ -1,0 +1,20 @@
+uuid: d10c8269-91da-4a8d-86c3-fcd872b4dbc4
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.game_kids
+id: node.game_kids.uid
+field_name: uid
+entity_type: node
+bundle: game_kids
+label: 'Escrito por'
+description: 'El nombre de usuario del autor del contenido.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

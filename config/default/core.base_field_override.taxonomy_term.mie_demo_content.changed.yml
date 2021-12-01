@@ -1,0 +1,18 @@
+uuid: 2bdff924-dadf-4239-bba3-008c89307278
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.mie_demo_content
+id: taxonomy_term.mie_demo_content.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: mie_demo_content
+label: Changed
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

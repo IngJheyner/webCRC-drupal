@@ -13,7 +13,7 @@ bundle: themes_interest_microsite
 label: Imagen
 description: 'Imagen para el tema de interes del micrositio'
 required: true
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

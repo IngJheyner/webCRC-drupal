@@ -1,0 +1,22 @@
+uuid: 663961d6-6d47-4b9b-a920-2c58915f4653
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.interactions_extemporaneous
+id: media.interactions_extemporaneous.status
+field_name: status
+entity_type: media
+bundle: interactions_extemporaneous
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,18 @@
+uuid: 5ecc4be9-3cdd-46e6-88c8-8500336dbcb0
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.content_kids_page
+id: node.content_kids_page.publish_on
+field_name: publish_on
+entity_type: node
+bundle: content_kids_page
+label: 'Publicar en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

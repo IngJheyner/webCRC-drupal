@@ -1,0 +1,18 @@
+uuid: 50823500-754d-4192-88d2-d5c9db3102a0
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.tabs_wrapper_vertical
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.tabs_wrapper_vertical
+target_entity_type_id: paragraph
+target_bundle: tabs_wrapper_vertical
+default_langcode: site_default
+language_alterable: true

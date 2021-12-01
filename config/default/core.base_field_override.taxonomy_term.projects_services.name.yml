@@ -1,0 +1,18 @@
+uuid: 94ac52d4-7fc2-4aab-ae29-40f236d3763f
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.projects_services
+id: taxonomy_term.projects_services.name
+field_name: name
+entity_type: taxonomy_term
+bundle: projects_services
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

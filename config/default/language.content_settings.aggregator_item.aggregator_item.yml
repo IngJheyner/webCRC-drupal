@@ -1,0 +1,11 @@
+uuid: 890517bc-3de5-46d8-83d7-9ce9e43fe87e
+langcode: es
+status: true
+dependencies:
+  module:
+    - aggregator
+id: aggregator_item.aggregator_item
+target_entity_type_id: aggregator_item
+target_bundle: aggregator_item
+default_langcode: site_default
+language_alterable: false

@@ -14,7 +14,7 @@ bundle: bloq_descrip_menu_transparencia
 label: Descripción
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

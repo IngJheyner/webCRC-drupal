@@ -14,7 +14,7 @@ bundle: list_social_networks
 label: Enlace
 description: 'Enlace de la red social'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

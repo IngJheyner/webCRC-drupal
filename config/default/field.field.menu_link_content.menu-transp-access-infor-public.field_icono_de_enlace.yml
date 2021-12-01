@@ -13,7 +13,7 @@ bundle: menu-transp-access-infor-public
 label: 'Icono de Enlace'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

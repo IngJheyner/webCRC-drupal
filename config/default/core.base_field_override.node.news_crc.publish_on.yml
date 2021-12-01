@@ -1,0 +1,18 @@
+uuid: 0a9a384a-8dec-4ca6-bdb1-996290e399d7
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.news_crc
+id: node.news_crc.publish_on
+field_name: publish_on
+entity_type: node
+bundle: news_crc
+label: 'Publicar en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp
