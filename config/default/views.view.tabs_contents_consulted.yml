@@ -73,9 +73,9 @@ display:
           skin_thumbnail: ''
           thumbnail_position: ''
           thumbnail_caption: ''
-          grid: 6
-          grid_medium: 3
-          grid_small: 2
+          grid: '6'
+          grid_medium: '3'
+          grid_small: '2'
           visible_items: 6
           preserve_keys: false
           image: ''
