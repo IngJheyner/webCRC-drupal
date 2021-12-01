@@ -1,163 +1,3 @@
-blocks:
-  -
-    info: 'Home [Encabezado]'
-    langcode: es
-    uuid: 06f5900d-1d33-41c8-a2b4-222862ad15a8
-    bundle: home_header
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_home_header_logo_govco:
-        -
-          target_id: '2'
-          alt: logo-gov-co
-          title: ''
-          width: '190'
-          height: '45'
-      field_home_header_logo_webcrc:
-        -
-          target_id: '1'
-          alt: logo-crc-comision-de-regulacion-de-comunicaciones
-          title: ''
-          width: '700'
-          height: '555'
-  -
-    info: Indicadores
-    langcode: es
-    uuid: a6f79fbc-3c22-45c9-b011-f3b39cdcfe46
-    bundle: indicators
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_content_title:
-        -
-          value: Indicadores
-      field_icon:
-        -
-          target_id: '16'
-      field_indicator:
-        -
-          target_id: '26'
-          target_revision_id: '26'
-        -
-          target_id: '27'
-          target_revision_id: '27'
-        -
-          target_id: '28'
-          target_revision_id: '28'
-        -
-          target_id: '29'
-          target_revision_id: '29'
-        -
-          target_id: '30'
-          target_revision_id: '30'
-      field_logo:
-        -
-          target_id: '1'
-      field_primary_url:
-        -
-          uri: 'https://www.postdata.gov.co/'
-          title: 'Información tomada de www.postdata.gov.co'
-          options: {  }
-  -
-    info: 'Ultimas noticias'
-    langcode: es
-    uuid: d6b7ca44-d780-4080-8a98-17d98296f931
-    bundle: last_news
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_content_title:
-        -
-          value: Noticias
-      field_content_title_primary:
-        -
-          value: Últimas
-      field_content_view:
-        -
-          target_id: news
-          display_id: last_news
-          data: 'a:5:{s:8:"argument";N;s:5:"limit";N;s:6:"offset";N;s:5:"title";N;s:5:"pager";N;}'
-      field_icon:
-        -
-          target_id: '16'
-  -
-    info: 'Boletin de noticias'
-    langcode: es
-    uuid: 8df82bb0-b5c2-4fa4-a354-97253c686628
-    bundle: newsletter
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_content_description:
-        -
-          value: 'Suscríbase a nuestro boletín y manténgase actualizado con las últimas noticias del sector. <br /> Los campos con (*) son obligatorios'
-      field_content_form:
-        -
-          target_id: boletin_de_noticias
-          default_data: ''
-          status: open
-          open: ''
-          close: ''
-      field_content_title:
-        -
-          value: 'Boletín de noticias'
-      field_icon:
-        -
-          target_id: '18'
-  -
-    info: 'Tabs redes sociales'
-    langcode: es
-    uuid: b78e3423-dddb-49b0-97af-f37d06b61a79
-    bundle: tabs_social_networks
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_content_tabs:
-        -
-          target_id: '40'
-          target_revision_id: '40'
-  -
-    info: 'Contenidos mas importantes crc'
-    langcode: es
-    uuid: f054bf59-bf4c-47a8-a4c3-aebdbb350de5
-    bundle: important_content_crc
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_content_tabs:
-        -
-          target_id: '47'
-          target_revision_id: '47'
-      field_content_title:
-        -
-          value: 'en la CRC'
-      field_content_title_primary:
-        -
-          value: 'Lo más importante '
-      field_icon:
-        -
-          target_id: '21'
-  -
-    info: rss
-    langcode: es
-    uuid: 1362f50e-7d7c-4e7c-a8dc-7027dd9b7214
-    bundle: feed_block
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_intro_text: {  }
-      field_read_more: {  }
-      field_rss_feed:
-        -
-          feed_uri: 'https://www.postdata.gov.co/postdata-rss.xml'
-          count: '5'
-          display_date: '1'
-          date_format: news_dates
-          custom_date_format: 'F j, Y'
-          display_description: '1'
-          description_length: '300'
-          description_plaintext: '1'
 menus:
   -
     menu_name: main
@@ -488,9 +328,459 @@ taxonomies:
       parent: '0'
       uuid: 226e2cfc-55c3-4165-abfc-40e5459bb402
       field_formats_image: {  }
-  library_keywords: {  }
-  library_type_document: {  }
+  library_keywords:
+    -
+      vid: library_keywords
+      tid: '84'
+      langcode: es
+      name: Colombia
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 06379649-5c0f-47a1-b887-d53604746ba8
+    -
+      vid: library_keywords
+      tid: '85'
+      langcode: es
+      name: Comunicación
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 964f9607-1ed5-4375-8256-d22c3efe714b
+  library_type_document:
+    -
+      vid: library_type_document
+      tid: '82'
+      langcode: es
+      name: 'Estudios e investigaciones'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: f8a8e4f2-d5c7-481f-a33d-3ae48a4aa2fd
+      field_type_document_image:
+        -
+          target_id: '422'
+          alt: 'Estudios e investigaciones'
+          title: ''
+          width: '3060'
+          height: '2040'
+    -
+      vid: library_type_document
+      tid: '83'
+      langcode: es
+      name: 'Mediciones NSU con los servicios de comunicaciones'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: c82935b2-4653-4e7e-988d-c0e2dcb8cbfa
+      field_type_document_image:
+        -
+          target_id: '423'
+          alt: ''
+          title: ''
+          width: '700'
+          height: '555'
   mie_demo_content: {  }
-  news_tags: {  }
-  projects_services: {  }
+  news_tags:
+    -
+      vid: news_tags
+      tid: '74'
+      langcode: es
+      name: Actualidad
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 686200f1-1bdb-43d3-953e-68f680f2e780
+    -
+      vid: news_tags
+      tid: '73'
+      langcode: es
+      name: 'Blog CRC'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: c3774c64-3419-41bb-965e-f1c637f9d22e
+    -
+      vid: news_tags
+      tid: '72'
+      langcode: es
+      name: Ciudadanía
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 934562d1-2649-496e-b054-3fbd33c37add
+    -
+      vid: news_tags
+      tid: '71'
+      langcode: es
+      name: Movilidad
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: ef06cb2d-6af9-498f-a37a-3543c4c8d1ee
+  projects_operator:
+    -
+      vid: projects_operator
+      tid: '98'
+      langcode: es
+      name: Claro
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 1aed70c8-4eb0-4083-ac0b-56310b58a187
+    -
+      vid: projects_operator
+      tid: '99'
+      langcode: es
+      name: EPM
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: bee46fe8-63ae-4661-aa94-90bd7cc7b8ea
+    -
+      vid: projects_operator
+      tid: '100'
+      langcode: es
+      name: Movistar
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 93c628dc-75c7-486e-b7ef-d1e458f3ff6a
+    -
+      vid: projects_operator
+      tid: '101'
+      langcode: es
+      name: Tigo
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 208c2b08-4dc7-4485-97c5-d882498044e6
+  projects_services:
+    -
+      vid: projects_services
+      tid: '77'
+      langcode: es
+      name: 'Internet Fijo'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 97b4198f-5216-4451-9728-8d1e9d88ee03
+    -
+      vid: projects_services
+      tid: '78'
+      langcode: es
+      name: 'Internet Móvil'
+      description__value: null
+      description__format: null
+      weight: '1'
+      parent: '0'
+      uuid: df563439-b9c0-498d-b4a5-7a5c03d52c50
+    -
+      vid: projects_services
+      tid: '81'
+      langcode: es
+      name: Postal
+      description__value: null
+      description__format: null
+      weight: '2'
+      parent: '0'
+      uuid: 3a051b9c-a73a-47c6-8a1d-dbd67d707700
+    -
+      vid: projects_services
+      tid: '76'
+      langcode: es
+      name: Radio
+      description__value: null
+      description__format: null
+      weight: '3'
+      parent: '0'
+      uuid: e6d7fe31-7860-4371-9c7a-94a7b01f3bfd
+    -
+      vid: projects_services
+      tid: '79'
+      langcode: es
+      name: 'Telefonía Fija'
+      description__value: null
+      description__format: null
+      weight: '4'
+      parent: '0'
+      uuid: d464c833-1e51-4aa6-a771-e82bc36948bc
+    -
+      vid: projects_services
+      tid: '80'
+      langcode: es
+      name: 'Telefonía Movil'
+      description__value: null
+      description__format: null
+      weight: '5'
+      parent: '0'
+      uuid: fe25610e-7bcd-46ed-9df9-a162e18aaeb0
+    -
+      vid: projects_services
+      tid: '75'
+      langcode: es
+      name: Televisión
+      description__value: null
+      description__format: null
+      weight: '6'
+      parent: '0'
+      uuid: dcc81126-3a8f-4070-bc9d-2f123aebe115
   tags: {  }
+  type_projects_comments:
+    -
+      vid: type_projects_comments
+      tid: '94'
+      langcode: es
+      name: 'Agenda Regulatoria'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 7ad69e89-42f3-4d59-90f8-3379c002b20c
+    -
+      vid: type_projects_comments
+      tid: '96'
+      langcode: es
+      name: 'Esquema Publicación'
+      description__value: null
+      description__format: null
+      weight: '1'
+      parent: '0'
+      uuid: 545c520a-0ac2-41bf-8c3a-122c2b5f27fa
+    -
+      vid: type_projects_comments
+      tid: '97'
+      langcode: es
+      name: Pedagógico
+      description__value: null
+      description__format: null
+      weight: '2'
+      parent: '0'
+      uuid: 53709e69-069a-4d1e-8442-7773509d0e7a
+    -
+      vid: type_projects_comments
+      tid: '95'
+      langcode: es
+      name: Planes
+      description__value: null
+      description__format: null
+      weight: '3'
+      parent: '0'
+      uuid: 83cfe62b-3677-4884-a438-c94fcf217bd1
+    -
+      vid: type_projects_comments
+      tid: '93'
+      langcode: es
+      name: 'Regulatorio Comunicaciones'
+      description__value: null
+      description__format: null
+      weight: '4'
+      parent: '0'
+      uuid: 83956553-b523-41a8-9236-000696e3e3f5
+    -
+      vid: type_projects_comments
+      tid: '92'
+      langcode: es
+      name: 'Regulatorio Contenidos Audiovisuales'
+      description__value: null
+      description__format: null
+      weight: '5'
+      parent: '0'
+      uuid: 45099b3f-f4c8-436e-987d-ee09cd8ba711
+blocks:
+  -
+    info: 'Temas de Interés [ Se debe solo agregar o editar una sola vez este bloque ]'
+    langcode: es
+    uuid: 75dc6e84-7257-481b-9c84-294ca5e39f7a
+    bundle: themes_interest
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_interest_content:
+        -
+          target_id: '4543'
+          target_revision_id: '4543'
+        -
+          target_id: '4546'
+          target_revision_id: '4546'
+        -
+          target_id: '4547'
+          target_revision_id: '4547'
+        -
+          target_id: '4548'
+          target_revision_id: '4548'
+        -
+          target_id: '4549'
+          target_revision_id: '4549'
+  -
+    info: 'Home [Encabezado]'
+    langcode: es
+    uuid: 06f5900d-1d33-41c8-a2b4-222862ad15a8
+    bundle: home_header
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_home_header_logo_govco:
+        -
+          target_id: '2'
+          alt: logo-gov-co
+          title: ''
+          width: '190'
+          height: '45'
+      field_home_header_logo_webcrc:
+        -
+          target_id: '1'
+          alt: logo-crc-comision-de-regulacion-de-comunicaciones
+          title: ''
+          width: '700'
+          height: '555'
+  -
+    info: Indicadores
+    langcode: es
+    uuid: a6f79fbc-3c22-45c9-b011-f3b39cdcfe46
+    bundle: indicators
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_content_title:
+        -
+          value: Indicadores
+      field_icon:
+        -
+          target_id: '16'
+      field_indicator:
+        -
+          target_id: '26'
+          target_revision_id: '26'
+        -
+          target_id: '27'
+          target_revision_id: '27'
+        -
+          target_id: '28'
+          target_revision_id: '28'
+        -
+          target_id: '29'
+          target_revision_id: '29'
+        -
+          target_id: '30'
+          target_revision_id: '30'
+      field_logo:
+        -
+          target_id: '1'
+      field_primary_url:
+        -
+          uri: 'https://www.postdata.gov.co/'
+          title: 'Información tomada de www.postdata.gov.co'
+          options: {  }
+  -
+    info: 'Ultimas noticias'
+    langcode: es
+    uuid: d6b7ca44-d780-4080-8a98-17d98296f931
+    bundle: last_news
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_content_title:
+        -
+          value: Noticias
+      field_content_title_primary:
+        -
+          value: Últimas
+      field_content_view:
+        -
+          target_id: news
+          display_id: last_news
+          data: 'a:5:{s:8:"argument";N;s:5:"limit";N;s:6:"offset";N;s:5:"title";N;s:5:"pager";N;}'
+      field_icon:
+        -
+          target_id: '16'
+  -
+    info: 'Boletin de noticias'
+    langcode: es
+    uuid: 8df82bb0-b5c2-4fa4-a354-97253c686628
+    bundle: newsletter
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_content_description:
+        -
+          value: 'Suscríbase a nuestro boletín y manténgase actualizado con las últimas noticias del sector. <br /> Los campos con (*) son obligatorios'
+      field_content_form:
+        -
+          target_id: boletin_de_noticias
+          default_data: ''
+          status: open
+          open: ''
+          close: ''
+      field_content_title:
+        -
+          value: 'Boletín de noticias'
+      field_icon:
+        -
+          target_id: '18'
+  -
+    info: 'Tabs redes sociales'
+    langcode: es
+    uuid: b78e3423-dddb-49b0-97af-f37d06b61a79
+    bundle: tabs_social_networks
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_content_tabs:
+        -
+          target_id: '40'
+          target_revision_id: '40'
+  -
+    info: 'Contenidos mas importantes crc'
+    langcode: es
+    uuid: f054bf59-bf4c-47a8-a4c3-aebdbb350de5
+    bundle: important_content_crc
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_content_tabs:
+        -
+          target_id: '47'
+          target_revision_id: '47'
+      field_content_title:
+        -
+          value: 'en la CRC'
+      field_content_title_primary:
+        -
+          value: 'Lo más importante '
+      field_icon:
+        -
+          target_id: '21'
+  -
+    info: rss
+    langcode: es
+    uuid: 1362f50e-7d7c-4e7c-a8dc-7027dd9b7214
+    bundle: feed_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_intro_text: {  }
+      field_read_more: {  }
+      field_rss_feed:
+        -
+          feed_uri: 'https://www.postdata.gov.co/postdata-rss.xml'
+          count: '5'
+          display_date: '1'
+          date_format: news_dates
+          custom_date_format: 'F j, Y'
+          display_description: '1'
+          description_length: '300'
+          description_plaintext: '1'
