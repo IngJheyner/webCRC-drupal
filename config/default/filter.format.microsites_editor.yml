@@ -57,7 +57,6 @@ filters:
         images_icons: images_icons
         remote_video: remote_video
         video: video
-      allowed_view_modes: {  }
   slick_filter:
     id: slick_filter
     provider: slick

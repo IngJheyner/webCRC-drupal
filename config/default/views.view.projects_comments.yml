@@ -883,7 +883,7 @@ display:
           default_row_class: false
           override: true
           sticky: false
-          caption: 'Listado de proyectos.'
+          caption: 'Lista de proyectos.'
           summary: ''
           description: ''
           columns:
@@ -892,7 +892,7 @@ display:
             field_interacciones_proyectos: field_interacciones_proyectos
             nothing: nothing
             field_nombre_proyecto: field_nombre_proyecto
-            field_tipo_proyecto: field_tipo_proyecto
+            field_type_projects_comments: field_type_projects_comments
             field_projects_services: field_projects_services
           info:
             title:
@@ -926,13 +926,13 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
-            field_tipo_proyecto:
+            field_type_projects_comments:
               sortable: false
               default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
-              responsive: priority-low
+              responsive: ''
             field_projects_services:
               align: ''
               separator: ''
