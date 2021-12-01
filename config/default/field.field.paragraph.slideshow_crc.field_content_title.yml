@@ -12,7 +12,7 @@ bundle: slideshow_crc
 label: Titulo
 description: 'Titulo para el slideshow'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

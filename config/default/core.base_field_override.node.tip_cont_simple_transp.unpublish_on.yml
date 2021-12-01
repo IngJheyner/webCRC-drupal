@@ -1,0 +1,18 @@
+uuid: 3ddec619-1364-4894-8574-f215ff966f19
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.tip_cont_simple_transp
+id: node.tip_cont_simple_transp.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: tip_cont_simple_transp
+label: 'Quitar publicación en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

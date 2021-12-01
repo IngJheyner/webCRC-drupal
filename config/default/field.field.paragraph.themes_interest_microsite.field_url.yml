@@ -14,7 +14,7 @@ bundle: themes_interest_microsite
 label: Enlace
 description: 'Enlace interno y externo para los temas de interes del micrositio'
 required: false
-translatable: true
+translatable: false
 default_value:
   -
     attributes: {  }

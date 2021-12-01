@@ -1,0 +1,22 @@
+uuid: 59374119-475b-4590-b598-41586efa3ac0
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.slideshow_crc
+id: paragraph.slideshow_crc.status
+field_name: status
+entity_type: paragraph
+bundle: slideshow_crc
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

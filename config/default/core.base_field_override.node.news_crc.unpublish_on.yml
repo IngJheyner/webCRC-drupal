@@ -1,0 +1,18 @@
+uuid: 384f61d2-8670-485d-8e59-3f53859135c7
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.news_crc
+id: node.news_crc.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: news_crc
+label: 'Quitar publicación en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

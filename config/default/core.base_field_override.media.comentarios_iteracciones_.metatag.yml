@@ -1,0 +1,18 @@
+uuid: c16c5d7f-ac20-4ab0-b1df-e8623ded59ef
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.comentarios_iteracciones_
+id: media.comentarios_iteracciones_.metatag
+field_name: metatag
+entity_type: media
+bundle: comentarios_iteracciones_
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

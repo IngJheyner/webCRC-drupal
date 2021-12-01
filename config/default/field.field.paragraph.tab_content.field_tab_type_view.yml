@@ -14,7 +14,7 @@ bundle: tab_content
 label: 'Tipo de vista'
 description: 'Seleccione una vista que desee que se visualize en la pestaña'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

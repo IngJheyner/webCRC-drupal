@@ -1,0 +1,18 @@
+uuid: 818d2a8b-ac9f-49f6-a58e-5d013c025dd1
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.logos
+id: media.logos.metatag
+field_name: metatag
+entity_type: media
+bundle: logos
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

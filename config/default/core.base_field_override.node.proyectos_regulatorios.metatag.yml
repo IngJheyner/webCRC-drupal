@@ -1,0 +1,18 @@
+uuid: 0fe6f39a-f070-443f-b516-64d29b238ee1
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.proyectos_regulatorios
+id: node.proyectos_regulatorios.metatag
+field_name: metatag
+entity_type: node
+bundle: proyectos_regulatorios
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

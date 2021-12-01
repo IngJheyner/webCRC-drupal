@@ -4,59 +4,67 @@ ul.block-grid {
 }
 
 .backgorund-gradient-blue {
-  background: rgb(46,41,123);
-  background: linear-gradient(90deg, rgba(46,41,123,1) 0%, rgba(23,19,78,1) 100%);
+  background: $bg-dark-blue;
+  background: $bg-gradient-primary;
 
   *,
   h1, h2, h3, 
   h4, h5, h6, 
   p, div, span,
   .microsite-block__field-content-personalized .block-title-personalized {
-    color: rgba(255, 255, 255, 1);
+    color: $text-white;
   }
 }
 
 .backgorund-gray {
-  background-color: rgb(235, 235, 235);
+  background-color: $text-gray;
 
   *,
   h1, h2, h3, 
   h4, h5, h6, 
   p, div, span,
   .microsite-block__field-content-personalized .block-title-personalized {
-    color: rgba(0, 0, 0, 1);
+    color: $text-black;
   }
 
   sub {
     &, * {
-      color: rgba(40, 55, 137, 1);
+      color: $lb-primary;
     }
   }
 
   .menu-microsite .slide__content .slide__grid::after {
-    background: rgba(0, 0, 0, 1);
+    background: $bg-black;
+  }
+
+  ul.slick-dots li button {
+    background: $bg-dark-gray;
   }
 }
 
 .backgorund-white {
-  background-color: rgb(255, 255, 255);
+  background-color: $bg-white;
 
   *,
   h1, h2, h3, 
   h4, h5, h6, 
   p, div, span,
   .microsite-block__field-content-personalized .block-title-personalized {
-    color: rgba(0, 0, 0, 1);
+    color: $text-black;
   }
 
   sub {
     &, * {
-      color: rgba(40, 55, 137, 1);
+      color: $lb-primary;
     }
   }
 
   .menu-microsite .slide__content .slide__grid::after {
-    background: rgba(0, 0, 0, 1);
+    background: $text-black;
+  }
+
+  ul.slick-dots li button {
+    background: $bg-dark-gray;
   }
 }
 
@@ -116,9 +124,9 @@ ul.block-grid {
 
           p {
             font-size: 15pt;
-            color: #FFF;
+            color: $text-white;
             font-weight: bold;
-            text-shadow: 0 0 15px rgb(0,0,0);
+            text-shadow: 0 0 15px $bg-black;
 
             @include medium {
               font-size: 18pt;
@@ -158,21 +166,21 @@ ul.block-grid {
       margin: 0 40px;
       text-align: center;
       color: transparent;
-      background: rgba(255,255,255,.5);
-      box-shadow: 0 0 40px 0px rgba(0,0,0,1);
+      background: $bg-white-alpha-5;
+      box-shadow: 0 0 40px 0px $bg-black;
       opacity: 1;
 
       &:hover, 
       &:active, 
       &:focus {
-        background: rgba(255, 255, 255, .8);
+        background: $bg-white-alpha-8;
       }
     }
 
     .slick-prev.slick-arrow:before {
       font-family: "Material Icons";
       content: "chevron_left";
-      color: #000;
+      color: $text-black;
       font-size: 5rem;
       line-height: 1;
       opacity: 1;
@@ -181,7 +189,7 @@ ul.block-grid {
     .slick-next.slick-arrow:before {
       font-family: "Material Icons";
       content: "chevron_right";
-      color: #000;
+      color: $text-black;
       font-size: 5rem;
       line-height: 1;
       opacity: 1;
@@ -212,7 +220,7 @@ ul.slick-dots {
     button {
       width: 15px;
       height: 15px;
-      background: rgba(255, 255, 255, 1);
+      background: $bg-white;
       border-radius: 50%;
 
       &::before {
@@ -223,7 +231,7 @@ ul.slick-dots {
 
     &.slick-active {
       button {
-        background: rgba(244, 46, 98, 1);
+        background: $bg-secondary
       }
     }
   }
@@ -232,10 +240,12 @@ ul.slick-dots {
 // MENU MICROSITIO
 .menu-microsite {
 
-  .slide__content {
+  .slick__slide ul {
+    display: flex;
+    justify-content: center;
     margin: auto;
 
-    .slide__grid {
+    .grid {
       position: relative;
       padding: 0 20px;
 
@@ -248,7 +258,7 @@ ul.slick-dots {
         width: 2px;
         height: 60%;
         margin: auto;
-        background: rgba(255, 255, 255, 1);
+        background: $bg-white;
       }
 
       &:last-child:after {
@@ -272,7 +282,7 @@ ul.slick-dots {
             &:focus,
             &:active,
             &:visited {
-              color: rgba(255, 255, 255, 1);
+              color: $bg-white;
               text-decoration: underline;
             }
           }
@@ -283,7 +293,7 @@ ul.slick-dots {
 }
 
 // BLOQUE PLANTILLA PERSONALIZADA
-.microsite-block__field-content-personalized {
+.block-micrositio-1 {
   max-width: 100%;
   margin: auto;
   padding: 50px 10px;
@@ -295,7 +305,7 @@ ul.slick-dots {
   .block-title-personalized {
     font-size: 22pt;
     font-weight: bold;
-    color: rgb(0, 0, 0);
+    color: $text-black;
   }
 
   p {
@@ -354,7 +364,7 @@ ul.slick-dots {
 // ACCESOS RAPIDOS
 .quick-access-primary {
 
-  ul.slide__content {
+  .slick__slide ul {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -366,14 +376,14 @@ ul.slick-dots {
 
       h1, h2, h3, h4, h5, h5,
       div, p {
-        color: rgb(46, 41, 123);
+        color: $lb-primary;
         font-size: 14pt;
       }
 
       .grid__content {
         height: 100%;
         border-radius: 15px;
-        background: rgba(255, 255, 255, 1);
+        background: $bg-white;
 
         &:before {
           font-family: "Material Icons";
@@ -391,7 +401,7 @@ ul.slick-dots {
         .slide__caption {
           padding: 50px;
           text-align: center;
-          color: rgb(46, 41, 123);
+          color: $lb-primary;
 
           .slide__description {
 
@@ -418,7 +428,7 @@ ul.slick-dots {
           }
     
           .background-round {
-            background: rgb(46,41,123);
+            background: $bg-dark-blue;
             border-radius: 50%;
             margin: auto;
             width: 100%;
@@ -437,10 +447,10 @@ ul.slick-dots {
         &:active,
         &:focus,
         &:visited {
-          background: rgba(244, 67, 92, 1);
+          background: $bg-secondary;
     
           &::before {
-            color: rgba(255, 255, 255, 1);
+            color: $text-white;
           }
     
           &::after {
@@ -449,15 +459,15 @@ ul.slick-dots {
     
           h1, h2, h3, h4, h5, h5,
           div, p {
-            color: rgba(255, 255, 255, 1);
+            color: $text-white;
           }
     
           .background-round {
-            background: rgba(255, 255, 255, 1);
+            background: $bg-white;
           }
     
           img {
-            filter: invert(60%) sepia(100%) saturate(2254%) hue-rotate(328deg) brightness(98%) contrast(95%);
+            filter: $img-filter-primary;
           }
         }
       }
@@ -468,7 +478,7 @@ ul.slick-dots {
 // TEMAS DE INTERES
 .themes-interest {
 
-  ul.slide__content {
+  .slick__slide ul {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -491,7 +501,7 @@ ul.slick-dots {
         }
 
         img {
-          width: 100%;
+          max-width: 100%;
         }
       }
     }

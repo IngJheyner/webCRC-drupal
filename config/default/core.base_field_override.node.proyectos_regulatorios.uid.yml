@@ -1,0 +1,20 @@
+uuid: c1d7403b-ca1f-4834-9714-1e6991dcf2a7
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.proyectos_regulatorios
+id: node.proyectos_regulatorios.uid
+field_name: uid
+entity_type: node
+bundle: proyectos_regulatorios
+label: 'Escrito por'
+description: 'El nombre de usuario del autor del contenido.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

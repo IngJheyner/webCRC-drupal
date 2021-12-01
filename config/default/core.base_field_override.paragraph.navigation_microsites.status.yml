@@ -1,0 +1,22 @@
+uuid: 746cf79c-5b23-45b8-975e-351b80168451
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.navigation_microsites
+id: paragraph.navigation_microsites.status
+field_name: status
+entity_type: paragraph
+bundle: navigation_microsites
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

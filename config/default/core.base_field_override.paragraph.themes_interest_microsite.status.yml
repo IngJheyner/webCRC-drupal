@@ -1,0 +1,22 @@
+uuid: 335f7fd5-6da6-4889-87cb-bbd4ce2745b7
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.themes_interest_microsite
+id: paragraph.themes_interest_microsite.status
+field_name: status
+entity_type: paragraph
+bundle: themes_interest_microsite
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

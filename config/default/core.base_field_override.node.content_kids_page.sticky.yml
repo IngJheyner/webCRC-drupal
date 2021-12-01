@@ -1,0 +1,22 @@
+uuid: 3aedf28b-07d3-4dd5-89ae-f5a5ea2e3d56
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.content_kids_page
+id: node.content_kids_page.sticky
+field_name: sticky
+entity_type: node
+bundle: content_kids_page
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

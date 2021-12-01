@@ -1,0 +1,20 @@
+uuid: 9c6fef83-cd48-4f68-beeb-0fba6ce4e6d2
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.content_kids_page
+  module:
+    - path
+id: node.content_kids_page.path
+field_name: path
+entity_type: node
+bundle: content_kids_page
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -30,7 +30,6 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  addtoany: true
   field_content_featured: true
   field_content_links_menu: true
   field_content_news_category: true

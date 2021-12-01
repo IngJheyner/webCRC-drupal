@@ -1,0 +1,18 @@
+uuid: 3f37535e-a518-4af5-b79f-c6fcda1e96a5
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.indicators
+id: block_content.indicators.info
+field_name: info
+entity_type: block_content
+bundle: indicators
+label: 'Block description'
+description: 'Una breve descripción de su bloque.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -13,7 +13,7 @@ bundle: microsite_block
 label: Icono
 description: 'Icono principal para el bloque del micrositio'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

@@ -1,0 +1,22 @@
+uuid: 6d60cc8d-cbab-408b-9fde-ad720eb846d3
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.news_crc
+id: node.news_crc.sticky
+field_name: sticky
+entity_type: node
+bundle: news_crc
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

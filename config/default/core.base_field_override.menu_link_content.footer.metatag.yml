@@ -1,0 +1,18 @@
+uuid: 0ae405f6-97b7-4432-a340-35ab3c38e1d1
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+id: menu_link_content.footer.metatag
+field_name: metatag
+entity_type: menu_link_content
+bundle: footer
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

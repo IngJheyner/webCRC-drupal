@@ -1,0 +1,18 @@
+uuid: 699e1837-dc7c-4aeb-88e1-104dc2de9a48
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.library_virtual
+id: node.library_virtual.created
+field_name: created
+entity_type: node
+bundle: library_virtual
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

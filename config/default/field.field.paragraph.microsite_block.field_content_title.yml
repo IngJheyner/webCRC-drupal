@@ -12,7 +12,7 @@ bundle: microsite_block
 label: Titulo
 description: 'Titulo principal para el bloque del micrositio'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

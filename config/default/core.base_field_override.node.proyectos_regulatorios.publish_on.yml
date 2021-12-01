@@ -1,0 +1,18 @@
+uuid: 600d76a5-576c-4e5e-bdf6-22f787ca8184
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.proyectos_regulatorios
+id: node.proyectos_regulatorios.publish_on
+field_name: publish_on
+entity_type: node
+bundle: proyectos_regulatorios
+label: 'Publicar en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

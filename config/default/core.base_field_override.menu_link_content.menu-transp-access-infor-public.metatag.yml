@@ -1,0 +1,18 @@
+uuid: 16d536c7-8431-4292-9657-78b28fd781af
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-transp-access-infor-public
+id: menu_link_content.menu-transp-access-infor-public.metatag
+field_name: metatag
+entity_type: menu_link_content
+bundle: menu-transp-access-infor-public
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

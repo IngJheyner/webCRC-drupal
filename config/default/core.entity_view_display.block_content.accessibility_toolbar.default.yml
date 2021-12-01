@@ -1,0 +1,26 @@
+uuid: 680fcc4f-e712-41ec-8246-42ae6b6a62c4
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.accessibility_toolbar
+    - field.field.block_content.accessibility_toolbar.field_content_paragraph
+  module:
+    - entity_reference_revisions
+id: block_content.accessibility_toolbar.default
+targetEntityType: block_content
+bundle: accessibility_toolbar
+mode: default
+content:
+  field_content_paragraph:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

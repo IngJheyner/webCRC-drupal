@@ -1,0 +1,20 @@
+uuid: f93e383a-fb97-4d5f-91cc-46a27057dd0b
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.library_author
+  module:
+    - path
+id: taxonomy_term.library_author.path
+field_name: path
+entity_type: taxonomy_term
+bundle: library_author
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,18 @@
+uuid: 5ce6f2aa-518c-4091-abcb-1f2e1d42afa4
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.proyectos_regulatorios
+id: node.proyectos_regulatorios.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: proyectos_regulatorios
+label: 'Quitar publicación en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

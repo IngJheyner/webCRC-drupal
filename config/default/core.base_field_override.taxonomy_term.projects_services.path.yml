@@ -1,0 +1,20 @@
+uuid: a44fba37-cbe5-4c65-9ee8-7249ba0bec25
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.projects_services
+  module:
+    - path
+id: taxonomy_term.projects_services.path
+field_name: path
+entity_type: taxonomy_term
+bundle: projects_services
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

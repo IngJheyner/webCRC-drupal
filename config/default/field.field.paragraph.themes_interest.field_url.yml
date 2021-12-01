@@ -1,0 +1,28 @@
+uuid: 0b891510-8479-4aa3-a1c3-75a3deb5c3ff
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_url
+    - paragraphs.paragraphs_type.themes_interest
+  module:
+    - link
+id: paragraph.themes_interest.field_url
+field_name: field_url
+entity_type: paragraph
+bundle: themes_interest
+label: Enlace
+description: 'Enlace para el tema de interes'
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'route:<nolink>'
+    title: ''
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

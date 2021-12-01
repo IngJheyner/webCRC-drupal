@@ -14,7 +14,7 @@ bundle: contents_consulted_citizenship
 label: Enlace
 description: 'Enlace de la pagina interna o externa para el tipo de contenido ciudadania'
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

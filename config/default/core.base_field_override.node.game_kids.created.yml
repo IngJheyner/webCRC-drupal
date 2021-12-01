@@ -1,0 +1,18 @@
+uuid: b20b8225-ca6e-4c54-871e-4fbdc8d39fa6
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.game_kids
+id: node.game_kids.created
+field_name: created
+entity_type: node
+bundle: game_kids
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,0 +1,18 @@
+uuid: 5fbd70a5-e46f-4170-82c6-5e1a576ba89c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.tip_cont_simple_transp
+id: node.tip_cont_simple_transp.metatag
+field_name: metatag
+entity_type: node
+bundle: tip_cont_simple_transp
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

@@ -12,7 +12,7 @@ bundle: tab_header
 label: 'Tab descripción'
 description: 'Una breve descripción que tendra la pestaña'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

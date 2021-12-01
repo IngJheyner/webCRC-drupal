@@ -6,14 +6,7 @@ dependencies:
     - block_content.type.home_footer_copyright
     - field.storage.block_content.field_home_header_logo_govco
   module:
-    - content_translation
     - image
-third_party_settings:
-  content_translation:
-    translation_sync:
-      alt: alt
-      title: title
-      file: '0'
 id: block_content.home_footer_copyright.field_home_header_logo_govco
 field_name: field_home_header_logo_govco
 entity_type: block_content
@@ -21,7 +14,7 @@ bundle: home_footer_copyright
 label: 'Logo Gov.co'
 description: 'Logo footer Gov.co'
 required: true
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

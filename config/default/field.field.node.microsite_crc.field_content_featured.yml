@@ -12,7 +12,7 @@ bundle: microsite_crc
 label: Destacado
 description: 'Si esta activo se mostrara los datos que se encuentran en la pestaña "Portada" en la seccion "Lo mas importante en la crc" del inicio de la pagina'
 required: false
-translatable: true
+translatable: false
 default_value:
   -
     value: 1

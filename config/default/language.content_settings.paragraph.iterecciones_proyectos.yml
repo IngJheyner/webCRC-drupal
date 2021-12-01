@@ -1,0 +1,18 @@
+uuid: 4bfb2559-3b29-485f-ab1e-6a747d6ed35e
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.iterecciones_proyectos
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.iterecciones_proyectos
+target_entity_type_id: paragraph
+target_bundle: iterecciones_proyectos
+default_langcode: site_default
+language_alterable: false

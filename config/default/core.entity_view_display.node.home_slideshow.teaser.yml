@@ -21,7 +21,6 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  addtoany: true
   field_home_slideshow_description: true
   field_home_slideshow_imagen: true
   field_home_slideshow_url: true

@@ -1,0 +1,18 @@
+uuid: 170ad87f-3f50-4d4a-b23a-9b2481dd8906
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.library_virtual
+id: node.library_virtual.publish_on
+field_name: publish_on
+entity_type: node
+bundle: library_virtual
+label: 'Publicar en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

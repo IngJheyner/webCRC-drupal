@@ -1,0 +1,20 @@
+uuid: 2f20e478-8eca-4f3c-a549-894569d59035
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.content_kids_page
+id: node.content_kids_page.uid
+field_name: uid
+entity_type: node
+bundle: content_kids_page
+label: 'Escrito por'
+description: 'El nombre de usuario del autor del contenido.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

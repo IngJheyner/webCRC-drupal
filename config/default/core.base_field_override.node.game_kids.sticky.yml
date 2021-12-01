@@ -1,0 +1,22 @@
+uuid: 8215dc90-bd79-4d98-9611-a3149bbaa30e
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.game_kids
+id: node.game_kids.sticky
+field_name: sticky
+entity_type: node
+bundle: game_kids
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

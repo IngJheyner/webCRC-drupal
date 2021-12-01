@@ -1,0 +1,18 @@
+uuid: 1653ba61-755f-4cdf-af08-369989df5346
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.bloq_descrip_menu_transparencia
+id: block_content.bloq_descrip_menu_transparencia.changed
+field_name: changed
+entity_type: block_content
+bundle: bloq_descrip_menu_transparencia
+label: Changed
+description: 'La fecha en la que el bloque personalizado se editó por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

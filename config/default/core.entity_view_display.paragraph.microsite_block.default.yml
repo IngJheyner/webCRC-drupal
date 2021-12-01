@@ -68,7 +68,7 @@ content:
       grid_header: ''
     third_party_settings: {  }
   field_content_personalized:
-    weight: 5
+    weight: 6
     label: hidden
     settings: {  }
     third_party_settings: {  }

@@ -1,0 +1,20 @@
+uuid: 4fe960de-694f-4d0f-a745-b121e3662e1a
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.library_formats
+  module:
+    - text
+id: taxonomy_term.library_formats.description
+field_name: description
+entity_type: taxonomy_term
+bundle: library_formats
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

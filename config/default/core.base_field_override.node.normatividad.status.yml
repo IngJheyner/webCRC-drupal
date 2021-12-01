@@ -1,0 +1,22 @@
+uuid: 24b7c651-7ba9-46a0-a93c-0d9c9ee11456
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.normatividad
+id: node.normatividad.status
+field_name: status
+entity_type: node
+bundle: normatividad
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

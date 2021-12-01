@@ -13,7 +13,6 @@ bundle: normatividad
 mode: default
 content: {  }
 hidden:
-  addtoany: true
   body: true
   langcode: true
   links: true

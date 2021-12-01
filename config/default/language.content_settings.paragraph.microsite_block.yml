@@ -1,0 +1,18 @@
+uuid: a1457fa2-df1c-461b-8ee2-8a5f42902b58
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.microsite_block
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.microsite_block
+target_entity_type_id: paragraph
+target_bundle: microsite_block
+default_langcode: site_default
+language_alterable: false

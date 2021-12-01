@@ -1,0 +1,18 @@
+uuid: deaf8deb-d6b5-4775-84ab-fea9f43e97fb
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.news_crc
+id: node.news_crc.changed
+field_name: changed
+entity_type: node
+bundle: news_crc
+label: Changed
+description: 'La fecha en que el nodo fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -14,7 +14,7 @@ bundle: interactions_extemporaneous
 label: Operador
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

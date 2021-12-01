@@ -1,0 +1,22 @@
+uuid: 90478b71-cf51-476e-a7c4-e26d174cd4cc
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.accessibility_toolbar
+id: block_content.accessibility_toolbar.status
+field_name: status
+entity_type: block_content
+bundle: accessibility_toolbar
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

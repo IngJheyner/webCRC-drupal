@@ -1,0 +1,18 @@
+uuid: c018c334-44cf-4e05-ad64-f7e6307c5e11
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.indicators
+id: block_content.indicators.metatag
+field_name: metatag
+entity_type: block_content
+bundle: indicators
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

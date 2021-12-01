@@ -1,0 +1,20 @@
+uuid: 4ff09d6e-6934-4422-b74d-a1b973799401
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.images_news_crc
+  module:
+    - path
+id: media.images_news_crc.path
+field_name: path
+entity_type: media
+bundle: images_news_crc
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

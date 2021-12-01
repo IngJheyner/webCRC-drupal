@@ -1,0 +1,22 @@
+uuid: f847103a-d7f6-4784-8280-28521c00e325
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.proyectos_regulatorios
+id: node.proyectos_regulatorios.sticky
+field_name: sticky
+entity_type: node
+bundle: proyectos_regulatorios
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

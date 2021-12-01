@@ -1,0 +1,20 @@
+uuid: 97cad1b9-81b1-4638-8699-c71fe0a535f1
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.images_news_crc
+id: media.images_news_crc.uid
+field_name: uid
+entity_type: media
+bundle: images_news_crc
+label: 'Escrito por'
+description: 'El ID de usuario del autor.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

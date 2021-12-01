@@ -4,6 +4,13 @@ status: true
 dependencies:
   config:
     - block_content.type.tabs_social_networks
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
 id: block_content.tabs_social_networks
 target_entity_type_id: block_content
 target_bundle: tabs_social_networks

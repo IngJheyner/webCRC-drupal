@@ -1,0 +1,22 @@
+uuid: c789c2db-a891-42d6-8dd1-02eabcc91095
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs_library
+id: paragraphs_library_item.paragraphs_library_item.status
+field_name: status
+entity_type: paragraphs_library_item
+bundle: paragraphs_library_item
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

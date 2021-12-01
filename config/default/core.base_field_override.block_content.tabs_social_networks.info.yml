@@ -1,0 +1,18 @@
+uuid: 8880e9a2-856c-4efb-81d7-d794ff5da9f8
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.tabs_social_networks
+id: block_content.tabs_social_networks.info
+field_name: info
+entity_type: block_content
+bundle: tabs_social_networks
+label: 'Block description'
+description: 'Una breve descripción de su bloque.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

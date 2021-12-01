@@ -1,0 +1,18 @@
+uuid: e1e12267-6ae0-4b37-8c0e-894092a9ee32
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.bloq_descrip_menu_transparencia
+id: block_content.bloq_descrip_menu_transparencia.info
+field_name: info
+entity_type: block_content
+bundle: bloq_descrip_menu_transparencia
+label: 'Block description'
+description: 'Una breve descripción de su bloque.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

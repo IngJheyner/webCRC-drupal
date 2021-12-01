@@ -1,0 +1,20 @@
+uuid: cd3738c4-ef16-4dab-822a-d3d745cd393e
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.tip_cont_simple_transp
+  module:
+    - path
+id: node.tip_cont_simple_transp.path
+field_name: path
+entity_type: node
+bundle: tip_cont_simple_transp
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

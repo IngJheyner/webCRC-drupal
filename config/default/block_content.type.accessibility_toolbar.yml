@@ -1,0 +1,8 @@
+uuid: 48c6f08d-7d79-4ad9-91af-2c6f24a1bc0f
+langcode: es
+status: true
+dependencies: {  }
+id: accessibility_toolbar
+label: 'Barra de herramientas de accesibilidad'
+revision: 0
+description: 'Barra lateral de accesibilidad'

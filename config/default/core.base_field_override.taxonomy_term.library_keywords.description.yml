@@ -1,0 +1,20 @@
+uuid: ee76cdd5-9731-4dc2-aa0a-f2f17434689d
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.library_keywords
+  module:
+    - text
+id: taxonomy_term.library_keywords.description
+field_name: description
+entity_type: taxonomy_term
+bundle: library_keywords
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

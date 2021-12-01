@@ -1,0 +1,18 @@
+uuid: 6bda6f46-2f69-4ce5-a5b4-850e18043db3
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.tabs_social_networks
+id: block_content.tabs_social_networks.metatag
+field_name: metatag
+entity_type: block_content
+bundle: tabs_social_networks
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

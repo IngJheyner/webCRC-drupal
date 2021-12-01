@@ -1,0 +1,22 @@
+uuid: 960cc31d-415e-4126-a182-676373c23362
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.microsite_crc
+id: node.microsite_crc.sticky
+field_name: sticky
+entity_type: node
+bundle: microsite_crc
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

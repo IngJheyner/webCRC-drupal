@@ -1,0 +1,20 @@
+uuid: fd1d16db-b37c-4a80-9111-0f518bc5d549
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.library_keywords
+  module:
+    - path
+id: taxonomy_term.library_keywords.path
+field_name: path
+entity_type: taxonomy_term
+bundle: library_keywords
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

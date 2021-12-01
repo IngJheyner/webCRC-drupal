@@ -1,0 +1,20 @@
+uuid: 7d1cee4c-f6a9-4895-b72f-a55382a8bca4
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.slideshow
+  module:
+    - path
+id: media.slideshow.path
+field_name: path
+entity_type: media
+bundle: slideshow
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

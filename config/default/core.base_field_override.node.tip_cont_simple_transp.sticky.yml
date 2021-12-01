@@ -1,0 +1,22 @@
+uuid: a329d71c-df8a-41d2-aa42-73439aa845a2
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.tip_cont_simple_transp
+id: node.tip_cont_simple_transp.sticky
+field_name: sticky
+entity_type: node
+bundle: tip_cont_simple_transp
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
