@@ -53,9 +53,7 @@
 
      {% if content.field_interactions_comments[0]['#markup'] == 'TRUE' %}
 
-      {{ content.field_interaction_extemporaneous }}
-
-      <hr>
+      {% if content.field_interaction_extemporaneous[0] %} {{ content.field_interaction_extemporaneous }} <hr> {% endif %}
 
       <p class="my-4">
         <img src="/themes/custom/webcrc/src/images/no-aceptan-comentarios.svg" class="mr-3" alt="{{'See interaction'|t}}" onerror="this.remove();">
