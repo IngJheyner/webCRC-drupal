@@ -1,0 +1,27 @@
+uuid: 6cedc553-0dce-4e2e-bdad-cda7a81bc434
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.transp_politicas_lineamientos_ma.field_docum_archi
+    - field.field.node.transp_politicas_lineamientos_ma.field_tipo_doc_paragraph
+    - node.type.transp_politicas_lineamientos_ma
+  module:
+    - user
+id: node.transp_politicas_lineamientos_ma.teaser
+targetEntityType: node
+bundle: transp_politicas_lineamientos_ma
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_docum_archi: true
+  field_tipo_doc_paragraph: true
+  langcode: true
+  search_api_excerpt: true

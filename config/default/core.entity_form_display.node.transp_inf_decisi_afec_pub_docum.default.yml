@@ -1,0 +1,210 @@
+uuid: d440f25f-a82d-4365-bcc9-c6ae10ec6d59
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.transp_inf_decisi_afec_pub_docum.body
+    - field.field.node.transp_inf_decisi_afec_pub_docum.field_categ_infor_decision_publi
+    - field.field.node.transp_inf_decisi_afec_pub_docum.field_doc_file_info_decisi_publi
+    - field.field.node.transp_inf_decisi_afec_pub_docum.field_link_sitie
+    - field.field.node.transp_inf_decisi_afec_pub_docum.field_list_anio_infor_decisi
+    - field.field.node.transp_inf_decisi_afec_pub_docum.field_lista_mes_inf_decisi
+    - node.type.transp_inf_decisi_afec_pub_docum
+  module:
+    - field_group
+    - file
+    - link
+    - path
+    - scheduler
+    - text
+third_party_settings:
+  field_group:
+    group_tabs_infor_dec_afect_publi:
+      children:
+        - group_tab_infor_inform_decision
+        - group_tab_doc_file_infor_deciosi
+        - group_tab_link_infor_decisio_pub
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        direction: horizontal
+        width_breakpoint: 640
+      label: 'Tabs informacion sobre Deciones'
+    group_tab_infor_inform_decision:
+      children:
+        - title
+        - field_list_anio_infor_decisi
+        - field_lista_mes_inf_decisi
+        - field_categ_infor_decision_publi
+        - body
+      parent_name: group_tabs_infor_dec_afect_publi
+      weight: 2
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: 'Información sobre decisiones que puede afectar al público'
+        formatter: closed
+        required_fields: true
+      label: Información
+    group_tab_doc_file_infor_deciosi:
+      children:
+        - field_doc_file_info_decisi_publi
+      parent_name: group_tabs_infor_dec_afect_publi
+      weight: 4
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Documento / Archivo'
+    group_tab_link_infor_decisio_pub:
+      children:
+        - field_link_sitie
+      parent_name: group_tabs_infor_dec_afect_publi
+      weight: 5
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Enlace
+id: node.transp_inf_decisi_afec_pub_docum.default
+targetEntityType: node
+bundle: transp_inf_decisi_afec_pub_docum
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 32
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_categ_infor_decision_publi:
+    weight: 31
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_doc_file_info_decisi_publi:
+    weight: 3
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_link_sitie:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_list_anio_infor_decisi:
+    weight: 29
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_lista_mes_inf_decisi:
+    weight: 30
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 3
+    region: content
+    third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 10
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 28
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  url_redirects:
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

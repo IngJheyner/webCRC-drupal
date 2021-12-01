@@ -1,0 +1,11 @@
+uuid: b3ffee29-c966-44fe-b476-e7848e61c9e1
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_inf_decisi_afec_pub_docum
+id: node.transp_inf_decisi_afec_pub_docum
+target_entity_type_id: node
+target_bundle: transp_inf_decisi_afec_pub_docum
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,22 @@
+uuid: 50a3a558-580b-4337-a611-dcf19915306b
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_ejec_presu_docum
+id: node.transp_ejec_presu_docum.promote
+field_name: promote
+entity_type: node
+bundle: transp_ejec_presu_docum
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

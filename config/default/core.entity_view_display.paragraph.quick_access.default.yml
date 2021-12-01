@@ -46,12 +46,12 @@ content:
       ratio: ''
       thumbnail_style: ''
       _uri: ''
-      breakpoints: {  }
-      sizes: ''
-      grid_header: ''
       grid: ''
       grid_medium: ''
       grid_small: ''
+      breakpoints: {  }
+      sizes: ''
+      grid_header: ''
     third_party_settings: {  }
     type: blazy_media
     region: content

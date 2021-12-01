@@ -1,0 +1,29 @@
+uuid: 6d811df0-9aa9-4b7b-be41-bf2d286f10d4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categ_infor_decision_publi
+    - node.type.transp_inf_decisi_afec_pub_docum
+    - taxonomy.vocabulary.trans_lista_catego_inform_decisi
+id: node.transp_inf_decisi_afec_pub_docum.field_categ_infor_decision_publi
+field_name: field_categ_infor_decision_publi
+entity_type: node
+bundle: transp_inf_decisi_afec_pub_docum
+label: Categoría
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      trans_lista_catego_inform_decisi: trans_lista_catego_inform_decisi
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

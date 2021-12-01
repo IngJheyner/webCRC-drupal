@@ -1,0 +1,29 @@
+uuid: c6730273-7a25-4132-b4a0-c9bc534c174f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categ_presp_general
+    - node.type.trans_presup_gen_ing_gast_inver
+    - taxonomy.vocabulary.transparencia_lista_categorias_p
+id: node.trans_presup_gen_ing_gast_inver.field_categ_presp_general
+field_name: field_categ_presp_general
+entity_type: node
+bundle: trans_presup_gen_ing_gast_inver
+label: Categoria
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      transparencia_lista_categorias_p: transparencia_lista_categorias_p
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

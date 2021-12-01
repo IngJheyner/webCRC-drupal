@@ -1,0 +1,8 @@
+uuid: 9f9529dc-17a8-489f-90ff-f4c0073b2276
+langcode: es
+status: true
+dependencies: {  }
+id: transp_infor_decis_afec_pub_intr
+label: 'Transparencia: Información sobre decisiones que puede afectar al público [ Introducción ]'
+revision: 0
+description: 'Bloque de encabezado para vista de contenido en Información sobre decisiones que puede afectar al público en Transparencia'

@@ -1,0 +1,24 @@
+uuid: 87f07071-ff1e-44fe-b25b-c872221ef703
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.transp_infor_decis_afec_pub_intr
+    - field.field.block_content.transp_infor_decis_afec_pub_intr.body
+  module:
+    - text
+id: block_content.transp_infor_decis_afec_pub_intr.default
+targetEntityType: block_content
+bundle: transp_infor_decis_afec_pub_intr
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

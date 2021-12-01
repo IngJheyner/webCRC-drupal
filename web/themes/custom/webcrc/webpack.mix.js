@@ -51,9 +51,10 @@ mix.browserSync({
       .copy('node_modules/slick-carousel/package.json', '../../../libraries/slick/package.json')
       .copy('node_modules/a11y-accordion-tabs/a11y-accordion-tabs.min.js', '../../../libraries/a11y-accordion-tabs/a11y-accordion-tabs.js')
       .copy('src/extra_libraries/superfish/', '../../../libraries/superfish/')
-      .copy('src/extra_libraries/d3/', '../../../libraries/d3/')
-      .copy('src/extra_libraries/highlightjs/', '../../../libraries/highlightjs/')
       .copy('src/extra_libraries/ckeditor/templates/', '../../../libraries/templates/');
+      //.copy('src/extra_libraries/d3/', '../../../libraries/d3/')
+      //.copy('src/extra_libraries/highlightjs/', '../../../libraries/highlightjs/')
+      
 
 /*
  |--------------------------------------------------------------------------

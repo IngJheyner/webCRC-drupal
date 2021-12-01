@@ -1,0 +1,20 @@
+uuid: 96c3246b-8ce2-4154-946d-fc5933e54ddd
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_tipo_doc_paragraph
+field_name: field_tipo_doc_paragraph
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

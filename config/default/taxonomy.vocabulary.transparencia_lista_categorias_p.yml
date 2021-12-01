@@ -1,0 +1,8 @@
+uuid: 41458814-da43-4bf7-9f67-c35397ba621f
+langcode: es
+status: true
+dependencies: {  }
+name: 'Transparencia: Lista categorías [ Presupuesto general de ingresos ]'
+vid: transparencia_lista_categorias_p
+description: 'Lista de categorías para los documentos en el contenido Presupuesto general de ingresos, gastos e inversión. sección de transpar'
+weight: 0

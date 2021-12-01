@@ -1,0 +1,29 @@
+uuid: 7ed3e163-c496-41c7-8841-8fc244555ad7
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.trans_presup_gen_ing_gast_inver.field_categ_presp_general
+    - field.field.node.trans_presup_gen_ing_gast_inver.field_doc_file_info_decisi_publi
+    - field.field.node.trans_presup_gen_ing_gast_inver.field_list_anio_infor_decisi
+    - node.type.trans_presup_gen_ing_gast_inver
+  module:
+    - user
+id: node.trans_presup_gen_ing_gast_inver.teaser
+targetEntityType: node
+bundle: trans_presup_gen_ing_gast_inver
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_categ_presp_general: true
+  field_doc_file_info_decisi_publi: true
+  field_list_anio_infor_decisi: true
+  langcode: true
+  search_api_excerpt: true

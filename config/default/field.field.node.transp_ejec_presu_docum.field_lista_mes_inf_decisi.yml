@@ -1,0 +1,21 @@
+uuid: b950d0d3-0cff-4af0-9bcd-6be6e85fecc2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lista_mes_inf_decisi
+    - node.type.transp_ejec_presu_docum
+  module:
+    - options
+id: node.transp_ejec_presu_docum.field_lista_mes_inf_decisi
+field_name: field_lista_mes_inf_decisi
+entity_type: node
+bundle: transp_ejec_presu_docum
+label: Mes
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

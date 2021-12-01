@@ -3,9 +3,9 @@ langcode: es
 status: true
 dependencies:
   config:
+    - field.field.paragraph.themes_interest.field_content_image
     - field.field.paragraph.themes_interest.field_interest_image
     - field.field.paragraph.themes_interest.field_interest_link
-    - field.field.paragraph.themes_interest.field_content_image
     - field.field.paragraph.themes_interest.field_url
     - image.style.max_325x325
     - paragraphs.paragraphs_type.themes_interest
@@ -49,12 +49,12 @@ content:
       ratio: ''
       thumbnail_style: ''
       _uri: ''
-      breakpoints: {  }
-      sizes: ''
-      grid_header: ''
       grid: ''
       grid_medium: ''
       grid_small: ''
+      breakpoints: {  }
+      sizes: ''
+      grid_header: ''
     third_party_settings: {  }
     type: blazy_media
     region: content

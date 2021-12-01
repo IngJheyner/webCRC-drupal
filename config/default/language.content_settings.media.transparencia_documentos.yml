@@ -1,0 +1,11 @@
+uuid: e334ca4b-0977-4013-8814-c6ffd154c722
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.transparencia_documentos
+id: media.transparencia_documentos
+target_entity_type_id: media
+target_bundle: transparencia_documentos
+default_langcode: site_default
+language_alterable: false

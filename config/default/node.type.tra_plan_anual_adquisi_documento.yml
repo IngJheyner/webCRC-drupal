@@ -1,0 +1,31 @@
+uuid: 6f257a27-d42d-414e-b9c4-68d2e6ced91d
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - scheduler
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: false
+    publish_past_date: error
+    publish_past_date_created: false
+    publish_required: false
+    publish_revision: false
+    publish_touch: false
+    show_message_after_update: true
+    unpublish_enable: false
+    unpublish_required: false
+    unpublish_revision: false
+name: 'Transparencia: Plan anual de adquisiciones [ Documentos ]'
+type: tra_plan_anual_adquisi_documento
+description: 'Contenido para subir documento para el contenido Plan anual de adquisición en la sección de transparencia'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false
