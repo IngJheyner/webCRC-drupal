@@ -1,0 +1,54 @@
+uuid:
+  -
+    value: 406a687a-d966-4978-806c-c01e7caebba8
+langcode:
+  -
+    value: es
+type:
+  -
+    target_id: navigation_microsites
+    target_type: paragraphs_type
+    target_uuid: 7504259d-6a9e-4c59-b77e-cec28a16515d
+status:
+  -
+    value: true
+created:
+  -
+    value: '2021-12-02T15:01:06+00:00'
+    format: 'Y-m-d\TH:i:sP'
+parent_id:
+  -
+    value: '25'
+parent_type:
+  -
+    value: node
+parent_field_name:
+  -
+    value: field_content_links_menu
+behavior_settings:
+  -
+    value: {  }
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+content_translation_source:
+  -
+    value: und
+content_translation_outdated:
+  -
+    value: false
+content_translation_changed:
+  -
+    value: '2021-12-02T15:59:02+00:00'
+    format: 'Y-m-d\TH:i:sP'
+field_url:
+  -
+    uri: 'https://www.crcom.gov.co/es/pagina/tramite-homologacion-celulares'
+    title: 'Equipos homologados'
+    options: {  }
+_content_sync:
+  entity_type: paragraph
+  entity_dependencies: {  }

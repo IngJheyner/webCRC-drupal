@@ -1,0 +1,63 @@
+uuid:
+  -
+    value: 1f3e3255-4ccd-4de7-83c8-0a3faa3d8066
+langcode:
+  -
+    value: es
+type:
+  -
+    target_id: quick_access
+    target_type: paragraphs_type
+    target_uuid: d688b87c-4413-4516-bec5-a10e3e160776
+status:
+  -
+    value: true
+created:
+  -
+    value: '2021-12-02T15:18:51+00:00'
+    format: 'Y-m-d\TH:i:sP'
+parent_id:
+  -
+    value: '25'
+parent_type:
+  -
+    value: node
+parent_field_name:
+  -
+    value: field_content_quick_access
+behavior_settings:
+  -
+    value: {  }
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+content_translation_source:
+  -
+    value: und
+content_translation_outdated:
+  -
+    value: false
+content_translation_changed:
+  -
+    value: '2021-12-02T15:59:02+00:00'
+    format: 'Y-m-d\TH:i:sP'
+field_content_icon:
+  -
+    target_type: media
+    target_uuid: 77562168-1887-43a2-a7d3-466c5b47e69e
+field_content_title:
+  -
+    value: 'Que hacer en caso de perdida, o robo de un celular'
+field_url:
+  -
+    uri: 'https://www.crcom.gov.co/pagina/qu-hacer-si-robaron-tu-celular'
+    title: ''
+    options: {  }
+_content_sync:
+  entity_type: paragraph
+  entity_dependencies:
+    media:
+      - media.images_icons.77562168-1887-43a2-a7d3-466c5b47e69e

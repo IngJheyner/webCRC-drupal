@@ -1,0 +1,138 @@
+uuid:
+  -
+    value: 390bea1d-8920-4b44-a273-0d94ce6576ce
+langcode:
+  -
+    value: es
+type:
+  -
+    target_id: microsite_block
+    target_type: paragraphs_type
+    target_uuid: d7093a83-1112-4ccb-a2bf-5bb06cb35318
+status:
+  -
+    value: true
+created:
+  -
+    value: '2021-12-02T16:06:39+00:00'
+    format: 'Y-m-d\TH:i:sP'
+parent_id:
+  -
+    value: '54'
+parent_type:
+  -
+    value: paragraph
+parent_field_name:
+  -
+    value: field_microsite_block
+behavior_settings:
+  -
+    value: {  }
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+content_translation_source:
+  -
+    value: und
+content_translation_outdated:
+  -
+    value: false
+content_translation_changed:
+  -
+    value: '2021-12-02T16:46:20+00:00'
+    format: 'Y-m-d\TH:i:sP'
+field_content_background_type:
+  -
+    value: '2'
+field_content_icon: {  }
+field_content_personalized:
+  -
+    value: "<div class=\"block-micrositio-1\">\r\n<div class=\"row m-0 justify-content-center\">\r\n<div class=\"col-12 col-md-7 px-5 px-md-3 pr-md-5 align-self-center\">\r\n<h3 class=\"mt-0 mb-3 block-title-personalized\">Medidas contar el hurto de celulares</h3>\r\n\r\n<p>Para combatir la comercialización de celulares robados en el país, la CRC ha implementado controles técnicos que permiten identificar celulares robados, adulterados o con IMEI deplicado para frenar la activación de esos equipos ílegales en las redes de Colombia.</p>\r\n</div>\r\n\r\n<div class=\"col-12 col-md-5 px-5 px-md-3 pl-md-5 align-self-center block-image-personalized\">\r\n<drupal-media data-align=\"center\" data-entity-type=\"media\" data-entity-uuid=\"a92b6e55-457a-49e8-9a13-32b1fa26ae37\"></drupal-media>\r\n</div>\r\n</div>\r\n</div>\r\n"
+    format: microsites_editor
+    processed: |
+      <div class="block-micrositio-1">
+      <div class="row m-0 justify-content-center">
+      <div class="col-12 col-md-7 px-5 px-md-3 pr-md-5 align-self-center">
+      <h3 class="mt-0 mb-3 block-title-personalized">Medidas contar el hurto de celulares</h3>
+      <p>Para combatir la comercialización de celulares robados en el país, la CRC ha implementado controles técnicos que permiten identificar celulares robados, adulterados o con IMEI deplicado para frenar la activación de esos equipos ílegales en las redes de Colombia.</p>
+      </div>
+      <div class="col-12 col-md-5 px-5 px-md-3 pl-md-5 align-self-center block-image-personalized">
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'media' -->
+      <!-- FILE NAME SUGGESTIONS:
+         * media--source-image.html.twig
+         * media--image--default.html.twig
+         * media--image.html.twig
+         * media--default.html.twig
+         x media.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'core/modules/media/templates/media.html.twig' -->
+      <div data-align="center">
+        
+        
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'field' -->
+      <!-- FILE NAME SUGGESTIONS:
+         * field--media--field-media-image--image.html.twig
+         * field--media--field-media-image.html.twig
+         * field--media--image.html.twig
+         * field--field-media-image.html.twig
+         * field--image.html.twig
+         x field.html.twig
+      -->
+      <!-- BEGIN OUTPUT from 'themes/custom/webcrc/templates/field/field.html.twig' -->
+
+        <div class="field field--name-field-media-image field--type-image field--label-visually_hidden">
+          <div class="field__label visually-hidden">Image</div>
+                    <div class="field__item">
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_formatter' -->
+      <!-- BEGIN OUTPUT from 'core/modules/image/templates/image-formatter.html.twig' -->
+        
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image_style' -->
+      <!-- BEGIN OUTPUT from 'core/modules/image/templates/image-style.html.twig' -->
+
+
+      <!-- THEME DEBUG -->
+      <!-- THEME HOOK: 'image' -->
+      <!-- BEGIN OUTPUT from 'themes/custom/webcrc/templates/field/image.html.twig' -->
+      <img src="/sites/default/files/styles/large/public/webcrc/images/destacado-2-despliegue-infraestructura-comision-de-regulacion-de-comunicaciones.png?itok=hz3JQio_" width="480" height="289" alt="destacado-2-despliegue-infraestructura-comision-de-regulacion-de-comunicaciones-crc" loading="lazy" typeof="foaf:Image" class="image-style-large" />
+
+      <!-- END OUTPUT from 'themes/custom/webcrc/templates/field/image.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'core/modules/image/templates/image-style.html.twig' -->
+
+
+
+      <!-- END OUTPUT from 'core/modules/image/templates/image-formatter.html.twig' -->
+
+      </div>
+                </div>
+
+      <!-- END OUTPUT from 'themes/custom/webcrc/templates/field/field.html.twig' -->
+
+
+      </div>
+
+      <!-- END OUTPUT from 'core/modules/media/templates/media.html.twig' -->
+
+      </div>
+      </div>
+      </div>
+field_content_title: {  }
+field_content_type_view: {  }
+field_content_view_news: {  }
+_content_sync:
+  entity_type: paragraph
+  entity_dependencies: {  }

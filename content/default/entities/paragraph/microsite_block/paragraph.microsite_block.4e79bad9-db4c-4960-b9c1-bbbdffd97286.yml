@@ -1,0 +1,70 @@
+uuid:
+  -
+    value: 4e79bad9-db4c-4960-b9c1-bbbdffd97286
+langcode:
+  -
+    value: es
+type:
+  -
+    target_id: microsite_block
+    target_type: paragraphs_type
+    target_uuid: d7093a83-1112-4ccb-a2bf-5bb06cb35318
+status:
+  -
+    value: true
+created:
+  -
+    value: '2021-12-02T16:14:28+00:00'
+    format: 'Y-m-d\TH:i:sP'
+parent_id:
+  -
+    value: '54'
+parent_type:
+  -
+    value: paragraph
+parent_field_name:
+  -
+    value: field_microsite_block
+behavior_settings:
+  -
+    value: {  }
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+content_translation_source:
+  -
+    value: und
+content_translation_outdated:
+  -
+    value: false
+content_translation_changed:
+  -
+    value: '2021-12-02T16:14:28+00:00'
+    format: 'Y-m-d\TH:i:sP'
+field_content_background_type:
+  -
+    value: '1'
+field_content_icon:
+  -
+    target_type: media
+    target_uuid: e6acdd05-77d9-4443-91b5-ba73b0319a3c
+field_content_personalized: {  }
+field_content_title:
+  -
+    value: Noticias
+field_content_type_view: {  }
+field_content_view_news:
+  -
+    target_id: news
+    display_id: last_news_microsites
+    data: 'a:5:{s:8:"argument";N;s:5:"limit";N;s:6:"offset";N;s:5:"title";N;s:5:"pager";N;}'
+    target_type: view
+    target_uuid: c5e96154-5408-457e-bbbc-fc6aa4f80589
+_content_sync:
+  entity_type: paragraph
+  entity_dependencies:
+    media:
+      - media.images_icons.e6acdd05-77d9-4443-91b5-ba73b0319a3c

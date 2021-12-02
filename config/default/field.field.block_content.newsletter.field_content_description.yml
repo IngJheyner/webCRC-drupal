@@ -1,0 +1,21 @@
+uuid: 7a14983a-3505-4d5c-8ca1-b58119807706
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.newsletter
+    - field.storage.block_content.field_content_description
+  module:
+    - text
+id: block_content.newsletter.field_content_description
+field_name: field_content_description
+entity_type: block_content
+bundle: newsletter
+label: Descripcion
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

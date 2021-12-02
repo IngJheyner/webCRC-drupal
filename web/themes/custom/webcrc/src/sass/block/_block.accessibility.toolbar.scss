@@ -9,10 +9,15 @@
   background: $bg-dark-blue;
   background: $bg-gradient-primary;
 
+  > div > div.field__item {
+    margin: 6px;
+  }
+
   .field__item {
-    margin: 10px;
+    padding: 1px;
     border-radius: 5px;
     background: $bg-white;
+    cursor: pointer;
 
     img {
       width: 25px;

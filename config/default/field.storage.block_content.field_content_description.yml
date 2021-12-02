@@ -1,16 +1,16 @@
-uuid: 062c4b37-6949-4892-8db5-4789f65d1a6b
+uuid: ed0559aa-d9e8-407b-87f5-e9e58ec991ac
 langcode: es
 status: true
 dependencies:
   module:
     - block_content
     - text
-id: block_content.field_field_content_description
-field_name: field_field_content_description
+id: block_content.field_content_description
+field_name: field_content_description
 entity_type: block_content
 type: text
 settings:
-  max_length: 400
+  max_length: 255
 module: text
 locked: false
 cardinality: 1

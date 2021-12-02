@@ -1,0 +1,42 @@
+uuid:
+  -
+    value: fff93ded-883c-4edd-93cb-065fba459f9c
+langcode:
+  -
+    value: es
+uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+filename:
+  -
+    value: movil-desactivado-blanco-comision-regulacion-de-comunicaciones.svg
+uri:
+  -
+    value: 'public://webcrc/images/iconos/movil-desactivado-blanco-comision-regulacion-de-comunicaciones.svg'
+    url: /sites/default/files/webcrc/images/iconos/movil-desactivado-blanco-comision-regulacion-de-comunicaciones.svg
+filemime:
+  -
+    value: image/svg+xml
+filesize:
+  -
+    value: 1120
+status:
+  -
+    value: true
+created:
+  -
+    value: '2021-12-02T15:55:39+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2021-12-02T15:55:47+00:00'
+    format: 'Y-m-d\TH:i:sP'
+origname:
+  -
+    value: movil-desactivado-blanco-comision-regulacion-de-comunicaciones.svg
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf

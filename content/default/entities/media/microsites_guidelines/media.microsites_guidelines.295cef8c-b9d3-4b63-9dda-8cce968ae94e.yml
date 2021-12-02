@@ -1,0 +1,73 @@
+uuid:
+  -
+    value: 295cef8c-b9d3-4b63-9dda-8cce968ae94e
+langcode:
+  -
+    value: es
+bundle:
+  -
+    target_id: microsites_guidelines
+    target_type: media_type
+    target_uuid: eb0c01d9-dc8d-48a5-aa39-0628a71c3270
+revision_created:
+  -
+    value: '2021-12-02T16:05:08+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+revision_log_message: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+name:
+  -
+    value: pauta-2-medidas-contra-hurto-comision-de-regulacion-de-comunicaciones.png
+thumbnail:
+  -
+    alt: pauta-2-medidas-contra-hurto-comision-de-regulacion-de-comunicaciones-crc
+    title: null
+    width: 315
+    height: 147
+    target_type: file
+    target_uuid: 35cfa851-0e9a-4d05-8795-e40863d31b95
+created:
+  -
+    value: '2021-12-02T16:05:01+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2021-12-02T16:05:01+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+metatag:
+  value:
+    canonical_url: 'http://default/es/index'
+    title: '| Webcrc'
+path:
+  -
+    alias: null
+    pid: null
+    langcode: es
+field_media_image:
+  -
+    alt: pauta-2-medidas-contra-hurto-comision-de-regulacion-de-comunicaciones-crc
+    title: ''
+    width: 315
+    height: 147
+    target_type: file
+    target_uuid: 35cfa851-0e9a-4d05-8795-e40863d31b95
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+    file:
+      - file.file.35cfa851-0e9a-4d05-8795-e40863d31b95

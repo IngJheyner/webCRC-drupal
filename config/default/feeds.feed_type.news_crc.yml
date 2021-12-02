@@ -38,6 +38,7 @@ processor_configuration:
   skip_hash_check: false
   values:
     type: news_crc
+  insert_new: 1
 custom_sources:
   news_title:
     label: TITULO

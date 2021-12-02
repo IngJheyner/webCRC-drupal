@@ -1,0 +1,42 @@
+uuid:
+  -
+    value: 53989f4d-f5bc-4f64-b45d-3cf97bfed856
+langcode:
+  -
+    value: es
+uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+filename:
+  -
+    value: pauta-4-medidas-contra-hurto-comision-de-regulacion-de-comunicaciones.png
+uri:
+  -
+    value: 'public://2021-12/pauta-4-medidas-contra-hurto-comision-de-regulacion-de-comunicaciones.png'
+    url: /sites/default/files/2021-12/pauta-4-medidas-contra-hurto-comision-de-regulacion-de-comunicaciones.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 92419
+status:
+  -
+    value: true
+created:
+  -
+    value: '2021-12-02T16:05:31+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2021-12-02T16:05:38+00:00'
+    format: 'Y-m-d\TH:i:sP'
+origname:
+  -
+    value: pauta-4-medidas-contra-hurto-comision-de-regulacion-de-comunicaciones.png
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
