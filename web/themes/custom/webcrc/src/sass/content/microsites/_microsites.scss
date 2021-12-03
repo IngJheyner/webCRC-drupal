@@ -240,7 +240,7 @@ ul.slick-dots {
 // MENU MICROSITIO
 .menu-microsite {
 
-  .slick__slide ul {
+  .slick > div > ul {
     display: flex;
     justify-content: center;
     margin: auto;
@@ -364,7 +364,7 @@ ul.slick-dots {
 // ACCESOS RAPIDOS
 .quick-access-primary {
 
-  .slick__slide ul {
+  .slick > div > ul {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -478,7 +478,7 @@ ul.slick-dots {
 // TEMAS DE INTERES
 .themes-interest {
 
-  .slick__slide ul {
+  .slick > div > ul {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;

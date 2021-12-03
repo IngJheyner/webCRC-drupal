@@ -22435,7 +22435,7 @@ __webpack_require__.r(__webpack_exports__);
             });
           }
         } else {
-          $(".zoneTitleItem").attr('style', 'display:none'); //$("main").attr('style', 'display:none');
+          $(".zoneTitleItem").attr('style', 'display:none');
         }
         /* ===== ===== ===== ===== ===== ===== ===== ===== ===== */
 

@@ -1,0 +1,42 @@
+uuid:
+  -
+    value: ecbedfc5-8592-4b3a-b76e-78ff84905614
+langcode:
+  -
+    value: es
+uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+filename:
+  -
+    value: indicadores-comision-regulacion-de-comunicaciones.svg
+uri:
+  -
+    value: 'public://webcrc/images/iconos/indicadores-comision-regulacion-de-comunicaciones.svg'
+    url: /sites/default/files/webcrc/images/iconos/indicadores-comision-regulacion-de-comunicaciones.svg
+filemime:
+  -
+    value: image/svg+xml
+filesize:
+  -
+    value: 1062
+status:
+  -
+    value: true
+created:
+  -
+    value: '2021-12-02T01:29:38+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2021-12-02T01:29:48+00:00'
+    format: 'Y-m-d\TH:i:sP'
+origname:
+  -
+    value: indicadores-comision-regulacion-de-comunicaciones.svg
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf

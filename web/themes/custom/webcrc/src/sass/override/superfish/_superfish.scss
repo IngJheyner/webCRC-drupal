@@ -15,10 +15,14 @@ nav.primary-menu {
     li {
       background: transparent;
 
+      .contextual-region {
+        position: initial;
+      }
+
       .field--name-field-content-animated-icon {
         position: absolute;
         display: none;
-        max-width: 150px;
+        max-width: 130px;
         min-width: auto;
         right: 0;
         left: 0;

@@ -1,0 +1,42 @@
+uuid:
+  -
+    value: 08b74bf7-77e1-470c-9feb-bf69659a4e08
+langcode:
+  -
+    value: es
+uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+filename:
+  -
+    value: preguntas-frecuentes-blanco-comision-regulacion-de-comunicaciones.svg
+uri:
+  -
+    value: 'public://webcrc/images/iconos/preguntas-frecuentes-blanco-comision-regulacion-de-comunicaciones.svg'
+    url: /sites/default/files/webcrc/images/iconos/preguntas-frecuentes-blanco-comision-regulacion-de-comunicaciones.svg
+filemime:
+  -
+    value: image/svg+xml
+filesize:
+  -
+    value: 926
+status:
+  -
+    value: true
+created:
+  -
+    value: '2021-12-02T15:38:15+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2021-12-02T15:38:25+00:00'
+    format: 'Y-m-d\TH:i:sP'
+origname:
+  -
+    value: preguntas-frecuentes-blanco-comision-regulacion-de-comunicaciones.svg
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf

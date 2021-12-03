@@ -1,0 +1,42 @@
+uuid:
+  -
+    value: b3a962dc-598d-43bf-a067-6c619927a223
+langcode:
+  -
+    value: es
+uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+filename:
+  -
+    value: consulta-blanco-comision-regulacion-de-comunicaciones.svg
+uri:
+  -
+    value: 'public://webcrc/images/iconos/consulta-blanco-comision-regulacion-de-comunicaciones.svg'
+    url: /sites/default/files/webcrc/images/iconos/consulta-blanco-comision-regulacion-de-comunicaciones.svg
+filemime:
+  -
+    value: image/svg+xml
+filesize:
+  -
+    value: 1086
+status:
+  -
+    value: true
+created:
+  -
+    value: '2021-12-02T15:27:59+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2021-12-02T15:28:09+00:00'
+    format: 'Y-m-d\TH:i:sP'
+origname:
+  -
+    value: consulta-blanco-comision-regulacion-de-comunicaciones.svg
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf

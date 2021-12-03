@@ -1,0 +1,63 @@
+uuid:
+  -
+    value: b9bccc8d-3523-40e2-9aa2-91c23b6c6a59
+langcode:
+  -
+    value: es
+type:
+  -
+    target_id: quick_access
+    target_type: paragraphs_type
+    target_uuid: d688b87c-4413-4516-bec5-a10e3e160776
+status:
+  -
+    value: true
+created:
+  -
+    value: '2021-12-02T14:48:41+00:00'
+    format: 'Y-m-d\TH:i:sP'
+parent_id:
+  -
+    value: '25'
+parent_type:
+  -
+    value: node
+parent_field_name:
+  -
+    value: field_content_quick_access
+behavior_settings:
+  -
+    value: {  }
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+content_translation_source:
+  -
+    value: und
+content_translation_outdated:
+  -
+    value: false
+content_translation_changed:
+  -
+    value: '2021-12-02T15:59:02+00:00'
+    format: 'Y-m-d\TH:i:sP'
+field_content_icon:
+  -
+    target_type: media
+    target_uuid: 12ed4b94-63ec-406a-a103-a14e9931cfbc
+field_content_title:
+  -
+    value: 'Consulta el trámite de homologación de un celular'
+field_url:
+  -
+    uri: 'https://www.crcom.gov.co/es/pagina/tramite-homologacion-celulares'
+    title: ''
+    options: {  }
+_content_sync:
+  entity_type: paragraph
+  entity_dependencies:
+    media:
+      - media.images_icons.12ed4b94-63ec-406a-a103-a14e9931cfbc
