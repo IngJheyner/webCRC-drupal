@@ -1,0 +1,21 @@
+uuid: ec1bd7a7-81ba-42a3-b6a8-b8ce1b98d3a2
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.normatividad.body
+    - node.type.normatividad
+  module:
+    - user
+id: node.normatividad.full
+targetEntityType: node
+bundle: normatividad
+mode: full
+content: {  }
+hidden:
+  addtoany: true
+  body: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

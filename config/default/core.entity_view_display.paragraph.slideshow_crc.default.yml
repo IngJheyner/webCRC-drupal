@@ -3,6 +3,7 @@ langcode: es
 status: true
 dependencies:
   config:
+    - field.field.paragraph.slideshow_crc.field_content_description
     - field.field.paragraph.slideshow_crc.field_content_image
     - field.field.paragraph.slideshow_crc.field_content_title
     - field.field.paragraph.slideshow_crc.field_url

@@ -3,6 +3,7 @@ langcode: es
 status: true
 dependencies:
   config:
+    - field.field.paragraph.iterecciones_proyectos.feeds_item
     - field.field.paragraph.iterecciones_proyectos.field_comentarios_interacciones
     - field.field.paragraph.iterecciones_proyectos.field_fases_interacciones
     - field.field.paragraph.iterecciones_proyectos.field_fecha_cierre_iteracciones
@@ -128,6 +129,18 @@ mappings:
       reference_by: name
       autocreate: false
       feeds_item: false
+  -
+    target: feeds_item
+    map:
+      url: ''
+      guid: parent_id
+    unique: {  }
+    settings: {  }
+  -
+    target: behavior_settings
+    map:
+      value: delta
+    settings: {  }
   -
     target: field_comentarios_interacciones
     map:

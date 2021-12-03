@@ -11,7 +11,6 @@ dependencies:
     - field.field.node.proyectos_regulatorios.field_oficina_proyecto
     - field.field.node.proyectos_regulatorios.field_projects_links
     - field.field.node.proyectos_regulatorios.field_projects_services
-    - field.field.node.proyectos_regulatorios.field_resumen_proyecto
     - field.field.node.proyectos_regulatorios.field_type_projects_comments
     - node.type.proyectos_regulatorios
   module:
@@ -21,7 +20,7 @@ third_party_settings:
   feeds_tamper:
     tampers:
       50876f0a-9b16-4199-af58-c4b0f93f00a8:
-        separator: ','
+        separator: '~'
         limit: null
         plugin: explode
         source: services

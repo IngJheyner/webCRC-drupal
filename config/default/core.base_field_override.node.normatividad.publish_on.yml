@@ -1,0 +1,18 @@
+uuid: cd4cb3b0-0ee0-4ade-887d-6e13f3927c0e
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.normatividad
+id: node.normatividad.publish_on
+field_name: publish_on
+entity_type: node
+bundle: normatividad
+label: 'Publicar en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

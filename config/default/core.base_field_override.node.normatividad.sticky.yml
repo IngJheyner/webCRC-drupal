@@ -1,0 +1,22 @@
+uuid: 837ad365-4376-4916-b2ea-03d662706bc2
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.normatividad
+id: node.normatividad.sticky
+field_name: sticky
+entity_type: node
+bundle: normatividad
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,33 @@
+uuid: aa1195b5-0964-4ab3-bfde-7d6cc01e5c08
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+    - options
+id: media.field_operador_comentarios
+field_name: field_operador_comentarios
+entity_type: media
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: Claro
+    -
+      value: '2'
+      label: EPM
+    -
+      value: '3'
+      label: Movistar
+    -
+      value: '4'
+      label: Tigo
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
