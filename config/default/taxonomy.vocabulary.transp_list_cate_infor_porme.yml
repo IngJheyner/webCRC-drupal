@@ -1,0 +1,8 @@
+uuid: d3b5d0a8-16fe-4168-98da-6a7f89d3e51e
+langcode: es
+status: true
+dependencies: {  }
+name: 'Transparencia: Lista categoría [ Informe pormenorizados ]'
+vid: transp_list_cate_infor_porme
+description: ''
+weight: 0

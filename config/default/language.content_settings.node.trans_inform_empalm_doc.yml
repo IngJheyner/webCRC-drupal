@@ -1,0 +1,11 @@
+uuid: b61f2304-ab95-469c-954b-65836233455a
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.trans_inform_empalm_doc
+id: node.trans_inform_empalm_doc
+target_entity_type_id: node
+target_bundle: trans_inform_empalm_doc
+default_langcode: site_default
+language_alterable: false

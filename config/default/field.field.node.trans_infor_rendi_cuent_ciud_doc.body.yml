@@ -1,0 +1,23 @@
+uuid: d5d3d990-c85a-4675-9f19-ebaab7950ccb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.trans_infor_rendi_cuent_ciud_doc
+  module:
+    - text
+id: node.trans_infor_rendi_cuent_ciud_doc.body
+field_name: body
+entity_type: node
+bundle: trans_infor_rendi_cuent_ciud_doc
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

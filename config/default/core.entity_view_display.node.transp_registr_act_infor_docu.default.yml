@@ -1,0 +1,32 @@
+uuid: 80d34360-659a-4e5c-b8ae-1c56fc23e32a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.transp_registr_act_infor_docu.field_docum_archi
+    - node.type.transp_registr_act_infor_docu
+  module:
+    - file
+    - user
+id: node.transp_registr_act_infor_docu.default
+targetEntityType: node
+bundle: transp_registr_act_infor_docu
+mode: default
+content:
+  field_docum_archi:
+    weight: 101
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  langcode: true
+  search_api_excerpt: true

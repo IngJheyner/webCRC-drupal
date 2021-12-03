@@ -1,0 +1,8 @@
+uuid: 8d6932bb-a706-49c0-b55e-3998b0f31b09
+langcode: es
+status: true
+dependencies: {  }
+name: 'Transparencia: Lista categoria [ Tablas retención documental ]'
+vid: transp_list_cat_tabl_retenci_doc
+description: ''
+weight: 0

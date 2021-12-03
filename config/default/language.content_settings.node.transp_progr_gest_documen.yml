@@ -1,0 +1,11 @@
+uuid: 248d96ae-6fb1-4555-bd4d-7894c1b73df0
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_progr_gest_documen
+id: node.transp_progr_gest_documen
+target_entity_type_id: node
+target_bundle: transp_progr_gest_documen
+default_langcode: site_default
+language_alterable: false

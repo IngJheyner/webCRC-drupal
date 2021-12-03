@@ -1,0 +1,8 @@
+uuid: 9e162cbe-9b55-4b41-95c4-275164d6d9be
+langcode: es
+status: true
+dependencies: {  }
+name: 'Transparencia: Lista categorías [ Plan de acción ]'
+vid: transp_list_cat_plan_accion
+description: 'Lista de fases para contenido Plan de acción en transparencia'
+weight: 0

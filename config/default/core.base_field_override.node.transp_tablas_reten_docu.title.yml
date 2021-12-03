@@ -1,0 +1,18 @@
+uuid: c117e13e-6e7f-4d6e-ad73-d696634bb544
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_tablas_reten_docu
+id: node.transp_tablas_reten_docu.title
+field_name: title
+entity_type: node
+bundle: transp_tablas_reten_docu
+label: Titulo
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

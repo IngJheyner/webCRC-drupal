@@ -1,0 +1,8 @@
+uuid: c19624b4-a5bc-4785-9145-23ed4b300d2c
+langcode: es
+status: true
+dependencies: {  }
+name: 'Transparencia: Lista de categoría [ Planes institucionales ]'
+vid: transp_list_cat_plan_institu
+description: ''
+weight: 0

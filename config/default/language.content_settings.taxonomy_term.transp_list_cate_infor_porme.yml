@@ -1,0 +1,11 @@
+uuid: 52534b1c-69db-429c-8779-126ace696ec4
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.transp_list_cate_infor_porme
+id: taxonomy_term.transp_list_cate_infor_porme
+target_entity_type_id: taxonomy_term
+target_bundle: transp_list_cate_infor_porme
+default_langcode: site_default
+language_alterable: false

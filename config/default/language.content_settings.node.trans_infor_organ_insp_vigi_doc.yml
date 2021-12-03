@@ -1,0 +1,11 @@
+uuid: cf578243-52d3-4073-ae47-e6b314f00892
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.trans_infor_organ_insp_vigi_doc
+id: node.trans_infor_organ_insp_vigi_doc
+target_entity_type_id: node
+target_bundle: trans_infor_organ_insp_vigi_doc
+default_langcode: site_default
+language_alterable: false

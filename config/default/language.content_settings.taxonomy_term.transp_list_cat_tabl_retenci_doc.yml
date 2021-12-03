@@ -1,0 +1,11 @@
+uuid: f252f952-1fa5-49af-97de-b2a9b5abd018
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.transp_list_cat_tabl_retenci_doc
+id: taxonomy_term.transp_list_cat_tabl_retenci_doc
+target_entity_type_id: taxonomy_term
+target_bundle: transp_list_cat_tabl_retenci_doc
+default_langcode: site_default
+language_alterable: false

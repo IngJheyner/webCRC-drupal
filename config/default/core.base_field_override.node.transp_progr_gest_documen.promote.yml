@@ -1,0 +1,22 @@
+uuid: 4fdc70c7-83a6-4189-abdd-6abd404bc55e
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_progr_gest_documen
+id: node.transp_progr_gest_documen.promote
+field_name: promote
+entity_type: node
+bundle: transp_progr_gest_documen
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

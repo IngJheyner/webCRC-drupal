@@ -1,0 +1,29 @@
+uuid: 64cb1652-4938-4712-afac-1e5ce19a404f
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.transp_progr_gest_documen.field_docum_archi
+    - field.field.node.transp_progr_gest_documen.field_list_anio_infor_decisi
+    - field.field.node.transp_progr_gest_documen.field_list_cat_prog_gesti_docume
+    - node.type.transp_progr_gest_documen
+  module:
+    - user
+id: node.transp_progr_gest_documen.teaser
+targetEntityType: node
+bundle: transp_progr_gest_documen
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_docum_archi: true
+  field_list_anio_infor_decisi: true
+  field_list_cat_prog_gesti_docume: true
+  langcode: true
+  search_api_excerpt: true

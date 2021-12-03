@@ -1,0 +1,22 @@
+uuid: 2eb36f61-363c-42ba-89d8-d6e1a9d08b60
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transparencia_esquema_de_publica
+id: node.transparencia_esquema_de_publica.promote
+field_name: promote
+entity_type: node
+bundle: transparencia_esquema_de_publica
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

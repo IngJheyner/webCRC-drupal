@@ -1,0 +1,24 @@
+uuid: f04c4f4b-9b00-4302-8d74-4094fc3724a7
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.transparencia_encabezado_e_intro
+    - field.field.block_content.transparencia_encabezado_e_intro.body
+  module:
+    - text
+id: block_content.transparencia_encabezado_e_intro.default
+targetEntityType: block_content
+bundle: transparencia_encabezado_e_intro
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

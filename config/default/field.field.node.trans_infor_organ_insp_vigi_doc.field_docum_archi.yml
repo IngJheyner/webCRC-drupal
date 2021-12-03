@@ -1,0 +1,46 @@
+uuid: b7de29b4-9f17-4026-a2a3-415815ab8dda
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_docum_archi
+    - node.type.trans_infor_organ_insp_vigi_doc
+  module:
+    - file
+    - filefield_paths
+third_party_settings:
+  filefield_paths:
+    enabled: true
+    file_path:
+      value: Transparencia/informes_organismos_de_inspeccion
+      options:
+        slashes: false
+        pathauto: false
+        transliterate: false
+    redirect: false
+    retroactive_update: false
+    active_updating: false
+    file_name:
+      value: '[file:ffp-name-only-original].[file:ffp-extension-original]'
+      options:
+        slashes: false
+        pathauto: false
+        transliterate: false
+id: node.trans_infor_organ_insp_vigi_doc.field_docum_archi
+field_name: field_docum_archi
+entity_type: node
+bundle: trans_infor_organ_insp_vigi_doc
+label: 'Documento / Archivo'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt xlsx xls doc pdf docx zip rar'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

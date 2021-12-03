@@ -1,0 +1,11 @@
+uuid: 172a9398-c7d3-4253-bc7c-4946773ba71d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transparencia_plan_de_accion_doc
+id: node.transparencia_plan_de_accion_doc
+target_entity_type_id: node
+target_bundle: transparencia_plan_de_accion_doc
+default_langcode: site_default
+language_alterable: false

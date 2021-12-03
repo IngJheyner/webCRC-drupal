@@ -1,0 +1,41 @@
+uuid: 514cc88c-eb05-4c9f-b70d-6445a9fcf0f5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.transp_infor_gestion_docu.field_docum_archi
+    - field.field.node.transp_infor_gestion_docu.field_list_anio_infor_decisi
+    - node.type.transp_infor_gestion_docu
+  module:
+    - file
+    - options
+    - user
+id: node.transp_infor_gestion_docu.default
+targetEntityType: node
+bundle: transp_infor_gestion_docu
+mode: default
+content:
+  field_docum_archi:
+    weight: 103
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_list_anio_infor_decisi:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  langcode: true
+  search_api_excerpt: true

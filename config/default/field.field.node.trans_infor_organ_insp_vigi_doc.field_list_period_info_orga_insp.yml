@@ -1,0 +1,21 @@
+uuid: 68b76a5f-676f-4b2e-982d-2e80ff6e9a42
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_list_period_info_orga_insp
+    - node.type.trans_infor_organ_insp_vigi_doc
+  module:
+    - options
+id: node.trans_infor_organ_insp_vigi_doc.field_list_period_info_orga_insp
+field_name: field_list_period_info_orga_insp
+entity_type: node
+bundle: trans_infor_organ_insp_vigi_doc
+label: Periodo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

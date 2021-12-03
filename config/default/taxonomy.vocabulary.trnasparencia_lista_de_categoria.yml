@@ -1,0 +1,8 @@
+uuid: d3c7c3bc-8f92-49a2-b131-42d8a7c1467e
+langcode: es
+status: true
+dependencies: {  }
+name: 'Transparencia: Lista de categorías [ Proyectos de inversión ]'
+vid: trnasparencia_lista_de_categoria
+description: ''
+weight: 0

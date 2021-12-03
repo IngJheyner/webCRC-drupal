@@ -1,0 +1,176 @@
+uuid: 712c44da-455f-4d40-9ee9-b5837b817fe6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.trans_infor_rendi_cuent_ciud_doc.body
+    - field.field.node.trans_infor_rendi_cuent_ciud_doc.field_cat_infor_rendi_cuent
+    - field.field.node.trans_infor_rendi_cuent_ciud_doc.field_doc_file_info_decisi_publi
+    - field.field.node.trans_infor_rendi_cuent_ciud_doc.field_list_anio_infor_decisi
+    - node.type.trans_infor_rendi_cuent_ciud_doc
+  module:
+    - field_group
+    - file
+    - path
+    - scheduler
+    - text
+third_party_settings:
+  field_group:
+    group_tabs_transp_rendi_cuentas:
+      children:
+        - group_tab_infor_infor_rendi_cuen
+        - group_tab_documents
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      region: content
+      format_settings:
+        direction: horizontal
+        width_breakpoint: 640
+        id: ''
+        classes: ''
+        show_empty_fields: false
+      label: 'Rendición de Cuentas'
+    group_tab_infor_infor_rendi_cuen:
+      children:
+        - title
+        - field_list_anio_infor_decisi
+        - field_cat_infor_rendi_cuent
+        - body
+      parent_name: group_tabs_transp_rendi_cuentas
+      weight: 20
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Información
+    group_tab_documents:
+      children:
+        - field_doc_file_info_decisi_publi
+      parent_name: group_tabs_transp_rendi_cuentas
+      weight: 21
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Documento
+id: node.trans_infor_rendi_cuent_ciud_doc.default
+targetEntityType: node
+bundle: trans_infor_rendi_cuent_ciud_doc
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 4
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_cat_infor_rendi_cuent:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_doc_file_info_decisi_publi:
+    weight: 15
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_list_anio_infor_decisi:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  langcode:
+    type: language_select
+    weight: 5
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 8
+    region: content
+    third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 14
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 9
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 6
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  url_redirects:
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

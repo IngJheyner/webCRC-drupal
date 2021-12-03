@@ -1,0 +1,29 @@
+uuid: 96b14321-2c11-4e64-8173-4294865e76eb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cat_infor_rendi_cuent
+    - node.type.trans_infor_rendi_cuent_ciud_doc
+    - taxonomy.vocabulary.trans_lis_cat_infr_rendi_cuenta
+id: node.trans_infor_rendi_cuent_ciud_doc.field_cat_infor_rendi_cuent
+field_name: field_cat_infor_rendi_cuent
+entity_type: node
+bundle: trans_infor_rendi_cuent_ciud_doc
+label: Categoría
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      trans_lis_cat_infr_rendi_cuenta: trans_lis_cat_infr_rendi_cuenta
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

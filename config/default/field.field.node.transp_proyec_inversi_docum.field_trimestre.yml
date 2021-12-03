@@ -1,0 +1,21 @@
+uuid: 7a78c549-b16b-4e7f-bb11-b42eddee22e4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_trimestre
+    - node.type.transp_proyec_inversi_docum
+  module:
+    - options
+id: node.transp_proyec_inversi_docum.field_trimestre
+field_name: field_trimestre
+entity_type: node
+bundle: transp_proyec_inversi_docum
+label: Trimestre
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

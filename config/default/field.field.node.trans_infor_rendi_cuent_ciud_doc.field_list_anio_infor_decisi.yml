@@ -1,0 +1,23 @@
+uuid: fb771663-a369-420d-a4cd-f78d4dc3436a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_list_anio_infor_decisi
+    - node.type.trans_infor_rendi_cuent_ciud_doc
+  module:
+    - options
+id: node.trans_infor_rendi_cuent_ciud_doc.field_list_anio_infor_decisi
+field_name: field_list_anio_infor_decisi
+entity_type: node
+bundle: trans_infor_rendi_cuent_ciud_doc
+label: Año
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 2021
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

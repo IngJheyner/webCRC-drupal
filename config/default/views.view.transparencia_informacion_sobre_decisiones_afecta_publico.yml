@@ -11,7 +11,7 @@ dependencies:
     - node.type.transp_inf_decisi_afec_pub_docum
     - taxonomy.vocabulary.trans_lista_catego_inform_decisi
   content:
-    - 'block_content:transp_infor_decis_afec_pub_intr:5f2c6239-61b9-4571-8a28-3c336ea2239f'
+    - 'block_content:transparencia_encabezado_e_intro:9e628ac4-a19b-4f1e-b87f-e82840994c43'
   module:
     - better_exposed_filters
     - file
@@ -494,7 +494,7 @@ display:
           delta_offset: 0
           delta_reversed: false
           delta_first_last: false
-          multi_type: separator
+          multi_type: ol
           separator: ', '
           field_api_classes: false
           plugin_id: field
@@ -696,7 +696,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          target: 5f2c6239-61b9-4571-8a28-3c336ea2239f
+          target: 9e628ac4-a19b-4f1e-b87f-e82840994c43
           view_mode: default
           bypass_access: false
           plugin_id: entity

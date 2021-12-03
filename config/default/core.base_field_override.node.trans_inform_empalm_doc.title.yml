@@ -1,0 +1,18 @@
+uuid: 8f5c0068-4e24-4cbd-b25c-cbff17671522
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.trans_inform_empalm_doc
+id: node.trans_inform_empalm_doc.title
+field_name: title
+entity_type: node
+bundle: trans_inform_empalm_doc
+label: 'Nombre Funcionario'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

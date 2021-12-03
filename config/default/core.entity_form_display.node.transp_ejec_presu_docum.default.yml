@@ -3,7 +3,7 @@ langcode: es
 status: true
 dependencies:
   config:
-    - field.field.node.transp_ejec_presu_docum.field_doc_file_info_decisi_publi
+    - field.field.node.transp_ejec_presu_docum.field_docum_archi
     - field.field.node.transp_ejec_presu_docum.field_list_anio_infor_decisi
     - field.field.node.transp_ejec_presu_docum.field_list_cat_ejec_presupue
     - field.field.node.transp_ejec_presu_docum.field_lista_mes_inf_decisi
@@ -23,8 +23,8 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_doc_file_info_decisi_publi:
-    weight: 14
+  field_docum_archi:
+    weight: 26
     settings:
       progress_indicator: throbber
     third_party_settings: {  }

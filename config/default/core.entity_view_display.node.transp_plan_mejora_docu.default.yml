@@ -1,0 +1,41 @@
+uuid: b3d84154-61fe-4c95-8f4c-53d84b47622f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.transp_plan_mejora_docu.field_docum_archi
+    - field.field.node.transp_plan_mejora_docu.field_list_anio_infor_decisi
+    - node.type.transp_plan_mejora_docu
+  module:
+    - file
+    - options
+    - user
+id: node.transp_plan_mejora_docu.default
+targetEntityType: node
+bundle: transp_plan_mejora_docu
+mode: default
+content:
+  field_docum_archi:
+    weight: 102
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_list_anio_infor_decisi:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  langcode: true
+  search_api_excerpt: true

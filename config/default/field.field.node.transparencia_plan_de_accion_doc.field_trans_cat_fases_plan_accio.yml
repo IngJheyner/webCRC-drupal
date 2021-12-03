@@ -1,0 +1,29 @@
+uuid: c2642f9e-720c-4501-bfee-6645f06fb91c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_trans_cat_fases_plan_accio
+    - node.type.transparencia_plan_de_accion_doc
+    - taxonomy.vocabulary.transp_list_cat_plan_accion
+id: node.transparencia_plan_de_accion_doc.field_trans_cat_fases_plan_accio
+field_name: field_trans_cat_fases_plan_accio
+entity_type: node
+bundle: transparencia_plan_de_accion_doc
+label: 'Categoría / Fases'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      transp_list_cat_plan_accion: transp_list_cat_plan_accion
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

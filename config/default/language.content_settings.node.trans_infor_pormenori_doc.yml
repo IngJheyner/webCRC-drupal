@@ -1,0 +1,11 @@
+uuid: 29ae1528-44bc-45e4-8ebd-afa6185761df
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.trans_infor_pormenori_doc
+id: node.trans_infor_pormenori_doc
+target_entity_type_id: node
+target_bundle: trans_infor_pormenori_doc
+default_langcode: site_default
+language_alterable: false

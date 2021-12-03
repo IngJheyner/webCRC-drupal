@@ -1,0 +1,27 @@
+uuid: ab732942-3f65-48f9-bcc6-341b34d1dd64
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.transp_infor_defensa_publi_doc.field_docum_archi
+    - field.field.node.transp_infor_defensa_publi_doc.field_list_anio_infor_decisi
+    - node.type.transp_infor_defensa_publi_doc
+  module:
+    - user
+id: node.transp_infor_defensa_publi_doc.teaser
+targetEntityType: node
+bundle: transp_infor_defensa_publi_doc
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_docum_archi: true
+  field_list_anio_infor_decisi: true
+  langcode: true
+  search_api_excerpt: true

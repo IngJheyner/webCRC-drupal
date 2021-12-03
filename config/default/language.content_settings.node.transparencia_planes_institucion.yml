@@ -1,0 +1,11 @@
+uuid: 565530d1-b5a6-455e-8c5a-22a27aeaf2bb
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transparencia_planes_institucion
+id: node.transparencia_planes_institucion
+target_entity_type_id: node
+target_bundle: transparencia_planes_institucion
+default_langcode: site_default
+language_alterable: false

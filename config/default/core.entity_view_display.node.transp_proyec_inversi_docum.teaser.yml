@@ -1,0 +1,31 @@
+uuid: e214378f-a4e2-43d1-8335-e65c4487dfe6
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.transp_proyec_inversi_docum.field_docum_archi
+    - field.field.node.transp_proyec_inversi_docum.field_list_anio_infor_decisi
+    - field.field.node.transp_proyec_inversi_docum.field_list_cat_proyec_invers
+    - field.field.node.transp_proyec_inversi_docum.field_trimestre
+    - node.type.transp_proyec_inversi_docum
+  module:
+    - user
+id: node.transp_proyec_inversi_docum.teaser
+targetEntityType: node
+bundle: transp_proyec_inversi_docum
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_docum_archi: true
+  field_list_anio_infor_decisi: true
+  field_list_cat_proyec_invers: true
+  field_trimestre: true
+  langcode: true
+  search_api_excerpt: true

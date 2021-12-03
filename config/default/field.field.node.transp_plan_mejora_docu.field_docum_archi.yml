@@ -1,0 +1,46 @@
+uuid: 4424a9b1-4e73-470c-b8de-bc1d79543538
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_docum_archi
+    - node.type.transp_plan_mejora_docu
+  module:
+    - file
+    - filefield_paths
+third_party_settings:
+  filefield_paths:
+    enabled: true
+    file_path:
+      value: Transparencia/planes_de_mejoramiento
+      options:
+        slashes: false
+        pathauto: false
+        transliterate: false
+    redirect: false
+    retroactive_update: false
+    active_updating: false
+    file_name:
+      value: '[file:ffp-name-only-original].[file:ffp-extension-original]'
+      options:
+        slashes: false
+        pathauto: false
+        transliterate: false
+id: node.transp_plan_mejora_docu.field_docum_archi
+field_name: field_docum_archi
+entity_type: node
+bundle: transp_plan_mejora_docu
+label: 'Documento / Archivo'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt xlsx xls doc pdf docx zip rar'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

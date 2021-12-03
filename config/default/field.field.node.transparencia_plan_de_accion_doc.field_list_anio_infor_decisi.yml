@@ -1,0 +1,23 @@
+uuid: d016779c-17ba-44db-a70e-48f639a1bf56
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_list_anio_infor_decisi
+    - node.type.transparencia_plan_de_accion_doc
+  module:
+    - options
+id: node.transparencia_plan_de_accion_doc.field_list_anio_infor_decisi
+field_name: field_list_anio_infor_decisi
+entity_type: node
+bundle: transparencia_plan_de_accion_doc
+label: Año
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 2021
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

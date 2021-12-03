@@ -1,0 +1,18 @@
+uuid: a5b0708c-dc12-4e3d-a834-b9b4d13031e2
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transparencia_esquema_de_publica
+id: node.transparencia_esquema_de_publica.title
+field_name: title
+entity_type: node
+bundle: transparencia_esquema_de_publica
+label: Titulo
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

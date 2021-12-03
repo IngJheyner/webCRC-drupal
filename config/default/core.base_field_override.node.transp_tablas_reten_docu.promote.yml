@@ -1,0 +1,22 @@
+uuid: f7e7fb55-42b6-4f60-a6a1-3299cf1fe9ab
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_tablas_reten_docu
+id: node.transp_tablas_reten_docu.promote
+field_name: promote
+entity_type: node
+bundle: transp_tablas_reten_docu
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

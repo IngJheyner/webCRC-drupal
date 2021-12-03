@@ -1,0 +1,27 @@
+uuid: 4b8b0815-87dc-45a6-8d8a-d85d73cf5929
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.trans_infor_organ_insp_vigi_doc.field_docum_archi
+    - field.field.node.trans_infor_organ_insp_vigi_doc.field_list_period_info_orga_insp
+    - node.type.trans_infor_organ_insp_vigi_doc
+  module:
+    - user
+id: node.trans_infor_organ_insp_vigi_doc.teaser
+targetEntityType: node
+bundle: trans_infor_organ_insp_vigi_doc
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_docum_archi: true
+  field_list_period_info_orga_insp: true
+  langcode: true
+  search_api_excerpt: true
