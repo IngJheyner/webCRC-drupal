@@ -1,0 +1,23 @@
+uuid: 6206a085-7e3b-4fc0-b67f-2f825157ca64
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.normatividad
+  module:
+    - text
+id: node.normatividad.body
+field_name: body
+entity_type: node
+bundle: normatividad
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

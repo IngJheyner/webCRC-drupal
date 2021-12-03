@@ -1,0 +1,18 @@
+uuid: d50e46c8-6ead-48ec-bcbf-e3f192480c01
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.normatividad
+id: node.normatividad.metatag
+field_name: metatag
+entity_type: node
+bundle: normatividad
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map
