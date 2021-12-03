@@ -15,7 +15,7 @@ bundle: tab_header
 label: 'Tab Contenido'
 description: 'Contenido que tendra la pestaña'
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

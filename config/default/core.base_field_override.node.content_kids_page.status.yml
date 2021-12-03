@@ -1,0 +1,22 @@
+uuid: a7c14677-565f-493b-b9d9-bda95bf762e9
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.content_kids_page
+id: node.content_kids_page.status
+field_name: status
+entity_type: node
+bundle: content_kids_page
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

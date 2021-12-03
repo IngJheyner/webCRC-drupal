@@ -1,0 +1,18 @@
+uuid: bade58fa-c797-4e48-bec5-dc403a9a0fbd
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-transp-access-infor-public
+id: menu_link_content.menu-transp-access-infor-public.changed
+field_name: changed
+entity_type: menu_link_content
+bundle: menu-transp-access-infor-public
+label: Changed
+description: 'La hora en la que el enlace del menú se editó por última vez.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

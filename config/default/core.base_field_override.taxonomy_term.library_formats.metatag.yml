@@ -1,0 +1,18 @@
+uuid: 8d300b55-f08a-42d0-b4ce-ebe5ff9f9cb0
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.library_formats
+id: taxonomy_term.library_formats.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: library_formats
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

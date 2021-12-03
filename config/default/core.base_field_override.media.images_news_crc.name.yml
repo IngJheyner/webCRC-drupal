@@ -1,0 +1,20 @@
+uuid: 288076b1-533e-4e33-b9b4-05d70e178b2d
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.images_news_crc
+id: media.images_news_crc.name
+field_name: name
+entity_type: media
+bundle: images_news_crc
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,18 @@
+uuid: 87cadec1-828c-42a5-b4e8-ca822cc9ee52
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.proyectos_regulatorios
+id: node.proyectos_regulatorios.created
+field_name: created
+entity_type: node
+bundle: proyectos_regulatorios
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

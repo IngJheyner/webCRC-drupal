@@ -1,0 +1,20 @@
+uuid: 18c0c371-40fd-483e-802f-fdefa2e46e28
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.proyectos_regulatorios
+  module:
+    - path
+id: node.proyectos_regulatorios.path
+field_name: path
+entity_type: node
+bundle: proyectos_regulatorios
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

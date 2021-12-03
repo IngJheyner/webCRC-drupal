@@ -1,0 +1,18 @@
+uuid: da7d194f-c714-43a3-b490-d09bb1ed5afa
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.newsletter
+id: block_content.newsletter.info
+field_name: info
+entity_type: block_content
+bundle: newsletter
+label: 'Block description'
+description: 'Una breve descripción de su bloque.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

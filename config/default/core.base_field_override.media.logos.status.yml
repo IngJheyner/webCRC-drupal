@@ -1,0 +1,22 @@
+uuid: 410337a0-7f52-4825-a0f7-6971422f4050
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.logos
+id: media.logos.status
+field_name: status
+entity_type: media
+bundle: logos
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

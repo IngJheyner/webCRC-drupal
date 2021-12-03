@@ -1,0 +1,20 @@
+uuid: 3f9a0f38-396e-4248-87c2-432b8017eef5
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.comentarios_iteracciones_
+id: media.comentarios_iteracciones_.name
+field_name: name
+entity_type: media
+bundle: comentarios_iteracciones_
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

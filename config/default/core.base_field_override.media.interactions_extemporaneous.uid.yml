@@ -1,0 +1,20 @@
+uuid: 80e6c2e3-143e-4884-b41b-70000fb0af35
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.interactions_extemporaneous
+id: media.interactions_extemporaneous.uid
+field_name: uid
+entity_type: media
+bundle: interactions_extemporaneous
+label: 'Escrito por'
+description: 'El ID de usuario del autor.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

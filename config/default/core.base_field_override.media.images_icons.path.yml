@@ -1,0 +1,20 @@
+uuid: e683d8b6-970a-4263-b209-7e768999722b
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.images_icons
+  module:
+    - path
+id: media.images_icons.path
+field_name: path
+entity_type: media
+bundle: images_icons
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,20 @@
+uuid: a20a0a68-e495-409d-bf59-6465b217ea5f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.library_virtual
+id: node.library_virtual.uid
+field_name: uid
+entity_type: node
+bundle: library_virtual
+label: 'Escrito por'
+description: 'El nombre de usuario del autor del contenido.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

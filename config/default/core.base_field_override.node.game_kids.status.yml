@@ -1,0 +1,22 @@
+uuid: 68273a13-b03c-4d21-8a44-b938d30d7363
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.game_kids
+id: node.game_kids.status
+field_name: status
+entity_type: node
+bundle: game_kids
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

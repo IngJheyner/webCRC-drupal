@@ -1,0 +1,22 @@
+uuid: 6460a413-10be-4598-8656-b3cc59221e0a
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.page_wrapper_micrositie
+id: paragraph.page_wrapper_micrositie.status
+field_name: status
+entity_type: paragraph
+bundle: page_wrapper_micrositie
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

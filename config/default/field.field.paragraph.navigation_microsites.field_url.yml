@@ -14,7 +14,7 @@ bundle: navigation_microsites
 label: Enlace
 description: 'Enlace para el item de menu'
 required: false
-translatable: true
+translatable: false
 default_value:
   -
     attributes: {  }

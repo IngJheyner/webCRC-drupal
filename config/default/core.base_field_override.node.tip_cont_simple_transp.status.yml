@@ -1,0 +1,22 @@
+uuid: 2a7f4eab-9f1e-448a-9647-2834f2bd3009
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.tip_cont_simple_transp
+id: node.tip_cont_simple_transp.status
+field_name: status
+entity_type: node
+bundle: tip_cont_simple_transp
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

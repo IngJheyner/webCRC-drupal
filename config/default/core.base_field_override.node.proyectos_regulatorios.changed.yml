@@ -1,0 +1,18 @@
+uuid: 7e23723d-c1c6-4738-a440-9790bd47b375
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.proyectos_regulatorios
+id: node.proyectos_regulatorios.changed
+field_name: changed
+entity_type: node
+bundle: proyectos_regulatorios
+label: Changed
+description: 'La fecha en que el nodo fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

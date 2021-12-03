@@ -1,0 +1,18 @@
+uuid: ec0bd180-beb7-4f24-bad2-91908984a076
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.news_tags
+id: taxonomy_term.news_tags.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: news_tags
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

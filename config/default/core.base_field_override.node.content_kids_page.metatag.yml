@@ -1,0 +1,18 @@
+uuid: b6582e0c-9a35-43a8-a405-b66ca62e01c8
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.content_kids_page
+id: node.content_kids_page.metatag
+field_name: metatag
+entity_type: node
+bundle: content_kids_page
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

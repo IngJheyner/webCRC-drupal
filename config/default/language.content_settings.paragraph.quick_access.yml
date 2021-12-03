@@ -1,0 +1,18 @@
+uuid: 22091e65-8c0f-459e-a96c-c592f95921f2
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.quick_access
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.quick_access
+target_entity_type_id: paragraph
+target_bundle: quick_access
+default_langcode: site_default
+language_alterable: false

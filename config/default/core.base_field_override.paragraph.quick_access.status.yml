@@ -1,0 +1,22 @@
+uuid: 5fd88052-c2fa-4735-b3c3-192bdae00042
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.quick_access
+id: paragraph.quick_access.status
+field_name: status
+entity_type: paragraph
+bundle: quick_access
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

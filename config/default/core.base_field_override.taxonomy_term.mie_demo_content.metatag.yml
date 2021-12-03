@@ -1,0 +1,18 @@
+uuid: 40d885f9-e5cf-4b1d-80b9-97c17fd56084
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.mie_demo_content
+id: taxonomy_term.mie_demo_content.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: mie_demo_content
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

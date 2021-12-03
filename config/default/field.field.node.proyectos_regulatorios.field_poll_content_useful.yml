@@ -15,7 +15,7 @@ bundle: proyectos_regulatorios
 label: 'Encuesta de contenido útil'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value:
   -
     default_data: ''

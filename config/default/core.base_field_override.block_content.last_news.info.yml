@@ -1,0 +1,18 @@
+uuid: cb1050f0-4a99-4962-ade9-f184ad0f324e
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.last_news
+id: block_content.last_news.info
+field_name: info
+entity_type: block_content
+bundle: last_news
+label: 'Block description'
+description: 'Una breve descripción de su bloque.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

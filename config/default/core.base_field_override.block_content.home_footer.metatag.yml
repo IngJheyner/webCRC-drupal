@@ -1,0 +1,18 @@
+uuid: 6d937d20-7dc8-4a6c-9a08-43fa0899308d
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.home_footer
+id: block_content.home_footer.metatag
+field_name: metatag
+entity_type: block_content
+bundle: home_footer
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

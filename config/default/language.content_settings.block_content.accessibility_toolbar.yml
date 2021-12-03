@@ -1,0 +1,18 @@
+uuid: a57d76e7-c180-48ea-8dcc-edfff7336c89
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.accessibility_toolbar
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: block_content.accessibility_toolbar
+target_entity_type_id: block_content
+target_bundle: accessibility_toolbar
+default_langcode: site_default
+language_alterable: false

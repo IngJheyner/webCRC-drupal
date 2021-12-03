@@ -1,0 +1,18 @@
+uuid: 830c3e9c-d1a6-489c-aef5-e27398e70cc3
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.news_crc_documents
+id: media.news_crc_documents.metatag
+field_name: metatag
+entity_type: media
+bundle: news_crc_documents
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

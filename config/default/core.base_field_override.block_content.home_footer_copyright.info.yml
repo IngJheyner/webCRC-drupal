@@ -1,0 +1,18 @@
+uuid: 57591964-c3cf-42cf-997c-be1bc3f0cc59
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.home_footer_copyright
+id: block_content.home_footer_copyright.info
+field_name: info
+entity_type: block_content
+bundle: home_footer_copyright
+label: 'Block description'
+description: 'Una breve descripción de su bloque.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

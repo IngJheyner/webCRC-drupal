@@ -1,0 +1,18 @@
+uuid: 3bc8faa0-6f41-4c29-a80d-98efa289e068
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.microsite_crc
+id: node.microsite_crc.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: microsite_crc
+label: 'Quitar publicación en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

@@ -1,0 +1,18 @@
+uuid: 68f27376-0366-4d40-b4bc-d1c3815d0264
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.microsite_crc
+id: node.microsite_crc.publish_on
+field_name: publish_on
+entity_type: node
+bundle: microsite_crc
+label: 'Publicar en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

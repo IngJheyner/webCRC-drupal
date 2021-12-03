@@ -1,0 +1,20 @@
+uuid: f03e978f-f6dd-43e8-94e1-e11043e0ff57
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.game_kids
+  module:
+    - path
+id: node.game_kids.path
+field_name: path
+entity_type: node
+bundle: game_kids
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

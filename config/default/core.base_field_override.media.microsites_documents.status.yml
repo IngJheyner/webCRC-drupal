@@ -1,0 +1,22 @@
+uuid: 6ba4c555-66ed-4b6e-8ea7-6cfb4cee1d04
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.microsites_documents
+id: media.microsites_documents.status
+field_name: status
+entity_type: media
+bundle: microsites_documents
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

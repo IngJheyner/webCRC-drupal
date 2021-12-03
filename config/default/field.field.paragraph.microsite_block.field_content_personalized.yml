@@ -14,7 +14,7 @@ bundle: microsite_block
 label: 'Conteido Personalizado'
 description: 'Seccion personalizable para incluir en el bloque del micrositio'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

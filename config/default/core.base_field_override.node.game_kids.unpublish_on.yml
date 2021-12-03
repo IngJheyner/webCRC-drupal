@@ -1,0 +1,18 @@
+uuid: 99ed007f-edec-491c-bdae-69536fbb62e9
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.game_kids
+id: node.game_kids.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: game_kids
+label: 'Quitar publicación en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

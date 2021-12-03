@@ -1,0 +1,18 @@
+uuid: 30e214ae-73a8-4251-85ab-4ef75cbe88c6
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.slideshow_crc
+id: paragraph.slideshow_crc.created
+field_name: created
+entity_type: paragraph
+bundle: slideshow_crc
+label: Fecha
+description: 'La hora en que se creó el Paragraph.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

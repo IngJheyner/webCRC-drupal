@@ -1,0 +1,22 @@
+uuid: f7401570-6074-48d8-9f70-24d952b3a41d
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.comentarios_iteracciones_
+id: media.comentarios_iteracciones_.status
+field_name: status
+entity_type: media
+bundle: comentarios_iteracciones_
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

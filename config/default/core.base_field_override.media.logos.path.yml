@@ -1,0 +1,20 @@
+uuid: 068f2d6f-f2fa-46a8-a4b3-997854777c06
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.logos
+  module:
+    - path
+id: media.logos.path
+field_name: path
+entity_type: media
+bundle: logos
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

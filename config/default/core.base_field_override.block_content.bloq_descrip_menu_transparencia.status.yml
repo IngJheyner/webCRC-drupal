@@ -1,0 +1,22 @@
+uuid: 401c7dbe-16bd-4093-8dcc-417cba394417
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.bloq_descrip_menu_transparencia
+id: block_content.bloq_descrip_menu_transparencia.status
+field_name: status
+entity_type: block_content
+bundle: bloq_descrip_menu_transparencia
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

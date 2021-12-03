@@ -1,0 +1,18 @@
+uuid: 075fc623-f23a-46c5-a74b-fe945195e63e
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.last_news
+id: block_content.last_news.metatag
+field_name: metatag
+entity_type: block_content
+bundle: last_news
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

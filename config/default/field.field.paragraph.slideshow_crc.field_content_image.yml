@@ -13,7 +13,7 @@ bundle: slideshow_crc
 label: Imagen
 description: 'Benner para el slideshow'
 required: true
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

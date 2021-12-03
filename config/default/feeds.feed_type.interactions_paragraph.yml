@@ -3,7 +3,7 @@ langcode: es
 status: true
 dependencies:
   config:
-    - field.field.paragraph.iterecciones_proyectos.feeds_item
+    - field.field.paragraph.iterecciones_proyectos.field_comentarios_interacciones
     - field.field.paragraph.iterecciones_proyectos.field_fases_interacciones
     - field.field.paragraph.iterecciones_proyectos.field_fecha_cierre_iteracciones
     - field.field.paragraph.iterecciones_proyectos.field_propuestas_interacciones
@@ -11,7 +11,7 @@ dependencies:
   module:
     - paragraphs
 id: interactions_paragraph
-label: 'Interacciones [ Paragraph ]'
+label: 'Interacciones [ Proyectos ]'
 description: 'Agregar contenido de tipo parrafos que se utilizan en proyectos comentarios campo interacciones.'
 help: ''
 import_period: 3600
@@ -27,6 +27,7 @@ parser_configuration:
 processor: 'entity:paragraph'
 processor_configuration:
   langcode: es
+  insert_new: 1
   update_existing: 2
   update_non_existent: _keep
   expire: -1
@@ -77,6 +78,14 @@ custom_sources:
     label: delta
     value: delta
     machine_name: delta
+  comments:
+    label: comentarios
+    value: comentarios
+    machine_name: comments
+  extemporaneous:
+    label: extemporaneos
+    value: extemporaneos
+    machine_name: extemporaneous
 mappings:
   -
     target: parent_id
@@ -117,15 +126,22 @@ mappings:
       language: null
       reference_by: name
       autocreate: false
+      feeds_item: false
   -
-    target: feeds_item
+    target: field_comentarios_interacciones
     map:
-      url: ''
-      guid: parent_id
-    unique: {  }
-    settings: {  }
+      target_id: comments
+    settings:
+      language: null
+      reference_by: name
+      autocreate: false
+      feeds_item: false
   -
-    target: behavior_settings
+    target: field_interaction_extemporaneous
     map:
-      value: delta
-    settings: {  }
+      target_id: extemporaneous
+    settings:
+      language: null
+      reference_by: name
+      autocreate: false
+      feeds_item: false

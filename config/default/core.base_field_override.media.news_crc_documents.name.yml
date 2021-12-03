@@ -1,0 +1,20 @@
+uuid: 0142b837-8d5c-45f3-afba-bc8eb49ad79b
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.news_crc_documents
+id: media.news_crc_documents.name
+field_name: name
+entity_type: media
+bundle: news_crc_documents
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,20 @@
+uuid: aca52f55-e46b-4e78-9fcf-f9ffe0027ff1
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.propuesta_interaccion_proyectos_
+  module:
+    - path
+id: media.propuesta_interaccion_proyectos_.path
+field_name: path
+entity_type: media
+bundle: propuesta_interaccion_proyectos_
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

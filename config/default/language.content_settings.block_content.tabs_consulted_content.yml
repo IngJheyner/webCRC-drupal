@@ -4,8 +4,15 @@ status: true
 dependencies:
   config:
     - block_content.type.tabs_consulted_content
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
 id: block_content.tabs_consulted_content
 target_entity_type_id: block_content
 target_bundle: tabs_consulted_content
 default_langcode: site_default
-language_alterable: false
+language_alterable: true

@@ -1,0 +1,22 @@
+uuid: fa46c90e-f100-4140-a9af-1a84942af027
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.inclusive_language
+id: media.inclusive_language.status
+field_name: status
+entity_type: media
+bundle: inclusive_language
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

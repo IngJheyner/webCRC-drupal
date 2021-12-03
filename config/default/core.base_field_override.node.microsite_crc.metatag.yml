@@ -1,0 +1,18 @@
+uuid: 2df81366-4769-4d46-be20-8edf69fc1b3c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.microsite_crc
+id: node.microsite_crc.metatag
+field_name: metatag
+entity_type: node
+bundle: microsite_crc
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

@@ -1,0 +1,20 @@
+uuid: ae93a229-9394-48cc-a834-489b9b6812f6
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.microsites_documents
+id: media.microsites_documents.name
+field_name: name
+entity_type: media
+bundle: microsites_documents
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

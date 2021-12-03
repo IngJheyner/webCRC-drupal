@@ -3,6 +3,7 @@ langcode: es
 status: true
 dependencies:
   config:
+    - field.field.media.comentarios_iteracciones_.feeds_item
     - field.field.media.comentarios_iteracciones_.field_media_file_2
     - field.field.media.comentarios_iteracciones_.field_projects_operator
     - field.field.media.comentarios_iteracciones_.field_ruta_archivo_comentarios
@@ -59,6 +60,7 @@ content:
     type: entity_reference_label
     region: content
 hidden:
+  feeds_item: true
   field_ruta_archivo_comentarios: true
   langcode: true
   name: true

@@ -13,7 +13,7 @@ bundle: quick_access
 label: Icono
 description: 'Incono para el acceso rapido'
 required: true
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

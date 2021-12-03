@@ -1,0 +1,28 @@
+uuid: eb953bb9-133f-416e-8249-b92d4df7ec5f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_url
+    - paragraphs.paragraphs_type.accessibility_toolbar
+  module:
+    - link
+id: paragraph.accessibility_toolbar.field_url
+field_name: field_url
+entity_type: paragraph
+bundle: accessibility_toolbar
+label: Enlace
+description: 'Enlace para el icono. Nota no colocar enlaces en las opciones de: Contraste, Reducir, Aumentar letra.'
+required: false
+translatable: true
+default_value:
+  -
+    attributes: {  }
+    uri: 'route:<nolink>'
+    title: ''
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

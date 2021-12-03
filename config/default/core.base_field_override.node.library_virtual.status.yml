@@ -1,0 +1,22 @@
+uuid: db2de125-6304-4481-9c81-4569f702e9ec
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.library_virtual
+id: node.library_virtual.status
+field_name: status
+entity_type: node
+bundle: library_virtual
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

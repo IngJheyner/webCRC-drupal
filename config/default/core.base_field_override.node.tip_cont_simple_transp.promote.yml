@@ -11,7 +11,7 @@ bundle: tip_cont_simple_transp
 label: 'Promoted to front page'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value:
   -
     value: 0

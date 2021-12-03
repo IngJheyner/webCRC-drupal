@@ -1,0 +1,82 @@
+uuid: 3a496478-4441-4e00-b734-76337d5eb858
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.accessibility_toolbar
+    - field.storage.block_content.field_content_paragraph
+    - paragraphs.paragraphs_type.accessibility_toolbar
+  module:
+    - entity_reference_revisions
+id: block_content.accessibility_toolbar.field_content_paragraph
+field_name: field_content_paragraph
+entity_type: block_content
+bundle: accessibility_toolbar
+label: Accesibilidad
+description: 'Items para la barra de accesibilidad'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      accessibility_toolbar: accessibility_toolbar
+    target_bundles_drag_drop:
+      accessibility_toolbar:
+        enabled: true
+        weight: 19
+      from_library:
+        weight: 20
+        enabled: false
+      iterecciones_proyectos:
+        weight: 21
+        enabled: false
+      list_social_networks:
+        weight: 22
+        enabled: false
+      microsite_block:
+        weight: 23
+        enabled: false
+      navigation_microsites:
+        weight: 24
+        enabled: false
+      page_wrapper_micrositie:
+        weight: 25
+        enabled: false
+      postdata_indicators:
+        weight: 26
+        enabled: false
+      quick_access:
+        weight: 27
+        enabled: false
+      slideshow_crc:
+        weight: 28
+        enabled: false
+      tab_content:
+        weight: 33
+        enabled: false
+      tab_header:
+        weight: 34
+        enabled: false
+      tabs_wrapper:
+        weight: 29
+        enabled: false
+      tabs_wrapper_global:
+        weight: 30
+        enabled: false
+      tabs_wrapper_secondary:
+        weight: 31
+        enabled: false
+      tabs_wrapper_vertical:
+        weight: 32
+        enabled: false
+      themes_interest:
+        weight: 35
+        enabled: false
+      themes_interest_microsite:
+        weight: 36
+        enabled: false
+field_type: entity_reference_revisions

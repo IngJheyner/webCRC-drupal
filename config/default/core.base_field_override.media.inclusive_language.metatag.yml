@@ -1,0 +1,18 @@
+uuid: 8e32f7a8-e3b9-4aee-8b3b-c2ec29c21c9e
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.inclusive_language
+id: media.inclusive_language.metatag
+field_name: metatag
+entity_type: media
+bundle: inclusive_language
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

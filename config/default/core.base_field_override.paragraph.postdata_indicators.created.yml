@@ -1,0 +1,18 @@
+uuid: 68b8c645-15e1-4f77-bf90-7b0ea026225f
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.postdata_indicators
+id: paragraph.postdata_indicators.created
+field_name: created
+entity_type: paragraph
+bundle: postdata_indicators
+label: Fecha
+description: 'La hora en que se creó el Paragraph.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,0 +1,20 @@
+uuid: 73147e19-8587-4f58-ae03-88ecf2af8ce0
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.logos
+id: media.logos.name
+field_name: name
+entity_type: media
+bundle: logos
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string
