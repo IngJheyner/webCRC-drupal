@@ -54,6 +54,9 @@ INTERNAS
                     div.file__content-file--item{
                         margin-top: .5em;
                         
+                        div.interactions-operator div.interactions-operator__items{
+                            color: var.$text-color-quinario;
+                        }
                         div.contextual-region{
 
                             @include media-breakpoint-down(sm) {

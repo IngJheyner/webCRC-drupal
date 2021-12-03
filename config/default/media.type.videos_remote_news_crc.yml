@@ -1,0 +1,18 @@
+uuid: e7697127-e6ce-44c0-b574-486ec512a814
+langcode: es
+status: true
+dependencies: {  }
+id: videos_remote_news_crc
+label: 'Noticias CRC [Videos Remotos]'
+description: 'Videos remotos para noticias crc'
+source: 'oembed:video'
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  thumbnails_directory: 'public://webcrc/noticias/remote_videos'
+  providers:
+    - YouTube
+    - Vimeo
+  source_field: field_media_oembed_video
+field_map:
+  type: name

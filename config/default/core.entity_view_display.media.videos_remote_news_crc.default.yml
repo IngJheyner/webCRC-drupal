@@ -1,0 +1,30 @@
+uuid: 4721469c-87a9-47d7-98a9-bb70b09e7cc3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.media.videos_remote_news_crc.field_media_oembed_video
+    - media.type.videos_remote_news_crc
+  module:
+    - media
+id: media.videos_remote_news_crc.default
+targetEntityType: media
+bundle: videos_remote_news_crc
+mode: default
+content:
+  field_media_oembed_video:
+    type: oembed
+    label: visually_hidden
+    weight: 0
+    settings:
+      max_width: 0
+      max_height: 0
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

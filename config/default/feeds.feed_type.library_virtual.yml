@@ -1,0 +1,228 @@
+uuid: a62d738e-bad8-4414-932f-bc0e0a97ec9d
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.library_virtual.created
+    - core.base_field_override.node.library_virtual.title
+    - field.field.node.library_virtual.field_library_author
+    - field.field.node.library_virtual.field_library_formats
+    - field.field.node.library_virtual.field_library_image
+    - field.field.node.library_virtual.field_library_information
+    - field.field.node.library_virtual.field_library_isbn
+    - field.field.node.library_virtual.field_library_issn
+    - field.field.node.library_virtual.field_library_keywords
+    - field.field.node.library_virtual.field_library_link_related
+    - field.field.node.library_virtual.field_library_notes
+    - field.field.node.library_virtual.field_library_type_document
+    - node.type.library_virtual
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      c780636f-15ae-4a27-b97a-b722d9c247ad:
+        separator: ','
+        limit: null
+        plugin: explode
+        source: keywords
+        weight: 0
+        label: palabras
+        uuid: c780636f-15ae-4a27-b97a-b722d9c247ad
+      96c4fcc9-3d83-4a71-8b63-e107651a4f6a:
+        separator: ','
+        limit: null
+        plugin: explode
+        source: author
+        weight: 0
+        label: autores
+        uuid: 96c4fcc9-3d83-4a71-8b63-e107651a4f6a
+      ed8a7911-86ce-4c8e-a3b7-d725301d52d1:
+        separator: ','
+        limit: null
+        plugin: explode
+        source: url
+        weight: 0
+        label: url
+        uuid: ed8a7911-86ce-4c8e-a3b7-d725301d52d1
+      06faee09-1da7-45dd-b022-3f7ef02bf852:
+        separator: ','
+        limit: null
+        plugin: explode
+        source: text_url
+        weight: 0
+        label: 'texto url'
+        uuid: 06faee09-1da7-45dd-b022-3f7ef02bf852
+id: library_virtual
+label: 'Biblioteca Virtual'
+description: 'Se crea nodo de tipo de contenido biblioteca virtual.'
+help: ''
+import_period: 3600
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds/library_virtual'
+parser: csv
+parser_configuration:
+  delimiter: ;
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  langcode: es
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  expire: -1
+  owner_feed_author: false
+  owner_id: 50
+  authorize: true
+  skip_hash_check: false
+  values:
+    type: library_virtual
+custom_sources:
+  title:
+    label: titulo
+    value: titulo
+    machine_name: title
+  isbn:
+    label: isbn
+    value: isbn
+    machine_name: isbn
+  issn:
+    label: issn
+    value: issn
+    machine_name: issn
+  created:
+    label: fecha
+    value: fecha
+    machine_name: created
+  type_document:
+    label: tipo_documento
+    value: tipo_documento
+    machine_name: type_document
+  keywords:
+    label: palabras_clave
+    value: palabras_clave
+    machine_name: keywords
+  formats:
+    label: formatos
+    value: formatos
+    machine_name: formats
+  author:
+    label: autores
+    value: autores
+    machine_name: author
+  url:
+    label: url
+    value: url
+    machine_name: url
+  text_url:
+    label: texto_url
+    value: texto_url
+    machine_name: text_url
+  information_general:
+    label: informacion
+    value: informacion
+    machine_name: information_general
+  notes:
+    label: notas
+    value: notas
+    machine_name: notes
+  image:
+    label: imagen
+    value: imagen
+    machine_name: image
+mappings:
+  -
+    target: title
+    map:
+      value: title
+    unique:
+      value: '1'
+    settings:
+      language: null
+  -
+    target: field_library_isbn
+    map:
+      value: isbn
+    unique: {  }
+    settings:
+      language: null
+  -
+    target: field_library_issn
+    map:
+      value: issn
+    unique: {  }
+    settings:
+      language: null
+  -
+    target: created
+    map:
+      value: created
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: field_library_type_document
+    map:
+      target_id: type_document
+    settings:
+      language: ''
+      reference_by: name
+      autocreate: '1'
+  -
+    target: field_library_keywords
+    map:
+      target_id: keywords
+    settings:
+      language: ''
+      reference_by: name
+      autocreate: '1'
+  -
+    target: field_library_formats
+    map:
+      target_id: formats
+    settings:
+      language: null
+      reference_by: name
+      autocreate: false
+  -
+    target: field_library_author
+    map:
+      target_id: author
+    settings:
+      language: ''
+      reference_by: name
+      autocreate: '1'
+  -
+    target: field_library_link_related
+    map:
+      uri: url
+      title: text_url
+    settings:
+      language: null
+  -
+    target: field_library_information
+    map:
+      value: information_general
+    settings:
+      language: null
+  -
+    target: field_library_notes
+    map:
+      value: notes
+    settings:
+      language: null
+  -
+    target: field_library_image
+    map:
+      target_id: image
+      alt: image
+      title: image
+    settings:
+      language: ''
+      reference_by: origname
+      existing: '1'
+      autocreate: 0

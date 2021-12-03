@@ -3,6 +3,7 @@ langcode: es
 status: true
 dependencies:
   config:
+    - core.base_field_override.node.proyectos_regulatorios.created
     - core.base_field_override.node.proyectos_regulatorios.title
     - field.field.node.proyectos_regulatorios.field_email_proyectos
     - field.field.node.proyectos_regulatorios.field_estado_proyectos
@@ -10,7 +11,7 @@ dependencies:
     - field.field.node.proyectos_regulatorios.field_oficina_proyecto
     - field.field.node.proyectos_regulatorios.field_projects_links
     - field.field.node.proyectos_regulatorios.field_projects_services
-    - field.field.node.proyectos_regulatorios.field_resumen_proyecto
+    - field.field.node.proyectos_regulatorios.field_type_projects_comments
     - node.type.proyectos_regulatorios
   module:
     - feeds_tamper
@@ -52,6 +53,7 @@ processor_configuration:
   skip_hash_check: false
   values:
     type: proyectos_regulatorios
+  insert_new: 1
 custom_sources:
   projects_interactions:
     label: interacciones
@@ -113,15 +115,15 @@ custom_sources:
     label: ''
     value: ''
     machine_name: ''
+  code:
+    label: codigo
+    value: codigo
+    machine_name: code
+  abstracts:
+    label: resumen
+    value: resumen
+    machine_name: abstracts
 mappings:
-  -
-    target: title
-    map:
-      value: projects_title
-    unique:
-      value: '1'
-    settings:
-      language: null
   -
     target: field_estado_proyectos
     map:
@@ -140,12 +142,6 @@ mappings:
     map:
       value: name_project
     unique: {  }
-    settings:
-      language: null
-  -
-    target: field_resumen_proyecto
-    map:
-      value: abstract
     settings:
       language: null
   -
@@ -191,3 +187,25 @@ mappings:
       value: nid
     unique: {  }
     settings: {  }
+  -
+    target: field_type_projects_comments
+    map:
+      target_id: type_project
+    settings:
+      language: null
+      reference_by: name
+      autocreate: false
+  -
+    target: title
+    map:
+      value: code
+    unique:
+      value: '1'
+    settings:
+      language: null
+  -
+    target: field_resumen_proyecto
+    map:
+      value: abstracts
+    settings:
+      language: null

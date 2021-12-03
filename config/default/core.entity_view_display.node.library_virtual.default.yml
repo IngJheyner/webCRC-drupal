@@ -3,6 +3,7 @@ langcode: es
 status: true
 dependencies:
   config:
+    - field.field.node.library_virtual.feeds_item
     - field.field.node.library_virtual.field_library_author
     - field.field.node.library_virtual.field_library_file
     - field.field.node.library_virtual.field_library_formats
@@ -18,16 +19,25 @@ dependencies:
     - field.field.node.library_virtual.field_poll_content_useful
     - node.type.library_virtual
   module:
+    - file
     - user
 id: node.library_virtual.default
 targetEntityType: node
 bundle: library_virtual
 mode: default
-content: {  }
+content:
+  field_library_file:
+    type: file_default
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
 hidden:
   addtoany: true
+  feeds_item: true
   field_library_author: true
-  field_library_file: true
   field_library_formats: true
   field_library_highlight: true
   field_library_image: true

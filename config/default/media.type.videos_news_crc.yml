@@ -1,0 +1,14 @@
+uuid: 9869c8ff-8808-48cd-8968-135379282fbc
+langcode: es
+status: true
+dependencies: {  }
+id: videos_news_crc
+label: 'Noticias CRC [Videos]'
+description: 'Vidoes para las noticias del crc'
+source: video_file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_video_file
+field_map:
+  name: name

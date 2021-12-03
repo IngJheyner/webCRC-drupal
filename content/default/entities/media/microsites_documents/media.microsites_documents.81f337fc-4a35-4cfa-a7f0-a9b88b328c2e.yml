@@ -1,0 +1,65 @@
+uuid:
+  -
+    value: 81f337fc-4a35-4cfa-a7f0-a9b88b328c2e
+langcode:
+  -
+    value: es
+bundle:
+  -
+    target_id: microsites_documents
+    target_type: media_type
+    target_uuid: 31e0fbaf-f34c-4a11-b7a6-a4ce8b3d25e4
+revision_created:
+  -
+    value: '2021-12-02T14:50:04+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+revision_log_message: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+name:
+  -
+    value: micrositio-no-te-quedes-sin-movil-comision-de-regulacion-de-comunicaciones-crc.png
+thumbnail:
+  -
+    alt: micrositio-no-te-quedes-sin-movil-comision-de-regulacion-de-comunicaciones-crc
+    title: null
+    width: 500
+    height: 160
+    target_type: file
+    target_uuid: 8f12e25e-022a-4888-bce6-dcded5893108
+created:
+  -
+    value: '2021-12-02T14:49:57+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2021-12-02T14:49:57+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_audio_file: {  }
+field_media_image:
+  -
+    alt: micrositio-no-te-quedes-sin-movil-comision-de-regulacion-de-comunicaciones-crc
+    title: ''
+    width: 500
+    height: 160
+    target_type: file
+    target_uuid: 8f12e25e-022a-4888-bce6-dcded5893108
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+    file:
+      - file.file.8f12e25e-022a-4888-bce6-dcded5893108

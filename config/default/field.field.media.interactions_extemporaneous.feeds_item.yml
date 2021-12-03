@@ -1,0 +1,23 @@
+uuid: 57af90e9-9303-424c-894d-85d865e5d9a4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.feeds_item
+    - media.type.interactions_extemporaneous
+  module:
+    - feeds
+id: media.interactions_extemporaneous.feeds_item
+field_name: feeds_item
+entity_type: media
+bundle: interactions_extemporaneous
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

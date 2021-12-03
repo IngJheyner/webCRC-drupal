@@ -1,0 +1,64 @@
+uuid:
+  -
+    value: 12ed4b94-63ec-406a-a103-a14e9931cfbc
+langcode:
+  -
+    value: es
+bundle:
+  -
+    target_id: images_icons
+    target_type: media_type
+    target_uuid: 0e378669-b385-4b74-a177-1947821cb21c
+revision_created:
+  -
+    value: '2021-12-02T15:14:45+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+revision_log_message: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+name:
+  -
+    value: homologacion-celulares-blanco-comision-regulacion-de-comunicaciones.svg
+thumbnail:
+  -
+    alt: homologacion-celulares-blanco-comision-regulacion-de-comunicaciones-crc
+    title: null
+    width: null
+    height: null
+    target_type: file
+    target_uuid: 211f92d8-f580-4c9d-8f37-8445092b5d6c
+created:
+  -
+    value: '2021-12-02T15:14:35+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2021-12-02T15:14:35+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    alt: homologacion-celulares-blanco-comision-regulacion-de-comunicaciones-crc
+    title: ''
+    width: 80
+    height: 80
+    target_type: file
+    target_uuid: 211f92d8-f580-4c9d-8f37-8445092b5d6c
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+    file:
+      - file.file.211f92d8-f580-4c9d-8f37-8445092b5d6c

@@ -1,0 +1,35 @@
+uuid: 4bcd4091-7d77-4c5f-97a2-cab58ceeb235
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.media.videos_news_crc.field_media_video_file
+    - media.type.videos_news_crc
+  module:
+    - file
+id: media.videos_news_crc.default
+targetEntityType: media
+bundle: videos_news_crc
+mode: default
+content:
+  field_media_video_file:
+    type: file_video
+    label: visually_hidden
+    weight: 0
+    settings:
+      muted: false
+      width: 640
+      height: 480
+      controls: true
+      autoplay: false
+      loop: false
+      multiple_file_display_type: tags
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

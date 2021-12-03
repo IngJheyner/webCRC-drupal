@@ -1,0 +1,63 @@
+uuid:
+  -
+    value: daf7abc7-c4e0-40bd-a403-797709038263
+langcode:
+  -
+    value: es
+type:
+  -
+    target_id: microsite_block
+    target_type: paragraphs_type
+    target_uuid: d7093a83-1112-4ccb-a2bf-5bb06cb35318
+status:
+  -
+    value: true
+created:
+  -
+    value: '2021-12-02T16:29:34+00:00'
+    format: 'Y-m-d\TH:i:sP'
+parent_id:
+  -
+    value: '54'
+parent_type:
+  -
+    value: paragraph
+parent_field_name:
+  -
+    value: field_microsite_block
+behavior_settings:
+  -
+    value: {  }
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+content_translation_source:
+  -
+    value: und
+content_translation_outdated:
+  -
+    value: false
+content_translation_changed:
+  -
+    value: '2021-12-02T16:29:34+00:00'
+    format: 'Y-m-d\TH:i:sP'
+field_content_background_type:
+  -
+    value: '3'
+field_content_icon: {  }
+field_content_personalized: {  }
+field_content_title: {  }
+field_content_type_view:
+  -
+    target_id: microsites_crc
+    display_id: navigation_microsites
+    data: 'a:5:{s:8:"argument";N;s:5:"limit";N;s:6:"offset";N;s:5:"title";N;s:5:"pager";N;}'
+    target_type: view
+    target_uuid: f7f78869-9358-45a5-bdaa-94e3ef97cbfa
+field_content_view_news: {  }
+_content_sync:
+  entity_type: paragraph
+  entity_dependencies: {  }

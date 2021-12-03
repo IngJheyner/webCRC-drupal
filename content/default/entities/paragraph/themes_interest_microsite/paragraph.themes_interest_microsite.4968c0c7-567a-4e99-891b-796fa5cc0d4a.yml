@@ -1,0 +1,60 @@
+uuid:
+  -
+    value: 4968c0c7-567a-4e99-891b-796fa5cc0d4a
+langcode:
+  -
+    value: es
+type:
+  -
+    target_id: themes_interest_microsite
+    target_type: paragraphs_type
+    target_uuid: 2a77625f-173d-4977-add7-64bf6dd233ba
+status:
+  -
+    value: true
+created:
+  -
+    value: '2021-12-02T16:05:48+00:00'
+    format: 'Y-m-d\TH:i:sP'
+parent_id:
+  -
+    value: '25'
+parent_type:
+  -
+    value: node
+parent_field_name:
+  -
+    value: field_content_themes_interest
+behavior_settings:
+  -
+    value: {  }
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+content_translation_source:
+  -
+    value: und
+content_translation_outdated:
+  -
+    value: false
+content_translation_changed:
+  -
+    value: '2021-12-02T16:05:48+00:00'
+    format: 'Y-m-d\TH:i:sP'
+field_content_image:
+  -
+    target_type: media
+    target_uuid: 2beb12cb-46d6-44c8-8315-0be446208b8c
+field_url:
+  -
+    uri: 'route:<nolink>'
+    title: ''
+    options: {  }
+_content_sync:
+  entity_type: paragraph
+  entity_dependencies:
+    media:
+      - media.microsites_guidelines.2beb12cb-46d6-44c8-8315-0be446208b8c

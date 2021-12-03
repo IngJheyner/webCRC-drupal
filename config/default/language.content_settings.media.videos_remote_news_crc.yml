@@ -1,0 +1,11 @@
+uuid: d837e4be-accc-44c7-94f4-a7a1a9715542
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.videos_remote_news_crc
+id: media.videos_remote_news_crc
+target_entity_type_id: media
+target_bundle: videos_remote_news_crc
+default_langcode: site_default
+language_alterable: false

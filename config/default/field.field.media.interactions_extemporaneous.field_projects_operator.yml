@@ -1,0 +1,29 @@
+uuid: 6acf99ad-9deb-4544-9e2b-3026ddfc3f0a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_projects_operator
+    - media.type.interactions_extemporaneous
+    - taxonomy.vocabulary.projects_operator
+id: media.interactions_extemporaneous.field_projects_operator
+field_name: field_projects_operator
+entity_type: media
+bundle: interactions_extemporaneous
+label: Operador
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      projects_operator: projects_operator
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,14 @@
+uuid: eb0c01d9-dc8d-48a5-aa39-0628a71c3270
+langcode: es
+status: true
+dependencies: {  }
+id: microsites_guidelines
+label: 'Micrositios - Pautas'
+description: 'Temas de interes o pautas para los micrositios'
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image
+field_map:
+  name: name

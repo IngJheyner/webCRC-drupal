@@ -1,0 +1,64 @@
+uuid:
+  -
+    value: 2e24916c-f6e2-48df-b925-51dfd323f1de
+langcode:
+  -
+    value: es
+bundle:
+  -
+    target_id: images_icons
+    target_type: media_type
+    target_uuid: 0e378669-b385-4b74-a177-1947821cb21c
+revision_created:
+  -
+    value: '2021-12-02T15:28:09+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+revision_log_message: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+name:
+  -
+    value: consulta-blanco-comision-regulacion-de-comunicaciones.svg
+thumbnail:
+  -
+    alt: consulta-blanco-comision-regulacion-de-comunicaciones-crc
+    title: null
+    width: null
+    height: null
+    target_type: file
+    target_uuid: b3a962dc-598d-43bf-a067-6c619927a223
+created:
+  -
+    value: '2021-12-02T15:27:59+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2021-12-02T15:27:59+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+field_media_image:
+  -
+    alt: consulta-blanco-comision-regulacion-de-comunicaciones-crc
+    title: ''
+    width: 80
+    height: 80
+    target_type: file
+    target_uuid: b3a962dc-598d-43bf-a067-6c619927a223
+_content_sync:
+  entity_type: media
+  entity_dependencies:
+    user:
+      - user.user.8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+    file:
+      - file.file.b3a962dc-598d-43bf-a067-6c619927a223
