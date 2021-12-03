@@ -1,10 +1,9 @@
 uuid: 686062d5-d3ae-4243-8142-2c883a459017
 langcode: es
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.library_virtual.feeds_item
     - field.field.node.library_virtual.field_library_author
     - field.field.node.library_virtual.field_library_file
     - field.field.node.library_virtual.field_library_formats
@@ -33,7 +32,6 @@ content:
     region: content
 hidden:
   addtoany: true
-  feeds_item: true
   field_library_author: true
   field_library_file: true
   field_library_formats: true

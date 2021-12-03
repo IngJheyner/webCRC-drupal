@@ -11,7 +11,7 @@ field_name: field_library_keywords
 entity_type: node
 bundle: library_virtual
 label: 'Palabras Clave'
-description: 'Separe con una coma la palabras que desea agregar. Ej: Colombia, Éxito, Saber, Actuar...'
+description: ''
 required: true
 translatable: false
 default_value: {  }

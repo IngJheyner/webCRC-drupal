@@ -4,10 +4,9 @@ status: false
 dependencies:
   config:
     - core.entity_view_mode.media.media_library
-    - field.field.media.interactions_extemporaneous.feeds_item
     - field.field.media.interactions_extemporaneous.field_extemporaneous_route_file
     - field.field.media.interactions_extemporaneous.field_media_file_3
-    - field.field.media.interactions_extemporaneous.field_projects_operator
+    - field.field.media.interactions_extemporaneous.field_operador_comentarios
     - image.style.medium
     - media.type.interactions_extemporaneous
   module:
@@ -32,10 +31,9 @@ content:
     region: content
 hidden:
   created: true
-  feeds_item: true
   field_extemporaneous_route_file: true
   field_media_file_3: true
-  field_projects_operator: true
+  field_operador_comentarios: true
   langcode: true
   name: true
   search_api_excerpt: true

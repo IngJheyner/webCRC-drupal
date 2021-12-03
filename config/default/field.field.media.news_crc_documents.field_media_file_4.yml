@@ -12,7 +12,7 @@ third_party_settings:
   filefield_paths:
     enabled: true
     file_path:
-      value: webcrc/noticias/documents
+      value: webcrc/noticias_crc/documentos
       options:
         slashes: false
         pathauto: false

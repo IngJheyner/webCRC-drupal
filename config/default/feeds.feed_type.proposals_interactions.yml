@@ -34,7 +34,6 @@ processor_configuration:
   skip_hash_check: false
   values:
     bundle: propuesta_interaccion_proyectos_
-  insert_new: 1
 custom_sources:
   name_path:
     label: nombre_ruta

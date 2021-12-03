@@ -25,50 +25,34 @@ settings:
   plugin_types:
     block: block
     default: 0
-    feed: 0
     page: 0
+    feed: 0
     entity_browser: 0
-    entity_reference: 0
     embed: 0
   preselect_views:
     rss_pruebas: rss_pruebas
     tabs_contents_consulted: tabs_contents_consulted
     tabs_content_kids: tabs_content_kids
-    tabs_more_important_crc: tabs_more_important_crc
-    aggregator_rss_feed: 0
-    aggregator_sources: 0
     block_content: 0
     comment: 0
     comments_recent: 0
     content: 0
     content_recent: 0
-    feeds_feed: 0
     files: 0
     frontpage: 0
     home_slideshow: 0
-    library_virtual: 0
     media: 0
     media_library: 0
-    microsites_crc: 0
     news: 0
     paragraphs_library: 0
     paragraphs_library_browser: 0
-    projects_comments: 0
     redirect: 0
     scheduler_scheduled_content: 0
     search_view: 0
     tags: 0
     taxonomy_term: 0
-    themess_interest: 0
-    transparencia_informacion_sobre_decisiones_afecta_publico: 0
-    transparencia_presupuesto_general_de_ingresos_gastos_e_inversion: 0
-    transp_ejec_presupu: 0
-    transp_plan_anual_adqusion: 0
-    transp_polit_linea_manuales: 0
     user_admin_people: 0
-    view_transparencia_y_acceso_a_la_informacion_publica: 0
     watchdog: 0
-    webcrc_taxonomias: 0
     webform_submissions: 0
     who_s_new: 0
     who_s_online: 0

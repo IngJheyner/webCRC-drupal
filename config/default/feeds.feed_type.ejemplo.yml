@@ -29,6 +29,5 @@ processor_configuration:
   authorize: true
   skip_hash_check: false
   values: {  }
-  insert_new: 1
 custom_sources: {  }
 mappings: {  }

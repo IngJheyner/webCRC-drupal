@@ -30,7 +30,7 @@ id: node.library_virtual.field_library_image
 field_name: field_library_image
 entity_type: node
 bundle: library_virtual
-label: 'Imagen de Portada'
+label: Imagen
 description: ''
 required: false
 translatable: false

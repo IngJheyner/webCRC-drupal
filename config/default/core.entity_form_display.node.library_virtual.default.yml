@@ -3,7 +3,6 @@ langcode: es
 status: true
 dependencies:
   config:
-    - field.field.node.library_virtual.feeds_item
     - field.field.node.library_virtual.field_library_author
     - field.field.node.library_virtual.field_library_file
     - field.field.node.library_virtual.field_library_formats
@@ -88,13 +87,13 @@ third_party_settings:
       format_type: tab
       region: content
       format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
         description: ''
         formatter: closed
         required_fields: true
-        id: ''
-        classes: ''
-        show_empty_fields: false
-      label: Media
+      label: Archivos
     group_library_info_relevant:
       children:
         - group_info_relevant
@@ -208,7 +207,7 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete_tags
+    type: entity_reference_autocomplete
     region: content
   field_library_file:
     weight: 1
@@ -322,7 +321,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
 hidden:
-  feeds_item: true
   langcode: true
   path: true
   promote: true

@@ -1,10 +1,11 @@
-uuid: b079e6d7-665d-4aef-97c1-2ffc7baf15f2
+uuid: 2bba8df4-87ab-4d3d-8a91-7a995836589b
 langcode: es
-status: false
+status: true
 dependencies:
   content:
-    - 'block_content:tabs_consulted_content:9ef5effc-94da-4dce-a1d8-5bac3078b416'
+    - 'block_content:tabs_consulted_content:29787947-1321-44c7-8051-03f4a5820754'
   module:
+    - block_content
     - system
   theme:
     - webcrc
@@ -13,9 +14,9 @@ theme: webcrc
 region: top_b
 weight: -15
 provider: null
-plugin: 'block_content:9ef5effc-94da-4dce-a1d8-5bac3078b416'
+plugin: 'block_content:29787947-1321-44c7-8051-03f4a5820754'
 settings:
-  id: 'block_content:9ef5effc-94da-4dce-a1d8-5bac3078b416'
+  id: 'block_content:29787947-1321-44c7-8051-03f4a5820754'
   label: 'Contenidos consultados'
   provider: block_content
   label_display: '0'

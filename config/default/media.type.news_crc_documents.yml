@@ -3,7 +3,7 @@ langcode: es
 status: true
 dependencies: {  }
 id: news_crc_documents
-label: 'Noticias CRC [Documentos]'
+label: 'Noticias crc documentos'
 description: 'Documentos para las noticias principales del crc'
 source: file
 queue_thumbnail_downloads: false

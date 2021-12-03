@@ -33,11 +33,11 @@ filters:
     settings:
       default_view_mode: default
       allowed_media_types:
-        audio_news_crc: audio_news_crc
-        images_news_crc: images_news_crc
-        news_crc_documents: news_crc_documents
-        videos_news_crc: videos_news_crc
-        videos_remote_news_crc: videos_remote_news_crc
+        audio: audio
+        document: document
+        image: image
+        remote_video: remote_video
+        video: video
       allowed_view_modes: {  }
   filter_url:
     id: filter_url

@@ -8,6 +8,7 @@ dependencies:
   module:
     - block_content
     - feed_block
+    - slick_views
 id: rss_pruebas
 label: Rss
 module: views
@@ -52,11 +53,43 @@ display:
           items_per_page: 0
           offset: 0
       style:
-        type: default
+        type: slick
         options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: true
+          vanilla: false
+          optionset: default
+          skin: grid
+          layout: below
+          caption:
+            nothing: nothing
+            field_rss_feed: '0'
+          optionset_thumbnail: ''
+          skin_thumbnail: ''
+          thumbnail_position: ''
+          grid: '3'
+          grid_medium: '3'
+          grid_small: '3'
+          visible_items: 3
+          preserve_keys: false
+          image: ''
+          thumbnail: ''
+          overlay: ''
+          title: ''
+          link: ''
+          class: ''
+          id: ''
+          override: true
+          overridables:
+            dots: dots
+            arrows: '0'
+            autoplay: '0'
+            draggable: '0'
+            infinite: '0'
+            mouseWheel: '0'
+            randomize: '0'
+            variableWidth: '0'
+          cache: 0
+          current_view_mode: block_1
+          thumbnail_effect: ''
       row:
         type: fields
         options:
