@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.transp_ejec_presu_docum.field_doc_file_info_decisi_publi
+    - field.field.node.transp_ejec_presu_docum.field_docum_archi
     - field.field.node.transp_ejec_presu_docum.field_list_anio_infor_decisi
     - field.field.node.transp_ejec_presu_docum.field_list_cat_ejec_presupue
     - field.field.node.transp_ejec_presu_docum.field_lista_mes_inf_decisi
@@ -23,7 +23,7 @@ content:
     region: content
 hidden:
   addtoany: true
-  field_doc_file_info_decisi_publi: true
+  field_docum_archi: true
   field_list_anio_infor_decisi: true
   field_list_cat_ejec_presupue: true
   field_lista_mes_inf_decisi: true

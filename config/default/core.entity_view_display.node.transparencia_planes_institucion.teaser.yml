@@ -1,0 +1,29 @@
+uuid: 6f84463c-5b1b-4687-bd17-9e535a63121f
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.transparencia_planes_institucion.field_cat_tipo_planes_insti
+    - field.field.node.transparencia_planes_institucion.field_docum_archi
+    - field.field.node.transparencia_planes_institucion.field_list_anio_infor_decisi
+    - node.type.transparencia_planes_institucion
+  module:
+    - user
+id: node.transparencia_planes_institucion.teaser
+targetEntityType: node
+bundle: transparencia_planes_institucion
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_cat_tipo_planes_insti: true
+  field_docum_archi: true
+  field_list_anio_infor_decisi: true
+  langcode: true
+  search_api_excerpt: true

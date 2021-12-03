@@ -1,0 +1,46 @@
+uuid: 3cfd4396-2de0-40ac-8be3-943f4c643994
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_docum_archi
+    - node.type.transparencia_esquema_de_publica
+  module:
+    - file
+    - filefield_paths
+third_party_settings:
+  filefield_paths:
+    enabled: true
+    file_path:
+      value: Transparencia/esquema_publicacion_informacion
+      options:
+        slashes: false
+        pathauto: false
+        transliterate: false
+    redirect: false
+    retroactive_update: false
+    active_updating: false
+    file_name:
+      value: '[file:ffp-name-only-original].[file:ffp-extension-original]'
+      options:
+        slashes: false
+        pathauto: false
+        transliterate: false
+id: node.transparencia_esquema_de_publica.field_docum_archi
+field_name: field_docum_archi
+entity_type: node
+bundle: transparencia_esquema_de_publica
+label: 'Documento / Archivo'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt xlsx xls doc pdf docx zip rar'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

@@ -1,0 +1,29 @@
+uuid: 92703109-e256-4618-aefd-82a1cc676a79
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_list_cat_proyec_invers
+    - node.type.transp_proyec_inversi_docum
+    - taxonomy.vocabulary.trnasparencia_lista_de_categoria
+id: node.transp_proyec_inversi_docum.field_list_cat_proyec_invers
+field_name: field_list_cat_proyec_invers
+entity_type: node
+bundle: transp_proyec_inversi_docum
+label: Categoría
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      trnasparencia_lista_de_categoria: trnasparencia_lista_de_categoria
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

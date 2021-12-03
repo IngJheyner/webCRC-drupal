@@ -1,0 +1,11 @@
+uuid: c68eded5-f50e-404f-8eaa-7e7164087df3
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.transp_list_cat_plan_institu
+id: taxonomy_term.transp_list_cat_plan_institu
+target_entity_type_id: taxonomy_term
+target_bundle: transp_list_cat_plan_institu
+default_langcode: site_default
+language_alterable: false

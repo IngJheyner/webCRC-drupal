@@ -1,0 +1,23 @@
+uuid: 4eb74cc1-0768-4042-986e-1be08129e9a3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_list_anio_infor_decisi
+    - node.type.transp_infor_defensa_publi_doc
+  module:
+    - options
+id: node.transp_infor_defensa_publi_doc.field_list_anio_infor_decisi
+field_name: field_list_anio_infor_decisi
+entity_type: node
+bundle: transp_infor_defensa_publi_doc
+label: Año
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 2020
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

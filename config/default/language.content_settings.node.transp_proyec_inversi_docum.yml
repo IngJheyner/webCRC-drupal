@@ -1,0 +1,11 @@
+uuid: af208d36-a0f4-412c-848b-f5718ba742e6
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_proyec_inversi_docum
+id: node.transp_proyec_inversi_docum
+target_entity_type_id: node
+target_bundle: transp_proyec_inversi_docum
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,27 @@
+uuid: 95daee45-5536-45c4-a3a4-c4aae814851b
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.transp_plan_mejora_docu.field_docum_archi
+    - field.field.node.transp_plan_mejora_docu.field_list_anio_infor_decisi
+    - node.type.transp_plan_mejora_docu
+  module:
+    - user
+id: node.transp_plan_mejora_docu.teaser
+targetEntityType: node
+bundle: transp_plan_mejora_docu
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_docum_archi: true
+  field_list_anio_infor_decisi: true
+  langcode: true
+  search_api_excerpt: true

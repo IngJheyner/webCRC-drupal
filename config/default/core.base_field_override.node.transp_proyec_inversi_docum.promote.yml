@@ -1,0 +1,22 @@
+uuid: af86b364-ca0d-432e-a465-7e81ff0e9a15
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_proyec_inversi_docum
+id: node.transp_proyec_inversi_docum.promote
+field_name: promote
+entity_type: node
+bundle: transp_proyec_inversi_docum
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

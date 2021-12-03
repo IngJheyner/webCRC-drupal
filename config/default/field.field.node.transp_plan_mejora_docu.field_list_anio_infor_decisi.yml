@@ -1,0 +1,23 @@
+uuid: 190afe96-82e1-405d-937e-57ab67539131
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_list_anio_infor_decisi
+    - node.type.transp_plan_mejora_docu
+  module:
+    - options
+id: node.transp_plan_mejora_docu.field_list_anio_infor_decisi
+field_name: field_list_anio_infor_decisi
+entity_type: node
+bundle: transp_plan_mejora_docu
+label: Año
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 2021
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

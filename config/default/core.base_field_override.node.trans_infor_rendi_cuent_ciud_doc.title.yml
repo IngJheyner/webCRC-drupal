@@ -1,0 +1,18 @@
+uuid: 72a23092-6db8-4c10-8d61-fb04a2b53dee
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.trans_infor_rendi_cuent_ciud_doc
+id: node.trans_infor_rendi_cuent_ciud_doc.title
+field_name: title
+entity_type: node
+bundle: trans_infor_rendi_cuent_ciud_doc
+label: 'nombre informe'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

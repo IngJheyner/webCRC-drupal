@@ -1,0 +1,25 @@
+uuid: a83038ba-f7f6-4b05-9ff2-c2eeb61364ea
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.transparencia_esquema_de_publica.field_docum_archi
+    - node.type.transparencia_esquema_de_publica
+  module:
+    - user
+id: node.transparencia_esquema_de_publica.teaser
+targetEntityType: node
+bundle: transparencia_esquema_de_publica
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_docum_archi: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,22 @@
+uuid: f22a3b49-da73-4279-86b4-3e7f2860a004
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.trans_indice_inform_clasifi_doc
+id: node.trans_indice_inform_clasifi_doc.promote
+field_name: promote
+entity_type: node
+bundle: trans_indice_inform_clasifi_doc
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

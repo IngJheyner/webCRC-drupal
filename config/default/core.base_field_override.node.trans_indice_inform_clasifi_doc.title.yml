@@ -1,0 +1,18 @@
+uuid: 5911c6fc-07dc-4807-bd62-d2ba1ed84cde
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.trans_indice_inform_clasifi_doc
+id: node.trans_indice_inform_clasifi_doc.title
+field_name: title
+entity_type: node
+bundle: trans_indice_inform_clasifi_doc
+label: Titulo
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

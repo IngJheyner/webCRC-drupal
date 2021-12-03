@@ -1,0 +1,27 @@
+uuid: 9da97fc5-422d-4410-bef1-89a46d4f9f26
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.transp_infor_gestion_docu.field_docum_archi
+    - field.field.node.transp_infor_gestion_docu.field_list_anio_infor_decisi
+    - node.type.transp_infor_gestion_docu
+  module:
+    - user
+id: node.transp_infor_gestion_docu.teaser
+targetEntityType: node
+bundle: transp_infor_gestion_docu
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_docum_archi: true
+  field_list_anio_infor_decisi: true
+  langcode: true
+  search_api_excerpt: true

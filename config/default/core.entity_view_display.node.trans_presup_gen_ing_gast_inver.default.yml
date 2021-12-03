@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.trans_presup_gen_ing_gast_inver.field_categ_presp_general
-    - field.field.node.trans_presup_gen_ing_gast_inver.field_doc_file_info_decisi_publi
+    - field.field.node.trans_presup_gen_ing_gast_inver.field_docum_archi
     - field.field.node.trans_presup_gen_ing_gast_inver.field_list_anio_infor_decisi
     - node.type.trans_presup_gen_ing_gast_inver
   module:
@@ -24,8 +24,8 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  field_doc_file_info_decisi_publi:
-    weight: 101
+  field_docum_archi:
+    weight: 106
     label: above
     settings:
       use_description_as_link_text: true

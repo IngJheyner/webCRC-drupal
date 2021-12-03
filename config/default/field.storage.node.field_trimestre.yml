@@ -1,0 +1,33 @@
+uuid: 7cb55d41-b4b7-456f-b367-1f61fc5d3297
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_trimestre
+field_name: field_trimestre
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'l Trimestre'
+      label: 'l Trimestre'
+    -
+      value: 'll Trimestre'
+      label: 'll Trimestre'
+    -
+      value: 'lll Trimestre'
+      label: 'lll Trimestre'
+    -
+      value: 'lV Trimestre'
+      label: 'lV Trimestre'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

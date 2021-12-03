@@ -1,0 +1,29 @@
+uuid: b2b3c68e-fcb1-4278-9303-c46e660c6455
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_list_cat_tablas_reten_doc
+    - node.type.transp_tablas_reten_docu
+    - taxonomy.vocabulary.transp_list_cat_tabl_retenci_doc
+id: node.transp_tablas_reten_docu.field_list_cat_tablas_reten_doc
+field_name: field_list_cat_tablas_reten_doc
+entity_type: node
+bundle: transp_tablas_reten_docu
+label: Categoría
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      transp_list_cat_tabl_retenci_doc: transp_list_cat_tabl_retenci_doc
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,18 @@
+uuid: 0925ab4d-8445-4213-b996-214cc425b26f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_infor_defensa_publi_doc
+id: node.transp_infor_defensa_publi_doc.title
+field_name: title
+entity_type: node
+bundle: transp_infor_defensa_publi_doc
+label: 'Nombre informe'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

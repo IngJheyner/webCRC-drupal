@@ -1,0 +1,8 @@
+uuid: a6cea534-0dc7-4fa6-b8f4-e3a5b7ef7f09
+langcode: es
+status: true
+dependencies: {  }
+id: transparencia_encabezado_e_intro
+label: 'Transparencia: Encabezado e introducción [ Vista documentos ]'
+revision: 0
+description: 'Bloque para la introducción del encabezado en las vistas de paginas de documentos en la sección de transparencia '

@@ -3,10 +3,19 @@ langcode: es
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - field.storage.node.field_docum_archi
+    - field.storage.node.field_list_anio_infor_decisi
+    - field.storage.node.field_list_cat_ejec_presupue
+    - field.storage.node.field_lista_mes_inf_decisi
     - node.type.transp_ejec_presu_docum
+    - taxonomy.vocabulary.transp_list_cat_ejec_presu
+  content:
+    - 'block_content:transparencia_encabezado_e_intro:3acdbfe6-7c56-4840-8651-36c26c1ad57c'
   module:
+    - file
     - node
+    - options
+    - taxonomy
     - user
     - views_bootstrap
 id: transp_ejec_presupu
@@ -41,9 +50,9 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
-          reset_button: false
-          reset_button_label: Reset
+          submit_button: Buscar
+          reset_button: true
+          reset_button_label: 'Limpiar consulta'
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -68,48 +77,142 @@ display:
             next: ››
       style:
         type: views_bootstrap_list_group
-      row:
-        type: 'entity:node'
         options:
-          view_mode: teaser
-      fields:
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          entity_type: node
-          entity_field: title
-          label: ''
-          alter:
-            alter_text: false
-            make_link: false
-            absolute: false
-            trim: false
-            word_boundary: false
-            ellipsis: false
-            strip_tags: false
-            html: false
+          grouping:
+            -
+              field: field_list_cat_ejec_presupue
+              rendered: true
+              rendered_strip: true
+            -
+              field: field_list_anio_infor_decisi
+              rendered: true
+              rendered_strip: false
+          row_class: 'mr-5 mb-3 fileTable'
+          default_row_class: true
+          title_field: ''
+      row:
+        type: fields
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
           hide_empty: false
-          empty_zero: false
-          settings:
-            link_to_entity: true
-          plugin_id: field
+      fields:
+        field_list_cat_ejec_presupue:
+          id: field_list_cat_ejec_presupue
+          table: node__field_list_cat_ejec_presupue
+          field: field_list_cat_ejec_presupue
           relationship: none
           group_type: group
           admin_label: ''
-          exclude: false
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
           element_type: ''
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: false
+            ellipsis: false
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
           type: string
+          settings:
+            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -120,6 +223,195 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          entity_type: node
+          entity_field: title
+          plugin_id: field
+        field_list_anio_infor_decisi:
+          id: field_list_anio_infor_decisi
+          table: node__field_list_anio_infor_decisi
+          field: field_list_anio_infor_decisi
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: list_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_lista_mes_inf_decisi:
+          id: field_lista_mes_inf_decisi
+          table: node__field_lista_mes_inf_decisi
+          field: field_lista_mes_inf_decisi
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: list_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_docum_archi:
+          id: field_docum_archi
+          table: node__field_docum_archi
+          field: field_docum_archi
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: '<p>{{ field_list_anio_infor_decisi }} | {{ field_lista_mes_inf_decisi }} | <a href="{{ field_docum_archi }}"> {{ title }}</a> </p>'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: file_url_plain
+          settings: {  }
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
       filters:
         status:
           value: '1'
@@ -146,6 +438,95 @@ display:
           expose:
             operator_limit_selection: false
             operator_list: {  }
+        field_list_cat_ejec_presupue_target_id:
+          id: field_list_cat_ejec_presupue_target_id
+          table: node__field_list_cat_ejec_presupue
+          field: field_list_cat_ejec_presupue_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_list_cat_ejec_presupue_target_id_op
+            label: Categoría
+            description: 'Seleccione la categoría a buscar'
+            use_operator: false
+            operator: field_list_cat_ejec_presupue_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: categoria
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: transp_list_cat_ejec_presu
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        field_list_anio_infor_decisi_value:
+          id: field_list_anio_infor_decisi_value
+          table: node__field_list_anio_infor_decisi
+          field: field_list_anio_infor_decisi_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_list_anio_infor_decisi_value_op
+            label: Año
+            description: 'Seleccione año a buscar'
+            use_operator: false
+            operator: field_list_anio_infor_decisi_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: year
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: list_field
       sorts:
         created:
           id: created
@@ -163,34 +544,81 @@ display:
             label: ''
           granularity: second
       title: 'Ejecución presupuestal'
-      header: {  }
+      header:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content: "<div class=\"titleContentSimple mt-5 mb-4\" id=\"cont\">\r\n   <h1> 4.2\_Ejecución presupuestal</h1>\r\n</div>"
+          plugin_id: text_custom
+        entity_block_content:
+          id: entity_block_content
+          table: views
+          field: entity_block_content
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: true
+          target: 3acdbfe6-7c56-4840-8651-36c26c1ad57c
+          view_mode: default
+          bypass_access: false
+          plugin_id: entity
       footer: {  }
       empty: {  }
-      relationships: {  }
+      relationships:
+        field_list_cat_ejec_presupue:
+          id: field_list_cat_ejec_presupue
+          table: node__field_list_cat_ejec_presupue
+          field: field_list_cat_ejec_presupue
+          relationship: none
+          group_type: group
+          admin_label: 'field_list_cat_ejec_presupue: Término de la taxonomía'
+          required: true
+          plugin_id: standard
       arguments: {  }
+      display_extenders: {  }
+      css_class: 'pr-3 transparenciaAcceso pages transparenciaAccesoTables fileTable '
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
+        - user
         - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
-  page_1:
+      tags:
+        - 'config:field.storage.node.field_docum_archi'
+        - 'config:field.storage.node.field_list_anio_infor_decisi'
+        - 'config:field.storage.node.field_list_cat_ejec_presupue'
+        - 'config:field.storage.node.field_lista_mes_inf_decisi'
+  trans_ejec_presupue:
     display_plugin: page
-    id: page_1
+    id: trans_ejec_presupue
     display_title: Page
     position: 1
     display_options:
       display_extenders: {  }
-      path: transparencia-ejecuci-n-presupuestal
+      path: transparencia-y-acceso-a-la-informacion-publica/planeacion-presupuesto-e-informes/ejecucion-presupuestal
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
+        - user
         - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.field_docum_archi'
+        - 'config:field.storage.node.field_list_anio_infor_decisi'
+        - 'config:field.storage.node.field_list_cat_ejec_presupue'
+        - 'config:field.storage.node.field_lista_mes_inf_decisi'

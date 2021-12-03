@@ -1,0 +1,25 @@
+uuid: e123f219-4add-4911-8e1b-e7557bcfe254
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.trans_inform_empalm_doc.field_doc_file_info_decisi_publi
+    - node.type.trans_inform_empalm_doc
+  module:
+    - user
+id: node.trans_inform_empalm_doc.teaser
+targetEntityType: node
+bundle: trans_inform_empalm_doc
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_doc_file_info_decisi_publi: true
+  langcode: true
+  search_api_excerpt: true

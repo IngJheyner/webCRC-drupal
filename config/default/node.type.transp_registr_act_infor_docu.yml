@@ -1,0 +1,31 @@
+uuid: 3df5e753-a65d-463d-b7ad-6a4e7df8aacb
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - scheduler
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: false
+    publish_past_date: error
+    publish_past_date_created: false
+    publish_required: false
+    publish_revision: false
+    publish_touch: false
+    show_message_after_update: true
+    unpublish_enable: false
+    unpublish_required: false
+    unpublish_revision: false
+name: 'Transparencia: Registros de activos de información [ Documentos ]'
+type: transp_registr_act_infor_docu
+description: 'Tipo de contenido para el cargue de documentos para el numeral Registros de activos de información de la sección de transparencia'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

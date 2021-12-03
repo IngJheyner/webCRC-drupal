@@ -1,0 +1,39 @@
+uuid: 9d470d61-db65-47dd-b325-a94fb86dfbfb
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.trans_infor_rendi_cuent_ciud_doc.body
+    - field.field.node.trans_infor_rendi_cuent_ciud_doc.field_cat_infor_rendi_cuent
+    - field.field.node.trans_infor_rendi_cuent_ciud_doc.field_doc_file_info_decisi_publi
+    - field.field.node.trans_infor_rendi_cuent_ciud_doc.field_list_anio_infor_decisi
+    - node.type.trans_infor_rendi_cuent_ciud_doc
+  module:
+    - text
+    - user
+id: node.trans_infor_rendi_cuent_ciud_doc.teaser
+targetEntityType: node
+bundle: trans_infor_rendi_cuent_ciud_doc
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_cat_infor_rendi_cuent: true
+  field_doc_file_info_decisi_publi: true
+  field_list_anio_infor_decisi: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,20 @@
+uuid: 599fea3a-f00a-4e70-8ee5-dc80a56eb8d4
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_cat_infor_rendi_cuent
+field_name: field_cat_infor_rendi_cuent
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

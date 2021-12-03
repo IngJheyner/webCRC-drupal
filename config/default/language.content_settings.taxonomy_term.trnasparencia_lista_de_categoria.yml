@@ -1,0 +1,11 @@
+uuid: 3889a674-7b92-4ee7-9db7-957b51add63a
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.trnasparencia_lista_de_categoria
+id: taxonomy_term.trnasparencia_lista_de_categoria
+target_entity_type_id: taxonomy_term
+target_bundle: trnasparencia_lista_de_categoria
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,11 @@
+uuid: 207b4780-bcb0-4a91-acc3-2ce5decc6329
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transparencia_esquema_de_publica
+id: node.transparencia_esquema_de_publica
+target_entity_type_id: node
+target_bundle: transparencia_esquema_de_publica
+default_langcode: site_default
+language_alterable: false

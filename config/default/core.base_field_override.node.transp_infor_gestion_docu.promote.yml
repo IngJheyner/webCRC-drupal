@@ -1,0 +1,22 @@
+uuid: c2396dc0-574e-45f6-9f63-a6ff072ca290
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_infor_gestion_docu
+id: node.transp_infor_gestion_docu.promote
+field_name: promote
+entity_type: node
+bundle: transp_infor_gestion_docu
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

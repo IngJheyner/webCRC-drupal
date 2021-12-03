@@ -1,0 +1,29 @@
+uuid: c60d4b52-f12a-435e-8ea5-d6c37f1d7239
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lis_cat_infor_pormenori
+    - node.type.trans_infor_pormenori_doc
+    - taxonomy.vocabulary.transp_list_cate_infor_porme
+id: node.trans_infor_pormenori_doc.field_lis_cat_infor_pormenori
+field_name: field_lis_cat_infor_pormenori
+entity_type: node
+bundle: trans_infor_pormenori_doc
+label: Categoría
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      transp_list_cate_infor_porme: transp_list_cate_infor_porme
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

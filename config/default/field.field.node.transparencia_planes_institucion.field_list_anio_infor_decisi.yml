@@ -1,0 +1,23 @@
+uuid: f41e7c74-4091-4163-9f89-63e7c1d32b81
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_list_anio_infor_decisi
+    - node.type.transparencia_planes_institucion
+  module:
+    - options
+id: node.transparencia_planes_institucion.field_list_anio_infor_decisi
+field_name: field_list_anio_infor_decisi
+entity_type: node
+bundle: transparencia_planes_institucion
+label: Año
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 2021
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

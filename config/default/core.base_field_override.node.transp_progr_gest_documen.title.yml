@@ -1,0 +1,18 @@
+uuid: cf8bda26-00ee-42e7-abb3-334ebb3b5da9
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_progr_gest_documen
+id: node.transp_progr_gest_documen.title
+field_name: title
+entity_type: node
+bundle: transp_progr_gest_documen
+label: Titulo
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

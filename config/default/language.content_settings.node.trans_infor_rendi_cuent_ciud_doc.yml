@@ -1,0 +1,11 @@
+uuid: f0ecb563-eb30-43d8-9017-1d9514a54cd8
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.trans_infor_rendi_cuent_ciud_doc
+id: node.trans_infor_rendi_cuent_ciud_doc
+target_entity_type_id: node
+target_bundle: trans_infor_rendi_cuent_ciud_doc
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,11 @@
+uuid: e9130100-8991-4b25-9563-b42bd60415a9
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_registr_act_infor_docu
+id: node.transp_registr_act_infor_docu
+target_entity_type_id: node
+target_bundle: transp_registr_act_infor_docu
+default_langcode: site_default
+language_alterable: false

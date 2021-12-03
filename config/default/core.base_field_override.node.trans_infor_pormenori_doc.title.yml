@@ -1,0 +1,18 @@
+uuid: 364ca75a-87a1-43e9-b34e-a011ebf97df6
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.trans_infor_pormenori_doc
+id: node.trans_infor_pormenori_doc.title
+field_name: title
+entity_type: node
+bundle: trans_infor_pormenori_doc
+label: 'Nombre de informe'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

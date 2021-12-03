@@ -1,0 +1,29 @@
+uuid: e5555699-abc4-454a-a22b-d4997fd899cf
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cat_tipo_planes_insti
+    - node.type.transparencia_planes_institucion
+    - taxonomy.vocabulary.transp_list_cat_plan_institu
+id: node.transparencia_planes_institucion.field_cat_tipo_planes_insti
+field_name: field_cat_tipo_planes_insti
+entity_type: node
+bundle: transparencia_planes_institucion
+label: 'Categoría / tipo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      transp_list_cat_plan_institu: transp_list_cat_plan_institu
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
