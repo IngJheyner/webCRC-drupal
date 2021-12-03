@@ -21,6 +21,7 @@ regions:
   footer_left: 'Footer left'
   footer_right: 'Footer right'
   footer_bottom: 'Footer bottom'
+  extra: 'Extras'
   disabled: 'Desactivado'
   
   page_bottom: Page bottom

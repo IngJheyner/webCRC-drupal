@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* VARIABLES GLOBALES PARA WEBCRC */
 @media print {
   *,
 *::before,
@@ -20728,11 +20729,15 @@ nav.primary-menu ul.sf-menu li,
 nav.primary-menu ul#superfish-main-accordion li {
   background: transparent;
 }
+nav.primary-menu ul.sf-menu li .contextual-region,
+nav.primary-menu ul#superfish-main-accordion li .contextual-region {
+  position: initial;
+}
 nav.primary-menu ul.sf-menu li .field--name-field-content-animated-icon,
 nav.primary-menu ul#superfish-main-accordion li .field--name-field-content-animated-icon {
   position: absolute;
   display: none;
-  max-width: 100px;
+  max-width: 130px;
   min-width: auto;
   right: 0;
   left: 0;
@@ -20764,6 +20769,22 @@ nav.primary-menu ul#superfish-main-accordion li a:active,
 nav.primary-menu ul#superfish-main-accordion li a:focus {
   color: black;
   text-decoration: underline;
+}
+nav.primary-menu ul.sf-menu li a.is-active ~ div.menu_link_content .field--name-field-content-animated-icon,
+nav.primary-menu ul.sf-menu li a.is-active:hover ~ div.menu_link_content .field--name-field-content-animated-icon,
+nav.primary-menu ul.sf-menu li a.is-active:active ~ div.menu_link_content .field--name-field-content-animated-icon,
+nav.primary-menu ul.sf-menu li a.is-active:focus ~ div.menu_link_content .field--name-field-content-animated-icon,
+nav.primary-menu ul.sf-menu li a:hover ~ div.menu_link_content .field--name-field-content-animated-icon,
+nav.primary-menu ul.sf-menu li a:active ~ div.menu_link_content .field--name-field-content-animated-icon,
+nav.primary-menu ul.sf-menu li a:focus ~ div.menu_link_content .field--name-field-content-animated-icon,
+nav.primary-menu ul#superfish-main-accordion li a.is-active ~ div.menu_link_content .field--name-field-content-animated-icon,
+nav.primary-menu ul#superfish-main-accordion li a.is-active:hover ~ div.menu_link_content .field--name-field-content-animated-icon,
+nav.primary-menu ul#superfish-main-accordion li a.is-active:active ~ div.menu_link_content .field--name-field-content-animated-icon,
+nav.primary-menu ul#superfish-main-accordion li a.is-active:focus ~ div.menu_link_content .field--name-field-content-animated-icon,
+nav.primary-menu ul#superfish-main-accordion li a:hover ~ div.menu_link_content .field--name-field-content-animated-icon,
+nav.primary-menu ul#superfish-main-accordion li a:active ~ div.menu_link_content .field--name-field-content-animated-icon,
+nav.primary-menu ul#superfish-main-accordion li a:focus ~ div.menu_link_content .field--name-field-content-animated-icon {
+  display: block;
 }
 nav.primary-menu ul.sf-menu li a.is-active,
 nav.primary-menu ul#superfish-main-accordion li a.is-active {
@@ -20799,8 +20820,8 @@ nav.primary-menu ul#superfish-main-accordion .sf-expanded .sf-sub-indicator:afte
 nav.primary-menu ul#superfish-main-accordion a:hover .sf-sub-indicator:after {
   color: black;
 }
-nav.primary-menu ul.sf-menu:hover .field--name-field-content-animated-icon,
-nav.primary-menu ul#superfish-main-accordion:hover .field--name-field-content-animated-icon {
+nav.primary-menu ul.sf-menu .sfHover a ~ div.menu_link_content .field--name-field-content-animated-icon,
+nav.primary-menu ul#superfish-main-accordion .sfHover a ~ div.menu_link_content .field--name-field-content-animated-icon {
   display: block;
 }
 nav.primary-menu ul.sf-menu:after {
@@ -20895,6 +20916,10 @@ nav.nav-main-menu.home-menu ul.sf-menu {
   left: 0;
   width: 100% !important;
   height: 100% !important;
+}
+
+.media--blazy img.b-blur {
+  display: none;
 }
 
 #bottom_a > div {
@@ -21435,6 +21460,43 @@ nav.nav-main-menu.home-menu ul.sf-menu {
   padding: 0 10px;
 }
 
+.accessibility-toolbar {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 5px;
+  z-index: 2;
+  background: #2e297b;
+  background: linear-gradient(90deg, #2e297b 0%, #17134e 100%);
+}
+.accessibility-toolbar > div > div.field__item {
+  margin: 6px;
+}
+.accessibility-toolbar .field__item {
+  padding: 1px;
+  border-radius: 5px;
+  background: white;
+  cursor: pointer;
+}
+.accessibility-toolbar .field__item img {
+  width: 25px;
+  height: 25px;
+}
+.accessibility-toolbar .field__item a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  color: transparent;
+  background: transparent;
+}
+.accessibility-toolbar .field__item .paragraph--type--accessibility-toolbar {
+  position: relative;
+}
+
 /* .page__top_a {
   position: relative;
 
@@ -21638,6 +21700,9 @@ article.projects__regulatory section.projects__regulatory-content div.node__cont
 article.projects__regulatory section.projects__regulatory-content div.node__content div.node__content-interactions div#accordion div.card-body div.file__content-file div.file__content-file--item {
   margin-top: 0.5em;
 }
+article.projects__regulatory section.projects__regulatory-content div.node__content div.node__content-interactions div#accordion div.card-body div.file__content-file div.file__content-file--item div.interactions-operator div.interactions-operator__items {
+  color: #2F2A7C;
+}
 article.projects__regulatory section.projects__regulatory-content div.node__content div.node__content-interactions div#accordion div.card-body div.file__content-file div.file__content-file--item div.contextual-region {
   max-width: 600px;
 }
@@ -21694,6 +21759,9 @@ article.projects__regulatory section.projects__regulatory-content div.node__cont
 }
 article.projects__regulatory section.projects__regulatory-content div.node__content div.node__content-documents div#accordion div.card-body div.file__content-file div.file__content-file--item {
   margin-top: 0.5em;
+}
+article.projects__regulatory section.projects__regulatory-content div.node__content div.node__content-documents div#accordion div.card-body div.file__content-file div.file__content-file--item div.interactions-operator div.interactions-operator__items {
+  color: #2F2A7C;
 }
 article.projects__regulatory section.projects__regulatory-content div.node__content div.node__content-documents div#accordion div.card-body div.file__content-file div.file__content-file--item div.contextual-region {
   max-width: 600px;
@@ -22605,6 +22673,9 @@ ul.block-grid {
 .backgorund-gray .menu-microsite .slide__content .slide__grid::after {
   background: black;
 }
+.backgorund-gray ul.slick-dots li button {
+  background: #525252;
+}
 
 .backgorund-white {
   background-color: white;
@@ -22621,6 +22692,9 @@ ul.block-grid {
 }
 .backgorund-white .menu-microsite .slide__content .slide__grid::after {
   background: black;
+}
+.backgorund-white ul.slick-dots li button {
+  background: #525252;
 }
 
 .slideshow-primary {
@@ -22675,7 +22749,7 @@ ul.block-grid {
 }
 .slideshow-primary .slide__content .slide__grid .slide__caption .slideshow-content p {
   font-size: 15pt;
-  color: #FFF;
+  color: white;
   font-weight: bold;
   text-shadow: 0 0 15px black;
 }
@@ -22728,7 +22802,7 @@ ul.block-grid {
 .slideshow-primary .slick__arrow .slick-prev.slick-arrow:before {
   font-family: "Material Icons";
   content: "chevron_left";
-  color: #000;
+  color: black;
   font-size: 5rem;
   line-height: 1;
   opacity: 1;
@@ -22736,7 +22810,7 @@ ul.block-grid {
 .slideshow-primary .slick__arrow .slick-next.slick-arrow:before {
   font-family: "Material Icons";
   content: "chevron_right";
-  color: #000;
+  color: black;
   font-size: 5rem;
   line-height: 1;
   opacity: 1;
@@ -22776,14 +22850,16 @@ ul.slick-dots li.slick-active button {
   background: #f42e62;
 }
 
-.menu-microsite .slide__content {
+.menu-microsite .slick > div > ul {
+  display: flex;
+  justify-content: center;
   margin: auto;
 }
-.menu-microsite .slide__content .slide__grid {
+.menu-microsite .slick > div > ul .grid {
   position: relative;
   padding: 0 20px;
 }
-.menu-microsite .slide__content .slide__grid:after {
+.menu-microsite .slick > div > ul .grid:after {
   content: "";
   position: absolute;
   top: 0;
@@ -22794,13 +22870,13 @@ ul.slick-dots li.slick-active button {
   margin: auto;
   background: white;
 }
-.menu-microsite .slide__content .slide__grid:last-child:after {
+.menu-microsite .slick > div > ul .grid:last-child:after {
   display: none;
 }
-.menu-microsite .slide__content .slide__grid .slide__caption {
+.menu-microsite .slick > div > ul .grid .slide__caption {
   padding: 20px 0;
 }
-.menu-microsite .slide__content .slide__grid .slide__caption .field-content > * {
+.menu-microsite .slick > div > ul .grid .slide__caption .field-content > * {
   font-size: 14pt;
   font-weight: bold;
   text-decoration: none;
@@ -22808,30 +22884,30 @@ ul.slick-dots li.slick-active button {
   display: block;
   text-align: center;
 }
-.menu-microsite .slide__content .slide__grid .slide__caption .field-content > *:hover, .menu-microsite .slide__content .slide__grid .slide__caption .field-content > *:focus, .menu-microsite .slide__content .slide__grid .slide__caption .field-content > *:active, .menu-microsite .slide__content .slide__grid .slide__caption .field-content > *:visited {
+.menu-microsite .slick > div > ul .grid .slide__caption .field-content > *:hover, .menu-microsite .slick > div > ul .grid .slide__caption .field-content > *:focus, .menu-microsite .slick > div > ul .grid .slide__caption .field-content > *:active, .menu-microsite .slick > div > ul .grid .slide__caption .field-content > *:visited {
   color: white;
   text-decoration: underline;
 }
 
-.microsite-block__field-content-personalized {
+.block-micrositio-1 {
   max-width: 100%;
   margin: auto;
   padding: 50px 10px;
 }
 @media only screen and (min-width: 1200px) {
-  .microsite-block__field-content-personalized {
+  .block-micrositio-1 {
     padding: 50px 0;
   }
 }
-.microsite-block__field-content-personalized .block-title-personalized {
+.block-micrositio-1 .block-title-personalized {
   font-size: 22pt;
   font-weight: bold;
   color: black;
 }
-.microsite-block__field-content-personalized p {
+.block-micrositio-1 p {
   font-size: 14pt;
 }
-.microsite-block__field-content-personalized .block-image-personalized img {
+.block-micrositio-1 .block-image-personalized img {
   width: 100%;
   height: auto;
   margin: auto;
@@ -22866,27 +22942,27 @@ ul.slick-dots li.slick-active button {
   margin: 10px auto -10px;
 }
 
-.quick-access-primary ul.slide__content {
+.quick-access-primary .slick > div > ul {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
   justify-content: center;
 }
-.quick-access-primary ul.slide__content li {
+.quick-access-primary .slick > div > ul li {
   position: relative;
   padding: 30px 20px;
 }
-.quick-access-primary ul.slide__content li h1, .quick-access-primary ul.slide__content li h2, .quick-access-primary ul.slide__content li h3, .quick-access-primary ul.slide__content li h4, .quick-access-primary ul.slide__content li h5, .quick-access-primary ul.slide__content li h5,
-.quick-access-primary ul.slide__content li div, .quick-access-primary ul.slide__content li p {
-  color: #2e297b;
+.quick-access-primary .slick > div > ul li h1, .quick-access-primary .slick > div > ul li h2, .quick-access-primary .slick > div > ul li h3, .quick-access-primary .slick > div > ul li h4, .quick-access-primary .slick > div > ul li h5, .quick-access-primary .slick > div > ul li h5,
+.quick-access-primary .slick > div > ul li div, .quick-access-primary .slick > div > ul li p {
+  color: #283789;
   font-size: 14pt;
 }
-.quick-access-primary ul.slide__content li .grid__content {
+.quick-access-primary .slick > div > ul li .grid__content {
   height: 100%;
   border-radius: 15px;
   background: white;
 }
-.quick-access-primary ul.slide__content li .grid__content:before {
+.quick-access-primary .slick > div > ul li .grid__content:before {
   font-family: "Material Icons";
   content: "arrow_drop_up";
   position: absolute;
@@ -22898,18 +22974,18 @@ ul.slick-dots li.slick-active button {
   text-align: center;
   margin: auto;
 }
-.quick-access-primary ul.slide__content li .grid__content .slide__caption {
+.quick-access-primary .slick > div > ul li .grid__content .slide__caption {
   padding: 50px;
   text-align: center;
-  color: #2e297b;
+  color: #283789;
 }
-.quick-access-primary ul.slide__content li .grid__content .slide__caption .slide__description > div {
+.quick-access-primary .slick > div > ul li .grid__content .slide__caption .slide__description > div {
   margin-bottom: 20px;
 }
-.quick-access-primary ul.slide__content li .grid__content .slide__caption .slide__description > div:first-child, .quick-access-primary ul.slide__content li .grid__content .slide__caption .slide__description > div:last-child {
+.quick-access-primary .slick > div > ul li .grid__content .slide__caption .slide__description > div:first-child, .quick-access-primary .slick > div > ul li .grid__content .slide__caption .slide__description > div:last-child {
   margin-bottom: 0;
 }
-.quick-access-primary ul.slide__content li .grid__content .slide__caption a {
+.quick-access-primary .slick > div > ul li .grid__content .slide__caption a {
   position: absolute;
   right: 0;
   left: 0;
@@ -22920,49 +22996,49 @@ ul.slick-dots li.slick-active button {
   color: transparent !important;
   z-index: 1;
 }
-.quick-access-primary ul.slide__content li .grid__content .slide__caption .background-round {
+.quick-access-primary .slick > div > ul li .grid__content .slide__caption .background-round {
   background: #2e297b;
   border-radius: 50%;
   margin: auto;
   width: 100%;
   max-width: 100px;
 }
-.quick-access-primary ul.slide__content li .grid__content .slide__caption img {
+.quick-access-primary .slick > div > ul li .grid__content .slide__caption img {
   width: 100%;
   max-width: 100px;
   min-width: 70px;
   padding: 20px;
 }
-.quick-access-primary ul.slide__content li .grid__content:hover, .quick-access-primary ul.slide__content li .grid__content:active, .quick-access-primary ul.slide__content li .grid__content:focus, .quick-access-primary ul.slide__content li .grid__content:visited {
-  background: #f4435c;
+.quick-access-primary .slick > div > ul li .grid__content:hover, .quick-access-primary .slick > div > ul li .grid__content:active, .quick-access-primary .slick > div > ul li .grid__content:focus, .quick-access-primary .slick > div > ul li .grid__content:visited {
+  background: #f42e62;
 }
-.quick-access-primary ul.slide__content li .grid__content:hover::before, .quick-access-primary ul.slide__content li .grid__content:active::before, .quick-access-primary ul.slide__content li .grid__content:focus::before, .quick-access-primary ul.slide__content li .grid__content:visited::before {
+.quick-access-primary .slick > div > ul li .grid__content:hover::before, .quick-access-primary .slick > div > ul li .grid__content:active::before, .quick-access-primary .slick > div > ul li .grid__content:focus::before, .quick-access-primary .slick > div > ul li .grid__content:visited::before {
   color: white;
 }
-.quick-access-primary ul.slide__content li .grid__content:hover::after, .quick-access-primary ul.slide__content li .grid__content:active::after, .quick-access-primary ul.slide__content li .grid__content:focus::after, .quick-access-primary ul.slide__content li .grid__content:visited::after {
+.quick-access-primary .slick > div > ul li .grid__content:hover::after, .quick-access-primary .slick > div > ul li .grid__content:active::after, .quick-access-primary .slick > div > ul li .grid__content:focus::after, .quick-access-primary .slick > div > ul li .grid__content:visited::after {
   display: none;
 }
-.quick-access-primary ul.slide__content li .grid__content:hover h1, .quick-access-primary ul.slide__content li .grid__content:hover h2, .quick-access-primary ul.slide__content li .grid__content:hover h3, .quick-access-primary ul.slide__content li .grid__content:hover h4, .quick-access-primary ul.slide__content li .grid__content:hover h5, .quick-access-primary ul.slide__content li .grid__content:hover h5,
-.quick-access-primary ul.slide__content li .grid__content:hover div, .quick-access-primary ul.slide__content li .grid__content:hover p, .quick-access-primary ul.slide__content li .grid__content:active h1, .quick-access-primary ul.slide__content li .grid__content:active h2, .quick-access-primary ul.slide__content li .grid__content:active h3, .quick-access-primary ul.slide__content li .grid__content:active h4, .quick-access-primary ul.slide__content li .grid__content:active h5, .quick-access-primary ul.slide__content li .grid__content:active h5,
-.quick-access-primary ul.slide__content li .grid__content:active div, .quick-access-primary ul.slide__content li .grid__content:active p, .quick-access-primary ul.slide__content li .grid__content:focus h1, .quick-access-primary ul.slide__content li .grid__content:focus h2, .quick-access-primary ul.slide__content li .grid__content:focus h3, .quick-access-primary ul.slide__content li .grid__content:focus h4, .quick-access-primary ul.slide__content li .grid__content:focus h5, .quick-access-primary ul.slide__content li .grid__content:focus h5,
-.quick-access-primary ul.slide__content li .grid__content:focus div, .quick-access-primary ul.slide__content li .grid__content:focus p, .quick-access-primary ul.slide__content li .grid__content:visited h1, .quick-access-primary ul.slide__content li .grid__content:visited h2, .quick-access-primary ul.slide__content li .grid__content:visited h3, .quick-access-primary ul.slide__content li .grid__content:visited h4, .quick-access-primary ul.slide__content li .grid__content:visited h5, .quick-access-primary ul.slide__content li .grid__content:visited h5,
-.quick-access-primary ul.slide__content li .grid__content:visited div, .quick-access-primary ul.slide__content li .grid__content:visited p {
+.quick-access-primary .slick > div > ul li .grid__content:hover h1, .quick-access-primary .slick > div > ul li .grid__content:hover h2, .quick-access-primary .slick > div > ul li .grid__content:hover h3, .quick-access-primary .slick > div > ul li .grid__content:hover h4, .quick-access-primary .slick > div > ul li .grid__content:hover h5, .quick-access-primary .slick > div > ul li .grid__content:hover h5,
+.quick-access-primary .slick > div > ul li .grid__content:hover div, .quick-access-primary .slick > div > ul li .grid__content:hover p, .quick-access-primary .slick > div > ul li .grid__content:active h1, .quick-access-primary .slick > div > ul li .grid__content:active h2, .quick-access-primary .slick > div > ul li .grid__content:active h3, .quick-access-primary .slick > div > ul li .grid__content:active h4, .quick-access-primary .slick > div > ul li .grid__content:active h5, .quick-access-primary .slick > div > ul li .grid__content:active h5,
+.quick-access-primary .slick > div > ul li .grid__content:active div, .quick-access-primary .slick > div > ul li .grid__content:active p, .quick-access-primary .slick > div > ul li .grid__content:focus h1, .quick-access-primary .slick > div > ul li .grid__content:focus h2, .quick-access-primary .slick > div > ul li .grid__content:focus h3, .quick-access-primary .slick > div > ul li .grid__content:focus h4, .quick-access-primary .slick > div > ul li .grid__content:focus h5, .quick-access-primary .slick > div > ul li .grid__content:focus h5,
+.quick-access-primary .slick > div > ul li .grid__content:focus div, .quick-access-primary .slick > div > ul li .grid__content:focus p, .quick-access-primary .slick > div > ul li .grid__content:visited h1, .quick-access-primary .slick > div > ul li .grid__content:visited h2, .quick-access-primary .slick > div > ul li .grid__content:visited h3, .quick-access-primary .slick > div > ul li .grid__content:visited h4, .quick-access-primary .slick > div > ul li .grid__content:visited h5, .quick-access-primary .slick > div > ul li .grid__content:visited h5,
+.quick-access-primary .slick > div > ul li .grid__content:visited div, .quick-access-primary .slick > div > ul li .grid__content:visited p {
   color: white;
 }
-.quick-access-primary ul.slide__content li .grid__content:hover .background-round, .quick-access-primary ul.slide__content li .grid__content:active .background-round, .quick-access-primary ul.slide__content li .grid__content:focus .background-round, .quick-access-primary ul.slide__content li .grid__content:visited .background-round {
+.quick-access-primary .slick > div > ul li .grid__content:hover .background-round, .quick-access-primary .slick > div > ul li .grid__content:active .background-round, .quick-access-primary .slick > div > ul li .grid__content:focus .background-round, .quick-access-primary .slick > div > ul li .grid__content:visited .background-round {
   background: white;
 }
-.quick-access-primary ul.slide__content li .grid__content:hover img, .quick-access-primary ul.slide__content li .grid__content:active img, .quick-access-primary ul.slide__content li .grid__content:focus img, .quick-access-primary ul.slide__content li .grid__content:visited img {
+.quick-access-primary .slick > div > ul li .grid__content:hover img, .quick-access-primary .slick > div > ul li .grid__content:active img, .quick-access-primary .slick > div > ul li .grid__content:focus img, .quick-access-primary .slick > div > ul li .grid__content:visited img {
   filter: invert(60%) sepia(100%) saturate(2254%) hue-rotate(328deg) brightness(98%) contrast(95%);
 }
 
-.themes-interest ul.slide__content {
+.themes-interest .slick > div > ul {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
   justify-content: center;
 }
-.themes-interest ul.slide__content li .grid__content a {
+.themes-interest .slick > div > ul li .grid__content a {
   position: absolute;
   right: 0;
   left: 0;
@@ -22973,6 +23049,6 @@ ul.slick-dots li.slick-active button {
   color: transparent !important;
   z-index: 1;
 }
-.themes-interest ul.slide__content li .grid__content img {
-  width: 100%;
+.themes-interest .slick > div > ul li .grid__content img {
+  max-width: 100%;
 }

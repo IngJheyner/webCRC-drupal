@@ -1,0 +1,79 @@
+uuid:
+  -
+    value: 7d594fd7-fb73-461e-8428-0625966830c5
+langcode:
+  -
+    value: es
+type:
+  -
+    target_id: page_wrapper_micrositie
+    target_type: paragraphs_type
+    target_uuid: 67301e1f-0351-4107-80a7-ae278593ecc9
+status:
+  -
+    value: true
+created:
+  -
+    value: '2021-12-02T14:48:41+00:00'
+    format: 'Y-m-d\TH:i:sP'
+parent_id:
+  -
+    value: '25'
+parent_type:
+  -
+    value: node
+parent_field_name:
+  -
+    value: field_content_microsite_page
+behavior_settings:
+  -
+    value: {  }
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+content_translation_source:
+  -
+    value: und
+content_translation_outdated:
+  -
+    value: false
+content_translation_changed:
+  -
+    value: '2021-12-02T16:46:20+00:00'
+    format: 'Y-m-d\TH:i:sP'
+field_microsite_block:
+  -
+    target_type: paragraph
+    target_uuid: 8af52e72-0caa-4443-baeb-4639bee987d6
+  -
+    target_type: paragraph
+    target_uuid: daf7abc7-c4e0-40bd-a403-797709038263
+  -
+    target_type: paragraph
+    target_uuid: 390bea1d-8920-4b44-a273-0d94ce6576ce
+  -
+    target_type: paragraph
+    target_uuid: 003b8b25-7b35-413b-b3ce-17f544c5eabf
+  -
+    target_type: paragraph
+    target_uuid: 4e79bad9-db4c-4960-b9c1-bbbdffd97286
+  -
+    target_type: paragraph
+    target_uuid: 1c4a3c75-a67f-4465-b5a8-1eb75fd968d6
+  -
+    target_type: paragraph
+    target_uuid: 935c548b-d6f1-4e71-a76b-dbdda0c2fb20
+_content_sync:
+  entity_type: paragraph
+  entity_dependencies:
+    paragraph:
+      - paragraph.microsite_block.8af52e72-0caa-4443-baeb-4639bee987d6
+      - paragraph.microsite_block.daf7abc7-c4e0-40bd-a403-797709038263
+      - paragraph.microsite_block.390bea1d-8920-4b44-a273-0d94ce6576ce
+      - paragraph.microsite_block.003b8b25-7b35-413b-b3ce-17f544c5eabf
+      - paragraph.microsite_block.4e79bad9-db4c-4960-b9c1-bbbdffd97286
+      - paragraph.microsite_block.1c4a3c75-a67f-4465-b5a8-1eb75fd968d6
+      - paragraph.microsite_block.935c548b-d6f1-4e71-a76b-dbdda0c2fb20

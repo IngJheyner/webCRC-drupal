@@ -29,17 +29,17 @@
       {% set item_class = item_class ~ ' sf-multicolumn-column' %}
     {% endif %}
   {% endif %}
+
   <li{{ item.attributes }}>
-
-    {{ item.entity|render }}
-
     {% if item.multicolumn_column %}
     <div class="sf-multicolumn-column">
     {% endif %}
     {% if item.children is not empty %}
       {{ item.link_menuparent }}
+      {{ item.entity|render }}
     {% else %}
       {{ item.link }}
+      {{ item.entity|render }}
     {% endif %}
     {% if item.multicolumn_wrapper %}<ul class="sf-multicolumn">
     <li class="sf-multicolumn-wrapper {{ item.item_class }}">

@@ -22,6 +22,7 @@
 
   <!-- Include existing standards. -->
   <rule ref="Drupal"/>
+  <rule ref="Symfony"/>
   <rule ref="DrupalPractice">
     <!-- Ignore specific sniffs. -->
     <exclude name="DrupalPractice.InfoFiles.NamespacedDependency"/>

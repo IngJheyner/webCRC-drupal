@@ -3,7 +3,6 @@ langcode: es
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_content_description
     - field.storage.paragraph.field_content_icon
     - field.storage.paragraph.field_content_image
     - field.storage.paragraph.field_content_title

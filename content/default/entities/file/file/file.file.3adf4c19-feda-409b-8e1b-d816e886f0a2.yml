@@ -1,0 +1,42 @@
+uuid:
+  -
+    value: 3adf4c19-feda-409b-8e1b-d816e886f0a2
+langcode:
+  -
+    value: es
+uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+filename:
+  -
+    value: no-te-quedes-sin-movil-comision-de-regulacion-de-comunicaciones.png
+uri:
+  -
+    value: 'public://webcrc/images/slideshow/no-te-quedes-sin-movil-comision-de-regulacion-de-comunicaciones.png'
+    url: /sites/default/files/webcrc/images/slideshow/no-te-quedes-sin-movil-comision-de-regulacion-de-comunicaciones.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 247248
+status:
+  -
+    value: true
+created:
+  -
+    value: '2021-12-02T14:53:34+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2021-12-02T14:53:45+00:00'
+    format: 'Y-m-d\TH:i:sP'
+origname:
+  -
+    value: no-te-quedes-sin-movil-comision-de-regulacion-de-comunicaciones.png
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf

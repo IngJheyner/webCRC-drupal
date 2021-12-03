@@ -1,7 +1,11 @@
-uuid: 534fc9f4-9634-4382-8433-2f5b3ba9d106
+uuid: 2e5642d0-02c7-4681-8ae7-6c81d2748c13
 langcode: es
 status: false
 dependencies:
+  content:
+    - 'block_content:accessibility_toolbar:527852f6-5c8d-49c0-a38c-a8ea26a0a2b6'
+  module:
+    - block_content
   theme:
     - webcrc
 id: accessibility_toolbar
@@ -9,9 +13,9 @@ theme: webcrc
 region: extra
 weight: 0
 provider: null
-plugin: 'block_content:5f7d8273-ea74-440c-8298-73ef2972b5a7'
+plugin: 'block_content:527852f6-5c8d-49c0-a38c-a8ea26a0a2b6'
 settings:
-  id: 'block_content:5f7d8273-ea74-440c-8298-73ef2972b5a7'
+  id: 'block_content:527852f6-5c8d-49c0-a38c-a8ea26a0a2b6'
   label: 'Barra de accesibilidad'
   provider: block_content
   label_display: '0'

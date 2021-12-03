@@ -1,0 +1,42 @@
+uuid:
+  -
+    value: 8f12e25e-022a-4888-bce6-dcded5893108
+langcode:
+  -
+    value: es
+uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+filename:
+  -
+    value: micrositio-no-te-quedes-sin-movil-comision-de-regulacion-de-comunicaciones-crc.png
+uri:
+  -
+    value: 'public://2021-12/micrositio-no-te-quedes-sin-movil-comision-de-regulacion-de-comunicaciones-crc.png'
+    url: /sites/default/files/2021-12/micrositio-no-te-quedes-sin-movil-comision-de-regulacion-de-comunicaciones-crc.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 27408
+status:
+  -
+    value: true
+created:
+  -
+    value: '2021-12-02T14:49:57+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2021-12-02T14:50:04+00:00'
+    format: 'Y-m-d\TH:i:sP'
+origname:
+  -
+    value: micrositio-no-te-quedes-sin-movil-comision-de-regulacion-de-comunicaciones-crc.png
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf

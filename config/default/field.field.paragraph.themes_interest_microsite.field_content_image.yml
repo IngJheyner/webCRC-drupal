@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_content_image
-    - media.type.image
+    - media.type.microsites_guidelines
     - paragraphs.paragraphs_type.themes_interest_microsite
 id: paragraph.themes_interest_microsite.field_content_image
 field_name: field_content_image
@@ -20,9 +20,9 @@ settings:
   handler: 'default:media'
   handler_settings:
     target_bundles:
-      image: image
+      microsites_guidelines: microsites_guidelines
     sort:
-      field: created
+      field: _none
       direction: DESC
     auto_create: false
     auto_create_bundle: ''

@@ -15,10 +15,14 @@ nav.primary-menu {
     li {
       background: transparent;
 
+      .contextual-region {
+        position: initial;
+      }
+
       .field--name-field-content-animated-icon {
         position: absolute;
         display: none;
-        max-width: 100px;
+        max-width: 130px;
         min-width: auto;
         right: 0;
         left: 0;
@@ -43,6 +47,12 @@ nav.primary-menu {
       a:focus {
         color: rgba(0,0,0,1);
         text-decoration: underline;
+
+        & ~ div.menu_link_content {
+          .field--name-field-content-animated-icon {
+            display: block;
+          }
+        }
       }
 
       a.is-active {
@@ -76,9 +86,11 @@ nav.primary-menu {
       color: rgba(0,0,0,1);
     }
 
-    &:hover {
-      .field--name-field-content-animated-icon {
-        display: block;
+    .sfHover a {
+      & ~ div.menu_link_content {
+        .field--name-field-content-animated-icon {
+          display: block;
+        }
       }
     }
   }

@@ -1,0 +1,163 @@
+uuid:
+  -
+    value: 3c7f4775-c118-4f57-9551-15bf3ce31fe3
+langcode:
+  -
+    value: es
+type:
+  -
+    target_id: microsite_crc
+    target_type: node_type
+    target_uuid: 02a87bfd-9ab8-4f2f-a463-00ee1ab85a38
+revision_timestamp:
+  -
+    value: '2021-12-02T14:48:41+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+revision_log: {  }
+status:
+  -
+    value: true
+uid:
+  -
+    target_type: user
+    target_uuid: 8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+title:
+  -
+    value: 'No te quedes sin móvil'
+created:
+  -
+    value: '2021-12-02T14:45:09+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2021-12-02T16:46:20+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: false
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+publish_on: {  }
+unpublish_on: {  }
+content_translation_source:
+  -
+    value: und
+content_translation_outdated:
+  -
+    value: false
+field_content_featured:
+  -
+    value: true
+field_content_links_menu:
+  -
+    target_type: paragraph
+    target_uuid: e4ad8e3f-e1d4-4649-aca3-41218b45b211
+  -
+    target_type: paragraph
+    target_uuid: 080584b4-123c-4e8e-a62e-056cead81e3f
+  -
+    target_type: paragraph
+    target_uuid: 3b96e19a-cb63-4101-a0d8-fe6d566a2b2c
+  -
+    target_type: paragraph
+    target_uuid: 406a687a-d966-4978-806c-c01e7caebba8
+  -
+    target_type: paragraph
+    target_uuid: 3a1951b1-410f-49e4-b858-d7467b07a178
+  -
+    target_type: paragraph
+    target_uuid: 23a441db-f72f-4be8-b65e-99c6c72167c3
+field_content_microsite_page:
+  -
+    target_type: paragraph
+    target_uuid: 7d594fd7-fb73-461e-8428-0625966830c5
+field_content_news_category:
+  -
+    target_type: taxonomy_term
+    target_uuid: 686200f1-1bdb-43d3-953e-68f680f2e780
+  -
+    target_type: taxonomy_term
+    target_uuid: c3774c64-3419-41bb-965e-f1c637f9d22e
+  -
+    target_type: taxonomy_term
+    target_uuid: 934562d1-2649-496e-b054-3fbd33c37add
+  -
+    target_type: taxonomy_term
+    target_uuid: ef06cb2d-6af9-498f-a37a-3543c4c8d1ee
+field_content_quick_access:
+  -
+    target_type: paragraph
+    target_uuid: b9bccc8d-3523-40e2-9aa2-91c23b6c6a59
+  -
+    target_type: paragraph
+    target_uuid: bba0d0ee-39cf-4f5a-b8e1-cb69811df33f
+  -
+    target_type: paragraph
+    target_uuid: 1f3e3255-4ccd-4de7-83c8-0a3faa3d8066
+  -
+    target_type: paragraph
+    target_uuid: a433e1a7-0a6f-40b9-a976-75b361446ed4
+field_content_slideshow:
+  -
+    target_type: paragraph
+    target_uuid: 55ead76a-a74a-42f2-b2ff-318e02bf910e
+field_content_themes_interest:
+  -
+    target_type: paragraph
+    target_uuid: e7457a7e-52c6-463a-bb1a-402ee43b66e0
+  -
+    target_type: paragraph
+    target_uuid: 7fdc3a67-bd40-4f57-878a-5227179c9e91
+  -
+    target_type: paragraph
+    target_uuid: 4968c0c7-567a-4e99-891b-796fa5cc0d4a
+  -
+    target_type: paragraph
+    target_uuid: 29607086-f5c8-4b52-af29-97f2a1b35f91
+field_image_content:
+  -
+    target_type: media
+    target_uuid: 81f337fc-4a35-4cfa-a7f0-a9b88b328c2e
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.8e8f19e3-0cf1-46ca-8be8-a5fa9b8e18bf
+    paragraph:
+      - paragraph.navigation_microsites.e4ad8e3f-e1d4-4649-aca3-41218b45b211
+      - paragraph.navigation_microsites.080584b4-123c-4e8e-a62e-056cead81e3f
+      - paragraph.navigation_microsites.3b96e19a-cb63-4101-a0d8-fe6d566a2b2c
+      - paragraph.navigation_microsites.406a687a-d966-4978-806c-c01e7caebba8
+      - paragraph.navigation_microsites.3a1951b1-410f-49e4-b858-d7467b07a178
+      - paragraph.navigation_microsites.23a441db-f72f-4be8-b65e-99c6c72167c3
+      - paragraph.page_wrapper_micrositie.7d594fd7-fb73-461e-8428-0625966830c5
+      - paragraph.quick_access.b9bccc8d-3523-40e2-9aa2-91c23b6c6a59
+      - paragraph.quick_access.bba0d0ee-39cf-4f5a-b8e1-cb69811df33f
+      - paragraph.quick_access.1f3e3255-4ccd-4de7-83c8-0a3faa3d8066
+      - paragraph.quick_access.a433e1a7-0a6f-40b9-a976-75b361446ed4
+      - paragraph.slideshow_crc.55ead76a-a74a-42f2-b2ff-318e02bf910e
+      - paragraph.themes_interest_microsite.e7457a7e-52c6-463a-bb1a-402ee43b66e0
+      - paragraph.themes_interest_microsite.7fdc3a67-bd40-4f57-878a-5227179c9e91
+      - paragraph.themes_interest_microsite.4968c0c7-567a-4e99-891b-796fa5cc0d4a
+      - paragraph.themes_interest_microsite.29607086-f5c8-4b52-af29-97f2a1b35f91
+    taxonomy_term:
+      - taxonomy_term.news_tags.686200f1-1bdb-43d3-953e-68f680f2e780
+      - taxonomy_term.news_tags.c3774c64-3419-41bb-965e-f1c637f9d22e
+      - taxonomy_term.news_tags.934562d1-2649-496e-b054-3fbd33c37add
+      - taxonomy_term.news_tags.ef06cb2d-6af9-498f-a37a-3543c4c8d1ee
+    media:
+      - media.microsites_documents.81f337fc-4a35-4cfa-a7f0-a9b88b328c2e
+path:
+  -
+    alias: /micrositios/no-te-quedes-sin-movil
