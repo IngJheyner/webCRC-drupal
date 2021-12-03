@@ -11,7 +11,7 @@ field_name: field_library_author
 entity_type: node
 bundle: library_virtual
 label: Autor(s)
-description: ''
+description: 'Separe con una coma los autores que desea agregar. Ej: Mario Antonio Hernandez Ruiz, Lorena Castro, Hernan Andres Solis...'
 required: true
 translatable: false
 default_value: {  }

@@ -3,19 +3,19 @@ langcode: es
 status: true
 dependencies:
   config:
+    - field.field.media.interactions_extemporaneous.feeds_item
     - field.field.media.interactions_extemporaneous.field_extemporaneous_route_file
     - field.field.media.interactions_extemporaneous.field_media_file_3
-    - field.field.media.interactions_extemporaneous.field_operador_comentarios
+    - field.field.media.interactions_extemporaneous.field_projects_operator
     - media.type.interactions_extemporaneous
   module:
     - field_group
     - file
-    - options
 third_party_settings:
   field_group:
     group_extemporaneous_folder:
       children:
-        - field_operador_comentarios
+        - field_projects_operator
         - field_media_file_3
         - created
       parent_name: ''
@@ -35,7 +35,7 @@ mode: default
 content:
   created:
     type: timestamp
-    weight: 4
+    weight: 7
     region: content
     label: above
     settings:
@@ -45,20 +45,22 @@ content:
     third_party_settings: {  }
   field_media_file_3:
     label: above
-    weight: 3
+    weight: 6
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
     type: file_default
     region: content
-  field_operador_comentarios:
-    type: list_default
-    weight: 2
-    region: content
+  field_projects_operator:
+    weight: 5
     label: above
-    settings: {  }
+    settings:
+      link: true
     third_party_settings: {  }
+    type: entity_reference_label
+    region: content
 hidden:
+  feeds_item: true
   field_extemporaneous_route_file: true
   langcode: true
   name: true

@@ -1,0 +1,23 @@
+uuid: e6498f1a-9d0e-4246-bb78-1acf7be1cfba
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.feeds_item
+    - media.type.comentarios_iteracciones_
+  module:
+    - feeds
+id: media.comentarios_iteracciones_.feeds_item
+field_name: feeds_item
+entity_type: media
+bundle: comentarios_iteracciones_
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

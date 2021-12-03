@@ -62,7 +62,7 @@ import anime from 'animejs/lib/anime.es';
           } 
         }else {
           $(".zoneTitleItem").attr('style', 'display:none');
-          $("main").attr('style', 'display:none');
+          //$("main").attr('style', 'display:none');
         }
         
         /* ===== ===== ===== ===== ===== ===== ===== ===== ===== */

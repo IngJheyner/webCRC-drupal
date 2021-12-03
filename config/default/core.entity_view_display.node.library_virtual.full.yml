@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.full
+    - field.field.node.library_virtual.feeds_item
     - field.field.node.library_virtual.field_library_author
     - field.field.node.library_virtual.field_library_file
     - field.field.node.library_virtual.field_library_formats
@@ -134,6 +135,7 @@ content:
     third_party_settings: {  }
 hidden:
   addtoany: true
+  feeds_item: true
   field_library_highlight: true
   langcode: true
   links: true
