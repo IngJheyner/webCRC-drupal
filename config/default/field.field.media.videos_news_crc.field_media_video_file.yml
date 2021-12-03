@@ -1,10 +1,10 @@
-uuid: 25b70b64-f429-470c-8a7d-726b0f3725d0
+uuid: 5bee2c65-59b9-4d14-bfaa-0d17e3efc9c5
 langcode: es
 status: true
 dependencies:
   config:
-    - field.storage.media.field_media_file_4
-    - media.type.news_crc_documents
+    - field.storage.media.field_media_video_file
+    - media.type.videos_news_crc
   module:
     - file
     - filefield_paths
@@ -12,7 +12,7 @@ third_party_settings:
   filefield_paths:
     enabled: true
     file_path:
-      value: webcrc/noticias/documents
+      value: webcrc/noticias/videos
       options:
         slashes: false
         pathauto: false
@@ -26,20 +26,20 @@ third_party_settings:
         slashes: false
         pathauto: false
         transliterate: false
-id: media.news_crc_documents.field_media_file_4
-field_name: field_media_file_4
+id: media.videos_news_crc.field_media_video_file
+field_name: field_media_video_file
 entity_type: media
-bundle: news_crc_documents
-label: Archivo
+bundle: videos_news_crc
+label: 'Video file'
 description: ''
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
   file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'txt doc docx pdf xls xlsx'
-  max_filesize: '32 MB'
+  file_extensions: mp4
+  max_filesize: '200 MB'
   description_field: false
   handler: 'default:file'
   handler_settings: {  }

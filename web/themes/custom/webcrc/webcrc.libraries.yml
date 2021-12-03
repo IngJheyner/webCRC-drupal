@@ -6,6 +6,7 @@ style:
       //cdn.www.gov.co/v2/assets/cdn.min.css: {type: external}
   js:
     assets/js/webcrc.script.js: {}
+    //app-service-agenti-pru.azurewebsites.net/agenti/js/scripts.js: {type: external, attributes: { type: text/javascript, async: true }}
   dependencies:
     - core/jquery
     - core/drupal
