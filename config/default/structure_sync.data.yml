@@ -746,6 +746,16 @@ taxonomies:
       uuid: a1f2e3fc-2178-48f7-bc95-1693d9963946
     -
       vid: news_tags
+      tid: '40'
+      langcode: es
+      name: Micrositios
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 9d18fc90-2da8-4439-90f6-7bf47457c134
+    -
+      vid: news_tags
       tid: '39'
       langcode: es
       name: 'Proyectos regulatorios'
@@ -754,6 +764,16 @@ taxonomies:
       weight: '0'
       parent: '0'
       uuid: d7cd1be6-d35a-45b2-8403-4b46e8a4ff02
+    -
+      vid: news_tags
+      tid: '41'
+      langcode: es
+      name: Reconocimientos
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 7ff6d0a7-4a5f-4a83-a6bb-8bd5f8bc80fb
   projects_operator:
     -
       vid: projects_operator

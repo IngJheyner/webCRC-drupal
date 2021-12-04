@@ -3,8 +3,8 @@ langcode: es
 status: true
 dependencies: {  }
 id: microsites_documents
-label: Micrositios
-description: ''
+label: 'Micrositios [Portada]'
+description: 'Tipo de multimedia que almacenara todas las imagenes de portada para los micrositios de la crc '
 source: image
 queue_thumbnail_downloads: false
 new_revision: false

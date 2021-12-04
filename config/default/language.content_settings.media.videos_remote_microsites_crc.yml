@@ -1,0 +1,11 @@
+uuid: 02a88ee9-4626-4156-b7b9-cd3b89bdd58f
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.videos_remote_microsites_crc
+id: media.videos_remote_microsites_crc
+target_entity_type_id: media
+target_bundle: videos_remote_microsites_crc
+default_langcode: site_default
+language_alterable: false

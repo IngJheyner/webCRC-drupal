@@ -1,0 +1,11 @@
+uuid: 6ec4a953-b00e-4294-83b4-849c9ff4519b
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.microsites_articles
+id: node.microsites_articles
+target_entity_type_id: node
+target_bundle: microsites_articles
+default_langcode: site_default
+language_alterable: false

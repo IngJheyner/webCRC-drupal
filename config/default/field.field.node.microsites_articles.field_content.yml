@@ -1,0 +1,21 @@
+uuid: eacf751d-c42e-4fcb-bfef-fa7ecfbeba61
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.microsites_articles
+  module:
+    - text
+id: node.microsites_articles.field_content
+field_name: field_content
+entity_type: node
+bundle: microsites_articles
+label: Contenido
+description: 'Contenido completo del articulo para el micrositio'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

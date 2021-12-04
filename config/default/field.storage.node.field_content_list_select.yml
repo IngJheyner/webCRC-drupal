@@ -1,0 +1,27 @@
+uuid: c089e04f-2faf-43ad-b147-118981d46b8b
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_content_list_select
+field_name: field_content_list_select
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: left
+      label: Izquierda
+    -
+      value: right
+      label: Derecha
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -5,6 +5,7 @@ dependencies:
   module:
     - blazy
     - editor
+    - entity_embed
     - media
     - slick
 name: Micrositios
@@ -21,10 +22,10 @@ filters:
         img: img
         iframe: iframe
       media_switch: ''
-      box_style: ''
       hybrid_style: ''
-      use_data_uri: '0'
+      box_style: ''
       box_caption: ''
+      use_data_uri: '0'
   editor_file_reference:
     id: editor_file_reference
     provider: editor
@@ -51,12 +52,14 @@ filters:
     weight: 100
     settings:
       default_view_mode: default
-      allowed_view_modes: {  }
       allowed_media_types:
-        image: image
+        audio_microsites_crc: audio_microsites_crc
         images_icons: images_icons
-        remote_video: remote_video
-        video: video
+        images_microsites_crc: images_microsites_crc
+        microsites_crc_documents: microsites_crc_documents
+        videos_microsites_crc: videos_microsites_crc
+        videos_remote_microsites_crc: videos_remote_microsites_crc
+      allowed_view_modes: {  }
   slick_filter:
     id: slick_filter
     provider: slick
@@ -93,6 +96,12 @@ filters:
     status: false
     weight: -10
     settings:
-      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol type start> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <drupal-media data-entity-type data-entity-uuid data-view-mode data-align data-caption alt title> <div>'
+      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol type start> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <drupal-media data-entity-type data-entity-uuid data-view-mode data-align data-caption alt title> <div> <drupal-entity data-entity-type data-entity-uuid data-entity-embed-display data-entity-embed-display-settings data-align data-caption data-embed-button data-langcode alt title> <br>'
       filter_html_help: true
       filter_html_nofollow: false
+  entity_embed:
+    id: entity_embed
+    provider: entity_embed
+    status: true
+    weight: 100
+    settings: {  }

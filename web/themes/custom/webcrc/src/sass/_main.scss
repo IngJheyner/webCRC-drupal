@@ -29,7 +29,7 @@
   flex-wrap: wrap;
 
   :first-child {
-    color: rgba(244, 67, 92, 1);
+    color: rgba(244, 67, 92, 1) !important;
   }
 
   > * {

@@ -1,0 +1,18 @@
+uuid: f36b73ec-1921-4a26-8cda-1669ed8255d3
+langcode: es
+status: true
+dependencies: {  }
+id: videos_remote_microsites_crc
+label: 'Micrositios CRC [Videos Remotos]'
+description: 'Tipo de multimedia que almacenara todas los videos remotos para los micrositios de la crc'
+source: 'oembed:video'
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  thumbnails_directory: 'public://webcrc/micrositios/remote_videos'
+  providers:
+    - YouTube
+    - Vimeo
+  source_field: field_media_oembed_video
+field_map:
+  type: name

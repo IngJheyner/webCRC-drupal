@@ -1,0 +1,14 @@
+uuid: 9a2d8919-7bd4-4892-b35c-fc57e17ca000
+langcode: es
+status: true
+dependencies: {  }
+id: microsites_crc_documents
+label: 'Micrositios CRC [Documentos]'
+description: 'Tipo de multimedia que almacenara todos los documentos para los micrositios del crc'
+source: file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_document
+field_map:
+  name: name

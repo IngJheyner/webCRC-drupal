@@ -1,0 +1,23 @@
+uuid: 738de2db-5ec5-459a-a05a-47a2acd10e86
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_list_select
+    - node.type.microsites_articles
+  module:
+    - options
+id: node.microsites_articles.field_content_list_select
+field_name: field_content_list_select
+entity_type: node
+bundle: microsites_articles
+label: 'Dirreción imagen'
+description: 'Direccion de la imagen para el resumen del articulo en el micrositio'
+required: true
+translatable: false
+default_value:
+  -
+    value: left
+default_value_callback: ''
+settings: {  }
+field_type: list_string

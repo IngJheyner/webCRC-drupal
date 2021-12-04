@@ -1,0 +1,36 @@
+uuid: ec4c0a30-dd37-4c42-96f3-d5f359d3b6e5
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.videos_microsites_crc.field_media_video_file
+    - image.style.medium
+    - media.type.videos_microsites_crc
+  module:
+    - svg_image
+id: media.videos_microsites_crc.media_library
+targetEntityType: media
+bundle: videos_microsites_crc
+mode: media_library
+content:
+  thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    weight: 0
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_media_video_file: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  uid: true

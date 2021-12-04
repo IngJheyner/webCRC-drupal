@@ -1,0 +1,29 @@
+uuid: 26c595ad-18a3-4388-8381-c3f9938e1f8b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_type
+    - node.type.microsite_crc
+    - node.type.microsites_articles
+id: node.microsites_articles.field_content_type
+field_name: field_content_type
+entity_type: node
+bundle: microsites_articles
+label: 'Tipo de micrositio'
+description: 'Micorsitio donde se debe mostrar el articulo'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      microsite_crc: microsite_crc
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

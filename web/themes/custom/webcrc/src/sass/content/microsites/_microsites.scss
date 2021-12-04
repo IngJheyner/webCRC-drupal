@@ -3,68 +3,70 @@ ul.block-grid {
   margin: auto;
 }
 
-.backgorund-gradient-blue {
-  background: $bg-dark-blue;
-  background: $bg-gradient-primary;
+.block-main-micrositios {
+  .backgorund-gradient-blue {
+    background: $bg-dark-blue;
+    background: $bg-gradient-primary;
 
-  *,
-  h1, h2, h3, 
-  h4, h5, h6, 
-  p, div, span,
-  .microsite-block__field-content-personalized .block-title-personalized {
-    color: $text-white;
-  }
-}
-
-.backgorund-gray {
-  background-color: $text-gray;
-
-  *,
-  h1, h2, h3, 
-  h4, h5, h6, 
-  p, div, span,
-  .microsite-block__field-content-personalized .block-title-personalized {
-    color: $text-black;
-  }
-
-  sub {
-    &, * {
-      color: $lb-primary;
+    *, a,
+    h1, h2, h3, 
+    h4, h5, h6, 
+    p, div, span
+    .microsite-block__field-content-personalized .block-title-personalized {
+      color: $text-white;
     }
   }
 
-  .menu-microsite .slide__content .slide__grid::after {
-    background: $bg-black;
-  }
+  .backgorund-gray {
+    background-color: $text-gray;
 
-  ul.slick-dots li button {
-    background: $bg-dark-gray;
-  }
-}
+    *,
+    h1, h2, h3, 
+    h4, h5, h6, 
+    p, div, span,
+    .microsite-block__field-content-personalized .block-title-personalized {
+      color: $text-black;
+    }
 
-.backgorund-white {
-  background-color: $bg-white;
+    sub {
+      &, * {
+        color: $lb-primary;
+      }
+    }
 
-  *,
-  h1, h2, h3, 
-  h4, h5, h6, 
-  p, div, span,
-  .microsite-block__field-content-personalized .block-title-personalized {
-    color: $text-black;
-  }
+    .menu-microsite .slide__content .slide__grid::after {
+      background: $bg-black;
+    }
 
-  sub {
-    &, * {
-      color: $lb-primary;
+    ul.slick-dots li button {
+      background: $bg-dark-gray;
     }
   }
 
-  .menu-microsite .slide__content .slide__grid::after {
-    background: $text-black;
-  }
+  .backgorund-white {
+    background-color: $bg-white;
 
-  ul.slick-dots li button {
-    background: $bg-dark-gray;
+    *,
+    h1, h2, h3, 
+    h4, h5, h6, 
+    p, div, span,
+    .microsite-block__field-content-personalized .block-title-personalized {
+      color: $text-black;
+    }
+
+    sub {
+      &, * {
+        color: $lb-primary;
+      }
+    }
+
+    .menu-microsite .slide__content .slide__grid::after {
+      background: $text-black;
+    }
+
+    ul.slick-dots li button {
+      background: $bg-dark-gray;
+    }
   }
 }
 
@@ -302,10 +304,12 @@ ul.slick-dots {
     padding: 50px 0;
   }
 
-  .block-title-personalized {
+  .block-title-personalized,
+  .block-title-personalized * {
     font-size: 22pt;
     font-weight: bold;
     color: $text-black;
+    text-decoration: none;
   }
 
   p {

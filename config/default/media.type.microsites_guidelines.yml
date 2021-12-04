@@ -3,7 +3,7 @@ langcode: es
 status: true
 dependencies: {  }
 id: microsites_guidelines
-label: 'Micrositios - Pautas'
+label: 'Micrositios [Pautas]'
 description: 'Temas de interes o pautas para los micrositios'
 source: image
 queue_thumbnail_downloads: false
