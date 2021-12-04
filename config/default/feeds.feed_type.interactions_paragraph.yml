@@ -39,7 +39,6 @@ processor_configuration:
   skip_hash_check: false
   values:
     type: iterecciones_proyectos
-  insert_new: 1
 custom_sources:
   parent_id:
     label: parent_id
