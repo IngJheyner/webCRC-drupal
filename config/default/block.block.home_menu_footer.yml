@@ -11,7 +11,7 @@ dependencies:
 id: home_menu_footer
 theme: webcrc
 region: footer_left
-weight: -14
+weight: -8
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

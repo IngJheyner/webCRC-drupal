@@ -2,6 +2,10 @@ uuid: 69acac83-37c6-47cb-8ab3-b238fc99e934
 langcode: es
 status: true
 dependencies:
+  content:
+    - 'block_content:home_footer_copyright:507d46e7-c253-401d-bcba-244b0a8fe603'
+  module:
+    - block_content
   theme:
     - webcrc
 id: home_footer_copyright
