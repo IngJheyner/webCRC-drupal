@@ -41,14 +41,6 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_field_content_description:
-    weight: 26
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textfield
-    region: content
   field_icon:
     weight: 1
     settings:
