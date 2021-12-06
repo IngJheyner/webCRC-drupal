@@ -3,6 +3,7 @@ langcode: es
 status: true
 dependencies:
   config:
+    - field.field.media.comentarios_iteracciones_.feeds_item
     - field.field.media.comentarios_iteracciones_.field_media_file_2
     - field.field.media.comentarios_iteracciones_.field_projects_operator
     - field.field.media.comentarios_iteracciones_.field_ruta_archivo_comentarios
@@ -49,9 +50,13 @@ content:
     third_party_settings: {  }
   field_projects_operator:
     weight: 30
-    settings: {  }
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: options_select
+    type: entity_reference_autocomplete_tags
     region: content
   field_ruta_archivo_comentarios:
     weight: 29
@@ -62,6 +67,7 @@ content:
     type: string_textfield
     region: content
 hidden:
+  feeds_item: true
   langcode: true
   name: true
   path: true

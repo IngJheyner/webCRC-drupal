@@ -30,7 +30,7 @@ id: node.library_virtual.field_library_file
 field_name: field_library_file
 entity_type: node
 bundle: library_virtual
-label: Archivos
+label: Archivo
 description: ''
 required: false
 translatable: false
@@ -38,7 +38,7 @@ default_value: {  }
 default_value_callback: ''
 settings:
   file_directory: ''
-  file_extensions: 'txt pdf'
+  file_extensions: 'txt pdf docx'
   max_filesize: '2 mb'
   description_field: false
   handler: 'default:file'

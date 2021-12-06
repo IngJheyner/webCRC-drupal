@@ -1,9 +1,9 @@
-uuid: dab477e4-47ae-46ed-ab85-415caa07a76a
+uuid: c11c3116-b98b-4a22-afa9-583c41e052ad
 langcode: es
 status: true
 dependencies:
   content:
-    - 'block_content:home_footer:be0c3031-e804-499e-a60b-fddf4855e3a2'
+    - 'block_content:home_footer:0d3dc0aa-8df4-44fc-809c-b63a77cf87c9'
   module:
     - block_content
   theme:
@@ -11,12 +11,12 @@ dependencies:
 id: home_footer
 theme: webcrc
 region: footer_left
-weight: -9
+weight: -15
 provider: null
-plugin: 'block_content:be0c3031-e804-499e-a60b-fddf4855e3a2'
+plugin: 'block_content:0d3dc0aa-8df4-44fc-809c-b63a77cf87c9'
 settings:
-  id: 'block_content:be0c3031-e804-499e-a60b-fddf4855e3a2'
-  label: 'Home [Pie de pagina]'
+  id: 'block_content:0d3dc0aa-8df4-44fc-809c-b63a77cf87c9'
+  label: 'Pie de pagina - Información de contacto'
   provider: block_content
   label_display: '0'
   status: true

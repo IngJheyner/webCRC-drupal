@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_image_content
-    - media.type.image
+    - media.type.images_news_crc
     - node.type.news_crc
 id: node.news_crc.field_image_content
 field_name: field_image_content
@@ -20,7 +20,7 @@ settings:
   handler: 'default:media'
   handler_settings:
     target_bundles:
-      image: image
+      images_news_crc: images_news_crc
     sort:
       field: created
       direction: DESC
