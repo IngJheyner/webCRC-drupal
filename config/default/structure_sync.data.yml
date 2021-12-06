@@ -991,28 +991,6 @@ taxonomies:
       uuid: 45099b3f-f4c8-436e-987d-ee09cd8ba711
 blocks:
   -
-    info: 'Home [Encabezado]'
-    langcode: es
-    uuid: 06f5900d-1d33-41c8-a2b4-222862ad15a8
-    bundle: home_header
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_home_header_logo_govco:
-        -
-          target_id: '2'
-          alt: logo-gov-co
-          title: ''
-          width: '190'
-          height: '45'
-      field_home_header_logo_webcrc:
-        -
-          target_id: '1'
-          alt: logo-crc-comision-de-regulacion-de-comunicaciones
-          title: ''
-          width: '234'
-          height: '125'
-  -
     info: 'Transparencia y acceso a la información pública [Encabezado]'
     langcode: es
     uuid: 63d3fd79-a7e3-4ce3-aba1-af6e05bc66e2
