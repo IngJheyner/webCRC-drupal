@@ -1,0 +1,46 @@
+uuid: 97998074-35a5-461b-b4dc-54aa7001a772
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_document
+    - media.type.microsites_crc_documents
+  module:
+    - file
+    - filefield_paths
+third_party_settings:
+  filefield_paths:
+    enabled: true
+    file_path:
+      value: webcrc/micrositios/documents
+      options:
+        slashes: false
+        pathauto: false
+        transliterate: false
+    redirect: false
+    retroactive_update: false
+    active_updating: false
+    file_name:
+      value: '[file:ffp-name-only-original].[file:ffp-extension-original]'
+      options:
+        slashes: false
+        pathauto: false
+        transliterate: false
+id: media.microsites_crc_documents.field_media_document
+field_name: field_media_document
+entity_type: media
+bundle: microsites_crc_documents
+label: Archivo
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt doc docx pdf'
+  max_filesize: '10 MB'
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

@@ -1,0 +1,88 @@
+uuid: dbbcaf0a-11ba-4e65-933e-9ca44ad53f70
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.microsites_articles.field_content
+    - field.field.node.microsites_articles.field_content_list_select
+    - field.field.node.microsites_articles.field_content_type
+    - field.field.node.microsites_articles.field_image_content
+    - field.field.node.microsites_articles.field_introduccion_contenido
+    - field.field.node.microsites_articles.field_introduction_image
+    - node.type.microsites_articles
+  module:
+    - blazy
+    - options
+    - user
+id: node.microsites_articles.teaser
+targetEntityType: node
+bundle: microsites_articles
+mode: teaser
+content:
+  field_content_list_select:
+    type: list_key
+    weight: 1
+    region: content
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_introduccion_contenido:
+    type: basic_string
+    weight: 2
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_introduction_image:
+    type: blazy_media
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link: '1'
+      class: ''
+      id: ''
+      image: ''
+      overlay: ''
+      title: ''
+      vanilla: false
+      icon: ''
+      layout: ''
+      view_mode: ''
+      cache: 0
+      current_view_mode: ''
+      skin: ''
+      fx: ''
+      style: ''
+      background: false
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      caption: {  }
+      responsive_image_style: ''
+      box_style: ''
+      image_style: ''
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
+      _uri: ''
+      breakpoints: {  }
+      sizes: ''
+      grid_header: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
+    third_party_settings: {  }
+  links:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_content: true
+  field_content_type: true
+  field_image_content: true
+  langcode: true
+  search_api_excerpt: true

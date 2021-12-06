@@ -1,0 +1,21 @@
+uuid: 99bf71f5-d672-4e0c-9afc-9fb4936ab87f
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.audio_microsites_crc.field_media_audio_file
+    - media.type.audio_microsites_crc
+id: media.audio_microsites_crc.media_library
+targetEntityType: media
+bundle: audio_microsites_crc
+mode: media_library
+content: {  }
+hidden:
+  created: true
+  field_media_audio_file: true
+  langcode: true
+  name: true
+  path: true
+  status: true
+  uid: true

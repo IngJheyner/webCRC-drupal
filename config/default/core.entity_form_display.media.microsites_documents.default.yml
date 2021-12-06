@@ -3,12 +3,10 @@ langcode: es
 status: true
 dependencies:
   config:
-    - field.field.media.microsites_documents.field_media_audio_file
     - field.field.media.microsites_documents.field_media_image
     - image.style.thumbnail
     - media.type.microsites_documents
   module:
-    - file
     - path
     - svg_image
 id: media.microsites_documents.default
@@ -22,13 +20,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_media_audio_file:
-    weight: 101
-    settings:
-      progress_indicator: throbber
-    third_party_settings: {  }
-    type: file_generic
-    region: content
   field_media_image:
     weight: 0
     settings:

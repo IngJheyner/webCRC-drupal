@@ -1,10 +1,10 @@
-uuid: a8df64f0-f4f5-441e-b45e-28d44849811f
+uuid: 2158f1aa-1a42-4f34-9e6e-d8a24bb36d8c
 langcode: es
 status: true
 dependencies:
   config:
-    - field.storage.media.field_media_audio_file
-    - media.type.microsites_documents
+    - field.storage.media.field_media_video_file
+    - media.type.videos_microsites_crc
   module:
     - file
     - filefield_paths
@@ -12,7 +12,7 @@ third_party_settings:
   filefield_paths:
     enabled: true
     file_path:
-      value: '[date:custom:Y]-[date:custom:m]'
+      value: webcrc/micrositios/videos
       options:
         slashes: false
         pathauto: false
@@ -26,20 +26,20 @@ third_party_settings:
         slashes: false
         pathauto: false
         transliterate: false
-id: media.microsites_documents.field_media_audio_file
-field_name: field_media_audio_file
+id: media.videos_microsites_crc.field_media_video_file
+field_name: field_media_video_file
 entity_type: media
-bundle: microsites_documents
-label: 'Archivo de audio'
+bundle: videos_microsites_crc
+label: 'Video file'
 description: ''
-required: false
-translatable: false
+required: true
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
   file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: txt
-  max_filesize: ''
+  file_extensions: mp4
+  max_filesize: '30 MB'
   description_field: false
   handler: 'default:file'
   handler_settings: {  }

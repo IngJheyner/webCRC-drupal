@@ -1,0 +1,18 @@
+uuid: 041f00b4-4e1b-4a01-a441-8f6963f6f3db
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.microsites_articles
+id: node.microsites_articles.title
+field_name: title
+entity_type: node
+bundle: microsites_articles
+label: Titulo
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

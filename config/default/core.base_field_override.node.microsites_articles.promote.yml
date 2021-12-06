@@ -1,0 +1,22 @@
+uuid: 7e76e740-519f-4a4a-9c92-d6958e47796f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.microsites_articles
+id: node.microsites_articles.promote
+field_name: promote
+entity_type: node
+bundle: microsites_articles
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

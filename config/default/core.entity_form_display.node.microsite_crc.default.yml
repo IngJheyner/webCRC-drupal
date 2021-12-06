@@ -45,6 +45,7 @@ third_party_settings:
         - title
         - field_image_content
         - field_content_featured
+        - field_microsite_article
       parent_name: group_content_microsite
       weight: 13
       format_type: tab

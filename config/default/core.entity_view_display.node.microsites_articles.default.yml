@@ -1,0 +1,97 @@
+uuid: f93cdd51-00f7-4d7a-8f9d-d00cd6b972ab
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.microsites_articles.field_content
+    - field.field.node.microsites_articles.field_content_list_select
+    - field.field.node.microsites_articles.field_content_type
+    - field.field.node.microsites_articles.field_image_content
+    - field.field.node.microsites_articles.field_introduccion_contenido
+    - field.field.node.microsites_articles.field_introduction_image
+    - node.type.microsites_articles
+  module:
+    - blazy
+    - options
+    - text
+    - user
+id: node.microsites_articles.default
+targetEntityType: node
+bundle: microsites_articles
+mode: default
+content:
+  field_content:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_content_list_select:
+    weight: 4
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_content_type:
+    weight: 3
+    label: visually_hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_image_content:
+    weight: 0
+    label: hidden
+    settings:
+      link: '1'
+      class: ''
+      id: ''
+      image: ''
+      overlay: ''
+      title: ''
+      vanilla: false
+      icon: ''
+      layout: ''
+      view_mode: ''
+      cache: 0
+      current_view_mode: ''
+      skin: ''
+      fx: ''
+      style: ''
+      background: false
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      caption: {  }
+      responsive_image_style: ''
+      box_style: ''
+      image_style: ''
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
+      _uri: ''
+      breakpoints: {  }
+      sizes: ''
+      grid_header: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
+    third_party_settings: {  }
+    type: blazy_media
+    region: content
+  field_introduccion_contenido:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden:
+  addtoany: true
+  field_introduction_image: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

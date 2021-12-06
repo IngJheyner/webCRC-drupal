@@ -1,0 +1,11 @@
+uuid: 1fdb46bb-81f3-4761-8a1b-b1e0990cb5c8
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.microsites_crc_documents
+id: media.microsites_crc_documents
+target_entity_type_id: media
+target_bundle: microsites_crc_documents
+default_langcode: site_default
+language_alterable: false

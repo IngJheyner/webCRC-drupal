@@ -1,0 +1,14 @@
+uuid: 5eb58f80-1339-4570-b1d9-cc4466d12f17
+langcode: es
+status: true
+dependencies: {  }
+id: audio_microsites_crc
+label: 'Micrositios CRC [Audio]'
+description: 'Tipo de multimedia que almacenara todos los audios para los micrositios del crc'
+source: audio_file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_audio_file
+field_map:
+  name: name

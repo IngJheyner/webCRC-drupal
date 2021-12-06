@@ -1,0 +1,32 @@
+uuid: e7de324f-d5e0-482c-ace9-66b9419cb813
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.media.audio_microsites_crc.field_media_audio_file
+    - media.type.audio_microsites_crc
+  module:
+    - file
+id: media.audio_microsites_crc.default
+targetEntityType: media
+bundle: audio_microsites_crc
+mode: default
+content:
+  field_media_audio_file:
+    type: file_audio
+    label: visually_hidden
+    weight: 0
+    settings:
+      controls: true
+      autoplay: false
+      loop: false
+      multiple_file_display_type: tags
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

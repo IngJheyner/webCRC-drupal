@@ -505,8 +505,9 @@ display:
         type: fields
         options: {  }
       pager:
-        type: none
+        type: some
         options:
+          items_per_page: 12
           offset: 0
       sorts:
         field_content_featured_value:
@@ -923,6 +924,7 @@ display:
         relationships: false
         title: false
         arguments: false
+        pager: false
       row:
         type: fields
         options: {  }
@@ -1050,7 +1052,7 @@ display:
           click_sort_column: target_id
           type: entity_reference_label
           settings:
-            link: true
+            link: false
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -1205,7 +1207,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<sub>{{ field_category }}</sub>\r\n<h3>{{ title }}</h3>\r\n<time>{{ created }}</time>"
+            text: "<sub><a href='/noticias/{{ field_category|lower }}'>{{ field_category }}</a></sub>\r\n<h3>{{ title }}</h3>\r\n<time>{{ created }}</time>"
             make_link: false
             path: ''
             absolute: false
@@ -1277,6 +1279,11 @@ display:
       relationships: {  }
       title: 'Micrositio ultimas noticias'
       arguments: {  }
+      pager:
+        type: some
+        options:
+          items_per_page: 8
+          offset: 0
     cache_metadata:
       max-age: -1
       contexts:

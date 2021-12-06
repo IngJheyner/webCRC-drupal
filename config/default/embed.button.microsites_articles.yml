@@ -1,0 +1,24 @@
+uuid: 3f60a93e-1a37-44b6-8491-1ff62c1399ea
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.microsites_articles
+  module:
+    - entity_embed
+    - node
+label: 'Micrositios - Articulos'
+id: microsites_articles
+type_id: entity
+type_settings:
+  entity_type: node
+  bundles:
+    - microsites_articles
+  display_plugins:
+    - 'view_mode:node.teaser'
+  entity_browser: ''
+  entity_browser_settings:
+    display_review: false
+icon: {  }
+icon_uuid: null

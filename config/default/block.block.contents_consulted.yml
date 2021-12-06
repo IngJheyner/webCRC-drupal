@@ -1,0 +1,30 @@
+uuid: b079e6d7-665d-4aef-97c1-2ffc7baf15f2
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:tabs_consulted_content:9ef5effc-94da-4dce-a1d8-5bac3078b416'
+  module:
+    - block_content
+    - system
+  theme:
+    - webcrc
+id: contents_consulted
+theme: webcrc
+region: top_b
+weight: -15
+provider: null
+plugin: 'block_content:9ef5effc-94da-4dce-a1d8-5bac3078b416'
+settings:
+  id: 'block_content:9ef5effc-94da-4dce-a1d8-5bac3078b416'
+  label: 'Contenidos consultados'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
