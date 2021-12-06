@@ -84,6 +84,7 @@ third_party_settings:
     group_content_personalized:
       children:
         - field_content_personalized
+        - field_content_type
       parent_name: group_content_block
       weight: 23
       format_type: tab

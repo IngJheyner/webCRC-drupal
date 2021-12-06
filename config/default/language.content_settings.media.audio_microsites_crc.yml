@@ -1,0 +1,11 @@
+uuid: e5ce64ba-1f10-45f7-9c09-2ffd0f1259d5
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.audio_microsites_crc
+id: media.audio_microsites_crc
+target_entity_type_id: media
+target_bundle: audio_microsites_crc
+default_langcode: site_default
+language_alterable: false

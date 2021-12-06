@@ -1,0 +1,21 @@
+uuid: 6faa5653-1310-450b-a03a-726401a0a038
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.microsites_crc_documents.field_media_document
+    - media.type.microsites_crc_documents
+id: media.microsites_crc_documents.media_library
+targetEntityType: media
+bundle: microsites_crc_documents
+mode: media_library
+content: {  }
+hidden:
+  created: true
+  field_media_document: true
+  langcode: true
+  name: true
+  path: true
+  status: true
+  uid: true

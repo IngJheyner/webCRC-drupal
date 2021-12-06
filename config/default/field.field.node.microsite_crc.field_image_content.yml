@@ -22,8 +22,8 @@ settings:
     target_bundles:
       microsites_documents: microsites_documents
     sort:
-      field: _none
+      field: created
       direction: DESC
     auto_create: false
-    auto_create_bundle: ''
+    auto_create_bundle: microsites_documents
 field_type: entity_reference

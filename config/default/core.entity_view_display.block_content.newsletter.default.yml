@@ -4,9 +4,9 @@ status: true
 dependencies:
   config:
     - block_content.type.newsletter
-    - field.field.block_content.newsletter.field_content_description
     - field.field.block_content.newsletter.field_content_form
     - field.field.block_content.newsletter.field_content_title
+    - field.field.block_content.newsletter.field_content_description
     - field.field.block_content.newsletter.field_icon
   module:
     - blazy

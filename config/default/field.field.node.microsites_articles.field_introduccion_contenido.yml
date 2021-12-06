@@ -1,0 +1,19 @@
+uuid: 4dd3908f-e90e-42d0-9879-1426cf0bf173
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_introduccion_contenido
+    - node.type.microsites_articles
+id: node.microsites_articles.field_introduccion_contenido
+field_name: field_introduccion_contenido
+entity_type: node
+bundle: microsites_articles
+label: Descripción
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

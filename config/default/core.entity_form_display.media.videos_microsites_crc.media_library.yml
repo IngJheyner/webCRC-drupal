@@ -1,0 +1,21 @@
+uuid: faca9290-593f-440e-bf62-a5c248f4c54a
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.videos_microsites_crc.field_media_video_file
+    - media.type.videos_microsites_crc
+id: media.videos_microsites_crc.media_library
+targetEntityType: media
+bundle: videos_microsites_crc
+mode: media_library
+content: {  }
+hidden:
+  created: true
+  field_media_video_file: true
+  langcode: true
+  name: true
+  path: true
+  status: true
+  uid: true

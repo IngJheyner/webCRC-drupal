@@ -1,0 +1,16 @@
+uuid: 026ed628-21a8-438e-97fa-437f39b4af76
+langcode: es
+status: true
+dependencies: {  }
+id: node.normatividad.changed
+field_name: changed
+entity_type: node
+bundle: normatividad
+label: Changed
+description: 'La fecha en que el nodo fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

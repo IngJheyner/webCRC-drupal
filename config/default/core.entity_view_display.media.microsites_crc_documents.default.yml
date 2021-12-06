@@ -1,0 +1,29 @@
+uuid: 03eb6454-8894-47bb-b522-7813a9d8e295
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.media.microsites_crc_documents.field_media_document
+    - media.type.microsites_crc_documents
+  module:
+    - file
+id: media.microsites_crc_documents.default
+targetEntityType: media
+bundle: microsites_crc_documents
+mode: default
+content:
+  field_media_document:
+    label: visually_hidden
+    weight: 0
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

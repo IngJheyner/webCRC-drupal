@@ -1,0 +1,29 @@
+uuid: 61dbf10e-2fbc-4481-b02b-1bef0d0298da
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_content
+    - media.type.images_news_crc
+    - node.type.microsites_articles
+id: node.microsites_articles.field_image_content
+field_name: field_image_content
+entity_type: node
+bundle: microsites_articles
+label: Imagen
+description: 'Imagen que se visualiza en el contenido interno del articulo'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      images_news_crc: images_news_crc
+    sort:
+      field: created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

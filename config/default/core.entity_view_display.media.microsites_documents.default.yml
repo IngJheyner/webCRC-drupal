@@ -3,26 +3,16 @@ langcode: es
 status: true
 dependencies:
   config:
-    - field.field.media.microsites_documents.field_media_audio_file
     - field.field.media.microsites_documents.field_media_image
     - image.style.large
     - media.type.microsites_documents
   module:
-    - file
     - svg_image
 id: media.microsites_documents.default
 targetEntityType: media
 bundle: microsites_documents
 mode: default
 content:
-  field_media_audio_file:
-    weight: 1
-    label: above
-    settings:
-      use_description_as_link_text: true
-    third_party_settings: {  }
-    type: file_default
-    region: content
   field_media_image:
     label: visually_hidden
     weight: 0

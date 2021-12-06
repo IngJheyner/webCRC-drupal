@@ -1,0 +1,22 @@
+uuid: c442ab92-9389-4212-8119-2bd9059eefe0
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: microsites_articles
+label: 'Micrositios - Aticulos'
+type: 'canonical_entities:node'
+pattern: 'micrositios/[node:field_content_type:entity:title]/[node:title]'
+selection_criteria:
+  24456b98-def6-47a1-9daa-08f2252d174c:
+    id: node_type
+    bundles:
+      microsites_articles: microsites_articles
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 24456b98-def6-47a1-9daa-08f2252d174c
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,60 @@
+{#
+/**
+ * @file
+ * Template for a Node component.
+ */
+#}
+{%
+  set classes = [
+  'node',
+  node.isPromoted() ? 'node--promoted',
+  node.isSticky() ? 'node--sticky',
+  not node.isPublished() ? 'node--unpublished',
+  node.bundle|clean_class,
+  node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
+]
+%}
+
+{% set list_select = content.field_content_list_select.0['#markup']|upper|replace({' ':'_'}) %}
+
+<article{{ attributes.addClass(classes) }}>
+  {% block content %}
+    <div class="block-micrositio-1">
+      <div class="row m-0 justify-content-center">
+        {% if list_select == 'RIGHT' %}
+          <div class="col-12 col-md-7 px-5 px-md-3 pr-md-5 align-self-center">
+            <h3 class="mt-0 mb-3 block-title-personalized">
+              <a href="{{ url }}" title="{{ label.0 }}">
+                {{ label.0 }}
+              </a>
+            </h3>
+            <p>
+              {{ content.field_introduccion_contenido.0 }}
+            </p>
+          </div>
+          <div class="col-12 col-md-5 px-5 px-md-3 pl-md-5 align-self-center block-image-personalized">
+            <a href="{{ url }}" title="{{ label.0 }}">
+              {{ content.field_introduction_image }}
+            </a>
+          </div>
+        {% else %}
+          <div class="col-12 col-md-5 px-5 px-md-3 pr-md-5 align-self-center block-image-personalized">
+            <a href="{{ url }}" title="{{ label.0 }}">
+              {{ content.field_introduction_image }}
+            </a>
+          </div>
+          <div class="col-12 col-md-7 px-5 px-md-3 pl-md-5 align-self-center">
+            <h3 class="mt-0 mb-3 block-title-personalized">
+              <a href="{{ url }}" title="{{ label.0 }}">
+                {{ label.0 }}
+              </a>
+            </h3>
+            <p>
+              {{ content.field_introduccion_contenido.0 }}
+            </p>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  {% endblock %}
+</article>
