@@ -17,6 +17,9 @@ settings:
     -
       value: '2'
       label: Finalizado
+    -
+      value: '3'
+      label: Suspendido
   allowed_values_function: ''
 module: options
 locked: false
