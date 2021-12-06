@@ -887,14 +887,51 @@ taxonomies:
       parent: '0'
       uuid: dcc81126-3a8f-4070-bc9d-2f123aebe115
   tags: {  }
-  tipo_documento_o_link_transparen: {  }
+  tipo_documento_o_link_transparen:
+    -
+      vid: tipo_documento_o_link_transparen
+      tid: '165'
+      langcode: es
+      name: Lineamientos
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: a2bb064f-2c7f-4a54-8fa8-335633280f83
+    -
+      vid: tipo_documento_o_link_transparen
+      tid: '164'
+      langcode: es
+      name: Manuales
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 548da1af-806b-40cf-a7b7-418734124a22
+    -
+      vid: tipo_documento_o_link_transparen
+      tid: '166'
+      langcode: es
+      name: Políticas
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 5c916d85-e181-4021-8e26-969107641395
   transparencia_lista_categorias_p: {  }
+  transp_list_cate_infor_porme: {  }
   transp_list_cat_ejec_presu: {  }
+  transp_list_cat_plan_accion: {  }
+  transp_list_cat_plan_institu: {  }
+  transp_list_cat_prog_gest_docuta: {  }
+  transp_list_cat_tabl_retenci_doc: {  }
   trans_lista_catego_inform_decisi: {  }
+  trans_lis_cat_infr_rendi_cuenta: {  }
+  trnasparencia_lista_de_categoria: {  }
   type_projects_comments:
     -
       vid: type_projects_comments
-      tid: '32'
+      tid: '102'
       langcode: es
       name: 'Agenda Regulatoria'
       description__value: null
@@ -952,3 +989,304 @@ taxonomies:
       weight: '5'
       parent: '0'
       uuid: 45099b3f-f4c8-436e-987d-ee09cd8ba711
+blocks:
+  -
+    info: 'Home [Encabezado]'
+    langcode: es
+    uuid: 06f5900d-1d33-41c8-a2b4-222862ad15a8
+    bundle: home_header
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_home_header_logo_govco:
+        -
+          target_id: '2'
+          alt: logo-gov-co
+          title: ''
+          width: '190'
+          height: '45'
+      field_home_header_logo_webcrc:
+        -
+          target_id: '1'
+          alt: logo-crc-comision-de-regulacion-de-comunicaciones
+          title: ''
+          width: '234'
+          height: '125'
+  -
+    info: 'Transparencia y acceso a la información pública [Encabezado]'
+    langcode: es
+    uuid: 63d3fd79-a7e3-4ce3-aba1-af6e05bc66e2
+    bundle: bloq_descrip_menu_transparencia
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>De acuerdo a la Ley 1712 de 2014 por la cual se crea la Ley de Transparencia y del Derecho a la Información Pública Nacional' se pone a disposición esta sección en la cual los ciudadanos, sector TIC e interesados pueden conocer de primera mano la información del Ministerio de Tecnologías de la Información y las Comunicaciones.<br />\r\n<br />\r\nSegún como lo dicta la Ley, la información generada por las entidades del Estado no podrá ser reservada o limitada, por el contrario es de carácter público, por tal motivo se proporciona y facilita el acceso a la misma en los términos más amplios posibles y a través de los medios amparados por ley. GGGGG<br />\r\n<br />\r\nDe acuerdo a los mínimos a publicar de que tratan los artículos 9, 10 y 11 de la Ley 1712 de 2014, sin perjuicio de lo previsto en el artículo inmediatamente siguiente respecto a los sujetos obligados a publicar en los sistemas de información del Estado, se ponen a disposición los siguientes temarios:</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+      field_link_decretos_descrip_menu:
+        -
+          uri: 'internal:/sites/default/files/webcrc/documents/2021-11/Resolucion_1519_2020.pdf'
+          title: 'Decreto único reglamentario sectorial'
+          options: {  }
+  -
+    info: 'Transparencia: Políticas, lineamientos y manuales [ Introducción Encabezado ]'
+    langcode: es
+    uuid: a84f9802-7bf9-49c3-b0ed-68f049029a6a
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Texto introduccion</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Información sobre decisiones que puede afectar al público [ Introducción Encabezado ]'
+    langcode: es
+    uuid: 9e628ac4-a19b-4f1e-b87f-e82840994c43
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>texto de introducción</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Presupuesto general de ingresos, gastos e inversión [ Encabezado ]'
+    langcode: es
+    uuid: f218185d-e47c-48cd-aadb-9ba2918244bd
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Texto de introducción</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Plan de Adqusiciones [ Introduccion Encabezado ]'
+    langcode: es
+    uuid: e5eb02e6-9c81-47d2-94d8-b38ccec9f999
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Texto de introduccion</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: ejecución presupuestal [ Introducción - Encabezado ] '
+    langcode: es
+    uuid: 3acdbfe6-7c56-4840-8651-36c26c1ad57c
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Texto de introducción de ejecución presupuestal</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Plan de acción [ Introducción - Encabezado ]'
+    langcode: es
+    uuid: 4afce3fa-8c1a-4f61-92dd-4b072b34e510
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Texto de introducción&nbsp;Transparencia: Plan de acción [ Introducción - Encabezado ]</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Planes institucionales [ Introducción - Encabezado ]'
+    langcode: es
+    uuid: 4e70d309-4dc3-4259-8a25-e4ef7016d4da
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Introducción planes institucionales</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Informes de empalme [ Introducción - Encabezado ]'
+    langcode: es
+    uuid: 97657fef-20d3-4c1b-8a35-3f61844bd2ca
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Texto de introducción&nbsp;</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Informes de gestión [ Introducción - encabezado ]'
+    langcode: es
+    uuid: 8dc92244-8dc7-49db-afe6-189a6db95a46
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>texto introducción</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Trnasparencia: informes rendición de cuentas [ Introducción - Encabezado ]'
+    langcode: es
+    uuid: 21a3ebe4-6542-42ea-aee8-b0d6026dfb0e
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>texto introducción</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Informes a organismos de inspección [ Introducción - Encabezado ]'
+    langcode: es
+    uuid: f84c383e-b33a-46e9-b096-1454d9951fab
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Introducción&nbsp;4.7.4 Informes a organismos de inspección, vigilancia y control</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Planes de mejoramiento [ Introduccion - Encabezado ]'
+    langcode: es
+    uuid: 78cdf21c-cf4b-41b0-9261-1c9b59598e2d
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Informe Pormenorizado [ Introducción - Encabezado ]'
+    langcode: es
+    uuid: 09f2a2df-4469-4165-a6fb-8b6418562f6f
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>introducccion</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Informe sobre defensa publica [ Introducción - Encabezado ]'
+    langcode: es
+    uuid: 287285d3-2a71-4fb2-9bea-1f9b4b71af05
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Texto introduccion</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Registros de activos de información [ Introduccion - Encabezado ]'
+    langcode: es
+    uuid: e237cd4e-ae34-4589-8ba2-7f0181d62613
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>texto introducc</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Registros de activos de información [ Pie de pagina ]'
+    langcode: es
+    uuid: 069fc02b-47b0-4af7-b931-13c5bc3b796f
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Lo invitamos a conocer el catálogo de datos abiertos del Índice de Información Clasificada y Reservada de la CRC, &nbsp;publicado en <a href=\"https://www.datos.gov.co/dataset/Registro-de-Activos-de-Informaci-n-de-la-CRC/6ip3-8q5c\">datos.gov.co</a></p>\r\n"
+          summary: ''
+          format: full_html
+  -
+    info: 'Transparencia: Indice de información clasificada [ Introducción - Encabezado ]'
+    langcode: es
+    uuid: a6cf0b9b-f995-488f-bf9f-e3d374e79313
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>texto&nbsp;</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Indice de información clasificada [ pie de pagina ]'
+    langcode: es
+    uuid: 947a2ab3-9808-44c8-a9de-afd08b9ead38
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Lo invitamos a conocer el catálogo de datos abiertos del Índice de Información Clasificada y Reservada de la CRC, &nbsp;publicado en <a href=\"https://www.datos.gov.co/dataset/-ndice-de-Informaci-n-Clasificada-y-Reservada-CRC/xtju-zcke\">datos.gov.co</a></p>\r\n"
+          summary: ''
+          format: full_html
+  -
+    info: 'Transparencia: Esquema de publicación [ Introduccion- Encabezado ]'
+    langcode: es
+    uuid: 8a03e2b9-1fcb-4a45-b020-f42bfc3a5f6c
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>texto texto</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Programa de gestion documental [ Introduccion - Encabezado ]'
+    langcode: es
+    uuid: 35f3ddb0-7e49-4e53-bf53-632e24dce9a0
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>texto texto texto</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
