@@ -215,299 +215,11 @@ menus:
     weight: '0'
     langcode: es
     uuid: a2cfe87b-7de0-4e22-bb0e-bfdbb4c0c095
-blocks:
-  -
-    info: 'Temas de Interés [ Se debe solo agregar o editar una sola vez este bloque ]'
-    langcode: es
-    uuid: 75dc6e84-7257-481b-9c84-294ca5e39f7a
-    bundle: themes_interest
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_interest_content:
-        -
-          target_id: '4543'
-          target_revision_id: '4543'
-        -
-          target_id: '4546'
-          target_revision_id: '4546'
-        -
-          target_id: '4547'
-          target_revision_id: '4547'
-        -
-          target_id: '4548'
-          target_revision_id: '4548'
-        -
-          target_id: '4549'
-          target_revision_id: '4549'
-  -
-    info: 'Home [Encabezado]'
-    langcode: es
-    uuid: 06f5900d-1d33-41c8-a2b4-222862ad15a8
-    bundle: home_header
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_home_header_logo_govco:
-        -
-          target_id: '37'
-          alt: logo-gov-co
-          title: ''
-          width: '190'
-          height: '45'
-      field_home_header_logo_webcrc:
-        -
-          target_id: '38'
-          alt: logo-crc-comision-de-regulacion-de-comunicaciones
-          title: ''
-          width: '234'
-          height: '125'
-  -
-    info: Indicadores
-    langcode: es
-    uuid: a6f79fbc-3c22-45c9-b011-f3b39cdcfe46
-    bundle: indicators
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_content_title:
-        -
-          value: Indicadores
-      field_icon:
-        -
-          target_id: '35'
-      field_indicator:
-        -
-          target_id: '32'
-          target_revision_id: '32'
-        -
-          target_id: '33'
-          target_revision_id: '33'
-        -
-          target_id: '34'
-          target_revision_id: '34'
-        -
-          target_id: '35'
-          target_revision_id: '35'
-        -
-          target_id: '36'
-          target_revision_id: '36'
-      field_logo:
-        -
-          target_id: '35'
-      field_primary_url:
-        -
-          uri: 'https://www.postdata.gov.co/'
-          title: 'Información tomada de www.postdata.gov.co'
-          options: {  }
-  -
-    info: 'Ultimas noticias'
-    langcode: es
-    uuid: d6b7ca44-d780-4080-8a98-17d98296f931
-    bundle: last_news
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_content_title:
-        -
-          value: Noticias
-      field_content_title_primary:
-        -
-          value: Últimas
-      field_content_view:
-        -
-          target_id: news
-          display_id: last_news
-          data: 'a:5:{s:8:"argument";N;s:5:"limit";N;s:6:"offset";N;s:5:"title";N;s:5:"pager";N;}'
-      field_icon:
-        -
-          target_id: '35'
-  -
-    info: 'Boletin de noticias'
-    langcode: es
-    uuid: 8df82bb0-b5c2-4fa4-a354-97253c686628
-    bundle: newsletter
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_content_description:
-        -
-          value: 'Suscríbase a nuestro boletín y manténgase actualizado con las últimas noticias del sector. <br /> Los campos con (*) son obligatorios'
-          format: editor_cont_transparencia
-      field_content_form:
-        -
-          target_id: boletin_de_noticias
-          default_data: ''
-          status: open
-          open: ''
-          close: ''
-      field_content_title:
-        -
-          value: 'Boletín de noticias'
-      field_icon:
-        -
-          target_id: '46'
-  -
-    info: 'Tabs redes sociales'
-    langcode: es
-    uuid: b78e3423-dddb-49b0-97af-f37d06b61a79
-    bundle: tabs_social_networks
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_content_tabs:
-        -
-          target_id: '41'
-          target_revision_id: '41'
-  -
-    info: 'Contenidos mas importantes crc'
-    langcode: es
-    uuid: f054bf59-bf4c-47a8-a4c3-aebdbb350de5
-    bundle: important_content_crc
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_content_tabs:
-        -
-          target_id: '31'
-          target_revision_id: '31'
-      field_content_title:
-        -
-          value: 'en la CRC'
-      field_content_title_primary:
-        -
-          value: 'Lo más importante '
-      field_icon:
-        -
-          target_id: '34'
-  -
-    info: rss
-    langcode: es
-    uuid: 1362f50e-7d7c-4e7c-a8dc-7027dd9b7214
-    bundle: feed_block
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_intro_text: {  }
-      field_read_more: {  }
-      field_rss_feed:
-        -
-          feed_uri: 'https://www.postdata.gov.co/postdata-rss.xml'
-          count: '5'
-          display_date: '1'
-          date_format: news_dates
-          custom_date_format: 'F j, Y'
-          display_description: '1'
-          description_length: '300'
-          description_plaintext: '1'
-  -
-    info: 'Barra de accesibilidad'
-    langcode: es
-    uuid: 527852f6-5c8d-49c0-a38c-a8ea26a0a2b6
-    bundle: accessibility_toolbar
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_content_paragraph:
-        -
-          target_id: '14'
-          target_revision_id: '14'
-        -
-          target_id: '15'
-          target_revision_id: '15'
-        -
-          target_id: '16'
-          target_revision_id: '16'
-        -
-          target_id: '17'
-          target_revision_id: '17'
-  -
-    info: 'Contenidos consultados'
-    langcode: es
-    uuid: 9ef5effc-94da-4dce-a1d8-5bac3078b416
-    bundle: tabs_consulted_content
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_tabs_consulted_content:
-        -
-          target_id: '24'
-          target_revision_id: '24'
-  -
-    info: 'Pie de pagina - Informacion de contacto'
-    langcode: es
-    uuid: 0d3dc0aa-8df4-44fc-809c-b63a77cf87c9
-    bundle: home_footer
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_home_footer_contacts:
-        -
-          value: 'Línea atención al ciudadano: (+57) 601 319 8300'
-        -
-          value: 'Línea gratuita nacional: 01-8000-919278'
-        -
-          value: 'Fax: (+57) 601 319 8301'
-      field_home_footer_img_org:
-        -
-          target_id: '64'
-          alt: organizacion-prai-crc
-          title: ''
-          width: '101'
-          height: '45'
-        -
-          target_id: '65'
-          alt: organizacion-regulatel-crc
-          title: ''
-          width: '88'
-          height: '45'
-      field_home_footer_insti_mail:
-        -
-          value: institucional@crcom.gov.co
-      field_home_footer_judicial_mail:
-        -
-          value: notificacionesjudiciales@crcom.gov.co
-      field_home_footer_location:
-        -
-          value: 'Dirección: Cl 59 a bis # 5 - 53, Ed Link Siete Sesenta P9 Bogoá, Colombia.'
-        -
-          value: 'Código Postal: 11011'
-        -
-          value: 'Horario de Atención: 8:30 a.m. a 5:30 p.m. en jornada continua'
-      field_home_footer_logo_webcrc:
-        -
-          target_id: '63'
-          alt: logo-comision-de-regulacion-de-comunicaciones-crc
-          title: ''
-          width: '195'
-          height: '65'
-      field_home_footer_title_social:
-        -
-          value: 'Siguenos en:'
-      field_home_footer_txt_org:
-        -
-          value: 'Organizaciones internacionales presididas por la CRC'
-      field_social_networks:
-        -
-          target_id: '42'
-          target_revision_id: '42'
-        -
-          target_id: '43'
-          target_revision_id: '43'
-        -
-          target_id: '44'
-          target_revision_id: '44'
-        -
-          target_id: '45'
-          target_revision_id: '45'
-        -
-          target_id: '46'
-          target_revision_id: '46'
 taxonomies:
   library_author:
     -
       vid: library_author
-      tid: '3'
+      tid: '69'
       langcode: und
       name: 'Jesus Huertas Cuenca'
       description__value: "Cui eligo eu letalis mauris nobis pecus sino uxor valetudo. Antehabeo camur gemino luctus nutus pala. Aptent at ea neo nobis qui tation. Erat eros jus probo tum. Amet hendrerit olim paratus praemitto quadrum quidem saluto tamen. At laoreet nimis paulatim quis valde velit. Abluo amet aptent caecus consequat ideo persto saluto vero verto.\r\n\r\nErat genitus haero imputo jugis lucidus ludus persto ulciscor. Adipiscing cui ea iriure letalis neo patria sino turpis velit. Brevitas huic iusto vero. Caecus dolor esca eu meus neo obruo os tation. Cogo dolore iaceo neque nimis nunc odio sed uxor valde.\r\n\r\nAbico ex gravis iaceo ideo laoreet neque plaga utrum. Mos neo obruo patria vindico. Amet comis gemino importunus obruo quidem uxor. Accumsan camur haero neque obruo occuro tamen tincidunt ullamcorper. Acsi amet luctus populus saepius tego uxor. Conventio luptatum magna meus nutus plaga. Brevitas commodo commoveo consequat esse hos ibidem inhibeo magna singularis.\r\n\r\nAccumsan augue neo. Jumentum lucidus nimis occuro paulatim qui sino vulpes. Autem facilisi humo ille jugis minim pertineo premo si suscipit. Augue lobortis oppeto pagus.\r\n\r\nAptent decet feugiat illum incassum melior te. Illum interdico populus qui. Ea eum voco. Abbas abluo acsi euismod exerci gravis huic ideo nunc quia. Ad augue blandit mos sino uxor vereor zelus. Facilisis lucidus nutus odio os persto. Enim haero jumentum pagus quae tego vulpes. Haero neo nisl quadrum similis sino.\r\n\r\nAbluo consequat eros euismod natu tamen. Ad exerci nulla pagus ut venio. Defui elit feugiat iusto molior nulla premo refoveo ymo. Autem causa commoveo dolore luptatum pala populus singularis. Commoveo dolor dolus gravis neo pala probo typicus validus. Decet dolor jumentum quae quis saepius zelus. Macto nunc quidne tation venio.\r\n\r\nAbluo esca mauris praemitto sudo suscipere tincidunt. Abdo aptent conventio dignissim distineo ex imputo nobis te torqueo. Augue duis immitto loquor nibh nimis vereor. Abdo acsi ex. Dolore facilisis quadrum. Abbas antehabeo letalis odio similis. Abdo aptent exputo gemino natu virtus wisi ymo. Aptent tincidunt ulciscor utinam. Accumsan commoveo gravis os paratus pneum ymo. Cui saluto sudo torqueo. Adipiscing augue gemino laoreet.\r\n\r\nAppellatio pecus persto quis ratis ullamcorper vulpes. Loquor probo quidem turpis. Feugiat humo incassum jugis melior ut. Appellatio caecus ibidem plaga pneum sino tation. Abluo comis eligo humo loquor paratus.\r\n\r\nCogo meus nimis occuro si vindico. Acsi importunus lobortis lucidus neo obruo quadrum saluto sudo typicus. Duis ibidem iriure nibh vulputate. Esca gilvus iriure iustum mos roto secundum tincidunt vicis. Accumsan caecus damnum diam eligo modo singularis ulciscor veniam virtus. Consequat diam dolus et letalis persto praemitto suscipere ulciscor.\r\n\r\nConsectetuer loquor natu sagaciter scisco similis. Enim iaceo lenis ludus metuo paratus ut. Abigo exerci oppeto saluto sino vereor wisi ymo. Commoveo enim exerci facilisis humo similis typicus. Commodo diam quadrum quibus quidem secundum tum typicus. Augue conventio defui eu jumentum letalis persto populus. Bene commodo exerci ideo jus melior mos suscipere valetudo ymo.\r\n\r\nBrevitas duis facilisis haero humo sudo ullamcorper. Camur consectetuer diam facilisi nibh praesent vel. Aptent iustum odio patria suscipit tum. Duis huic nibh nobis praemitto si tincidunt usitas velit verto.\r\n\r\nAbbas at enim iriure voco. Abluo incassum jus. Iusto meus validus. Abbas dolore vindico. Aliquip duis immitto in pertineo refero roto singularis vero. Caecus eligo eros lucidus roto scisco uxor verto.\r\n\r\n"
@@ -517,7 +229,7 @@ taxonomies:
       uuid: c0912c91-1377-44ad-80c1-66b65865b834
     -
       vid: library_author
-      tid: '1'
+      tid: '67'
       langcode: en
       name: 'Lorena Castro'
       description__value: "Capto plaga quibus similis usitas utrum verto. Ad elit ex hos incassum macto paratus patria praesent suscipere. Iusto nimis quibus refoveo. Abbas defui elit enim gilvus ideo lucidus suscipere. Ea praemitto utrum vicis. Letalis quae veniam. Jumentum praemitto quadrum quia saepius sino. Accumsan imputo odio tego vicis. Antehabeo damnum diam dolore gemino letalis metuo nunc volutpat.\r\n\r\nCapto cogo luctus pertineo qui secundum vindico voco. Gemino nulla sit ulciscor. Aliquip at consequat huic plaga premo sed si te ut. Abdo gilvus ideo laoreet modo persto praemitto qui quidem vulputate. Bene caecus euismod mos probo vulputate. Cogo dolus erat eu ex letalis macto natu pertineo. Causa consequat ibidem vel.\r\n\r\nCui ea enim feugiat luptatum neque olim pala. At dolor facilisis interdico neo sed suscipere torqueo valde. Illum neque proprius. Facilisi persto populus verto. Abdo antehabeo defui interdico quia suscipit vulputate. Commodo cui ea importunus interdico iriure ludus typicus validus velit.\r\n\r\nComis duis magna nobis. Dignissim facilisis humo interdico jumentum lobortis plaga tincidunt velit venio. Consequat ibidem paulatim roto ut velit. Diam iusto mauris. Causa lobortis molior quadrum roto tamen tum virtus. Cogo ideo mos sino turpis vindico. Abico consequat facilisi ibidem os sagaciter turpis zelus.\r\n\r\nDistineo immitto praemitto si. Aliquip cogo magna nibh pertineo. Aptent camur cui saepius. Acsi blandit dolor haero jus mos sagaciter ullamcorper ymo. Esca neo odio vereor verto. Comis commoveo meus verto. Aliquip ea pala quidem sit torqueo utinam venio wisi. Abbas acsi antehabeo aptent ea facilisis paratus venio. Camur lenis lucidus melior pertineo praesent usitas valetudo validus veniam.\r\n\r\nBrevitas dolore hos nunc. Hos lobortis nimis probo. Aliquip et imputo in ludus nostrud populus roto vereor. Caecus eligo eu nutus saluto suscipit torqueo typicus voco wisi. Decet eu fere genitus ille tum vulputate. Abdo augue exputo facilisi inhibeo nimis olim persto refoveo. Duis inhibeo metuo pala pecus quadrum qui vereor. Capto decet gilvus ideo ille nibh vulpes.\r\n\r\nAbdo cogo exputo tamen. Esse gemino ut vero. Interdico nobis qui tamen vulpes. Cui letalis qui. Acsi lucidus mauris neo os saepius si ymo. Accumsan dolus ille macto nisl valetudo. Nulla quae rusticus scisco. Fere ideo melior meus minim obruo proprius typicus. Abluo gilvus sit. Abico aptent dignissim jumentum lenis te valetudo.\r\n\r\nIllum imputo ymo. Damnum eum mauris premo. Abigo exerci hos incassum loquor ludus mauris quis usitas. Lenis ratis sit suscipit usitas.\r\n\r\nConsequat dolus ideo proprius tamen. Appellatio dolore elit eu obruo probo torqueo virtus. Genitus occuro pala qui. Appellatio laoreet qui ulciscor. Abigo os praesent. Abigo abluo iustum natu nimis sed wisi.\r\n\r\nAppellatio at consectetuer haero nisl os sudo tation. Autem blandit gravis scisco. Acsi comis ea feugiat illum jus obruo quibus sagaciter vel. Amet iriure paulatim qui quibus quidem saepius sino sudo valetudo. Ille sino sudo validus vulpes. Aliquam ex patria probo.\r\n\r\nAcsi consectetuer premo sagaciter vicis. At esca iusto melior plaga populus premo uxor vereor zelus. Abluo accumsan defui duis gilvus hos jumentum letalis occuro pertineo. Consequat eros iriure metuo velit. Laoreet odio praesent quia sudo velit. Humo jumentum paulatim singularis velit. Abigo accumsan aliquip haero loquor obruo patria quidem secundum.\r\n\r\nMetuo quis similis vel. Acsi defui distineo ex hendrerit nimis. Aliquam aliquip laoreet valetudo. Aliquam aptent brevitas camur consectetuer conventio magna persto tego uxor. Et eum exputo huic nostrud obruo secundum verto vicis voco.\r\n\r\n"
@@ -527,7 +239,7 @@ taxonomies:
       uuid: c207b0f3-c355-4d4b-a99b-14be7f5662bf
     -
       vid: library_author
-      tid: '5'
+      tid: '71'
       langcode: es
       name: 'Mario Antonio Hernandez Ruiz'
       description__value: null
@@ -537,7 +249,7 @@ taxonomies:
       uuid: fc8df496-a15a-4f97-be44-8c1a3f697ba6
     -
       vid: library_author
-      tid: '4'
+      tid: '70'
       langcode: en
       name: 'Pedro Alonso Castillo'
       description__value: "Consequat laoreet venio. Dolor ideo singularis ullamcorper. Camur causa lucidus olim qui si ymo. Abdo eu in lenis lobortis sagaciter. Autem duis eros humo lenis magna paratus plaga ratis vulputate. Bene feugiat hos interdico saepius utinam vicis vindico vulputate.\r\n\r\nBene molior quae suscipit typicus verto. Abdo abico aliquip diam distineo dolore gravis obruo proprius qui. Acsi aliquam dolor eu gilvus huic jus nibh nostrud valde. Accumsan enim euismod paulatim roto ullamcorper.\r\n\r\nAcsi exputo fere huic inhibeo nunc populus vereor. Duis facilisi illum immitto molior nulla typicus venio. Aliquam eligo lenis roto tum usitas uxor. Brevitas enim incassum lucidus magna nobis usitas ut veniam vicis. Laoreet odio paulatim sagaciter. Feugiat ideo pala. Abdo dignissim eligo eum ibidem laoreet quidne virtus. Gravis macto quadrum quidem sit tego velit venio.\r\n\r\nDuis mauris pala praemitto tum utrum uxor velit. Ea oppeto paulatim ratis saepius turpis vulpes. Eligo patria vereor. Blandit conventio feugiat gilvus metuo occuro plaga.\r\n\r\nCommodo fere jumentum luptatum persto wisi. Huic odio sino. Nisl paulatim ullamcorper. Adipiscing defui magna nutus rusticus saluto scisco velit vicis. Acsi autem modo. Defui exerci odio pala. Abico eum lenis secundum tum. Aliquam caecus hendrerit huic iusto iustum paratus sit vicis virtus.\r\n\r\nDolor haero imputo laoreet occuro pala ratis tincidunt ulciscor vel. Humo ibidem illum saepius. Duis haero immitto jumentum melior saluto suscipere tincidunt wisi. Abico ille quidem. Distineo hendrerit natu vulputate. Bene ideo refoveo. Autem iaceo illum oppeto. Ad aliquip augue qui secundum tum valetudo.\r\n\r\nNeque pecus suscipere vulpes vulputate. Rusticus sino wisi. Caecus melior odio populus tamen vero volutpat. Abigo abluo aptent hos importunus mos nimis obruo quae si. Commoveo facilisi gilvus illum os plaga quia roto usitas. Esse ibidem melior sit vel voco vulputate.\r\n\r\nAugue erat imputo modo sit. Ad exerci tincidunt. Luctus proprius validus ymo. Conventio luptatum minim oppeto quia torqueo validus verto. Amet loquor paulatim tego. Acsi decet facilisis fere macto nulla ullamcorper zelus. Adipiscing nulla pagus. Ibidem quis refoveo roto saluto. Gemino gravis obruo praesent tamen te. Abdo comis commoveo dolus haero nisl suscipit ullamcorper.\r\n\r\nAliquip duis in melior nulla nutus pecus populus tation vicis. Abluo acsi capto comis damnum iaceo nisl oppeto os. Eligo fere iaceo ibidem macto mauris meus modo uxor vicis. Acsi gemino gilvus in nibh sit tamen tation typicus velit. Brevitas imputo olim. Abdo ludus quidem velit. Abdo caecus erat nimis paulatim pecus saepius. Dolus exerci facilisi gravis nunc quibus vero.\r\n\r\nEligo erat euismod immitto imputo populus singularis ulciscor ut vindico. Jugis pecus quae sit utinam venio. Camur causa consequat cui mauris mos pagus scisco vel. Caecus enim gravis. Abbas antehabeo molior neque obruo patria quidem sagaciter velit. Camur dolore ex magna occuro odio pertineo qui tamen. Abbas ad cogo elit patria plaga praesent roto si tamen.\r\n\r\nLuptatum roto similis. Defui eum facilisi metuo meus nibh paulatim probo tincidunt torqueo. Commodo gravis jugis jus tamen. Importunus molior refoveo ullamcorper veniam. Abluo consequat gemino ille illum obruo olim vulputate. At commoveo ludus ratis sudo uxor veniam.\r\n\r\nEsse natu quidem. Accumsan aliquip nimis. Abico enim quadrum roto sed tego tincidunt utinam. Abdo amet duis eligo occuro. Cogo jugis luptatum modo mos torqueo ulciscor utrum. Capto eros et pneum. Aliquam blandit paulatim sagaciter sit tation. Augue blandit diam eu exputo paratus quis suscipere te.\r\n\r\n"
@@ -547,7 +259,7 @@ taxonomies:
       uuid: b8e45309-470f-4126-89ca-b0fd2b1fe9df
     -
       vid: library_author
-      tid: '6'
+      tid: '72'
       langcode: es
       name: 'Richard 3DStudio'
       description__value: null
@@ -557,7 +269,7 @@ taxonomies:
       uuid: 6477decd-7c28-47e4-8bb1-4819ca563a41
     -
       vid: library_author
-      tid: '2'
+      tid: '68'
       langcode: zxx
       name: 'Vicente Fernandez Martinez'
       description__value: "Gemino humo jugis luptatum nostrud nutus quae. Ibidem immitto inhibeo persto rusticus saluto. Comis commodo dolore iaceo ibidem immitto inhibeo nobis pertineo refoveo. Scisco tego turpis. Accumsan eros exputo obruo os si.\r\n\r\nBlandit causa consequat fere nisl paratus quia valde. Aptent distineo eu ex in mauris quidem saluto suscipere tego. Augue consequat dolus ex praesent qui. Camur eligo esca illum mauris scisco tincidunt. Aptent conventio ille imputo incassum laoreet nisl nobis pala refero. Immitto imputo nibh patria. Consequat eum molior qui quibus sagaciter tamen validus voco zelus.\r\n\r\nCommodo erat esca. Aliquam appellatio autem eligo iaceo lobortis nisl paulatim torqueo. Eros lobortis occuro oppeto populus. Caecus in nunc pertineo refero tum validus vereor. Et gilvus humo ibidem jugis quis secundum. Abluo qui virtus. Camur causa dolore eum natu nutus sino valetudo virtus. Aliquip eu obruo virtus. Acsi aliquip exerci gravis letalis loquor metuo nulla rusticus.\r\n\r\nEsca iriure mauris pneum ullamcorper. Capto facilisis gemino minim modo pagus premo qui sudo. Abbas abdo eligo exerci ideo paulatim uxor venio virtus. Abbas defui immitto occuro qui saepius ullamcorper vero vicis.\r\n\r\nEros gilvus illum in inhibeo macto pagus plaga valde. Acsi persto ullamcorper valde. Acsi luptatum quis te usitas. Antehabeo appellatio augue brevitas commoveo huic minim patria plaga tego. Brevitas gravis immitto macto obruo probo quibus utinam validus. Damnum dolore refoveo. Cogo consequat duis hendrerit immitto imputo scisco utrum. Comis macto ratis veniam. Camur esca esse premo sudo tamen ulciscor uxor.\r\n\r\nCogo oppeto volutpat. Ludus quidem singularis sino. Abigo abluo decet iaceo occuro ut. Abico fere praemitto sino. Mauris nunc quibus quis utinam zelus. Conventio dignissim genitus hendrerit macto proprius singularis ulciscor utinam. Abbas euismod ibidem metuo tincidunt vero.\r\n\r\nAliquip defui eligo enim facilisis feugiat refero sudo suscipit ulciscor. Cogo eligo inhibeo magna meus odio oppeto utinam. Gilvus quia suscipit virtus. Eum inhibeo mos odio praemitto scisco secundum te tincidunt voco. Cui humo suscipit tincidunt uxor vulpes. At bene consequat jugis quibus tincidunt torqueo ullamcorper velit virtus. Eligo minim neo probo te ulciscor vicis ymo.\r\n\r\nAccumsan brevitas commoveo dolore imputo interdico pagus quidne virtus. Cui facilisi neque nulla usitas. Abdo autem lenis pneum. Aliquip consectetuer exputo jugis letalis nunc praesent vicis. Hendrerit mos similis. Huic iustum oppeto refero.\r\n\r\nAd caecus duis exputo nutus quidne si turpis valde. Aliquip appellatio at ex exerci facilisis quae quia sino usitas. Causa consequat quae veniam. Autem erat gemino huic nulla praemitto te. At cogo dolor ideo iriure jumentum lobortis sit.\r\n\r\nAutem et facilisi minim praemitto qui rusticus sed. Distineo illum natu wisi. Exerci inhibeo jus patria sudo ullamcorper. Defui eligo melior odio. Dignissim elit iaceo metuo os uxor vero vulputate. Acsi antehabeo elit huic molior secundum sudo.\r\n\r\nAccumsan consectetuer defui elit ibidem populus praemitto sudo vicis vindico. Abluo distineo eu patria tincidunt. Esse hendrerit lenis metuo typicus utrum voco. Nobis olim paulatim tincidunt.\r\n\r\nDiam interdico obruo rusticus vindico. Abluo consectetuer iaceo letalis neque pertineo ulciscor usitas vulpes. Enim jumentum vulputate. Aptent feugiat lobortis natu neque turpis valetudo. Autem conventio laoreet letalis nibh singularis tego typicus voco wisi.\r\n\r\n"
@@ -568,7 +280,7 @@ taxonomies:
   library_formats:
     -
       vid: library_formats
-      tid: '10'
+      tid: '76'
       langcode: es
       name: 'Audios o podcast'
       description__value: null
@@ -585,7 +297,7 @@ taxonomies:
           height: '145'
     -
       vid: library_formats
-      tid: '7'
+      tid: '73'
       langcode: es
       name: 'Documentos o Publicaciones'
       description__value: null
@@ -596,7 +308,7 @@ taxonomies:
       field_formats_image: {  }
     -
       vid: library_formats
-      tid: '8'
+      tid: '74'
       langcode: es
       name: 'Imágenes o infografías'
       description__value: null
@@ -607,7 +319,7 @@ taxonomies:
       field_formats_image: {  }
     -
       vid: library_formats
-      tid: '9'
+      tid: '75'
       langcode: es
       name: 'Videos o animaciones'
       description__value: null
@@ -619,7 +331,7 @@ taxonomies:
   library_keywords:
     -
       vid: library_keywords
-      tid: '11'
+      tid: '77'
       langcode: es
       name: Colombia
       description__value: null
@@ -629,7 +341,7 @@ taxonomies:
       uuid: 06379649-5c0f-47a1-b887-d53604746ba8
     -
       vid: library_keywords
-      tid: '12'
+      tid: '78'
       langcode: es
       name: Comunicación
       description__value: null
@@ -640,7 +352,7 @@ taxonomies:
   library_type_document:
     -
       vid: library_type_document
-      tid: '13'
+      tid: '79'
       langcode: es
       name: 'Estudios e investigaciones'
       description__value: null
@@ -657,7 +369,7 @@ taxonomies:
           height: '2040'
     -
       vid: library_type_document
-      tid: '14'
+      tid: '80'
       langcode: es
       name: 'Mediciones NSU con los servicios de comunicaciones'
       description__value: null
@@ -676,7 +388,7 @@ taxonomies:
   news_tags:
     -
       vid: news_tags
-      tid: '17'
+      tid: '83'
       langcode: es
       name: 'Blog crc'
       description__value: null
@@ -686,7 +398,7 @@ taxonomies:
       uuid: c3774c64-3419-41bb-965e-f1c637f9d22e
     -
       vid: news_tags
-      tid: '18'
+      tid: '84'
       langcode: es
       name: Circular
       description__value: null
@@ -696,7 +408,7 @@ taxonomies:
       uuid: 686200f1-1bdb-43d3-953e-68f680f2e780
     -
       vid: news_tags
-      tid: '16'
+      tid: '82'
       langcode: es
       name: 'Comunicado de prensa'
       description__value: null
@@ -706,7 +418,7 @@ taxonomies:
       uuid: 934562d1-2649-496e-b054-3fbd33c37add
     -
       vid: news_tags
-      tid: '15'
+      tid: '81'
       langcode: es
       name: Estudio
       description__value: null
@@ -716,7 +428,7 @@ taxonomies:
       uuid: ef06cb2d-6af9-498f-a37a-3543c4c8d1ee
     -
       vid: news_tags
-      tid: '36'
+      tid: '85'
       langcode: es
       name: Eventos
       description__value: null
@@ -726,7 +438,7 @@ taxonomies:
       uuid: ab6d5e1f-091a-40fe-ad6f-8bbf97521469
     -
       vid: news_tags
-      tid: '37'
+      tid: '86'
       langcode: es
       name: 'Hojas de vida'
       description__value: null
@@ -736,7 +448,7 @@ taxonomies:
       uuid: 426114df-13b2-4efc-ba12-0f1d6680d0f8
     -
       vid: news_tags
-      tid: '38'
+      tid: '87'
       langcode: es
       name: Licitación
       description__value: null
@@ -746,7 +458,7 @@ taxonomies:
       uuid: a1f2e3fc-2178-48f7-bc95-1693d9963946
     -
       vid: news_tags
-      tid: '39'
+      tid: '88'
       langcode: es
       name: 'Proyectos regulatorios'
       description__value: null
@@ -757,7 +469,7 @@ taxonomies:
   projects_operator:
     -
       vid: projects_operator
-      tid: '19'
+      tid: '89'
       langcode: es
       name: Claro
       description__value: null
@@ -767,7 +479,7 @@ taxonomies:
       uuid: 1aed70c8-4eb0-4083-ac0b-56310b58a187
     -
       vid: projects_operator
-      tid: '20'
+      tid: '90'
       langcode: es
       name: EPM
       description__value: null
@@ -777,7 +489,7 @@ taxonomies:
       uuid: bee46fe8-63ae-4661-aa94-90bd7cc7b8ea
     -
       vid: projects_operator
-      tid: '21'
+      tid: '91'
       langcode: es
       name: Movistar
       description__value: null
@@ -787,7 +499,7 @@ taxonomies:
       uuid: 93c628dc-75c7-486e-b7ef-d1e458f3ff6a
     -
       vid: projects_operator
-      tid: '22'
+      tid: '92'
       langcode: es
       name: Tigo
       description__value: null
@@ -798,7 +510,7 @@ taxonomies:
   projects_services:
     -
       vid: projects_services
-      tid: '25'
+      tid: '95'
       langcode: es
       name: 'Internet Fijo'
       description__value: null
@@ -808,7 +520,7 @@ taxonomies:
       uuid: 97b4198f-5216-4451-9728-8d1e9d88ee03
     -
       vid: projects_services
-      tid: '26'
+      tid: '96'
       langcode: es
       name: 'Internet Móvil'
       description__value: null
@@ -818,7 +530,7 @@ taxonomies:
       uuid: df563439-b9c0-498d-b4a5-7a5c03d52c50
     -
       vid: projects_services
-      tid: '29'
+      tid: '99'
       langcode: es
       name: Postal
       description__value: null
@@ -828,7 +540,7 @@ taxonomies:
       uuid: 3a051b9c-a73a-47c6-8a1d-dbd67d707700
     -
       vid: projects_services
-      tid: '24'
+      tid: '94'
       langcode: es
       name: Radio
       description__value: null
@@ -838,7 +550,7 @@ taxonomies:
       uuid: e6d7fe31-7860-4371-9c7a-94a7b01f3bfd
     -
       vid: projects_services
-      tid: '27'
+      tid: '97'
       langcode: es
       name: 'Telefonía Fija'
       description__value: null
@@ -848,7 +560,7 @@ taxonomies:
       uuid: d464c833-1e51-4aa6-a771-e82bc36948bc
     -
       vid: projects_services
-      tid: '28'
+      tid: '98'
       langcode: es
       name: 'Telefonía Movil'
       description__value: null
@@ -858,7 +570,7 @@ taxonomies:
       uuid: fe25610e-7bcd-46ed-9df9-a162e18aaeb0
     -
       vid: projects_services
-      tid: '23'
+      tid: '93'
       langcode: es
       name: Televisión
       description__value: null
@@ -867,14 +579,51 @@ taxonomies:
       parent: '0'
       uuid: dcc81126-3a8f-4070-bc9d-2f123aebe115
   tags: {  }
-  tipo_documento_o_link_transparen: {  }
+  tipo_documento_o_link_transparen:
+    -
+      vid: tipo_documento_o_link_transparen
+      tid: '165'
+      langcode: es
+      name: Lineamientos
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: a2bb064f-2c7f-4a54-8fa8-335633280f83
+    -
+      vid: tipo_documento_o_link_transparen
+      tid: '164'
+      langcode: es
+      name: Manuales
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 548da1af-806b-40cf-a7b7-418734124a22
+    -
+      vid: tipo_documento_o_link_transparen
+      tid: '166'
+      langcode: es
+      name: Políticas
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 5c916d85-e181-4021-8e26-969107641395
   transparencia_lista_categorias_p: {  }
+  transp_list_cate_infor_porme: {  }
   transp_list_cat_ejec_presu: {  }
+  transp_list_cat_plan_accion: {  }
+  transp_list_cat_plan_institu: {  }
+  transp_list_cat_prog_gest_docuta: {  }
+  transp_list_cat_tabl_retenci_doc: {  }
   trans_lista_catego_inform_decisi: {  }
+  trans_lis_cat_infr_rendi_cuenta: {  }
+  trnasparencia_lista_de_categoria: {  }
   type_projects_comments:
     -
       vid: type_projects_comments
-      tid: '32'
+      tid: '102'
       langcode: es
       name: 'Agenda Regulatoria'
       description__value: null
@@ -884,7 +633,7 @@ taxonomies:
       uuid: 7ad69e89-42f3-4d59-90f8-3379c002b20c
     -
       vid: type_projects_comments
-      tid: '34'
+      tid: '104'
       langcode: es
       name: 'Esquema Publicación'
       description__value: null
@@ -894,7 +643,7 @@ taxonomies:
       uuid: 545c520a-0ac2-41bf-8c3a-122c2b5f27fa
     -
       vid: type_projects_comments
-      tid: '35'
+      tid: '105'
       langcode: es
       name: Pedagógico
       description__value: null
@@ -904,7 +653,7 @@ taxonomies:
       uuid: 53709e69-069a-4d1e-8442-7773509d0e7a
     -
       vid: type_projects_comments
-      tid: '33'
+      tid: '103'
       langcode: es
       name: Planes
       description__value: null
@@ -914,7 +663,7 @@ taxonomies:
       uuid: 83cfe62b-3677-4884-a438-c94fcf217bd1
     -
       vid: type_projects_comments
-      tid: '31'
+      tid: '101'
       langcode: es
       name: 'Regulatorio Comunicaciones'
       description__value: null
@@ -924,7 +673,7 @@ taxonomies:
       uuid: 83956553-b523-41a8-9236-000696e3e3f5
     -
       vid: type_projects_comments
-      tid: '30'
+      tid: '100'
       langcode: es
       name: 'Regulatorio Contenidos Audiovisuales'
       description__value: null
@@ -932,3 +681,304 @@ taxonomies:
       weight: '5'
       parent: '0'
       uuid: 45099b3f-f4c8-436e-987d-ee09cd8ba711
+blocks:
+  -
+    info: 'Home [Encabezado]'
+    langcode: es
+    uuid: 06f5900d-1d33-41c8-a2b4-222862ad15a8
+    bundle: home_header
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_home_header_logo_govco:
+        -
+          target_id: '2'
+          alt: logo-gov-co
+          title: ''
+          width: '190'
+          height: '45'
+      field_home_header_logo_webcrc:
+        -
+          target_id: '1'
+          alt: logo-crc-comision-de-regulacion-de-comunicaciones
+          title: ''
+          width: '234'
+          height: '125'
+  -
+    info: 'Transparencia y acceso a la información pública [Encabezado]'
+    langcode: es
+    uuid: 63d3fd79-a7e3-4ce3-aba1-af6e05bc66e2
+    bundle: bloq_descrip_menu_transparencia
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>De acuerdo a la Ley 1712 de 2014 por la cual se crea la Ley de Transparencia y del Derecho a la Información Pública Nacional' se pone a disposición esta sección en la cual los ciudadanos, sector TIC e interesados pueden conocer de primera mano la información del Ministerio de Tecnologías de la Información y las Comunicaciones.<br />\r\n<br />\r\nSegún como lo dicta la Ley, la información generada por las entidades del Estado no podrá ser reservada o limitada, por el contrario es de carácter público, por tal motivo se proporciona y facilita el acceso a la misma en los términos más amplios posibles y a través de los medios amparados por ley. GGGGG<br />\r\n<br />\r\nDe acuerdo a los mínimos a publicar de que tratan los artículos 9, 10 y 11 de la Ley 1712 de 2014, sin perjuicio de lo previsto en el artículo inmediatamente siguiente respecto a los sujetos obligados a publicar en los sistemas de información del Estado, se ponen a disposición los siguientes temarios:</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+      field_link_decretos_descrip_menu:
+        -
+          uri: 'internal:/sites/default/files/webcrc/documents/2021-11/Resolucion_1519_2020.pdf'
+          title: 'Decreto único reglamentario sectorial'
+          options: {  }
+  -
+    info: 'Transparencia: Políticas, lineamientos y manuales [ Introducción Encabezado ]'
+    langcode: es
+    uuid: a84f9802-7bf9-49c3-b0ed-68f049029a6a
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Texto introduccion</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Información sobre decisiones que puede afectar al público [ Introducción Encabezado ]'
+    langcode: es
+    uuid: 9e628ac4-a19b-4f1e-b87f-e82840994c43
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>texto de introducción</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Presupuesto general de ingresos, gastos e inversión [ Encabezado ]'
+    langcode: es
+    uuid: f218185d-e47c-48cd-aadb-9ba2918244bd
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Texto de introducción</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Plan de Adqusiciones [ Introduccion Encabezado ]'
+    langcode: es
+    uuid: e5eb02e6-9c81-47d2-94d8-b38ccec9f999
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Texto de introduccion</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: ejecución presupuestal [ Introducción - Encabezado ] '
+    langcode: es
+    uuid: 3acdbfe6-7c56-4840-8651-36c26c1ad57c
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Texto de introducción de ejecución presupuestal</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Plan de acción [ Introducción - Encabezado ]'
+    langcode: es
+    uuid: 4afce3fa-8c1a-4f61-92dd-4b072b34e510
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Texto de introducción&nbsp;Transparencia: Plan de acción [ Introducción - Encabezado ]</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Planes institucionales [ Introducción - Encabezado ]'
+    langcode: es
+    uuid: 4e70d309-4dc3-4259-8a25-e4ef7016d4da
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Introducción planes institucionales</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Informes de empalme [ Introducción - Encabezado ]'
+    langcode: es
+    uuid: 97657fef-20d3-4c1b-8a35-3f61844bd2ca
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Texto de introducción&nbsp;</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Informes de gestión [ Introducción - encabezado ]'
+    langcode: es
+    uuid: 8dc92244-8dc7-49db-afe6-189a6db95a46
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>texto introducción</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Trnasparencia: informes rendición de cuentas [ Introducción - Encabezado ]'
+    langcode: es
+    uuid: 21a3ebe4-6542-42ea-aee8-b0d6026dfb0e
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>texto introducción</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Informes a organismos de inspección [ Introducción - Encabezado ]'
+    langcode: es
+    uuid: f84c383e-b33a-46e9-b096-1454d9951fab
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Introducción&nbsp;4.7.4 Informes a organismos de inspección, vigilancia y control</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Planes de mejoramiento [ Introduccion - Encabezado ]'
+    langcode: es
+    uuid: 78cdf21c-cf4b-41b0-9261-1c9b59598e2d
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Informe Pormenorizado [ Introducción - Encabezado ]'
+    langcode: es
+    uuid: 09f2a2df-4469-4165-a6fb-8b6418562f6f
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>introducccion</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Informe sobre defensa publica [ Introducción - Encabezado ]'
+    langcode: es
+    uuid: 287285d3-2a71-4fb2-9bea-1f9b4b71af05
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Texto introduccion</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Registros de activos de información [ Introduccion - Encabezado ]'
+    langcode: es
+    uuid: e237cd4e-ae34-4589-8ba2-7f0181d62613
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>texto introducc</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Registros de activos de información [ Pie de pagina ]'
+    langcode: es
+    uuid: 069fc02b-47b0-4af7-b931-13c5bc3b796f
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Lo invitamos a conocer el catálogo de datos abiertos del Índice de Información Clasificada y Reservada de la CRC, &nbsp;publicado en <a href=\"https://www.datos.gov.co/dataset/Registro-de-Activos-de-Informaci-n-de-la-CRC/6ip3-8q5c\">datos.gov.co</a></p>\r\n"
+          summary: ''
+          format: full_html
+  -
+    info: 'Transparencia: Indice de información clasificada [ Introducción - Encabezado ]'
+    langcode: es
+    uuid: a6cf0b9b-f995-488f-bf9f-e3d374e79313
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>texto&nbsp;</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Indice de información clasificada [ pie de pagina ]'
+    langcode: es
+    uuid: 947a2ab3-9808-44c8-a9de-afd08b9ead38
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Lo invitamos a conocer el catálogo de datos abiertos del Índice de Información Clasificada y Reservada de la CRC, &nbsp;publicado en <a href=\"https://www.datos.gov.co/dataset/-ndice-de-Informaci-n-Clasificada-y-Reservada-CRC/xtju-zcke\">datos.gov.co</a></p>\r\n"
+          summary: ''
+          format: full_html
+  -
+    info: 'Transparencia: Esquema de publicación [ Introduccion- Encabezado ]'
+    langcode: es
+    uuid: 8a03e2b9-1fcb-4a45-b020-f42bfc3a5f6c
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>texto texto</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Programa de gestion documental [ Introduccion - Encabezado ]'
+    langcode: es
+    uuid: 35f3ddb0-7e49-4e53-bf53-632e24dce9a0
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>texto texto texto</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
