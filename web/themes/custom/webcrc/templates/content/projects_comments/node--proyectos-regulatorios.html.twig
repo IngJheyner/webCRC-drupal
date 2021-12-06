@@ -93,16 +93,22 @@
         {# ===== ===== STATE ===== ===== #}
         <div class="node__content-info--items state d-flex">
 
-          {%
-            set info_state = {
-              'icon' : content.field_estado_proyectos.0['#markup'] == 'Abierto' ? '/themes/custom/webcrc/src/images/proyecto-abierto.svg' : '/themes/custom/webcrc/src/images/proyecto-finalizado.svg',
-              'text' : content.field_estado_proyectos.0['#markup'] == 'Abierto' ? 'open Project'|trans : 'finished Project'|trans,
-              'alt' : content.field_estado_proyectos.0['#markup'] == 'Abierto' ? 'open Project'|trans : 'finished Project'|trans,
-            }
-          %}         
+          {% if content.field_estado_proyectos.0['#markup'] == 'Abierto' %}
+            {% set icon = '/themes/custom/webcrc/src/images/proyecto-abierto.svg' %}
+            {% set text = 'open Project'|trans %}
+            {% set alt = 'open Project'|trans %}
+          {% elseif content.field_estado_proyectos.0['#markup'] == 'Finalizado'%}
+            {% set icon = '/themes/custom/webcrc/src/images/proyecto-finalizado.svg' %}
+            {% set text = 'finished Project'|trans %}
+            {% set alt = 'finished Project'|trans %}
+          {% else %}
+            {% set text = 'Discontinued'|trans %}
+            {% set alt = 'Discontinued'|trans %}
+            {% set icon = '/themes/custom/webcrc/src/images/icono-suspendido-circulo.svg' %}            
+          {% endif %}       
           
-          <img src="{{ info_state.icon }}" alt="{{ info_state.alt }}" onerror="this.remove();">
-          <p class="m-auto flex-grow-1 flex-lg-grow-0 pl-1 pl-lg-0">{{ info_state.text }}</p>        
+          <img src="{{ icon }}" alt="{{ alt }}" onerror="this.remove();">
+          <p class="m-auto flex-grow-1 flex-lg-grow-0 pl-1 pl-lg-0">{{ text }}</p>        
 
         </div>
 
