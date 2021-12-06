@@ -1,0 +1,18 @@
+uuid: 41f56ea7-d1eb-44dd-bccd-b60d3320906e
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_politicas_lineamientos_ma
+id: node.transp_politicas_lineamientos_ma.created
+field_name: created
+entity_type: node
+bundle: transp_politicas_lineamientos_ma
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

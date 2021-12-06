@@ -1,0 +1,20 @@
+uuid: 451c7151-8736-40a6-b8bf-9d11f3b3f9f2
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.tra_plan_anual_adquisi_documento
+id: node.tra_plan_anual_adquisi_documento.uid
+field_name: uid
+entity_type: node
+bundle: tra_plan_anual_adquisi_documento
+label: 'Escrito por'
+description: 'El nombre de usuario del autor del contenido.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

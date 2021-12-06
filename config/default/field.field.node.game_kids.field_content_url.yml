@@ -14,7 +14,7 @@ bundle: game_kids
 label: Enlace
 description: 'Url del juego'
 required: false
-translatable: false
+translatable: true
 default_value:
   -
     attributes: {  }

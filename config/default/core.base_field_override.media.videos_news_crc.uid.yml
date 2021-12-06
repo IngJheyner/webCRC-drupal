@@ -1,0 +1,20 @@
+uuid: 9f407dee-8ff8-4940-9fbd-3f16f9dd7dcd
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.videos_news_crc
+id: media.videos_news_crc.uid
+field_name: uid
+entity_type: media
+bundle: videos_news_crc
+label: 'Escrito por'
+description: 'El ID de usuario del autor.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

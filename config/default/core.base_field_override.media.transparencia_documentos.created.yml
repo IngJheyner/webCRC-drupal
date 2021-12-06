@@ -1,0 +1,18 @@
+uuid: d7014060-f747-4306-a5d5-c34c077c5e73
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.transparencia_documentos
+id: media.transparencia_documentos.created
+field_name: created
+entity_type: media
+bundle: transparencia_documentos
+label: Fecha
+description: 'El momento en el cual el elemento multimedia fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getRequestTime'
+settings: {  }
+field_type: created

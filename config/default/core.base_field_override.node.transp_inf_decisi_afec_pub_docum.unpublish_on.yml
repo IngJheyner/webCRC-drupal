@@ -1,0 +1,18 @@
+uuid: 01798ee2-9b66-471b-be9d-c06c1571bf93
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_inf_decisi_afec_pub_docum
+id: node.transp_inf_decisi_afec_pub_docum.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: transp_inf_decisi_afec_pub_docum
+label: 'Quitar publicación en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

@@ -215,294 +215,6 @@ menus:
     weight: '0'
     langcode: es
     uuid: a2cfe87b-7de0-4e22-bb0e-bfdbb4c0c095
-blocks:
-  -
-    info: 'Temas de Interés [ Se debe solo agregar o editar una sola vez este bloque ]'
-    langcode: es
-    uuid: 75dc6e84-7257-481b-9c84-294ca5e39f7a
-    bundle: themes_interest
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_interest_content:
-        -
-          target_id: '4543'
-          target_revision_id: '4543'
-        -
-          target_id: '4546'
-          target_revision_id: '4546'
-        -
-          target_id: '4547'
-          target_revision_id: '4547'
-        -
-          target_id: '4548'
-          target_revision_id: '4548'
-        -
-          target_id: '4549'
-          target_revision_id: '4549'
-  -
-    info: 'Home [Encabezado]'
-    langcode: es
-    uuid: 06f5900d-1d33-41c8-a2b4-222862ad15a8
-    bundle: home_header
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_home_header_logo_govco:
-        -
-          target_id: '37'
-          alt: logo-gov-co
-          title: ''
-          width: '190'
-          height: '45'
-      field_home_header_logo_webcrc:
-        -
-          target_id: '38'
-          alt: logo-crc-comision-de-regulacion-de-comunicaciones
-          title: ''
-          width: '234'
-          height: '125'
-  -
-    info: Indicadores
-    langcode: es
-    uuid: a6f79fbc-3c22-45c9-b011-f3b39cdcfe46
-    bundle: indicators
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_content_title:
-        -
-          value: Indicadores
-      field_icon:
-        -
-          target_id: '35'
-      field_indicator:
-        -
-          target_id: '32'
-          target_revision_id: '32'
-        -
-          target_id: '33'
-          target_revision_id: '33'
-        -
-          target_id: '34'
-          target_revision_id: '34'
-        -
-          target_id: '35'
-          target_revision_id: '35'
-        -
-          target_id: '36'
-          target_revision_id: '36'
-      field_logo:
-        -
-          target_id: '35'
-      field_primary_url:
-        -
-          uri: 'https://www.postdata.gov.co/'
-          title: 'Información tomada de www.postdata.gov.co'
-          options: {  }
-  -
-    info: 'Ultimas noticias'
-    langcode: es
-    uuid: d6b7ca44-d780-4080-8a98-17d98296f931
-    bundle: last_news
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_content_title:
-        -
-          value: Noticias
-      field_content_title_primary:
-        -
-          value: Últimas
-      field_content_view:
-        -
-          target_id: news
-          display_id: last_news
-          data: 'a:5:{s:8:"argument";N;s:5:"limit";N;s:6:"offset";N;s:5:"title";N;s:5:"pager";N;}'
-      field_icon:
-        -
-          target_id: '35'
-  -
-    info: 'Boletin de noticias'
-    langcode: es
-    uuid: 8df82bb0-b5c2-4fa4-a354-97253c686628
-    bundle: newsletter
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_content_description:
-        -
-          value: 'Suscríbase a nuestro boletín y manténgase actualizado con las últimas noticias del sector. <br /> Los campos con (*) son obligatorios'
-          format: editor_cont_transparencia
-      field_content_form:
-        -
-          target_id: boletin_de_noticias
-          default_data: ''
-          status: open
-          open: ''
-          close: ''
-      field_content_title:
-        -
-          value: 'Boletín de noticias'
-      field_icon:
-        -
-          target_id: '46'
-  -
-    info: 'Tabs redes sociales'
-    langcode: es
-    uuid: b78e3423-dddb-49b0-97af-f37d06b61a79
-    bundle: tabs_social_networks
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_content_tabs:
-        -
-          target_id: '41'
-          target_revision_id: '41'
-  -
-    info: 'Contenidos mas importantes crc'
-    langcode: es
-    uuid: f054bf59-bf4c-47a8-a4c3-aebdbb350de5
-    bundle: important_content_crc
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_content_tabs:
-        -
-          target_id: '31'
-          target_revision_id: '31'
-      field_content_title:
-        -
-          value: 'en la CRC'
-      field_content_title_primary:
-        -
-          value: 'Lo más importante '
-      field_icon:
-        -
-          target_id: '34'
-  -
-    info: rss
-    langcode: es
-    uuid: 1362f50e-7d7c-4e7c-a8dc-7027dd9b7214
-    bundle: feed_block
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_intro_text: {  }
-      field_read_more: {  }
-      field_rss_feed:
-        -
-          feed_uri: 'https://www.postdata.gov.co/postdata-rss.xml'
-          count: '5'
-          display_date: '1'
-          date_format: news_dates
-          custom_date_format: 'F j, Y'
-          display_description: '1'
-          description_length: '300'
-          description_plaintext: '1'
-  -
-    info: 'Barra de accesibilidad'
-    langcode: es
-    uuid: 527852f6-5c8d-49c0-a38c-a8ea26a0a2b6
-    bundle: accessibility_toolbar
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_content_paragraph:
-        -
-          target_id: '14'
-          target_revision_id: '14'
-        -
-          target_id: '15'
-          target_revision_id: '15'
-        -
-          target_id: '16'
-          target_revision_id: '16'
-        -
-          target_id: '17'
-          target_revision_id: '17'
-  -
-    info: 'Contenidos consultados'
-    langcode: es
-    uuid: 9ef5effc-94da-4dce-a1d8-5bac3078b416
-    bundle: tabs_consulted_content
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_tabs_consulted_content:
-        -
-          target_id: '24'
-          target_revision_id: '24'
-  -
-    info: 'Pie de pagina - Informacion de contacto'
-    langcode: es
-    uuid: 0d3dc0aa-8df4-44fc-809c-b63a77cf87c9
-    bundle: home_footer
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_home_footer_contacts:
-        -
-          value: 'Línea atención al ciudadano: (+57) 601 319 8300'
-        -
-          value: 'Línea gratuita nacional: 01-8000-919278'
-        -
-          value: 'Fax: (+57) 601 319 8301'
-      field_home_footer_img_org:
-        -
-          target_id: '64'
-          alt: organizacion-prai-crc
-          title: ''
-          width: '101'
-          height: '45'
-        -
-          target_id: '65'
-          alt: organizacion-regulatel-crc
-          title: ''
-          width: '88'
-          height: '45'
-      field_home_footer_insti_mail:
-        -
-          value: institucional@crcom.gov.co
-      field_home_footer_judicial_mail:
-        -
-          value: notificacionesjudiciales@crcom.gov.co
-      field_home_footer_location:
-        -
-          value: 'Dirección: Cl 59 a bis # 5 - 53, Ed Link Siete Sesenta P9 Bogoá, Colombia.'
-        -
-          value: 'Código Postal: 11011'
-        -
-          value: 'Horario de Atención: 8:30 a.m. a 5:30 p.m. en jornada continua'
-      field_home_footer_logo_webcrc:
-        -
-          target_id: '63'
-          alt: logo-comision-de-regulacion-de-comunicaciones-crc
-          title: ''
-          width: '195'
-          height: '65'
-      field_home_footer_title_social:
-        -
-          value: 'Siguenos en:'
-      field_home_footer_txt_org:
-        -
-          value: 'Organizaciones internacionales presididas por la CRC'
-      field_social_networks:
-        -
-          target_id: '42'
-          target_revision_id: '42'
-        -
-          target_id: '43'
-          target_revision_id: '43'
-        -
-          target_id: '44'
-          target_revision_id: '44'
-        -
-          target_id: '45'
-          target_revision_id: '45'
-        -
-          target_id: '46'
-          target_revision_id: '46'
 taxonomies:
   library_author:
     -
@@ -1268,3 +980,290 @@ blocks:
           value: "<p>texto texto texto</p>\r\n"
           summary: ''
           format: editor_cont_transparencia
+  -
+    info: 'Temas de Interés [ Se debe solo agregar o editar una sola vez este bloque ]'
+    langcode: es
+    uuid: 75dc6e84-7257-481b-9c84-294ca5e39f7a
+    bundle: themes_interest
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_interest_content:
+        -
+          target_id: '4543'
+          target_revision_id: '4543'
+        -
+          target_id: '4546'
+          target_revision_id: '4546'
+        -
+          target_id: '4547'
+          target_revision_id: '4547'
+        -
+          target_id: '4548'
+          target_revision_id: '4548'
+        -
+          target_id: '4549'
+          target_revision_id: '4549'
+  -
+    info: 'Home [Encabezado]'
+    langcode: es
+    uuid: 06f5900d-1d33-41c8-a2b4-222862ad15a8
+    bundle: home_header
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_home_header_logo_govco:
+        -
+          target_id: '37'
+          alt: logo-gov-co
+          title: ''
+          width: '190'
+          height: '45'
+      field_home_header_logo_webcrc:
+        -
+          target_id: '38'
+          alt: logo-crc-comision-de-regulacion-de-comunicaciones
+          title: ''
+          width: '234'
+          height: '125'
+  -
+    info: Indicadores
+    langcode: es
+    uuid: a6f79fbc-3c22-45c9-b011-f3b39cdcfe46
+    bundle: indicators
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_content_title:
+        -
+          value: Indicadores
+      field_icon:
+        -
+          target_id: '35'
+      field_indicator:
+        -
+          target_id: '32'
+          target_revision_id: '32'
+        -
+          target_id: '33'
+          target_revision_id: '33'
+        -
+          target_id: '34'
+          target_revision_id: '34'
+        -
+          target_id: '35'
+          target_revision_id: '35'
+        -
+          target_id: '36'
+          target_revision_id: '36'
+      field_logo:
+        -
+          target_id: '35'
+      field_primary_url:
+        -
+          uri: 'https://www.postdata.gov.co/'
+          title: 'Información tomada de www.postdata.gov.co'
+          options: {  }
+  -
+    info: 'Ultimas noticias'
+    langcode: es
+    uuid: d6b7ca44-d780-4080-8a98-17d98296f931
+    bundle: last_news
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_content_title:
+        -
+          value: Noticias
+      field_content_title_primary:
+        -
+          value: Últimas
+      field_content_view:
+        -
+          target_id: news
+          display_id: last_news
+          data: 'a:5:{s:8:"argument";N;s:5:"limit";N;s:6:"offset";N;s:5:"title";N;s:5:"pager";N;}'
+      field_icon:
+        -
+          target_id: '35'
+  -
+    info: 'Boletin de noticias'
+    langcode: es
+    uuid: 8df82bb0-b5c2-4fa4-a354-97253c686628
+    bundle: newsletter
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_content_description:
+        -
+          value: 'Suscríbase a nuestro boletín y manténgase actualizado con las últimas noticias del sector. <br /> Los campos con (*) son obligatorios'
+          format: editor_cont_transparencia
+      field_content_form:
+        -
+          target_id: boletin_de_noticias
+          default_data: ''
+          status: open
+          open: ''
+          close: ''
+      field_content_title:
+        -
+          value: 'Boletín de noticias'
+      field_icon:
+        -
+          target_id: '46'
+  -
+    info: 'Tabs redes sociales'
+    langcode: es
+    uuid: b78e3423-dddb-49b0-97af-f37d06b61a79
+    bundle: tabs_social_networks
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_content_tabs:
+        -
+          target_id: '41'
+          target_revision_id: '41'
+  -
+    info: 'Contenidos mas importantes crc'
+    langcode: es
+    uuid: f054bf59-bf4c-47a8-a4c3-aebdbb350de5
+    bundle: important_content_crc
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_content_tabs:
+        -
+          target_id: '31'
+          target_revision_id: '31'
+      field_content_title:
+        -
+          value: 'en la CRC'
+      field_content_title_primary:
+        -
+          value: 'Lo más importante '
+      field_icon:
+        -
+          target_id: '34'
+  -
+    info: 'Barra de accesibilidad'
+    langcode: es
+    uuid: 527852f6-5c8d-49c0-a38c-a8ea26a0a2b6
+    bundle: accessibility_toolbar
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_content_paragraph:
+        -
+          target_id: '14'
+          target_revision_id: '14'
+        -
+          target_id: '15'
+          target_revision_id: '15'
+        -
+          target_id: '16'
+          target_revision_id: '16'
+        -
+          target_id: '17'
+          target_revision_id: '17'
+  -
+    info: 'Contenidos consultados'
+    langcode: es
+    uuid: 9ef5effc-94da-4dce-a1d8-5bac3078b416
+    bundle: tabs_consulted_content
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_tabs_consulted_content:
+        -
+          target_id: '24'
+          target_revision_id: '24'
+  -
+    info: 'Pie de pagina - Informacion de contacto'
+    langcode: es
+    uuid: 0d3dc0aa-8df4-44fc-809c-b63a77cf87c9
+    bundle: home_footer
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_home_footer_contacts:
+        -
+          value: 'Línea atención al ciudadano: (+57) 601 319 8300'
+        -
+          value: 'Línea gratuita nacional: 01-8000-919278'
+        -
+          value: 'Fax: (+57) 601 319 8301'
+      field_home_footer_img_org:
+        -
+          target_id: '64'
+          alt: organizacion-prai-crc
+          title: ''
+          width: '101'
+          height: '45'
+        -
+          target_id: '65'
+          alt: organizacion-regulatel-crc
+          title: ''
+          width: '88'
+          height: '45'
+      field_home_footer_insti_mail:
+        -
+          value: institucional@crcom.gov.co
+      field_home_footer_judicial_mail:
+        -
+          value: notificacionesjudiciales@crcom.gov.co
+      field_home_footer_location:
+        -
+          value: 'Dirección: Cl 59 a bis # 5 - 53, Ed Link Siete Sesenta P9 Bogoá, Colombia.'
+        -
+          value: 'Código Postal: 11011'
+        -
+          value: 'Horario de Atención: 8:30 a.m. a 5:30 p.m. en jornada continua'
+      field_home_footer_logo_webcrc:
+        -
+          target_id: '63'
+          alt: logo-comision-de-regulacion-de-comunicaciones-crc
+          title: ''
+          width: '195'
+          height: '65'
+      field_home_footer_title_social:
+        -
+          value: 'Siguenos en:'
+      field_home_footer_txt_org:
+        -
+          value: 'Organizaciones internacionales presididas por la CRC'
+      field_social_networks:
+        -
+          target_id: '42'
+          target_revision_id: '42'
+        -
+          target_id: '43'
+          target_revision_id: '43'
+        -
+          target_id: '44'
+          target_revision_id: '44'
+        -
+          target_id: '45'
+          target_revision_id: '45'
+        -
+          target_id: '46'
+          target_revision_id: '46'
+  -
+    info: 'Rss - Lo ultimo de postdata'
+    langcode: es
+    uuid: 06352fb3-55b8-4ec6-9c56-9278fdf46acc
+    bundle: block_rss_last_of_postada
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_intro_text: {  }
+      field_read_more: {  }
+      field_rss_feed:
+        -
+          feed_uri: 'https://www.postdata.gov.co/postdata-rss.xml'
+          count: '5'
+          display_date: '1'
+          date_format: news_dates
+          custom_date_format: 'F j, Y'
+          display_description: '1'
+          description_length: '255'
+          description_plaintext: '1'

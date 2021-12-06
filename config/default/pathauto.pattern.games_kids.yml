@@ -10,15 +10,16 @@ label: 'Jugos niños'
 type: 'canonical_entities:node'
 pattern: 'ninos/[node:title]'
 selection_criteria:
-  e10206b4-5ddb-446d-ac09-248382fc6f0e:
+  cbbc03b3-aded-450d-b471-767d0f0a4cea:
     id: node_type
     bundles:
+      booklets_kids: booklets_kids
       game_kids: game_kids
     negate: false
     context_mapping:
       node: node
-    uuid: e10206b4-5ddb-446d-ac09-248382fc6f0e
-  5e9d1289-b7b1-4d3f-8ed9-2a14247a3fb7:
+    uuid: cbbc03b3-aded-450d-b471-767d0f0a4cea
+  9d0e9566-5a1b-43a8-910b-a71dc9807a89:
     id: language
     langcodes:
       en: en
@@ -26,7 +27,7 @@ selection_criteria:
     negate: false
     context_mapping:
       language: 'node:langcode:language'
-    uuid: 5e9d1289-b7b1-4d3f-8ed9-2a14247a3fb7
+    uuid: 9d0e9566-5a1b-43a8-910b-a71dc9807a89
 selection_logic: and
 weight: -10
 relationships:

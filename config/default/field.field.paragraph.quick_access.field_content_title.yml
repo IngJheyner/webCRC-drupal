@@ -12,7 +12,7 @@ bundle: quick_access
 label: Titulo
 description: 'Titulo para el acceso rapido'
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

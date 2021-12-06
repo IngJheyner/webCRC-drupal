@@ -1,0 +1,20 @@
+uuid: d6410bc3-d053-4ec7-ac6e-4c4cfc617f26
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.transparencia_documentos
+id: media.transparencia_documentos.name
+field_name: name
+entity_type: media
+bundle: transparencia_documentos
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

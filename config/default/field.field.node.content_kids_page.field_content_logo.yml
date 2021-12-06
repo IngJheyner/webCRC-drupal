@@ -13,7 +13,7 @@ bundle: content_kids_page
 label: Logo
 description: 'Logo pagina de niños, niñas y adolecentes'
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

@@ -14,7 +14,7 @@ bundle: transp_inf_decisi_afec_pub_docum
 label: Body
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

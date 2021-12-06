@@ -1,0 +1,22 @@
+uuid: 6be658f4-9d89-4d54-82e2-fe08e59cd78f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.tra_plan_anual_adquisi_documento
+id: node.tra_plan_anual_adquisi_documento.sticky
+field_name: sticky
+entity_type: node
+bundle: tra_plan_anual_adquisi_documento
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,18 @@
+uuid: 441fa79b-9d67-48c1-84cb-cf8853b4247d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.microsites_articles
+id: node.microsites_articles.created
+field_name: created
+entity_type: node
+bundle: microsites_articles
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

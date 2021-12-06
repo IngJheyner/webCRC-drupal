@@ -1,0 +1,18 @@
+uuid: 91829eac-8b2f-4f0e-af83-237d3c766f57
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.projects_operator
+id: taxonomy_term.projects_operator.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: projects_operator
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

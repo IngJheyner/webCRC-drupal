@@ -1,0 +1,22 @@
+uuid: 9fa5208b-8887-4bf7-bded-ed6f32b641a8
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_inf_decisi_afec_pub_docum
+id: node.transp_inf_decisi_afec_pub_docum.status
+field_name: status
+entity_type: node
+bundle: transp_inf_decisi_afec_pub_docum
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

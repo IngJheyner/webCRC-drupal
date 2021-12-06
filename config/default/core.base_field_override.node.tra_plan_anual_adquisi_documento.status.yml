@@ -1,0 +1,22 @@
+uuid: 5efa89ab-1742-4c8a-99a7-36f62741d63f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.tra_plan_anual_adquisi_documento
+id: node.tra_plan_anual_adquisi_documento.status
+field_name: status
+entity_type: node
+bundle: tra_plan_anual_adquisi_documento
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

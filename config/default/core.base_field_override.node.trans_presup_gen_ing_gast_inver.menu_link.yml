@@ -1,0 +1,20 @@
+uuid: b11b2b4c-43d2-4c93-8ecc-14a143813f3d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.trans_presup_gen_ing_gast_inver
+id: node.trans_presup_gen_ing_gast_inver.menu_link
+field_name: menu_link
+entity_type: node
+bundle: trans_presup_gen_ing_gast_inver
+label: 'Enlace del menu'
+description: 'Enlace de menú calculado para el nodo (solo disponible durante el guardado del nodo).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

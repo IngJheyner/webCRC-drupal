@@ -1,0 +1,18 @@
+uuid: c0fa0627-df8d-4d15-831c-7fa2e5ded8f2
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.transp_politi_lineam_manua_intro
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: block_content.transp_politi_lineam_manua_intro
+target_entity_type_id: block_content
+target_bundle: transp_politi_lineam_manua_intro
+default_langcode: site_default
+language_alterable: false

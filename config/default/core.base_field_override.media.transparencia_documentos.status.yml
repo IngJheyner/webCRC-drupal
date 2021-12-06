@@ -1,0 +1,22 @@
+uuid: ce495492-51e4-4b33-8507-6d4b9759cb8b
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.transparencia_documentos
+id: media.transparencia_documentos.status
+field_name: status
+entity_type: media
+bundle: transparencia_documentos
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

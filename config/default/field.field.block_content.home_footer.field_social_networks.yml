@@ -15,7 +15,7 @@ bundle: home_footer
 label: 'Redes sociales'
 description: 'Listado de redes sociales para el pie de pagina'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

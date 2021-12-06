@@ -12,7 +12,7 @@ bundle: home_footer
 label: 'Texto organizaciones'
 description: ''
 required: true
-translatable: false
+translatable: true
 default_value:
   -
     value: 'Organizaciones internacionales presididas por la CRC'

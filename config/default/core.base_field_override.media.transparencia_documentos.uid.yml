@@ -1,0 +1,20 @@
+uuid: b5ae6c3f-b21c-4637-95b1-c7aadaea7fa4
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.transparencia_documentos
+id: media.transparencia_documentos.uid
+field_name: uid
+entity_type: media
+bundle: transparencia_documentos
+label: 'Escrito por'
+description: 'El ID de usuario del autor.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

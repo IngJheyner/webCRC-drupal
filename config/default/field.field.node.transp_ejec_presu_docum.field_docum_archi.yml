@@ -33,7 +33,7 @@ bundle: transp_ejec_presu_docum
 label: 'Documento / Archivo'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

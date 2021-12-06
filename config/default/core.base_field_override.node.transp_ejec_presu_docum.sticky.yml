@@ -1,0 +1,22 @@
+uuid: 9c72318d-2ffb-4ee6-b720-a1760a0fc950
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_ejec_presu_docum
+id: node.transp_ejec_presu_docum.sticky
+field_name: sticky
+entity_type: node
+bundle: transp_ejec_presu_docum
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -14,7 +14,7 @@ bundle: quick_access
 label: Enlace
 description: 'Ruta para el acceso directo'
 required: false
-translatable: false
+translatable: true
 default_value:
   -
     attributes: {  }

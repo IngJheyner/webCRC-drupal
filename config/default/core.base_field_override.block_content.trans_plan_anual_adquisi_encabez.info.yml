@@ -1,0 +1,18 @@
+uuid: 09a195c7-614c-4598-b7cd-6724eb075ecf
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.trans_plan_anual_adquisi_encabez
+id: block_content.trans_plan_anual_adquisi_encabez.info
+field_name: info
+entity_type: block_content
+bundle: trans_plan_anual_adquisi_encabez
+label: 'Block description'
+description: 'Una breve descripción de su bloque.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

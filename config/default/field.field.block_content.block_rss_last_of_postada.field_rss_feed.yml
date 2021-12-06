@@ -1,0 +1,21 @@
+uuid: 39ef9587-2e37-414a-8915-397c7d8a1fd0
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.block_rss_last_of_postada
+    - field.storage.block_content.field_rss_feed
+  module:
+    - feed_block
+id: block_content.block_rss_last_of_postada.field_rss_feed
+field_name: field_rss_feed
+entity_type: block_content
+bundle: block_rss_last_of_postada
+label: 'Link RSS - Postdata'
+description: 'Link del rss de postdata'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: rss_feed_field

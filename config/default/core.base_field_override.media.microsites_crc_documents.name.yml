@@ -1,0 +1,20 @@
+uuid: b485e18b-62ec-4fa6-a812-3893e960e1d5
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.microsites_crc_documents
+id: media.microsites_crc_documents.name
+field_name: name
+entity_type: media
+bundle: microsites_crc_documents
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

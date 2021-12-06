@@ -1,0 +1,18 @@
+uuid: d8448da9-f31a-4492-9a9a-8236eddfe69d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_ejec_presu_docum
+id: node.transp_ejec_presu_docum.title
+field_name: title
+entity_type: node
+bundle: transp_ejec_presu_docum
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,18 @@
+uuid: a414f40f-8424-4a4a-bd55-e9df6069acf6
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.videos_remote_news_crc
+id: media.videos_remote_news_crc.changed
+field_name: changed
+entity_type: media
+bundle: videos_remote_news_crc
+label: Changed
+description: 'El momento en el cual el elemento multimedia fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

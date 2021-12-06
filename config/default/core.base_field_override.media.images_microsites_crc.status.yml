@@ -1,0 +1,22 @@
+uuid: 5853d477-097e-4db7-9fbc-ae652e8a37bf
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.images_microsites_crc
+id: media.images_microsites_crc.status
+field_name: status
+entity_type: media
+bundle: images_microsites_crc
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

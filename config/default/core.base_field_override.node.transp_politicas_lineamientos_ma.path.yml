@@ -1,0 +1,20 @@
+uuid: 44953c83-1f55-45ed-9228-90aa1aa0576d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_politicas_lineamientos_ma
+  module:
+    - path
+id: node.transp_politicas_lineamientos_ma.path
+field_name: path
+entity_type: node
+bundle: transp_politicas_lineamientos_ma
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

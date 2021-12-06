@@ -1,0 +1,22 @@
+uuid: 7f65e24b-538b-4354-858e-43972211419d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_inf_decisi_afec_pub_docum
+id: node.transp_inf_decisi_afec_pub_docum.sticky
+field_name: sticky
+entity_type: node
+bundle: transp_inf_decisi_afec_pub_docum
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

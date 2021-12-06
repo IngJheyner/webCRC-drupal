@@ -1,0 +1,18 @@
+uuid: 67056693-9baa-4f4f-b3d9-f04c4f994679
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.transp_list_cat_ejec_presu
+id: taxonomy_term.transp_list_cat_ejec_presu.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: transp_list_cat_ejec_presu
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

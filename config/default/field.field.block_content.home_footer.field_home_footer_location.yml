@@ -12,7 +12,7 @@ bundle: home_footer
 label: 'Sede principal'
 description: ''
 required: true
-translatable: false
+translatable: true
 default_value:
   -
     value: 'Dirección: Cl 59 a bis # 5 - 53, Ed Link Siete Sesenta P9 Bogoá, Colombia.'

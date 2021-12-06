@@ -1,0 +1,29 @@
+uuid: 17d0f031-e038-4f67-aad0-813b0985a089
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_content
+    - media.type.image
+    - node.type.booklets_kids
+id: node.booklets_kids.field_image_content
+field_name: field_image_content
+entity_type: node
+bundle: booklets_kids
+label: Imagen
+description: 'Imagen representativa de la cartilla'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

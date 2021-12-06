@@ -15,7 +15,7 @@ bundle: content_kids_page
 label: 'Imagen o video principal'
 description: 'Imagen o video para el contenido principal de la pagina de niños'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

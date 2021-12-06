@@ -1,0 +1,18 @@
+uuid: 0ee4994c-517b-468d-950e-c0afb4aa9b9c
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.transp_list_cat_ejec_presu
+id: taxonomy_term.transp_list_cat_ejec_presu.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: transp_list_cat_ejec_presu
+label: Changed
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

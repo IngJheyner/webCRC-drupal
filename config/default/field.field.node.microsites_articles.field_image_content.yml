@@ -13,7 +13,7 @@ bundle: microsites_articles
 label: Imagen
 description: 'Imagen que se visualiza en el contenido interno del articulo'
 required: true
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

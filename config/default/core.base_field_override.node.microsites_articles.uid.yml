@@ -1,0 +1,20 @@
+uuid: 6097a3c0-8a11-48df-8d2c-a1f3f021cc02
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.microsites_articles
+id: node.microsites_articles.uid
+field_name: uid
+entity_type: node
+bundle: microsites_articles
+label: 'Escrito por'
+description: 'El nombre de usuario del autor del contenido.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

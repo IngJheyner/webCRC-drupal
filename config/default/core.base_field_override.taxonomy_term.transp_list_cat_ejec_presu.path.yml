@@ -1,0 +1,20 @@
+uuid: 21d120b4-e6e6-4e46-9214-ef8579f8e3ab
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.transp_list_cat_ejec_presu
+  module:
+    - path
+id: taxonomy_term.transp_list_cat_ejec_presu.path
+field_name: path
+entity_type: taxonomy_term
+bundle: transp_list_cat_ejec_presu
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

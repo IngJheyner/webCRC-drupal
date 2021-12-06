@@ -1,0 +1,20 @@
+uuid: 608e6af3-8928-4a49-a8c3-96e616b15e47
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.audio_microsites_crc
+  module:
+    - path
+id: media.audio_microsites_crc.path
+field_name: path
+entity_type: media
+bundle: audio_microsites_crc
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

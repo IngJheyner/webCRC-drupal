@@ -1,0 +1,18 @@
+uuid: 42a7719c-f173-4ca5-80ae-08c55dae9a6a
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.transparencia_lista_categorias_p
+id: taxonomy_term.transparencia_lista_categorias_p.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: transparencia_lista_categorias_p
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

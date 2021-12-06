@@ -1,0 +1,18 @@
+uuid: 34d0d1a1-84ec-4f6c-ae6f-121d6076db18
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.audio_microsites_crc
+id: media.audio_microsites_crc.metatag
+field_name: metatag
+entity_type: media
+bundle: audio_microsites_crc
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

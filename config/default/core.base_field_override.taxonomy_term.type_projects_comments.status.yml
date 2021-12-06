@@ -1,0 +1,22 @@
+uuid: 2bf0065d-e134-417b-aed6-32f0596c3c62
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.type_projects_comments
+id: taxonomy_term.type_projects_comments.status
+field_name: status
+entity_type: taxonomy_term
+bundle: type_projects_comments
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

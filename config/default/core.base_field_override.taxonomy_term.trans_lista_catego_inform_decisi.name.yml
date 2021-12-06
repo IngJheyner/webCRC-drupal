@@ -1,0 +1,18 @@
+uuid: 884f42c4-fc0b-4e63-a38a-91678fb60b99
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.trans_lista_catego_inform_decisi
+id: taxonomy_term.trans_lista_catego_inform_decisi.name
+field_name: name
+entity_type: taxonomy_term
+bundle: trans_lista_catego_inform_decisi
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

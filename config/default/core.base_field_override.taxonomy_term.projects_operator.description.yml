@@ -1,0 +1,20 @@
+uuid: 3f0f8228-e400-40a9-9740-aab4c2d1ac36
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.projects_operator
+  module:
+    - text
+id: taxonomy_term.projects_operator.description
+field_name: description
+entity_type: taxonomy_term
+bundle: projects_operator
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

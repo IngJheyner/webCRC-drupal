@@ -1,0 +1,18 @@
+uuid: fd19f3e9-2fd9-4276-bfb1-9cca4af2d2c3
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.type_projects_comments
+id: taxonomy_term.type_projects_comments.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: type_projects_comments
+label: Changed
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

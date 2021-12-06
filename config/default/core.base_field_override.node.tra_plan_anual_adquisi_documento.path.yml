@@ -1,0 +1,20 @@
+uuid: f0d9208e-a4eb-418e-9591-cd9d14600757
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.tra_plan_anual_adquisi_documento
+  module:
+    - path
+id: node.tra_plan_anual_adquisi_documento.path
+field_name: path
+entity_type: node
+bundle: tra_plan_anual_adquisi_documento
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

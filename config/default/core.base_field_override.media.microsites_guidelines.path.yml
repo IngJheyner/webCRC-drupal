@@ -1,0 +1,20 @@
+uuid: 55903fff-0da7-4e5b-a06e-6e079801a14b
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.microsites_guidelines
+  module:
+    - path
+id: media.microsites_guidelines.path
+field_name: path
+entity_type: media
+bundle: microsites_guidelines
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

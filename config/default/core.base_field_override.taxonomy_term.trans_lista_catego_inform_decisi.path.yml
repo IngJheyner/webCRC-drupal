@@ -1,0 +1,20 @@
+uuid: f7c5ad8c-58d2-4b93-8b67-df7f75a429a2
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.trans_lista_catego_inform_decisi
+  module:
+    - path
+id: taxonomy_term.trans_lista_catego_inform_decisi.path
+field_name: path
+entity_type: taxonomy_term
+bundle: trans_lista_catego_inform_decisi
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

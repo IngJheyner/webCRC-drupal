@@ -1,0 +1,20 @@
+uuid: 21faeed7-0c13-4429-a9cf-e11a1e66a525
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.videos_remote_microsites_crc
+  module:
+    - path
+id: media.videos_remote_microsites_crc.path
+field_name: path
+entity_type: media
+bundle: videos_remote_microsites_crc
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

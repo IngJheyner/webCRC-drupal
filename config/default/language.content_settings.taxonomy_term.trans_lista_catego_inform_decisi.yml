@@ -4,6 +4,13 @@ status: true
 dependencies:
   config:
     - taxonomy.vocabulary.trans_lista_catego_inform_decisi
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
 id: taxonomy_term.trans_lista_catego_inform_decisi
 target_entity_type_id: taxonomy_term
 target_bundle: trans_lista_catego_inform_decisi
