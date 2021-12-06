@@ -1,0 +1,18 @@
+uuid: 5533ca53-971b-4ec2-89a3-4655c754e49c
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.transp_politi_lineam_manua_intro
+id: block_content.transp_politi_lineam_manua_intro.metatag
+field_name: metatag
+entity_type: block_content
+bundle: transp_politi_lineam_manua_intro
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

@@ -14,7 +14,7 @@ bundle: trans_plan_anual_adquisi_encabez
 label: Body
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

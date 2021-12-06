@@ -1,0 +1,22 @@
+uuid: c514fa31-c867-44ae-86fd-18fbb5e400a5
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.microsites_guidelines
+id: media.microsites_guidelines.status
+field_name: status
+entity_type: media
+bundle: microsites_guidelines
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

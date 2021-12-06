@@ -1,0 +1,22 @@
+uuid: 3018b6c4-4ed0-4df4-83ad-98850707718c
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.videos_news_crc
+id: media.videos_news_crc.status
+field_name: status
+entity_type: media
+bundle: videos_news_crc
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

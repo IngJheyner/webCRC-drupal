@@ -1,0 +1,20 @@
+uuid: 5a12a898-b4a0-47f3-8786-ecfc01222965
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.microsites_guidelines
+id: media.microsites_guidelines.name
+field_name: name
+entity_type: media
+bundle: microsites_guidelines
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

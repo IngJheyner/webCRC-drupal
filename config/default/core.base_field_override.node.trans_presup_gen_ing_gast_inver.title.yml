@@ -11,7 +11,7 @@ bundle: trans_presup_gen_ing_gast_inver
 label: title
 description: ''
 required: true
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

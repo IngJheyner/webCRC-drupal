@@ -1,0 +1,18 @@
+uuid: 03962789-f143-4705-b5f0-9d65817a260c
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.transp_politi_lineam_manua_intro
+id: block_content.transp_politi_lineam_manua_intro.info
+field_name: info
+entity_type: block_content
+bundle: transp_politi_lineam_manua_intro
+label: 'Block description'
+description: 'Una breve descripción de su bloque.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

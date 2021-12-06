@@ -1,0 +1,18 @@
+uuid: 263f48c6-60fe-4fcb-915b-245d742d7d8a
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.accessibility_toolbar
+id: paragraph.accessibility_toolbar.created
+field_name: created
+entity_type: paragraph
+bundle: accessibility_toolbar
+label: Fecha
+description: 'La hora en que se creó el Paragraph.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

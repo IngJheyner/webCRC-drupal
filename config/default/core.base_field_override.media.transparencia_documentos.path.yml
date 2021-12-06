@@ -1,0 +1,20 @@
+uuid: b87aa010-81a2-4ed3-83f5-b2ca20bc1135
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.transparencia_documentos
+  module:
+    - path
+id: media.transparencia_documentos.path
+field_name: path
+entity_type: media
+bundle: transparencia_documentos
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

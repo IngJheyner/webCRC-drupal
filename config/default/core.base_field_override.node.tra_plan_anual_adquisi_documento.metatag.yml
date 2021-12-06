@@ -1,0 +1,18 @@
+uuid: 450d5c1b-a585-4853-886d-cf6b98d02424
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.tra_plan_anual_adquisi_documento
+id: node.tra_plan_anual_adquisi_documento.metatag
+field_name: metatag
+entity_type: node
+bundle: tra_plan_anual_adquisi_documento
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

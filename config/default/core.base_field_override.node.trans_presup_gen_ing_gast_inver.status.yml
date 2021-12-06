@@ -1,0 +1,22 @@
+uuid: 289dfb4e-7d4e-4f00-839b-ebfc3f32147c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.trans_presup_gen_ing_gast_inver
+id: node.trans_presup_gen_ing_gast_inver.status
+field_name: status
+entity_type: node
+bundle: trans_presup_gen_ing_gast_inver
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

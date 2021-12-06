@@ -1,0 +1,20 @@
+uuid: 727fdd7e-145f-4b63-a237-957114d9b05e
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.trans_presup_gen_ing_gast_inver
+  module:
+    - path
+id: node.trans_presup_gen_ing_gast_inver.path
+field_name: path
+entity_type: node
+bundle: trans_presup_gen_ing_gast_inver
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

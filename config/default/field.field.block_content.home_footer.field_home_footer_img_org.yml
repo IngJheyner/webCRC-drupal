@@ -6,7 +6,14 @@ dependencies:
     - block_content.type.home_footer
     - field.storage.block_content.field_home_footer_img_org
   module:
+    - content_translation
     - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
 id: block_content.home_footer.field_home_footer_img_org
 field_name: field_home_footer_img_org
 entity_type: block_content
@@ -14,7 +21,7 @@ bundle: home_footer
 label: 'Imagenes organizaciones'
 description: ''
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

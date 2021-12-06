@@ -1,0 +1,20 @@
+uuid: a8d1c8ef-c1d9-4dda-9719-1acd35fe697a
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.microsites_articles
+  module:
+    - path
+id: node.microsites_articles.path
+field_name: path
+entity_type: node
+bundle: microsites_articles
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

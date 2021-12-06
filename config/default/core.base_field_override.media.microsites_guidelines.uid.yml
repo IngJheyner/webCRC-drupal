@@ -1,0 +1,20 @@
+uuid: f0f3e1be-37b6-46d8-b817-ea5b8e8304fa
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.microsites_guidelines
+id: media.microsites_guidelines.uid
+field_name: uid
+entity_type: media
+bundle: microsites_guidelines
+label: 'Escrito por'
+description: 'El ID de usuario del autor.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,16 @@
+uuid: d6ccf7c8-b821-4401-80ec-84fb55731afa
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.booklets_kids
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.booklets_kids
+target_entity_type_id: node
+target_bundle: booklets_kids
+default_langcode: site_default
+language_alterable: true

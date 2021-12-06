@@ -1,0 +1,22 @@
+uuid: 4f936938-e0cb-4096-b71f-e60b4422cd6a
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.microsites_articles
+id: node.microsites_articles.sticky
+field_name: sticky
+entity_type: node
+bundle: microsites_articles
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

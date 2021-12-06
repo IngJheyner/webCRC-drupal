@@ -1,0 +1,18 @@
+uuid: e450d4b2-8b55-464a-b46d-099103756c64
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.trans_presup_gen_ing_gast_inver
+id: node.trans_presup_gen_ing_gast_inver.created
+field_name: created
+entity_type: node
+bundle: trans_presup_gen_ing_gast_inver
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -33,7 +33,7 @@ bundle: trans_presup_gen_ing_gast_inver
 label: 'Documento / Archivo'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

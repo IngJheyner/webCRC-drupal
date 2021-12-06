@@ -1,0 +1,23 @@
+uuid: 624b06d2-ad32-49e6-ad6f-a1232d05e03b
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.block_rss_last_of_postada
+    - field.storage.block_content.field_read_more
+  module:
+    - link
+id: block_content.block_rss_last_of_postada.field_read_more
+field_name: field_read_more
+entity_type: block_content
+bundle: block_rss_last_of_postada
+label: 'Link más información'
+description: 'Link externo para vizualizar mas información para el rss de postdata'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

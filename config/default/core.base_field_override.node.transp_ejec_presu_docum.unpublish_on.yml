@@ -1,0 +1,18 @@
+uuid: 9f487ffc-ea72-4ed7-acab-1e009e9f3eed
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_ejec_presu_docum
+id: node.transp_ejec_presu_docum.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: transp_ejec_presu_docum
+label: 'Quitar publicación en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

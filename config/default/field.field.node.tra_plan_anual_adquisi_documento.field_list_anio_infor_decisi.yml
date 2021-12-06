@@ -14,7 +14,7 @@ bundle: tra_plan_anual_adquisi_documento
 label: Año
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value:
   -
     value: 2021

@@ -61,7 +61,7 @@
 
   .tabs-container {
     div.tab-content {
-      ul.slide__content {
+      ul.slick--view--tabs-content-kids{
         li {
           padding: 15px 35px;
           width: 100%;
@@ -77,6 +77,9 @@
               padding: 0;
 
               img {
+                width: 100%;
+                max-width: 100px;
+                min-width: 70px;
                 padding: 0 10px;
               }
 

@@ -15,7 +15,7 @@ bundle: newsletter
 label: Formulario
 description: 'Formulario creado con el componente webfroms'
 required: true
-translatable: false
+translatable: true
 default_value:
   -
     default_data: ''

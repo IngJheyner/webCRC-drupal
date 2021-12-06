@@ -1,0 +1,18 @@
+uuid: 20b4c34d-a556-411b-bf15-1a29616dbee8
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.images_microsites_crc
+id: media.images_microsites_crc.changed
+field_name: changed
+entity_type: media
+bundle: images_microsites_crc
+label: Changed
+description: 'El momento en el cual el elemento multimedia fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

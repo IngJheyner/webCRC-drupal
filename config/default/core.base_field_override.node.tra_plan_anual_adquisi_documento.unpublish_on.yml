@@ -1,0 +1,18 @@
+uuid: 5b1029e5-2d02-405b-b932-89cd64a9248d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.tra_plan_anual_adquisi_documento
+id: node.tra_plan_anual_adquisi_documento.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: tra_plan_anual_adquisi_documento
+label: 'Quitar publicación en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

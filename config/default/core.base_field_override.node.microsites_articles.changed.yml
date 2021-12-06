@@ -1,0 +1,18 @@
+uuid: 5038edc3-34b6-40cc-b592-22721360570f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.microsites_articles
+id: node.microsites_articles.changed
+field_name: changed
+entity_type: node
+bundle: microsites_articles
+label: Changed
+description: 'La fecha en que el nodo fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

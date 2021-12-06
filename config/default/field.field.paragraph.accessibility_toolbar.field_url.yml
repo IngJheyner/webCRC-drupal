@@ -14,7 +14,7 @@ bundle: accessibility_toolbar
 label: Enlace
 description: 'Enlace para el icono. Nota no colocar enlaces en las opciones de: Contraste, Reducir, Aumentar letra.'
 required: false
-translatable: true
+translatable: false
 default_value:
   -
     attributes: {  }

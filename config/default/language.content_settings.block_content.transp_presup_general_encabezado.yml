@@ -4,6 +4,13 @@ status: true
 dependencies:
   config:
     - block_content.type.transp_presup_general_encabezado
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
 id: block_content.transp_presup_general_encabezado
 target_entity_type_id: block_content
 target_bundle: transp_presup_general_encabezado

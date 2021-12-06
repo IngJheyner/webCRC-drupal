@@ -12,7 +12,7 @@ bundle: last_news
 label: Titulo
 description: ''
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

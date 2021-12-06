@@ -1,0 +1,22 @@
+uuid: d271ad5a-4108-4f12-add3-a0ae3c4318d9
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.microsites_crc_documents
+id: media.microsites_crc_documents.status
+field_name: status
+entity_type: media
+bundle: microsites_crc_documents
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

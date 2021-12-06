@@ -1,0 +1,37 @@
+uuid: 73c12300-bae1-4895-9c4c-5040e61c4ee0
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.transparencia_documentos
+  module:
+    - image
+id: media.transparencia_documentos.thumbnail
+field_name: thumbnail
+entity_type: media
+bundle: transparencia_documentos
+label: Thumbnail
+description: 'La miniatura del elemento de multimedia.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: 'png gif jpg jpeg'
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  max_resolution: ''
+  min_resolution: ''
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
+  handler: default
+  handler_settings: {  }
+field_type: image

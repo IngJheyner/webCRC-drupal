@@ -1,0 +1,74 @@
+uuid: b5bd58a8-2ff8-4029-830a-a56c353051db
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.booklets_kids.field_content_url
+    - field.field.node.booklets_kids.field_image_content
+    - node.type.booklets_kids
+  module:
+    - blazy
+    - link
+    - user
+id: node.booklets_kids.default
+targetEntityType: node
+bundle: booklets_kids
+mode: default
+content:
+  field_content_url:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_image_content:
+    weight: 0
+    label: hidden
+    settings:
+      link: '1'
+      class: ''
+      id: ''
+      image: ''
+      overlay: ''
+      title: ''
+      vanilla: false
+      icon: ''
+      layout: ''
+      view_mode: ''
+      cache: 0
+      current_view_mode: ''
+      skin: ''
+      fx: ''
+      style: ''
+      background: false
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      caption: {  }
+      responsive_image_style: ''
+      box_style: ''
+      image_style: ''
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
+      _uri: ''
+      breakpoints: {  }
+      sizes: ''
+      grid_header: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
+    third_party_settings: {  }
+    type: blazy_media
+    region: content
+hidden:
+  addtoany: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

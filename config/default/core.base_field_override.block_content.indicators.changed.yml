@@ -11,7 +11,7 @@ bundle: indicators
 label: Changed
 description: 'La fecha en la que el bloque personalizado se editó por última vez.'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

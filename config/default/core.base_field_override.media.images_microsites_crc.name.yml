@@ -1,0 +1,20 @@
+uuid: 555df4b2-6e5f-4c68-8308-5feb4b2c0b74
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.images_microsites_crc
+id: media.images_microsites_crc.name
+field_name: name
+entity_type: media
+bundle: images_microsites_crc
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

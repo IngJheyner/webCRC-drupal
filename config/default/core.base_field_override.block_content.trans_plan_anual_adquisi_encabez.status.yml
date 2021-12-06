@@ -1,0 +1,22 @@
+uuid: a869a4b2-7ae1-45d8-b8b7-8bf19b7c478d
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.trans_plan_anual_adquisi_encabez
+id: block_content.trans_plan_anual_adquisi_encabez.status
+field_name: status
+entity_type: block_content
+bundle: trans_plan_anual_adquisi_encabez
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

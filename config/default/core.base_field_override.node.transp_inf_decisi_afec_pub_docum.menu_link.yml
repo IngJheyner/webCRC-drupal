@@ -1,0 +1,20 @@
+uuid: bda622f1-860a-49ca-94f8-8da2d7851367
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_inf_decisi_afec_pub_docum
+id: node.transp_inf_decisi_afec_pub_docum.menu_link
+field_name: menu_link
+entity_type: node
+bundle: transp_inf_decisi_afec_pub_docum
+label: 'Enlace del menu'
+description: 'Enlace de menú calculado para el nodo (solo disponible durante el guardado del nodo).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

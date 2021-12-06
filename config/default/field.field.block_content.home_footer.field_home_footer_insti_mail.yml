@@ -12,7 +12,7 @@ bundle: home_footer
 label: 'Correo Institucional'
 description: ''
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

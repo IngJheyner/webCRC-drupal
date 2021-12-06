@@ -1,0 +1,20 @@
+uuid: b5931988-79d8-4247-a3ca-85d3d2bedbbb
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_ejec_presu_docum
+  module:
+    - path
+id: node.transp_ejec_presu_docum.path
+field_name: path
+entity_type: node
+bundle: transp_ejec_presu_docum
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,20 @@
+uuid: 451be64d-7d73-4382-92d8-cb43118d7cdf
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.audio_microsites_crc
+id: media.audio_microsites_crc.uid
+field_name: uid
+entity_type: media
+bundle: audio_microsites_crc
+label: 'Escrito por'
+description: 'El ID de usuario del autor.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

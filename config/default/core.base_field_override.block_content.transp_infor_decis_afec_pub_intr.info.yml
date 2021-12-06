@@ -1,0 +1,18 @@
+uuid: 2c521fb4-6afb-4a1e-91fa-aea2c097518c
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.transp_infor_decis_afec_pub_intr
+id: block_content.transp_infor_decis_afec_pub_intr.info
+field_name: info
+entity_type: block_content
+bundle: transp_infor_decis_afec_pub_intr
+label: 'Block description'
+description: 'Una breve descripción de su bloque.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

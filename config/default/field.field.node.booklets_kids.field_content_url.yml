@@ -1,0 +1,23 @@
+uuid: 5a505351-6df0-4f21-825d-a8e160b7844e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_url
+    - node.type.booklets_kids
+  module:
+    - link
+id: node.booklets_kids.field_content_url
+field_name: field_content_url
+entity_type: node
+bundle: booklets_kids
+label: Enlace
+description: 'Url de la cartila'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

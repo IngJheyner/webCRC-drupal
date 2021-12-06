@@ -1,0 +1,20 @@
+uuid: b3f0990b-71aa-4eb9-80d4-c81634cfdeb7
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.images_microsites_crc
+  module:
+    - path
+id: media.images_microsites_crc.path
+field_name: path
+entity_type: media
+bundle: images_microsites_crc
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

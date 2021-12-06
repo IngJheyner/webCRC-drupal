@@ -1,0 +1,18 @@
+uuid: 147491eb-4790-463d-9f3a-bcdb2ff66d72
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.type_projects_comments
+id: taxonomy_term.type_projects_comments.name
+field_name: name
+entity_type: taxonomy_term
+bundle: type_projects_comments
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

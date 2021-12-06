@@ -1,0 +1,20 @@
+uuid: 6055f92e-5abb-48d3-ad95-a1aa63baf634
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.type_projects_comments
+  module:
+    - path
+id: taxonomy_term.type_projects_comments.path
+field_name: path
+entity_type: taxonomy_term
+bundle: type_projects_comments
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path
