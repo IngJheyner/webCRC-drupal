@@ -11,7 +11,7 @@ bundle: transp_inf_decisi_afec_pub_docum
 label: 'Promoted to front page'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value:
   -
     value: 0

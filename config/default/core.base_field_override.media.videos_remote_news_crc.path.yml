@@ -1,0 +1,20 @@
+uuid: b5f4ca4d-f457-4da5-a0e6-88c00631b29f
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.videos_remote_news_crc
+  module:
+    - path
+id: media.videos_remote_news_crc.path
+field_name: path
+entity_type: media
+bundle: videos_remote_news_crc
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

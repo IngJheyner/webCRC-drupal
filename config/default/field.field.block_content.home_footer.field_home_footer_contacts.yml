@@ -12,7 +12,7 @@ bundle: home_footer
 label: Contacto
 description: 'Telefonos de contacto CRC'
 required: true
-translatable: false
+translatable: true
 default_value:
   -
     value: 'Línea atención al ciudadano: (+57) 601 319 8300'

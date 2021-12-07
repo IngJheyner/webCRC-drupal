@@ -1,0 +1,22 @@
+uuid: 6c80be90-87cd-483d-9a8c-e097ceab9a47
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_infor_defensa_publi_doc
+id: node.transp_infor_defensa_publi_doc.status
+field_name: status
+entity_type: node
+bundle: transp_infor_defensa_publi_doc
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

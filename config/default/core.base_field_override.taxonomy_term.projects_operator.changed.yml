@@ -1,0 +1,18 @@
+uuid: a36b2e73-7180-45a9-b915-8af739502bcc
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.projects_operator
+id: taxonomy_term.projects_operator.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: projects_operator
+label: Changed
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

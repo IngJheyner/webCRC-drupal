@@ -1,0 +1,18 @@
+uuid: d0c34c9f-644d-49e7-b819-6dcdcaf366cf
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_ejec_presu_docum
+id: node.transp_ejec_presu_docum.publish_on
+field_name: publish_on
+entity_type: node
+bundle: transp_ejec_presu_docum
+label: 'Publicar en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

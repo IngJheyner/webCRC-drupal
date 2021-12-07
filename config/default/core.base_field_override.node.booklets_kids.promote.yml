@@ -1,0 +1,22 @@
+uuid: 97f860a7-580f-415b-b54c-5f700771f059
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.booklets_kids
+id: node.booklets_kids.promote
+field_name: promote
+entity_type: node
+bundle: booklets_kids
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

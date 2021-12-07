@@ -1,0 +1,8 @@
+uuid: b26f1324-78ba-45e8-893e-d3b6cc5094ad
+langcode: es
+status: true
+dependencies: {  }
+id: block_rss_last_of_postada
+label: 'Rss - Lo ultimo de postdata'
+revision: 0
+description: 'Link servico externo rss de los ultimo de postada'

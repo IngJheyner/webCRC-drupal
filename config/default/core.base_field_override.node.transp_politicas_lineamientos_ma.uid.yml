@@ -1,0 +1,20 @@
+uuid: e7b5c27b-5856-4413-bd12-d1b75ba4d7d5
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_politicas_lineamientos_ma
+id: node.transp_politicas_lineamientos_ma.uid
+field_name: uid
+entity_type: node
+bundle: transp_politicas_lineamientos_ma
+label: 'Escrito por'
+description: 'El nombre de usuario del autor del contenido.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

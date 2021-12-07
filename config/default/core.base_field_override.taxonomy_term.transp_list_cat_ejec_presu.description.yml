@@ -1,0 +1,20 @@
+uuid: d586bfb1-cacd-4683-97af-971dac94ee26
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.transp_list_cat_ejec_presu
+  module:
+    - text
+id: taxonomy_term.transp_list_cat_ejec_presu.description
+field_name: description
+entity_type: taxonomy_term
+bundle: transp_list_cat_ejec_presu
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

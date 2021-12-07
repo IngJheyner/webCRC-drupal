@@ -1,0 +1,32 @@
+uuid: 02ce9989-db5a-4fc9-bd76-75e5e9d37bcc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.trans_inform_empalm_doc.field_doc_file_info_decisi_publi
+    - node.type.trans_inform_empalm_doc
+  module:
+    - file
+    - user
+id: node.trans_inform_empalm_doc.default
+targetEntityType: node
+bundle: trans_inform_empalm_doc
+mode: default
+content:
+  field_doc_file_info_decisi_publi:
+    weight: 101
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  langcode: true
+  search_api_excerpt: true

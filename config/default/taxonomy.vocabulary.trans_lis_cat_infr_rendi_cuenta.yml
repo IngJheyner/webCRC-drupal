@@ -1,0 +1,8 @@
+uuid: a489c8f6-2b82-4193-9ae1-62d0e8f7b37b
+langcode: es
+status: true
+dependencies: {  }
+name: 'Transparencia: Lista categoría [ Informes rendición cuentas ]'
+vid: trans_lis_cat_infr_rendi_cuenta
+description: ''
+weight: 0

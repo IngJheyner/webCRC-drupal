@@ -1,0 +1,18 @@
+uuid: 0691aff6-9414-45da-87f4-bf35cc5306bf
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.trans_lista_catego_inform_decisi
+id: taxonomy_term.trans_lista_catego_inform_decisi.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: trans_lista_catego_inform_decisi
+label: Changed
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

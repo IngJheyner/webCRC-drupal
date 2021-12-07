@@ -4,6 +4,13 @@ status: true
 dependencies:
   config:
     - taxonomy.vocabulary.transp_list_cat_ejec_presu
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
 id: taxonomy_term.transp_list_cat_ejec_presu
 target_entity_type_id: taxonomy_term
 target_bundle: transp_list_cat_ejec_presu

@@ -1,0 +1,32 @@
+uuid: 1abc9dc9-ce94-4a7e-8a74-b37d75e819a7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.transparencia_esquema_de_publica.field_docum_archi
+    - node.type.transparencia_esquema_de_publica
+  module:
+    - file
+    - user
+id: node.transparencia_esquema_de_publica.default
+targetEntityType: node
+bundle: transparencia_esquema_de_publica
+mode: default
+content:
+  field_docum_archi:
+    weight: 101
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  langcode: true
+  search_api_excerpt: true

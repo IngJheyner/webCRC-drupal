@@ -1,0 +1,21 @@
+uuid: ff1c45d4-f13d-448d-b287-a2fe4b01a4e3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_list_semestr_infor_acces
+    - node.type.trans_infor_trimes_accs_infr_qr
+  module:
+    - options
+id: node.trans_infor_trimes_accs_infr_qr.field_list_semestr_infor_acces
+field_name: field_list_semestr_infor_acces
+entity_type: node
+bundle: trans_infor_trimes_accs_infr_qr
+label: Semestre
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

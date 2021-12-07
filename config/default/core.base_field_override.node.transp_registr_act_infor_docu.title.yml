@@ -1,0 +1,18 @@
+uuid: d4a2abef-4a74-4b5c-be99-13277357ee6b
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_registr_act_infor_docu
+id: node.transp_registr_act_infor_docu.title
+field_name: title
+entity_type: node
+bundle: transp_registr_act_infor_docu
+label: Titulo
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

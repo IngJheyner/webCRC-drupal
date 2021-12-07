@@ -1,0 +1,22 @@
+uuid: e8a9906d-4228-4dde-a5d6-54634ab1afa6
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.trans_inform_empalm_doc
+id: node.trans_inform_empalm_doc.promote
+field_name: promote
+entity_type: node
+bundle: trans_inform_empalm_doc
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

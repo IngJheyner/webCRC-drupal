@@ -1,0 +1,31 @@
+uuid: f7f78ccb-11ff-4c89-a739-15f5d22bf1b4
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - scheduler
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: false
+    publish_past_date: error
+    publish_past_date_created: false
+    publish_required: false
+    publish_revision: false
+    publish_touch: false
+    show_message_after_update: true
+    unpublish_enable: false
+    unpublish_required: false
+    unpublish_revision: false
+name: 'Transparencia: Planes institucionales [ Documentos ]'
+type: transparencia_planes_institucion
+description: 'Tipo de contenido para carga de documentos numeral Planes institucionales en la sección de transparencia'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

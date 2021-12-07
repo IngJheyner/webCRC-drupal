@@ -1,0 +1,11 @@
+uuid: 8ae53447-652d-4dd2-9cfb-d248b0f1dbb1
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.transp_list_cat_plan_accion
+id: taxonomy_term.transp_list_cat_plan_accion
+target_entity_type_id: taxonomy_term
+target_bundle: transp_list_cat_plan_accion
+default_langcode: site_default
+language_alterable: false

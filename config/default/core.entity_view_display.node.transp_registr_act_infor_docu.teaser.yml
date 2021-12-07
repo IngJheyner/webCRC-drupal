@@ -1,0 +1,25 @@
+uuid: 2335915d-544e-48c7-8945-5ce05f4e731a
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.transp_registr_act_infor_docu.field_docum_archi
+    - node.type.transp_registr_act_infor_docu
+  module:
+    - user
+id: node.transp_registr_act_infor_docu.teaser
+targetEntityType: node
+bundle: transp_registr_act_infor_docu
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_docum_archi: true
+  langcode: true
+  search_api_excerpt: true

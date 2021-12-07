@@ -1,0 +1,11 @@
+uuid: 2393b447-74bf-414b-b4fd-a86bce2d6df5
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_tablas_reten_docu
+id: node.transp_tablas_reten_docu
+target_entity_type_id: node
+target_bundle: transp_tablas_reten_docu
+default_langcode: site_default
+language_alterable: false

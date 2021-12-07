@@ -1,0 +1,22 @@
+uuid: 5c2cca23-c327-46fd-9fb2-454d34f092dd
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.trans_infor_trimes_accs_infr_qr
+id: node.trans_infor_trimes_accs_infr_qr.promote
+field_name: promote
+entity_type: node
+bundle: trans_infor_trimes_accs_infr_qr
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

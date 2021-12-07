@@ -515,11 +515,13 @@ display:
       display_description: ''
       defaults:
         fields: true
+        arguments: false
       block_description: ''
+      rendering_language: '***LANGUAGE_entity_default***'
+      arguments: {  }
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions

@@ -4,6 +4,13 @@ status: true
 dependencies:
   config:
     - node.type.trans_presup_gen_ing_gast_inver
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
 id: node.trans_presup_gen_ing_gast_inver
 target_entity_type_id: node
 target_bundle: trans_presup_gen_ing_gast_inver

@@ -1,0 +1,11 @@
+uuid: 2e654707-e5b0-41ec-b4e8-c08164b463a8
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.trans_indice_inform_clasifi_doc
+id: node.trans_indice_inform_clasifi_doc
+target_entity_type_id: node
+target_bundle: trans_indice_inform_clasifi_doc
+default_langcode: site_default
+language_alterable: false

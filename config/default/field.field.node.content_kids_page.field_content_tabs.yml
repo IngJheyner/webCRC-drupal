@@ -15,7 +15,7 @@ bundle: content_kids_page
 label: Tabs
 description: 'Tabs contenido pagina niño, niñas y adolecentes'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

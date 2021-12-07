@@ -1,0 +1,22 @@
+uuid: fd1d20ef-934f-428b-9684-7222b529a20b
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.videos_remote_microsites_crc
+id: media.videos_remote_microsites_crc.status
+field_name: status
+entity_type: media
+bundle: videos_remote_microsites_crc
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

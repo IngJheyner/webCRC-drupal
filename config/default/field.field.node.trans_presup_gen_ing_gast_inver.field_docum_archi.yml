@@ -1,0 +1,46 @@
+uuid: 689ed692-cd8d-49cd-b5fd-c63f4f4ab43b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_docum_archi
+    - node.type.trans_presup_gen_ing_gast_inver
+  module:
+    - file
+    - filefield_paths
+third_party_settings:
+  filefield_paths:
+    enabled: true
+    file_path:
+      value: Transparencia/presupuesto_general_de_ingresos_gastos_inversion
+      options:
+        slashes: false
+        pathauto: false
+        transliterate: false
+    redirect: false
+    retroactive_update: false
+    active_updating: false
+    file_name:
+      value: '[file:ffp-name-only-original].[file:ffp-extension-original]'
+      options:
+        slashes: false
+        pathauto: false
+        transliterate: false
+id: node.trans_presup_gen_ing_gast_inver.field_docum_archi
+field_name: field_docum_archi
+entity_type: node
+bundle: trans_presup_gen_ing_gast_inver
+label: 'Documento / Archivo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt xlsx xls doc pdf docx zip rar'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

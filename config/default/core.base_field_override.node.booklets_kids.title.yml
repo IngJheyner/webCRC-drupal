@@ -1,0 +1,18 @@
+uuid: f6b1ae72-d266-44c4-8a8d-8ed0bf774f78
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.booklets_kids
+id: node.booklets_kids.title
+field_name: title
+entity_type: node
+bundle: booklets_kids
+label: Titulo
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

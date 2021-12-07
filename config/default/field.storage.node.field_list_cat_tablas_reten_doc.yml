@@ -1,0 +1,20 @@
+uuid: 172d0cde-0cbc-4262-bc4d-357da3862b22
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_list_cat_tablas_reten_doc
+field_name: field_list_cat_tablas_reten_doc
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

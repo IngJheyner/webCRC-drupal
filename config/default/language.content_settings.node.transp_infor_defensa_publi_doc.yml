@@ -1,0 +1,11 @@
+uuid: 1e163abd-39f2-4f0d-a3f4-4d466990f52b
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_infor_defensa_publi_doc
+id: node.transp_infor_defensa_publi_doc
+target_entity_type_id: node
+target_bundle: transp_infor_defensa_publi_doc
+default_langcode: site_default
+language_alterable: false

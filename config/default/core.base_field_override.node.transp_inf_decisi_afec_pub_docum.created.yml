@@ -1,0 +1,18 @@
+uuid: dbfa9403-02f4-4d20-8517-c802ef1e1308
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_inf_decisi_afec_pub_docum
+id: node.transp_inf_decisi_afec_pub_docum.created
+field_name: created
+entity_type: node
+bundle: transp_inf_decisi_afec_pub_docum
+label: Fecha
+description: 'La fecha en que el nodo fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,0 +1,11 @@
+uuid: 2bc06f41-634c-4dea-b9dc-d50ef0b6e701
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.transp_list_cat_prog_gest_docuta
+id: taxonomy_term.transp_list_cat_prog_gest_docuta
+target_entity_type_id: taxonomy_term
+target_bundle: transp_list_cat_prog_gest_docuta
+default_langcode: site_default
+language_alterable: false

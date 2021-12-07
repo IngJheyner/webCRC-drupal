@@ -4,12 +4,12 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_categ_presp_general
-    - field.storage.node.field_doc_file_info_decisi_publi
+    - field.storage.node.field_docum_archi
     - field.storage.node.field_list_anio_infor_decisi
     - node.type.trans_presup_gen_ing_gast_inver
     - taxonomy.vocabulary.transparencia_lista_categorias_p
   content:
-    - 'block_content:transp_presup_general_encabezado:ed502e8c-0f1a-4014-9849-e1901621a634'
+    - 'block_content:transparencia_encabezado_e_intro:f218185d-e47c-48cd-aadb-9ba2918244bd'
   module:
     - file
     - node
@@ -271,7 +271,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: true
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -285,10 +285,10 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: field
-        field_doc_file_info_decisi_publi:
-          id: field_doc_file_info_decisi_publi
-          table: node__field_doc_file_info_decisi_publi
-          field: field_doc_file_info_decisi_publi
+        field_docum_archi:
+          id: field_docum_archi
+          table: node__field_docum_archi
+          field: field_docum_archi
           relationship: none
           group_type: group
           admin_label: ''
@@ -296,7 +296,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '<p>{{ field_list_anio_infor_decisi }} | <a href="field_doc_file_info_decisi_publi" > {{ title }}</a><p>'
+            text: '<p>{{ field_list_anio_infor_decisi }} | <a href="{{ field_docum_archi }}" > {{ title }}</a><p>'
             make_link: false
             path: ''
             absolute: false
@@ -501,7 +501,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: true
-          target: ed502e8c-0f1a-4014-9849-e1901621a634
+          target: f218185d-e47c-48cd-aadb-9ba2918244bd
           view_mode: default
           bypass_access: false
           plugin_id: entity
@@ -532,7 +532,7 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_categ_presp_general'
-        - 'config:field.storage.node.field_doc_file_info_decisi_publi'
+        - 'config:field.storage.node.field_docum_archi'
         - 'config:field.storage.node.field_list_anio_infor_decisi'
   page_1:
     display_plugin: page
@@ -554,5 +554,5 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_categ_presp_general'
-        - 'config:field.storage.node.field_doc_file_info_decisi_publi'
+        - 'config:field.storage.node.field_docum_archi'
         - 'config:field.storage.node.field_list_anio_infor_decisi'

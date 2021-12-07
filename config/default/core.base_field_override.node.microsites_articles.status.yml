@@ -1,0 +1,22 @@
+uuid: 081b1a1d-e727-4cf6-acd5-ec5a1f8c3a1f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.microsites_articles
+id: node.microsites_articles.status
+field_name: status
+entity_type: node
+bundle: microsites_articles
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

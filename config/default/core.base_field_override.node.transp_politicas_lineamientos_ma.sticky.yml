@@ -1,0 +1,22 @@
+uuid: ac56a126-3dcb-4d44-8999-56a53b516b61
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_politicas_lineamientos_ma
+id: node.transp_politicas_lineamientos_ma.sticky
+field_name: sticky
+entity_type: node
+bundle: transp_politicas_lineamientos_ma
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

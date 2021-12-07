@@ -1,0 +1,31 @@
+uuid: a637f62f-1b5c-4949-b4ee-db64e4b551dd
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.trans_infor_trimes_accs_infr_qr.field_docum_archi
+    - field.field.node.trans_infor_trimes_accs_infr_qr.field_list_anio_infor_decisi
+    - field.field.node.trans_infor_trimes_accs_infr_qr.field_list_cat_infor_trismes_acc
+    - field.field.node.trans_infor_trimes_accs_infr_qr.field_list_semestr_infor_acces
+    - node.type.trans_infor_trimes_accs_infr_qr
+  module:
+    - user
+id: node.trans_infor_trimes_accs_infr_qr.teaser
+targetEntityType: node
+bundle: trans_infor_trimes_accs_infr_qr
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_docum_archi: true
+  field_list_anio_infor_decisi: true
+  field_list_cat_infor_trismes_acc: true
+  field_list_semestr_infor_acces: true
+  langcode: true
+  search_api_excerpt: true

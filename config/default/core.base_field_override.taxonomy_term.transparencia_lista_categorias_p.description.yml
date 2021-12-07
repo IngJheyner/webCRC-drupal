@@ -1,0 +1,20 @@
+uuid: c9b9c7b6-8acc-4513-acb4-5367c7999e77
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.transparencia_lista_categorias_p
+  module:
+    - text
+id: taxonomy_term.transparencia_lista_categorias_p.description
+field_name: description
+entity_type: taxonomy_term
+bundle: transparencia_lista_categorias_p
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

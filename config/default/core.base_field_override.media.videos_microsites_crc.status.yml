@@ -1,0 +1,22 @@
+uuid: 1c42c503-37e8-48c2-90e8-2751a663f3f9
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.videos_microsites_crc
+id: media.videos_microsites_crc.status
+field_name: status
+entity_type: media
+bundle: videos_microsites_crc
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

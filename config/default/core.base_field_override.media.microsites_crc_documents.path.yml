@@ -1,0 +1,20 @@
+uuid: 967eecc7-dc76-40b4-8795-9813cc665705
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.microsites_crc_documents
+  module:
+    - path
+id: media.microsites_crc_documents.path
+field_name: path
+entity_type: media
+bundle: microsites_crc_documents
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

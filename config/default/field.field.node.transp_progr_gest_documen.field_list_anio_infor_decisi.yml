@@ -1,0 +1,23 @@
+uuid: 0074fe74-7dbe-47d4-babd-6083294d9e56
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_list_anio_infor_decisi
+    - node.type.transp_progr_gest_documen
+  module:
+    - options
+id: node.transp_progr_gest_documen.field_list_anio_infor_decisi
+field_name: field_list_anio_infor_decisi
+entity_type: node
+bundle: transp_progr_gest_documen
+label: Año
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 2021
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

@@ -1,0 +1,18 @@
+uuid: a3bf698a-02f1-49ba-b11a-3d1ad458be04
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.trans_lista_catego_inform_decisi
+id: taxonomy_term.trans_lista_catego_inform_decisi.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: trans_lista_catego_inform_decisi
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

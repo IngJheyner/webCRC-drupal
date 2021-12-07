@@ -1,0 +1,22 @@
+uuid: 417069f7-1ada-4d2e-a285-d0c214f9d613
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.audio_microsites_crc
+id: media.audio_microsites_crc.status
+field_name: status
+entity_type: media
+bundle: audio_microsites_crc
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

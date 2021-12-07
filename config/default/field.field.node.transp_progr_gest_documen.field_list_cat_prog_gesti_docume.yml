@@ -1,0 +1,29 @@
+uuid: 32816c5f-c397-4b55-92c6-e27de1e8595c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_list_cat_prog_gesti_docume
+    - node.type.transp_progr_gest_documen
+    - taxonomy.vocabulary.transp_list_cat_prog_gest_docuta
+id: node.transp_progr_gest_documen.field_list_cat_prog_gesti_docume
+field_name: field_list_cat_prog_gesti_docume
+entity_type: node
+bundle: transp_progr_gest_documen
+label: Categoría
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      transp_list_cat_prog_gest_docuta: transp_list_cat_prog_gest_docuta
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

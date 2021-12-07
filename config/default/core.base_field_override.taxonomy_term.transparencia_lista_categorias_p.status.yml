@@ -1,0 +1,22 @@
+uuid: 81b82aed-4f99-4aee-92ec-ef4d33bce7ff
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.transparencia_lista_categorias_p
+id: taxonomy_term.transparencia_lista_categorias_p.status
+field_name: status
+entity_type: taxonomy_term
+bundle: transparencia_lista_categorias_p
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

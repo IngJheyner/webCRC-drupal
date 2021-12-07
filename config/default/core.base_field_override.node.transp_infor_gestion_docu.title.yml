@@ -1,0 +1,18 @@
+uuid: 9c49d781-99df-4b9f-a37c-034b7698054b
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_infor_gestion_docu
+id: node.transp_infor_gestion_docu.title
+field_name: title
+entity_type: node
+bundle: transp_infor_gestion_docu
+label: 'Nombre informe'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

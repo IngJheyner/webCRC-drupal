@@ -1,0 +1,46 @@
+uuid: 79128a1a-b4b4-46fc-a21d-cac81f1d24c1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_doc_file_info_decisi_publi
+    - node.type.trans_inform_empalm_doc
+  module:
+    - file
+    - filefield_paths
+third_party_settings:
+  filefield_paths:
+    enabled: true
+    file_path:
+      value: Transparencia/informes_de_empalme
+      options:
+        slashes: false
+        pathauto: false
+        transliterate: false
+    redirect: false
+    retroactive_update: false
+    active_updating: false
+    file_name:
+      value: '[file:ffp-name-only-original].[file:ffp-extension-original]'
+      options:
+        slashes: false
+        pathauto: false
+        transliterate: false
+id: node.trans_inform_empalm_doc.field_doc_file_info_decisi_publi
+field_name: field_doc_file_info_decisi_publi
+entity_type: node
+bundle: trans_inform_empalm_doc
+label: 'Documento / Archivo'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt xlsx xls doc pdf docx zip rar'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

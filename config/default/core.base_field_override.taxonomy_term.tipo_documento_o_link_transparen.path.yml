@@ -1,0 +1,20 @@
+uuid: ffa26ebd-7d6e-493c-bb61-6d6393e9dc50
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_documento_o_link_transparen
+  module:
+    - path
+id: taxonomy_term.tipo_documento_o_link_transparen.path
+field_name: path
+entity_type: taxonomy_term
+bundle: tipo_documento_o_link_transparen
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

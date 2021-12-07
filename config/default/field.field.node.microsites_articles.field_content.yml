@@ -14,7 +14,7 @@ bundle: microsites_articles
 label: Contenido
 description: 'Contenido completo del articulo para el micrositio'
 required: true
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

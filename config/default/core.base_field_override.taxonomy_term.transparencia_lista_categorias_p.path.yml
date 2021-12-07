@@ -1,0 +1,20 @@
+uuid: 8e9003d2-e8e5-4e8f-be4a-40f4345b483d
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.transparencia_lista_categorias_p
+  module:
+    - path
+id: taxonomy_term.transparencia_lista_categorias_p.path
+field_name: path
+entity_type: taxonomy_term
+bundle: transparencia_lista_categorias_p
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

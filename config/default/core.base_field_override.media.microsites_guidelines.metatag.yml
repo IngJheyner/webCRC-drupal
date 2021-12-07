@@ -1,0 +1,18 @@
+uuid: ca038cf8-7cfb-493b-b6f0-acbca3f23c0d
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.microsites_guidelines
+id: media.microsites_guidelines.metatag
+field_name: metatag
+entity_type: media
+bundle: microsites_guidelines
+label: 'Metatags (Hidden field for JSON support)'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

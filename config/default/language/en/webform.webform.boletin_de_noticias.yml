@@ -1,0 +1,19 @@
+title: Newsletter
+elements: |
+  newsletter_user_name:
+    '#title': Name
+    '#description': 'Full name'
+  newsletter_user_email:
+    '#title': 'Email address (*)'
+    '#description': Email
+    '#required_error': 'Email is required'
+  newsletter_user_occupation:
+    '#title': Job
+    '#description': 'Subscriber occupation'
+    '#placeholder': Engineer
+  newsletter_user_politics:
+    '#title': 'I agree to the terms and conditions (*)'
+    '#required_error': 'You must accept the terms and conditions first'
+  actions:
+    '#title': Subscribe
+    '#submit__label': Subscribe

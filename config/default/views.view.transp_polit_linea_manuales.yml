@@ -9,7 +9,7 @@ dependencies:
     - node.type.transp_politicas_lineamientos_ma
     - taxonomy.vocabulary.tipo_documento_o_link_transparen
   content:
-    - 'block_content:transp_politi_lineam_manua_intro:37839860-51e9-424b-afc6-4a2513e83e11'
+    - 'block_content:transparencia_encabezado_e_intro:a84f9802-7bf9-49c3-b0ed-68f049029a6a'
   module:
     - file
     - node
@@ -241,7 +241,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: true
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -475,7 +475,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          target: 37839860-51e9-424b-afc6-4a2513e83e11
+          target: a84f9802-7bf9-49c3-b0ed-68f049029a6a
           view_mode: full
           bypass_access: false
           plugin_id: entity

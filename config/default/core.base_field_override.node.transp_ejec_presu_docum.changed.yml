@@ -1,0 +1,18 @@
+uuid: d13d0a8c-0ab5-40e9-a282-5d7cbd3999e4
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_ejec_presu_docum
+id: node.transp_ejec_presu_docum.changed
+field_name: changed
+entity_type: node
+bundle: transp_ejec_presu_docum
+label: Changed
+description: 'La fecha en que el nodo fue editado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

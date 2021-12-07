@@ -1,0 +1,20 @@
+uuid: fa887b3c-c69f-4ca0-8b03-95515a951ad7
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_inf_decisi_afec_pub_docum
+  module:
+    - path
+id: node.transp_inf_decisi_afec_pub_docum.path
+field_name: path
+entity_type: node
+bundle: transp_inf_decisi_afec_pub_docum
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

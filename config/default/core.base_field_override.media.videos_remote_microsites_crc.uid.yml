@@ -1,0 +1,20 @@
+uuid: 8010a993-1609-4e42-bb48-286344854394
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.videos_remote_microsites_crc
+id: media.videos_remote_microsites_crc.uid
+field_name: uid
+entity_type: media
+bundle: videos_remote_microsites_crc
+label: 'Escrito por'
+description: 'El ID de usuario del autor.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

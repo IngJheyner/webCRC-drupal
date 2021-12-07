@@ -1,0 +1,56 @@
+uuid: d772aec6-cbcd-4cbc-a379-d6ac81aa1c2a
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.block_rss_last_of_postada
+    - field.field.block_content.block_rss_last_of_postada.field_intro_text
+    - field.field.block_content.block_rss_last_of_postada.field_read_more
+    - field.field.block_content.block_rss_last_of_postada.field_rss_feed
+  module:
+    - feed_block
+    - link
+    - text
+id: block_content.block_rss_last_of_postada.default
+targetEntityType: block_content
+bundle: block_rss_last_of_postada
+mode: default
+content:
+  field_intro_text:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_read_more:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_rss_feed:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: rss_feed_widget
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 4
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

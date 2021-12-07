@@ -1,0 +1,18 @@
+uuid: 8f63aee4-204c-484d-aae3-77bbb19fd8db
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_inf_decisi_afec_pub_docum
+id: node.transp_inf_decisi_afec_pub_docum.publish_on
+field_name: publish_on
+entity_type: node
+bundle: transp_inf_decisi_afec_pub_docum
+label: 'Publicar en'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

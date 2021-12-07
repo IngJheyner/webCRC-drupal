@@ -1,0 +1,11 @@
+uuid: a775cb11-6117-4c73-a0b9-34c99ac79a4f
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.transparencia_encabezado_e_intro
+id: block_content.transparencia_encabezado_e_intro
+target_entity_type_id: block_content
+target_bundle: transparencia_encabezado_e_intro
+default_langcode: site_default
+language_alterable: false

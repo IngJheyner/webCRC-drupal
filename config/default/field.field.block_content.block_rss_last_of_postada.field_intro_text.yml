@@ -1,0 +1,21 @@
+uuid: d4d99fa4-f972-42a4-907d-0f10de8deaea
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.block_rss_last_of_postada
+    - field.storage.block_content.field_intro_text
+  module:
+    - text
+id: block_content.block_rss_last_of_postada.field_intro_text
+field_name: field_intro_text
+entity_type: block_content
+bundle: block_rss_last_of_postada
+label: 'Texto de introducción'
+description: 'Introsucción corta para el rss de postdata'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -11,7 +11,7 @@ bundle: transp_inf_decisi_afec_pub_docum
 label: Titulo
 description: ''
 required: true
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

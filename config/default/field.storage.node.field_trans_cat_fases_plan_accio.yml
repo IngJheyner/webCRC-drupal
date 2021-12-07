@@ -1,0 +1,20 @@
+uuid: 805538db-445b-43a4-82e6-a8b9bd367d84
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_trans_cat_fases_plan_accio
+field_name: field_trans_cat_fases_plan_accio
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

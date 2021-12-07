@@ -1,0 +1,18 @@
+uuid: 9ce10857-d211-4c77-aea5-c5d25974c546
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_plan_mejora_docu
+id: node.transp_plan_mejora_docu.title
+field_name: title
+entity_type: node
+bundle: transp_plan_mejora_docu
+label: 'nombre de plan'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,11 @@
+uuid: faf3b934-dd3e-4a47-a690-d1f17aa6476b
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.block_rss_last_of_postada
+id: block_content.block_rss_last_of_postada
+target_entity_type_id: block_content
+target_bundle: block_rss_last_of_postada
+default_langcode: site_default
+language_alterable: false

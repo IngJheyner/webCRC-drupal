@@ -1,0 +1,18 @@
+uuid: 7fba3be5-e1dd-4e0d-b27f-2dc23002f913
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.audio_microsites_crc
+id: media.audio_microsites_crc.created
+field_name: created
+entity_type: media
+bundle: audio_microsites_crc
+label: Fecha
+description: 'El momento en el cual el elemento multimedia fue creado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getRequestTime'
+settings: {  }
+field_type: created

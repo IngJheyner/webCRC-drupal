@@ -1,0 +1,20 @@
+uuid: a4503827-eea6-4234-80a2-3b90e97678e3
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.videos_remote_news_crc
+id: media.videos_remote_news_crc.name
+field_name: name
+entity_type: media
+bundle: videos_remote_news_crc
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

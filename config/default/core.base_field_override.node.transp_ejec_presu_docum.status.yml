@@ -1,0 +1,22 @@
+uuid: 36c387e6-baef-4057-b631-62561691e2ca
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_ejec_presu_docum
+id: node.transp_ejec_presu_docum.status
+field_name: status
+entity_type: node
+bundle: transp_ejec_presu_docum
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

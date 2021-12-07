@@ -1,0 +1,20 @@
+uuid: 0d7a398f-855b-4a4e-8d8c-491ddc5f711e
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.trans_presup_gen_ing_gast_inver
+id: node.trans_presup_gen_ing_gast_inver.uid
+field_name: uid
+entity_type: node
+bundle: trans_presup_gen_ing_gast_inver
+label: 'Escrito por'
+description: 'El nombre de usuario del autor del contenido.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

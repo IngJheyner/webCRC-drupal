@@ -1,0 +1,22 @@
+uuid: 6b170852-5e67-4893-b8c5-89d104bdbe46
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.trans_presup_gen_ing_gast_inver
+id: node.trans_presup_gen_ing_gast_inver.sticky
+field_name: sticky
+entity_type: node
+bundle: trans_presup_gen_ing_gast_inver
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

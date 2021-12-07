@@ -1,0 +1,20 @@
+uuid: b905bb72-3ebd-4ed7-9c49-8da7f0b93bd4
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_documento_o_link_transparen
+  module:
+    - text
+id: taxonomy_term.tipo_documento_o_link_transparen.description
+field_name: description
+entity_type: taxonomy_term
+bundle: tipo_documento_o_link_transparen
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

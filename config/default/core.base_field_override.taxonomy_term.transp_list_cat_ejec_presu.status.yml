@@ -1,0 +1,22 @@
+uuid: a591adf0-dcb6-4b5e-af6b-4c1beee4a148
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.transp_list_cat_ejec_presu
+id: taxonomy_term.transp_list_cat_ejec_presu.status
+field_name: status
+entity_type: taxonomy_term
+bundle: transp_list_cat_ejec_presu
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
