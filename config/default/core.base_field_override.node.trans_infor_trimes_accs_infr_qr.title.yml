@@ -1,0 +1,18 @@
+uuid: 08b9af5e-a057-4f2a-8496-48dcac44d10c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.trans_infor_trimes_accs_infr_qr
+id: node.trans_infor_trimes_accs_infr_qr.title
+field_name: title
+entity_type: node
+bundle: trans_infor_trimes_accs_infr_qr
+label: 'Titulo de informe'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

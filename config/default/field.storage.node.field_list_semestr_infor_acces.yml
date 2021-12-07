@@ -1,0 +1,27 @@
+uuid: e23047cd-efb3-4d37-81f3-bfbbee41e57f
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_list_semestr_infor_acces
+field_name: field_list_semestr_infor_acces
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1 semestre'
+      label: '1 semestre'
+    -
+      value: '2 semestre'
+      label: '2 semestre'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,11 @@
+uuid: 866277b8-0997-4d78-b79c-6a38f860d3ea
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.trans_infor_trimes_accs_infr_qr
+id: node.trans_infor_trimes_accs_infr_qr
+target_entity_type_id: node
+target_bundle: trans_infor_trimes_accs_infr_qr
+default_langcode: site_default
+language_alterable: false

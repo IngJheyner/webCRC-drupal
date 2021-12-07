@@ -1,0 +1,29 @@
+uuid: a63ac6d9-a74d-4e4e-b26e-8b24912c01e3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_list_cat_infor_trismes_acc
+    - node.type.trans_infor_trimes_accs_infr_qr
+    - taxonomy.vocabulary.trans_list_cat_infor_trimestr_ac
+id: node.trans_infor_trimes_accs_infr_qr.field_list_cat_infor_trismes_acc
+field_name: field_list_cat_infor_trismes_acc
+entity_type: node
+bundle: trans_infor_trimes_accs_infr_qr
+label: Categoría
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      trans_list_cat_infor_trimestr_ac: trans_list_cat_infor_trimestr_ac
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

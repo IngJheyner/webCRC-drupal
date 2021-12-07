@@ -1,0 +1,8 @@
+uuid: bd24aae3-2334-43fa-9fdc-0dd06843dc77
+langcode: es
+status: true
+dependencies: {  }
+name: 'Transparencia: Lista Categorías [ nformes trimestrales sobre acceso a información]'
+vid: trans_list_cat_infor_trimestr_ac
+description: ''
+weight: 0

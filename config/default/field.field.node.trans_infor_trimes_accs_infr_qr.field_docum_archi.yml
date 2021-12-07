@@ -1,0 +1,46 @@
+uuid: d4bf8d7a-048e-482c-b19e-7b9e387a6727
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_docum_archi
+    - node.type.trans_infor_trimes_accs_infr_qr
+  module:
+    - file
+    - filefield_paths
+third_party_settings:
+  filefield_paths:
+    enabled: true
+    file_path:
+      value: Transparencia/informes_trimestrales_acceso_informacion
+      options:
+        slashes: false
+        pathauto: false
+        transliterate: false
+    redirect: false
+    retroactive_update: false
+    active_updating: false
+    file_name:
+      value: '[file:ffp-name-only-original].[file:ffp-extension-original]'
+      options:
+        slashes: false
+        pathauto: false
+        transliterate: false
+id: node.trans_infor_trimes_accs_infr_qr.field_docum_archi
+field_name: field_docum_archi
+entity_type: node
+bundle: trans_infor_trimes_accs_infr_qr
+label: 'Documento / Archivo'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt xlsx xls doc pdf docx zip rar'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

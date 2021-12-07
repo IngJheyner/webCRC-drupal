@@ -1,0 +1,11 @@
+uuid: 5571f0a9-a558-4e84-98af-06295c6a6270
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.trans_list_cat_infor_trimestr_ac
+id: taxonomy_term.trans_list_cat_infor_trimestr_ac
+target_entity_type_id: taxonomy_term
+target_bundle: trans_list_cat_infor_trimestr_ac
+default_langcode: site_default
+language_alterable: false
