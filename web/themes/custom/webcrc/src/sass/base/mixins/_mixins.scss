@@ -69,7 +69,7 @@ FORM VISTAS
             border-radius: 0.25rem;
 
             input{          
-                padding: 1.5em 0;            
+                padding: 1.5em 1em;            
                 border: 0;
                 @include media-breakpoint-down(sm){
                     &::placeholder{

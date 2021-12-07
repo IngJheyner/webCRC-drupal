@@ -1,0 +1,128 @@
+uuid: 80b498b2-b4b1-4057-ae48-c970aa76c795
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.questions_frequent.body
+    - node.type.questions_frequent
+  module:
+    - field_group
+    - path
+    - text
+third_party_settings:
+  field_group:
+    group_group_tabs:
+      children:
+        - group_information
+        - group_content
+      parent_name: ''
+      weight: 4
+      format_type: tabs
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        direction: horizontal
+        width_breakpoint: 640
+      label: 'Group Tabs'
+    group_information:
+      children:
+        - created
+        - status
+        - uid
+        - langcode
+        - path
+      parent_name: group_group_tabs
+      weight: 20
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Información
+    group_content:
+      children:
+        - title
+        - body
+      parent_name: group_group_tabs
+      weight: 21
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Contenido
+id: node.questions_frequent.default
+targetEntityType: node
+bundle: questions_frequent
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 5
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 3
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 4
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  promote: true
+  publish_on: true
+  sticky: true
+  unpublish_on: true
+  url_redirects: true

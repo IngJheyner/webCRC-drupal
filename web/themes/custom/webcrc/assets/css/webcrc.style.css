@@ -21841,7 +21841,7 @@ div.page-projects form div.input__primary {
   border-radius: 0.25rem;
 }
 div.page-projects form div.input__primary input {
-  padding: 1.5em 0;
+  padding: 1.5em 1em;
   border: 0;
 }
 @media (max-width: 767.98px) {
@@ -22408,7 +22408,7 @@ div.page-library form div.input__primary {
   border-radius: 0.25rem;
 }
 div.page-library form div.input__primary input {
-  padding: 1.5em 0;
+  padding: 1.5em 1em;
   border: 0;
 }
 @media (max-width: 767.98px) {
@@ -22590,6 +22590,128 @@ div.page-library div.page-library-sections div.library-type-document div.view-co
     grid-template-columns: repeat(2, minmax(-webkit-min-content, 300px));
     grid-template-columns: repeat(2, minmax(min-content, 300px));
   }
+}
+
+/* ===== ===== TEXTO ===== ===== */
+/* ===== ===== FONDO ===== ===== */
+/* ===== ===== BOTONES y Anclas ===== ===== */
+div.preguntas-frecuentes {
+  /* ===== ===== FORM VIEW ===== ===== */
+}
+div.preguntas-frecuentes form {
+  background-color: #3366CC;
+  padding-inline: 8em;
+  padding-block: 3em;
+}
+@media (max-width: 767.98px) {
+  div.preguntas-frecuentes form {
+    padding-inline: 1em;
+    padding-block: 2em;
+  }
+}
+@media (min-width: 768px) {
+  div.preguntas-frecuentes form {
+    padding-inline: 2em;
+  }
+}
+@media (min-width: 992px) {
+  div.preguntas-frecuentes form {
+    padding-inline: 3em;
+  }
+}
+div.preguntas-frecuentes form div.input__primary {
+  height: 3em;
+  background: white;
+  border-radius: 0.25rem;
+}
+div.preguntas-frecuentes form div.input__primary input {
+  padding: 1.5em 1em;
+  border: 0;
+}
+@media (max-width: 767.98px) {
+  div.preguntas-frecuentes form div.input__primary input::-moz-placeholder {
+    content: "a";
+    color: white;
+  }
+  div.preguntas-frecuentes form div.input__primary input:-ms-input-placeholder {
+    content: "a";
+    color: white;
+  }
+  div.preguntas-frecuentes form div.input__primary input::placeholder {
+    content: "a";
+    color: white;
+  }
+}
+div.preguntas-frecuentes form div.input__group {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+  div.preguntas-frecuentes form div.input__group fieldset {
+    flex-basis: 48.5%;
+  }
+}
+@media (max-width: 767.98px) {
+  div.preguntas-frecuentes form div.input__group fieldset {
+    flex-basis: 100%;
+  }
+}
+div.preguntas-frecuentes form div.input__group fieldset legend {
+  margin-bottom: 0;
+}
+div.preguntas-frecuentes form div.input__group div.input__group-item {
+  position: relative;
+  background: white;
+  border-radius: 0.25rem;
+  flex-basis: 48.5%;
+  height: 4em;
+}
+@media (max-width: 767.98px) {
+  div.preguntas-frecuentes form div.input__group div.input__group-item {
+    flex-basis: 100%;
+  }
+}
+div.preguntas-frecuentes form div.input__group div.input__group-item input {
+  border: 0;
+  background-image: none;
+}
+@media (max-width: 767.98px) {
+  div.preguntas-frecuentes form div.input__group div.input__group-item input::-moz-placeholder {
+    content: "a";
+    color: white;
+  }
+  div.preguntas-frecuentes form div.input__group div.input__group-item input:-ms-input-placeholder {
+    content: "a";
+    color: white;
+  }
+  div.preguntas-frecuentes form div.input__group div.input__group-item input::placeholder {
+    content: "a";
+    color: white;
+  }
+}
+div.preguntas-frecuentes form div.input__group div.input__group-item input:not([name="created[min]"], [name="created[max]"]) {
+  height: 4rem;
+}
+div.preguntas-frecuentes form div.input__group div.input__group-item select {
+  border: 0;
+  outline-offset: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+div.preguntas-frecuentes form div.input__group div.input__group-item select:focus {
+  outline: none;
+  box-shadow: none;
+}
+div.preguntas-frecuentes form div.input__group div.input__group-item select option {
+  width: 100%;
+  border: 0;
+}
+div.preguntas-frecuentes form div.input__group div.input__group-item label {
+  color: #3366CC;
+}
+div.preguntas-frecuentes div.respuesta {
+  border-left: 2px solid #F42E62;
 }
 
 /* ==============================

@@ -1,0 +1,22 @@
+uuid: e216d574-438d-4b10-9bfa-18bdd9307653
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: questions_frecuent
+label: 'Preguntas Frecuentes'
+type: 'canonical_entities:node'
+pattern: 'preguntas-frecuentes/[node:title]'
+selection_criteria:
+  dd859a27-e525-424a-86ea-d2ee79b75be8:
+    id: node_type
+    bundles:
+      questions_frequent: questions_frequent
+    negate: false
+    context_mapping:
+      node: node
+    uuid: dd859a27-e525-424a-86ea-d2ee79b75be8
+selection_logic: and
+weight: -5
+relationships: {  }

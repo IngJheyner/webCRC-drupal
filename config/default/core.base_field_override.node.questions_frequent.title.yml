@@ -1,0 +1,18 @@
+uuid: 2d45a28b-220b-4305-a437-e9190e5e4f78
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.questions_frequent
+id: node.questions_frequent.title
+field_name: title
+entity_type: node
+bundle: questions_frequent
+label: '¿ Pregunta ?'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
