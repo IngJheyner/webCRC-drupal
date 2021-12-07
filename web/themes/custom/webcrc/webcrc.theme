@@ -28,3 +28,47 @@ function webcrc_page_attachments_alter(&$page){
 
   $page['#attached']['html_head'][] = [$viewport, 'viewport'];
 }
+
+/**
+ * Implements hook_form_views_exposed_form_alter()
+ *
+ */
+function webcrc_form_views_exposed_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state) {
+  $form['actions']['#attributes'] = [
+    'class' => ['mt-3'],
+  ];
+  $form['actions']['submit']['#attributes'] = [
+    'class' => ['btn-outline-light'],
+  ];
+  $form['actions']['reset']['#attributes'] = [
+    'class' => ['btn-outline-light mt-3 mt-sm-0'],
+  ];
+}
+
+/**
+ * Implements hook_preprocess_form_element()
+ */
+function webcrc_preprocess_form_element(&$variables) {
+  //dpm($variables);
+  /* ===== ===== Nombre de proyecto ===== ===== */
+  if(isset($variables['name'])){
+
+    /* ===== ===== SELECTOR ===== ===== */
+    switch ($variables['name']) {
+
+      case 'combine':
+        $variables['attributes'] = [
+          'class' => [
+            'input__primary d-flex flex-row',
+          ]
+        ];
+    
+        $variables['label']['#attributes'] = [
+          'class' => [
+            'd-none',
+          ]
+        ];
+      break;
+    }
+  }
+}

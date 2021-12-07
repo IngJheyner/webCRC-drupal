@@ -1,0 +1,9 @@
+@use '../../base/variables/variables' as var;
+div.preguntas-frecuentes{
+    /* ===== ===== FORM VIEW ===== ===== */
+    @include form-view();
+
+    div.respuesta{
+        border-left: 2px solid var.$bg-color-sextario;
+    }
+}

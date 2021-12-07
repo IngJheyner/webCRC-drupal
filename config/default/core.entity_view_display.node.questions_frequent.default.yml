@@ -1,0 +1,20 @@
+uuid: 1f28b81d-29a3-4190-b7ec-0babc8076343
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.questions_frequent.body
+    - node.type.questions_frequent
+  module:
+    - user
+id: node.questions_frequent.default
+targetEntityType: node
+bundle: questions_frequent
+mode: default
+content: {  }
+hidden:
+  addtoany: true
+  body: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
