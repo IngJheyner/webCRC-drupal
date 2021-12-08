@@ -29,10 +29,10 @@
 
     {% if multiple %}
 
-      <div{{ attributes.addClass(classes) }}>                
+      <div{{ attributes.addClass(classes) }}>             
 
         {% for keys, item in items|reverse %}          
-          
+
           <div class="card shadow">
 
             <div class="card-header" id="{{ loop.index }}">
@@ -47,6 +47,7 @@
 
                       <img src="/themes/custom/webcrc/src/images/aceptan-comentarios.svg" alt={{'Accept comments'|t}} onerror="this.remove();">
                       <h6 class="text-white d-inline-block text-capitalize">{{ 'interactions'|t }} {{ loop.revindex }} </h6>
+                      <small class='badge badge-light'>{{ item.content['#paragraph'].field_interactions_phases.value}}</small>
 
                     </div>
 

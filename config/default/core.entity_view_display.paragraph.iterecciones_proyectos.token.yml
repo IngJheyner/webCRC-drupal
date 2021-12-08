@@ -6,10 +6,10 @@ dependencies:
     - core.entity_view_mode.paragraph.token
     - field.field.paragraph.iterecciones_proyectos.feeds_item
     - field.field.paragraph.iterecciones_proyectos.field_comentarios_interacciones
-    - field.field.paragraph.iterecciones_proyectos.field_fases_interacciones
     - field.field.paragraph.iterecciones_proyectos.field_fecha_cierre_iteracciones
     - field.field.paragraph.iterecciones_proyectos.field_interaction_extemporaneous
     - field.field.paragraph.iterecciones_proyectos.field_interactions_comments
+    - field.field.paragraph.iterecciones_proyectos.field_interactions_phases
     - field.field.paragraph.iterecciones_proyectos.field_propuestas_interacciones
     - paragraphs.paragraphs_type.iterecciones_proyectos
   module:
@@ -41,7 +41,7 @@ content:
 hidden:
   feeds_item: true
   field_comentarios_interacciones: true
-  field_fases_interacciones: true
   field_interaction_extemporaneous: true
+  field_interactions_phases: true
   field_propuestas_interacciones: true
   search_api_excerpt: true

@@ -5,12 +5,14 @@ dependencies:
   config:
     - field.field.paragraph.iterecciones_proyectos.feeds_item
     - field.field.paragraph.iterecciones_proyectos.field_comentarios_interacciones
-    - field.field.paragraph.iterecciones_proyectos.field_fases_interacciones
     - field.field.paragraph.iterecciones_proyectos.field_fecha_cierre_iteracciones
     - field.field.paragraph.iterecciones_proyectos.field_interaction_extemporaneous
     - field.field.paragraph.iterecciones_proyectos.field_interactions_comments
+    - field.field.paragraph.iterecciones_proyectos.field_interactions_phases
     - field.field.paragraph.iterecciones_proyectos.field_propuestas_interacciones
     - paragraphs.paragraphs_type.iterecciones_proyectos
+  module:
+    - options
 id: paragraph.iterecciones_proyectos.default
 targetEntityType: paragraph
 bundle: iterecciones_proyectos
@@ -44,6 +46,13 @@ content:
     third_party_settings: {  }
     type: boolean
     region: content
+  field_interactions_phases:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
   field_propuestas_interacciones:
     type: entity_reference_entity_view
     weight: 2
@@ -55,6 +64,5 @@ content:
     region: content
 hidden:
   feeds_item: true
-  field_fases_interacciones: true
   field_fecha_cierre_iteracciones: true
   search_api_excerpt: true
