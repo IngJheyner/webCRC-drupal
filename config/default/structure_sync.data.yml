@@ -1,220 +1,3 @@
-menus:
-  -
-    menu_name: main
-    title: 'Transparencia y acceso a la información pública'
-    parent: null
-    uri: 'internal:#'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '1'
-    weight: '-49'
-    langcode: es
-    uuid: bd24f550-691a-433f-a715-669d7f7aba59
-  -
-    menu_name: main
-    title: 'Atención y servicio a la ciudadanía'
-    parent: null
-    uri: 'internal:#'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-48'
-    langcode: es
-    uuid: 773dd082-053d-4b26-acf1-2815aedde80d
-  -
-    menu_name: main
-    title: Participa
-    parent: null
-    uri: 'internal:#'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-47'
-    langcode: es
-    uuid: b67943ce-7be1-4679-af38-8b6f4343ec15
-  -
-    menu_name: main
-    title: 'La CRC'
-    parent: null
-    uri: 'internal:#'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-46'
-    langcode: es
-    uuid: a590b8dd-cce5-476e-b111-4d1b0695f764
-  -
-    menu_name: main
-    title: 'Sala de prensa'
-    parent: null
-    uri: 'internal:#'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-45'
-    langcode: es
-    uuid: 9754eac8-83ab-4d09-afc7-f4b4598827ca
-  -
-    menu_name: main
-    title: Estudios
-    parent: null
-    uri: 'internal:#'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-44'
-    langcode: es
-    uuid: 2a041cad-8240-4856-8940-34d346f3a5ac
-  -
-    menu_name: main
-    title: 'Submenu 1'
-    parent: 'menu_link_content:773dd082-053d-4b26-acf1-2815aedde80d'
-    uri: 'internal:#'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: es
-    uuid: 06b43a7c-7176-4015-9934-703a3325f1be
-  -
-    menu_name: main
-    title: 'Submenu 2'
-    parent: 'menu_link_content:773dd082-053d-4b26-acf1-2815aedde80d'
-    uri: 'internal:#'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: es
-    uuid: 8d34ddd9-2b24-475b-8ba7-70a07c49ff8b
-  -
-    menu_name: main
-    title: 'Submenu 1'
-    parent: 'menu_link_content:b67943ce-7be1-4679-af38-8b6f4343ec15'
-    uri: 'internal:#'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: es
-    uuid: 4d1e5962-f29a-4c9c-bea4-9cf8cee71bc5
-  -
-    menu_name: main
-    title: 'Submenu 2'
-    parent: 'menu_link_content:b67943ce-7be1-4679-af38-8b6f4343ec15'
-    uri: 'internal:#'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: es
-    uuid: 8ef3e256-13a1-4791-9e8a-5a365b495439
-  -
-    menu_name: main
-    title: 'Submenu 1'
-    parent: 'menu_link_content:a590b8dd-cce5-476e-b111-4d1b0695f764'
-    uri: 'internal:#'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: es
-    uuid: a7586318-7725-44c4-bd33-1878e6496de5
-  -
-    menu_name: main
-    title: 'Submenu 2'
-    parent: 'menu_link_content:a590b8dd-cce5-476e-b111-4d1b0695f764'
-    uri: 'internal:#'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: es
-    uuid: de6b368a-d42b-4893-a6f2-efdd55adff14
-  -
-    menu_name: footer
-    title: Politicas
-    parent: null
-    uri: 'internal:#'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-50'
-    langcode: es
-    uuid: ef89f96d-9bec-4b05-bb4d-fae5f773ca45
-  -
-    menu_name: footer
-    title: 'Mapa del sitio'
-    parent: null
-    uri: 'internal:#'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-49'
-    langcode: es
-    uuid: ce1d1fa2-b353-432c-b9ae-d4a562825859
-  -
-    menu_name: footer
-    title: 'Términos y condiciones'
-    parent: null
-    uri: 'internal:#'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-48'
-    langcode: es
-    uuid: 046422c6-f7fa-4c2c-8ed6-d76541a3bca2
-  -
-    menu_name: tools
-    title: 'Item Micrositio'
-    parent: null
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: es
-    uuid: 84050206-fd36-495f-9caf-152e420b899a
-  -
-    menu_name: tools
-    title: 'Item 1'
-    parent: null
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: es
-    uuid: 0d053e29-e7b7-4776-9e37-cba3cbefa66b
-  -
-    menu_name: menu-transp-access-infor-public
-    title: pruebas
-    parent: null
-    uri: 'internal:/'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: es
-    uuid: a2cfe87b-7de0-4e22-bb0e-bfdbb4c0c095
 taxonomies:
   library_author:
     -
@@ -1851,3 +1634,820 @@ blocks:
           value: "<p>Texto de introducción</p>\r\n"
           summary: ''
           format: editor_cont_transparencia
+menus:
+  -
+    menu_name: main
+    title: 'Transparencia y acceso a la información pública'
+    parent: null
+    uri: 'internal:#'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-49'
+    langcode: es
+    uuid: bd24f550-691a-433f-a715-669d7f7aba59
+  -
+    menu_name: main
+    title: 'Atención y servicio a la ciudadanía'
+    parent: null
+    uri: 'internal:#'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-48'
+    langcode: es
+    uuid: 773dd082-053d-4b26-acf1-2815aedde80d
+  -
+    menu_name: main
+    title: Participa
+    parent: null
+    uri: 'internal:#'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-47'
+    langcode: es
+    uuid: b67943ce-7be1-4679-af38-8b6f4343ec15
+  -
+    menu_name: main
+    title: 'La CRC'
+    parent: null
+    uri: 'internal:#'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-46'
+    langcode: es
+    uuid: a590b8dd-cce5-476e-b111-4d1b0695f764
+  -
+    menu_name: main
+    title: 'Sala de prensa'
+    parent: null
+    uri: 'internal:#'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-45'
+    langcode: es
+    uuid: 9754eac8-83ab-4d09-afc7-f4b4598827ca
+  -
+    menu_name: main
+    title: Estudios
+    parent: null
+    uri: 'internal:#'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-44'
+    langcode: es
+    uuid: 2a041cad-8240-4856-8940-34d346f3a5ac
+  -
+    menu_name: main
+    title: 'Submenu 1'
+    parent: 'menu_link_content:773dd082-053d-4b26-acf1-2815aedde80d'
+    uri: 'internal:#'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: 06b43a7c-7176-4015-9934-703a3325f1be
+  -
+    menu_name: main
+    title: 'Submenu 2'
+    parent: 'menu_link_content:773dd082-053d-4b26-acf1-2815aedde80d'
+    uri: 'internal:#'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: 8d34ddd9-2b24-475b-8ba7-70a07c49ff8b
+  -
+    menu_name: main
+    title: 'Submenu 1'
+    parent: 'menu_link_content:b67943ce-7be1-4679-af38-8b6f4343ec15'
+    uri: 'internal:#'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: 4d1e5962-f29a-4c9c-bea4-9cf8cee71bc5
+  -
+    menu_name: main
+    title: 'Submenu 2'
+    parent: 'menu_link_content:b67943ce-7be1-4679-af38-8b6f4343ec15'
+    uri: 'internal:#'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: 8ef3e256-13a1-4791-9e8a-5a365b495439
+  -
+    menu_name: main
+    title: 'Submenu 1'
+    parent: 'menu_link_content:a590b8dd-cce5-476e-b111-4d1b0695f764'
+    uri: 'internal:#'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: a7586318-7725-44c4-bd33-1878e6496de5
+  -
+    menu_name: main
+    title: 'Submenu 2'
+    parent: 'menu_link_content:a590b8dd-cce5-476e-b111-4d1b0695f764'
+    uri: 'internal:#'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: de6b368a-d42b-4893-a6f2-efdd55adff14
+  -
+    menu_name: footer
+    title: Politicas
+    parent: null
+    uri: 'internal:#'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-50'
+    langcode: es
+    uuid: ef89f96d-9bec-4b05-bb4d-fae5f773ca45
+  -
+    menu_name: footer
+    title: 'Mapa del sitio'
+    parent: null
+    uri: 'internal:#'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-49'
+    langcode: es
+    uuid: ce1d1fa2-b353-432c-b9ae-d4a562825859
+  -
+    menu_name: footer
+    title: 'Términos y condiciones'
+    parent: null
+    uri: 'internal:#'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-48'
+    langcode: es
+    uuid: 046422c6-f7fa-4c2c-8ed6-d76541a3bca2
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '1.Información de la entidad'
+    parent: null
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '1'
+    weight: '-54'
+    langcode: es
+    uuid: 828fc963-6129-4c0b-b02c-d6bd372cc7e2
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '1.1 Misión, Visión, Funciones y Deberes'
+    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
+    uri: 'internal:/transparencia-y-acceso-a-la-informacion-publica/informacion-de-la-entidad/mision-vision-funciones-deberes'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-52'
+    langcode: es
+    uuid: 032361b1-dd36-4383-aa82-c36516beb87c
+  -
+    menu_name: menu-transp-access-infor-public
+    title: 2.Normativa
+    parent: null
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '1'
+    weight: '-53'
+    langcode: es
+    uuid: ffb56e75-db3b-4584-afac-a8cfdc9d2899
+  -
+    menu_name: menu-transp-access-infor-public
+    title: 3.Contratación
+    parent: null
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '1'
+    weight: '-52'
+    langcode: es
+    uuid: 3497f9c3-6213-4ae8-bc00-fb25ef61da32
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '1.2 Estructura orgánica - Organigrama.'
+    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
+    uri: 'http://google.com'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-51'
+    langcode: es
+    uuid: b7ebf0cf-78dc-4055-af77-cb2ea7f862c9
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '1.3 Mapas y Cartas descriptivas de los procesos.'
+    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-53'
+    langcode: es
+    uuid: 0ca6218d-f8f9-43b1-850e-4e5253571e89
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '1.4 Directorio Institucional incluyendo sedes, oficinas, sucursales, o regionales, y dependencias.'
+    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-50'
+    langcode: es
+    uuid: cc45bb56-3061-44d0-97fc-ee6637bc996a
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '1.5 Directorio de servidores públicos, empleados o contratistas.'
+    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-49'
+    langcode: es
+    uuid: c944569b-b8c5-4725-9408-9663d4705e90
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '1.6 Directorio de entidades.'
+    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-48'
+    langcode: es
+    uuid: 7894759c-29ad-4891-8acf-fcf9c9203f53
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '1.7 Directorio de agremiaciones o asociaciones en las que participe.'
+    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-47'
+    langcode: es
+    uuid: 8b78ff4d-414d-47f5-98ba-69ed0774193f
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '1.8 Servicio al público, normas, formularios y protocolos de atención.'
+    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-46'
+    langcode: es
+    uuid: 9bc4fb1c-bbb4-4a2e-85fe-5473674d4e4e
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '1.9 Procedimientos que se siguen para tomar decisiones en las diferentes áreas.'
+    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-45'
+    langcode: es
+    uuid: edf8cf27-db77-4065-a08d-c1aafab00396
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '1.10 Mecanismo de presentación directa de solicitudes, quejas y reclamos a disposición del público en relación con acciones u omisiones del sujeto obligado.'
+    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-44'
+    langcode: es
+    uuid: 505b3d2d-04c2-4be2-9105-ec510002576c
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '1.11 Calendario de actividades y eventos.'
+    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-43'
+    langcode: es
+    uuid: 634dc290-df4f-4916-aa96-bd1351e06d90
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '1.12 Información sobre decisiones que puede afectar al público.'
+    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-42'
+    langcode: es
+    uuid: 52e9732c-fd9e-4580-90da-1c176ea5dd32
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '1.13 Entes y autoridades que lo vigilan.'
+    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-41'
+    langcode: es
+    uuid: 19d9995a-9aa5-4982-a17a-440807fe29ac
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '1.14 Publicación de hojas de vida.'
+    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-40'
+    langcode: es
+    uuid: 9005c667-55d2-4765-be4d-604bd5f1047a
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '2.1 Normativa de la entidad o autoridad:'
+    parent: 'menu_link_content:ffb56e75-db3b-4584-afac-a8cfdc9d2899'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: 2911f7b0-e5ba-4c5a-bb65-8b410cf7795a
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '2.2 Búsqueda de normas.'
+    parent: 'menu_link_content:ffb56e75-db3b-4584-afac-a8cfdc9d2899'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: f9b471f8-d74a-4674-96d5-d2cadbf15a51
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '2.3 Proyectos de normas para comentarios.'
+    parent: 'menu_link_content:ffb56e75-db3b-4584-afac-a8cfdc9d2899'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: d4203456-8002-45e9-bfa4-85b265b01894
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '3.1 Plan Anual de Adquisiciones.'
+    parent: 'menu_link_content:3497f9c3-6213-4ae8-bc00-fb25ef61da32'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: b874a5ef-76c4-44f7-a0b4-94b5bb2c4e01
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '3.2 Publicación de la información contractual.'
+    parent: 'menu_link_content:3497f9c3-6213-4ae8-bc00-fb25ef61da32'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: 85137717-3e5c-4c6f-8aae-6b6856d71a7d
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '3.3 Publicación de la ejecución de los contratos.'
+    parent: 'menu_link_content:3497f9c3-6213-4ae8-bc00-fb25ef61da32'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: 4bf150b4-907e-4823-9626-3f9768c4de10
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '3.4 Manual de contratación, adquisición y/o compras.'
+    parent: 'menu_link_content:3497f9c3-6213-4ae8-bc00-fb25ef61da32'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: a62d9359-9332-49ca-92c4-4482c5ce8670
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '3.5 Formatos o modelos de contratos o pliegos tipo.'
+    parent: 'menu_link_content:3497f9c3-6213-4ae8-bc00-fb25ef61da32'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: 9610fd82-6bee-4d67-b567-1cda7f1f8f74
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '4.Planeación, Presupuesto e Informes'
+    parent: null
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '1'
+    weight: '-51'
+    langcode: es
+    uuid: b2dcd4f0-2a8c-4af2-a888-07cd3d494cf2
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '4.1 Presupuesto general de ingresos, gastos e inversión.'
+    parent: 'menu_link_content:b2dcd4f0-2a8c-4af2-a888-07cd3d494cf2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: d71a6df9-95d9-48b9-9018-46dc980d6105
+  -
+    menu_name: menu-transp-access-infor-public
+    title: "4.2\_ Ejecución presupuestal."
+    parent: 'menu_link_content:b2dcd4f0-2a8c-4af2-a888-07cd3d494cf2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: ece5a862-4475-4d25-b10a-a0868c6f28b8
+  -
+    menu_name: menu-transp-access-infor-public
+    title: "4.3\_ Plan de Acción."
+    parent: 'menu_link_content:b2dcd4f0-2a8c-4af2-a888-07cd3d494cf2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: c6493f89-dd7d-4435-84ac-d39ae8c9bb41
+  -
+    menu_name: menu-transp-access-infor-public
+    title: "4.4\_ Proyectos de Inversión."
+    parent: 'menu_link_content:b2dcd4f0-2a8c-4af2-a888-07cd3d494cf2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: acb923f7-fb16-4533-a754-8b60d19b5c20
+  -
+    menu_name: menu-transp-access-infor-public
+    title: "4.5\_ Informes de empalme."
+    parent: 'menu_link_content:b2dcd4f0-2a8c-4af2-a888-07cd3d494cf2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: 1e724ad3-a77d-4aa1-a3fb-6bccf2c318ed
+  -
+    menu_name: menu-transp-access-infor-public
+    title: "4.6\_ Información pública y/o relevante."
+    parent: 'menu_link_content:b2dcd4f0-2a8c-4af2-a888-07cd3d494cf2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: 86b1cafd-b932-46f3-bc0a-3c578d632b6d
+  -
+    menu_name: menu-transp-access-infor-public
+    title: "4.7\_ Informes de gestión, evaluación y auditoría."
+    parent: 'menu_link_content:b2dcd4f0-2a8c-4af2-a888-07cd3d494cf2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: f5b2a1af-f2d3-4a6d-83aa-e1683f5533f3
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '4.8 Informes de la Oficina de Control Interno.'
+    parent: 'menu_link_content:b2dcd4f0-2a8c-4af2-a888-07cd3d494cf2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: 22e9fc32-2d72-4642-931b-518cd71c5c13
+  -
+    menu_name: menu-transp-access-infor-public
+    title: "4.9\_\_ Informe sobre Defensa Pública y Prevención del Daño Antijurídico."
+    parent: 'menu_link_content:b2dcd4f0-2a8c-4af2-a888-07cd3d494cf2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: e9af4bf6-67bf-41ea-baf6-5313e8400d18
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '4.10 Informes trimestrales sobre acceso a información, quejas y reclamos.'
+    parent: 'menu_link_content:b2dcd4f0-2a8c-4af2-a888-07cd3d494cf2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: 9a496877-7580-48a0-9d49-30c8d912655c
+  -
+    menu_name: menu-transp-access-infor-public
+    title: 5.Trámites
+    parent: null
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '1'
+    weight: '-50'
+    langcode: es
+    uuid: 8eed88b7-a99b-494a-a0f2-114f5cd81d25
+  -
+    menu_name: menu-transp-access-infor-public
+    title: 6.Participa
+    parent: null
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-49'
+    langcode: es
+    uuid: 11cd20cc-7f56-43c0-9fd4-865bae6f71e0
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '7.Datos abiertos'
+    parent: null
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '1'
+    weight: '-48'
+    langcode: es
+    uuid: 58d3f7c3-4740-48bc-b103-0cdc4bbe3780
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '7.1 Instrumentos de gestión de la información.'
+    parent: 'menu_link_content:58d3f7c3-4740-48bc-b103-0cdc4bbe3780'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: d97e49ba-7962-488a-9dfb-abb766cacc53
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '7.2 Sección de Datos Abiertos.'
+    parent: 'menu_link_content:58d3f7c3-4740-48bc-b103-0cdc4bbe3780'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: e5bc5e60-5fa7-42a4-a99c-b0633a9c33cc
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '7.3 Portal de Datos Abiertos'
+    parent: 'menu_link_content:58d3f7c3-4740-48bc-b103-0cdc4bbe3780'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: d571a70b-5877-45c0-a33a-5a6ab2f4759b
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '8.Información específica para Grupos de Interés'
+    parent: null
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '1'
+    weight: '-47'
+    langcode: es
+    uuid: 66187132-2531-4f72-a205-36d47fb2571c
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '9.Obligación de reporte de información específica por parte de la entidad'
+    parent: null
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '1'
+    weight: '-45'
+    langcode: es
+    uuid: b5215679-3b8b-4663-84b9-37a59347333b
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '8.1 Información para niños, niñas y adolescentes.'
+    parent: 'menu_link_content:66187132-2531-4f72-a205-36d47fb2571c'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: 01e4a9a1-0fbd-4199-8fe6-545dd7cd9928
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '8.2 Información para Mujeres'
+    parent: 'menu_link_content:66187132-2531-4f72-a205-36d47fb2571c'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: 87cebad3-6215-4976-a2db-1172c1e2071f
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '9.1 Socialización reportes de información'
+    parent: 'menu_link_content:b5215679-3b8b-4663-84b9-37a59347333b'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-54'
+    langcode: es
+    uuid: 57eb4412-d299-4229-ac72-9f254e52b45c
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '9.2 Estudios, investigaciones y otras publicaciones'
+    parent: 'menu_link_content:b5215679-3b8b-4663-84b9-37a59347333b'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-53'
+    langcode: es
+    uuid: 6c7b9ba9-b98e-4a18-bfe8-dab3bdaf514c
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '9.3 Convocatorias'
+    parent: 'menu_link_content:b5215679-3b8b-4663-84b9-37a59347333b'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-52'
+    langcode: es
+    uuid: a0fe8a8c-99f1-414e-abcc-4082651348f2
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '9.4 Preguntas frecuentes'
+    parent: 'menu_link_content:b5215679-3b8b-4663-84b9-37a59347333b'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-51'
+    langcode: es
+    uuid: 4d5f03c5-04c9-4fd4-8d68-76ceccb5c509
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '9.5 Glosario'
+    parent: 'menu_link_content:b5215679-3b8b-4663-84b9-37a59347333b'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-50'
+    langcode: es
+    uuid: 1fdfb212-c629-46a5-b0b7-acd891003c1c
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '9.6 Noticias'
+    parent: 'menu_link_content:b5215679-3b8b-4663-84b9-37a59347333b'
+    uri: 'internal:/transparencia-y-acceso-a-la-informacion-publica/obligacion-de-reporte-de-informacion-especifica-por-parte-de-la-entidad/noticias'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-49'
+    langcode: es
+    uuid: c5b33c96-adbc-41a7-aa74-89b358dca84e
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '9.7 Ofertas de empleo'
+    parent: 'menu_link_content:b5215679-3b8b-4663-84b9-37a59347333b'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-48'
+    langcode: es
+    uuid: 52ea4a6e-0d1e-4c0e-8d2a-8e8ce45d40c7

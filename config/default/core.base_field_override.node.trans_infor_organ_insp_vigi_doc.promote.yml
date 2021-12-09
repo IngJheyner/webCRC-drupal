@@ -1,0 +1,22 @@
+uuid: 93196c07-bfd0-4f55-8b9e-7995666e14bc
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.trans_infor_organ_insp_vigi_doc
+id: node.trans_infor_organ_insp_vigi_doc.promote
+field_name: promote
+entity_type: node
+bundle: trans_infor_organ_insp_vigi_doc
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

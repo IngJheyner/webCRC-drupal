@@ -240,7 +240,7 @@ display:
           exposed: true
           expose:
             operator_id: title_op
-            label: Nombre|
+            label: Nombre
             description: 'Escriba el nombre a buscar'
             use_operator: false
             operator: title_op

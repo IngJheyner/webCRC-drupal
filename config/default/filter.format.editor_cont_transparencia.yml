@@ -2,9 +2,17 @@ uuid: 89444773-575e-46dc-a151-a99f45467b38
 langcode: es
 status: true
 dependencies:
+  config:
+    - core.entity_view_mode.media.full
+    - core.entity_view_mode.media.media_library
+    - core.entity_view_mode.media.slick
+    - core.entity_view_mode.media.token
   module:
     - blazy
+    - editor
+    - entity_embed
     - media
+    - slick
 name: 'Editor Contenido Transparencia'
 format: editor_cont_transparencia
 weight: 0
@@ -33,12 +41,15 @@ filters:
       allowed_media_types:
         audio: audio
         document: document
-        document_private: document_private
         image: image
         images_icons: images_icons
         remote_video: remote_video
-        video: video
-      allowed_view_modes: {  }
+      allowed_view_modes:
+        default: default
+        full: full
+        media_library: media_library
+        slick: slick
+        token: token
   slick_filter:
     id: slick_filter
     provider: slick
@@ -46,4 +57,59 @@ filters:
     weight: 4
     settings:
       optionset: default
+      skin: ''
+      background: false
+      layout: ''
+      optionset_thumbnail: ''
+      skin_thumbnail: ''
+      thumbnail_position: ''
+      thumbnail_caption: ''
+      image_style: ''
+      thumbnail_style: ''
+      responsive_image_style: ''
+      thumbnail_effect: ''
       media_switch: ''
+      ratio: ''
+      override: false
+      overridables:
+        arrows: '0'
+        autoplay: '0'
+        dots: '0'
+        draggable: '0'
+        infinite: '0'
+        mouseWheel: '0'
+        randomize: '0'
+        variableWidth: '0'
+  filter_caption:
+    id: filter_caption
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  filter_align:
+    id: filter_align
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: false
+    weight: -10
+    settings:
+      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <u> <s> <sup> <sub> <drupal-media data-entity-type data-entity-uuid data-view-mode data-align data-caption alt title> <hr> <table> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <img src alt data-entity-type data-entity-uuid data-align data-caption>'
+      filter_html_help: true
+      filter_html_nofollow: false
+  editor_file_reference:
+    id: editor_file_reference
+    provider: editor
+    status: true
+    weight: 0
+    settings: {  }
+  entity_embed:
+    id: entity_embed
+    provider: entity_embed
+    status: true
+    weight: 100
+    settings: {  }

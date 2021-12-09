@@ -1,14 +1,14 @@
-uuid: cf8bda26-00ee-42e7-abb3-334ebb3b5da9
+uuid: 004b5819-091e-4e4a-94d2-1978b461190d
 langcode: es
 status: true
 dependencies:
   config:
-    - node.type.transp_progr_gest_documen
-id: node.transp_progr_gest_documen.title
+    - node.type.transp_proyec_inversi_docum
+id: node.transp_proyec_inversi_docum.title
 field_name: title
 entity_type: node
-bundle: transp_progr_gest_documen
-label: 'Nombre documento'
+bundle: transp_proyec_inversi_docum
+label: Nombre
 description: ''
 required: true
 translatable: true
