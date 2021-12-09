@@ -399,6 +399,18 @@ display:
           expose:
             label: ''
           granularity: second
+        field_list_period_info_orga_insp_value:
+          id: field_list_period_info_orga_insp_value
+          table: node__field_list_period_info_orga_insp
+          field: field_list_period_info_orga_insp_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: standard
       title: 'Informes a organismos de inspección'
       header:
         area_text_custom:

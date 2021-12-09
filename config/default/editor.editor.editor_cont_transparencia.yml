@@ -72,10 +72,13 @@ settings:
       styles: ''
     language:
       language_list: un
+    templates:
+      template_path: ''
+      replace_content: 0
 image_upload:
-  status: false
+  status: true
   scheme: public
-  directory: inline-images
+  directory: /Transparencia/contenido_simple
   max_size: ''
   max_dimensions:
     width: null

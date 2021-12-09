@@ -1,14 +1,14 @@
-uuid: cf8bda26-00ee-42e7-abb3-334ebb3b5da9
+uuid: c1bcee6c-83be-4680-96fd-f6380e209ade
 langcode: es
 status: true
 dependencies:
   config:
-    - node.type.transp_progr_gest_documen
-id: node.transp_progr_gest_documen.title
+    - node.type.transparencia_planes_institucion
+id: node.transparencia_planes_institucion.title
 field_name: title
 entity_type: node
-bundle: transp_progr_gest_documen
-label: 'Nombre documento'
+bundle: transparencia_planes_institucion
+label: 'Nombre plan '
 description: ''
 required: true
 translatable: true

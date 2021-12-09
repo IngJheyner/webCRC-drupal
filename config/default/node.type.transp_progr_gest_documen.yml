@@ -24,7 +24,7 @@ third_party_settings:
     unpublish_revision: false
 name: 'Transparencia: Programa de gestión documental [ Documentos ]'
 type: transp_progr_gest_documen
-description: ''
+description: 'Tipo de contenido para cargue de documento en el numeral Programa de gestión documental en la sección de transparencia'
 help: ''
 new_revision: false
 preview_mode: 1

@@ -8,7 +8,7 @@ id: node.transp_plan_mejora_docu.title
 field_name: title
 entity_type: node
 bundle: transp_plan_mejora_docu
-label: 'nombre de plan'
+label: 'Nombre de plan'
 description: ''
 required: true
 translatable: true
