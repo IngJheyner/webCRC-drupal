@@ -5,9 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.iterecciones_proyectos.feeds_item
     - field.field.paragraph.iterecciones_proyectos.field_comentarios_interacciones
-    - field.field.paragraph.iterecciones_proyectos.field_fases_interacciones
     - field.field.paragraph.iterecciones_proyectos.field_fecha_cierre_iteracciones
-    - field.field.paragraph.iterecciones_proyectos.field_interaction_extemporaneous
     - field.field.paragraph.iterecciones_proyectos.field_propuestas_interacciones
     - paragraphs.paragraphs_type.iterecciones_proyectos
   module:
@@ -107,12 +105,6 @@ mappings:
       value: parent_type
     unique: {  }
     settings: {  }
-  -
-    target: field_fases_interacciones
-    map:
-      value: phases
-    settings:
-      language: null
   -
     target: field_fecha_cierre_iteracciones
     map:

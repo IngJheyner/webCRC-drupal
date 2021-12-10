@@ -1,0 +1,50 @@
+uuid: 47c3f925-a991-4a0e-b9ab-aefcbbf356d9
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.questions_frequent.body
+    - node.type.questions_frequent
+  module:
+    - field_group
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_content:
+      children:
+        - body
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: 'my-5 container'
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: contenido
+id: node.questions_frequent.full
+targetEntityType: node
+bundle: questions_frequent
+mode: full
+content:
+  body:
+    type: text_default
+    weight: 1
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

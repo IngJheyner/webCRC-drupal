@@ -6,10 +6,10 @@ dependencies:
     - entity_browser.browser.propuesta_interacciones_media
     - field.field.paragraph.iterecciones_proyectos.feeds_item
     - field.field.paragraph.iterecciones_proyectos.field_comentarios_interacciones
-    - field.field.paragraph.iterecciones_proyectos.field_fases_interacciones
     - field.field.paragraph.iterecciones_proyectos.field_fecha_cierre_iteracciones
     - field.field.paragraph.iterecciones_proyectos.field_interaction_extemporaneous
     - field.field.paragraph.iterecciones_proyectos.field_interactions_comments
+    - field.field.paragraph.iterecciones_proyectos.field_interactions_phases
     - field.field.paragraph.iterecciones_proyectos.field_propuestas_interacciones
     - paragraphs.paragraphs_type.iterecciones_proyectos
   module:
@@ -69,7 +69,7 @@ third_party_settings:
       children:
         - field_interactions_comments
       parent_name: group_comentarios
-      weight: 20
+      weight: 24
       format_type: fieldset
       region: content
       format_settings:
@@ -101,7 +101,7 @@ mode: default
 content:
   field_comentarios_interacciones:
     type: entity_browser_entity_reference
-    weight: 22
+    weight: 25
     region: content
     settings:
       entity_browser: comentarios_interacciones_media
@@ -114,12 +114,6 @@ content:
       field_widget_replace: false
       open: false
     third_party_settings: {  }
-  field_fases_interacciones:
-    weight: 0
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
   field_fecha_cierre_iteracciones:
     weight: 1
     settings: {  }
@@ -147,6 +141,12 @@ content:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
+    region: content
+  field_interactions_phases:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   field_propuestas_interacciones:
     type: entity_browser_entity_reference

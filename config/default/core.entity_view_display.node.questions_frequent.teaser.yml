@@ -1,0 +1,21 @@
+uuid: 217b534e-1078-458a-9612-9c345dbd662d
+langcode: es
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.questions_frequent.body
+    - node.type.questions_frequent
+  module:
+    - user
+id: node.questions_frequent.teaser
+targetEntityType: node
+bundle: questions_frequent
+mode: teaser
+content: {  }
+hidden:
+  addtoany: true
+  body: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

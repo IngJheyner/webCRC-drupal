@@ -1,22 +1,19 @@
-uuid: 38ba4db4-166e-4fc0-b20b-053fc20eac6b
+uuid: 9518b021-b957-489d-a3a5-5863a2a4b7e8
 langcode: es
 status: true
 dependencies:
   module:
     - options
     - paragraphs
-id: paragraph.field_fases_interacciones
-field_name: field_fases_interacciones
+id: paragraph.field_interactions_phases
+field_name: field_interactions_phases
 entity_type: paragraph
 type: list_string
 settings:
   allowed_values:
     -
-      value: '1'
+      value: 'Fase 1'
       label: 'Fase 1'
-    -
-      value: '2'
-      label: 'Fase 2'
   allowed_values_function: ''
 module: options
 locked: false

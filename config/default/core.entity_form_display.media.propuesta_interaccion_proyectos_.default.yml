@@ -15,6 +15,7 @@ third_party_settings:
     group_informacion:
       children:
         - field_ruta_file_propuestas
+        - name
         - field_media_file_1
         - created
       parent_name: ''
@@ -35,13 +36,13 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 3
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
   field_media_file_1:
     type: file_generic
-    weight: 2
+    weight: 3
     region: content
     settings:
       progress_indicator: throbber
@@ -54,10 +55,17 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  name:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
 hidden:
   feeds_item: true
   langcode: true
-  name: true
   path: true
   status: true
   uid: true

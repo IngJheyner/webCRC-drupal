@@ -1,14 +1,14 @@
-uuid: 63959bca-15a4-4ecc-be29-6ff6e542cbbb
+uuid: dd725bd1-c265-4d93-b901-7c1ad98deede
 langcode: es
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_fases_interacciones
+    - field.storage.paragraph.field_interactions_phases
     - paragraphs.paragraphs_type.iterecciones_proyectos
   module:
     - options
-id: paragraph.iterecciones_proyectos.field_fases_interacciones
-field_name: field_fases_interacciones
+id: paragraph.iterecciones_proyectos.field_interactions_phases
+field_name: field_interactions_phases
 entity_type: paragraph
 bundle: iterecciones_proyectos
 label: Fases
