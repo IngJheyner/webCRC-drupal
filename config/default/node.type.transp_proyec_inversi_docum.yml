@@ -24,7 +24,7 @@ third_party_settings:
     unpublish_revision: false
 name: 'Transparencia: Proyectos de inversión [ Documentos ]'
 type: transp_proyec_inversi_docum
-description: ''
+description: 'Tipo de contenido para el cargue de documentos en el numeral Proyectos de inversión en la sección de transparencia'
 help: ''
 new_revision: false
 preview_mode: 1

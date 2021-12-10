@@ -24,7 +24,7 @@ third_party_settings:
     unpublish_revision: false
 name: 'Transparencia: Tablas de retención documental [ Documentos ]'
 type: transp_tablas_reten_docu
-description: ''
+description: 'Tipo de contenido para el cargue de documento en el numeral Tablas de retención documental TRD, en la sección de transparencia'
 help: ''
 new_revision: false
 preview_mode: 1

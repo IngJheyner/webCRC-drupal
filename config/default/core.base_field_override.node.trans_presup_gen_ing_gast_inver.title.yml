@@ -8,7 +8,7 @@ id: node.trans_presup_gen_ing_gast_inver.title
 field_name: title
 entity_type: node
 bundle: trans_presup_gen_ing_gast_inver
-label: title
+label: 'Nombre documento'
 description: ''
 required: true
 translatable: false
