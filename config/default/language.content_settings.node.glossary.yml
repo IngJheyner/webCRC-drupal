@@ -1,0 +1,11 @@
+uuid: 6099c867-4902-4dd1-9c24-497a85f0a10d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.glossary
+id: node.glossary
+target_entity_type_id: node
+target_bundle: glossary
+default_langcode: site_default
+language_alterable: false

@@ -21662,6 +21662,11 @@ article.projects__regulatory section.projects__regulatory-content div.node__cont
   background-color: #141414;
   border: 1px solid #141414;
 }
+article.projects__regulatory section.projects__regulatory-content div.node__content div.node__content-mechanisms ul.list-group li.list-group-item:nth-child(2) {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: Ellipsis;
+}
 article.projects__regulatory section.projects__regulatory-content div.node__content div.node__content-mechanisms ul.list-group li.node__content-mechanisms--enlaces .field__item {
   padding-bottom: 0.25rem;
 }
@@ -22715,6 +22720,29 @@ div.preguntas-frecuentes form div.input__group div.input__group-item label {
 }
 div.preguntas-frecuentes div.respuesta {
   border-left: 2px solid #F42E62;
+}
+
+/* ===== ===== TEXTO ===== ===== */
+/* ===== ===== FONDO ===== ===== */
+/* ===== ===== BOTONES y Anclas ===== ===== */
+div.glossary ul.glossary__item li.glossary__item-items {
+  overflow: hidden;
+  border: 0;
+}
+div.glossary ul.glossary__item li.glossary__item-items::before {
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), -1px 1px 1px rgba(0, 0, 0, 0.2);
+  background: none repeat scroll 0 0 #b8b8b8;
+  /* color esquina */
+  border-color: #EBEBEB #EBEBEB #b8b8b8 #b8b8b8;
+  /* color de borde */
+  border-style: solid;
+  border-width: 0 16px 16px 0;
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0;
 }
 
 /* ==============================

@@ -1,0 +1,133 @@
+uuid: d285172c-bd63-4a6f-9dd0-fef9bfd30b28
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.glossary.body
+    - field.field.node.glossary.field_glossary_tags
+    - node.type.glossary
+  module:
+    - field_group
+    - path
+    - text
+third_party_settings:
+  field_group:
+    group_group_tabs:
+      children:
+        - group_informacion
+        - group_content
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      region: content
+      format_settings:
+        direction: horizontal
+        width_breakpoint: 640
+        id: ''
+        classes: ''
+        show_empty_fields: false
+      label: 'Group Tabs'
+    group_informacion:
+      children:
+        - created
+        - uid
+        - path
+        - status
+      parent_name: group_group_tabs
+      weight: 3
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Información
+    group_content:
+      children:
+        - title
+        - field_glossary_tags
+        - body
+      parent_name: group_group_tabs
+      weight: 4
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Contenido
+id: node.glossary.default
+targetEntityType: node
+bundle: glossary
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 4
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_glossary_tags:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 6
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 4
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  promote: true
+  publish_on: true
+  sticky: true
+  unpublish_on: true
+  url_redirects: true

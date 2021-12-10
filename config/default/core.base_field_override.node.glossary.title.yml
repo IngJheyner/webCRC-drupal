@@ -1,0 +1,18 @@
+uuid: 6a9dafa8-d9d5-4c02-b7eb-357185bc3ed2
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.glossary
+id: node.glossary.title
+field_name: title
+entity_type: node
+bundle: glossary
+label: Concepto
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

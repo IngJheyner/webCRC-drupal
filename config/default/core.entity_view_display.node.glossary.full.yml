@@ -1,0 +1,52 @@
+uuid: c01a60fe-4223-4bec-a06d-63e396f4bf17
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.glossary.body
+    - field.field.node.glossary.field_glossary_tags
+    - node.type.glossary
+  module:
+    - field_group
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_content:
+      children:
+        - body
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: 'my-5 container'
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Contenido
+id: node.glossary.full
+targetEntityType: node
+bundle: glossary
+mode: full
+content:
+  body:
+    type: text_default
+    weight: 1
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_glossary_tags: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

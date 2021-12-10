@@ -1,0 +1,22 @@
+uuid: 357cfd04-656a-4969-88cb-687fd4e6d470
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.glossary
+id: node.glossary.promote
+field_name: promote
+entity_type: node
+bundle: glossary
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

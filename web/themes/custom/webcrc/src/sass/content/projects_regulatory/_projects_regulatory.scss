@@ -122,6 +122,12 @@ article.projects__regulatory{
                             background-color: var.$bg-color-terciario;
                             border: 1px solid var.$bg-color-terciario;
                         }
+
+                        &:nth-child(2){
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: Ellipsis;
+                        }
                     }
 
                     li.node__content-mechanisms--enlaces .field__item{

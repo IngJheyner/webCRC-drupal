@@ -1,0 +1,22 @@
+uuid: 9e449b96-1d4a-41c9-a9fd-9827ca4e275b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.glossary.body
+    - field.field.node.glossary.field_glossary_tags
+    - node.type.glossary
+  module:
+    - user
+id: node.glossary.default
+targetEntityType: node
+bundle: glossary
+mode: default
+content: {  }
+hidden:
+  addtoany: true
+  body: true
+  field_glossary_tags: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

@@ -1,0 +1,8 @@
+uuid: 554c1823-0499-46b3-85bc-59bbe02056b4
+langcode: es
+status: true
+dependencies: {  }
+name: Abecedario
+vid: alphabet
+description: Glosario.
+weight: 0

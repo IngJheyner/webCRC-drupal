@@ -1,0 +1,23 @@
+@use '../../base/variables/variables' as var;
+
+div.glossary{
+    ul.glossary__item{
+        li.glossary__item-items{
+            overflow: hidden;
+            border: 0;
+            &::before{
+                -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), -1px 1px 1px rgba(0, 0, 0, 0.2);
+                background: none repeat scroll 0 0 var.$bg-color-secundary; /* color esquina */
+                border-color: var.$bg-color-primary var.$bg-color-primary var.$bg-color-secundary var.$bg-color-secundary; /* color de borde */
+                border-style: solid;
+                border-width: 0 16px 16px 0;
+                content: "";
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 0;
+            }
+        }
+    }
+}
