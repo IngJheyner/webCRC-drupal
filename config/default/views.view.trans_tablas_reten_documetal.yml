@@ -445,7 +445,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: transparencia-y-acceso-a-la-informacion-publica/datos-abiertos/tablas-de-retencion-documental
+      path: transparencia-y-acceso-a-la-informacion-publica/datos-abiertos/instrumentos-de-gestion/tablas-de-retencion-documental
     cache_metadata:
       max-age: -1
       contexts:
