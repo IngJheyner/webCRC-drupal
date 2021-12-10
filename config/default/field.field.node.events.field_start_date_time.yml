@@ -1,0 +1,24 @@
+uuid: 144876f9-46a7-4398-961b-87ab2c23fb2a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_start_date_time
+    - node.type.events
+  module:
+    - datetime
+id: node.events.field_start_date_time
+field_name: field_start_date_time
+entity_type: node
+bundle: events
+label: 'Fecha inicio'
+description: 'Fecha y hora de inicio del evento'
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

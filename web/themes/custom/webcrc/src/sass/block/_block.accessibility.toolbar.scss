@@ -1,5 +1,6 @@
 .accessibility-toolbar {
   position: fixed;
+  display: none;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
@@ -38,5 +39,9 @@
     .paragraph--type--accessibility-toolbar {
       position: relative;
     }
+  }
+
+  @include desktop {
+    display: block;
   }
 }

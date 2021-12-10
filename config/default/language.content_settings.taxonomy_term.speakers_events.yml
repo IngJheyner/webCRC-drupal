@@ -1,0 +1,11 @@
+uuid: 43cdc5c6-2dee-4b20-bbef-3b5598b22379
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.speakers_events
+id: taxonomy_term.speakers_events
+target_entity_type_id: taxonomy_term
+target_bundle: speakers_events
+default_langcode: site_default
+language_alterable: false

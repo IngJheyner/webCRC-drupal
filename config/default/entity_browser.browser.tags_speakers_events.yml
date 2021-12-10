@@ -1,0 +1,33 @@
+uuid: 2bf32a9f-2d69-4618-87b7-1206b1019fc1
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.tags
+  module:
+    - views
+name: tags_speakers_events
+label: 'Conferencistas eventos'
+display: modal
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Seleccione conferencistas'
+  auto_open: false
+selection_display: view
+selection_display_configuration:
+  view: tags
+  view_display: entity_browser_3
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  8aacd0db-d7a9-4f6e-b871-81e60a751c5d:
+    settings:
+      view: tags
+      view_display: entity_browser_3
+      submit_text: 'Seleccione conferencistas'
+      auto_select: false
+    uuid: 8aacd0db-d7a9-4f6e-b871-81e60a751c5d
+    weight: 1
+    label: Conferencista
+    id: view

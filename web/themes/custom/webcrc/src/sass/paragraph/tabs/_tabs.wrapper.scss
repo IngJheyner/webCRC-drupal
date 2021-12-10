@@ -1,0 +1,167 @@
+// Tabs
+// -----------------------------------------------------------------------------
+
+// CONTENEDOR
+.tabs-container.tabs-primary {
+
+  // BARRA DE NAVEGACION
+  ul.nav-pills {
+    padding: 10px 10px 5px;
+    background: $bg-white;
+
+    li {
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        height: 80%;
+        margin: auto;
+        background: $bg-gray;
+      }
+
+      &:last-child:after {
+        display: none;
+      }
+
+      a {
+        background: transparent;
+
+        div.media.media-container {
+          display: block;
+          width: max-content;
+          text-align: left;
+          margin: auto;
+          justify-content: center;
+          align-content: center;
+          align-items: center;
+
+          .field[data-blazy] {
+            min-width: auto;
+            margin-right: 0px;
+
+            @include desktop {
+              margin-right: 10px;
+            }
+          }
+
+          img {
+            width: 50px;
+            height: auto;
+
+            @include small {
+              width: 60px;
+            }
+          }
+
+          .media-body {
+            .title,
+            .title * {
+              font-size: 12pt;
+              color: $text-dark-blue;
+
+              @include small {
+                font-size: 20pt;
+              }
+
+              @include desktop {
+                font-size: 30pt;
+              }
+            }
+          }
+
+          @include desktop {
+            display: flex;
+          }
+        }
+
+        div.description,
+        div.description * {
+          display: none;
+          margin-top: -4px;
+          color: $text-dark-blue;
+          visibility: hidden;
+
+          @include desktop {
+            display: block;
+          }
+        }
+
+        &:after {
+          font-family: "Material Icons";
+          content: 'arrow_drop_down';
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 35%;
+          font-size: 70pt;
+          color: $text-white;
+          visibility: hidden;
+
+          @include small {
+            top: 50%;
+          }
+
+          @include desktop {
+            top: 40%;
+          }
+        }
+
+        &.active {
+
+          div.media.media-container {
+
+            img {
+              filter: $img-filter-secondary;
+            }
+
+            .media-body {
+              .title,
+              .title * {
+                color: $text-alpha;
+              }
+            }
+          }
+
+          div.description,
+          div.description * {
+            color: $text-alpha;
+          }
+
+          div.description,
+          div.description *,
+          &:after {
+            visibility: visible;
+          }
+        }
+      }
+    }
+      
+  }
+
+  // CONTENIDO
+  div.tab-content {
+    margin: auto;
+    padding: 20px;
+    background: $bg-gray;
+
+    @include small {
+      padding: 20px 50px;
+    }
+
+    div.tab-pane {
+      position: relative;
+      width: 100%;
+      max-width: 100%;
+      margin: auto;
+
+      @include large-lg {
+        max-width: 90%;
+      }
+    }
+  }
+}

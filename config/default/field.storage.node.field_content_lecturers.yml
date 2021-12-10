@@ -1,0 +1,20 @@
+uuid: 90414124-29a0-470a-bc23-c9340cadb26a
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_content_lecturers
+field_name: field_content_lecturers
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 20
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
