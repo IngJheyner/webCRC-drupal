@@ -29,8 +29,15 @@
       </div>
 
       <div class="col pr-5 text-right">
-        <span class="govco-icon govco-icon-language-en-n lang-govco ml-3"></span>
-        <span class="govco-icon govco-icon-language-es-n lang-govco ml-3"></span>
+        {% if path('<front>') == "/es" %}
+          <a href="/en">
+            <span class="govco-icon govco-icon-language-en-n lang-govco ml-3"></span>
+          </a>
+        {% else %}
+          <a href="/es">
+            <span class="govco-icon govco-icon-language-es-n lang-govco ml-3"></span>
+          </a>
+        {% endif %}
         {% block toolbar_right %}
           {{ toolbar_right }}
         {% endblock %}

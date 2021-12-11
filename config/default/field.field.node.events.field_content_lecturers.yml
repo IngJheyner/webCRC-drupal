@@ -1,0 +1,29 @@
+uuid: 11bc9f8a-190f-49f1-b724-24a7719f0c3d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_lecturers
+    - node.type.events
+    - taxonomy.vocabulary.speakers_events
+id: node.events.field_content_lecturers
+field_name: field_content_lecturers
+entity_type: node
+bundle: events
+label: Conferencistas
+description: 'Conferenciatas o panelistas que participan en el evento evento'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      speakers_events: speakers_events
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

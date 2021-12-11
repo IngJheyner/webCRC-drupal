@@ -1,0 +1,19 @@
+uuid: 5744a539-25fb-4a2d-a434-ded26a3a398b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content_id
+    - paragraphs.paragraphs_type.accessibility_toolbar
+id: paragraph.accessibility_toolbar.field_content_id
+field_name: field_content_id
+entity_type: paragraph
+bundle: accessibility_toolbar
+label: 'ID Contenido'
+description: "Id unico para cada boton de la barra de herramientas de accesibilidad\r\n(Solo letras y espacios separado por guiones al medio)"
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,60 @@
+uuid: 06793a7b-f692-437a-9baa-757b422f6b75
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.speakers_events.field_content_function
+    - taxonomy.vocabulary.speakers_events
+  module:
+    - path
+    - text
+id: taxonomy_term.speakers_events.default
+targetEntityType: taxonomy_term
+bundle: speakers_events
+mode: default
+content:
+  description:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_content_function:
+    weight: 101
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 100
+    region: content
+    third_party_settings: {  }
+hidden: {  }

@@ -39,17 +39,28 @@
         $menu_item['entity']['#show_item_link'] = FALSE;
       }
     }
-}
+  }
 
-/**
- * @param $uuid, a Superfish ID
- * @return string $uuid
- *
- * Helper function to extract a UUID from a Superfish menu item ID string
- */
-function _webcrc_superfish_uuid($uuid) {
+  /**
+   * @param $uuid, a Superfish ID
+   * @return string $uuid
+   *
+   * Helper function to extract a UUID from a Superfish menu item ID string
+   */
+  function _webcrc_superfish_uuid($uuid) {
     $uuid = preg_replace('/^.*-menu-link-content/', '', $uuid);
     $uuid = explode("--", $uuid);
     $uuid = $uuid[0];
     return $uuid;
-}
+  }
+  
+  /**
+  * Use language code for the language switcher
+  */
+  function webcrc_preprocess_links__language_block(&$variables) {
+    foreach ($variables['links'] as $i => $link) {
+      // @var \Drupal\language\Entity\ConfigurableLanguage $linkLanguage
+      $linkLanguage = $link['link']['#options']['language'];
+      $variables['links'][$i]['link']['#title'] = $linkLanguage->get('id');
+    }
+  }

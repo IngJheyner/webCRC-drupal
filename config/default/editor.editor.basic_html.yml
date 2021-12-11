@@ -32,8 +32,8 @@ settings:
         -
           name: Media
           items:
+            - DrupalMediaLibrary
             - Blockquote
-            - DrupalImage
         -
           name: 'Block Formatting'
           items:
@@ -45,11 +45,18 @@ settings:
   plugins:
     stylescombo:
       styles: ''
+    language:
+      language_list: un
+    templates:
+      template_path: ''
+      replace_content: 0
+    insert_view_adv:
+      enable_live_preview: true
 image_upload:
   status: true
   scheme: public
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: 0
-    height: 0
+    width: null
+    height: null

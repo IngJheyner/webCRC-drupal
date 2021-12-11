@@ -12,7 +12,48 @@ import anime from 'animejs/lib/anime.es';
 
       $(document, context).once('webcrc').each( function () {
 
-        $(document).ready( function () {          
+        $(document).ready( function () {   
+          
+          // AUMENTAR Y DISMINUIR FUENTE DE LETRA
+          const getFontSize = () =>
+            parseFloat(getComputedStyle(document.documentElement)
+              .getPropertyValue('--font-size'));
+
+          const fontUp = element => {
+            element.addEventListener('click', () => {
+              let fontSize = getFontSize()
+              document.documentElement
+                .style.setProperty('--font-size', `${fontSize * 1.1}`)
+            })
+          }
+          
+          const fontDown = element => {
+            element.addEventListener('click', () => {
+              let fontSize = getFontSize()
+              document.documentElement
+                .style.setProperty('--font-size', `${fontSize * 0.9}`)
+            })
+          }
+
+          const contrast = element => {
+            element.addEventListener('click', () => {
+              if ($('html').hasClass('contrasteweb')) {
+                $('html').removeClass('contrasteweb');
+              } else {
+                $('html').addClass('contrasteweb');
+              }
+            })
+          }
+
+          addEventListener('keyup', e => {
+            if(e.key === 'ArrowUp') document.getElementById('font-up-crc').click()
+            if(e.key === 'ArrowDown') document.getElementById('font-down-crc').click()
+          });
+          
+          contrast(document.getElementById('contrast-crc'));
+          fontUp(document.getElementById('font-up-crc'));
+          fontDown(document.getElementById('font-down-crc'));
+        
           var indicatorCount = document.querySelectorAll('.count_indicator');
 
           if(indicatorCount) {
