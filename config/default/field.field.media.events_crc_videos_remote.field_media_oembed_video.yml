@@ -1,0 +1,19 @@
+uuid: d9088f83-f9be-46c9-a121-c2d3d2aa5719
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_oembed_video
+    - media.type.events_crc_videos_remote
+id: media.events_crc_videos_remote.field_media_oembed_video
+field_name: field_media_oembed_video
+entity_type: media
+bundle: events_crc_videos_remote
+label: 'URL de Remote video'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

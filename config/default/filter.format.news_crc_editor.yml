@@ -14,13 +14,13 @@ filters:
   blazy_filter:
     id: blazy_filter
     provider: blazy
-    status: false
+    status: true
     weight: 3
     settings:
       filter_tags:
-        img: img
-        iframe: iframe
-      media_switch: ''
+        img: '0'
+        iframe: '0'
+      media_switch: media
       hybrid_style: ''
       box_style: ''
       box_caption: ''

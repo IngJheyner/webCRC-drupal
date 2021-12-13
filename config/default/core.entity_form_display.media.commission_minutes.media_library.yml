@@ -1,0 +1,21 @@
+uuid: e5f2b485-c2eb-4f77-b9cd-d0d3a8da3952
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.commission_minutes.field_media_document
+    - media.type.commission_minutes
+id: media.commission_minutes.media_library
+targetEntityType: media
+bundle: commission_minutes
+mode: media_library
+content: {  }
+hidden:
+  created: true
+  field_media_document: true
+  langcode: true
+  name: true
+  path: true
+  status: true
+  uid: true

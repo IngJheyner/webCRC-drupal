@@ -1,0 +1,29 @@
+uuid: 0244bfc4-8486-483e-adb8-2180d484a21f
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.commission_minutes.field_content_file
+    - field.field.node.commission_minutes.field_date
+    - field.field.node.commission_minutes.field_introduccion_contenido
+    - node.type.commission_minutes
+  module:
+    - user
+id: node.commission_minutes.teaser
+targetEntityType: node
+bundle: commission_minutes
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_content_file: true
+  field_date: true
+  field_introduccion_contenido: true
+  langcode: true
+  search_api_excerpt: true

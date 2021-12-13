@@ -1,0 +1,22 @@
+uuid: 2ef16023-2dea-4b5c-bb71-9639aa1c690b
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.commission_minutes
+id: node.commission_minutes.promote
+field_name: promote
+entity_type: node
+bundle: commission_minutes
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

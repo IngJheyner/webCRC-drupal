@@ -1,0 +1,21 @@
+uuid: 4c6911a3-c9d2-4b8d-a352-3046d612cc69
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.home_articles
+  module:
+    - text
+id: node.home_articles.field_content
+field_name: field_content
+entity_type: node
+bundle: home_articles
+label: Contenido
+description: 'Contenido abierto'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

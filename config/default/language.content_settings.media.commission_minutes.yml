@@ -1,0 +1,11 @@
+uuid: 3e95b79c-5044-4995-a2de-b7576284bcc4
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.commission_minutes
+id: media.commission_minutes
+target_entity_type_id: media
+target_bundle: commission_minutes
+default_langcode: site_default
+language_alterable: false

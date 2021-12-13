@@ -1,0 +1,21 @@
+uuid: c7608412-fa75-4cf9-82ef-d9bae639cf50
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.events_crc_videos.field_media_video_file
+    - media.type.events_crc_videos
+id: media.events_crc_videos.media_library
+targetEntityType: media
+bundle: events_crc_videos
+mode: media_library
+content: {  }
+hidden:
+  created: true
+  field_media_video_file: true
+  langcode: true
+  name: true
+  path: true
+  status: true
+  uid: true

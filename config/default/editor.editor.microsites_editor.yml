@@ -58,8 +58,6 @@ settings:
     templates:
       template_path: ''
       replace_content: 0
-    insert_view_adv:
-      enable_live_preview: false
 image_upload:
   status: false
   scheme: public

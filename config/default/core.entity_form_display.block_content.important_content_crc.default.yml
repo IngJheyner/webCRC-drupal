@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - block_content.type.important_content_crc
+    - field.field.block_content.important_content_crc.field_content_animated_icon
     - field.field.block_content.important_content_crc.field_content_tabs
     - field.field.block_content.important_content_crc.field_content_title
     - field.field.block_content.important_content_crc.field_content_title_primary
@@ -16,8 +17,15 @@ targetEntityType: block_content
 bundle: important_content_crc
 mode: default
 content:
+  field_content_animated_icon:
+    type: media_library_widget
+    weight: 1
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
   field_content_tabs:
-    weight: 4
+    weight: 5
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -29,7 +37,7 @@ content:
     type: entity_reference_paragraphs
     region: content
   field_content_title:
-    weight: 3
+    weight: 4
     settings:
       size: 60
       placeholder: ''
@@ -37,7 +45,7 @@ content:
     type: string_textfield
     region: content
   field_content_title_primary:
-    weight: 2
+    weight: 3
     settings:
       size: 60
       placeholder: ''
@@ -45,7 +53,7 @@ content:
     type: string_textfield
     region: content
   field_icon:
-    weight: 1
+    weight: 2
     settings:
       media_types: {  }
     third_party_settings: {  }
@@ -61,14 +69,14 @@ content:
     third_party_settings: {  }
   langcode:
     type: language_select
-    weight: 5
+    weight: 6
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   translation:
-    weight: 10
+    weight: 7
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden: {  }

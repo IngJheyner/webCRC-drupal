@@ -1,0 +1,30 @@
+uuid: 36002632-3e36-488a-9886-649715625429
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.media.events_crc_videos_remote.field_media_oembed_video
+    - media.type.events_crc_videos_remote
+  module:
+    - media
+id: media.events_crc_videos_remote.default
+targetEntityType: media
+bundle: events_crc_videos_remote
+mode: default
+content:
+  field_media_oembed_video:
+    type: oembed
+    label: visually_hidden
+    weight: 0
+    settings:
+      max_width: 0
+      max_height: 0
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

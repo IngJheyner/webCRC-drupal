@@ -1,0 +1,46 @@
+uuid: 9b7caa70-00ec-4042-bfb3-15fac7d5c442
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_file
+    - node.type.commission_minutes
+  module:
+    - file
+    - filefield_paths
+third_party_settings:
+  filefield_paths:
+    enabled: true
+    file_path:
+      value: webcrc/actas-comision/documents
+      options:
+        slashes: false
+        pathauto: false
+        transliterate: false
+    redirect: false
+    retroactive_update: false
+    active_updating: false
+    file_name:
+      value: '[file:ffp-name-only-original].[file:ffp-extension-original]'
+      options:
+        slashes: false
+        pathauto: false
+        transliterate: false
+id: node.commission_minutes.field_content_file
+field_name: field_content_file
+entity_type: node
+bundle: commission_minutes
+label: Archivo
+description: 'Archivo actas de comision'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: pdf
+  max_filesize: '50 MB'
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

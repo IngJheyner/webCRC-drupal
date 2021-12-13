@@ -1,0 +1,21 @@
+uuid: 3bb3b39d-7c6d-4e7e-8d81-3d8a33dd4a62
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.events_crc_documents.field_media_document
+    - media.type.events_crc_documents
+id: media.events_crc_documents.media_library
+targetEntityType: media
+bundle: events_crc_documents
+mode: media_library
+content: {  }
+hidden:
+  created: true
+  field_media_document: true
+  langcode: true
+  name: true
+  path: true
+  status: true
+  uid: true

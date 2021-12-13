@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - block_content.type.indicators
+    - field.field.block_content.indicators.field_content_animated_icon
     - field.field.block_content.indicators.field_content_title
     - field.field.block_content.indicators.field_icon
     - field.field.block_content.indicators.field_indicator
@@ -18,8 +19,48 @@ targetEntityType: block_content
 bundle: indicators
 mode: default
 content:
+  field_content_animated_icon:
+    weight: 0
+    label: hidden
+    settings:
+      link: '1'
+      class: ''
+      id: ''
+      image: ''
+      overlay: ''
+      title: ''
+      vanilla: false
+      icon: ''
+      layout: ''
+      view_mode: ''
+      cache: 0
+      current_view_mode: ''
+      skin: ''
+      fx: ''
+      style: ''
+      background: false
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      caption: {  }
+      responsive_image_style: ''
+      box_style: ''
+      image_style: ''
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
+      _uri: ''
+      breakpoints: {  }
+      sizes: ''
+      grid_header: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
+    third_party_settings: {  }
+    type: blazy_media
+    region: content
   field_content_title:
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       link_to_entity: false
@@ -28,7 +69,7 @@ content:
     region: content
   field_icon:
     type: blazy_media
-    weight: 0
+    weight: 1
     label: hidden
     settings:
       view_mode: default
@@ -68,7 +109,7 @@ content:
     region: content
   field_indicator:
     type: entity_reference_revisions_entity_view
-    weight: 3
+    weight: 4
     label: hidden
     settings:
       view_mode: default
@@ -77,7 +118,7 @@ content:
     region: content
   field_logo:
     type: blazy_media
-    weight: 2
+    weight: 3
     label: hidden
     settings:
       image_style: ''
@@ -116,7 +157,7 @@ content:
     third_party_settings: {  }
     region: content
   field_primary_url:
-    weight: 4
+    weight: 5
     label: hidden
     settings:
       trim_length: 80

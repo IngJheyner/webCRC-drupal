@@ -1,0 +1,70 @@
+uuid: 9b03f171-7ac6-4494-9989-76dd979afc66
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.events
+  module:
+    - ckeditor
+format: events
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Fuentes
+          items:
+            - Styles
+            - Format
+        -
+          name: Formato
+          items:
+            - Bold
+            - Italic
+            - Underline
+        -
+          name: Parrafos
+          items:
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+            - JustifyBlock
+        -
+          name: Enlaces
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Listas
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Media
+          items:
+            - Blockquote
+            - DrupalMediaLibrary
+        -
+          name: Tools
+          items:
+            - Spoiler
+            - Accordion
+            - Templates
+            - Source
+  plugins:
+    stylescombo:
+      styles: ''
+    language:
+      language_list: un
+    templates:
+      template_path: ''
+      replace_content: 0
+image_upload:
+  status: false
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

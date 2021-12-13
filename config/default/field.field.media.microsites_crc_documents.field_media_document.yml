@@ -38,8 +38,8 @@ default_value: {  }
 default_value_callback: ''
 settings:
   file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'txt doc docx pdf'
-  max_filesize: '10 MB'
+  file_extensions: 'txt doc docx pdf xls xlsx'
+  max_filesize: '25 MB'
   description_field: false
   handler: 'default:file'
   handler_settings: {  }

@@ -1,0 +1,21 @@
+uuid: 94e9bb35-e292-473e-accd-1fbaf1fc0427
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.events_crc_videos_remote.field_media_oembed_video
+    - media.type.events_crc_videos_remote
+id: media.events_crc_videos_remote.media_library
+targetEntityType: media
+bundle: events_crc_videos_remote
+mode: media_library
+content: {  }
+hidden:
+  created: true
+  field_media_oembed_video: true
+  langcode: true
+  name: true
+  path: true
+  status: true
+  uid: true

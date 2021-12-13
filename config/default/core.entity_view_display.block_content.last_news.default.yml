@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - block_content.type.last_news
+    - field.field.block_content.last_news.field_content_animated_icon
     - field.field.block_content.last_news.field_content_title
     - field.field.block_content.last_news.field_content_title_primary
     - field.field.block_content.last_news.field_content_view
@@ -16,8 +17,48 @@ targetEntityType: block_content
 bundle: last_news
 mode: default
 content:
+  field_content_animated_icon:
+    weight: 0
+    label: hidden
+    settings:
+      link: '1'
+      class: ''
+      id: ''
+      image: ''
+      overlay: ''
+      title: ''
+      vanilla: false
+      icon: ''
+      layout: ''
+      view_mode: ''
+      cache: 0
+      current_view_mode: ''
+      skin: ''
+      fx: ''
+      style: ''
+      background: false
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      caption: {  }
+      responsive_image_style: ''
+      box_style: ''
+      image_style: ''
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
+      _uri: ''
+      breakpoints: {  }
+      sizes: ''
+      grid_header: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
+    third_party_settings: {  }
+    type: blazy_media
+    region: content
   field_content_title:
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       link_to_entity: false
@@ -25,7 +66,7 @@ content:
     type: string
     region: content
   field_content_title_primary:
-    weight: 3
+    weight: 4
     label: hidden
     settings:
       link_to_entity: false
@@ -33,7 +74,7 @@ content:
     type: string
     region: content
   field_content_view:
-    weight: 2
+    weight: 3
     label: hidden
     settings:
       plugin_types:
@@ -47,7 +88,7 @@ content:
     type: viewsreference_formatter
     region: content
   field_icon:
-    weight: 0
+    weight: 1
     label: hidden
     settings:
       link: '1'

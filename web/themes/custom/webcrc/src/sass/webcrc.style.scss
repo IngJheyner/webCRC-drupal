@@ -58,11 +58,6 @@
 @import "layout/page.content";
 @import "layout/page.footer";
 
-// Override (Anular estilos de modulos contribuidos)
-// -----------------------------------------------------------------------------
-@import "override/easy_breadcrumb/easy_breadcrumb";
-@import "override/superfish/superfish";
-
 // Component
 // -----------------------------------------------------------------------------
 @import "../components/node/node";
@@ -70,6 +65,10 @@
 // Global
 // -----------------------------------------------------------------------------
 @import "_main";
+
+// OVERRIDE
+// -----------------------------------------------------------------------------
+@import "override/_override";
 
 // Other
 // -----------------------------------------------------------------------------

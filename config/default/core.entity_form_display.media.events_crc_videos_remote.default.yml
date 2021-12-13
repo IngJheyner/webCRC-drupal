@@ -1,0 +1,61 @@
+uuid: 55805737-173e-4f13-acfd-60b51b0d2f64
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.media.events_crc_videos_remote.field_media_oembed_video
+    - media.type.events_crc_videos_remote
+  module:
+    - media
+    - path
+id: media.events_crc_videos_remote.default
+targetEntityType: media
+bundle: events_crc_videos_remote
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_media_oembed_video:
+    type: oembed_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 100
+    region: content
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden:
+  name: true

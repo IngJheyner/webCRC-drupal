@@ -22,7 +22,6 @@
     .logo-crc {
       background: rgb(244,46,98);
       background: linear-gradient(110deg, rgba(244,46,98,1) 90%, rgba(255,255,255,0) 90%); 
-      padding: 15px 0;
     }
   }
 
@@ -75,6 +74,7 @@
         &:after {
           position: absolute;
           content: 'Buscar';
+          text-align: center;
           margin-top: -13px;
           font-size: 14pt;
           font-weight: 500;

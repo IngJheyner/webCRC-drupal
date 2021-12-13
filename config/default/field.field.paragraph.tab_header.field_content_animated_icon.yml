@@ -1,0 +1,29 @@
+uuid: 9141b7a7-10d9-43ef-b995-06abb16c8a95
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content_animated_icon
+    - media.type.inclusive_language
+    - paragraphs.paragraphs_type.tab_header
+id: paragraph.tab_header.field_content_animated_icon
+field_name: field_content_animated_icon
+entity_type: paragraph
+bundle: tab_header
+label: 'Lenguaje inclusivo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      inclusive_language: inclusive_language
+    sort:
+      field: created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

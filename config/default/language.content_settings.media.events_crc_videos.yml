@@ -1,0 +1,11 @@
+uuid: 6260ad15-837a-4e74-bf65-bb3e767766de
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.events_crc_videos
+id: media.events_crc_videos
+target_entity_type_id: media
+target_bundle: events_crc_videos
+default_langcode: site_default
+language_alterable: false
