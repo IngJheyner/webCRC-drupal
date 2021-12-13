@@ -1,13 +1,13 @@
-uuid: 0e4b45c0-224a-496a-980b-11113a289f46
+uuid: aebfccd6-c0fd-413a-bae8-42bcb3e9c10d
 langcode: es
 status: true
 dependencies:
   config:
-    - node.type.events
-id: node.events.promote
+    - node.type.agency_regulatory
+id: node.agency_regulatory.promote
 field_name: promote
 entity_type: node
-bundle: events
+bundle: agency_regulatory
 label: 'Promoted to front page'
 description: ''
 required: false

@@ -1,20 +1,20 @@
-uuid: dfb20a6e-6ff5-4cdf-be39-59720feb6604
+uuid: 4ae65f9a-9832-4056-bcd0-d8a6c29ef63a
 langcode: es
 status: true
 dependencies:
   module:
-    - taxonomy
-id: taxonomy_term.field_content_function
-field_name: field_content_function
-entity_type: taxonomy_term
+    - node
+id: node.field_agency_colors_initial
+field_name: field_agency_colors_initial
+entity_type: node
 type: string
 settings:
-  max_length: 350
+  max_length: 10
   is_ascii: false
   case_sensitive: false
 module: core
 locked: false
-cardinality: 1
+cardinality: 4
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

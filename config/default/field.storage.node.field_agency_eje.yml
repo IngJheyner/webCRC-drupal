@@ -1,19 +1,19 @@
-uuid: 90414124-29a0-470a-bc23-c9340cadb26a
+uuid: 4286bff1-6653-49a3-ba23-e3d5735698ad
 langcode: es
 status: true
 dependencies:
   module:
     - node
     - taxonomy
-id: node.field_content_lecturers
-field_name: field_content_lecturers
+id: node.field_agency_eje
+field_name: field_agency_eje
 entity_type: node
 type: entity_reference
 settings:
   target_type: taxonomy_term
 module: core
 locked: false
-cardinality: 20
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

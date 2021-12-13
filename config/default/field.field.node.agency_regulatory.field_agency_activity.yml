@@ -1,0 +1,28 @@
+uuid: 8ccde47d-b58b-4f0c-811b-aa8828a55282
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_agency_activity
+    - node.type.agency_regulatory
+  module:
+    - link
+id: node.agency_regulatory.field_agency_activity
+field_name: field_agency_activity
+entity_type: node
+bundle: agency_regulatory
+label: Proyecto/Actividad
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'route:<nolink>'
+    title: ''
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

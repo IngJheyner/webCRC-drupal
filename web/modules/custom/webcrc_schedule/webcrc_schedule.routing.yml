@@ -1,0 +1,7 @@
+webcrc_schedule.example:
+  path: '/webcrc-schedule/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\webcrc_schedule\Controller\WebcrcScheduleController::build'
+  requirements:
+    _permission: 'access content'

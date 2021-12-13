@@ -1,0 +1,21 @@
+uuid: 0f94bef3-8085-492a-8318-6ef624f08d59
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_agency_date_initial
+    - node.type.agency_regulatory
+  module:
+    - datetime
+id: node.agency_regulatory.field_agency_date_initial
+field_name: field_agency_date_initial
+entity_type: node
+bundle: agency_regulatory
+label: Año
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

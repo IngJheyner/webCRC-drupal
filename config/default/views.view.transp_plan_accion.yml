@@ -602,7 +602,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: transparencia-y-acceso-a-la-informacion-publica/planeacion-presupuesto-e-informes/plan-de-accion/plan-de-accion
+      path: transparencia-y-acceso-a-la-informacion-publica/planeacion-presupuesto-e-informes/plan-de-accion
     cache_metadata:
       max-age: -1
       contexts:

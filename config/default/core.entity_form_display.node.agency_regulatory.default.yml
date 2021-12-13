@@ -1,0 +1,252 @@
+uuid: ae043a44-d1e7-457c-8922-5efcf37c0361
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.agency_regulatory.field_agency_activity
+    - field.field.node.agency_regulatory.field_agency_colors_initial
+    - field.field.node.agency_regulatory.field_agency_date_finished
+    - field.field.node.agency_regulatory.field_agency_date_initial
+    - field.field.node.agency_regulatory.field_agency_eje
+    - field.field.node.agency_regulatory.field_agency_note
+    - field.field.node.agency_regulatory.field_agency_trimester_finished
+    - field.field.node.agency_regulatory.field_agency_trimester_initial
+    - node.type.agency_regulatory
+  module:
+    - datetime
+    - field_group
+    - link
+    - path
+third_party_settings:
+  field_group:
+    group_gr:
+      children:
+        - group_information
+        - group_content
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        direction: horizontal
+        width_breakpoint: 640
+      label: 'Group Tabs'
+    group_information:
+      children:
+        - title
+        - created
+        - path
+        - status
+        - uid
+      parent_name: group_gr
+      weight: 7
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Información
+    group_content:
+      children:
+        - group_group_tabs_content
+      parent_name: group_gr
+      weight: 8
+      format_type: tab
+      region: content
+      format_settings:
+        description: ''
+        formatter: open
+        required_fields: true
+        id: ''
+        classes: ''
+        show_empty_fields: false
+      label: Contenido
+    group_date_initial:
+      children:
+        - field_agency_date_initial
+        - field_agency_trimester_initial
+        - field_agency_colors_initial
+      parent_name: group_fechas
+      weight: 20
+      format_type: fieldset
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Fecha Inicial'
+    group_date_finished:
+      children:
+        - field_agency_date_finished
+        - field_agency_trimester_finished
+      parent_name: group_fechas
+      weight: 21
+      format_type: fieldset
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Fecha Final'
+    group_group_tabs_content:
+      children:
+        - group_content_activity
+        - group_fechas
+      parent_name: group_content
+      weight: 15
+      format_type: tabs
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        direction: vertical
+        width_breakpoint: 640
+      label: 'Group Tabs Content'
+    group_content_activity:
+      children:
+        - field_agency_eje
+        - field_agency_activity
+        - field_agency_note
+      parent_name: group_group_tabs_content
+      weight: 19
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Actividad
+    group_fechas:
+      children:
+        - group_date_initial
+        - group_date_finished
+      parent_name: group_group_tabs_content
+      weight: 20
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: open
+        required_fields: true
+      label: Fechas
+id: node.agency_regulatory.default
+targetEntityType: node
+bundle: agency_regulatory
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_agency_activity:
+    weight: 17
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_agency_colors_initial:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_agency_date_finished:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_agency_date_initial:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_agency_eje:
+    weight: 16
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_agency_note:
+    weight: 18
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_agency_trimester_finished:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_agency_trimester_initial:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  path:
+    type: path
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 6
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  promote: true
+  publish_on: true
+  sticky: true
+  unpublish_on: true
+  url_redirects: true

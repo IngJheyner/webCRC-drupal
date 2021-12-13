@@ -1066,14 +1066,14 @@ blocks:
     fields:
       field_home_header_logo_govco:
         -
-          target_id: '37'
+          target_id: '2'
           alt: logo-gov-co
           title: ''
           width: '190'
           height: '45'
       field_home_header_logo_webcrc:
         -
-          target_id: '38'
+          target_id: '1'
           alt: logo-crc-comision-de-regulacion-de-comunicaciones
           title: ''
           width: '234'
@@ -1639,7 +1639,7 @@ menus:
     menu_name: main
     title: 'Transparencia y acceso a la información pública'
     parent: null
-    uri: 'https://www.crcom.gov.co/es/pagina/transparencia-y-acceso-a-informaci-n-p-blica-crc'
+    uri: 'internal:#'
     link_title: ''
     description: null
     enabled: '1'
@@ -1663,7 +1663,7 @@ menus:
     menu_name: main
     title: Participa
     parent: null
-    uri: 'https://www.crcom.gov.co/es/pagina/participa'
+    uri: 'internal:#'
     link_title: ''
     description: null
     enabled: '1'
@@ -1685,9 +1685,9 @@ menus:
     uuid: a590b8dd-cce5-476e-b111-4d1b0695f764
   -
     menu_name: main
-    title: Presentaciones
+    title: 'Sala de prensa'
     parent: null
-    uri: 'https://www.slideshare.net/ComisindeRegulacinde/presentations'
+    uri: 'internal:#'
     link_title: ''
     description: null
     enabled: '1'
@@ -1709,45 +1709,57 @@ menus:
     uuid: 2a041cad-8240-4856-8940-34d346f3a5ac
   -
     menu_name: main
-    title: 'Trámites. Otros procedimientos administrativos y consultas de acceso a la información pública'
+    title: 'Submenu 1'
     parent: 'menu_link_content:773dd082-053d-4b26-acf1-2815aedde80d'
-    uri: 'https://tramitescrcom.gov.co/tramitesCRC/publico/index.xhtml'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-50'
-    langcode: es
-    uuid: 06b43a7c-7176-4015-9934-703a3325f1be
-  -
-    menu_name: main
-    title: 'Canales de atención y pida cita'
-    parent: 'menu_link_content:773dd082-053d-4b26-acf1-2815aedde80d'
-    uri: 'https://www.crcom.gov.co/es/pagina/atenci-n-al-ciudadano'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-49'
-    langcode: es
-    uuid: 8d34ddd9-2b24-475b-8ba7-70a07c49ff8b
-  -
-    menu_name: main
-    title: PQRSD
-    parent: 'menu_link_content:773dd082-053d-4b26-acf1-2815aedde80d'
-    uri: 'https://tramitescrcom.gov.co/tramites/comun/guia.xhtml?tit=&subt=&tram=gOJRPmg37a6XLFeWMRLKOQ==&pr1=3578LkxQ3TO3y3t5FY9/BQ==&onA=S0etv8CCdHqPI8wYF9h5dsSezp1zdUBXQg+FLht9or295ZvNl/SBxJhC7LbUMWiV'
+    uri: 'internal:#'
     link_title: ''
     description: null
     enabled: '1'
     expanded: '0'
     weight: '0'
     langcode: es
-    uuid: 7bd42b70-a8a0-4482-a41c-75e0b961261b
+    uuid: 06b43a7c-7176-4015-9934-703a3325f1be
   -
     menu_name: main
-    title: '¿Quienes somos?'
+    title: 'Submenu 2'
+    parent: 'menu_link_content:773dd082-053d-4b26-acf1-2815aedde80d'
+    uri: 'internal:#'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: 8d34ddd9-2b24-475b-8ba7-70a07c49ff8b
+  -
+    menu_name: main
+    title: 'Submenu 1'
+    parent: 'menu_link_content:b67943ce-7be1-4679-af38-8b6f4343ec15'
+    uri: 'internal:#'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: 4d1e5962-f29a-4c9c-bea4-9cf8cee71bc5
+  -
+    menu_name: main
+    title: 'Submenu 2'
+    parent: 'menu_link_content:b67943ce-7be1-4679-af38-8b6f4343ec15'
+    uri: 'internal:#'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: 8ef3e256-13a1-4791-9e8a-5a365b495439
+  -
+    menu_name: main
+    title: 'Submenu 1'
     parent: 'menu_link_content:a590b8dd-cce5-476e-b111-4d1b0695f764'
-    uri: 'https://www.crcom.gov.co/es/pagina/qui-nes-somos'
+    uri: 'internal:#'
     link_title: ''
     description: null
     enabled: '1'
@@ -1756,10 +1768,22 @@ menus:
     langcode: es
     uuid: a7586318-7725-44c4-bd33-1878e6496de5
   -
+    menu_name: main
+    title: 'Submenu 2'
+    parent: 'menu_link_content:a590b8dd-cce5-476e-b111-4d1b0695f764'
+    uri: 'internal:#'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: de6b368a-d42b-4893-a6f2-efdd55adff14
+  -
     menu_name: footer
     title: Politicas
     parent: null
-    uri: 'https://www.crcom.gov.co/uploads/images/files/TSI_PoliticaSeguridadDigital_2020v1_0_Publicada.pdf'
+    uri: 'internal:#'
     link_title: ''
     description: null
     enabled: '1'
@@ -1783,7 +1807,7 @@ menus:
     menu_name: footer
     title: 'Términos y condiciones'
     parent: null
-    uri: 'https://www.crcom.gov.co/es/pagina/terminos-y-condiciones'
+    uri: 'internal:#'
     link_title: ''
     description: null
     enabled: '1'

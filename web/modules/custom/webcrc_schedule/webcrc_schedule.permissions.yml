@@ -1,0 +1,4 @@
+administer webcrc_schedule configuration:
+  title: 'Administer webcrc_schedule configuration'
+  description: 'Optional description.'
+  restrict access: true

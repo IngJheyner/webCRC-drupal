@@ -1,0 +1,33 @@
+uuid: 416e6fa9-5cfa-4132-b540-971e7622f94e
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_agency_trimester_initial
+field_name: field_agency_trimester_initial
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: 1T
+    -
+      value: '2'
+      label: 2T
+    -
+      value: '3'
+      label: 3T
+    -
+      value: '4'
+      label: 4T
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

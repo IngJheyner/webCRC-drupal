@@ -1,4 +1,4 @@
-uuid: e63cc5bf-3e14-4da7-b169-dea2a7cddb41
+uuid: b9df070d-929b-4bc8-9c02-99d9d21ff2e1
 langcode: es
 status: true
 dependencies:
@@ -22,9 +22,9 @@ third_party_settings:
     unpublish_enable: false
     unpublish_required: false
     unpublish_revision: false
-name: Eventos
-type: events
-description: 'Eventos de calendario'
+name: 'Agenda Regulatoria'
+type: agency_regulatory
+description: 'Seccion donde se visualiza la agencia regulatoria de proyectos/Actividades de la CRC en los proximos anios.'
 help: ''
 new_revision: false
 preview_mode: 1

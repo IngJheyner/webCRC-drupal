@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.accessibility_toolbar.field_content_icon
-    - field.field.paragraph.accessibility_toolbar.field_content_id
     - field.field.paragraph.accessibility_toolbar.field_url
     - paragraphs.paragraphs_type.accessibility_toolbar
   module:
@@ -23,14 +22,6 @@ content:
     third_party_settings: {  }
     type: entity_reference_entity_view
     region: content
-  field_content_id:
-    type: string
-    weight: 2
-    region: content
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
   field_url:
     weight: 1
     label: hidden

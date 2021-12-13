@@ -422,7 +422,7 @@ display:
         groups:
           1: AND
     display_plugin: page
-    display_title: Page
+    display_title: Glosario
     id: page_1
     position: 1
     cache_metadata:

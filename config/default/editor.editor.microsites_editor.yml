@@ -43,9 +43,9 @@ settings:
           name: Plantillas
           items:
             - microsites_articles
+            - Spoiler
             - Accordion
             - Templates
-            - Spoiler
         -
           name: Tools
           items:
@@ -58,8 +58,6 @@ settings:
     templates:
       template_path: ''
       replace_content: 0
-    insert_view_adv:
-      enable_live_preview: false
 image_upload:
   status: false
   scheme: public
