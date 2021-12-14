@@ -16,17 +16,10 @@ bundle: contents_consulted_industry
 mode: default
 content:
   field_consulted_content_icon:
-    weight: 0
+    type: blazy_media
     label: hidden
     settings:
-      image_style: ''
-      responsive_image_style: ''
-      media_switch: ''
-      thumbnail_style: ''
-      ratio: ''
-      view_mode: default
-      current_view_mode: default
-      background: false
+      caption: {  }
       class: ''
       id: ''
       image: ''
@@ -36,27 +29,34 @@ content:
       vanilla: false
       icon: ''
       layout: ''
+      view_mode: default
       cache: 0
+      current_view_mode: default
       skin: ''
       fx: ''
       style: ''
+      background: false
       box_caption: ''
       box_caption_custom: ''
       box_media_style: ''
-      caption: {  }
+      responsive_image_style: ''
       box_style: ''
+      image_style: ''
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
       _uri: ''
-      grid: ''
-      grid_medium: ''
-      grid_small: ''
       breakpoints: {  }
       sizes: ''
       grid_header: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
     third_party_settings: {  }
-    type: blazy_media
+    weight: 0
     region: content
   field_consulted_content_url:
-    weight: 1
+    type: link
     label: hidden
     settings:
       trim_length: 80
@@ -65,7 +65,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 1
     region: content
 hidden:
   addtoany: true

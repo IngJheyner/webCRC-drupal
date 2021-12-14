@@ -12,21 +12,21 @@ pattern: 'micrositios/[node:title]'
 selection_criteria:
   aa7da19c-a0fc-4c53-bd9f-95fe13d9baf6:
     id: node_type
-    bundles:
-      microsite_crc: microsite_crc
     negate: false
+    uuid: aa7da19c-a0fc-4c53-bd9f-95fe13d9baf6
     context_mapping:
       node: node
-    uuid: aa7da19c-a0fc-4c53-bd9f-95fe13d9baf6
+    bundles:
+      microsite_crc: microsite_crc
   300e12f2-a9a5-440d-8d6b-cbe3b9844f32:
     id: language
+    negate: false
+    uuid: 300e12f2-a9a5-440d-8d6b-cbe3b9844f32
+    context_mapping:
+      language: 'node:langcode:language'
     langcodes:
       en: en
       es: es
-    negate: false
-    context_mapping:
-      language: 'node:langcode:language'
-    uuid: 300e12f2-a9a5-440d-8d6b-cbe3b9844f32
 selection_logic: and
 weight: -10
 relationships:

@@ -20,13 +20,14 @@ bundle: indicators
 mode: default
 content:
   field_content_animated_icon:
-    weight: 0
+    type: blazy_media
     label: hidden
     settings:
-      link: '1'
+      caption: {  }
       class: ''
       id: ''
       image: ''
+      link: '1'
       overlay: ''
       title: ''
       vanilla: false
@@ -42,7 +43,6 @@ content:
       box_caption: ''
       box_caption_custom: ''
       box_media_style: ''
-      caption: {  }
       responsive_image_style: ''
       box_style: ''
       image_style: ''
@@ -57,31 +57,31 @@ content:
       grid_medium: ''
       grid_small: ''
     third_party_settings: {  }
-    type: blazy_media
+    weight: 0
     region: content
   field_content_title:
-    weight: 2
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 2
     region: content
   field_icon:
     type: blazy_media
-    weight: 1
     label: hidden
     settings:
-      view_mode: default
-      link: ''
+      caption: {  }
       class: ''
       id: ''
       image: ''
+      link: ''
       overlay: ''
       title: ''
       vanilla: false
       icon: ''
       layout: ''
+      view_mode: default
       cache: 0
       current_view_mode: ''
       skin: ''
@@ -91,7 +91,6 @@ content:
       box_caption: ''
       box_caption_custom: ''
       box_media_style: ''
-      caption: {  }
       responsive_image_style: ''
       box_style: ''
       image_style: ''
@@ -99,36 +98,29 @@ content:
       ratio: ''
       thumbnail_style: ''
       _uri: ''
-      grid: ''
-      grid_medium: ''
-      grid_small: ''
       breakpoints: {  }
       sizes: ''
       grid_header: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
     third_party_settings: {  }
+    weight: 1
     region: content
   field_indicator:
     type: entity_reference_revisions_entity_view
-    weight: 4
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    weight: 4
     region: content
   field_logo:
     type: blazy_media
-    weight: 3
     label: hidden
     settings:
-      image_style: ''
-      responsive_image_style: ''
-      media_switch: ''
-      thumbnail_style: ''
-      ratio: ''
-      view_mode: default
-      current_view_mode: default
-      background: false
+      caption: {  }
       class: ''
       id: ''
       image: ''
@@ -138,26 +130,34 @@ content:
       vanilla: false
       icon: ''
       layout: ''
+      view_mode: default
       cache: 0
+      current_view_mode: default
       skin: ''
       fx: ''
       style: ''
+      background: false
       box_caption: ''
       box_caption_custom: ''
       box_media_style: ''
-      caption: {  }
+      responsive_image_style: ''
       box_style: ''
+      image_style: ''
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
       _uri: ''
-      grid: ''
-      grid_medium: ''
-      grid_small: ''
       breakpoints: {  }
       sizes: ''
       grid_header: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
     third_party_settings: {  }
+    weight: 3
     region: content
   field_primary_url:
-    weight: 5
+    type: link
     label: hidden
     settings:
       trim_length: 80
@@ -166,7 +166,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 5
     region: content
 hidden:
   langcode: true

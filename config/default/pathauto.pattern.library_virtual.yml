@@ -11,12 +11,12 @@ pattern: 'biblioteca-virtual/[node:title]'
 selection_criteria:
   2003fbbf-4e49-4f62-b3f9-b219fe7bbb3d:
     id: node_type
-    bundles:
-      library_virtual: library_virtual
     negate: false
+    uuid: 2003fbbf-4e49-4f62-b3f9-b219fe7bbb3d
     context_mapping:
       node: node
-    uuid: 2003fbbf-4e49-4f62-b3f9-b219fe7bbb3d
+    bundles:
+      library_virtual: library_virtual
 selection_logic: and
 weight: -5
 relationships: {  }

@@ -11,8 +11,8 @@ dependencies:
     - media.type.interactions_extemporaneous
   module:
     - media
-id: extemporaneous_interactions
 label: 'Extemporaneos [ Interacciones ]'
+id: extemporaneous_interactions
 description: 'Carga de archivos para interacciones utilizado en proyectos comentarios.'
 help: ''
 import_period: 3600
@@ -27,46 +27,46 @@ parser_configuration:
   line_limit: 100
 processor: 'entity:media'
 processor_configuration:
+  values:
+    bundle: interactions_extemporaneous
   langcode: es
   insert_new: 1
   update_existing: 2
   update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
   expire: -1
   owner_feed_author: false
   owner_id: 50
-  authorize: true
-  skip_hash_check: false
-  values:
-    bundle: interactions_extemporaneous
 custom_sources:
   name_path:
-    label: nombre_ruta
     value: nombre_ruta
+    label: nombre_ruta
     machine_name: name_path
   file:
-    label: archivo
     value: archivo
+    label: archivo
     machine_name: file
   name_file:
-    label: nombre_archivo
     value: nombre_archivo
+    label: nombre_archivo
     machine_name: name_file
   date:
-    label: fecha
     value: fecha
+    label: fecha
     machine_name: date
   operator:
-    label: operador
     value: operador
+    label: operador
     machine_name: operator
 mappings:
   -
     target: field_extemporaneous_route_file
     map:
       value: name_path
-    unique: {  }
     settings:
       language: null
+    unique: {  }
   -
     target: field_media_file_3
     map:
@@ -81,9 +81,9 @@ mappings:
     target: name
     map:
       value: name_file
-    unique: {  }
     settings:
       language: null
+    unique: {  }
   -
     target: created
     map:

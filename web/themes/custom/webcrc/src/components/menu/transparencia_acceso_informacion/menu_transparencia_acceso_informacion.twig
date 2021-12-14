@@ -19,7 +19,7 @@
               <a class="nav-link dropdown-toggle border p-2 back-menu-transparencia item_menu" href="{{item.url.uri}}">
             {% else %}
               {% if item.url.routeName != "<nolink>" %}
-                <a class="nav-link dropdown-toggle border p-2 back-menu-transparencia item_menu" href="{{item.uri}}">
+                <a class="nav-link dropdown-toggle border p-2 back-menu-transparencia item_menu" href="{{item.url}}">
               {% else %}
                 {% if item.content.field_menu_docum_transp[0]['#media'].field_media_document.entity.uri.value  != null %}
                   <a class="nav-link dropdown-toggle border p-2 back-menu-transparencia item_menu" href="{{file_url(item.content.field_menu_docum_transp[0]['#media'].field_media_document.entity.uri.value)}}">

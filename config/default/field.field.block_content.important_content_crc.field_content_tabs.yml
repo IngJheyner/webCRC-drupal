@@ -21,9 +21,9 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       tabs_wrapper_vertical: tabs_wrapper_vertical
+    negate: 0
     target_bundles_drag_drop:
       from_library:
         weight: 8
@@ -44,6 +44,6 @@ settings:
         weight: 11
         enabled: false
       tabs_wrapper_vertical:
-        enabled: true
         weight: 12
+        enabled: true
 field_type: entity_reference_revisions

@@ -6,10 +6,12 @@ dependencies:
     - field.field.node.commission_minutes.field_content_file
     - field.field.node.commission_minutes.field_date
     - field.field.node.commission_minutes.field_introduccion_contenido
+    - field.field.node.commission_minutes.field_type_act
     - node.type.commission_minutes
   module:
     - datetime
     - file
+    - options
     - user
 id: node.commission_minutes.default
 targetEntityType: node
@@ -17,28 +19,35 @@ bundle: commission_minutes
 mode: default
 content:
   field_content_file:
-    weight: 2
+    type: file_default
     label: hidden
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    type: file_default
+    weight: 3
     region: content
   field_date:
-    weight: 0
+    type: datetime_default
     label: hidden
     settings:
       timezone_override: America/Bogota
       format_type: html_date
     third_party_settings: {  }
-    type: datetime_default
+    weight: 1
     region: content
   field_introduccion_contenido:
-    weight: 1
+    type: basic_string
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    weight: 2
+    region: content
+  field_type_act:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   addtoany: true

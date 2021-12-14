@@ -22,12 +22,12 @@ widget_selector: tabs
 widget_selector_configuration: {  }
 widgets:
   8aacd0db-d7a9-4f6e-b871-81e60a751c5d:
+    id: view
+    uuid: 8aacd0db-d7a9-4f6e-b871-81e60a751c5d
+    label: Conferencista
+    weight: 1
     settings:
-      view: tags
-      view_display: entity_browser_3
       submit_text: 'Seleccione conferencistas'
       auto_select: false
-    uuid: 8aacd0db-d7a9-4f6e-b871-81e60a751c5d
-    weight: 1
-    label: Conferencista
-    id: view
+      view: tags
+      view_display: entity_browser_3

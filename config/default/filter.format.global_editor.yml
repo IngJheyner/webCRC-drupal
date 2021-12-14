@@ -18,20 +18,14 @@ filters:
     weight: 4
     settings:
       optionset: default
-      media_switch: ''
+      layout: ''
       skin: ''
       background: false
-      layout: ''
-      optionset_thumbnail: ''
-      skin_thumbnail: ''
-      thumbnail_position: ''
-      thumbnail_caption: ''
-      image_style: ''
-      thumbnail_style: ''
       responsive_image_style: ''
-      thumbnail_effect: ''
+      image_style: ''
+      media_switch: ''
       ratio: ''
-      override: false
+      thumbnail_style: ''
       overridables:
         arrows: '0'
         autoplay: '0'
@@ -41,20 +35,26 @@ filters:
         mouseWheel: '0'
         randomize: '0'
         variableWidth: '0'
+      optionset_thumbnail: ''
+      skin_thumbnail: ''
+      thumbnail_caption: ''
+      thumbnail_effect: ''
+      thumbnail_position: ''
+      override: false
   blazy_filter:
     id: blazy_filter
     provider: blazy
     status: true
     weight: 3
     settings:
+      media_switch: media
+      hybrid_style: max_650x650
+      box_style: medium
+      box_caption: ''
       filter_tags:
         img: '0'
         iframe: '0'
-      media_switch: media
-      box_style: medium
-      hybrid_style: max_650x650
       use_data_uri: '0'
-      box_caption: ''
   entity_embed:
     id: entity_embed
     provider: entity_embed
@@ -106,6 +106,7 @@ filters:
       allowed_media_types:
         audio: audio
         document: document
+        image: image
         images_icons: images_icons
         logos: logos
         remote_video: remote_video

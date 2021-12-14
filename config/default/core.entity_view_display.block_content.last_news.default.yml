@@ -18,13 +18,14 @@ bundle: last_news
 mode: default
 content:
   field_content_animated_icon:
-    weight: 0
+    type: blazy_media
     label: hidden
     settings:
-      link: '1'
+      caption: {  }
       class: ''
       id: ''
       image: ''
+      link: '1'
       overlay: ''
       title: ''
       vanilla: false
@@ -40,7 +41,6 @@ content:
       box_caption: ''
       box_caption_custom: ''
       box_media_style: ''
-      caption: {  }
       responsive_image_style: ''
       box_style: ''
       image_style: ''
@@ -55,26 +55,26 @@ content:
       grid_medium: ''
       grid_small: ''
     third_party_settings: {  }
-    type: blazy_media
+    weight: 0
     region: content
   field_content_title:
-    weight: 2
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 2
     region: content
   field_content_title_primary:
-    weight: 4
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 4
     region: content
   field_content_view:
-    weight: 3
+    type: viewsreference_formatter
     label: hidden
     settings:
       plugin_types:
@@ -85,16 +85,17 @@ content:
         entity_browser: 0
         embed: 0
     third_party_settings: {  }
-    type: viewsreference_formatter
+    weight: 3
     region: content
   field_icon:
-    weight: 1
+    type: blazy_media
     label: hidden
     settings:
-      link: '1'
+      caption: {  }
       class: ''
       id: ''
       image: ''
+      link: '1'
       overlay: ''
       title: ''
       vanilla: false
@@ -110,7 +111,6 @@ content:
       box_caption: ''
       box_caption_custom: ''
       box_media_style: ''
-      caption: {  }
       responsive_image_style: ''
       box_style: ''
       image_style: ''
@@ -118,14 +118,14 @@ content:
       ratio: ''
       thumbnail_style: ''
       _uri: ''
-      grid: ''
-      grid_medium: ''
-      grid_small: ''
       breakpoints: {  }
       sizes: ''
       grid_header: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
     third_party_settings: {  }
-    type: blazy_media
+    weight: 1
     region: content
 hidden:
   langcode: true

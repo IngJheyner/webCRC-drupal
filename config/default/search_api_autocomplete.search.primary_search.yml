@@ -14,10 +14,10 @@ index_id: webcrc_contenido
 suggester_settings:
   live_results:
     fields: {  }
-    view_modes: {  }
     highlight:
       enabled: false
       field: ''
+    view_modes: {  }
 suggester_weights: {  }
 suggester_limits: {  }
 search_settings:

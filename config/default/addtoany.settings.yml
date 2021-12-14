@@ -1,3 +1,6 @@
+_core:
+  default_config_hash: QUZHrnAKd4ixgLLVtD3JrrBMlwbmJ6VU-qKcOMDKatw
+langcode: es
 buttons_size: 32
 additional_html: "<a class=\"a2a_button_facebook\"></a>\r\n<a class=\"a2a_button_twitter\"></a>\r\n"
 additional_css: ''
@@ -24,6 +27,3 @@ entities:
   user: 0
   webform_submission: 0
   paragraph: 0
-_core:
-  default_config_hash: QUZHrnAKd4ixgLLVtD3JrrBMlwbmJ6VU-qKcOMDKatw
-langcode: es

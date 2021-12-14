@@ -21,9 +21,9 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       tab_content: tab_content
+    negate: 0
     target_bundles_drag_drop:
       a11y_paragraphs_tab_content:
         weight: 10
@@ -38,8 +38,8 @@ settings:
         weight: 11
         enabled: false
       tab_content:
-        enabled: true
         weight: 13
+        enabled: true
       tab_header:
         weight: 14
         enabled: false

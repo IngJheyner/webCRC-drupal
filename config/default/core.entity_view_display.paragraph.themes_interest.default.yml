@@ -15,21 +15,21 @@ bundle: themes_interest
 mode: default
 content:
   field_interest_image:
-    weight: 0
+    type: image
     label: above
     settings:
-      image_style: max_325x325
       image_link: ''
-      svg_render_as_image: true
+      image_style: max_325x325
       svg_attributes:
         width: null
         height: null
+      svg_render_as_image: true
     third_party_settings: {  }
-    type: image
+    weight: 0
     region: content
   field_interest_link:
-    weight: 1
     label: above
+    weight: 1
     region: content
 hidden:
   field_content_image: true

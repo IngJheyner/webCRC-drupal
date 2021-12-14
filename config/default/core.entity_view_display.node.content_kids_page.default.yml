@@ -20,17 +20,8 @@ mode: default
 content:
   field_content_background_image:
     type: blazy_media
-    weight: 0
     label: hidden
     settings:
-      image_style: ''
-      responsive_image_style: ''
-      media_switch: ''
-      background: true
-      thumbnail_style: ''
-      ratio: ''
-      view_mode: default
-      current_view_mode: default
       caption:
         title: '0'
         alt: '0'
@@ -43,38 +34,47 @@ content:
       vanilla: false
       icon: ''
       layout: ''
+      view_mode: default
       cache: 0
+      current_view_mode: default
       skin: ''
       fx: ''
       style: ''
+      background: true
       box_caption: ''
       box_caption_custom: ''
       box_media_style: ''
+      responsive_image_style: ''
       box_style: ''
+      image_style: ''
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
       _uri: ''
-      grid: ''
-      grid_medium: ''
-      grid_small: ''
       breakpoints: {  }
       sizes: ''
       grid_header: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
     third_party_settings: {  }
+    weight: 0
     region: content
   field_content_logo:
     type: blazy_media
-    weight: 1
     label: hidden
     settings:
-      view_mode: default
-      link: ''
+      caption: {  }
       class: ''
       id: ''
       image: ''
+      link: ''
       overlay: ''
       title: ''
       vanilla: false
       icon: ''
       layout: ''
+      view_mode: default
       cache: 0
       current_view_mode: ''
       skin: ''
@@ -84,7 +84,6 @@ content:
       box_caption: ''
       box_caption_custom: ''
       box_media_style: ''
-      caption: {  }
       responsive_image_style: ''
       box_style: ''
       image_style: ''
@@ -92,38 +91,39 @@ content:
       ratio: ''
       thumbnail_style: ''
       _uri: ''
-      grid: ''
-      grid_medium: ''
-      grid_small: ''
       breakpoints: {  }
       sizes: ''
       grid_header: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
     third_party_settings: {  }
+    weight: 1
     region: content
   field_content_tabs:
     type: entity_reference_revisions_entity_view
-    weight: 4
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    weight: 4
     region: content
   field_content_video:
     type: blazy_media
-    weight: 2
     label: hidden
     settings:
-      view_mode: default
-      link: ''
+      caption: {  }
       class: ''
       id: ''
       image: ''
+      link: ''
       overlay: ''
       title: ''
       vanilla: false
       icon: ''
       layout: ''
+      view_mode: default
       cache: 0
       current_view_mode: ''
       skin: ''
@@ -133,7 +133,6 @@ content:
       box_caption: ''
       box_caption_custom: ''
       box_media_style: ''
-      caption: {  }
       responsive_image_style: ''
       box_style: ''
       image_style: ''
@@ -141,20 +140,21 @@ content:
       ratio: ''
       thumbnail_style: ''
       _uri: ''
-      grid: ''
-      grid_medium: ''
-      grid_small: ''
       breakpoints: {  }
       sizes: ''
       grid_header: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
     third_party_settings: {  }
+    weight: 2
     region: content
   field_introduccion_contenido:
-    weight: 3
+    type: basic_string
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    weight: 3
     region: content
 hidden:
   addtoany: true

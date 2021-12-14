@@ -12,21 +12,21 @@ pattern: '/actas-comision/[node:title]'
 selection_criteria:
   51cd0c69-5fcb-4647-ad15-a192ad5c6958:
     id: node_type
-    bundles:
-      commission_minutes: commission_minutes
     negate: false
+    uuid: 51cd0c69-5fcb-4647-ad15-a192ad5c6958
     context_mapping:
       node: node
-    uuid: 51cd0c69-5fcb-4647-ad15-a192ad5c6958
+    bundles:
+      commission_minutes: commission_minutes
   78d2e7ba-045a-4c19-a160-d475429477f6:
     id: language
+    negate: false
+    uuid: 78d2e7ba-045a-4c19-a160-d475429477f6
+    context_mapping:
+      language: 'node:langcode:language'
     langcodes:
       en: en
       es: es
-    negate: false
-    context_mapping:
-      language: 'node:langcode:language'
-    uuid: 78d2e7ba-045a-4c19-a160-d475429477f6
 selection_logic: and
 weight: -10
 relationships:

@@ -21,17 +21,17 @@ third_party_settings:
       children:
         - group_trans_tab_inform_pb_hoj_vi
         - group_trans_tab_aspi_pub_hoj_vid
+      label: 'publicacion de hojas de vida'
+      region: content
       parent_name: ''
       weight: 0
       format_type: tabs
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
         direction: horizontal
         width_breakpoint: 640
-      label: 'publicacion de hojas de vida'
     group_trans_tab_inform_pb_hoj_vi:
       children:
         - title
@@ -39,33 +39,33 @@ third_party_settings:
         - field_fech_publi_vacant
         - field_list_anio_infor_decisi
         - body
+      label: informacion
+      region: content
       parent_name: group_tabs_pub_hoj_vid
       weight: 20
       format_type: tab
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
-        description: ''
         formatter: closed
+        description: ''
         required_fields: true
-      label: informacion
     group_trans_tab_aspi_pub_hoj_vid:
       children:
         - field_parag_aspirant
+      label: Aspirantes
+      region: content
       parent_name: group_tabs_pub_hoj_vid
       weight: 21
       format_type: tab
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
-        description: ''
         formatter: closed
+        description: ''
         required_fields: true
-      label: Aspirantes
 id: node.trans_pub_hojas_vida.default
 targetEntityType: node
 bundle: trans_pub_hojas_vida
@@ -74,13 +74,13 @@ content:
   body:
     type: text_textarea_with_summary
     weight: 6
+    region: content
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
-    region: content
   created:
     type: datetime_timestamp
     weight: 3
@@ -88,26 +88,27 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_fech_publi_vacant:
-    weight: 3
-    settings: {  }
-    third_party_settings: {  }
     type: datetime_default
+    weight: 3
     region: content
+    settings: {  }
+    third_party_settings: {  }
   field_list_anio_infor_decisi:
+    type: options_select
     weight: 4
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_list_carg_pub_hoj_vid:
+    type: options_select
     weight: 2
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_parag_aspirant:
     type: entity_reference_paragraphs
     weight: 5
+    region: content
     settings:
       title: Párrafo
       title_plural: Paragraphs
@@ -116,7 +117,6 @@ content:
       form_display_mode: default
       default_paragraph_type: ''
     third_party_settings: {  }
-    region: content
   langcode:
     type: language_select
     weight: 1
@@ -126,10 +126,10 @@ content:
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 4
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   publish_on:
     type: datetime_timestamp_no_default
@@ -139,17 +139,17 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 9
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 5
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   title:
     type: string_textfield
@@ -162,12 +162,12 @@ content:
   uid:
     type: entity_reference_autocomplete
     weight: 2
+    region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
-      match_limit: 10
-    region: content
     third_party_settings: {  }
   unpublish_on:
     type: datetime_timestamp_no_default

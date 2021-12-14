@@ -14,18 +14,18 @@ bundle: trans_inform_empalm_doc
 mode: default
 content:
   field_doc_file_info_decisi_publi:
-    weight: 101
+    type: file_default
     label: above
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    type: file_default
+    weight: 101
     region: content
   links:
-    weight: 100
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 100
+    region: content
 hidden:
   addtoany: true
   langcode: true

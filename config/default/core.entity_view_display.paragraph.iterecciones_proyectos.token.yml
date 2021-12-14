@@ -21,23 +21,23 @@ mode: token
 content:
   field_fecha_cierre_iteracciones:
     type: datetime_default
-    weight: 1
-    region: content
     label: hidden
     settings:
       timezone_override: America/Bogota
       format_type: fecha_corta_webcrc
     third_party_settings: {  }
+    weight: 1
+    region: content
   field_interactions_comments:
     type: boolean
-    weight: 0
-    region: content
     label: hidden
     settings:
       format: default
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   feeds_item: true
   field_comentarios_interacciones: true

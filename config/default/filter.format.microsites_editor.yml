@@ -18,13 +18,13 @@ filters:
     status: true
     weight: -47
     settings:
-      filter_tags:
-        img: '0'
-        iframe: '0'
       media_switch: media
       hybrid_style: ''
       box_style: ''
       box_caption: ''
+      filter_tags:
+        img: '0'
+        iframe: '0'
       use_data_uri: '0'
   editor_file_reference:
     id: editor_file_reference
@@ -52,6 +52,7 @@ filters:
     weight: -44
     settings:
       default_view_mode: default
+      allowed_view_modes: {  }
       allowed_media_types:
         audio_microsites_crc: audio_microsites_crc
         images_icons: images_icons
@@ -59,7 +60,6 @@ filters:
         microsites_crc_documents: microsites_crc_documents
         videos_microsites_crc: videos_microsites_crc
         videos_remote_microsites_crc: videos_remote_microsites_crc
-      allowed_view_modes: {  }
   slick_filter:
     id: slick_filter
     provider: slick
@@ -67,20 +67,14 @@ filters:
     weight: -39
     settings:
       optionset: default
+      layout: ''
       skin: ''
       background: false
-      layout: ''
-      optionset_thumbnail: ''
-      skin_thumbnail: ''
-      thumbnail_position: ''
-      thumbnail_caption: ''
-      image_style: ''
-      thumbnail_style: ''
       responsive_image_style: ''
-      thumbnail_effect: ''
+      image_style: ''
       media_switch: ''
       ratio: ''
-      override: false
+      thumbnail_style: ''
       overridables:
         arrows: '0'
         autoplay: '0'
@@ -90,6 +84,12 @@ filters:
         mouseWheel: '0'
         randomize: '0'
         variableWidth: '0'
+      optionset_thumbnail: ''
+      skin_thumbnail: ''
+      thumbnail_caption: ''
+      thumbnail_effect: ''
+      thumbnail_position: ''
+      override: false
   filter_html:
     id: filter_html
     provider: filter

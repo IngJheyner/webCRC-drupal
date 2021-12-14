@@ -16,52 +16,52 @@ third_party_settings:
       children:
         - group_informacion
         - group_content
+      label: 'Group Tabs'
+      region: content
       parent_name: ''
       weight: 0
       format_type: tabs
-      region: content
       format_settings:
-        direction: horizontal
-        width_breakpoint: 640
-        id: ''
         classes: ''
         show_empty_fields: false
-      label: 'Group Tabs'
+        id: ''
+        direction: horizontal
+        width_breakpoint: 640
     group_informacion:
       children:
         - created
         - uid
         - path
         - status
+      label: Información
+      region: content
       parent_name: group_group_tabs
       weight: 3
       format_type: tab
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
-        description: ''
         formatter: closed
+        description: ''
         required_fields: true
-      label: Información
     group_content:
       children:
         - title
         - field_glossary_tags
         - body
+      label: Contenido
+      region: content
       parent_name: group_group_tabs
       weight: 4
       format_type: tab
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
-        description: ''
         formatter: closed
+        description: ''
         required_fields: true
-      label: Contenido
 id: node.glossary.default
 targetEntityType: node
 bundle: glossary
@@ -70,13 +70,13 @@ content:
   body:
     type: text_textarea_with_summary
     weight: 4
+    region: content
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
-    region: content
   created:
     type: datetime_timestamp
     weight: 3
@@ -84,15 +84,15 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_glossary_tags:
+    type: entity_reference_autocomplete
     weight: 3
+    region: content
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
   path:
     type: path
     weight: 5
@@ -101,10 +101,10 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 6
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   title:
     type: string_textfield

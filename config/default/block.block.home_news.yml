@@ -18,13 +18,13 @@ plugin: 'block_content:d6b7ca44-d780-4080-8a98-17d98296f931'
 settings:
   id: 'block_content:d6b7ca44-d780-4080-8a98-17d98296f931'
   label: 'Ultimas noticias'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
+    pages: '<front>'

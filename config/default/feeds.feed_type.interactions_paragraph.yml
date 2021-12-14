@@ -10,8 +10,8 @@ dependencies:
     - paragraphs.paragraphs_type.iterecciones_proyectos
   module:
     - paragraphs
-id: interactions_paragraph
 label: 'Interacciones [ Proyectos ]'
+id: interactions_paragraph
 description: 'Agregar contenido de tipo parrafos que se utilizan en proyectos comentarios campo interacciones.'
 help: ''
 import_period: 3600
@@ -26,85 +26,85 @@ parser_configuration:
   line_limit: 100
 processor: 'entity:paragraph'
 processor_configuration:
+  values:
+    type: iterecciones_proyectos
   langcode: es
   insert_new: 1
   update_existing: 2
   update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
   expire: -1
   owner_feed_author: false
   owner_id: 50
-  authorize: false
-  skip_hash_check: false
-  values:
-    type: iterecciones_proyectos
 custom_sources:
   parent_id:
-    label: parent_id
     value: parent_id
+    label: parent_id
     machine_name: parent_id
   parent_field_name:
-    label: parent_field_name
     value: parent_field_name
+    label: parent_field_name
     machine_name: parent_field_name
   parent_type:
-    label: parent_type
     value: parent_type
+    label: parent_type
     machine_name: parent_type
   fases:
-    label: fases
     value: fases
+    label: fases
     machine_name: fases
   phases:
-    label: fases
     value: fases
+    label: fases
     machine_name: phases
   ' closing date':
-    label: fecha_cierre
     value: fecha_cierre
+    label: fecha_cierre
     machine_name: ' closing date'
   closing_date:
-    label: fecha_cierre
     value: fecha_cierre
+    label: fecha_cierre
     machine_name: closing_date
   proposals:
-    label: propuestas
     value: propuestas
+    label: propuestas
     machine_name: proposals
   id:
-    label: id
     value: id
+    label: id
     machine_name: id
   delta:
-    label: delta
     value: delta
+    label: delta
     machine_name: delta
   comments:
-    label: comentarios
     value: comentarios
+    label: comentarios
     machine_name: comments
   extemporaneous:
-    label: extemporaneos
     value: extemporaneos
+    label: extemporaneos
     machine_name: extemporaneous
 mappings:
   -
     target: parent_id
     map:
       value: parent_id
-    unique: {  }
     settings: {  }
+    unique: {  }
   -
     target: parent_field_name
     map:
       value: parent_field_name
-    unique: {  }
     settings: {  }
+    unique: {  }
   -
     target: parent_type
     map:
       value: parent_type
-    unique: {  }
     settings: {  }
+    unique: {  }
   -
     target: field_fecha_cierre_iteracciones
     map:
@@ -126,8 +126,8 @@ mappings:
     map:
       url: ''
       guid: parent_id
-    unique: {  }
     settings: {  }
+    unique: {  }
   -
     target: behavior_settings
     map:

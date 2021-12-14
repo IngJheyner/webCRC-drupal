@@ -1,7 +1,23 @@
 uuid: 99005c98-421e-418b-b928-32819ff19c1a
 langcode: es
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.events
+    - filter.format.global_editor
+    - filter.format.microsites_editor
+    - filter.format.news_crc_editor
+  module:
+    - comment
+    - contact
+    - filter
+    - media
+    - search_api_page
+    - shortcut
+    - system
+    - toolbar
+    - webform
 _core:
   default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
 id: authenticated
@@ -16,7 +32,6 @@ permissions:
   - 'access toolbar'
   - 'post comments'
   - 'skip comment approval'
-  - 'use search_api_autocomplete for search'
   - 'use text format basic_html'
   - 'use text format events'
   - 'use text format global_editor'

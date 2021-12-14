@@ -16,57 +16,57 @@ third_party_settings:
       children:
         - info
         - langcode
+      label: Infomación
+      region: content
       parent_name: ''
       weight: 0
       format_type: details_sidebar
-      region: content
       format_settings:
-        description: ''
-        open: true
-        weight: 0
-        required_fields: true
-        id: ''
         classes: ''
         show_empty_fields: false
-      label: Infomación
+        id: ''
+        open: true
+        description: ''
+        required_fields: true
+        weight: 0
     group_home_header_content:
       children:
         - field_home_header_logo_govco
         - field_home_header_logo_webcrc
+      label: Contenido
+      region: content
       parent_name: ''
       weight: 1
       format_type: details_sidebar
-      region: content
       format_settings:
-        description: ''
-        weight: 0
-        required_fields: true
-        id: ''
         classes: ''
         show_empty_fields: false
+        id: ''
         open: false
-      label: Contenido
+        description: ''
+        required_fields: true
+        weight: 0
 id: block_content.home_header.default
 targetEntityType: block_content
 bundle: home_header
 mode: default
 content:
   field_home_header_logo_govco:
+    type: image_image
     weight: 2
+    region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    type: image_image
-    region: content
   field_home_header_logo_webcrc:
+    type: image_image
     weight: 3
+    region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    type: image_image
-    region: content
   info:
     type: string_textfield
     weight: 1

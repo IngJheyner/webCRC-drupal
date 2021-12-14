@@ -21,9 +21,12 @@ widget_selector: single
 widget_selector_configuration: {  }
 widgets:
   8de90e5a-b0e6-40bf-be29-ebd34a1dbf88:
+    id: dropzonejs_media_entity_inline_entity_form
+    uuid: 8de90e5a-b0e6-40bf-be29-ebd34a1dbf88
+    label: Comentarios
+    weight: 1
     settings:
-      form_mode: default
-      media_type: comentarios_iteracciones_
+      submit_text: Confirmar
       upload_location: 'public://[date:custom:Y]-[date:custom:m]'
       dropzone_description: 'Drop files here to upload them'
       max_filesize: 32M
@@ -34,8 +37,5 @@ widgets:
       resize_quality: !!float 1
       resize_method: contain
       thumbnail_method: contain
-      submit_text: Confirmar
-    uuid: 8de90e5a-b0e6-40bf-be29-ebd34a1dbf88
-    weight: 1
-    label: Comentarios
-    id: dropzonejs_media_entity_inline_entity_form
+      media_type: comentarios_iteracciones_
+      form_mode: default

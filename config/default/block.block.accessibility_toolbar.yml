@@ -17,8 +17,8 @@ plugin: 'block_content:527852f6-5c8d-49c0-a38c-a8ea26a0a2b6'
 settings:
   id: 'block_content:527852f6-5c8d-49c0-a38c-a8ea26a0a2b6'
   label: 'Barra de accesibilidad'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full

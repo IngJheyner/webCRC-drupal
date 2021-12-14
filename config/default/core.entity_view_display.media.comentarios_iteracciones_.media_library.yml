@@ -18,12 +18,12 @@ mode: media_library
 content:
   field_media_file_2:
     type: file_default
-    weight: 1
-    region: content
     label: above
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
+    weight: 1
+    region: content
 hidden:
   created: true
   feeds_item: true

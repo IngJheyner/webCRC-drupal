@@ -49,6 +49,7 @@ body {
   display: none;
 }
 
+// ESTILOS GIF LENGUAJE INCLUSIVO
 div.media.media--bundle--inclusive-language {
   display: none;
   position: absolute;
@@ -63,6 +64,7 @@ div.media.media--bundle--inclusive-language {
   }
 }
 
+// HOVER ACTIVO GIF LENGIAJE INCLUSIVO
 .media-body {
   position: relative;
   
@@ -73,19 +75,43 @@ div.media.media--bundle--inclusive-language {
   }
 }
 
-.embed-container {
+// VIDEOS RESPONSIVE CKEDITOR GLOBAL 
+@mixin content-media-video {
   position: relative;
-  padding-bottom: 50%;
+  padding-bottom: 40%;
+  padding-top: 30px;
   height: 0;
   overflow: hidden;
+  width: 75%;
+  margin: 20px auto;
 }
 
-.embed-container iframe {
-  position: absolute !important;
-  top:0;
+@mixin media-video {
+  position: absolute;
+  top: 0;
   left: 0;
-  width: 100% !important;
-  height: 100% !important;
+  width: 100%;
+  height: 100%;
+}
+
+.field--name-field-media-oembed-video {
+  @include content-media-video;
+
+  iframe,
+  object,
+  embed,
+  video {
+    @include media-video;
+  }
+  
+}
+
+video ~ div {
+  @include content-media-video;
+}
+
+video {
+  @include media-video;
 }
 
 .media--blazy {

@@ -11,19 +11,19 @@ id: style_customizable
 label: 'Estilos adaptables'
 image_style_mappings:
   -
+    image_mapping_type: image_style
+    image_mapping: mobile_landscape_520px
     breakpoint_id: default.md
     multiplier: 1x
+  -
     image_mapping_type: image_style
     image_mapping: mobile_landscape_520px
-  -
     breakpoint_id: default.sm
     multiplier: 1x
-    image_mapping_type: image_style
-    image_mapping: mobile_landscape_520px
   -
-    breakpoint_id: default.xs
-    multiplier: 1x
     image_mapping_type: image_style
     image_mapping: mobile_285px
+    breakpoint_id: default.xs
+    multiplier: 1x
 breakpoint_group: webcrc
 fallback_image_style: '_original image_'

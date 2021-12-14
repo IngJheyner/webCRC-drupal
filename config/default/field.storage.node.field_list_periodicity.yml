@@ -1,0 +1,33 @@
+uuid: 3aba8ca1-ebe3-4822-af27-2b692975d897
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_list_periodicity
+field_name: field_list_periodicity
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: Anual
+    -
+      value: '2'
+      label: Eventual
+    -
+      value: '3'
+      label: Semestral
+    -
+      value: '4'
+      label: Trimestral
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -18,16 +18,16 @@ third_party_settings:
         - field_projects_operator
         - field_media_file_3
         - created
+      label: Archivos
       parent_name: ''
+      region: content
       weight: 0
       format_type: fieldset
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
         description: ''
-      label: Archivos
 id: media.interactions_extemporaneous.default
 targetEntityType: media
 bundle: interactions_extemporaneous
@@ -35,29 +35,29 @@ mode: default
 content:
   created:
     type: timestamp
-    weight: 7
-    region: content
     label: above
     settings:
       date_format: medium
       custom_date_format: ''
       timezone: ''
     third_party_settings: {  }
+    weight: 7
+    region: content
   field_media_file_3:
+    type: file_default
     label: above
-    weight: 6
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    type: file_default
+    weight: 6
     region: content
   field_projects_operator:
-    weight: 5
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 5
     region: content
 hidden:
   feeds_item: true

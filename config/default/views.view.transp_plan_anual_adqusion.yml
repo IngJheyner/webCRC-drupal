@@ -27,80 +27,12 @@ base_table: node_field_data
 base_field: nid
 display:
   default:
-    display_plugin: default
     id: default
     display_title: Default
+    display_plugin: default
     position: 0
     display_options:
-      access:
-        type: perm
-        options:
-          perm: 'access content'
-      cache:
-        type: tag
-        options: {  }
-      query:
-        type: views_query
-        options:
-          disable_sql_rewrite: false
-          distinct: false
-          replica: false
-          query_comment: ''
-          query_tags: {  }
-      exposed_form:
-        type: bef
-        options:
-          submit_button: Buscar
-          reset_button: true
-          reset_button_label: 'Limpiar consulta'
-          exposed_sorts_label: 'Sort by'
-          expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-          text_input_required: 'Seleccione cualquier filtro y pulse Aplicar para ver los resultados'
-          text_input_required_format: editor_cont_transparencia
-          bef:
-            general:
-              autosubmit: false
-              autosubmit_exclude_textfield: false
-              autosubmit_textfield_delay: 500
-              autosubmit_hide: false
-              input_required: false
-              allow_secondary: false
-              secondary_label: 'Advanced options'
-              secondary_open: false
-            filter:
-              field_date_information_file_value:
-                plugin_id: bef_datepicker
-                advanced:
-                  collapsible: false
-                  is_secondary: false
-      pager:
-        type: some
-        options:
-          items_per_page: 10
-          offset: 0
-      style:
-        type: views_bootstrap_list_group
-        options:
-          grouping:
-            -
-              field: field_lis_cat_plan_adqu
-              rendered: true
-              rendered_strip: true
-          row_class: 'pr-3 mb-3 fileTable'
-          default_row_class: true
-          uses_fields: true
-          title_field: ''
-      row:
-        type: fields
-        options:
-          default_field_elements: true
-          inline:
-            title: title
-            field_list_anio_infor_decisi: field_list_anio_infor_decisi
-          separator: ' | '
-          hide_empty: false
+      title: 'Plan anual de adquisiciones'
       fields:
         field_lis_cat_plan_adqu:
           id: field_lis_cat_plan_adqu
@@ -109,6 +41,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -164,7 +97,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         field_docum_archi:
           id: field_docum_archi
           table: node__field_docum_archi
@@ -172,6 +104,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -226,7 +159,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         field_list_anio_infor_decisi:
           id: field_list_anio_infor_decisi
           table: node__field_list_anio_infor_decisi
@@ -234,6 +166,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -288,7 +221,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         title:
           id: title
           table: node_field_data
@@ -296,6 +228,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -351,32 +286,101 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 10
+      exposed_form:
+        type: bef
+        options:
+          submit_button: Buscar
+          reset_button: true
+          reset_button_label: 'Limpiar consulta'
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+          text_input_required: 'Seleccione cualquier filtro y pulse Aplicar para ver los resultados'
+          text_input_required_format: editor_cont_transparencia
+          bef:
+            general:
+              autosubmit: false
+              autosubmit_exclude_textfield: false
+              autosubmit_textfield_delay: 500
+              autosubmit_hide: false
+              input_required: false
+              allow_secondary: false
+              secondary_label: 'Advanced options'
+              secondary_open: false
+            filter:
+              field_date_information_file_value:
+                plugin_id: bef_datepicker
+                advanced:
+                  collapsible: false
+                  is_secondary: false
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: tag
+        options: {  }
+      empty: {  }
+      sorts:
+        field_list_anio_infor_decisi_value:
+          id: field_list_anio_infor_decisi_value
+          table: node__field_list_anio_infor_decisi
+          field: field_list_anio_infor_decisi_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: standard
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: field_list_anio_infor_decisi_value
+          exposed: false
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
           entity_type: node
-          entity_field: title
-          plugin_id: field
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: created
+          exposed: false
+          granularity: second
+      arguments: {  }
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            tra_plan_anual_adquisi_documento: tra_plan_anual_adquisi_documento
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            tra_plan_anual_adquisi_documento: tra_plan_anual_adquisi_documento
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -387,6 +391,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: list_field
           operator: or
           value:
             all: all
@@ -437,7 +442,6 @@ display:
                 value:
                   2019: '2019'
           reduce_duplicates: false
-          plugin_id: list_field
         field_lis_cat_plan_adqu_target_id:
           id: field_lis_cat_plan_adqu_target_id
           table: node__field_lis_cat_plan_adqu
@@ -445,6 +449,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: taxonomy_index_tid
           operator: or
           value: {  }
           group: 1
@@ -479,41 +484,40 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: select
-          limit: true
           vid: trans_list_cat_plan_adqusicion
+          type: select
           hierarchy: false
+          limit: true
           error_message: true
-          plugin_id: taxonomy_index_tid
-      sorts:
-        field_list_anio_infor_decisi_value:
-          id: field_list_anio_infor_decisi_value
-          table: node__field_list_anio_infor_decisi
-          field: field_list_anio_infor_decisi_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: DESC
-          exposed: false
-          expose:
-            label: ''
-          plugin_id: standard
-        created:
-          id: created
-          table: node_field_data
-          field: created
-          order: DESC
-          entity_type: node
-          entity_field: created
-          plugin_id: date
-          relationship: none
-          group_type: group
-          admin_label: ''
-          exposed: false
-          expose:
-            label: ''
-          granularity: second
-      title: 'Plan anual de adquisiciones'
+      style:
+        type: views_bootstrap_list_group
+        options:
+          grouping:
+            -
+              field: field_lis_cat_plan_adqu
+              rendered: true
+              rendered_strip: true
+          row_class: 'pr-3 mb-3 fileTable'
+          default_row_class: true
+          uses_fields: true
+          title_field: ''
+      row:
+        type: fields
+        options:
+          default_field_elements: true
+          inline:
+            title: title
+            field_list_anio_infor_decisi: field_list_anio_infor_decisi
+          separator: ' | '
+          hide_empty: false
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_tags: {  }
       header:
         area_text_custom:
           id: area_text_custom
@@ -522,10 +526,10 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          empty: true
-          tokenize: true
-          content: "<div class=\"titleContentSimple mt-5 mb-4\" id=\"cont\">\r\n   <h1> 3.1 Plan anual de adquisiones </h1>\r\n</div>"
           plugin_id: text_custom
+          empty: true
+          content: "<div class=\"titleContentSimple mt-5 mb-4\" id=\"cont\">\r\n   <h1> 3.1 Plan anual de adquisiones </h1>\r\n</div>"
+          tokenize: true
         entity_block_content:
           id: entity_block_content
           table: views
@@ -533,18 +537,14 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: entity
           empty: true
-          tokenize: true
           target: e5eb02e6-9c81-47d2-94d8-b38ccec9f999
           view_mode: default
+          tokenize: true
           bypass_access: false
-          plugin_id: entity
       footer: {  }
-      empty: {  }
-      relationships: {  }
-      arguments: {  }
       display_extenders: {  }
-      css_class: 'mt-4 transparenciaAcceso pages transparenciaAccesoTables fileTable '
     cache_metadata:
       max-age: -1
       contexts:
@@ -559,9 +559,9 @@ display:
         - 'config:field.storage.node.field_lis_cat_plan_adqu'
         - 'config:field.storage.node.field_list_anio_infor_decisi'
   trans_plan_anual_adqusiciones:
-    display_plugin: page
     id: trans_plan_anual_adqusiciones
     display_title: Page
+    display_plugin: page
     position: 1
     display_options:
       display_extenders: {  }

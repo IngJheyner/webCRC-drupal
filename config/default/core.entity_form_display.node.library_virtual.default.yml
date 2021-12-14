@@ -33,17 +33,17 @@ third_party_settings:
         - group_library_info_relevant
         - group_contenido
         - group_archivos
+      label: 'Grupo Tabs'
+      region: content
       parent_name: ''
       weight: 0
       format_type: tabs
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
         direction: horizontal
         width_breakpoint: 640
-      label: 'Grupo Tabs'
     group_informacion:
       children:
         - title
@@ -51,144 +51,144 @@ third_party_settings:
         - field_library_issn
         - created
         - group_library_options
+      label: Información
+      region: content
       parent_name: group_grupo_tabs
       weight: 1
       format_type: tab
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
-        description: ''
         formatter: closed
+        description: ''
         required_fields: true
-      label: Información
     group_contenido:
       children:
         - field_library_information
         - field_library_notes
+      label: Contenido
+      region: content
       parent_name: group_grupo_tabs
       weight: 4
       format_type: tab
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
-        description: ''
         formatter: closed
+        description: ''
         required_fields: true
-      label: Contenido
     group_archivos:
       children:
         - field_library_image
         - field_library_file
+      label: Media
+      region: content
       parent_name: group_grupo_tabs
       weight: 5
       format_type: tab
-      region: content
       format_settings:
-        description: ''
-        formatter: closed
-        required_fields: true
-        id: ''
         classes: ''
         show_empty_fields: false
-      label: Media
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
     group_library_info_relevant:
       children:
         - group_info_relevant
+      label: 'Información Relevante'
+      region: content
       parent_name: group_grupo_tabs
       weight: 2
       format_type: tab
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
-        description: ''
         formatter: closed
+        description: ''
         required_fields: true
-      label: 'Información Relevante'
     group_info_relevant:
       children:
         - group_relevant_key_doc_more
         - group_relevant_author
         - group_relevated_links
+      label: 'Grupo Tabs Relevant'
+      region: content
       parent_name: group_library_info_relevant
       weight: 0
       format_type: tabs
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
         direction: vertical
         width_breakpoint: 640
-      label: 'Grupo Tabs Relevant'
     group_relevant_author:
       children:
         - field_library_author
+      label: Autor(es)
+      region: content
       parent_name: group_info_relevant
       weight: 2
       format_type: tab
-      region: content
       format_settings:
-        description: ''
-        formatter: closed
-        required_fields: true
-        id: ''
         classes: ''
         show_empty_fields: false
-      label: Autor(es)
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
     group_relevant_key_doc_more:
       children:
         - field_library_type_document
         - field_library_keywords
         - field_library_formats
+      label: 'Palabras claves, Tipo doc...'
+      region: content
       parent_name: group_info_relevant
       weight: 1
       format_type: tab
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
-        description: ''
         formatter: closed
+        description: ''
         required_fields: true
-      label: 'Palabras claves, Tipo doc...'
     group_relevated_links:
       children:
         - field_library_link_related
+      label: 'Enlace(s) Relacionados'
+      region: content
       parent_name: group_info_relevant
       weight: 3
       format_type: tab
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
-        description: ''
         formatter: closed
+        description: ''
         required_fields: true
-      label: 'Enlace(s) Relacionados'
     group_library_options:
       children:
         - status
         - field_library_highlight
         - field_poll_content_useful
+      label: Opciones
+      region: content
       parent_name: group_informacion
       weight: 4
       format_type: fieldset
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
         description: ''
         required_fields: false
-      label: Opciones
 id: node.library_virtual.default
 targetEntityType: node
 bundle: library_virtual
@@ -201,111 +201,111 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_library_author:
+    type: entity_reference_autocomplete_tags
     weight: 0
+    region: content
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete_tags
-    region: content
   field_library_file:
+    type: file_generic
     weight: 1
+    region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
-    type: file_generic
-    region: content
   field_library_formats:
+    type: options_select
     weight: 3
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_library_highlight:
+    type: boolean_checkbox
     weight: 4
+    region: content
     settings:
       display_label: true
     third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
   field_library_image:
+    type: image_image
     weight: 0
+    region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    type: image_image
-    region: content
   field_library_information:
+    type: string_textarea
     weight: 0
+    region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: string_textarea
-    region: content
   field_library_isbn:
+    type: string_textfield
     weight: 1
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_library_issn:
+    type: string_textfield
     weight: 2
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_library_keywords:
+    type: entity_reference_autocomplete_tags
     weight: 1
+    region: content
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete_tags
-    region: content
   field_library_link_related:
+    type: link_default
     weight: 0
+    region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-    type: link_default
-    region: content
   field_library_notes:
+    type: string_textarea
     weight: 1
+    region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: string_textarea
-    region: content
   field_library_type_document:
+    type: options_select
     weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_poll_content_useful:
+    type: webform_entity_reference_autocomplete
     weight: 5
+    region: content
     settings:
       match_operator: CONTAINS
-      match_limit: '10'
       size: 60
       placeholder: ''
       default_data: false
+      match_limit: '10'
       webforms: {  }
     third_party_settings: {  }
-    type: webform_entity_reference_autocomplete
-    region: content
   status:
     type: boolean_checkbox
     weight: 3

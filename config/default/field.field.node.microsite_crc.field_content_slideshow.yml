@@ -21,9 +21,9 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       slideshow_crc: slideshow_crc
+    negate: 0
     target_bundles_drag_drop:
       enlaces:
         weight: 16
@@ -47,8 +47,8 @@ settings:
         weight: 22
         enabled: false
       slideshow_crc:
-        enabled: true
         weight: 23
+        enabled: true
       tab_content:
         weight: 28
         enabled: false

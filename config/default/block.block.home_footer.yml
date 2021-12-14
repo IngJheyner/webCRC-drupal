@@ -17,8 +17,8 @@ plugin: 'block_content:0d3dc0aa-8df4-44fc-809c-b63a77cf87c9'
 settings:
   id: 'block_content:0d3dc0aa-8df4-44fc-809c-b63a77cf87c9'
   label: 'Pie de pagina - Información de contacto'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full

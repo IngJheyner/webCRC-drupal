@@ -1,0 +1,29 @@
+{#
+/**
+ * @file
+ * Template for a Node component.
+ */
+#}
+{%
+  set classes = [
+  'node',
+  node.isPromoted() ? 'node--promoted',
+  node.isSticky() ? 'node--sticky',
+  not node.isPublished() ? 'node--unpublished',
+  node.bundle|clean_class,
+  node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
+]
+%}
+
+{% set created = node.created.value|format_date('custom', 'l\\,\\ d \\d\\e F \\d\\e Y') %}
+
+<article{{ attributes.addClass(classes) }}>
+  <div class="container my-5 text-rize">
+    {% block content %}
+      {# <h1>
+        {{ label }}
+      </h1> #}
+      {{ content.field_content }}
+    {% endblock %}
+  </div>
+</article>

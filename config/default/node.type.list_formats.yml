@@ -1,0 +1,31 @@
+uuid: 387188ae-aaa2-40c2-bccc-689d84cda81b
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - scheduler
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: false
+    publish_past_date: error
+    publish_past_date_created: false
+    publish_required: false
+    publish_revision: false
+    publish_touch: false
+    show_message_after_update: true
+    unpublish_enable: false
+    unpublish_required: false
+    unpublish_revision: false
+name: 'Listado de formatos'
+type: list_formats
+description: 'Listado de formatos documentos'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

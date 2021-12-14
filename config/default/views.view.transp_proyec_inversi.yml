@@ -25,76 +25,12 @@ base_table: node_field_data
 base_field: nid
 display:
   default:
-    display_plugin: default
     id: default
     display_title: Default
+    display_plugin: default
     position: 0
     display_options:
-      access:
-        type: perm
-        options:
-          perm: 'access content'
-      cache:
-        type: tag
-        options: {  }
-      query:
-        type: views_query
-        options:
-          disable_sql_rewrite: false
-          distinct: false
-          replica: false
-          query_comment: ''
-          query_tags: {  }
-      exposed_form:
-        type: basic
-        options:
-          submit_button: Buscar
-          reset_button: true
-          reset_button_label: 'Limpiar consulta'
-          exposed_sorts_label: 'Sort by'
-          expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        type: mini
-        options:
-          items_per_page: 10
-          offset: 0
-          id: 0
-          total_pages: null
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
-          tags:
-            previous: ‹‹
-            next: ››
-      style:
-        type: views_bootstrap_list_group
-        options:
-          grouping:
-            -
-              field: field_list_cat_proyec_invers
-              rendered: true
-              rendered_strip: true
-            -
-              field: field_list_anio_infor_decisi
-              rendered: true
-              rendered_strip: false
-          row_class: 'mr-5 mb-3 fileTable'
-          default_row_class: true
-          title_field: ''
-      row:
-        type: fields
-        options:
-          default_field_elements: true
-          inline: {  }
-          separator: ''
-          hide_empty: false
+      title: 'Proyectos de inversión'
       fields:
         title:
           id: title
@@ -103,6 +39,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -158,9 +97,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: node
-          entity_field: title
-          plugin_id: field
         field_list_cat_proyec_invers:
           id: field_list_cat_proyec_invers
           table: node__field_list_cat_proyec_invers
@@ -168,6 +104,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -223,7 +160,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         field_list_anio_infor_decisi:
           id: field_list_anio_infor_decisi
           table: node__field_list_anio_infor_decisi
@@ -231,6 +167,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -285,7 +222,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         field_trimestre:
           id: field_trimestre
           table: node__field_trimestre
@@ -293,6 +229,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -347,7 +284,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         field_docum_archi:
           id: field_docum_archi
           table: node__field_docum_archi
@@ -355,6 +291,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -409,30 +346,109 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
+      pager:
+        type: mini
+        options:
+          offset: 0
+          items_per_page: 10
+          total_pages: null
+          id: 0
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Buscar
+          reset_button: true
+          reset_button_label: 'Limpiar consulta'
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: tag
+        options: {  }
+      empty: {  }
+      sorts:
+        field_list_anio_infor_decisi_value:
+          id: field_list_anio_infor_decisi_value
+          table: node__field_list_anio_infor_decisi
+          field: field_list_anio_infor_decisi_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: standard
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: field_list_anio_infor_decisi_value
+          exposed: false
+        field_trimestre_value:
+          id: field_trimestre_value
+          table: node__field_trimestre
+          field: field_trimestre_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: standard
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: field_trimestre_value
+          exposed: false
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: created
+          exposed: false
+          granularity: second
+      arguments: {  }
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            transp_proyec_inversi_docum: transp_proyec_inversi_docum
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            transp_proyec_inversi_docum: transp_proyec_inversi_docum
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -443,6 +459,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: string
           operator: contains
           value: ''
           group: 1
@@ -476,9 +495,6 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          entity_type: node
-          entity_field: title
-          plugin_id: string
         field_list_anio_infor_decisi_value:
           id: field_list_anio_infor_decisi_value
           table: node__field_list_anio_infor_decisi
@@ -486,6 +502,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: list_field
           operator: or
           value: {  }
           group: 1
@@ -520,7 +537,6 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          plugin_id: list_field
         field_trimestre_value:
           id: field_trimestre_value
           table: node__field_trimestre
@@ -528,6 +544,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: list_field
           operator: or
           value: {  }
           group: 1
@@ -562,7 +579,6 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          plugin_id: list_field
         field_list_cat_proyec_invers_target_id:
           id: field_list_cat_proyec_invers_target_id
           table: node__field_list_cat_proyec_invers
@@ -570,6 +586,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: taxonomy_index_tid
           operator: or
           value: {  }
           group: 1
@@ -604,80 +621,41 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: select
-          limit: true
           vid: trnasparencia_lista_de_categoria
+          type: select
           hierarchy: false
+          limit: true
           error_message: true
-          plugin_id: taxonomy_index_tid
-      sorts:
-        field_list_anio_infor_decisi_value:
-          id: field_list_anio_infor_decisi_value
-          table: node__field_list_anio_infor_decisi
-          field: field_list_anio_infor_decisi_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: DESC
-          exposed: false
-          expose:
-            label: ''
-          plugin_id: standard
-        field_trimestre_value:
-          id: field_trimestre_value
-          table: node__field_trimestre
-          field: field_trimestre_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: DESC
-          exposed: false
-          expose:
-            label: ''
-          plugin_id: standard
-        created:
-          id: created
-          table: node_field_data
-          field: created
-          order: DESC
-          entity_type: node
-          entity_field: created
-          plugin_id: date
-          relationship: none
-          group_type: group
-          admin_label: ''
-          exposed: false
-          expose:
-            label: ''
-          granularity: second
-      title: 'Proyectos de inversión'
-      header:
-        area_text_custom:
-          id: area_text_custom
-          table: views
-          field: area_text_custom
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: true
-          tokenize: true
-          content: "<div class=\"titleContentSimple mt-5 mb-4\" id=\"cont\">\r\n   <h1> 4.4\_ Proyectos de Inversión </h1>\r\n</div>"
-          plugin_id: text_custom
-        entity_block_content:
-          id: entity_block_content
-          table: views
-          field: entity_block_content
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: true
-          tokenize: true
-          target: ''
-          view_mode: default
-          bypass_access: false
-          plugin_id: entity
-      footer: {  }
-      empty: {  }
+      style:
+        type: views_bootstrap_list_group
+        options:
+          grouping:
+            -
+              field: field_list_cat_proyec_invers
+              rendered: true
+              rendered_strip: true
+            -
+              field: field_list_anio_infor_decisi
+              rendered: true
+              rendered_strip: false
+          row_class: 'mr-5 mb-3 fileTable'
+          default_row_class: true
+          title_field: ''
+      row:
+        type: fields
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_tags: {  }
       relationships:
         field_list_cat_proyec_invers:
           id: field_list_cat_proyec_invers
@@ -686,11 +664,36 @@ display:
           relationship: none
           group_type: group
           admin_label: 'field_list_cat_proyec_invers: Término de la taxonomía'
-          required: true
           plugin_id: standard
-      arguments: {  }
-      display_extenders: {  }
+          required: true
       css_class: 'pr-3 transparenciaAcceso pages transparenciaAccesoTables fileTable '
+      header:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text_custom
+          empty: true
+          content: "<div class=\"titleContentSimple mt-5 mb-4\" id=\"cont\">\r\n   <h1> 4.4\_ Proyectos de Inversión </h1>\r\n</div>"
+          tokenize: true
+        entity_block_content:
+          id: entity_block_content
+          table: views
+          field: entity_block_content
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: entity
+          empty: true
+          target: ''
+          view_mode: default
+          tokenize: true
+          bypass_access: false
+      footer: {  }
+      display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:
@@ -707,9 +710,9 @@ display:
         - 'config:field.storage.node.field_list_cat_proyec_invers'
         - 'config:field.storage.node.field_trimestre'
   page_1:
-    display_plugin: page
     id: page_1
     display_title: Page
+    display_plugin: page
     position: 1
     display_options:
       display_extenders: {  }

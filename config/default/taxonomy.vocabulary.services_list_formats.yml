@@ -1,0 +1,8 @@
+uuid: b3199cf5-5711-43a3-b747-8035b34b04d6
+langcode: es
+status: true
+dependencies: {  }
+name: 'Servicios [Lista de formatos]'
+vid: services_list_formats
+description: 'Listado de formatos archivos'
+weight: 0
