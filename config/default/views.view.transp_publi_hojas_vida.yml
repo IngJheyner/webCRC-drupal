@@ -1,28 +1,28 @@
-uuid: f7c9a92b-5d72-42a1-9c46-b30d187c2f0d
+uuid: 84ffc925-ff77-418c-9875-10d2c47ad367
 langcode: es
 status: true
 dependencies:
   config:
-    - field.storage.node.body
-    - field.storage.node.field_categ_infor_decision_publi
-    - field.storage.node.field_doc_file_info_decisi_publi
+    - field.storage.node.field_fech_publi_vacant
     - field.storage.node.field_list_anio_infor_decisi
-    - field.storage.node.field_lista_mes_inf_decisi
-    - node.type.transp_inf_decisi_afec_pub_docum
-    - taxonomy.vocabulary.trans_lista_catego_inform_decisi
+    - field.storage.paragraph.field_cargo_nivel
+    - field.storage.paragraph.field_dochoja_de_vida
+    - field.storage.paragraph.field_nom_aspirant
+    - node.type.trans_pub_hojas_vida
+    - taxonomy.vocabulary.trans_lis_carg_pub_hoj_vid
   content:
-    - 'block_content:transparencia_encabezado_e_intro:9e628ac4-a19b-4f1e-b87f-e82840994c43'
+    - 'block_content:transparencia_encabezado_e_intro:91b9c11e-8535-4c00-9fb5-416e9388efea'
   module:
-    - better_exposed_filters
+    - datetime
     - file
     - node
     - options
+    - paragraphs
     - taxonomy
-    - text
     - user
     - views_bootstrap
-id: transparencia_informacion_sobre_decisiones_afecta_publico
-label: 'Transparencia: Información sobre decisiones que puede afectar al público'
+id: transp_publi_hojas_vida
+label: 'transparencia: Publicación hojas de vida'
 module: views
 description: ''
 tag: ''
@@ -51,7 +51,7 @@ display:
           query_comment: ''
           query_tags: {  }
       exposed_form:
-        type: bef
+        type: basic
         options:
           submit_button: Buscar
           reset_button: true
@@ -60,194 +60,45 @@ display:
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
-          text_input_required: 'Seleccione cualquier filtro y pulse Aplicar para ver los resultados'
-          text_input_required_format: editor_cont_transparencia
-          bef:
-            general:
-              autosubmit: false
-              autosubmit_exclude_textfield: false
-              autosubmit_textfield_delay: 500
-              autosubmit_hide: false
-              input_required: false
-              allow_secondary: false
-              secondary_label: 'Advanced options'
-              secondary_open: false
-            filter:
-              field_categ_infor_decision_publi_target_id:
-                plugin_id: default
-                advanced:
-                  sort_options: false
-                  rewrite:
-                    filter_rewrite_values: ''
-                  collapsible: false
-                  is_secondary: false
-              field_date_information_file_value:
-                plugin_id: bef_datepicker
-                advanced:
-                  collapsible: false
-                  is_secondary: false
       pager:
-        type: some
+        type: full
         options:
           items_per_page: 10
           offset: 0
+          id: 0
+          total_pages: null
+          tags:
+            previous: '‹‹ Anterior'
+            next: 'Siguiente ››'
+            first: '‹‹ Primero'
+            last: 'Último »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
       style:
         type: views_bootstrap_list_group
         options:
           grouping:
             -
-              field: field_categ_infor_decision_publi
-              rendered: true
-              rendered_strip: false
-            -
               field: field_list_anio_infor_decisi
               rendered: true
               rendered_strip: true
-            -
-              field: field_lista_mes_inf_decisi
-              rendered: true
-              rendered_strip: false
-          row_class: 'mb-3 fileTable'
+          row_class: 'mr-5 mb-3 fileTable'
           default_row_class: true
           title_field: ''
       row:
         type: fields
-        options:
-          default_field_elements: true
-          inline:
-            title: title
-          separator: ' | '
-          hide_empty: false
       fields:
-        field_categ_infor_decision_publi:
-          id: field_categ_infor_decision_publi
-          table: node__field_categ_infor_decision_publi
-          field: field_categ_infor_decision_publi
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
-          settings:
-            link: false
-          group_column: target_id
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
         field_list_anio_infor_decisi:
           id: field_list_anio_infor_decisi
           table: node__field_list_anio_infor_decisi
           field: field_list_anio_infor_decisi
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: list_default
-          settings: {  }
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        field_lista_mes_inf_decisi:
-          id: field_lista_mes_inf_decisi
-          table: node__field_lista_mes_inf_decisi
-          field: field_lista_mes_inf_decisi
           relationship: none
           group_type: group
           admin_label: ''
@@ -316,8 +167,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '<h5>{{ title }}</h5>'
             make_link: false
             path: ''
             absolute: false
@@ -371,15 +222,79 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: field
-        body:
-          id: body
-          table: node__body
-          field: body
+        field_fech_publi_vacant:
+          id: field_fech_publi_vacant
+          table: node__field_fech_publi_vacant
+          field: field_fech_publi_vacant
           relationship: none
           group_type: group
           admin_label: ''
           label: ''
           exclude: false
+          alter:
+            alter_text: true
+            text: '<p> <small>fecha: {{ field_fech_publi_vacant }}</ small></p>'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: datetime_default
+          settings:
+            timezone_override: ''
+            format_type: fecha_corta_webcrc
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_cargo_nivel:
+          id: field_cargo_nivel
+          table: paragraph__field_cargo_nivel
+          field: field_cargo_nivel
+          relationship: field_parag_aspirant
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -420,7 +335,7 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: text_default
+          type: string
           settings: {  }
           group_column: value
           group_columns: {  }
@@ -433,15 +348,15 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_doc_file_info_decisi_publi:
-          id: field_doc_file_info_decisi_publi
-          table: node__field_doc_file_info_decisi_publi
-          field: field_doc_file_info_decisi_publi
-          relationship: none
+        field_dochoja_de_vida:
+          id: field_dochoja_de_vida
+          table: paragraph__field_dochoja_de_vida
+          field: field_dochoja_de_vida
+          relationship: field_parag_aspirant
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -482,9 +397,8 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: file_default
-          settings:
-            use_description_as_link_text: true
+          type: file_url_plain
+          settings: {  }
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -492,7 +406,69 @@ display:
           delta_offset: 0
           delta_reversed: false
           delta_first_last: false
-          multi_type: ol
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_nom_aspirant:
+          id: field_nom_aspirant
+          table: paragraph__field_nom_aspirant
+          field: field_nom_aspirant
+          relationship: field_parag_aspirant
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: '<p>Cargo: {{ field_cargo_nivel  }}  |  Aspirante: <a href="{{ field_dochoja_de_vida }}">{{field_nom_aspirant  }}</a> <p>'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
           separator: ', '
           field_api_classes: false
           plugin_id: field
@@ -515,18 +491,17 @@ display:
           table: node_field_data
           field: type
           value:
-            transp_inf_decisi_afec_pub_docum: transp_inf_decisi_afec_pub_docum
+            trans_pub_hojas_vida: trans_pub_hojas_vida
           entity_type: node
           entity_field: type
           plugin_id: bundle
           expose:
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
-        field_categ_infor_decision_publi_target_id:
-          id: field_categ_infor_decision_publi_target_id
-          table: node__field_categ_infor_decision_publi
-          field: field_categ_infor_decision_publi_target_id
+        field_list_carg_pub_hoj_vid_target_id:
+          id: field_list_carg_pub_hoj_vid_target_id
+          table: node__field_list_carg_pub_hoj_vid
+          field: field_list_carg_pub_hoj_vid_target_id
           relationship: none
           group_type: group
           admin_label: ''
@@ -535,14 +510,14 @@ display:
           group: 1
           exposed: true
           expose:
-            operator_id: field_categ_infor_decision_publi_target_id_op
-            label: Categoría
-            description: 'Seleccione la categoría a buscar'
+            operator_id: field_list_carg_pub_hoj_vid_target_id_op
+            label: Cargo
+            description: 'Seleccione el cargo a buscar'
             use_operator: false
-            operator: field_categ_infor_decision_publi_target_id_op
+            operator: field_list_carg_pub_hoj_vid_target_id_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: categoria
+            identifier: cargo
             required: false
             remember: false
             multiple: false
@@ -566,53 +541,10 @@ display:
           reduce_duplicates: false
           type: select
           limit: true
-          vid: trans_lista_catego_inform_decisi
+          vid: trans_lis_carg_pub_hoj_vid
           hierarchy: false
           error_message: true
           plugin_id: taxonomy_index_tid
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: contains
-          value: ''
-          group: 1
-          exposed: true
-          expose:
-            operator_id: title_op
-            label: 'Nombre de informacion'
-            description: 'Escriba el nombre de la información a buscar'
-            use_operator: false
-            operator: title_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: titulo
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-            placeholder: 'Escriba aquí'
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          entity_type: node
-          entity_field: title
-          plugin_id: string
         field_list_anio_infor_decisi_value:
           id: field_list_anio_infor_decisi_value
           table: node__field_list_anio_infor_decisi
@@ -621,19 +553,18 @@ display:
           group_type: group
           admin_label: ''
           operator: or
-          value:
-            2021: '2021'
+          value: {  }
           group: 1
           exposed: true
           expose:
             operator_id: field_list_anio_infor_decisi_value_op
             label: Año
-            description: 'Seleccione Año a buscar'
+            description: 'Seleccione año a buscar'
             use_operator: false
             operator: field_list_anio_infor_decisi_value_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: field_list_anio_infor_decisi_value
+            identifier: year
             required: false
             remember: false
             multiple: false
@@ -656,6 +587,47 @@ display:
             group_items: {  }
           reduce_duplicates: false
           plugin_id: list_field
+        field_nom_aspirant_value:
+          id: field_nom_aspirant_value
+          table: paragraph__field_nom_aspirant
+          field: field_nom_aspirant_value
+          relationship: field_parag_aspirant
+          group_type: group
+          admin_label: ''
+          operator: contains
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_nom_aspirant_value_op
+            label: 'Nombre Aspirante'
+            description: 'Escriba el nombre a buscar'
+            use_operator: false
+            operator: field_nom_aspirant_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: nom_aspirant
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: 'Escriba aquí'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: string
       sorts:
         field_list_anio_infor_decisi_value:
           id: field_list_anio_infor_decisi_value
@@ -669,10 +641,10 @@ display:
           expose:
             label: ''
           plugin_id: standard
-        field_lista_mes_inf_decisi_value:
-          id: field_lista_mes_inf_decisi_value
-          table: node__field_lista_mes_inf_decisi
-          field: field_lista_mes_inf_decisi_value
+        field_fech_publi_vacant_value:
+          id: field_fech_publi_vacant_value
+          table: node__field_fech_publi_vacant
+          field: field_fech_publi_vacant_value
           relationship: none
           group_type: group
           admin_label: ''
@@ -680,20 +652,24 @@ display:
           exposed: false
           expose:
             label: ''
-          plugin_id: standard
-        field_categ_infor_decision_publi_target_id:
-          id: field_categ_infor_decision_publi_target_id
-          table: node__field_categ_infor_decision_publi
-          field: field_categ_infor_decision_publi_target_id
+          granularity: day
+          plugin_id: datetime
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          order: DESC
+          entity_type: node
+          entity_field: created
+          plugin_id: date
           relationship: none
           group_type: group
           admin_label: ''
-          order: ASC
           exposed: false
           expose:
             label: ''
-          plugin_id: standard
-      title: 'Información sobre decisiones que puede afectar al público'
+          granularity: second
+      title: 'Publicación hojas de vida'
       header:
         area_text_custom:
           id: area_text_custom
@@ -703,8 +679,8 @@ display:
           group_type: group
           admin_label: ''
           empty: true
-          tokenize: true
-          content: "<div class=\"titleContentSimple mt-5 mb-4\" id=\"cont\">\r\n   <h1> 1.12 Información sobre decisiones que puede afectar al público </h1>\r\n</div>"
+          tokenize: false
+          content: "<div class=\"titleContentSimple mt-5 mb-4\" id=\"cont\">\r\n   <h1>1.14 Publicación de hojas de vida</h1>\r\n</div>"
           plugin_id: text_custom
         entity_block_content:
           id: entity_block_content
@@ -714,8 +690,8 @@ display:
           group_type: group
           admin_label: ''
           empty: true
-          tokenize: false
-          target: 9e628ac4-a19b-4f1e-b87f-e82840994c43
+          tokenize: true
+          target: 91b9c11e-8535-4c00-9fb5-416e9388efea
           view_mode: default
           bypass_access: false
           plugin_id: entity
@@ -733,57 +709,56 @@ display:
           content: '<p>No se encontró contenido relacionado con la búsqueda, por favor,  intente nuevamente con otro criterio de búsqueda. </p>'
           plugin_id: text_custom
       relationships:
-        field_categ_infor_decision_publi:
-          id: field_categ_infor_decision_publi
-          table: node__field_categ_infor_decision_publi
-          field: field_categ_infor_decision_publi
+        field_parag_aspirant:
+          id: field_parag_aspirant
+          table: node__field_parag_aspirant
+          field: field_parag_aspirant
           relationship: none
           group_type: group
-          admin_label: 'field_categ_infor_decision_publi: Término de la taxonomía'
+          admin_label: 'field_parag_aspirant: Párrafo'
           required: true
           plugin_id: standard
       arguments: {  }
       display_extenders: {  }
+      use_ajax: true
       css_class: 'transparenciaAcceso pages transparenciaAccesoTables fileTable '
-      filter_groups:
-        operator: AND
-        groups:
-          1: AND
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
+        - url.query_args
         - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_categ_infor_decision_publi'
-        - 'config:field.storage.node.field_doc_file_info_decisi_publi'
+        - 'config:field.storage.node.field_fech_publi_vacant'
         - 'config:field.storage.node.field_list_anio_infor_decisi'
-        - 'config:field.storage.node.field_lista_mes_inf_decisi'
-  transp_information_afect_public:
+        - 'config:field.storage.paragraph.field_cargo_nivel'
+        - 'config:field.storage.paragraph.field_dochoja_de_vida'
+        - 'config:field.storage.paragraph.field_nom_aspirant'
+  trans_page_public_hojas_vida:
     display_plugin: page
-    id: transp_information_afect_public
+    id: trans_page_public_hojas_vida
     display_title: Page
     position: 1
     display_options:
       display_extenders: {  }
-      path: transparencia-y-acceso-a-la-informacion-publica/informacion-de-la-entidad/informacion-sobre-decisiones-que-puede-afectar-al-publico
+      path: transparencia-y-acceso-a-la-informacion-publica/informacion-de-la-entidad/publicacion-hojas-de-vida
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
+        - url.query_args
         - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_categ_infor_decision_publi'
-        - 'config:field.storage.node.field_doc_file_info_decisi_publi'
+        - 'config:field.storage.node.field_fech_publi_vacant'
         - 'config:field.storage.node.field_list_anio_infor_decisi'
-        - 'config:field.storage.node.field_lista_mes_inf_decisi'
+        - 'config:field.storage.paragraph.field_cargo_nivel'
+        - 'config:field.storage.paragraph.field_dochoja_de_vida'
+        - 'config:field.storage.paragraph.field_nom_aspirant'

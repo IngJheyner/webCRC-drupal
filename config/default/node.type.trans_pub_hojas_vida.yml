@@ -1,0 +1,31 @@
+uuid: abe47ea8-ef47-48dd-98cf-377b4b9b8cb2
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - scheduler
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: false
+    publish_past_date: error
+    publish_past_date_created: false
+    publish_required: false
+    publish_revision: false
+    publish_touch: false
+    show_message_after_update: true
+    unpublish_enable: false
+    unpublish_required: false
+    unpublish_revision: false
+name: 'Transparencia: Publicación hojas de vida [ Documentos ]'
+type: trans_pub_hojas_vida
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

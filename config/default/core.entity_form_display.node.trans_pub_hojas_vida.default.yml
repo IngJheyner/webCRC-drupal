@@ -1,0 +1,184 @@
+uuid: 94b3d9b0-73cb-4ad9-9b9c-55c2cb225459
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.trans_pub_hojas_vida.body
+    - field.field.node.trans_pub_hojas_vida.field_fech_publi_vacant
+    - field.field.node.trans_pub_hojas_vida.field_list_anio_infor_decisi
+    - field.field.node.trans_pub_hojas_vida.field_list_carg_pub_hoj_vid
+    - field.field.node.trans_pub_hojas_vida.field_parag_aspirant
+    - node.type.trans_pub_hojas_vida
+  module:
+    - datetime
+    - field_group
+    - paragraphs
+    - scheduler
+    - text
+third_party_settings:
+  field_group:
+    group_tabs_pub_hoj_vid:
+      children:
+        - group_trans_tab_inform_pb_hoj_vi
+        - group_trans_tab_aspi_pub_hoj_vid
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        direction: horizontal
+        width_breakpoint: 640
+      label: 'publicacion de hojas de vida'
+    group_trans_tab_inform_pb_hoj_vi:
+      children:
+        - title
+        - field_list_carg_pub_hoj_vid
+        - field_fech_publi_vacant
+        - field_list_anio_infor_decisi
+        - body
+      parent_name: group_tabs_pub_hoj_vid
+      weight: 20
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: informacion
+    group_trans_tab_aspi_pub_hoj_vid:
+      children:
+        - field_parag_aspirant
+      parent_name: group_tabs_pub_hoj_vid
+      weight: 21
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Aspirantes
+id: node.trans_pub_hojas_vida.default
+targetEntityType: node
+bundle: trans_pub_hojas_vida
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 6
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_fech_publi_vacant:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_list_anio_infor_decisi:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_list_carg_pub_hoj_vid:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_parag_aspirant:
+    type: entity_reference_paragraphs
+    weight: 5
+    settings:
+      title: Párrafo
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 9
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  url_redirects:
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  path: true

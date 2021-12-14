@@ -1,0 +1,42 @@
+uuid: 822b04c5-84c8-4cd5-a431-e91613d03392
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.trans_aspirant_cargos.field_cargo_nivel
+    - field.field.paragraph.trans_aspirant_cargos.field_dochoja_de_vida
+    - field.field.paragraph.trans_aspirant_cargos.field_nom_aspirant
+    - paragraphs.paragraphs_type.trans_aspirant_cargos
+  module:
+    - file
+id: paragraph.trans_aspirant_cargos.default
+targetEntityType: paragraph
+bundle: trans_aspirant_cargos
+mode: default
+content:
+  field_cargo_nivel:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_dochoja_de_vida:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_nom_aspirant:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

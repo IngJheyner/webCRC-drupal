@@ -1,0 +1,21 @@
+uuid: 5d899418-ec4a-4866-b091-e5b402ffc060
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_nom_aspirant
+field_name: field_nom_aspirant
+entity_type: paragraph
+type: string
+settings:
+  max_length: 300
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

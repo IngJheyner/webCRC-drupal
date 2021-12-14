@@ -1,0 +1,20 @@
+uuid: 62c4d252-8772-4fe9-8841-c902dbd15ffb
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_list_carg_pub_hoj_vid
+field_name: field_list_carg_pub_hoj_vid
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

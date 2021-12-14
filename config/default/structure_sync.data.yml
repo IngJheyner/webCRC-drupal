@@ -1055,585 +1055,6 @@ taxonomies:
       weight: '5'
       parent: '0'
       uuid: 45099b3f-f4c8-436e-987d-ee09cd8ba711
-blocks:
-  -
-    info: 'Home [Encabezado]'
-    langcode: es
-    uuid: 06f5900d-1d33-41c8-a2b4-222862ad15a8
-    bundle: home_header
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_home_header_logo_govco:
-        -
-          target_id: '37'
-          alt: logo-gov-co
-          title: ''
-          width: '190'
-          height: '45'
-      field_home_header_logo_webcrc:
-        -
-          target_id: '38'
-          alt: logo-crc-comision-de-regulacion-de-comunicaciones
-          title: ''
-          width: '234'
-          height: '125'
-  -
-    info: 'Transparencia y acceso a la información pública [Encabezado]'
-    langcode: es
-    uuid: 63d3fd79-a7e3-4ce3-aba1-af6e05bc66e2
-    bundle: bloq_descrip_menu_transparencia
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>De acuerdo a la Ley 1712 de 2014 por la cual se crea la Ley de Transparencia y del Derecho a la Información Pública Nacional' se pone a disposición esta sección en la cual los ciudadanos, sector TIC e interesados pueden conocer de primera mano la información del Ministerio de Tecnologías de la Información y las Comunicaciones.<br />\r\n<br />\r\nSegún como lo dicta la Ley, la información generada por las entidades del Estado no podrá ser reservada o limitada, por el contrario es de carácter público, por tal motivo se proporciona y facilita el acceso a la misma en los términos más amplios posibles y a través de los medios amparados por ley. GGGGG<br />\r\n<br />\r\nDe acuerdo a los mínimos a publicar de que tratan los artículos 9, 10 y 11 de la Ley 1712 de 2014, sin perjuicio de lo previsto en el artículo inmediatamente siguiente respecto a los sujetos obligados a publicar en los sistemas de información del Estado, se ponen a disposición los siguientes temarios:</p>\r\n"
-          summary: ''
-          format: editor_cont_transparencia
-      field_link_decretos_descrip_menu:
-        -
-          uri: 'internal:/sites/default/files/webcrc/documents/2021-11/Resolucion_1519_2020.pdf'
-          title: 'Decreto único reglamentario sectorial'
-          options: {  }
-  -
-    info: 'Transparencia: Políticas, lineamientos y manuales [ Introducción Encabezado ]'
-    langcode: es
-    uuid: a84f9802-7bf9-49c3-b0ed-68f049029a6a
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>Texto introduccion</p>\r\n"
-          summary: ''
-          format: editor_cont_transparencia
-  -
-    info: 'Transparencia: Información sobre decisiones que puede afectar al público [ Introducción Encabezado ]'
-    langcode: es
-    uuid: 9e628ac4-a19b-4f1e-b87f-e82840994c43
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>texto de introducción</p>\r\n"
-          summary: ''
-          format: editor_cont_transparencia
-  -
-    info: 'Transparencia: Presupuesto general de ingresos, gastos e inversión [ Encabezado ]'
-    langcode: es
-    uuid: f218185d-e47c-48cd-aadb-9ba2918244bd
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>Texto de introducción</p>\r\n"
-          summary: ''
-          format: editor_cont_transparencia
-  -
-    info: 'Transparencia: Plan de Adqusiciones [ Introduccion Encabezado ]'
-    langcode: es
-    uuid: e5eb02e6-9c81-47d2-94d8-b38ccec9f999
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>Texto de introduccion</p>\r\n"
-          summary: ''
-          format: editor_cont_transparencia
-  -
-    info: 'Transparencia: ejecución presupuestal [ Introducción - Encabezado ] '
-    langcode: es
-    uuid: 3acdbfe6-7c56-4840-8651-36c26c1ad57c
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>Texto de introducción de ejecución presupuestal</p>\r\n"
-          summary: ''
-          format: editor_cont_transparencia
-  -
-    info: 'Transparencia: Plan de acción [ Introducción - Encabezado ]'
-    langcode: es
-    uuid: 4afce3fa-8c1a-4f61-92dd-4b072b34e510
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>Texto de introducción&nbsp;Transparencia: Plan de acción [ Introducción - Encabezado ]</p>\r\n"
-          summary: ''
-          format: editor_cont_transparencia
-  -
-    info: 'Transparencia: Planes institucionales [ Introducción - Encabezado ]'
-    langcode: es
-    uuid: 4e70d309-4dc3-4259-8a25-e4ef7016d4da
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>Introducción planes institucionales</p>\r\n"
-          summary: ''
-          format: editor_cont_transparencia
-  -
-    info: 'Transparencia: Informes de empalme [ Introducción - Encabezado ]'
-    langcode: es
-    uuid: 97657fef-20d3-4c1b-8a35-3f61844bd2ca
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>Texto de introducción&nbsp;</p>\r\n"
-          summary: ''
-          format: editor_cont_transparencia
-  -
-    info: 'Transparencia: Informes de gestión [ Introducción - encabezado ]'
-    langcode: es
-    uuid: 8dc92244-8dc7-49db-afe6-189a6db95a46
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>texto introducción</p>\r\n"
-          summary: ''
-          format: editor_cont_transparencia
-  -
-    info: 'Trnasparencia: informes rendición de cuentas [ Introducción - Encabezado ]'
-    langcode: es
-    uuid: 21a3ebe4-6542-42ea-aee8-b0d6026dfb0e
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>texto introducción</p>\r\n"
-          summary: ''
-          format: editor_cont_transparencia
-  -
-    info: 'Transparencia: Informes a organismos de inspección [ Introducción - Encabezado ]'
-    langcode: es
-    uuid: f84c383e-b33a-46e9-b096-1454d9951fab
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>Introducción&nbsp;4.7.4 Informes a organismos de inspección, vigilancia y control</p>\r\n"
-          summary: ''
-          format: editor_cont_transparencia
-  -
-    info: 'Transparencia: Planes de mejoramiento [ Introduccion - Encabezado ]'
-    langcode: es
-    uuid: 78cdf21c-cf4b-41b0-9261-1c9b59598e2d
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;</p>\r\n"
-          summary: ''
-          format: editor_cont_transparencia
-  -
-    info: 'Transparencia: Informe Pormenorizado [ Introducción - Encabezado ]'
-    langcode: es
-    uuid: 09f2a2df-4469-4165-a6fb-8b6418562f6f
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>introducccion</p>\r\n"
-          summary: ''
-          format: editor_cont_transparencia
-  -
-    info: 'Transparencia: Informe sobre defensa publica [ Introducción - Encabezado ]'
-    langcode: es
-    uuid: 287285d3-2a71-4fb2-9bea-1f9b4b71af05
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>Texto introduccion</p>\r\n"
-          summary: ''
-          format: editor_cont_transparencia
-  -
-    info: 'Transparencia: Registros de activos de información [ Introduccion - Encabezado ]'
-    langcode: es
-    uuid: e237cd4e-ae34-4589-8ba2-7f0181d62613
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>texto introducc</p>\r\n"
-          summary: ''
-          format: editor_cont_transparencia
-  -
-    info: 'Transparencia: Registros de activos de información [ Pie de pagina ]'
-    langcode: es
-    uuid: 069fc02b-47b0-4af7-b931-13c5bc3b796f
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>Lo invitamos a conocer el catálogo de datos abiertos del Índice de Información Clasificada y Reservada de la CRC, &nbsp;publicado en <a href=\"https://www.datos.gov.co/dataset/Registro-de-Activos-de-Informaci-n-de-la-CRC/6ip3-8q5c\">datos.gov.co</a></p>\r\n"
-          summary: ''
-          format: full_html
-  -
-    info: 'Transparencia: Indice de información clasificada [ Introducción - Encabezado ]'
-    langcode: es
-    uuid: a6cf0b9b-f995-488f-bf9f-e3d374e79313
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>texto&nbsp;</p>\r\n"
-          summary: ''
-          format: editor_cont_transparencia
-  -
-    info: 'Transparencia: Indice de información clasificada [ pie de pagina ]'
-    langcode: es
-    uuid: 947a2ab3-9808-44c8-a9de-afd08b9ead38
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>Lo invitamos a conocer el catálogo de datos abiertos del Índice de Información Clasificada y Reservada de la CRC, &nbsp;publicado en <a href=\"https://www.datos.gov.co/dataset/-ndice-de-Informaci-n-Clasificada-y-Reservada-CRC/xtju-zcke\">datos.gov.co</a></p>\r\n"
-          summary: ''
-          format: full_html
-  -
-    info: 'Transparencia: Esquema de publicación [ Introduccion- Encabezado ]'
-    langcode: es
-    uuid: 8a03e2b9-1fcb-4a45-b020-f42bfc3a5f6c
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>texto texto</p>\r\n"
-          summary: ''
-          format: editor_cont_transparencia
-  -
-    info: 'Transparencia: Programa de gestion documental [ Introduccion - Encabezado ]'
-    langcode: es
-    uuid: 35f3ddb0-7e49-4e53-bf53-632e24dce9a0
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>texto texto texto</p>\r\n"
-          summary: ''
-          format: editor_cont_transparencia
-  -
-    info: 'Temas de Interés [ Se debe solo agregar o editar una sola vez este bloque ]'
-    langcode: es
-    uuid: 75dc6e84-7257-481b-9c84-294ca5e39f7a
-    bundle: themes_interest
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_interest_content:
-        -
-          target_id: '4543'
-          target_revision_id: '4543'
-        -
-          target_id: '4546'
-          target_revision_id: '4546'
-        -
-          target_id: '4547'
-          target_revision_id: '4547'
-        -
-          target_id: '4548'
-          target_revision_id: '4548'
-        -
-          target_id: '4549'
-          target_revision_id: '4549'
-  -
-    info: Indicadores
-    langcode: es
-    uuid: a6f79fbc-3c22-45c9-b011-f3b39cdcfe46
-    bundle: indicators
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_content_title:
-        -
-          value: Indicadores
-      field_icon:
-        -
-          target_id: '35'
-      field_indicator:
-        -
-          target_id: '32'
-          target_revision_id: '32'
-        -
-          target_id: '33'
-          target_revision_id: '33'
-        -
-          target_id: '34'
-          target_revision_id: '34'
-        -
-          target_id: '35'
-          target_revision_id: '35'
-        -
-          target_id: '36'
-          target_revision_id: '36'
-      field_logo:
-        -
-          target_id: '35'
-      field_primary_url:
-        -
-          uri: 'https://www.postdata.gov.co/'
-          title: 'Información tomada de www.postdata.gov.co'
-          options: {  }
-  -
-    info: 'Ultimas noticias'
-    langcode: es
-    uuid: d6b7ca44-d780-4080-8a98-17d98296f931
-    bundle: last_news
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_content_title:
-        -
-          value: Noticias
-      field_content_title_primary:
-        -
-          value: Últimas
-      field_content_view:
-        -
-          target_id: news
-          display_id: last_news
-          data: 'a:5:{s:8:"argument";N;s:5:"limit";N;s:6:"offset";N;s:5:"title";N;s:5:"pager";N;}'
-      field_icon:
-        -
-          target_id: '35'
-  -
-    info: 'Boletin de noticias'
-    langcode: es
-    uuid: 8df82bb0-b5c2-4fa4-a354-97253c686628
-    bundle: newsletter
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_content_description:
-        -
-          value: 'Suscríbase a nuestro boletín y manténgase actualizado con las últimas noticias del sector. <br /> Los campos con (*) son obligatorios'
-          format: editor_cont_transparencia
-      field_content_form:
-        -
-          target_id: boletin_de_noticias
-          default_data: ''
-          status: open
-          open: ''
-          close: ''
-      field_content_title:
-        -
-          value: 'Boletín de noticias'
-      field_icon:
-        -
-          target_id: '46'
-  -
-    info: 'Tabs redes sociales'
-    langcode: es
-    uuid: b78e3423-dddb-49b0-97af-f37d06b61a79
-    bundle: tabs_social_networks
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_content_tabs:
-        -
-          target_id: '41'
-          target_revision_id: '41'
-  -
-    info: 'Contenidos mas importantes crc'
-    langcode: es
-    uuid: f054bf59-bf4c-47a8-a4c3-aebdbb350de5
-    bundle: important_content_crc
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_content_tabs:
-        -
-          target_id: '31'
-          target_revision_id: '31'
-      field_content_title:
-        -
-          value: 'en la CRC'
-      field_content_title_primary:
-        -
-          value: 'Lo más importante '
-      field_icon:
-        -
-          target_id: '34'
-  -
-    info: 'Barra de accesibilidad'
-    langcode: es
-    uuid: 527852f6-5c8d-49c0-a38c-a8ea26a0a2b6
-    bundle: accessibility_toolbar
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_content_paragraph:
-        -
-          target_id: '14'
-          target_revision_id: '14'
-        -
-          target_id: '15'
-          target_revision_id: '15'
-        -
-          target_id: '16'
-          target_revision_id: '16'
-        -
-          target_id: '17'
-          target_revision_id: '17'
-  -
-    info: 'Contenidos consultados'
-    langcode: es
-    uuid: 9ef5effc-94da-4dce-a1d8-5bac3078b416
-    bundle: tabs_consulted_content
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_tabs_consulted_content:
-        -
-          target_id: '24'
-          target_revision_id: '24'
-  -
-    info: 'Pie de pagina - Informacion de contacto'
-    langcode: es
-    uuid: 0d3dc0aa-8df4-44fc-809c-b63a77cf87c9
-    bundle: home_footer
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_home_footer_contacts:
-        -
-          value: 'Línea atención al ciudadano: (+57) 601 319 8300'
-        -
-          value: 'Línea gratuita nacional: 01-8000-919278'
-        -
-          value: 'Fax: (+57) 601 319 8301'
-      field_home_footer_img_org:
-        -
-          target_id: '64'
-          alt: organizacion-prai-crc
-          title: ''
-          width: '101'
-          height: '45'
-        -
-          target_id: '65'
-          alt: organizacion-regulatel-crc
-          title: ''
-          width: '88'
-          height: '45'
-      field_home_footer_insti_mail:
-        -
-          value: institucional@crcom.gov.co
-      field_home_footer_judicial_mail:
-        -
-          value: notificacionesjudiciales@crcom.gov.co
-      field_home_footer_location:
-        -
-          value: 'Dirección: Cl 59 a bis # 5 - 53, Ed Link Siete Sesenta P9 Bogoá, Colombia.'
-        -
-          value: 'Código Postal: 11011'
-        -
-          value: 'Horario de Atención: 8:30 a.m. a 5:30 p.m. en jornada continua'
-      field_home_footer_logo_webcrc:
-        -
-          target_id: '63'
-          alt: logo-comision-de-regulacion-de-comunicaciones-crc
-          title: ''
-          width: '195'
-          height: '65'
-      field_home_footer_title_social:
-        -
-          value: 'Siguenos en:'
-      field_home_footer_txt_org:
-        -
-          value: 'Organizaciones internacionales presididas por la CRC'
-      field_social_networks:
-        -
-          target_id: '42'
-          target_revision_id: '42'
-        -
-          target_id: '43'
-          target_revision_id: '43'
-        -
-          target_id: '44'
-          target_revision_id: '44'
-        -
-          target_id: '45'
-          target_revision_id: '45'
-        -
-          target_id: '46'
-          target_revision_id: '46'
-  -
-    info: 'Rss - Lo ultimo de postdata'
-    langcode: es
-    uuid: 06352fb3-55b8-4ec6-9c56-9278fdf46acc
-    bundle: block_rss_last_of_postada
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_intro_text: {  }
-      field_read_more: {  }
-      field_rss_feed:
-        -
-          feed_uri: 'https://www.postdata.gov.co/postdata-rss.xml'
-          count: '5'
-          display_date: '1'
-          date_format: news_dates
-          custom_date_format: 'F j, Y'
-          display_description: '1'
-          description_length: '255'
-          description_plaintext: '1'
-  -
-    info: 'Transparencia: Informes trimestrales acceso informacion [ Introducción - Encabezado ]'
-    langcode: es
-    uuid: c3639dc4-45b3-4eb7-9088-467d6afcd086
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>Texto de introducción</p>\r\n"
-          summary: ''
-          format: editor_cont_transparencia
 menus:
   -
     menu_name: main
@@ -2463,3 +1884,612 @@ menus:
     weight: '-48'
     langcode: es
     uuid: 52ea4a6e-0d1e-4c0e-8d2a-8e8ce45d40c7
+blocks:
+  -
+    info: 'Home [Encabezado]'
+    langcode: es
+    uuid: 06f5900d-1d33-41c8-a2b4-222862ad15a8
+    bundle: home_header
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_home_header_logo_govco:
+        -
+          target_id: '2'
+          alt: logo-gov-co
+          title: ''
+          width: '190'
+          height: '45'
+      field_home_header_logo_webcrc:
+        -
+          target_id: '1'
+          alt: logo-crc-comision-de-regulacion-de-comunicaciones
+          title: ''
+          width: '234'
+          height: '125'
+  -
+    info: 'Transparencia y acceso a la información pública [Encabezado]'
+    langcode: es
+    uuid: 63d3fd79-a7e3-4ce3-aba1-af6e05bc66e2
+    bundle: bloq_descrip_menu_transparencia
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>De acuerdo a la Ley 1712 de 2014 por la cual se crea la Ley de Transparencia y del Derecho a la Información Pública Nacional' se pone a disposición esta sección en la cual los ciudadanos, sector TIC e interesados pueden conocer de primera mano la información del Ministerio de Tecnologías de la Información y las Comunicaciones.<br />\r\n<br />\r\nSegún como lo dicta la Ley, la información generada por las entidades del Estado no podrá ser reservada o limitada, por el contrario es de carácter público, por tal motivo se proporciona y facilita el acceso a la misma en los términos más amplios posibles y a través de los medios amparados por ley. GGGGG<br />\r\n<br />\r\nDe acuerdo a los mínimos a publicar de que tratan los artículos 9, 10 y 11 de la Ley 1712 de 2014, sin perjuicio de lo previsto en el artículo inmediatamente siguiente respecto a los sujetos obligados a publicar en los sistemas de información del Estado, se ponen a disposición los siguientes temarios:</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+      field_link_decretos_descrip_menu:
+        -
+          uri: 'internal:/sites/default/files/webcrc/documents/2021-11/Resolucion_1519_2020.pdf'
+          title: 'Decreto único reglamentario sectorial'
+          options: {  }
+  -
+    info: 'Transparencia: Políticas, lineamientos y manuales [ Introducción Encabezado ]'
+    langcode: es
+    uuid: a84f9802-7bf9-49c3-b0ed-68f049029a6a
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Texto introduccion</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Información sobre decisiones que puede afectar al público [ Introducción Encabezado ]'
+    langcode: es
+    uuid: 9e628ac4-a19b-4f1e-b87f-e82840994c43
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>texto de introducción</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Presupuesto general de ingresos, gastos e inversión [ Encabezado ]'
+    langcode: es
+    uuid: f218185d-e47c-48cd-aadb-9ba2918244bd
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Texto de introducción</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Plan de Adqusiciones [ Introduccion Encabezado ]'
+    langcode: es
+    uuid: e5eb02e6-9c81-47d2-94d8-b38ccec9f999
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Texto de introduccion</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: ejecución presupuestal [ Introducción - Encabezado ] '
+    langcode: es
+    uuid: 3acdbfe6-7c56-4840-8651-36c26c1ad57c
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Texto de introducción de ejecución presupuestal</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Plan de acción [ Introducción - Encabezado ]'
+    langcode: es
+    uuid: 4afce3fa-8c1a-4f61-92dd-4b072b34e510
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Texto de introducción&nbsp;Transparencia: Plan de acción [ Introducción - Encabezado ]</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Planes institucionales [ Introducción - Encabezado ]'
+    langcode: es
+    uuid: 4e70d309-4dc3-4259-8a25-e4ef7016d4da
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Introducción planes institucionales</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Informes de empalme [ Introducción - Encabezado ]'
+    langcode: es
+    uuid: 97657fef-20d3-4c1b-8a35-3f61844bd2ca
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Texto de introducción&nbsp;</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Informes de gestión [ Introducción - encabezado ]'
+    langcode: es
+    uuid: 8dc92244-8dc7-49db-afe6-189a6db95a46
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>texto introducción</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Trnasparencia: informes rendición de cuentas [ Introducción - Encabezado ]'
+    langcode: es
+    uuid: 21a3ebe4-6542-42ea-aee8-b0d6026dfb0e
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>texto introducción</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Informes a organismos de inspección [ Introducción - Encabezado ]'
+    langcode: es
+    uuid: f84c383e-b33a-46e9-b096-1454d9951fab
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Introducción&nbsp;4.7.4 Informes a organismos de inspección, vigilancia y control</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Planes de mejoramiento [ Introduccion - Encabezado ]'
+    langcode: es
+    uuid: 78cdf21c-cf4b-41b0-9261-1c9b59598e2d
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Informe Pormenorizado [ Introducción - Encabezado ]'
+    langcode: es
+    uuid: 09f2a2df-4469-4165-a6fb-8b6418562f6f
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>introducccion</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Informe sobre defensa publica [ Introducción - Encabezado ]'
+    langcode: es
+    uuid: 287285d3-2a71-4fb2-9bea-1f9b4b71af05
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Texto introduccion</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Registros de activos de información [ Introduccion - Encabezado ]'
+    langcode: es
+    uuid: e237cd4e-ae34-4589-8ba2-7f0181d62613
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>texto introducc</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Registros de activos de información [ Pie de pagina ]'
+    langcode: es
+    uuid: 069fc02b-47b0-4af7-b931-13c5bc3b796f
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Lo invitamos a conocer el catálogo de datos abiertos del Índice de Información Clasificada y Reservada de la CRC, &nbsp;publicado en <a href=\"https://www.datos.gov.co/dataset/Registro-de-Activos-de-Informaci-n-de-la-CRC/6ip3-8q5c\">datos.gov.co</a></p>\r\n"
+          summary: ''
+          format: full_html
+  -
+    info: 'Transparencia: Indice de información clasificada [ Introducción - Encabezado ]'
+    langcode: es
+    uuid: a6cf0b9b-f995-488f-bf9f-e3d374e79313
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>texto&nbsp;</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Indice de información clasificada [ pie de pagina ]'
+    langcode: es
+    uuid: 947a2ab3-9808-44c8-a9de-afd08b9ead38
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Lo invitamos a conocer el catálogo de datos abiertos del Índice de Información Clasificada y Reservada de la CRC, &nbsp;publicado en <a href=\"https://www.datos.gov.co/dataset/-ndice-de-Informaci-n-Clasificada-y-Reservada-CRC/xtju-zcke\">datos.gov.co</a></p>\r\n"
+          summary: ''
+          format: full_html
+  -
+    info: 'Transparencia: Esquema de publicación [ Introduccion- Encabezado ]'
+    langcode: es
+    uuid: 8a03e2b9-1fcb-4a45-b020-f42bfc3a5f6c
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>texto texto</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Programa de gestion documental [ Introduccion - Encabezado ]'
+    langcode: es
+    uuid: 35f3ddb0-7e49-4e53-bf53-632e24dce9a0
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>texto texto texto</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Temas de Interés [ Se debe solo agregar o editar una sola vez este bloque ]'
+    langcode: es
+    uuid: 75dc6e84-7257-481b-9c84-294ca5e39f7a
+    bundle: themes_interest
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_interest_content:
+        -
+          target_id: '4543'
+          target_revision_id: '4543'
+        -
+          target_id: '4546'
+          target_revision_id: '4546'
+        -
+          target_id: '4547'
+          target_revision_id: '4547'
+        -
+          target_id: '4548'
+          target_revision_id: '4548'
+        -
+          target_id: '4549'
+          target_revision_id: '4549'
+  -
+    info: Indicadores
+    langcode: es
+    uuid: a6f79fbc-3c22-45c9-b011-f3b39cdcfe46
+    bundle: indicators
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_content_animated_icon: {  }
+      field_content_title:
+        -
+          value: Indicadores
+      field_icon:
+        -
+          target_id: '35'
+      field_indicator:
+        -
+          target_id: '32'
+          target_revision_id: '32'
+        -
+          target_id: '33'
+          target_revision_id: '33'
+        -
+          target_id: '34'
+          target_revision_id: '34'
+        -
+          target_id: '35'
+          target_revision_id: '35'
+        -
+          target_id: '36'
+          target_revision_id: '36'
+      field_logo:
+        -
+          target_id: '35'
+      field_primary_url:
+        -
+          uri: 'https://www.postdata.gov.co/'
+          title: 'Información tomada de www.postdata.gov.co'
+          options: {  }
+  -
+    info: 'Ultimas noticias'
+    langcode: es
+    uuid: d6b7ca44-d780-4080-8a98-17d98296f931
+    bundle: last_news
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_content_animated_icon: {  }
+      field_content_title:
+        -
+          value: Noticias
+      field_content_title_primary:
+        -
+          value: Últimas
+      field_content_view:
+        -
+          target_id: news
+          display_id: last_news
+          data: 'a:5:{s:8:"argument";N;s:5:"limit";N;s:6:"offset";N;s:5:"title";N;s:5:"pager";N;}'
+      field_icon:
+        -
+          target_id: '35'
+  -
+    info: 'Boletin de noticias'
+    langcode: es
+    uuid: 8df82bb0-b5c2-4fa4-a354-97253c686628
+    bundle: newsletter
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_content_animated_icon: {  }
+      field_content_description:
+        -
+          value: 'Suscríbase a nuestro boletín y manténgase actualizado con las últimas noticias del sector. <br /> Los campos con (*) son obligatorios'
+          format: editor_cont_transparencia
+      field_content_form:
+        -
+          target_id: boletin_de_noticias
+          default_data: ''
+          status: open
+          open: ''
+          close: ''
+      field_content_title:
+        -
+          value: 'Boletín de noticias'
+      field_icon:
+        -
+          target_id: '46'
+  -
+    info: 'Tabs redes sociales'
+    langcode: es
+    uuid: b78e3423-dddb-49b0-97af-f37d06b61a79
+    bundle: tabs_social_networks
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_content_tabs:
+        -
+          target_id: '41'
+          target_revision_id: '41'
+  -
+    info: 'Contenidos mas importantes crc'
+    langcode: es
+    uuid: f054bf59-bf4c-47a8-a4c3-aebdbb350de5
+    bundle: important_content_crc
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_content_animated_icon: {  }
+      field_content_tabs:
+        -
+          target_id: '31'
+          target_revision_id: '31'
+      field_content_title:
+        -
+          value: 'en la CRC'
+      field_content_title_primary:
+        -
+          value: 'Lo más importante '
+      field_icon:
+        -
+          target_id: '34'
+  -
+    info: 'Barra de accesibilidad'
+    langcode: es
+    uuid: 527852f6-5c8d-49c0-a38c-a8ea26a0a2b6
+    bundle: accessibility_toolbar
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_content_paragraph:
+        -
+          target_id: '14'
+          target_revision_id: '14'
+        -
+          target_id: '15'
+          target_revision_id: '15'
+        -
+          target_id: '16'
+          target_revision_id: '16'
+        -
+          target_id: '17'
+          target_revision_id: '17'
+  -
+    info: 'Contenidos consultados'
+    langcode: es
+    uuid: 9ef5effc-94da-4dce-a1d8-5bac3078b416
+    bundle: tabs_consulted_content
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_tabs_consulted_content:
+        -
+          target_id: '24'
+          target_revision_id: '24'
+  -
+    info: 'Pie de pagina - Informacion de contacto'
+    langcode: es
+    uuid: 0d3dc0aa-8df4-44fc-809c-b63a77cf87c9
+    bundle: home_footer
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_home_footer_contacts:
+        -
+          value: 'Línea atención al ciudadano: (+57) 601 319 8300'
+        -
+          value: 'Línea gratuita nacional: 01-8000-919278'
+        -
+          value: 'Fax: (+57) 601 319 8301'
+      field_home_footer_img_org:
+        -
+          target_id: '64'
+          alt: organizacion-prai-crc
+          title: ''
+          width: '101'
+          height: '45'
+        -
+          target_id: '65'
+          alt: organizacion-regulatel-crc
+          title: ''
+          width: '88'
+          height: '45'
+      field_home_footer_insti_mail:
+        -
+          value: institucional@crcom.gov.co
+      field_home_footer_judicial_mail:
+        -
+          value: notificacionesjudiciales@crcom.gov.co
+      field_home_footer_location:
+        -
+          value: 'Dirección: Cl 59 a bis # 5 - 53, Ed Link Siete Sesenta P9 Bogoá, Colombia.'
+        -
+          value: 'Código Postal: 11011'
+        -
+          value: 'Horario de Atención: 8:30 a.m. a 5:30 p.m. en jornada continua'
+      field_home_footer_logo_webcrc:
+        -
+          target_id: '63'
+          alt: logo-comision-de-regulacion-de-comunicaciones-crc
+          title: ''
+          width: '195'
+          height: '65'
+      field_home_footer_title_social:
+        -
+          value: 'Siguenos en:'
+      field_home_footer_txt_org:
+        -
+          value: 'Organizaciones internacionales presididas por la CRC'
+      field_social_networks:
+        -
+          target_id: '42'
+          target_revision_id: '42'
+        -
+          target_id: '43'
+          target_revision_id: '43'
+        -
+          target_id: '44'
+          target_revision_id: '44'
+        -
+          target_id: '45'
+          target_revision_id: '45'
+        -
+          target_id: '46'
+          target_revision_id: '46'
+  -
+    info: 'Rss - Lo ultimo de postdata'
+    langcode: es
+    uuid: 06352fb3-55b8-4ec6-9c56-9278fdf46acc
+    bundle: block_rss_last_of_postada
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_intro_text: {  }
+      field_read_more: {  }
+      field_rss_feed:
+        -
+          feed_uri: 'https://www.postdata.gov.co/postdata-rss.xml'
+          count: '5'
+          display_date: '1'
+          date_format: news_dates
+          custom_date_format: 'F j, Y'
+          display_description: '1'
+          description_length: '255'
+          description_plaintext: '1'
+  -
+    info: 'Transparencia: Informes trimestrales acceso informacion [ Introducción - Encabezado ]'
+    langcode: es
+    uuid: c3639dc4-45b3-4eb7-9088-467d6afcd086
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Texto de introducción</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Publicación hojas de vida [ Introducción ]'
+    langcode: es
+    uuid: 91b9c11e-8535-4c00-9fb5-416e9388efea
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p><a href=\"https://aspirantes.presidencia.gov.co/\">Consulte el Sistema de Publicación de Hojas de Vida de la Presidencia de la República aquí</a>.</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Trasparencia: Oferta de empleo [ Introducción ]'
+    langcode: es
+    uuid: 7af61ba9-169d-4ac4-93a7-d7f014180e22
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>También puedes consultar los siguientes portales:<br />\r\n<br />\r\n-&nbsp;<a href=\"https://www.cnsc.gov.co/\" target=\"_blank\">Comisión Nacional del Servicio Civil</a><br />\r\n-&nbsp;<a href=\"http://serviciodeempleo.gov.co/\" target=\"_blank\">Servicio Público de Empleo</a><br />\r\n-&nbsp;<a href=\"https://www.compensar.com/agenciadeempleo/\" target=\"_blank\">Agencia de Empleo y Emprendimiento - Compensar</a><br />\r\n-&nbsp;<a href=\"https://www.crcom.gov.co/es/pagina/vinculacion-a-terceros\">Vinculación a Terceros</a></p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia

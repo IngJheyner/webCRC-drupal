@@ -1,0 +1,21 @@
+uuid: 5a1f72c7-ff7a-4e12-81b1-ba87bc6983bd
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_list_anio_infor_decisi
+    - node.type.trans_pub_hojas_vida
+  module:
+    - options
+id: node.trans_pub_hojas_vida.field_list_anio_infor_decisi
+field_name: field_list_anio_infor_decisi
+entity_type: node
+bundle: trans_pub_hojas_vida
+label: Año
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

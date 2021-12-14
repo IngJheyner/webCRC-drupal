@@ -1,0 +1,11 @@
+uuid: 3b91d054-de2e-42a0-80d9-10a90b2525b8
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_ofert_empleo
+id: node.transp_ofert_empleo
+target_entity_type_id: node
+target_bundle: transp_ofert_empleo
+default_langcode: site_default
+language_alterable: false

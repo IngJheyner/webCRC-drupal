@@ -1,0 +1,18 @@
+uuid: 523263d1-258d-40ae-807c-0f77b44d1670
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.trans_pub_hojas_vida
+id: node.trans_pub_hojas_vida.title
+field_name: title
+entity_type: node
+bundle: trans_pub_hojas_vida
+label: 'titulo de publicación'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

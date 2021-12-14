@@ -1,0 +1,21 @@
+uuid: a7bca7fe-f273-47db-83c5-d4e6a30cdfb4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fech_publi_vacant
+    - node.type.trans_pub_hojas_vida
+  module:
+    - datetime
+id: node.trans_pub_hojas_vida.field_fech_publi_vacant
+field_name: field_fech_publi_vacant
+entity_type: node
+bundle: trans_pub_hojas_vida
+label: 'Fecha publicación vacantes'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

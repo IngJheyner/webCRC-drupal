@@ -1,0 +1,71 @@
+uuid: 80c718b6-cfdd-43fd-af49-800333e9de6d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.trans_pub_hojas_vida.body
+    - field.field.node.trans_pub_hojas_vida.field_fech_publi_vacant
+    - field.field.node.trans_pub_hojas_vida.field_list_anio_infor_decisi
+    - field.field.node.trans_pub_hojas_vida.field_list_carg_pub_hoj_vid
+    - field.field.node.trans_pub_hojas_vida.field_parag_aspirant
+    - node.type.trans_pub_hojas_vida
+  module:
+    - datetime
+    - entity_reference_revisions
+    - options
+    - text
+    - user
+id: node.trans_pub_hojas_vida.default
+targetEntityType: node
+bundle: trans_pub_hojas_vida
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_fech_publi_vacant:
+    weight: 104
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_list_anio_infor_decisi:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_list_carg_pub_hoj_vid:
+    weight: 106
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_parag_aspirant:
+    type: entity_reference_revisions_entity_view
+    weight: 105
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  langcode: true
+  search_api_excerpt: true

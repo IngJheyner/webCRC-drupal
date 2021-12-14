@@ -1,0 +1,29 @@
+uuid: caf9b595-13c0-48bb-8e33-04459afd7aac
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_list_carg_pub_hoj_vid
+    - node.type.trans_pub_hojas_vida
+    - taxonomy.vocabulary.trans_lis_carg_pub_hoj_vid
+id: node.trans_pub_hojas_vida.field_list_carg_pub_hoj_vid
+field_name: field_list_carg_pub_hoj_vid
+entity_type: node
+bundle: trans_pub_hojas_vida
+label: Cargo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      trans_lis_carg_pub_hoj_vid: trans_lis_carg_pub_hoj_vid
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

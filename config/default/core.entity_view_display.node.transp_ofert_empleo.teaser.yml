@@ -1,0 +1,37 @@
+uuid: c15f13c4-fab3-40c9-b556-6335941e84e1
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.transp_ofert_empleo.body
+    - field.field.node.transp_ofert_empleo.field_docum_archi
+    - field.field.node.transp_ofert_empleo.field_list_estad_ofert
+    - node.type.transp_ofert_empleo
+  module:
+    - text
+    - user
+id: node.transp_ofert_empleo.teaser
+targetEntityType: node
+bundle: transp_ofert_empleo
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_docum_archi: true
+  field_list_estad_ofert: true
+  langcode: true
+  search_api_excerpt: true

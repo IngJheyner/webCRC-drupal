@@ -1,0 +1,46 @@
+uuid: 12df3534-51dd-4679-a9fc-ad71bccdb5ed
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_dochoja_de_vida
+    - paragraphs.paragraphs_type.trans_aspirant_cargos
+  module:
+    - file
+    - filefield_paths
+third_party_settings:
+  filefield_paths:
+    enabled: true
+    file_path:
+      value: transparencia/publicacion_hojas_vida
+      options:
+        slashes: false
+        pathauto: false
+        transliterate: false
+    redirect: false
+    retroactive_update: false
+    active_updating: false
+    file_name:
+      value: '[file:ffp-name-only-original].[file:ffp-extension-original]'
+      options:
+        slashes: false
+        pathauto: false
+        transliterate: false
+id: paragraph.trans_aspirant_cargos.field_dochoja_de_vida
+field_name: field_dochoja_de_vida
+entity_type: paragraph
+bundle: trans_aspirant_cargos
+label: 'Documento hoja de vida'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

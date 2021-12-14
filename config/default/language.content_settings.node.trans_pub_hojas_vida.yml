@@ -1,0 +1,11 @@
+uuid: a35936d4-73b0-4399-95bf-2cb82c5544c1
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.trans_pub_hojas_vida
+id: node.trans_pub_hojas_vida
+target_entity_type_id: node
+target_bundle: trans_pub_hojas_vida
+default_langcode: site_default
+language_alterable: false

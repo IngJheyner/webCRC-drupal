@@ -1,0 +1,50 @@
+uuid: c7e38397-fcbf-4c10-bf2e-d70c7d6ccd89
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.transp_ofert_empleo.body
+    - field.field.node.transp_ofert_empleo.field_docum_archi
+    - field.field.node.transp_ofert_empleo.field_list_estad_ofert
+    - node.type.transp_ofert_empleo
+  module:
+    - file
+    - options
+    - text
+    - user
+id: node.transp_ofert_empleo.default
+targetEntityType: node
+bundle: transp_ofert_empleo
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_docum_archi:
+    weight: 103
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_list_estad_ofert:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,23 @@
+uuid: 9107e4ca-130c-4d64-875d-d67481d75709
+langcode: es
+status: true
+dependencies:
+  module:
+    - file
+    - paragraphs
+id: paragraph.field_dochoja_de_vida
+field_name: field_dochoja_de_vida
+entity_type: paragraph
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

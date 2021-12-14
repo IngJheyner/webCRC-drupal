@@ -1,0 +1,85 @@
+uuid: 847c10bb-9d74-4b33-b1b8-a027eb30aa58
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_parag_aspirant
+    - node.type.trans_pub_hojas_vida
+    - paragraphs.paragraphs_type.trans_aspirant_cargos
+  module:
+    - entity_reference_revisions
+id: node.trans_pub_hojas_vida.field_parag_aspirant
+field_name: field_parag_aspirant
+entity_type: node
+bundle: trans_pub_hojas_vida
+label: Aspirantes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      trans_aspirant_cargos: trans_aspirant_cargos
+    target_bundles_drag_drop:
+      accessibility_toolbar:
+        weight: 20
+        enabled: false
+      from_library:
+        weight: 21
+        enabled: false
+      iterecciones_proyectos:
+        weight: 22
+        enabled: false
+      list_social_networks:
+        weight: 23
+        enabled: false
+      microsite_block:
+        weight: 24
+        enabled: false
+      navigation_microsites:
+        weight: 25
+        enabled: false
+      page_wrapper_micrositie:
+        weight: 26
+        enabled: false
+      postdata_indicators:
+        weight: 27
+        enabled: false
+      quick_access:
+        weight: 28
+        enabled: false
+      slideshow_crc:
+        weight: 29
+        enabled: false
+      tab_content:
+        weight: 34
+        enabled: false
+      tab_header:
+        weight: 35
+        enabled: false
+      tabs_wrapper:
+        weight: 30
+        enabled: false
+      tabs_wrapper_global:
+        weight: 31
+        enabled: false
+      tabs_wrapper_secondary:
+        weight: 32
+        enabled: false
+      tabs_wrapper_vertical:
+        weight: 33
+        enabled: false
+      themes_interest:
+        weight: 36
+        enabled: false
+      themes_interest_microsite:
+        weight: 37
+        enabled: false
+      trans_aspirant_cargos:
+        enabled: true
+        weight: 38
+field_type: entity_reference_revisions
