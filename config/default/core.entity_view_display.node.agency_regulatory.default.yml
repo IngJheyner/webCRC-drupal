@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.agency_regulatory.field_agency_activity
-    - field.field.node.agency_regulatory.field_agency_colors_initial
     - field.field.node.agency_regulatory.field_agency_date_finished
     - field.field.node.agency_regulatory.field_agency_date_initial
     - field.field.node.agency_regulatory.field_agency_eje
@@ -33,14 +32,6 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
-    region: content
-  field_agency_colors_initial:
-    weight: 108
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
     region: content
   field_agency_date_finished:
     weight: 107

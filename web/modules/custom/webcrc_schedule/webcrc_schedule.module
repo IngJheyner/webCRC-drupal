@@ -27,12 +27,18 @@ function webcrc_schedule_form_node_form_alter(&$form, $form_state, $form_id) {
     $form['field_agency_date_finished']['widget'][0]['value']['#date_part_order'] = ['year'];
     $form['field_agency_date_finished']['widget'][0]['value']['#date_year_range'] = '2015:+1';
     //dpm($form['field_agency_two_trimester_ini']);
+
+    $form['actions']['submit']['#submit'][] = 'webcrc_schedule_colors_submit';
+
+    $form_state->getValue('title');
   }
 }
 
 /**
- * Implements hook_ENTITY_TYPE_presave().
+ * Funcion para agregar las fecha de agenda regultoria colors
  */
-function webcrc_schedule_node_presave($entity) {
-  dpm($entity);
+function webcrc_schedule_colors_submit(array &$form, \Drupal\Core\Form\FormStateInterface $form_state){
+  $tri_initial = [];
+  $tri_finished = [];
+  
 }

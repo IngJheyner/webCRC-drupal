@@ -1,0 +1,79 @@
+uuid: 1417472c-6af2-4171-b652-f682b4901d84
+langcode: es
+status: true
+dependencies:
+  module:
+    - file
+id: library_virtual_file
+label: 'Archivo [ Biblioteca Virtual ]'
+description: 'Carga de archivos para biblioteca Virtual'
+help: ''
+import_period: 3600
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds/library_virtual/files'
+parser: csv
+parser_configuration:
+  delimiter: ;
+  no_headers: false
+  line_limit: 100
+processor: 'entity:file'
+processor_configuration:
+  langcode: es
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  expire: -1
+  owner_feed_author: false
+  owner_id: 50
+  authorize: false
+  skip_hash_check: false
+  values: {  }
+custom_sources:
+  filename:
+    label: filename
+    value: filename
+    machine_name: filename
+  name:
+    label: name
+    value: name
+    machine_name: name
+  uid:
+    label: uid
+    value: uid
+    machine_name: uid
+  uri:
+    label: uri
+    value: uri
+    machine_name: uri
+  filemime:
+    label: filemime
+    value: filemime
+    machine_name: filemime
+mappings:
+  -
+    target: filename
+    map:
+      value: filename
+    unique: {  }
+    settings: {  }
+  -
+    target: origname
+    map:
+      value: name
+    unique: {  }
+    settings: {  }
+  -
+    target: uid
+    map:
+      target_id: uid
+    settings:
+      reference_by: uid
+      autocreate: 0
+  -
+    target: filemime
+    map:
+      value: filemime
+    unique: {  }
+    settings: {  }

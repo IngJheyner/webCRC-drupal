@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.agency_regulatory.field_agency_activity
-    - field.field.node.agency_regulatory.field_agency_colors_initial
     - field.field.node.agency_regulatory.field_agency_date_finished
     - field.field.node.agency_regulatory.field_agency_date_initial
     - field.field.node.agency_regulatory.field_agency_eje
@@ -28,7 +27,6 @@ content:
 hidden:
   addtoany: true
   field_agency_activity: true
-  field_agency_colors_initial: true
   field_agency_date_finished: true
   field_agency_date_initial: true
   field_agency_eje: true

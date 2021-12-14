@@ -33,7 +33,6 @@ module:
   config_split: 0
   config_translation: 0
   contact: 0
-  content_sync: 0
   contextual: 0
   ctools: 0
   datetime: 0
