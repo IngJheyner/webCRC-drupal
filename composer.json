@@ -92,6 +92,7 @@
         "drupal/styleguide": "^2.0@beta",
         "drupal/superfish": "^1.4",
         "drupal/svg_image": "^1.15",
+        "drupal/taxonomy_import": "^2.0",
         "drupal/twig_tweak": "^3.1",
         "drupal/ultimate_cron": "^2.0@alpha",
         "drupal/verf": "^1.0",

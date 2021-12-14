@@ -1,10 +1,10 @@
-uuid: 270d162d-9139-49d9-9ba1-3cb840da992a
+uuid: 9640ed7a-ecdd-49ee-b9e9-0d64a58c31f2
 langcode: es
 status: true
 dependencies:
   config:
-    - field.storage.media.field_media_document
-    - media.type.commission_minutes
+    - field.storage.node.field_content_file_2
+    - node.type.list_formats
   module:
     - file
     - filefield_paths
@@ -12,7 +12,7 @@ third_party_settings:
   filefield_paths:
     enabled: true
     file_path:
-      value: webcrc/actas-comision/documents
+      value: webcrc/lista-formatos/documents/plantillas
       options:
         slashes: false
         pathauto: false
@@ -26,19 +26,19 @@ third_party_settings:
         slashes: false
         pathauto: false
         transliterate: false
-id: media.commission_minutes.field_media_document
-field_name: field_media_document
-entity_type: media
-bundle: commission_minutes
-label: Archivo
+id: node.list_formats.field_content_file_2
+field_name: field_content_file_2
+entity_type: node
+bundle: list_formats
+label: Plantilla
 description: ''
 required: true
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
   file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: pdf
+  file_extensions: 'pdf xls xlsx'
   max_filesize: '50 MB'
   description_field: false
   handler: 'default:file'

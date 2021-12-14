@@ -1,0 +1,8 @@
+uuid: 4edba62d-0e8f-45aa-a203-a76e0d28e048
+langcode: es
+status: true
+dependencies: {  }
+name: 'Departamentos y Municipios'
+vid: departments_and_municipalities
+description: 'Departamentos y municipios de Colombia'
+weight: 0

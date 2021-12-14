@@ -1,0 +1,18 @@
+uuid: 5c2eeee5-8a1b-4b76-9da9-5c32637883f5
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.list_formats
+id: node.list_formats.title
+field_name: title
+entity_type: node
+bundle: list_formats
+label: Titulo
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

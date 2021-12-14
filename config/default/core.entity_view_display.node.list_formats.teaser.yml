@@ -1,0 +1,39 @@
+uuid: 56807c98-f476-4bdc-b2df-c7d5ae9db3d2
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.list_formats.field_category
+    - field.field.node.list_formats.field_content_file
+    - field.field.node.list_formats.field_content_file_2
+    - field.field.node.list_formats.field_content_without_format
+    - field.field.node.list_formats.field_dictionary_name
+    - field.field.node.list_formats.field_introduccion_contenido
+    - field.field.node.list_formats.field_list_periodicity
+    - field.field.node.list_formats.field_template_name
+    - node.type.list_formats
+  module:
+    - user
+id: node.list_formats.teaser
+targetEntityType: node
+bundle: list_formats
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_category: true
+  field_content_file: true
+  field_content_file_2: true
+  field_content_without_format: true
+  field_dictionary_name: true
+  field_introduccion_contenido: true
+  field_list_periodicity: true
+  field_template_name: true
+  langcode: true
+  search_api_excerpt: true

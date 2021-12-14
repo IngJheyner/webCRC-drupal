@@ -1,0 +1,251 @@
+uuid: 5a1629c2-d0a2-47ec-8478-75537e6639a1
+langcode: es
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.format_list_services
+    - field.field.node.list_formats.field_category
+    - field.field.node.list_formats.field_content_file
+    - field.field.node.list_formats.field_content_file_2
+    - field.field.node.list_formats.field_content_without_format
+    - field.field.node.list_formats.field_dictionary_name
+    - field.field.node.list_formats.field_introduccion_contenido
+    - field.field.node.list_formats.field_list_periodicity
+    - field.field.node.list_formats.field_template_name
+    - node.type.list_formats
+  module:
+    - entity_browser
+    - field_group
+    - file
+    - path
+    - scheduler
+third_party_settings:
+  field_group:
+    group_information_formats:
+      children:
+        - group_main_information
+        - group_dictionary
+        - group_template
+        - group_observations
+      parent_name: ''
+      weight: 1
+      format_type: tabs
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        direction: horizontal
+        width_breakpoint: 640
+      label: 'Información formatos'
+    group_main_information:
+      children:
+        - field_category
+        - field_list_periodicity
+        - field_content_without_format
+      parent_name: group_information_formats
+      weight: 20
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Infomación principal'
+    group_dictionary:
+      children:
+        - field_dictionary_name
+        - field_content_file
+      parent_name: group_information_formats
+      weight: 21
+      format_type: tab
+      region: content
+      format_settings:
+        description: ''
+        formatter: closed
+        required_fields: true
+        id: ''
+        classes: ''
+        show_empty_fields: false
+      label: Diccionario
+    group_template:
+      children:
+        - field_template_name
+        - field_content_file_2
+      parent_name: group_information_formats
+      weight: 22
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Plantilla
+    group_observations:
+      children:
+        - field_introduccion_contenido
+      parent_name: group_information_formats
+      weight: 23
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Observaciones
+id: node.list_formats.default
+targetEntityType: node
+bundle: list_formats
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_category:
+    weight: 2
+    settings:
+      entity_browser: format_list_services
+      field_widget_display: label
+      field_widget_edit: true
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_replace: false
+      field_widget_display_settings: {  }
+    third_party_settings: {  }
+    type: entity_browser_entity_reference
+    region: content
+  field_content_file:
+    weight: 6
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_content_file_2:
+    weight: 8
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_content_without_format:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_dictionary_name:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_introduccion_contenido:
+    weight: 9
+    settings:
+      rows: 8
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_list_periodicity:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_template_name:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  langcode:
+    type: language_select
+    weight: 10
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 15
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 13
+    region: content
+    third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 16
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 19
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 14
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 11
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 17
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  url_redirects:
+    weight: 18
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
