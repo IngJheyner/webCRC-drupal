@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.trans_pub_hojas_vida.field_fech_publi_vacant
     - field.field.node.trans_pub_hojas_vida.field_list_anio_infor_decisi
     - field.field.node.trans_pub_hojas_vida.field_list_carg_pub_hoj_vid
+    - field.field.node.trans_pub_hojas_vida.field_list_cat_pub_hoj_vid
     - field.field.node.trans_pub_hojas_vida.field_parag_aspirant
     - node.type.trans_pub_hojas_vida
   module:
@@ -45,6 +46,14 @@ content:
     region: content
   field_list_carg_pub_hoj_vid:
     weight: 106
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_list_cat_pub_hoj_vid:
+    weight: 107
     label: above
     settings:
       link: true

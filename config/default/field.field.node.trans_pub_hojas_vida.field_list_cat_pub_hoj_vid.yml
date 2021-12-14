@@ -1,0 +1,29 @@
+uuid: e7d13ad9-50de-422e-a26a-f122409993cd
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_list_cat_pub_hoj_vid
+    - node.type.trans_pub_hojas_vida
+    - taxonomy.vocabulary.trans_lis_cat_hoj_de_vi
+id: node.trans_pub_hojas_vida.field_list_cat_pub_hoj_vid
+field_name: field_list_cat_pub_hoj_vid
+entity_type: node
+bundle: trans_pub_hojas_vida
+label: Categoría
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      trans_lis_cat_hoj_de_vi: trans_lis_cat_hoj_de_vi
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: type_projects_comments
+field_type: entity_reference
