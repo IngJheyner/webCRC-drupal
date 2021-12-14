@@ -13,11 +13,11 @@ bundle: transparencia_documentos
 mode: default
 content:
   field_media_file_5:
+    type: file_url_plain
     label: visually_hidden
-    weight: 0
     settings: {  }
     third_party_settings: {  }
-    type: file_url_plain
+    weight: 0
     region: content
 hidden:
   created: true

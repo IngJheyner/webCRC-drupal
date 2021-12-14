@@ -18,17 +18,17 @@ third_party_settings:
         - name
         - field_media_file_1
         - created
+      label: Información
+      region: content
       parent_name: ''
       weight: 0
       format_type: fieldset
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
         description: ''
         required_fields: true
-      label: Información
 id: media.propuesta_interaccion_proyectos_.default
 targetEntityType: media
 bundle: propuesta_interaccion_proyectos_
@@ -48,13 +48,13 @@ content:
       progress_indicator: throbber
     third_party_settings: {  }
   field_ruta_file_propuestas:
+    type: string_textfield
     weight: 1
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   name:
     type: string_textfield
     weight: 2

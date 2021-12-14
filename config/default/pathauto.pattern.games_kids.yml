@@ -12,22 +12,22 @@ pattern: 'ninos/[node:title]'
 selection_criteria:
   cbbc03b3-aded-450d-b471-767d0f0a4cea:
     id: node_type
+    negate: false
+    uuid: cbbc03b3-aded-450d-b471-767d0f0a4cea
+    context_mapping:
+      node: node
     bundles:
       booklets_kids: booklets_kids
       game_kids: game_kids
-    negate: false
-    context_mapping:
-      node: node
-    uuid: cbbc03b3-aded-450d-b471-767d0f0a4cea
   9d0e9566-5a1b-43a8-910b-a71dc9807a89:
     id: language
+    negate: false
+    uuid: 9d0e9566-5a1b-43a8-910b-a71dc9807a89
+    context_mapping:
+      language: 'node:langcode:language'
     langcodes:
       en: en
       es: es
-    negate: false
-    context_mapping:
-      language: 'node:langcode:language'
-    uuid: 9d0e9566-5a1b-43a8-910b-a71dc9807a89
 selection_logic: and
 weight: -10
 relationships:

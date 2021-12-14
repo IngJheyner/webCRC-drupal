@@ -16,13 +16,14 @@ bundle: quick_access
 mode: default
 content:
   field_content_icon:
-    weight: 0
+    type: blazy_media
     label: hidden
     settings:
-      link: '1'
+      caption: {  }
       class: ''
       id: ''
       image: ''
+      link: '1'
       overlay: ''
       title: ''
       vanilla: false
@@ -38,7 +39,6 @@ content:
       box_caption: ''
       box_caption_custom: ''
       box_media_style: ''
-      caption: {  }
       responsive_image_style: ''
       box_style: ''
       image_style: ''
@@ -46,25 +46,25 @@ content:
       ratio: ''
       thumbnail_style: ''
       _uri: ''
-      grid: ''
-      grid_medium: ''
-      grid_small: ''
       breakpoints: {  }
       sizes: ''
       grid_header: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
     third_party_settings: {  }
-    type: blazy_media
+    weight: 0
     region: content
   field_content_title:
-    weight: 1
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 1
     region: content
   field_url:
-    weight: 2
+    type: link
     label: hidden
     settings:
       trim_length: 80
@@ -73,7 +73,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 2
     region: content
 hidden:
   search_api_excerpt: true

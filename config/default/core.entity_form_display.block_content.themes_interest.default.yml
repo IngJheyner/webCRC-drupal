@@ -14,48 +14,48 @@ third_party_settings:
       children:
         - group_information
         - group_interest_tab
+      label: 'Grupo Tabs'
+      region: content
       parent_name: ''
       weight: 0
       format_type: tabs
-      region: content
       format_settings:
-        direction: horizontal
-        width_breakpoint: 640
-        id: ''
         classes: ''
         show_empty_fields: false
-      label: 'Grupo Tabs'
+        id: ''
+        direction: horizontal
+        width_breakpoint: 640
     group_information:
       children:
         - info
         - langcode
+      label: Información
+      region: content
       parent_name: group_grupo_tabs
       weight: 21
       format_type: tab
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
-        description: ''
         formatter: closed
+        description: ''
         required_fields: true
-      label: Información
     group_interest_tab:
       children:
         - field_interest_content
+      label: 'Agregar temas de interés'
+      region: content
       parent_name: group_grupo_tabs
       weight: 27
       format_type: tab
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
-        description: ''
         formatter: closed
+        description: ''
         required_fields: true
-      label: 'Agregar temas de interés'
 id: block_content.themes_interest.default
 targetEntityType: block_content
 bundle: themes_interest
@@ -64,6 +64,7 @@ content:
   field_interest_content:
     type: paragraphs
     weight: 24
+    region: content
     settings:
       title: Párrafo
       title_plural: Paragraphs
@@ -79,7 +80,6 @@ content:
         collapse_edit_all: collapse_edit_all
         duplicate: '0'
     third_party_settings: {  }
-    region: content
   info:
     type: string_textfield
     weight: 24

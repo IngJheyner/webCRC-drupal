@@ -21,26 +21,17 @@ bundle: microsite_block
 mode: default
 content:
   field_content_background_type:
-    weight: 0
+    type: list_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 0
     region: content
   field_content_icon:
     type: blazy_media
-    weight: 1
-    region: content
     label: hidden
     settings:
-      image_style: ''
-      responsive_image_style: ''
-      media_switch: ''
-      thumbnail_style: ''
-      ratio: ''
-      view_mode: default
-      current_view_mode: default
-      background: false
+      caption: {  }
       class: ''
       id: ''
       image: ''
@@ -50,40 +41,49 @@ content:
       vanilla: false
       icon: ''
       layout: ''
+      view_mode: default
       cache: 0
+      current_view_mode: default
       skin: ''
       fx: ''
       style: ''
+      background: false
       box_caption: ''
       box_caption_custom: ''
       box_media_style: ''
-      caption: {  }
+      responsive_image_style: ''
       box_style: ''
+      image_style: ''
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
       _uri: ''
-      grid: ''
-      grid_medium: ''
-      grid_small: ''
       breakpoints: {  }
       sizes: ''
       grid_header: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
     third_party_settings: {  }
+    weight: 1
+    region: content
   field_content_personalized:
-    weight: 6
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 6
     region: content
   field_content_title:
     type: string
-    weight: 2
-    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 2
+    region: content
   field_content_type_view:
-    weight: 3
+    type: viewsreference_formatter
     label: hidden
     settings:
       plugin_types:
@@ -95,10 +95,10 @@ content:
         entity_reference: 0
         embed: 0
     third_party_settings: {  }
-    type: viewsreference_formatter
+    weight: 3
     region: content
   field_content_view_news:
-    weight: 4
+    type: viewsreference_formatter
     label: hidden
     settings:
       plugin_types:
@@ -110,7 +110,7 @@ content:
         entity_reference: 0
         embed: 0
     third_party_settings: {  }
-    type: viewsreference_formatter
+    weight: 4
     region: content
 hidden:
   search_api_excerpt: true

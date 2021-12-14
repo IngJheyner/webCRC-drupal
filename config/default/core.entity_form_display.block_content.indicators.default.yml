@@ -21,129 +21,130 @@ third_party_settings:
       children:
         - info
         - langcode
+      label: Infomación
+      region: content
       parent_name: ''
       weight: 0
       format_type: details_sidebar
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
-        description: ''
         open: false
+        description: ''
         required_fields: true
         weight: 0
-      label: Infomación
     group_content_indicators:
       children:
         - group_data
+      label: Contenido
+      region: content
       parent_name: ''
       weight: 1
       format_type: details_sidebar
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
-        description: ''
         open: false
+        description: ''
         required_fields: true
         weight: 0
-      label: Contenido
     group_data:
       children:
         - group_header
         - group_data_postdata
         - group_items_indicators
+      label: Datos
+      region: content
       parent_name: group_content_indicators
       weight: 20
       format_type: tabs
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
         direction: horizontal
         width_breakpoint: 640
-      label: Datos
     group_header:
       children:
         - field_content_animated_icon
         - field_icon
         - field_content_title
+      label: Encabezado
+      region: content
       parent_name: group_data
       weight: 20
       format_type: tab
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
-        description: ''
         formatter: open
+        description: ''
         required_fields: true
-      label: Encabezado
     group_data_postdata:
       children:
         - field_logo
         - field_primary_url
+      label: 'Datos postdata'
+      region: content
       parent_name: group_data
       weight: 21
       format_type: tab
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
-        description: ''
         formatter: closed
+        description: ''
         required_fields: true
-      label: 'Datos postdata'
     group_items_indicators:
       children:
         - field_indicator
+      label: 'Items indicadores'
+      region: content
       parent_name: group_data
       weight: 22
       format_type: tab
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
-        description: ''
         formatter: closed
+        description: ''
         required_fields: true
-      label: 'Items indicadores'
 id: block_content.indicators.default
 targetEntityType: block_content
 bundle: indicators
 mode: default
 content:
   field_content_animated_icon:
+    type: media_library_widget
     weight: 26
+    region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
-    type: media_library_widget
-    region: content
   field_content_title:
+    type: string_textfield
     weight: 28
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_icon:
     type: media_library_widget
     weight: 27
+    region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
-    region: content
   field_indicator:
     type: entity_reference_paragraphs
     weight: 23
+    region: content
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -152,22 +153,21 @@ content:
       form_display_mode: default
       default_paragraph_type: ''
     third_party_settings: {  }
-    region: content
   field_logo:
     type: media_library_widget
     weight: 22
+    region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
-    region: content
   field_primary_url:
+    type: link_default
     weight: 23
+    region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-    type: link_default
-    region: content
   info:
     type: string_textfield
     weight: 1

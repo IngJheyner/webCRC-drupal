@@ -6,6 +6,8 @@ dependencies:
     - field.storage.node.field_category
     - node.type.list_formats
     - taxonomy.vocabulary.services_list_formats
+  content:
+    - 'taxonomy_term:services_list_formats:71b85052-fc75-427b-b77b-cc2054acbd5c'
 id: node.list_formats.field_category
 field_name: field_category
 entity_type: node
@@ -14,7 +16,9 @@ label: Servicios
 description: 'Tipo de servicos que pertenece el formato'
 required: true
 translatable: true
-default_value: {  }
+default_value:
+  -
+    target_uuid: 71b85052-fc75-427b-b77b-cc2054acbd5c
 default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'

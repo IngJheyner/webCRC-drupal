@@ -25,35 +25,35 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_content_file:
+    type: file_generic
     weight: 4
+    region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
-    type: file_generic
-    region: content
   field_date:
+    type: datetime_datelist
     weight: 2
+    region: content
     settings:
+      increment: 15
       date_order: YMD
       time_type: none
-      increment: 15
     third_party_settings: {  }
-    type: datetime_datelist
-    region: content
   field_introduccion_contenido:
+    type: string_textarea
     weight: 3
+    region: content
     settings:
       rows: 8
       placeholder: ''
     third_party_settings: {  }
-    type: string_textarea
-    region: content
   field_type_act:
+    type: options_select
     weight: 1
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   langcode:
     type: language_select
     weight: 5
@@ -69,10 +69,10 @@ content:
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 8
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   publish_on:
     type: datetime_timestamp_no_default
@@ -82,17 +82,17 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 14
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 9
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   title:
     type: string_textfield
@@ -105,12 +105,12 @@ content:
   uid:
     type: entity_reference_autocomplete
     weight: 6
+    region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
-      match_limit: 10
-    region: content
     third_party_settings: {  }
   unpublish_on:
     type: datetime_timestamp_no_default

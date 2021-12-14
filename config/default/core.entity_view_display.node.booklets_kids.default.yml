@@ -16,7 +16,7 @@ bundle: booklets_kids
 mode: default
 content:
   field_content_url:
-    weight: 1
+    type: link
     label: hidden
     settings:
       trim_length: 80
@@ -25,16 +25,17 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 1
     region: content
   field_image_content:
-    weight: 0
+    type: blazy_media
     label: hidden
     settings:
-      link: '1'
+      caption: {  }
       class: ''
       id: ''
       image: ''
+      link: '1'
       overlay: ''
       title: ''
       vanilla: false
@@ -50,7 +51,6 @@ content:
       box_caption: ''
       box_caption_custom: ''
       box_media_style: ''
-      caption: {  }
       responsive_image_style: ''
       box_style: ''
       image_style: ''
@@ -65,7 +65,7 @@ content:
       grid_medium: ''
       grid_small: ''
     third_party_settings: {  }
-    type: blazy_media
+    weight: 0
     region: content
 hidden:
   addtoany: true

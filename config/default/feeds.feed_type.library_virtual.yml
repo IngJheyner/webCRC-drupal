@@ -25,37 +25,37 @@ third_party_settings:
       c780636f-15ae-4a27-b97a-b722d9c247ad:
         separator: ','
         limit: null
+        uuid: c780636f-15ae-4a27-b97a-b722d9c247ad
         plugin: explode
         source: keywords
         weight: 0
         label: palabras
-        uuid: c780636f-15ae-4a27-b97a-b722d9c247ad
       96c4fcc9-3d83-4a71-8b63-e107651a4f6a:
         separator: ','
         limit: null
+        uuid: 96c4fcc9-3d83-4a71-8b63-e107651a4f6a
         plugin: explode
         source: author
         weight: 0
         label: autores
-        uuid: 96c4fcc9-3d83-4a71-8b63-e107651a4f6a
       ed8a7911-86ce-4c8e-a3b7-d725301d52d1:
         separator: ','
         limit: null
+        uuid: ed8a7911-86ce-4c8e-a3b7-d725301d52d1
         plugin: explode
         source: url
         weight: 0
         label: url
-        uuid: ed8a7911-86ce-4c8e-a3b7-d725301d52d1
       06faee09-1da7-45dd-b022-3f7ef02bf852:
         separator: ','
         limit: null
+        uuid: 06faee09-1da7-45dd-b022-3f7ef02bf852
         plugin: explode
         source: text_url
         weight: 0
         label: 'texto url'
-        uuid: 06faee09-1da7-45dd-b022-3f7ef02bf852
-id: library_virtual
 label: 'Biblioteca Virtual'
+id: library_virtual
 description: 'Se crea nodo de tipo de contenido biblioteca virtual.'
 help: ''
 import_period: 3600
@@ -70,93 +70,93 @@ parser_configuration:
   line_limit: 100
 processor: 'entity:node'
 processor_configuration:
+  values:
+    type: library_virtual
   langcode: es
   insert_new: 1
   update_existing: 2
   update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
   expire: -1
   owner_feed_author: false
   owner_id: 50
-  authorize: true
-  skip_hash_check: false
-  values:
-    type: library_virtual
 custom_sources:
   title:
-    label: titulo
     value: titulo
+    label: titulo
     machine_name: title
   isbn:
-    label: isbn
     value: isbn
+    label: isbn
     machine_name: isbn
   issn:
-    label: issn
     value: issn
+    label: issn
     machine_name: issn
   created:
-    label: fecha
     value: fecha
+    label: fecha
     machine_name: created
   type_document:
-    label: tipo_documento
     value: tipo_documento
+    label: tipo_documento
     machine_name: type_document
   keywords:
-    label: palabras_clave
     value: palabras_clave
+    label: palabras_clave
     machine_name: keywords
   formats:
-    label: formatos
     value: formatos
+    label: formatos
     machine_name: formats
   author:
-    label: autores
     value: autores
+    label: autores
     machine_name: author
   url:
-    label: url
     value: url
+    label: url
     machine_name: url
   text_url:
-    label: texto_url
     value: texto_url
+    label: texto_url
     machine_name: text_url
   information_general:
-    label: informacion
     value: informacion
+    label: informacion
     machine_name: information_general
   notes:
-    label: notas
     value: notas
+    label: notas
     machine_name: notes
   image:
-    label: imagen
     value: imagen
+    label: imagen
     machine_name: image
 mappings:
   -
     target: title
     map:
       value: title
-    unique:
-      value: '1'
     settings:
       language: null
+    unique:
+      value: '1'
   -
     target: field_library_isbn
     map:
       value: isbn
-    unique: {  }
     settings:
       language: null
+    unique: {  }
   -
     target: field_library_issn
     map:
       value: issn
-    unique: {  }
     settings:
       language: null
+    unique: {  }
   -
     target: created
     map:

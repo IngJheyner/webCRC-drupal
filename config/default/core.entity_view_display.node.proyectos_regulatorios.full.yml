@@ -30,96 +30,96 @@ mode: full
 content:
   field_email_proyectos:
     type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
     weight: 0
     region: content
-    label: above
-    settings: {  }
-    third_party_settings: {  }
   field_estado_proyectos:
     type: list_default
-    weight: 1
-    region: content
     label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 1
+    region: content
   field_interacciones_proyectos:
     type: entity_reference_revisions_entity_view
-    weight: 7
-    region: content
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    weight: 7
+    region: content
   field_nombre_proyecto:
     type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
     weight: 2
     region: content
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
   field_oficina_proyecto:
     type: string
-    weight: 3
-    region: content
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 3
+    region: content
   field_poll_content_useful:
     type: webform_entity_reference_entity_view
-    weight: 6
-    region: content
     label: above
     settings:
       source_entity: true
     third_party_settings: {  }
+    weight: 6
+    region: content
   field_projects_documents_endings:
     type: entity_reference_entity_view
-    weight: 8
-    region: content
     label: hidden
     settings:
       view_mode: teaser
       link: false
     third_party_settings: {  }
+    weight: 8
+    region: content
   field_projects_links:
     type: link
-    weight: 10
-    region: content
     label: hidden
     settings:
       trim_length: 80
-      target: _blank
       url_only: false
       url_plain: false
       rel: '0'
+      target: _blank
     third_party_settings: {  }
+    weight: 10
+    region: content
   field_projects_services:
     type: entity_reference_entity_view
-    weight: 5
-    region: content
     label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 5
+    region: content
   field_resumen_proyecto:
     type: basic_string
-    weight: 4
-    region: content
     label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 4
+    region: content
   field_type_projects_comments:
     type: entity_reference_label
-    weight: 9
-    region: content
     label: hidden
     settings:
       link: false
     third_party_settings: {  }
+    weight: 9
+    region: content
 hidden:
   addtoany: true
   feeds_item: true

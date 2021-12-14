@@ -4,8 +4,8 @@ status: true
 dependencies:
   module:
     - paragraphs_library
-id: ejemplo
 label: Ejemplo
+id: ejemplo
 description: ''
 help: ''
 import_period: 3600
@@ -20,15 +20,15 @@ parser_configuration:
   line_limit: 100
 processor: 'entity:paragraphs_library_item'
 processor_configuration:
+  values: {  }
   langcode: es
+  insert_new: 1
   update_existing: 0
   update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
   expire: -1
   owner_feed_author: false
   owner_id: 0
-  authorize: true
-  skip_hash_check: false
-  values: {  }
-  insert_new: 1
 custom_sources: {  }
 mappings: {  }

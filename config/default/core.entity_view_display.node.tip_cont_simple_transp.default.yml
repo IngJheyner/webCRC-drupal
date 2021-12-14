@@ -14,17 +14,17 @@ bundle: tip_cont_simple_transp
 mode: default
 content:
   field_cont_tipo_cont_simp_transp:
-    weight: 0
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 0
     region: content
   links:
-    weight: 1
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 1
+    region: content
 hidden:
   addtoany: true
   langcode: true

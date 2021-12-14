@@ -19,13 +19,14 @@ bundle: newsletter
 mode: default
 content:
   field_content_animated_icon:
-    weight: 0
+    type: blazy_media
     label: hidden
     settings:
-      link: '1'
+      caption: {  }
       class: ''
       id: ''
       image: ''
+      link: '1'
       overlay: ''
       title: ''
       vanilla: false
@@ -41,7 +42,6 @@ content:
       box_caption: ''
       box_caption_custom: ''
       box_media_style: ''
-      caption: {  }
       responsive_image_style: ''
       box_style: ''
       image_style: ''
@@ -56,43 +56,36 @@ content:
       grid_medium: ''
       grid_small: ''
     third_party_settings: {  }
-    type: blazy_media
+    weight: 0
     region: content
   field_content_description:
-    weight: 4
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 4
     region: content
   field_content_form:
-    weight: 3
+    type: webform_entity_reference_entity_view
     label: hidden
     settings:
       source_entity: true
     third_party_settings: {  }
-    type: webform_entity_reference_entity_view
+    weight: 3
     region: content
   field_content_title:
-    weight: 2
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 2
     region: content
   field_icon:
-    weight: 1
+    type: blazy_media
     label: hidden
     settings:
-      image_style: ''
-      responsive_image_style: ''
-      media_switch: ''
-      thumbnail_style: ''
-      ratio: ''
-      view_mode: default
-      current_view_mode: default
-      background: false
+      caption: {  }
       class: ''
       id: ''
       image: ''
@@ -102,24 +95,31 @@ content:
       vanilla: false
       icon: ''
       layout: ''
+      view_mode: default
       cache: 0
+      current_view_mode: default
       skin: ''
       fx: ''
       style: ''
+      background: false
       box_caption: ''
       box_caption_custom: ''
       box_media_style: ''
-      caption: {  }
+      responsive_image_style: ''
       box_style: ''
+      image_style: ''
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
       _uri: ''
-      grid: ''
-      grid_medium: ''
-      grid_small: ''
       breakpoints: {  }
       sizes: ''
       grid_header: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
     third_party_settings: {  }
-    type: blazy_media
+    weight: 1
     region: content
 hidden:
   langcode: true

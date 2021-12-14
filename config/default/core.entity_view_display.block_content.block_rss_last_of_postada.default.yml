@@ -17,14 +17,14 @@ bundle: block_rss_last_of_postada
 mode: default
 content:
   field_intro_text:
-    weight: 0
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 0
     region: content
   field_read_more:
-    weight: 2
+    type: link
     label: hidden
     settings:
       trim_length: 80
@@ -33,14 +33,14 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 2
     region: content
   field_rss_feed:
-    weight: 1
+    type: rss_feed_formatter
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: rss_feed_formatter
+    weight: 1
     region: content
 hidden:
   langcode: true

@@ -20,12 +20,12 @@ widget_selector: tabs
 widget_selector_configuration: {  }
 widgets:
   9600cd6b-6fbe-4016-ab83-06016bcad6c2:
+    id: view
+    uuid: 9600cd6b-6fbe-4016-ab83-06016bcad6c2
+    label: Servicios
+    weight: 1
     settings:
-      view: tags
-      view_display: tags_list_of_formats
       submit_text: 'Seleccione los servicios'
       auto_select: false
-    uuid: 9600cd6b-6fbe-4016-ab83-06016bcad6c2
-    weight: 1
-    label: Servicios
-    id: view
+      view: tags
+      view_display: tags_list_of_formats

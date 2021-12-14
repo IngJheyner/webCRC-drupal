@@ -11,12 +11,12 @@ pattern: 'glosario/[node:title]'
 selection_criteria:
   82e1a89a-50fe-474c-a3a8-727b5d9d00d6:
     id: node_type
-    bundles:
-      glossary: glossary
     negate: false
+    uuid: 82e1a89a-50fe-474c-a3a8-727b5d9d00d6
     context_mapping:
       node: node
-    uuid: 82e1a89a-50fe-474c-a3a8-727b5d9d00d6
+    bundles:
+      glossary: glossary
 selection_logic: and
 weight: -5
 relationships: {  }

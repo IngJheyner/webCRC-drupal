@@ -13,29 +13,29 @@ id: card_adaptable_library
 label: 'Card Adaptable Biblioteca'
 image_style_mappings:
   -
+    image_mapping_type: image_style
+    image_mapping: card_library
     breakpoint_id: default.xl
     multiplier: 1x
+  -
     image_mapping_type: image_style
     image_mapping: card_library
-  -
     breakpoint_id: default.lg
     multiplier: 1x
-    image_mapping_type: image_style
-    image_mapping: card_library
   -
-    breakpoint_id: default.md
-    multiplier: 1x
     image_mapping_type: image_style
     image_mapping: card_library_related
-  -
-    breakpoint_id: default.sm
+    breakpoint_id: default.md
     multiplier: 1x
+  -
     image_mapping_type: image_style
     image_mapping: mobile_landscape_520px
-  -
-    breakpoint_id: default.xs
+    breakpoint_id: default.sm
     multiplier: 1x
+  -
     image_mapping_type: image_style
     image_mapping: mobile_285px
+    breakpoint_id: default.xs
+    multiplier: 1x
 breakpoint_group: webcrc
 fallback_image_style: '_original image_'

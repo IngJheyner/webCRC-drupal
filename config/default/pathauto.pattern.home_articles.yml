@@ -12,21 +12,21 @@ pattern: '/[node:title]'
 selection_criteria:
   28bac146-d662-4750-93dc-f8d678ae8b6c:
     id: node_type
-    bundles:
-      home_articles: home_articles
     negate: false
+    uuid: 28bac146-d662-4750-93dc-f8d678ae8b6c
     context_mapping:
       node: node
-    uuid: 28bac146-d662-4750-93dc-f8d678ae8b6c
+    bundles:
+      home_articles: home_articles
   77f0d145-6422-4bad-9f77-d1b6063e7810:
     id: language
+    negate: false
+    uuid: 77f0d145-6422-4bad-9f77-d1b6063e7810
+    context_mapping:
+      language: 'node:langcode:language'
     langcodes:
       en: en
       es: es
-    negate: false
-    context_mapping:
-      language: 'node:langcode:language'
-    uuid: 77f0d145-6422-4bad-9f77-d1b6063e7810
 selection_logic: and
 weight: -10
 relationships:

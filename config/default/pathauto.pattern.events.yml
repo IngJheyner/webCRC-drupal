@@ -12,21 +12,21 @@ pattern: '/eventos/[node:title]'
 selection_criteria:
   661c8b7f-52f2-47bb-9147-1b37e95b5cd6:
     id: node_type
-    bundles:
-      events: events
     negate: false
+    uuid: 661c8b7f-52f2-47bb-9147-1b37e95b5cd6
     context_mapping:
       node: node
-    uuid: 661c8b7f-52f2-47bb-9147-1b37e95b5cd6
+    bundles:
+      events: events
   c08abe74-fe37-4649-ae16-ed264e976c9d:
     id: language
+    negate: false
+    uuid: c08abe74-fe37-4649-ae16-ed264e976c9d
+    context_mapping:
+      language: 'node:langcode:language'
     langcodes:
       en: en
       es: es
-    negate: false
-    context_mapping:
-      language: 'node:langcode:language'
-    uuid: c08abe74-fe37-4649-ae16-ed264e976c9d
 selection_logic: and
 weight: -10
 relationships:

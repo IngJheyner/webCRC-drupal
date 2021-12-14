@@ -20,12 +20,12 @@ widget_selector: single
 widget_selector_configuration: {  }
 widgets:
   76a723dd-3ca6-420a-bace-e022c6d44a3d:
+    id: view
+    uuid: 76a723dd-3ca6-420a-bace-e022c6d44a3d
+    label: Tags
+    weight: 1
     settings:
-      view: tags
-      view_display: entity_browser_2
       submit_text: 'Seleccione tag'
       auto_select: false
-    uuid: 76a723dd-3ca6-420a-bace-e022c6d44a3d
-    weight: 1
-    label: Tags
-    id: view
+      view: tags
+      view_display: entity_browser_2

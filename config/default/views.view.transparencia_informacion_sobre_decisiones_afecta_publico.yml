@@ -30,94 +30,12 @@ base_table: node_field_data
 base_field: nid
 display:
   default:
-    display_plugin: default
     id: default
     display_title: Default
+    display_plugin: default
     position: 0
     display_options:
-      access:
-        type: perm
-        options:
-          perm: 'access content'
-      cache:
-        type: tag
-        options: {  }
-      query:
-        type: views_query
-        options:
-          disable_sql_rewrite: false
-          distinct: false
-          replica: false
-          query_comment: ''
-          query_tags: {  }
-      exposed_form:
-        type: bef
-        options:
-          submit_button: Buscar
-          reset_button: true
-          reset_button_label: 'Limpiar consulta'
-          exposed_sorts_label: 'Sort by'
-          expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-          text_input_required: 'Seleccione cualquier filtro y pulse Aplicar para ver los resultados'
-          text_input_required_format: editor_cont_transparencia
-          bef:
-            general:
-              autosubmit: false
-              autosubmit_exclude_textfield: false
-              autosubmit_textfield_delay: 500
-              autosubmit_hide: false
-              input_required: false
-              allow_secondary: false
-              secondary_label: 'Advanced options'
-              secondary_open: false
-            filter:
-              field_categ_infor_decision_publi_target_id:
-                plugin_id: default
-                advanced:
-                  sort_options: false
-                  rewrite:
-                    filter_rewrite_values: ''
-                  collapsible: false
-                  is_secondary: false
-              field_date_information_file_value:
-                plugin_id: bef_datepicker
-                advanced:
-                  collapsible: false
-                  is_secondary: false
-      pager:
-        type: some
-        options:
-          items_per_page: 10
-          offset: 0
-      style:
-        type: views_bootstrap_list_group
-        options:
-          grouping:
-            -
-              field: field_categ_infor_decision_publi
-              rendered: true
-              rendered_strip: false
-            -
-              field: field_list_anio_infor_decisi
-              rendered: true
-              rendered_strip: true
-            -
-              field: field_lista_mes_inf_decisi
-              rendered: true
-              rendered_strip: false
-          row_class: 'mb-3 fileTable'
-          default_row_class: true
-          title_field: ''
-      row:
-        type: fields
-        options:
-          default_field_elements: true
-          inline:
-            title: title
-          separator: ' | '
-          hide_empty: false
+      title: 'Información sobre decisiones que puede afectar al público'
       fields:
         field_categ_infor_decision_publi:
           id: field_categ_infor_decision_publi
@@ -126,6 +44,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -181,7 +100,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         field_list_anio_infor_decisi:
           id: field_list_anio_infor_decisi
           table: node__field_list_anio_infor_decisi
@@ -189,6 +107,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -243,7 +162,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         field_lista_mes_inf_decisi:
           id: field_lista_mes_inf_decisi
           table: node__field_lista_mes_inf_decisi
@@ -251,6 +169,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -305,7 +224,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         title:
           id: title
           table: node_field_data
@@ -313,6 +231,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -368,9 +289,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: node
-          entity_field: title
-          plugin_id: field
         body:
           id: body
           table: node__body
@@ -378,6 +296,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -432,7 +351,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         field_doc_file_info_decisi_publi:
           id: field_doc_file_info_decisi_publi
           table: node__field_doc_file_info_decisi_publi
@@ -440,6 +358,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -495,34 +414,82 @@ display:
           multi_type: ol
           separator: ', '
           field_api_classes: false
-          plugin_id: field
-      filters:
-        status:
-          value: '1'
-          table: node_field_data
-          field: status
-          plugin_id: boolean
-          entity_type: node
-          entity_field: status
-          id: status
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 10
+      exposed_form:
+        type: bef
+        options:
+          submit_button: Buscar
+          reset_button: true
+          reset_button_label: 'Limpiar consulta'
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+          text_input_required: 'Seleccione cualquier filtro y pulse Aplicar para ver los resultados'
+          text_input_required_format: editor_cont_transparencia
+          bef:
+            general:
+              autosubmit: false
+              autosubmit_exclude_textfield: false
+              autosubmit_textfield_delay: 500
+              autosubmit_hide: false
+              input_required: false
+              allow_secondary: false
+              secondary_label: 'Advanced options'
+              secondary_open: false
+            filter:
+              field_categ_infor_decision_publi_target_id:
+                plugin_id: default
+                advanced:
+                  sort_options: false
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: false
+                  is_secondary: false
+              field_date_information_file_value:
+                plugin_id: bef_datepicker
+                advanced:
+                  collapsible: false
+                  is_secondary: false
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: tag
+        options: {  }
+      empty: {  }
+      sorts:
+        field_list_anio_infor_decisi_value:
+          id: field_list_anio_infor_decisi_value
+          table: node__field_list_anio_infor_decisi
+          field: field_list_anio_infor_decisi_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: standard
+          order: DESC
           expose:
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-          group: 1
-        type:
-          id: type
-          table: node_field_data
-          field: type
-          value:
-            transp_inf_decisi_afec_pub_docum: transp_inf_decisi_afec_pub_docum
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
+            label: ''
+            field_identifier: field_list_anio_infor_decisi_value
+          exposed: false
+        field_lista_mes_inf_decisi_value:
+          id: field_lista_mes_inf_decisi_value
+          table: node__field_lista_mes_inf_decisi
+          field: field_lista_mes_inf_decisi_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: standard
+          order: DESC
           expose:
-            operator_limit_selection: false
-            operator_list: {  }
-          group: 1
+            label: ''
+            field_identifier: field_lista_mes_inf_decisi_value
+          exposed: false
         field_categ_infor_decision_publi_target_id:
           id: field_categ_infor_decision_publi_target_id
           table: node__field_categ_infor_decision_publi
@@ -530,6 +497,48 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: field_categ_infor_decision_publi_target_id
+          exposed: false
+      arguments: {  }
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            transp_inf_decisi_afec_pub_docum: transp_inf_decisi_afec_pub_docum
+          group: 1
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_categ_infor_decision_publi_target_id:
+          id: field_categ_infor_decision_publi_target_id
+          table: node__field_categ_infor_decision_publi
+          field: field_categ_infor_decision_publi_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
           operator: or
           value: {  }
           group: 1
@@ -564,12 +573,11 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: select
-          limit: true
           vid: trans_lista_catego_inform_decisi
+          type: select
           hierarchy: false
+          limit: true
           error_message: true
-          plugin_id: taxonomy_index_tid
         title:
           id: title
           table: node_field_data
@@ -577,6 +585,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: string
           operator: contains
           value: ''
           group: 1
@@ -610,9 +621,6 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          entity_type: node
-          entity_field: title
-          plugin_id: string
         field_list_anio_infor_decisi_value:
           id: field_list_anio_infor_decisi_value
           table: node__field_list_anio_infor_decisi
@@ -620,6 +628,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: list_field
           operator: or
           value:
             2021: '2021'
@@ -655,72 +664,45 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          plugin_id: list_field
-      sorts:
-        field_list_anio_infor_decisi_value:
-          id: field_list_anio_infor_decisi_value
-          table: node__field_list_anio_infor_decisi
-          field: field_list_anio_infor_decisi_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: DESC
-          exposed: false
-          expose:
-            label: ''
-          plugin_id: standard
-        field_lista_mes_inf_decisi_value:
-          id: field_lista_mes_inf_decisi_value
-          table: node__field_lista_mes_inf_decisi
-          field: field_lista_mes_inf_decisi_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: DESC
-          exposed: false
-          expose:
-            label: ''
-          plugin_id: standard
-        field_categ_infor_decision_publi_target_id:
-          id: field_categ_infor_decision_publi_target_id
-          table: node__field_categ_infor_decision_publi
-          field: field_categ_infor_decision_publi_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: ASC
-          exposed: false
-          expose:
-            label: ''
-          plugin_id: standard
-      title: 'Información sobre decisiones que puede afectar al público'
-      header:
-        area_text_custom:
-          id: area_text_custom
-          table: views
-          field: area_text_custom
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: true
-          tokenize: true
-          content: "<div class=\"titleContentSimple mt-5 mb-4\" id=\"cont\">\r\n   <h1> 1.12 Información sobre decisiones que puede afectar al público </h1>\r\n</div>"
-          plugin_id: text_custom
-        entity_block_content:
-          id: entity_block_content
-          table: views
-          field: entity_block_content
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: true
-          tokenize: false
-          target: 9e628ac4-a19b-4f1e-b87f-e82840994c43
-          view_mode: default
-          bypass_access: false
-          plugin_id: entity
-      footer: {  }
-      empty: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      style:
+        type: views_bootstrap_list_group
+        options:
+          grouping:
+            -
+              field: field_categ_infor_decision_publi
+              rendered: true
+              rendered_strip: false
+            -
+              field: field_list_anio_infor_decisi
+              rendered: true
+              rendered_strip: true
+            -
+              field: field_lista_mes_inf_decisi
+              rendered: true
+              rendered_strip: false
+          row_class: 'mb-3 fileTable'
+          default_row_class: true
+          title_field: ''
+      row:
+        type: fields
+        options:
+          default_field_elements: true
+          inline:
+            title: title
+          separator: ' | '
+          hide_empty: false
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_tags: {  }
       relationships:
         field_categ_infor_decision_publi:
           id: field_categ_infor_decision_publi
@@ -729,15 +711,36 @@ display:
           relationship: none
           group_type: group
           admin_label: 'field_categ_infor_decision_publi: Término de la taxonomía'
-          required: true
           plugin_id: standard
-      arguments: {  }
-      display_extenders: {  }
+          required: true
       css_class: 'transparenciaAcceso pages transparenciaAccesoTables fileTable '
-      filter_groups:
-        operator: AND
-        groups:
-          1: AND
+      header:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text_custom
+          empty: true
+          content: "<div class=\"titleContentSimple mt-5 mb-4\" id=\"cont\">\r\n   <h1> 1.12 Información sobre decisiones que puede afectar al público </h1>\r\n</div>"
+          tokenize: true
+        entity_block_content:
+          id: entity_block_content
+          table: views
+          field: entity_block_content
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: entity
+          empty: true
+          target: 9e628ac4-a19b-4f1e-b87f-e82840994c43
+          view_mode: default
+          tokenize: false
+          bypass_access: false
+      footer: {  }
+      display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:
@@ -754,9 +757,9 @@ display:
         - 'config:field.storage.node.field_list_anio_infor_decisi'
         - 'config:field.storage.node.field_lista_mes_inf_decisi'
   transp_information_afect_public:
-    display_plugin: page
     id: transp_information_afect_public
     display_title: Page
+    display_plugin: page
     position: 1
     display_options:
       display_extenders: {  }

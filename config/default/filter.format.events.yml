@@ -18,20 +18,14 @@ filters:
     weight: 4
     settings:
       optionset: default
+      layout: ''
       skin: ''
       background: false
-      layout: ''
-      optionset_thumbnail: ''
-      skin_thumbnail: ''
-      thumbnail_position: ''
-      thumbnail_caption: ''
-      image_style: ''
-      thumbnail_style: ''
       responsive_image_style: ''
-      thumbnail_effect: ''
+      image_style: ''
       media_switch: ''
       ratio: ''
-      override: false
+      thumbnail_style: ''
       overridables:
         arrows: '0'
         autoplay: '0'
@@ -41,19 +35,25 @@ filters:
         mouseWheel: '0'
         randomize: '0'
         variableWidth: '0'
+      optionset_thumbnail: ''
+      skin_thumbnail: ''
+      thumbnail_caption: ''
+      thumbnail_effect: ''
+      thumbnail_position: ''
+      override: false
   blazy_filter:
     id: blazy_filter
     provider: blazy
     status: true
     weight: 3
     settings:
-      filter_tags:
-        img: '0'
-        iframe: '0'
       media_switch: media
       hybrid_style: ''
       box_style: ''
       box_caption: ''
+      filter_tags:
+        img: '0'
+        iframe: '0'
       use_data_uri: '0'
   entity_embed:
     id: entity_embed
@@ -102,10 +102,10 @@ filters:
     weight: 100
     settings:
       default_view_mode: default
+      allowed_view_modes: {  }
       allowed_media_types:
         events_crc_documents: events_crc_documents
         events_crc_videos: events_crc_videos
         events_crc_videos_remote: events_crc_videos_remote
         images_events_crc: images_events_crc
         images_icons: images_icons
-      allowed_view_modes: {  }

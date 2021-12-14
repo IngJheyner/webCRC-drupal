@@ -22,28 +22,27 @@ mode: teaser
 content:
   field_content_list_select:
     type: list_key
-    weight: 1
-    region: content
     label: visually_hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 1
+    region: content
   field_introduccion_contenido:
     type: basic_string
-    weight: 2
-    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 2
+    region: content
   field_introduction_image:
     type: blazy_media
-    weight: 0
-    region: content
     label: hidden
     settings:
-      link: '1'
+      caption: {  }
       class: ''
       id: ''
       image: ''
+      link: '1'
       overlay: ''
       title: ''
       vanilla: false
@@ -59,7 +58,6 @@ content:
       box_caption: ''
       box_caption_custom: ''
       box_media_style: ''
-      caption: {  }
       responsive_image_style: ''
       box_style: ''
       image_style: ''
@@ -74,11 +72,13 @@ content:
       grid_medium: ''
       grid_small: ''
     third_party_settings: {  }
-  links:
-    weight: 3
+    weight: 0
     region: content
+  links:
     settings: {  }
     third_party_settings: {  }
+    weight: 3
+    region: content
 hidden:
   addtoany: true
   field_content: true

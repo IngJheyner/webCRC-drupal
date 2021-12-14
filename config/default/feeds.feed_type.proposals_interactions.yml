@@ -8,8 +8,8 @@ dependencies:
     - media.type.propuesta_interaccion_proyectos_
   module:
     - media
-id: proposals_interactions
 label: 'Propuestas [ Interacciones ]'
+id: proposals_interactions
 description: ''
 help: 'Archivos que se adjuntan al campo interacciones de tipo proyectos comentarios.'
 import_period: 3600
@@ -24,42 +24,42 @@ parser_configuration:
   line_limit: 100
 processor: 'entity:media'
 processor_configuration:
+  values:
+    bundle: propuesta_interaccion_proyectos_
   langcode: es
+  insert_new: 1
   update_existing: 2
   update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
   expire: -1
   owner_feed_author: false
   owner_id: 50
-  authorize: true
-  skip_hash_check: false
-  values:
-    bundle: propuesta_interaccion_proyectos_
-  insert_new: 1
 custom_sources:
   name_path:
-    label: nombre_ruta
     value: nombre_ruta
+    label: nombre_ruta
     machine_name: name_path
   file:
-    label: archivo
     value: archivo
+    label: archivo
     machine_name: file
   name_file:
-    label: nombre_archivo
     value: nombre_archivo
+    label: nombre_archivo
     machine_name: name_file
   date:
-    label: fecha
     value: fecha
+    label: fecha
     machine_name: date
 mappings:
   -
     target: field_ruta_file_propuestas
     map:
       value: name_path
-    unique: {  }
     settings:
       language: null
+    unique: {  }
   -
     target: field_media_file_1
     map:
@@ -74,9 +74,9 @@ mappings:
     target: name
     map:
       value: name_file
-    unique: {  }
     settings:
       language: null
+    unique: {  }
   -
     target: created
     map:

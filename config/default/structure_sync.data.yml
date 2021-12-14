@@ -1542,6 +1542,16 @@ taxonomies:
       weight: '0'
       parent: '0'
       uuid: 964f9607-1ed5-4375-8256-d22c3efe714b
+    -
+      vid: library_keywords
+      tid: '115'
+      langcode: es
+      name: pruebas
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 233949ce-d82b-43f0-b848-e0f65222c65c
   library_type_document:
     -
       vid: library_type_document
@@ -1799,7 +1809,7 @@ taxonomies:
       name: Correo
       description__value: null
       description__format: null
-      weight: '0'
+      weight: '1'
       parent: '0'
       uuid: 60f29e6b-5feb-423f-a986-da2bd5ce1dd1
     -
@@ -1809,7 +1819,7 @@ taxonomies:
       name: 'Internet fijo'
       description__value: null
       description__format: null
-      weight: '0'
+      weight: '2'
       parent: '0'
       uuid: 9067c65e-dbd1-4ab7-86f3-50ef71451bdc
     -
@@ -1819,7 +1829,7 @@ taxonomies:
       name: 'Internet móvil'
       description__value: null
       description__format: null
-      weight: '0'
+      weight: '3'
       parent: '0'
       uuid: aa9eee68-f5e5-4221-8c2d-afa001c32015
     -
@@ -1829,7 +1839,7 @@ taxonomies:
       name: 'Larga distancia'
       description__value: null
       description__format: null
-      weight: '0'
+      weight: '4'
       parent: '0'
       uuid: 3245eeff-a29c-432d-a5cf-72625c65e0cd
     -
@@ -1839,7 +1849,7 @@ taxonomies:
       name: 'Mensajería expresa'
       description__value: null
       description__format: null
-      weight: '0'
+      weight: '5'
       parent: '0'
       uuid: 8ac31e62-eac0-4e26-befa-812d0e404fa0
     -
@@ -1849,7 +1859,7 @@ taxonomies:
       name: Portador
       description__value: null
       description__format: null
-      weight: '0'
+      weight: '6'
       parent: '0'
       uuid: be9bc441-22bf-4f69-bf23-31590dffc279
     -
@@ -1859,7 +1869,7 @@ taxonomies:
       name: 'Postales de pago'
       description__value: null
       description__format: null
-      weight: '0'
+      weight: '7'
       parent: '0'
       uuid: 15b434ba-611d-46ea-adc0-cf8a74def6bc
     -
@@ -1869,7 +1879,7 @@ taxonomies:
       name: 'Telefonía Fija Local'
       description__value: null
       description__format: null
-      weight: '0'
+      weight: '8'
       parent: '0'
       uuid: da1e9c76-0b39-486d-b2a0-90254569539c
     -
@@ -1879,9 +1889,19 @@ taxonomies:
       name: 'Telefonía Móvil'
       description__value: null
       description__format: null
-      weight: '0'
+      weight: '9'
       parent: '0'
       uuid: 36cf7e83-cb7e-41ce-9c89-75969484a168
+    -
+      vid: services_list_formats
+      tid: '116'
+      langcode: es
+      name: 'Todos los servicios'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 71b85052-fc75-427b-b77b-cc2054acbd5c
     -
       vid: services_list_formats
       tid: '108'
@@ -1889,7 +1909,7 @@ taxonomies:
       name: 'Todos los TIC'
       description__value: null
       description__format: null
-      weight: '0'
+      weight: '10'
       parent: '0'
       uuid: 35468285-d032-4e0e-b51b-70ad50bc9b13
     -
@@ -1899,7 +1919,7 @@ taxonomies:
       name: 'TV abierta'
       description__value: null
       description__format: null
-      weight: '0'
+      weight: '11'
       parent: '0'
       uuid: 78180719-5869-4b7d-aea1-eac9a60c03ba
     -
@@ -1909,7 +1929,7 @@ taxonomies:
       name: 'TV suscripción'
       description__value: null
       description__format: null
-      weight: '0'
+      weight: '12'
       parent: '0'
       uuid: 86215c2f-e41a-42bd-b666-4a98b4023fc5
   speakers_events:

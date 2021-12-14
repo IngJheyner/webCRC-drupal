@@ -27,81 +27,81 @@ third_party_settings:
         - group_dictionary
         - group_template
         - group_observations
+      label: 'Información formatos'
+      region: content
       parent_name: ''
       weight: 1
       format_type: tabs
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
         direction: horizontal
         width_breakpoint: 640
-      label: 'Información formatos'
     group_main_information:
       children:
         - field_category
         - field_list_periodicity
         - field_content_without_format
+      label: 'Infomación principal'
+      region: content
       parent_name: group_information_formats
       weight: 20
       format_type: tab
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
-        description: ''
         formatter: closed
+        description: ''
         required_fields: true
-      label: 'Infomación principal'
     group_dictionary:
       children:
         - field_dictionary_name
         - field_content_file
+      label: Diccionario
+      region: content
       parent_name: group_information_formats
       weight: 21
       format_type: tab
-      region: content
       format_settings:
-        description: ''
-        formatter: closed
-        required_fields: true
-        id: ''
         classes: ''
         show_empty_fields: false
-      label: Diccionario
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
     group_template:
       children:
         - field_template_name
         - field_content_file_2
+      label: Plantilla
+      region: content
       parent_name: group_information_formats
       weight: 22
       format_type: tab
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
-        description: ''
         formatter: closed
+        description: ''
         required_fields: true
-      label: Plantilla
     group_observations:
       children:
         - field_introduccion_contenido
+      label: Observaciones
+      region: content
       parent_name: group_information_formats
       weight: 23
       format_type: tab
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
-        description: ''
         formatter: closed
+        description: ''
         required_fields: true
-      label: Observaciones
 id: node.list_formats.default
 targetEntityType: node
 bundle: list_formats
@@ -114,71 +114,71 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_category:
+    type: entity_browser_entity_reference
     weight: 2
+    region: content
     settings:
       entity_browser: format_list_services
       field_widget_display: label
       field_widget_edit: true
       field_widget_remove: true
-      open: true
-      selection_mode: selection_append
       field_widget_replace: false
+      open: true
       field_widget_display_settings: {  }
+      selection_mode: selection_append
     third_party_settings: {  }
-    type: entity_browser_entity_reference
-    region: content
   field_content_file:
+    type: file_generic
     weight: 6
+    region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
-    type: file_generic
-    region: content
   field_content_file_2:
+    type: file_generic
     weight: 8
+    region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
-    type: file_generic
-    region: content
   field_content_without_format:
+    type: string_textfield
     weight: 4
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_dictionary_name:
+    type: string_textfield
     weight: 5
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_introduccion_contenido:
+    type: string_textarea
     weight: 9
+    region: content
     settings:
       rows: 8
       placeholder: ''
     third_party_settings: {  }
-    type: string_textarea
-    region: content
   field_list_periodicity:
+    type: options_select
     weight: 3
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_template_name:
+    type: string_textfield
     weight: 7
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   langcode:
     type: language_select
     weight: 10
@@ -194,10 +194,10 @@ content:
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 13
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   publish_on:
     type: datetime_timestamp_no_default
@@ -207,17 +207,17 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 19
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 14
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   title:
     type: string_textfield
@@ -230,12 +230,12 @@ content:
   uid:
     type: entity_reference_autocomplete
     weight: 11
+    region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
-      match_limit: 10
-    region: content
     third_party_settings: {  }
   unpublish_on:
     type: datetime_timestamp_no_default

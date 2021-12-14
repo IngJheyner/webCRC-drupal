@@ -12,20 +12,20 @@ pattern: 'proyectos-comentarios/[node:title]'
 selection_criteria:
   e2a20f5f-2057-4a7b-86ad-39736c7125cd:
     id: node_type
-    bundles:
-      proyectos_regulatorios: proyectos_regulatorios
     negate: false
+    uuid: e2a20f5f-2057-4a7b-86ad-39736c7125cd
     context_mapping:
       node: node
-    uuid: e2a20f5f-2057-4a7b-86ad-39736c7125cd
+    bundles:
+      proyectos_regulatorios: proyectos_regulatorios
   e5c311c4-4d3d-4a65-a8a7-3b407f2282ea:
     id: language
-    langcodes:
-      es: es
     negate: false
+    uuid: e5c311c4-4d3d-4a65-a8a7-3b407f2282ea
     context_mapping:
       language: 'node:langcode:language'
-    uuid: e5c311c4-4d3d-4a65-a8a7-3b407f2282ea
+    langcodes:
+      es: es
 selection_logic: and
 weight: -10
 relationships:

@@ -18,16 +18,16 @@ third_party_settings:
         - field_projects_operator
         - field_media_file_2
         - created
+      label: Archivo
       parent_name: ''
+      region: content
       weight: 0
       format_type: fieldset
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: field-comments
-        classes: ''
         description: ''
-      label: Archivo
 id: media.comentarios_iteracciones_.default
 targetEntityType: media
 bundle: comentarios_iteracciones_
@@ -35,29 +35,29 @@ mode: default
 content:
   created:
     type: timestamp
-    weight: 7
-    region: content
     label: above
     settings:
       date_format: medium
       custom_date_format: ''
       timezone: ''
     third_party_settings: {  }
+    weight: 7
+    region: content
   field_media_file_2:
     type: file_default
-    weight: 6
-    region: content
     label: above
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
+    weight: 6
+    region: content
   field_projects_operator:
-    weight: 5
+    type: entity_reference_label
     label: above
     settings:
       link: false
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 5
     region: content
 hidden:
   feeds_item: true

@@ -21,9 +21,9 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       tabs_wrapper_global: tabs_wrapper_global
+    negate: 0
     target_bundles_drag_drop:
       from_library:
         weight: 10
@@ -44,8 +44,8 @@ settings:
         weight: 13
         enabled: false
       tabs_wrapper_global:
-        enabled: true
         weight: 14
+        enabled: true
       tabs_wrapper_secondary:
         weight: 15
         enabled: false

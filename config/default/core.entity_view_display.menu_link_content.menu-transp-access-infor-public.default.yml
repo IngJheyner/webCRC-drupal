@@ -12,27 +12,27 @@ bundle: menu-transp-access-infor-public
 mode: default
 content:
   children:
-    weight: 1
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 1
+    region: content
   field_icono_de_enlace:
     type: entity_reference_entity_view
-    weight: 2
     label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 2
     region: content
   field_menu_docum_transp:
     type: entity_reference_entity_view
-    weight: 3
     label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 3
     region: content
 hidden:
   langcode: true

@@ -23,77 +23,77 @@ third_party_settings:
         - group_propuestas
         - group_comentarios
         - group_extemporaneos
+      label: 'Field Group'
+      region: content
       parent_name: ''
       weight: 2
       format_type: tabs
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
         direction: horizontal
         width_breakpoint: 640
-      label: 'Field Group'
     group_propuestas:
       children:
         - field_propuestas_interacciones
+      label: Propuestas
+      region: content
       parent_name: group_field_group
       weight: 4
       format_type: tab
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
-        description: ''
         formatter: closed
+        description: ''
         required_fields: true
-      label: Propuestas
     group_comentarios:
       children:
         - group_sin_comentarios
         - field_comentarios_interacciones
+      label: Comentarios
+      region: content
       parent_name: group_field_group
       weight: 5
       format_type: tab
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
-        description: ''
         formatter: closed
+        description: ''
         required_fields: true
-      label: Comentarios
     group_sin_comentarios:
       children:
         - field_interactions_comments
+      label: 'Sin comentarios'
+      region: content
       parent_name: group_comentarios
       weight: 24
       format_type: fieldset
-      region: content
       format_settings:
-        description: ''
-        required_fields: true
-        id: ''
         classes: ''
         show_empty_fields: false
-      label: 'Sin comentarios'
+        id: ''
+        description: ''
+        required_fields: true
     group_extemporaneos:
       children:
         - field_interaction_extemporaneous
+      label: Extemporaneos
+      region: content
       parent_name: group_field_group
       weight: 6
       format_type: tab
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
-        description: ''
         formatter: closed
+        description: ''
         required_fields: true
-      label: Extemporaneos
 id: paragraph.iterecciones_proyectos.default
 targetEntityType: paragraph
 bundle: iterecciones_proyectos
@@ -106,48 +106,48 @@ content:
     settings:
       entity_browser: comentarios_interacciones_media
       field_widget_display: rendered_entity
-      field_widget_display_settings:
-        view_mode: default
       field_widget_edit: true
       field_widget_remove: true
-      selection_mode: selection_append
       field_widget_replace: false
       open: false
+      field_widget_display_settings:
+        view_mode: default
+      selection_mode: selection_append
     third_party_settings: {  }
   field_fecha_cierre_iteracciones:
+    type: datetime_default
     weight: 1
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: datetime_default
-    region: content
   field_interaction_extemporaneous:
     type: entity_browser_entity_reference
     weight: 4
+    region: content
     settings:
       entity_browser: interactions_extemporaneous
       field_widget_display: rendered_entity
-      field_widget_display_settings:
-        view_mode: default
       field_widget_edit: true
       field_widget_remove: true
-      selection_mode: selection_append
       field_widget_replace: false
       open: false
+      field_widget_display_settings:
+        view_mode: default
+      selection_mode: selection_append
     third_party_settings: {  }
-    region: content
   field_interactions_comments:
+    type: boolean_checkbox
     weight: 21
+    region: content
     settings:
       display_label: true
     third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
   field_interactions_phases:
+    type: options_select
     weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_propuestas_interacciones:
     type: entity_browser_entity_reference
     weight: 0
@@ -155,13 +155,13 @@ content:
     settings:
       entity_browser: propuesta_interacciones_media
       field_widget_display: rendered_entity
-      field_widget_display_settings:
-        view_mode: default
       field_widget_edit: true
       field_widget_remove: true
-      selection_mode: selection_append
       field_widget_replace: false
       open: false
+      field_widget_display_settings:
+        view_mode: default
+      selection_mode: selection_append
     third_party_settings: {  }
 hidden:
   created: true

@@ -20,17 +20,9 @@
 <article{{ attributes.addClass(classes) }}>
   <div class="container my-5 text-rize">
     {% block content %}
-      <h1>
+      {# <h1>
         {{ label }}
-      </h1>
-      <div class="media mb-5">
-        <span class="align-self-center">
-          {{ content.field_image_content }}
-        </span>
-        <div class="media-body align-self-center px-3">
-          {{ content.field_introduccion_contenido }}
-        </div>
-      </div>
+      </h1> #}
       {{ content.field_content }}
     {% endblock %}
   </div>

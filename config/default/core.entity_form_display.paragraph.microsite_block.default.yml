@@ -23,126 +23,126 @@ third_party_settings:
         - group_content_personalized
         - group_content_title_block
         - group_style_block
+      label: 'Contenido del bloque'
+      region: content
       parent_name: ''
       weight: 0
       format_type: tabs
-      region: content
       format_settings:
-        direction: horizontal
-        width_breakpoint: 640
-        id: ''
         classes: ''
         show_empty_fields: false
-      label: 'Contenido del bloque'
+        id: ''
+        direction: horizontal
+        width_breakpoint: 640
     group_style_block:
       children:
         - field_content_background_type
+      label: Estilos
+      region: content
       parent_name: group_content_block
       weight: 25
       format_type: tab
-      region: content
       format_settings:
-        formatter: closed
-        required_fields: true
-        id: ''
         classes: ''
         show_empty_fields: false
+        id: ''
+        formatter: closed
         description: ''
-      label: Estilos
+        required_fields: true
     group_content_title_block:
       children:
         - field_content_icon
         - field_content_title
+      label: 'Titulo principal'
+      region: content
       parent_name: group_content_block
       weight: 24
       format_type: tab
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
         formatter: closed
-        required_fields: true
         description: ''
-      label: 'Titulo principal'
+        required_fields: true
     group_content_type_view:
       children:
         - field_content_type_view
         - field_content_view_news
+      label: 'Vista predefinida'
+      region: content
       parent_name: group_content_block
       weight: 22
       format_type: tab
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
         formatter: closed
-        required_fields: true
         description: ''
-      label: 'Vista predefinida'
+        required_fields: true
     group_content_personalized:
       children:
         - field_content_personalized
         - field_content_type
+      label: 'Contenido perzonalizado'
+      region: content
       parent_name: group_content_block
       weight: 23
       format_type: tab
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
         formatter: closed
-        required_fields: true
         description: ''
-      label: 'Contenido perzonalizado'
+        required_fields: true
 id: paragraph.microsite_block.default
 targetEntityType: paragraph
 bundle: microsite_block
 mode: default
 content:
   field_content_background_type:
+    type: options_select
     weight: 1
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_content_icon:
+    type: media_library_widget
     weight: 2
+    region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
-    type: media_library_widget
-    region: content
   field_content_personalized:
+    type: text_textarea
     weight: 6
+    region: content
     settings:
       rows: 9
       placeholder: ''
     third_party_settings: {  }
-    type: text_textarea
-    region: content
   field_content_title:
+    type: string_textfield
     weight: 3
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_content_type_view:
+    type: viewsreference_select
     weight: 4
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: viewsreference_select
-    region: content
   field_content_view_news:
+    type: viewsreference_select
     weight: 5
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: viewsreference_select
-    region: content
 hidden:
   created: true
   status: true

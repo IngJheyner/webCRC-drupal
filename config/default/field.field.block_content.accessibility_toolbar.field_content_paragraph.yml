@@ -21,13 +21,13 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       accessibility_toolbar: accessibility_toolbar
+    negate: 0
     target_bundles_drag_drop:
       accessibility_toolbar:
-        enabled: true
         weight: 19
+        enabled: true
       from_library:
         weight: 20
         enabled: false

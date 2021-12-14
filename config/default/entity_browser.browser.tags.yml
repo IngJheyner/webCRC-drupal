@@ -20,12 +20,12 @@ widget_selector: tabs
 widget_selector_configuration: {  }
 widgets:
   b75f636c-78c6-42e8-a226-286218df8fd5:
+    id: view
+    uuid: b75f636c-78c6-42e8-a226-286218df8fd5
+    label: Tags
+    weight: 1
     settings:
-      view: tags
-      view_display: entity_browser_1
       submit_text: 'Seleccione tags'
       auto_select: false
-    uuid: b75f636c-78c6-42e8-a226-286218df8fd5
-    weight: 1
-    label: Tags
-    id: view
+      view: tags
+      view_display: entity_browser_1

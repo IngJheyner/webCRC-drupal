@@ -17,17 +17,17 @@ bundle: home_slideshow
 mode: default
 content:
   field_home_slideshow_description:
-    weight: 1
+    type: basic_string
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    weight: 1
     region: content
   field_home_slideshow_imagen:
-    weight: 0
+    type: blazy
     label: hidden
     settings:
-      image_style: ''
+      caption: {  }
       icon: ''
       layout: ''
       view_mode: ''
@@ -40,24 +40,24 @@ content:
       box_caption: ''
       box_caption_custom: ''
       box_media_style: ''
-      caption: {  }
       responsive_image_style: ''
       box_style: ''
+      image_style: ''
       media_switch: ''
       ratio: ''
       thumbnail_style: ''
       _uri: ''
-      grid: ''
-      grid_medium: ''
-      grid_small: ''
       breakpoints: {  }
       sizes: ''
       grid_header: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
     third_party_settings: {  }
-    type: blazy
+    weight: 0
     region: content
   field_home_slideshow_url:
-    weight: 2
+    type: link
     label: hidden
     settings:
       trim_length: 80
@@ -66,7 +66,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 2
     region: content
 hidden:
   addtoany: true

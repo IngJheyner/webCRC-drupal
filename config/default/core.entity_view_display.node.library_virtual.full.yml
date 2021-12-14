@@ -32,30 +32,30 @@ bundle: library_virtual
 mode: full
 content:
   field_library_author:
-    weight: 2
+    type: entity_reference_label
     label: hidden
     settings:
       link: false
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 2
     region: content
   field_library_file:
-    weight: 5
+    type: file_url_plain
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: file_url_plain
+    weight: 5
     region: content
   field_library_formats:
     type: entity_reference_label
-    weight: 11
-    region: content
     label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 11
+    region: content
   field_library_image:
-    weight: 1
+    type: responsive_image
     label: hidden
     settings:
       responsive_image_style: style_customizable
@@ -65,41 +65,41 @@ content:
         height: ''
       svg_render_as_image: 0
     third_party_settings: {  }
-    type: responsive_image
+    weight: 1
     region: content
   field_library_information:
-    weight: 0
+    type: basic_string
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    weight: 0
     region: content
   field_library_isbn:
     type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
     weight: 9
     region: content
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
   field_library_issn:
     type: string
-    weight: 10
-    region: content
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 10
+    region: content
   field_library_keywords:
-    weight: 4
+    type: entity_reference_label
     label: hidden
     settings:
       link: false
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 4
     region: content
   field_library_link_related:
-    weight: 6
+    type: link
     label: hidden
     settings:
       trim_length: 80
@@ -108,31 +108,31 @@ content:
       rel: '0'
       target: '0'
     third_party_settings: {  }
-    type: link
+    weight: 6
     region: content
   field_library_notes:
-    weight: 7
+    type: basic_string
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    weight: 7
     region: content
   field_library_type_document:
-    weight: 3
+    type: entity_reference_label
     label: above
     settings:
       link: false
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 3
     region: content
   field_poll_content_useful:
     type: webform_entity_reference_entity_view
-    weight: 8
-    region: content
     label: hidden
     settings:
       source_entity: true
     third_party_settings: {  }
+    weight: 8
+    region: content
 hidden:
   addtoany: true
   feeds_item: true

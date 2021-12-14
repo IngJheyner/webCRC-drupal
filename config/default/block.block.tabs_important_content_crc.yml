@@ -18,13 +18,13 @@ plugin: 'block_content:f054bf59-bf4c-47a8-a4c3-aebdbb350de5'
 settings:
   id: 'block_content:f054bf59-bf4c-47a8-a4c3-aebdbb350de5'
   label: 'Tabs Contenidos mas importantes'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
+    pages: '<front>'
