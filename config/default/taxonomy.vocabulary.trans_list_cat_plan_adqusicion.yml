@@ -1,0 +1,8 @@
+uuid: 1322eee7-83b2-453b-9e71-7721f44c4914
+langcode: es
+status: true
+dependencies: {  }
+name: 'Transparencia: Lista categoria [ Plan anual de adquisiciones ]'
+vid: trans_list_cat_plan_adqusicion
+description: ''
+weight: 0

@@ -18,6 +18,7 @@ filters:
     weight: 4
     settings:
       optionset: default
+      media_switch: ''
       skin: ''
       background: false
       layout: ''
@@ -29,7 +30,6 @@ filters:
       thumbnail_style: ''
       responsive_image_style: ''
       thumbnail_effect: ''
-      media_switch: ''
       ratio: ''
       override: false
       overridables:
@@ -51,10 +51,10 @@ filters:
         img: '0'
         iframe: '0'
       media_switch: media
-      hybrid_style: max_650x650
       box_style: medium
-      box_caption: ''
+      hybrid_style: max_650x650
       use_data_uri: '0'
+      box_caption: ''
   entity_embed:
     id: entity_embed
     provider: entity_embed
@@ -102,6 +102,7 @@ filters:
     weight: 100
     settings:
       default_view_mode: default
+      allowed_view_modes: {  }
       allowed_media_types:
         audio: audio
         document: document
@@ -109,4 +110,3 @@ filters:
         logos: logos
         remote_video: remote_video
         video: video
-      allowed_view_modes: {  }

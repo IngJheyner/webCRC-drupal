@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.tra_plan_anual_adquisi_documento.field_docum_archi
+    - field.field.node.tra_plan_anual_adquisi_documento.field_lis_cat_plan_adqu
     - field.field.node.tra_plan_anual_adquisi_documento.field_list_anio_infor_decisi
     - node.type.tra_plan_anual_adquisi_documento
   module:
@@ -22,6 +23,14 @@ content:
       use_description_as_link_text: true
     third_party_settings: {  }
     type: file_default
+    region: content
+  field_lis_cat_plan_adqu:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
     region: content
   field_list_anio_infor_decisi:
     weight: 102

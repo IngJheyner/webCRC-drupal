@@ -4,8 +4,10 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_docum_archi
+    - field.storage.node.field_lis_cat_plan_adqu
     - field.storage.node.field_list_anio_infor_decisi
     - node.type.tra_plan_anual_adquisi_documento
+    - taxonomy.vocabulary.trans_list_cat_plan_adqusicion
   content:
     - 'block_content:transparencia_encabezado_e_intro:e5eb02e6-9c81-47d2-94d8-b38ccec9f999'
   module:
@@ -13,6 +15,7 @@ dependencies:
     - file
     - node
     - options
+    - taxonomy
     - user
     - views_bootstrap
 id: transp_plan_anual_adqusion
@@ -80,7 +83,11 @@ display:
       style:
         type: views_bootstrap_list_group
         options:
-          grouping: {  }
+          grouping:
+            -
+              field: field_lis_cat_plan_adqu
+              rendered: true
+              rendered_strip: true
           row_class: 'pr-3 mb-3 fileTable'
           default_row_class: true
           uses_fields: true
@@ -95,6 +102,69 @@ display:
           separator: ' | '
           hide_empty: false
       fields:
+        field_lis_cat_plan_adqu:
+          id: field_lis_cat_plan_adqu
+          table: node__field_lis_cat_plan_adqu
+          field: field_lis_cat_plan_adqu
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
         field_docum_archi:
           id: field_docum_archi
           table: node__field_docum_archi
@@ -368,6 +438,53 @@ display:
                   2019: '2019'
           reduce_duplicates: false
           plugin_id: list_field
+        field_lis_cat_plan_adqu_target_id:
+          id: field_lis_cat_plan_adqu_target_id
+          table: node__field_lis_cat_plan_adqu
+          field: field_lis_cat_plan_adqu_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_lis_cat_plan_adqu_target_id_op
+            label: Categoría
+            description: 'Seleccione la categoría a buscar'
+            use_operator: false
+            operator: field_lis_cat_plan_adqu_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: categoria
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: trans_list_cat_plan_adqusicion
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
       sorts:
         field_list_anio_infor_decisi_value:
           id: field_list_anio_infor_decisi_value
@@ -434,10 +551,12 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
         - 'config:field.storage.node.field_docum_archi'
+        - 'config:field.storage.node.field_lis_cat_plan_adqu'
         - 'config:field.storage.node.field_list_anio_infor_decisi'
   trans_plan_anual_adqusiciones:
     display_plugin: page
@@ -453,8 +572,10 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
         - 'config:field.storage.node.field_docum_archi'
+        - 'config:field.storage.node.field_lis_cat_plan_adqu'
         - 'config:field.storage.node.field_list_anio_infor_decisi'

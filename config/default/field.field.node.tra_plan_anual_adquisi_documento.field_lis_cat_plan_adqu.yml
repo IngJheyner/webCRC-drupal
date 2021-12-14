@@ -1,0 +1,29 @@
+uuid: 3ce46846-632c-4c3b-a740-d11ca730460d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lis_cat_plan_adqu
+    - node.type.tra_plan_anual_adquisi_documento
+    - taxonomy.vocabulary.trans_list_cat_plan_adqusicion
+id: node.tra_plan_anual_adquisi_documento.field_lis_cat_plan_adqu
+field_name: field_lis_cat_plan_adqu
+entity_type: node
+bundle: tra_plan_anual_adquisi_documento
+label: Categoría
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      trans_list_cat_plan_adqusicion: trans_list_cat_plan_adqusicion
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
