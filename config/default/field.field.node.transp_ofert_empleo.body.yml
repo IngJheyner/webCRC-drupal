@@ -11,7 +11,7 @@ id: node.transp_ofert_empleo.body
 field_name: body
 entity_type: node
 bundle: transp_ofert_empleo
-label: Body
+label: Funciones
 description: ''
 required: false
 translatable: true

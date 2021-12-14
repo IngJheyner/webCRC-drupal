@@ -1,0 +1,8 @@
+uuid: 6b17c54e-6ea5-4f97-8758-0fe67d9ec67f
+langcode: es
+status: true
+dependencies: {  }
+name: 'Transparencia: Lista categoría [ Publicación hoja de vida resoluciones ]'
+vid: trans_lis_cat_hoj_de_vi
+description: ''
+weight: 0

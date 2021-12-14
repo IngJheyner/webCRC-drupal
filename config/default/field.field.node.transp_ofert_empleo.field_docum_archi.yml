@@ -30,7 +30,7 @@ id: node.transp_ofert_empleo.field_docum_archi
 field_name: field_docum_archi
 entity_type: node
 bundle: transp_ofert_empleo
-label: 'Documento / Archivo'
+label: 'Documento / Archivo requisito'
 description: ''
 required: false
 translatable: true
