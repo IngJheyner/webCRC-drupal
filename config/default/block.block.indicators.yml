@@ -18,13 +18,13 @@ plugin: 'block_content:a6f79fbc-3c22-45c9-b011-f3b39cdcfe46'
 settings:
   id: 'block_content:a6f79fbc-3c22-45c9-b011-f3b39cdcfe46'
   label: Indicadores
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
+    pages: '<front>'

@@ -9,7 +9,9 @@ field_name: field_agency_note
 entity_type: node
 type: string_long
 settings:
+  max_length: 50
   case_sensitive: false
+  is_ascii: false
 module: core
 locked: false
 cardinality: 1

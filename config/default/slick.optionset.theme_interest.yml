@@ -4,8 +4,8 @@ status: true
 dependencies: {  }
 id: theme_interest
 name: theme_interest
-label: 'Tema de interes'
 weight: 0
+label: 'Tema de interes'
 group: main
 skin: grid
 breakpoints: 1
@@ -18,10 +18,10 @@ options:
     accessibility: true
     adaptiveHeight: true
     autoplay: false
-    autoplaySpeed: 3000
     pauseOnHover: true
     pauseOnDotsHover: false
     pauseOnFocus: true
+    autoplaySpeed: 3000
     arrows: true
     prevArrow: ''
     nextArrow: ''
@@ -72,10 +72,10 @@ options:
         settings:
           adaptiveHeight: true
           autoplay: false
-          autoplaySpeed: 3000
           pauseOnHover: true
           pauseOnDotsHover: false
           pauseOnFocus: true
+          autoplaySpeed: 3000
           arrows: false
           centerMode: false
           centerPadding: 50px

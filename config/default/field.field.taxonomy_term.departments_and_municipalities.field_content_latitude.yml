@@ -1,0 +1,23 @@
+uuid: 691710dc-07bf-4c8e-8237-950d48c5ae46
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_content_latitude
+    - taxonomy.vocabulary.departments_and_municipalities
+id: taxonomy_term.departments_and_municipalities.field_content_latitude
+field_name: field_content_latitude
+entity_type: taxonomy_term
+bundle: departments_and_municipalities
+label: Latitud
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

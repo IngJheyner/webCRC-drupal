@@ -1,0 +1,10 @@
+uuid: 42a9df3c-5a9b-48eb-b26c-af48565e3c31
+langcode: es
+status: true
+dependencies: {  }
+id: trans_aspirant_cargos
+label: 'Transparencia: Aspirantes cargos hojas de vida'
+icon_uuid: null
+icon_default: null
+description: 'Paragraph para aspirante a Cargos'
+behavior_plugins: {  }

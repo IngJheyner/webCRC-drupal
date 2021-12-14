@@ -19,17 +19,17 @@ third_party_settings:
         - field_projects_operator
         - field_media_file_2
         - created
+      label: Información
+      region: content
       parent_name: ''
       weight: 0
       format_type: fieldset
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
         description: ''
         required_fields: true
-      label: Información
 id: media.comentarios_iteracciones_.default
 targetEntityType: media
 bundle: comentarios_iteracciones_
@@ -49,23 +49,23 @@ content:
       progress_indicator: throbber
     third_party_settings: {  }
   field_projects_operator:
+    type: entity_reference_autocomplete_tags
     weight: 30
+    region: content
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete_tags
-    region: content
   field_ruta_archivo_comentarios:
+    type: string_textfield
     weight: 29
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
 hidden:
   feeds_item: true
   langcode: true

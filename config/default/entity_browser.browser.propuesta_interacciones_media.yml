@@ -21,9 +21,12 @@ widget_selector: single
 widget_selector_configuration: {  }
 widgets:
   0f55127c-9f08-47cd-8934-486f833cf4e5:
+    id: dropzonejs_media_entity_inline_entity_form
+    uuid: 0f55127c-9f08-47cd-8934-486f833cf4e5
+    label: Propuestas
+    weight: 1
     settings:
-      form_mode: default
-      media_type: propuesta_interaccion_proyectos_
+      submit_text: 'Cargar Propuesta'
       upload_location: 'public://[date:custom:Y]-[date:custom:m]'
       dropzone_description: 'Suelta los archivos aquí para subirlos'
       max_filesize: 32M
@@ -34,8 +37,5 @@ widgets:
       resize_quality: !!float 1
       resize_method: contain
       thumbnail_method: contain
-      submit_text: 'Cargar Propuesta'
-    uuid: 0f55127c-9f08-47cd-8934-486f833cf4e5
-    weight: 1
-    label: Propuestas
-    id: dropzonejs_media_entity_inline_entity_form
+      media_type: propuesta_interaccion_proyectos_
+      form_mode: default

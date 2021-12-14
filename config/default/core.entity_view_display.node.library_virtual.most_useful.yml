@@ -30,8 +30,6 @@ mode: most_useful
 content:
   field_library_image:
     type: responsive_image
-    weight: 1
-    region: content
     label: hidden
     settings:
       responsive_image_style: card_adaptable_library
@@ -41,13 +39,15 @@ content:
         width: ''
         height: ''
     third_party_settings: {  }
+    weight: 1
+    region: content
   field_library_information:
     type: basic_string
-    weight: 0
-    region: content
     label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   addtoany: true
   feeds_item: true

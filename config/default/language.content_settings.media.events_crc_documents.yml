@@ -1,0 +1,11 @@
+uuid: 10430ee5-27a2-4e7f-8552-1ccf1cc4ecd8
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.events_crc_documents
+id: media.events_crc_documents
+target_entity_type_id: media
+target_bundle: events_crc_documents
+default_langcode: site_default
+language_alterable: false

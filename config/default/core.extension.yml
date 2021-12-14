@@ -1,3 +1,6 @@
+_core:
+  default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
+langcode: es
 module:
   addtoany: 0
   admin_audit_trail: 0
@@ -117,6 +120,7 @@ module:
   system: 0
   tamper: 0
   taxonomy: 0
+  taxonomy_import: 0
   text: 0
   token: 0
   toolbar: 0
@@ -151,6 +155,3 @@ theme:
   claro: 0
   gin: 0
 profile: standard
-_core:
-  default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
-langcode: es

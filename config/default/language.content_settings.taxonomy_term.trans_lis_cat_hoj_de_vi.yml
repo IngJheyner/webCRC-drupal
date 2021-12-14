@@ -1,0 +1,11 @@
+uuid: cd39f27d-3814-48d1-be92-f00d699c1bf3
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.trans_lis_cat_hoj_de_vi
+id: taxonomy_term.trans_lis_cat_hoj_de_vi
+target_entity_type_id: taxonomy_term
+target_bundle: trans_lis_cat_hoj_de_vi
+default_langcode: site_default
+language_alterable: false

@@ -1,8 +1,8 @@
-module_css: true
-slick_css: true
-disable_old_skins: false
 _core:
   default_config_hash: cLsjKifQ40PKqGEvwnTkxwYKAr4t3mkD8UMrJeTSyvk
 langcode: es
 library: slick
+module_css: true
+slick_css: true
+disable_old_skins: false
 sitewide: 0

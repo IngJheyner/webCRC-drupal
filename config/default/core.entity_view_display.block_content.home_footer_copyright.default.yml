@@ -17,10 +17,10 @@ bundle: home_footer_copyright
 mode: default
 content:
   field_home_footer_logo_co:
-    weight: 3
+    type: blazy
     label: hidden
     settings:
-      image_style: ''
+      caption: {  }
       icon: ''
       layout: ''
       view_mode: ''
@@ -33,24 +33,24 @@ content:
       box_caption: ''
       box_caption_custom: ''
       box_media_style: ''
-      caption: {  }
       responsive_image_style: ''
       box_style: ''
+      image_style: ''
       media_switch: ''
       ratio: ''
       thumbnail_style: ''
       _uri: ''
-      grid: ''
-      grid_medium: ''
-      grid_small: ''
       breakpoints: {  }
       sizes: ''
       grid_header: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
     third_party_settings: {  }
-    type: blazy
+    weight: 3
     region: content
   field_home_footer_url_co:
-    weight: 4
+    type: link
     label: hidden
     settings:
       trim_length: 80
@@ -59,10 +59,10 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 4
     region: content
   field_home_footer_url_govco:
-    weight: 2
+    type: link
     label: hidden
     settings:
       trim_length: 80
@@ -71,13 +71,13 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 2
     region: content
   field_home_header_logo_govco:
-    weight: 1
+    type: blazy
     label: hidden
     settings:
-      image_style: ''
+      caption: {  }
       icon: ''
       layout: ''
       view_mode: ''
@@ -90,21 +90,21 @@ content:
       box_caption: ''
       box_caption_custom: ''
       box_media_style: ''
-      caption: {  }
       responsive_image_style: ''
       box_style: ''
+      image_style: ''
       media_switch: ''
       ratio: ''
       thumbnail_style: ''
       _uri: ''
-      grid: ''
-      grid_medium: ''
-      grid_small: ''
       breakpoints: {  }
       sizes: ''
       grid_header: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
     third_party_settings: {  }
-    type: blazy
+    weight: 1
     region: content
 hidden:
   langcode: true

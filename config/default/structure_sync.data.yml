@@ -1,8 +1,1448 @@
+menus:
+  -
+    menu_name: main
+    title: 'Transparencia y acceso a la información pública'
+    parent: null
+    uri: 'https://www.crcom.gov.co/es/pagina/transparencia-y-acceso-a-informaci-n-p-blica-crc'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '1'
+    weight: '-49'
+    langcode: es
+    uuid: bd24f550-691a-433f-a715-669d7f7aba59
+  -
+    menu_name: main
+    title: 'Atención y servicio a la ciudadanía'
+    parent: null
+    uri: 'internal:#'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-48'
+    langcode: es
+    uuid: 773dd082-053d-4b26-acf1-2815aedde80d
+  -
+    menu_name: main
+    title: Participa
+    parent: null
+    uri: 'https://www.crcom.gov.co/es/pagina/participa'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-47'
+    langcode: es
+    uuid: b67943ce-7be1-4679-af38-8b6f4343ec15
+  -
+    menu_name: main
+    title: 'La CRC'
+    parent: null
+    uri: 'internal:#'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-46'
+    langcode: es
+    uuid: a590b8dd-cce5-476e-b111-4d1b0695f764
+  -
+    menu_name: main
+    title: Presentaciones
+    parent: null
+    uri: 'https://www.slideshare.net/ComisindeRegulacinde/presentations'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-45'
+    langcode: es
+    uuid: 9754eac8-83ab-4d09-afc7-f4b4598827ca
+  -
+    menu_name: main
+    title: Estudios
+    parent: null
+    uri: 'internal:#'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-44'
+    langcode: es
+    uuid: 2a041cad-8240-4856-8940-34d346f3a5ac
+  -
+    menu_name: main
+    title: 'Trámites. Otros procedimientos administrativos y consultas de acceso a la información pública'
+    parent: 'menu_link_content:773dd082-053d-4b26-acf1-2815aedde80d'
+    uri: 'https://tramitescrcom.gov.co/tramitesCRC/publico/index.xhtml'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-50'
+    langcode: es
+    uuid: 06b43a7c-7176-4015-9934-703a3325f1be
+  -
+    menu_name: main
+    title: 'Canales de atención y pida cita'
+    parent: 'menu_link_content:773dd082-053d-4b26-acf1-2815aedde80d'
+    uri: 'https://www.crcom.gov.co/es/pagina/atenci-n-al-ciudadano'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-49'
+    langcode: es
+    uuid: 8d34ddd9-2b24-475b-8ba7-70a07c49ff8b
+  -
+    menu_name: main
+    title: '¿Quienes somos?'
+    parent: 'menu_link_content:a590b8dd-cce5-476e-b111-4d1b0695f764'
+    uri: 'https://www.crcom.gov.co/es/pagina/qui-nes-somos'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: a7586318-7725-44c4-bd33-1878e6496de5
+  -
+    menu_name: footer
+    title: Politicas
+    parent: null
+    uri: 'https://www.crcom.gov.co/uploads/images/files/TSI_PoliticaSeguridadDigital_2020v1_0_Publicada.pdf'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-50'
+    langcode: es
+    uuid: ef89f96d-9bec-4b05-bb4d-fae5f773ca45
+  -
+    menu_name: footer
+    title: 'Mapa del sitio'
+    parent: null
+    uri: 'internal:#'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-49'
+    langcode: es
+    uuid: ce1d1fa2-b353-432c-b9ae-d4a562825859
+  -
+    menu_name: footer
+    title: 'Términos y condiciones'
+    parent: null
+    uri: 'https://www.crcom.gov.co/es/pagina/terminos-y-condiciones'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-48'
+    langcode: es
+    uuid: 046422c6-f7fa-4c2c-8ed6-d76541a3bca2
+  -
+    menu_name: tools
+    title: 'Item Micrositio'
+    parent: null
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: 84050206-fd36-495f-9caf-152e420b899a
+  -
+    menu_name: tools
+    title: 'Item 1'
+    parent: null
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: 0d053e29-e7b7-4776-9e37-cba3cbefa66b
+  -
+    menu_name: menu-transp-access-infor-public
+    title: pruebas
+    parent: null
+    uri: 'internal:/'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: a2cfe87b-7de0-4e22-bb0e-bfdbb4c0c095
+  -
+    menu_name: main
+    title: PQRSD
+    parent: 'menu_link_content:773dd082-053d-4b26-acf1-2815aedde80d'
+    uri: 'https://tramitescrcom.gov.co/tramites/comun/guia.xhtml?tit=&subt=&tram=gOJRPmg37a6XLFeWMRLKOQ==&pr1=3578LkxQ3TO3y3t5FY9/BQ==&onA=S0etv8CCdHqPI8wYF9h5dsSezp1zdUBXQg+FLht9or295ZvNl/SBxJhC7LbUMWiV'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: 7bd42b70-a8a0-4482-a41c-75e0b961261b
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '1.Información de la entidad'
+    parent: null
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '1'
+    weight: '-54'
+    langcode: es
+    uuid: 828fc963-6129-4c0b-b02c-d6bd372cc7e2
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '1.1 Misión, Visión, Funciones y Deberes'
+    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-52'
+    langcode: es
+    uuid: 032361b1-dd36-4383-aa82-c36516beb87c
+  -
+    menu_name: menu-transp-access-infor-public
+    title: 2.Normativa
+    parent: null
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '1'
+    weight: '-53'
+    langcode: es
+    uuid: ffb56e75-db3b-4584-afac-a8cfdc9d2899
+  -
+    menu_name: menu-transp-access-infor-public
+    title: 3.Contratación
+    parent: null
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '1'
+    weight: '-52'
+    langcode: es
+    uuid: 3497f9c3-6213-4ae8-bc00-fb25ef61da32
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '1.2 Estructura orgánica - Organigrama.'
+    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
+    uri: 'http://google.com'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-51'
+    langcode: es
+    uuid: b7ebf0cf-78dc-4055-af77-cb2ea7f862c9
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '1.3 Mapas y Cartas descriptivas de los procesos.'
+    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-53'
+    langcode: es
+    uuid: 0ca6218d-f8f9-43b1-850e-4e5253571e89
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '1.4 Directorio Institucional incluyendo sedes, oficinas, sucursales, o regionales, y dependencias.'
+    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-50'
+    langcode: es
+    uuid: cc45bb56-3061-44d0-97fc-ee6637bc996a
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '1.5 Directorio de servidores públicos, empleados o contratistas.'
+    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-49'
+    langcode: es
+    uuid: c944569b-b8c5-4725-9408-9663d4705e90
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '1.6 Directorio de entidades.'
+    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-48'
+    langcode: es
+    uuid: 7894759c-29ad-4891-8acf-fcf9c9203f53
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '1.7 Directorio de agremiaciones o asociaciones en las que participe.'
+    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-47'
+    langcode: es
+    uuid: 8b78ff4d-414d-47f5-98ba-69ed0774193f
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '1.8 Servicio al público, normas, formularios y protocolos de atención.'
+    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-46'
+    langcode: es
+    uuid: 9bc4fb1c-bbb4-4a2e-85fe-5473674d4e4e
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '1.9 Procedimientos que se siguen para tomar decisiones en las diferentes áreas.'
+    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-45'
+    langcode: es
+    uuid: edf8cf27-db77-4065-a08d-c1aafab00396
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '1.10 Mecanismo de presentación directa de solicitudes, quejas y reclamos a disposición del público en relación con acciones u omisiones del sujeto obligado.'
+    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-44'
+    langcode: es
+    uuid: 505b3d2d-04c2-4be2-9105-ec510002576c
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '1.11 Calendario de actividades y eventos.'
+    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-43'
+    langcode: es
+    uuid: 634dc290-df4f-4916-aa96-bd1351e06d90
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '1.12 Información sobre decisiones que puede afectar al público.'
+    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-42'
+    langcode: es
+    uuid: 52e9732c-fd9e-4580-90da-1c176ea5dd32
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '1.13 Entes y autoridades que lo vigilan.'
+    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-41'
+    langcode: es
+    uuid: 19d9995a-9aa5-4982-a17a-440807fe29ac
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '1.14 Publicación de hojas de vida.'
+    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-40'
+    langcode: es
+    uuid: 9005c667-55d2-4765-be4d-604bd5f1047a
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '2.1 Normativa de la entidad o autoridad:'
+    parent: 'menu_link_content:ffb56e75-db3b-4584-afac-a8cfdc9d2899'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: 2911f7b0-e5ba-4c5a-bb65-8b410cf7795a
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '2.2 Búsqueda de normas.'
+    parent: 'menu_link_content:ffb56e75-db3b-4584-afac-a8cfdc9d2899'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: f9b471f8-d74a-4674-96d5-d2cadbf15a51
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '2.3 Proyectos de normas para comentarios.'
+    parent: 'menu_link_content:ffb56e75-db3b-4584-afac-a8cfdc9d2899'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: d4203456-8002-45e9-bfa4-85b265b01894
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '3.1 Plan Anual de Adquisiciones.'
+    parent: 'menu_link_content:3497f9c3-6213-4ae8-bc00-fb25ef61da32'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: b874a5ef-76c4-44f7-a0b4-94b5bb2c4e01
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '3.2 Publicación de la información contractual.'
+    parent: 'menu_link_content:3497f9c3-6213-4ae8-bc00-fb25ef61da32'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: 85137717-3e5c-4c6f-8aae-6b6856d71a7d
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '3.3 Publicación de la ejecución de los contratos.'
+    parent: 'menu_link_content:3497f9c3-6213-4ae8-bc00-fb25ef61da32'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: 4bf150b4-907e-4823-9626-3f9768c4de10
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '3.4 Manual de contratación, adquisición y/o compras.'
+    parent: 'menu_link_content:3497f9c3-6213-4ae8-bc00-fb25ef61da32'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: a62d9359-9332-49ca-92c4-4482c5ce8670
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '3.5 Formatos o modelos de contratos o pliegos tipo.'
+    parent: 'menu_link_content:3497f9c3-6213-4ae8-bc00-fb25ef61da32'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: 9610fd82-6bee-4d67-b567-1cda7f1f8f74
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '4.Planeación, Presupuesto e Informes'
+    parent: null
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '1'
+    weight: '-51'
+    langcode: es
+    uuid: b2dcd4f0-2a8c-4af2-a888-07cd3d494cf2
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '4.1 Presupuesto general de ingresos, gastos e inversión.'
+    parent: 'menu_link_content:b2dcd4f0-2a8c-4af2-a888-07cd3d494cf2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: d71a6df9-95d9-48b9-9018-46dc980d6105
+  -
+    menu_name: menu-transp-access-infor-public
+    title: "4.2\_ Ejecución presupuestal."
+    parent: 'menu_link_content:b2dcd4f0-2a8c-4af2-a888-07cd3d494cf2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: ece5a862-4475-4d25-b10a-a0868c6f28b8
+  -
+    menu_name: menu-transp-access-infor-public
+    title: "4.3\_ Plan de Acción."
+    parent: 'menu_link_content:b2dcd4f0-2a8c-4af2-a888-07cd3d494cf2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: c6493f89-dd7d-4435-84ac-d39ae8c9bb41
+  -
+    menu_name: menu-transp-access-infor-public
+    title: "4.4\_ Proyectos de Inversión."
+    parent: 'menu_link_content:b2dcd4f0-2a8c-4af2-a888-07cd3d494cf2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: acb923f7-fb16-4533-a754-8b60d19b5c20
+  -
+    menu_name: menu-transp-access-infor-public
+    title: "4.5\_ Informes de empalme."
+    parent: 'menu_link_content:b2dcd4f0-2a8c-4af2-a888-07cd3d494cf2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: 1e724ad3-a77d-4aa1-a3fb-6bccf2c318ed
+  -
+    menu_name: menu-transp-access-infor-public
+    title: "4.6\_ Información pública y/o relevante."
+    parent: 'menu_link_content:b2dcd4f0-2a8c-4af2-a888-07cd3d494cf2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: 86b1cafd-b932-46f3-bc0a-3c578d632b6d
+  -
+    menu_name: menu-transp-access-infor-public
+    title: "4.7\_ Informes de gestión, evaluación y auditoría."
+    parent: 'menu_link_content:b2dcd4f0-2a8c-4af2-a888-07cd3d494cf2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: f5b2a1af-f2d3-4a6d-83aa-e1683f5533f3
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '4.8 Informes de la Oficina de Control Interno.'
+    parent: 'menu_link_content:b2dcd4f0-2a8c-4af2-a888-07cd3d494cf2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: 22e9fc32-2d72-4642-931b-518cd71c5c13
+  -
+    menu_name: menu-transp-access-infor-public
+    title: "4.9\_\_ Informe sobre Defensa Pública y Prevención del Daño Antijurídico."
+    parent: 'menu_link_content:b2dcd4f0-2a8c-4af2-a888-07cd3d494cf2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: e9af4bf6-67bf-41ea-baf6-5313e8400d18
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '4.10 Informes trimestrales sobre acceso a información, quejas y reclamos.'
+    parent: 'menu_link_content:b2dcd4f0-2a8c-4af2-a888-07cd3d494cf2'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: 9a496877-7580-48a0-9d49-30c8d912655c
+  -
+    menu_name: menu-transp-access-infor-public
+    title: 5.Trámites
+    parent: null
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '1'
+    weight: '-50'
+    langcode: es
+    uuid: 8eed88b7-a99b-494a-a0f2-114f5cd81d25
+  -
+    menu_name: menu-transp-access-infor-public
+    title: 6.Participa
+    parent: null
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-49'
+    langcode: es
+    uuid: 11cd20cc-7f56-43c0-9fd4-865bae6f71e0
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '7.Datos abiertos'
+    parent: null
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '1'
+    weight: '-48'
+    langcode: es
+    uuid: 58d3f7c3-4740-48bc-b103-0cdc4bbe3780
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '7.1 Instrumentos de gestión de la información.'
+    parent: 'menu_link_content:58d3f7c3-4740-48bc-b103-0cdc4bbe3780'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: d97e49ba-7962-488a-9dfb-abb766cacc53
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '7.2 Sección de Datos Abiertos.'
+    parent: 'menu_link_content:58d3f7c3-4740-48bc-b103-0cdc4bbe3780'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: e5bc5e60-5fa7-42a4-a99c-b0633a9c33cc
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '7.3 Portal de Datos Abiertos'
+    parent: 'menu_link_content:58d3f7c3-4740-48bc-b103-0cdc4bbe3780'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: d571a70b-5877-45c0-a33a-5a6ab2f4759b
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '8.Información específica para Grupos de Interés'
+    parent: null
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '1'
+    weight: '-47'
+    langcode: es
+    uuid: 66187132-2531-4f72-a205-36d47fb2571c
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '9.Obligación de reporte de información específica por parte de la entidad'
+    parent: null
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '1'
+    weight: '-45'
+    langcode: es
+    uuid: b5215679-3b8b-4663-84b9-37a59347333b
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '8.1 Información para niños, niñas y adolescentes.'
+    parent: 'menu_link_content:66187132-2531-4f72-a205-36d47fb2571c'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: 01e4a9a1-0fbd-4199-8fe6-545dd7cd9928
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '8.2 Información para Mujeres'
+    parent: 'menu_link_content:66187132-2531-4f72-a205-36d47fb2571c'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: es
+    uuid: 87cebad3-6215-4976-a2db-1172c1e2071f
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '9.1 Socialización reportes de información'
+    parent: 'menu_link_content:b5215679-3b8b-4663-84b9-37a59347333b'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-54'
+    langcode: es
+    uuid: 57eb4412-d299-4229-ac72-9f254e52b45c
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '9.2 Estudios, investigaciones y otras publicaciones'
+    parent: 'menu_link_content:b5215679-3b8b-4663-84b9-37a59347333b'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-53'
+    langcode: es
+    uuid: 6c7b9ba9-b98e-4a18-bfe8-dab3bdaf514c
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '9.3 Convocatorias'
+    parent: 'menu_link_content:b5215679-3b8b-4663-84b9-37a59347333b'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-52'
+    langcode: es
+    uuid: a0fe8a8c-99f1-414e-abcc-4082651348f2
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '9.4 Preguntas frecuentes'
+    parent: 'menu_link_content:b5215679-3b8b-4663-84b9-37a59347333b'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-51'
+    langcode: es
+    uuid: 4d5f03c5-04c9-4fd4-8d68-76ceccb5c509
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '9.5 Glosario'
+    parent: 'menu_link_content:b5215679-3b8b-4663-84b9-37a59347333b'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-50'
+    langcode: es
+    uuid: 1fdfb212-c629-46a5-b0b7-acd891003c1c
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '9.6 Noticias'
+    parent: 'menu_link_content:b5215679-3b8b-4663-84b9-37a59347333b'
+    uri: 'internal:/transparencia-y-acceso-a-la-informacion-publica/obligacion-de-reporte-de-informacion-especifica-por-parte-de-la-entidad/noticias'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-49'
+    langcode: es
+    uuid: c5b33c96-adbc-41a7-aa74-89b358dca84e
+  -
+    menu_name: menu-transp-access-infor-public
+    title: '9.7 Ofertas de empleo'
+    parent: 'menu_link_content:b5215679-3b8b-4663-84b9-37a59347333b'
+    uri: 'route:<nolink>'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-48'
+    langcode: es
+    uuid: 52ea4a6e-0d1e-4c0e-8d2a-8e8ce45d40c7
+blocks:
+  -
+    info: 'Home [Encabezado]'
+    langcode: es
+    uuid: 06f5900d-1d33-41c8-a2b4-222862ad15a8
+    bundle: home_header
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_home_header_logo_govco:
+        -
+          target_id: '2'
+          alt: logo-gov-co
+          title: ''
+          width: '190'
+          height: '45'
+      field_home_header_logo_webcrc:
+        -
+          target_id: '1'
+          alt: logo-crc-comision-de-regulacion-de-comunicaciones
+          title: ''
+          width: '234'
+          height: '125'
+  -
+    info: 'Transparencia y acceso a la información pública [Encabezado]'
+    langcode: es
+    uuid: 63d3fd79-a7e3-4ce3-aba1-af6e05bc66e2
+    bundle: bloq_descrip_menu_transparencia
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>De acuerdo a la Ley 1712 de 2014 por la cual se crea la Ley de Transparencia y del Derecho a la Información Pública Nacional' se pone a disposición esta sección en la cual los ciudadanos, sector TIC e interesados pueden conocer de primera mano la información del Ministerio de Tecnologías de la Información y las Comunicaciones.<br />\r\n<br />\r\nSegún como lo dicta la Ley, la información generada por las entidades del Estado no podrá ser reservada o limitada, por el contrario es de carácter público, por tal motivo se proporciona y facilita el acceso a la misma en los términos más amplios posibles y a través de los medios amparados por ley. GGGGG<br />\r\n<br />\r\nDe acuerdo a los mínimos a publicar de que tratan los artículos 9, 10 y 11 de la Ley 1712 de 2014, sin perjuicio de lo previsto en el artículo inmediatamente siguiente respecto a los sujetos obligados a publicar en los sistemas de información del Estado, se ponen a disposición los siguientes temarios:</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+      field_link_decretos_descrip_menu:
+        -
+          uri: 'internal:/sites/default/files/webcrc/documents/2021-11/Resolucion_1519_2020.pdf'
+          title: 'Decreto único reglamentario sectorial'
+          options: {  }
+  -
+    info: 'Transparencia: Políticas, lineamientos y manuales [ Introducción Encabezado ]'
+    langcode: es
+    uuid: a84f9802-7bf9-49c3-b0ed-68f049029a6a
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Texto introduccion</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Información sobre decisiones que puede afectar al público [ Introducción Encabezado ]'
+    langcode: es
+    uuid: 9e628ac4-a19b-4f1e-b87f-e82840994c43
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>texto de introducción</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Presupuesto general de ingresos, gastos e inversión [ Encabezado ]'
+    langcode: es
+    uuid: f218185d-e47c-48cd-aadb-9ba2918244bd
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Texto de introducción</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Plan de Adqusiciones [ Introduccion Encabezado ]'
+    langcode: es
+    uuid: e5eb02e6-9c81-47d2-94d8-b38ccec9f999
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Texto de introduccion</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: ejecución presupuestal [ Introducción - Encabezado ] '
+    langcode: es
+    uuid: 3acdbfe6-7c56-4840-8651-36c26c1ad57c
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Texto de introducción de ejecución presupuestal</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Plan de acción [ Introducción - Encabezado ]'
+    langcode: es
+    uuid: 4afce3fa-8c1a-4f61-92dd-4b072b34e510
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Texto de introducción&nbsp;Transparencia: Plan de acción [ Introducción - Encabezado ]</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Planes institucionales [ Introducción - Encabezado ]'
+    langcode: es
+    uuid: 4e70d309-4dc3-4259-8a25-e4ef7016d4da
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Introducción planes institucionales</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Informes de empalme [ Introducción - Encabezado ]'
+    langcode: es
+    uuid: 97657fef-20d3-4c1b-8a35-3f61844bd2ca
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Texto de introducción&nbsp;</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Informes de gestión [ Introducción - encabezado ]'
+    langcode: es
+    uuid: 8dc92244-8dc7-49db-afe6-189a6db95a46
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>texto introducción</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Trnasparencia: informes rendición de cuentas [ Introducción - Encabezado ]'
+    langcode: es
+    uuid: 21a3ebe4-6542-42ea-aee8-b0d6026dfb0e
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>texto introducción</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Informes a organismos de inspección [ Introducción - Encabezado ]'
+    langcode: es
+    uuid: f84c383e-b33a-46e9-b096-1454d9951fab
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Introducción&nbsp;4.7.4 Informes a organismos de inspección, vigilancia y control</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Planes de mejoramiento [ Introduccion - Encabezado ]'
+    langcode: es
+    uuid: 78cdf21c-cf4b-41b0-9261-1c9b59598e2d
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Informe Pormenorizado [ Introducción - Encabezado ]'
+    langcode: es
+    uuid: 09f2a2df-4469-4165-a6fb-8b6418562f6f
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>introducccion</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Informe sobre defensa publica [ Introducción - Encabezado ]'
+    langcode: es
+    uuid: 287285d3-2a71-4fb2-9bea-1f9b4b71af05
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Texto introduccion</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Registros de activos de información [ Introduccion - Encabezado ]'
+    langcode: es
+    uuid: e237cd4e-ae34-4589-8ba2-7f0181d62613
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>texto introducc</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Registros de activos de información [ Pie de pagina ]'
+    langcode: es
+    uuid: 069fc02b-47b0-4af7-b931-13c5bc3b796f
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Lo invitamos a conocer el catálogo de datos abiertos del Índice de Información Clasificada y Reservada de la CRC, &nbsp;publicado en <a href=\"https://www.datos.gov.co/dataset/Registro-de-Activos-de-Informaci-n-de-la-CRC/6ip3-8q5c\">datos.gov.co</a></p>\r\n"
+          summary: ''
+          format: full_html
+  -
+    info: 'Transparencia: Indice de información clasificada [ Introducción - Encabezado ]'
+    langcode: es
+    uuid: a6cf0b9b-f995-488f-bf9f-e3d374e79313
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>texto&nbsp;</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Indice de información clasificada [ pie de pagina ]'
+    langcode: es
+    uuid: 947a2ab3-9808-44c8-a9de-afd08b9ead38
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Lo invitamos a conocer el catálogo de datos abiertos del Índice de Información Clasificada y Reservada de la CRC, &nbsp;publicado en <a href=\"https://www.datos.gov.co/dataset/-ndice-de-Informaci-n-Clasificada-y-Reservada-CRC/xtju-zcke\">datos.gov.co</a></p>\r\n"
+          summary: ''
+          format: full_html
+  -
+    info: 'Transparencia: Esquema de publicación [ Introduccion- Encabezado ]'
+    langcode: es
+    uuid: 8a03e2b9-1fcb-4a45-b020-f42bfc3a5f6c
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>texto texto</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Programa de gestion documental [ Introduccion - Encabezado ]'
+    langcode: es
+    uuid: 35f3ddb0-7e49-4e53-bf53-632e24dce9a0
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>texto texto texto</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Temas de Interés [ Se debe solo agregar o editar una sola vez este bloque ]'
+    langcode: es
+    uuid: 75dc6e84-7257-481b-9c84-294ca5e39f7a
+    bundle: themes_interest
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_interest_content:
+        -
+          target_id: '4543'
+          target_revision_id: '4543'
+        -
+          target_id: '4546'
+          target_revision_id: '4546'
+        -
+          target_id: '4547'
+          target_revision_id: '4547'
+        -
+          target_id: '4548'
+          target_revision_id: '4548'
+        -
+          target_id: '4549'
+          target_revision_id: '4549'
+  -
+    info: Indicadores
+    langcode: es
+    uuid: a6f79fbc-3c22-45c9-b011-f3b39cdcfe46
+    bundle: indicators
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_content_animated_icon: {  }
+      field_content_title:
+        -
+          value: Indicadores
+      field_icon:
+        -
+          target_id: '35'
+      field_indicator:
+        -
+          target_id: '32'
+          target_revision_id: '32'
+        -
+          target_id: '33'
+          target_revision_id: '33'
+        -
+          target_id: '34'
+          target_revision_id: '34'
+        -
+          target_id: '35'
+          target_revision_id: '35'
+        -
+          target_id: '36'
+          target_revision_id: '36'
+      field_logo:
+        -
+          target_id: '35'
+      field_primary_url:
+        -
+          uri: 'https://www.postdata.gov.co/'
+          title: 'Información tomada de www.postdata.gov.co'
+          options: {  }
+  -
+    info: 'Ultimas noticias'
+    langcode: es
+    uuid: d6b7ca44-d780-4080-8a98-17d98296f931
+    bundle: last_news
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_content_animated_icon: {  }
+      field_content_title:
+        -
+          value: Noticias
+      field_content_title_primary:
+        -
+          value: Últimas
+      field_content_view:
+        -
+          target_id: news
+          display_id: last_news
+          data: 'a:5:{s:8:"argument";N;s:5:"limit";N;s:6:"offset";N;s:5:"title";N;s:5:"pager";N;}'
+      field_icon:
+        -
+          target_id: '35'
+  -
+    info: 'Boletin de noticias'
+    langcode: es
+    uuid: 8df82bb0-b5c2-4fa4-a354-97253c686628
+    bundle: newsletter
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_content_animated_icon: {  }
+      field_content_description:
+        -
+          value: 'Suscríbase a nuestro boletín y manténgase actualizado con las últimas noticias del sector. <br /> Los campos con (*) son obligatorios'
+          format: editor_cont_transparencia
+      field_content_form:
+        -
+          target_id: boletin_de_noticias
+          default_data: ''
+          status: open
+          open: ''
+          close: ''
+      field_content_title:
+        -
+          value: 'Boletín de noticias'
+      field_icon:
+        -
+          target_id: '46'
+  -
+    info: 'Tabs redes sociales'
+    langcode: es
+    uuid: b78e3423-dddb-49b0-97af-f37d06b61a79
+    bundle: tabs_social_networks
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_content_tabs:
+        -
+          target_id: '41'
+          target_revision_id: '41'
+  -
+    info: 'Contenidos mas importantes crc'
+    langcode: es
+    uuid: f054bf59-bf4c-47a8-a4c3-aebdbb350de5
+    bundle: important_content_crc
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_content_animated_icon: {  }
+      field_content_tabs:
+        -
+          target_id: '31'
+          target_revision_id: '31'
+      field_content_title:
+        -
+          value: 'en la CRC'
+      field_content_title_primary:
+        -
+          value: 'Lo más importante '
+      field_icon:
+        -
+          target_id: '34'
+  -
+    info: 'Barra de accesibilidad'
+    langcode: es
+    uuid: 527852f6-5c8d-49c0-a38c-a8ea26a0a2b6
+    bundle: accessibility_toolbar
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_content_paragraph:
+        -
+          target_id: '14'
+          target_revision_id: '14'
+        -
+          target_id: '15'
+          target_revision_id: '15'
+        -
+          target_id: '16'
+          target_revision_id: '16'
+        -
+          target_id: '17'
+          target_revision_id: '17'
+  -
+    info: 'Contenidos consultados'
+    langcode: es
+    uuid: 9ef5effc-94da-4dce-a1d8-5bac3078b416
+    bundle: tabs_consulted_content
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_tabs_consulted_content:
+        -
+          target_id: '24'
+          target_revision_id: '24'
+  -
+    info: 'Pie de pagina - Informacion de contacto'
+    langcode: es
+    uuid: 0d3dc0aa-8df4-44fc-809c-b63a77cf87c9
+    bundle: home_footer
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_home_footer_contacts:
+        -
+          value: 'Línea atención al ciudadano: (+57) 601 319 8300'
+        -
+          value: 'Línea gratuita nacional: 01-8000-919278'
+        -
+          value: 'Fax: (+57) 601 319 8301'
+      field_home_footer_img_org:
+        -
+          target_id: '64'
+          alt: organizacion-prai-crc
+          title: ''
+          width: '101'
+          height: '45'
+        -
+          target_id: '65'
+          alt: organizacion-regulatel-crc
+          title: ''
+          width: '88'
+          height: '45'
+      field_home_footer_insti_mail:
+        -
+          value: institucional@crcom.gov.co
+      field_home_footer_judicial_mail:
+        -
+          value: notificacionesjudiciales@crcom.gov.co
+      field_home_footer_location:
+        -
+          value: 'Dirección: Cl 59 a bis # 5 - 53, Ed Link Siete Sesenta P9 Bogoá, Colombia.'
+        -
+          value: 'Código Postal: 11011'
+        -
+          value: 'Horario de Atención: 8:30 a.m. a 5:30 p.m. en jornada continua'
+      field_home_footer_logo_webcrc:
+        -
+          target_id: '63'
+          alt: logo-comision-de-regulacion-de-comunicaciones-crc
+          title: ''
+          width: '195'
+          height: '65'
+      field_home_footer_title_social:
+        -
+          value: 'Siguenos en:'
+      field_home_footer_txt_org:
+        -
+          value: 'Organizaciones internacionales presididas por la CRC'
+      field_social_networks:
+        -
+          target_id: '42'
+          target_revision_id: '42'
+        -
+          target_id: '43'
+          target_revision_id: '43'
+        -
+          target_id: '44'
+          target_revision_id: '44'
+        -
+          target_id: '45'
+          target_revision_id: '45'
+        -
+          target_id: '46'
+          target_revision_id: '46'
+  -
+    info: 'Rss - Lo ultimo de postdata'
+    langcode: es
+    uuid: 06352fb3-55b8-4ec6-9c56-9278fdf46acc
+    bundle: block_rss_last_of_postada
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_intro_text: {  }
+      field_read_more: {  }
+      field_rss_feed:
+        -
+          feed_uri: 'https://www.postdata.gov.co/postdata-rss.xml'
+          count: '5'
+          display_date: '1'
+          date_format: news_dates
+          custom_date_format: 'F j, Y'
+          display_description: '1'
+          description_length: '255'
+          description_plaintext: '1'
+  -
+    info: 'Transparencia: Informes trimestrales acceso informacion [ Introducción - Encabezado ]'
+    langcode: es
+    uuid: c3639dc4-45b3-4eb7-9088-467d6afcd086
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Texto de introducción</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Transparencia: Publicación hojas de vida [ Introducción ]'
+    langcode: es
+    uuid: 91b9c11e-8535-4c00-9fb5-416e9388efea
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p><a href=\"https://aspirantes.presidencia.gov.co/\">Consulte el Sistema de Publicación de Hojas de Vida de la Presidencia de la República aquí</a>.</p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
+  -
+    info: 'Trasparencia: Oferta de empleo [ Introducción ]'
+    langcode: es
+    uuid: 7af61ba9-169d-4ac4-93a7-d7f014180e22
+    bundle: transparencia_encabezado_e_intro
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>También puedes consultar los siguientes portales:<br />\r\n<br />\r\n-&nbsp;<a href=\"https://www.cnsc.gov.co/\" target=\"_blank\">Comisión Nacional del Servicio Civil</a><br />\r\n-&nbsp;<a href=\"http://serviciodeempleo.gov.co/\" target=\"_blank\">Servicio Público de Empleo</a><br />\r\n-&nbsp;<a href=\"https://www.compensar.com/agenciadeempleo/\" target=\"_blank\">Agencia de Empleo y Emprendimiento - Compensar</a><br />\r\n-&nbsp;<a href=\"https://www.crcom.gov.co/es/pagina/vinculacion-a-terceros\">Vinculación a Terceros</a></p>\r\n"
+          summary: ''
+          format: editor_cont_transparencia
 taxonomies:
+  alphabet: {  }
+  departments_and_municipalities: {  }
   library_author:
     -
       vid: library_author
-      tid: '69'
+      tid: '3'
       langcode: und
       name: 'Jesus Huertas Cuenca'
       description__value: "Cui eligo eu letalis mauris nobis pecus sino uxor valetudo. Antehabeo camur gemino luctus nutus pala. Aptent at ea neo nobis qui tation. Erat eros jus probo tum. Amet hendrerit olim paratus praemitto quadrum quidem saluto tamen. At laoreet nimis paulatim quis valde velit. Abluo amet aptent caecus consequat ideo persto saluto vero verto.\r\n\r\nErat genitus haero imputo jugis lucidus ludus persto ulciscor. Adipiscing cui ea iriure letalis neo patria sino turpis velit. Brevitas huic iusto vero. Caecus dolor esca eu meus neo obruo os tation. Cogo dolore iaceo neque nimis nunc odio sed uxor valde.\r\n\r\nAbico ex gravis iaceo ideo laoreet neque plaga utrum. Mos neo obruo patria vindico. Amet comis gemino importunus obruo quidem uxor. Accumsan camur haero neque obruo occuro tamen tincidunt ullamcorper. Acsi amet luctus populus saepius tego uxor. Conventio luptatum magna meus nutus plaga. Brevitas commodo commoveo consequat esse hos ibidem inhibeo magna singularis.\r\n\r\nAccumsan augue neo. Jumentum lucidus nimis occuro paulatim qui sino vulpes. Autem facilisi humo ille jugis minim pertineo premo si suscipit. Augue lobortis oppeto pagus.\r\n\r\nAptent decet feugiat illum incassum melior te. Illum interdico populus qui. Ea eum voco. Abbas abluo acsi euismod exerci gravis huic ideo nunc quia. Ad augue blandit mos sino uxor vereor zelus. Facilisis lucidus nutus odio os persto. Enim haero jumentum pagus quae tego vulpes. Haero neo nisl quadrum similis sino.\r\n\r\nAbluo consequat eros euismod natu tamen. Ad exerci nulla pagus ut venio. Defui elit feugiat iusto molior nulla premo refoveo ymo. Autem causa commoveo dolore luptatum pala populus singularis. Commoveo dolor dolus gravis neo pala probo typicus validus. Decet dolor jumentum quae quis saepius zelus. Macto nunc quidne tation venio.\r\n\r\nAbluo esca mauris praemitto sudo suscipere tincidunt. Abdo aptent conventio dignissim distineo ex imputo nobis te torqueo. Augue duis immitto loquor nibh nimis vereor. Abdo acsi ex. Dolore facilisis quadrum. Abbas antehabeo letalis odio similis. Abdo aptent exputo gemino natu virtus wisi ymo. Aptent tincidunt ulciscor utinam. Accumsan commoveo gravis os paratus pneum ymo. Cui saluto sudo torqueo. Adipiscing augue gemino laoreet.\r\n\r\nAppellatio pecus persto quis ratis ullamcorper vulpes. Loquor probo quidem turpis. Feugiat humo incassum jugis melior ut. Appellatio caecus ibidem plaga pneum sino tation. Abluo comis eligo humo loquor paratus.\r\n\r\nCogo meus nimis occuro si vindico. Acsi importunus lobortis lucidus neo obruo quadrum saluto sudo typicus. Duis ibidem iriure nibh vulputate. Esca gilvus iriure iustum mos roto secundum tincidunt vicis. Accumsan caecus damnum diam eligo modo singularis ulciscor veniam virtus. Consequat diam dolus et letalis persto praemitto suscipere ulciscor.\r\n\r\nConsectetuer loquor natu sagaciter scisco similis. Enim iaceo lenis ludus metuo paratus ut. Abigo exerci oppeto saluto sino vereor wisi ymo. Commoveo enim exerci facilisis humo similis typicus. Commodo diam quadrum quibus quidem secundum tum typicus. Augue conventio defui eu jumentum letalis persto populus. Bene commodo exerci ideo jus melior mos suscipere valetudo ymo.\r\n\r\nBrevitas duis facilisis haero humo sudo ullamcorper. Camur consectetuer diam facilisi nibh praesent vel. Aptent iustum odio patria suscipit tum. Duis huic nibh nobis praemitto si tincidunt usitas velit verto.\r\n\r\nAbbas at enim iriure voco. Abluo incassum jus. Iusto meus validus. Abbas dolore vindico. Aliquip duis immitto in pertineo refero roto singularis vero. Caecus eligo eros lucidus roto scisco uxor verto.\r\n\r\n"
@@ -12,7 +1452,7 @@ taxonomies:
       uuid: c0912c91-1377-44ad-80c1-66b65865b834
     -
       vid: library_author
-      tid: '67'
+      tid: '1'
       langcode: en
       name: 'Lorena Castro'
       description__value: "Capto plaga quibus similis usitas utrum verto. Ad elit ex hos incassum macto paratus patria praesent suscipere. Iusto nimis quibus refoveo. Abbas defui elit enim gilvus ideo lucidus suscipere. Ea praemitto utrum vicis. Letalis quae veniam. Jumentum praemitto quadrum quia saepius sino. Accumsan imputo odio tego vicis. Antehabeo damnum diam dolore gemino letalis metuo nunc volutpat.\r\n\r\nCapto cogo luctus pertineo qui secundum vindico voco. Gemino nulla sit ulciscor. Aliquip at consequat huic plaga premo sed si te ut. Abdo gilvus ideo laoreet modo persto praemitto qui quidem vulputate. Bene caecus euismod mos probo vulputate. Cogo dolus erat eu ex letalis macto natu pertineo. Causa consequat ibidem vel.\r\n\r\nCui ea enim feugiat luptatum neque olim pala. At dolor facilisis interdico neo sed suscipere torqueo valde. Illum neque proprius. Facilisi persto populus verto. Abdo antehabeo defui interdico quia suscipit vulputate. Commodo cui ea importunus interdico iriure ludus typicus validus velit.\r\n\r\nComis duis magna nobis. Dignissim facilisis humo interdico jumentum lobortis plaga tincidunt velit venio. Consequat ibidem paulatim roto ut velit. Diam iusto mauris. Causa lobortis molior quadrum roto tamen tum virtus. Cogo ideo mos sino turpis vindico. Abico consequat facilisi ibidem os sagaciter turpis zelus.\r\n\r\nDistineo immitto praemitto si. Aliquip cogo magna nibh pertineo. Aptent camur cui saepius. Acsi blandit dolor haero jus mos sagaciter ullamcorper ymo. Esca neo odio vereor verto. Comis commoveo meus verto. Aliquip ea pala quidem sit torqueo utinam venio wisi. Abbas acsi antehabeo aptent ea facilisis paratus venio. Camur lenis lucidus melior pertineo praesent usitas valetudo validus veniam.\r\n\r\nBrevitas dolore hos nunc. Hos lobortis nimis probo. Aliquip et imputo in ludus nostrud populus roto vereor. Caecus eligo eu nutus saluto suscipit torqueo typicus voco wisi. Decet eu fere genitus ille tum vulputate. Abdo augue exputo facilisi inhibeo nimis olim persto refoveo. Duis inhibeo metuo pala pecus quadrum qui vereor. Capto decet gilvus ideo ille nibh vulpes.\r\n\r\nAbdo cogo exputo tamen. Esse gemino ut vero. Interdico nobis qui tamen vulpes. Cui letalis qui. Acsi lucidus mauris neo os saepius si ymo. Accumsan dolus ille macto nisl valetudo. Nulla quae rusticus scisco. Fere ideo melior meus minim obruo proprius typicus. Abluo gilvus sit. Abico aptent dignissim jumentum lenis te valetudo.\r\n\r\nIllum imputo ymo. Damnum eum mauris premo. Abigo exerci hos incassum loquor ludus mauris quis usitas. Lenis ratis sit suscipit usitas.\r\n\r\nConsequat dolus ideo proprius tamen. Appellatio dolore elit eu obruo probo torqueo virtus. Genitus occuro pala qui. Appellatio laoreet qui ulciscor. Abigo os praesent. Abigo abluo iustum natu nimis sed wisi.\r\n\r\nAppellatio at consectetuer haero nisl os sudo tation. Autem blandit gravis scisco. Acsi comis ea feugiat illum jus obruo quibus sagaciter vel. Amet iriure paulatim qui quibus quidem saepius sino sudo valetudo. Ille sino sudo validus vulpes. Aliquam ex patria probo.\r\n\r\nAcsi consectetuer premo sagaciter vicis. At esca iusto melior plaga populus premo uxor vereor zelus. Abluo accumsan defui duis gilvus hos jumentum letalis occuro pertineo. Consequat eros iriure metuo velit. Laoreet odio praesent quia sudo velit. Humo jumentum paulatim singularis velit. Abigo accumsan aliquip haero loquor obruo patria quidem secundum.\r\n\r\nMetuo quis similis vel. Acsi defui distineo ex hendrerit nimis. Aliquam aliquip laoreet valetudo. Aliquam aptent brevitas camur consectetuer conventio magna persto tego uxor. Et eum exputo huic nostrud obruo secundum verto vicis voco.\r\n\r\n"
@@ -22,7 +1462,7 @@ taxonomies:
       uuid: c207b0f3-c355-4d4b-a99b-14be7f5662bf
     -
       vid: library_author
-      tid: '71'
+      tid: '5'
       langcode: es
       name: 'Mario Antonio Hernandez Ruiz'
       description__value: null
@@ -32,7 +1472,7 @@ taxonomies:
       uuid: fc8df496-a15a-4f97-be44-8c1a3f697ba6
     -
       vid: library_author
-      tid: '70'
+      tid: '4'
       langcode: en
       name: 'Pedro Alonso Castillo'
       description__value: "Consequat laoreet venio. Dolor ideo singularis ullamcorper. Camur causa lucidus olim qui si ymo. Abdo eu in lenis lobortis sagaciter. Autem duis eros humo lenis magna paratus plaga ratis vulputate. Bene feugiat hos interdico saepius utinam vicis vindico vulputate.\r\n\r\nBene molior quae suscipit typicus verto. Abdo abico aliquip diam distineo dolore gravis obruo proprius qui. Acsi aliquam dolor eu gilvus huic jus nibh nostrud valde. Accumsan enim euismod paulatim roto ullamcorper.\r\n\r\nAcsi exputo fere huic inhibeo nunc populus vereor. Duis facilisi illum immitto molior nulla typicus venio. Aliquam eligo lenis roto tum usitas uxor. Brevitas enim incassum lucidus magna nobis usitas ut veniam vicis. Laoreet odio paulatim sagaciter. Feugiat ideo pala. Abdo dignissim eligo eum ibidem laoreet quidne virtus. Gravis macto quadrum quidem sit tego velit venio.\r\n\r\nDuis mauris pala praemitto tum utrum uxor velit. Ea oppeto paulatim ratis saepius turpis vulpes. Eligo patria vereor. Blandit conventio feugiat gilvus metuo occuro plaga.\r\n\r\nCommodo fere jumentum luptatum persto wisi. Huic odio sino. Nisl paulatim ullamcorper. Adipiscing defui magna nutus rusticus saluto scisco velit vicis. Acsi autem modo. Defui exerci odio pala. Abico eum lenis secundum tum. Aliquam caecus hendrerit huic iusto iustum paratus sit vicis virtus.\r\n\r\nDolor haero imputo laoreet occuro pala ratis tincidunt ulciscor vel. Humo ibidem illum saepius. Duis haero immitto jumentum melior saluto suscipere tincidunt wisi. Abico ille quidem. Distineo hendrerit natu vulputate. Bene ideo refoveo. Autem iaceo illum oppeto. Ad aliquip augue qui secundum tum valetudo.\r\n\r\nNeque pecus suscipere vulpes vulputate. Rusticus sino wisi. Caecus melior odio populus tamen vero volutpat. Abigo abluo aptent hos importunus mos nimis obruo quae si. Commoveo facilisi gilvus illum os plaga quia roto usitas. Esse ibidem melior sit vel voco vulputate.\r\n\r\nAugue erat imputo modo sit. Ad exerci tincidunt. Luctus proprius validus ymo. Conventio luptatum minim oppeto quia torqueo validus verto. Amet loquor paulatim tego. Acsi decet facilisis fere macto nulla ullamcorper zelus. Adipiscing nulla pagus. Ibidem quis refoveo roto saluto. Gemino gravis obruo praesent tamen te. Abdo comis commoveo dolus haero nisl suscipit ullamcorper.\r\n\r\nAliquip duis in melior nulla nutus pecus populus tation vicis. Abluo acsi capto comis damnum iaceo nisl oppeto os. Eligo fere iaceo ibidem macto mauris meus modo uxor vicis. Acsi gemino gilvus in nibh sit tamen tation typicus velit. Brevitas imputo olim. Abdo ludus quidem velit. Abdo caecus erat nimis paulatim pecus saepius. Dolus exerci facilisi gravis nunc quibus vero.\r\n\r\nEligo erat euismod immitto imputo populus singularis ulciscor ut vindico. Jugis pecus quae sit utinam venio. Camur causa consequat cui mauris mos pagus scisco vel. Caecus enim gravis. Abbas antehabeo molior neque obruo patria quidem sagaciter velit. Camur dolore ex magna occuro odio pertineo qui tamen. Abbas ad cogo elit patria plaga praesent roto si tamen.\r\n\r\nLuptatum roto similis. Defui eum facilisi metuo meus nibh paulatim probo tincidunt torqueo. Commodo gravis jugis jus tamen. Importunus molior refoveo ullamcorper veniam. Abluo consequat gemino ille illum obruo olim vulputate. At commoveo ludus ratis sudo uxor veniam.\r\n\r\nEsse natu quidem. Accumsan aliquip nimis. Abico enim quadrum roto sed tego tincidunt utinam. Abdo amet duis eligo occuro. Cogo jugis luptatum modo mos torqueo ulciscor utrum. Capto eros et pneum. Aliquam blandit paulatim sagaciter sit tation. Augue blandit diam eu exputo paratus quis suscipere te.\r\n\r\n"
@@ -42,7 +1482,7 @@ taxonomies:
       uuid: b8e45309-470f-4126-89ca-b0fd2b1fe9df
     -
       vid: library_author
-      tid: '72'
+      tid: '6'
       langcode: es
       name: 'Richard 3DStudio'
       description__value: null
@@ -52,7 +1492,7 @@ taxonomies:
       uuid: 6477decd-7c28-47e4-8bb1-4819ca563a41
     -
       vid: library_author
-      tid: '68'
+      tid: '2'
       langcode: zxx
       name: 'Vicente Fernandez Martinez'
       description__value: "Gemino humo jugis luptatum nostrud nutus quae. Ibidem immitto inhibeo persto rusticus saluto. Comis commodo dolore iaceo ibidem immitto inhibeo nobis pertineo refoveo. Scisco tego turpis. Accumsan eros exputo obruo os si.\r\n\r\nBlandit causa consequat fere nisl paratus quia valde. Aptent distineo eu ex in mauris quidem saluto suscipere tego. Augue consequat dolus ex praesent qui. Camur eligo esca illum mauris scisco tincidunt. Aptent conventio ille imputo incassum laoreet nisl nobis pala refero. Immitto imputo nibh patria. Consequat eum molior qui quibus sagaciter tamen validus voco zelus.\r\n\r\nCommodo erat esca. Aliquam appellatio autem eligo iaceo lobortis nisl paulatim torqueo. Eros lobortis occuro oppeto populus. Caecus in nunc pertineo refero tum validus vereor. Et gilvus humo ibidem jugis quis secundum. Abluo qui virtus. Camur causa dolore eum natu nutus sino valetudo virtus. Aliquip eu obruo virtus. Acsi aliquip exerci gravis letalis loquor metuo nulla rusticus.\r\n\r\nEsca iriure mauris pneum ullamcorper. Capto facilisis gemino minim modo pagus premo qui sudo. Abbas abdo eligo exerci ideo paulatim uxor venio virtus. Abbas defui immitto occuro qui saepius ullamcorper vero vicis.\r\n\r\nEros gilvus illum in inhibeo macto pagus plaga valde. Acsi persto ullamcorper valde. Acsi luptatum quis te usitas. Antehabeo appellatio augue brevitas commoveo huic minim patria plaga tego. Brevitas gravis immitto macto obruo probo quibus utinam validus. Damnum dolore refoveo. Cogo consequat duis hendrerit immitto imputo scisco utrum. Comis macto ratis veniam. Camur esca esse premo sudo tamen ulciscor uxor.\r\n\r\nCogo oppeto volutpat. Ludus quidem singularis sino. Abigo abluo decet iaceo occuro ut. Abico fere praemitto sino. Mauris nunc quibus quis utinam zelus. Conventio dignissim genitus hendrerit macto proprius singularis ulciscor utinam. Abbas euismod ibidem metuo tincidunt vero.\r\n\r\nAliquip defui eligo enim facilisis feugiat refero sudo suscipit ulciscor. Cogo eligo inhibeo magna meus odio oppeto utinam. Gilvus quia suscipit virtus. Eum inhibeo mos odio praemitto scisco secundum te tincidunt voco. Cui humo suscipit tincidunt uxor vulpes. At bene consequat jugis quibus tincidunt torqueo ullamcorper velit virtus. Eligo minim neo probo te ulciscor vicis ymo.\r\n\r\nAccumsan brevitas commoveo dolore imputo interdico pagus quidne virtus. Cui facilisi neque nulla usitas. Abdo autem lenis pneum. Aliquip consectetuer exputo jugis letalis nunc praesent vicis. Hendrerit mos similis. Huic iustum oppeto refero.\r\n\r\nAd caecus duis exputo nutus quidne si turpis valde. Aliquip appellatio at ex exerci facilisis quae quia sino usitas. Causa consequat quae veniam. Autem erat gemino huic nulla praemitto te. At cogo dolor ideo iriure jumentum lobortis sit.\r\n\r\nAutem et facilisi minim praemitto qui rusticus sed. Distineo illum natu wisi. Exerci inhibeo jus patria sudo ullamcorper. Defui eligo melior odio. Dignissim elit iaceo metuo os uxor vero vulputate. Acsi antehabeo elit huic molior secundum sudo.\r\n\r\nAccumsan consectetuer defui elit ibidem populus praemitto sudo vicis vindico. Abluo distineo eu patria tincidunt. Esse hendrerit lenis metuo typicus utrum voco. Nobis olim paulatim tincidunt.\r\n\r\nDiam interdico obruo rusticus vindico. Abluo consectetuer iaceo letalis neque pertineo ulciscor usitas vulpes. Enim jumentum vulputate. Aptent feugiat lobortis natu neque turpis valetudo. Autem conventio laoreet letalis nibh singularis tego typicus voco wisi.\r\n\r\n"
@@ -63,7 +1503,7 @@ taxonomies:
   library_formats:
     -
       vid: library_formats
-      tid: '76'
+      tid: '10'
       langcode: es
       name: 'Audios o podcast'
       description__value: null
@@ -80,7 +1520,7 @@ taxonomies:
           height: '145'
     -
       vid: library_formats
-      tid: '73'
+      tid: '7'
       langcode: es
       name: 'Documentos o Publicaciones'
       description__value: null
@@ -91,7 +1531,7 @@ taxonomies:
       field_formats_image: {  }
     -
       vid: library_formats
-      tid: '74'
+      tid: '8'
       langcode: es
       name: 'Imágenes o infografías'
       description__value: null
@@ -102,7 +1542,7 @@ taxonomies:
       field_formats_image: {  }
     -
       vid: library_formats
-      tid: '75'
+      tid: '9'
       langcode: es
       name: 'Videos o animaciones'
       description__value: null
@@ -114,7 +1554,7 @@ taxonomies:
   library_keywords:
     -
       vid: library_keywords
-      tid: '77'
+      tid: '11'
       langcode: es
       name: Colombia
       description__value: null
@@ -124,7 +1564,7 @@ taxonomies:
       uuid: 06379649-5c0f-47a1-b887-d53604746ba8
     -
       vid: library_keywords
-      tid: '78'
+      tid: '12'
       langcode: es
       name: Comunicación
       description__value: null
@@ -132,10 +1572,20 @@ taxonomies:
       weight: '0'
       parent: '0'
       uuid: 964f9607-1ed5-4375-8256-d22c3efe714b
+    -
+      vid: library_keywords
+      tid: '115'
+      langcode: es
+      name: pruebas
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 233949ce-d82b-43f0-b848-e0f65222c65c
   library_type_document:
     -
       vid: library_type_document
-      tid: '79'
+      tid: '13'
       langcode: es
       name: 'Estudios e investigaciones'
       description__value: null
@@ -381,6 +1831,151 @@ taxonomies:
       weight: '6'
       parent: '0'
       uuid: dcc81126-3a8f-4070-bc9d-2f123aebe115
+  services_list_formats:
+    -
+      vid: services_list_formats
+      tid: '111'
+      langcode: es
+      name: Correo
+      description__value: null
+      description__format: null
+      weight: '1'
+      parent: '0'
+      uuid: 60f29e6b-5feb-423f-a986-da2bd5ce1dd1
+    -
+      vid: services_list_formats
+      tid: '103'
+      langcode: es
+      name: 'Internet fijo'
+      description__value: null
+      description__format: null
+      weight: '2'
+      parent: '0'
+      uuid: 9067c65e-dbd1-4ab7-86f3-50ef71451bdc
+    -
+      vid: services_list_formats
+      tid: '105'
+      langcode: es
+      name: 'Internet móvil'
+      description__value: null
+      description__format: null
+      weight: '3'
+      parent: '0'
+      uuid: aa9eee68-f5e5-4221-8c2d-afa001c32015
+    -
+      vid: services_list_formats
+      tid: '114'
+      langcode: es
+      name: 'Larga distancia'
+      description__value: null
+      description__format: null
+      weight: '4'
+      parent: '0'
+      uuid: 3245eeff-a29c-432d-a5cf-72625c65e0cd
+    -
+      vid: services_list_formats
+      tid: '112'
+      langcode: es
+      name: 'Mensajería expresa'
+      description__value: null
+      description__format: null
+      weight: '5'
+      parent: '0'
+      uuid: 8ac31e62-eac0-4e26-befa-812d0e404fa0
+    -
+      vid: services_list_formats
+      tid: '107'
+      langcode: es
+      name: Portador
+      description__value: null
+      description__format: null
+      weight: '6'
+      parent: '0'
+      uuid: be9bc441-22bf-4f69-bf23-31590dffc279
+    -
+      vid: services_list_formats
+      tid: '113'
+      langcode: es
+      name: 'Postales de pago'
+      description__value: null
+      description__format: null
+      weight: '7'
+      parent: '0'
+      uuid: 15b434ba-611d-46ea-adc0-cf8a74def6bc
+    -
+      vid: services_list_formats
+      tid: '109'
+      langcode: es
+      name: 'Telefonía Fija Local'
+      description__value: null
+      description__format: null
+      weight: '8'
+      parent: '0'
+      uuid: da1e9c76-0b39-486d-b2a0-90254569539c
+    -
+      vid: services_list_formats
+      tid: '104'
+      langcode: es
+      name: 'Telefonía Móvil'
+      description__value: null
+      description__format: null
+      weight: '9'
+      parent: '0'
+      uuid: 36cf7e83-cb7e-41ce-9c89-75969484a168
+    -
+      vid: services_list_formats
+      tid: '116'
+      langcode: es
+      name: 'Todos los servicios'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 71b85052-fc75-427b-b77b-cc2054acbd5c
+    -
+      vid: services_list_formats
+      tid: '108'
+      langcode: es
+      name: 'Todos los TIC'
+      description__value: null
+      description__format: null
+      weight: '10'
+      parent: '0'
+      uuid: 35468285-d032-4e0e-b51b-70ad50bc9b13
+    -
+      vid: services_list_formats
+      tid: '110'
+      langcode: es
+      name: 'TV abierta'
+      description__value: null
+      description__format: null
+      weight: '11'
+      parent: '0'
+      uuid: 78180719-5869-4b7d-aea1-eac9a60c03ba
+    -
+      vid: services_list_formats
+      tid: '106'
+      langcode: es
+      name: 'TV suscripción'
+      description__value: null
+      description__format: null
+      weight: '12'
+      parent: '0'
+      uuid: 86215c2f-e41a-42bd-b666-4a98b4023fc5
+  speakers_events:
+    -
+      vid: speakers_events
+      tid: '45'
+      langcode: es
+      name: 'William Eggers'
+      description__value: "<div class=\"block-micrositio-1\">\r\n<div class=\"row m-0 justify-content-center\">\r\n<div class=\"col-12 col-md-5 px-5 px-md-3 pr-md-5 align-self-center block-image-personalized\">\r\n<drupal-media data-align=\"center\" data-entity-type=\"media\" data-entity-uuid=\"5aa1e515-1806-455f-a709-ad9c8cb80b8a\"></drupal-media>\r\n</div>\r\n\r\n<div class=\"col-12 col-md-7 px-5 px-md-3 pl-md-5 align-self-center\">\r\n<h3 class=\"mt-0 mb-3 block-title-personalized\">Titulo</h3>\r\n\r\n<p>Es el Director Ejecutivo del Centro Deloitte para insights de Gobierno y ha sido autor, columnista, consultor y reconocido orador durante más de dos décadas. Es una autoridad en la reforma del gobierno y es responsable de la investigación y el liderazgo para la práctica de la industria del sector público de Deloitte. Su nuevo libro, Cumpliendo en lo Digital: Los Innovadores y las Tecnologías que están Transformando al Gobierno, se publicaró en junio de 2016. Bill ha aparecido en docenas de los</p>\r\n</div>\r\n</div>\r\n</div>\r\n"
+      description__format: microsites_editor
+      weight: '0'
+      parent: '0'
+      uuid: bcfdb0f8-7cf8-40f8-abdf-0556af8a9b16
+      field_content_function:
+        -
+          value: 'Executive Director, Deloitte Center for Government Insights. USA'
   tags: {  }
   tipo_documento_o_link_transparen:
     -
@@ -1055,1399 +2650,3 @@ taxonomies:
       weight: '5'
       parent: '0'
       uuid: 45099b3f-f4c8-436e-987d-ee09cd8ba711
-blocks:
-  -
-    info: 'Home [Encabezado]'
-    langcode: es
-    uuid: 06f5900d-1d33-41c8-a2b4-222862ad15a8
-    bundle: home_header
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_home_header_logo_govco:
-        -
-          target_id: '2'
-          alt: logo-gov-co
-          title: ''
-          width: '190'
-          height: '45'
-      field_home_header_logo_webcrc:
-        -
-          target_id: '1'
-          alt: logo-crc-comision-de-regulacion-de-comunicaciones
-          title: ''
-          width: '234'
-          height: '125'
-  -
-    info: 'Transparencia y acceso a la información pública [Encabezado]'
-    langcode: es
-    uuid: 63d3fd79-a7e3-4ce3-aba1-af6e05bc66e2
-    bundle: bloq_descrip_menu_transparencia
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>De acuerdo a la Ley 1712 de 2014 por la cual se crea la Ley de Transparencia y del Derecho a la Información Pública Nacional' se pone a disposición esta sección en la cual los ciudadanos, sector TIC e interesados pueden conocer de primera mano la información del Ministerio de Tecnologías de la Información y las Comunicaciones.<br />\r\n<br />\r\nSegún como lo dicta la Ley, la información generada por las entidades del Estado no podrá ser reservada o limitada, por el contrario es de carácter público, por tal motivo se proporciona y facilita el acceso a la misma en los términos más amplios posibles y a través de los medios amparados por ley. GGGGG<br />\r\n<br />\r\nDe acuerdo a los mínimos a publicar de que tratan los artículos 9, 10 y 11 de la Ley 1712 de 2014, sin perjuicio de lo previsto en el artículo inmediatamente siguiente respecto a los sujetos obligados a publicar en los sistemas de información del Estado, se ponen a disposición los siguientes temarios:</p>\r\n"
-          summary: ''
-          format: editor_cont_transparencia
-      field_link_decretos_descrip_menu:
-        -
-          uri: 'internal:/sites/default/files/webcrc/documents/2021-11/Resolucion_1519_2020.pdf'
-          title: 'Decreto único reglamentario sectorial'
-          options: {  }
-  -
-    info: 'Transparencia: Políticas, lineamientos y manuales [ Introducción Encabezado ]'
-    langcode: es
-    uuid: a84f9802-7bf9-49c3-b0ed-68f049029a6a
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>Texto introduccion</p>\r\n"
-          summary: ''
-          format: editor_cont_transparencia
-  -
-    info: 'Transparencia: Información sobre decisiones que puede afectar al público [ Introducción Encabezado ]'
-    langcode: es
-    uuid: 9e628ac4-a19b-4f1e-b87f-e82840994c43
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>texto de introducción</p>\r\n"
-          summary: ''
-          format: editor_cont_transparencia
-  -
-    info: 'Transparencia: Presupuesto general de ingresos, gastos e inversión [ Encabezado ]'
-    langcode: es
-    uuid: f218185d-e47c-48cd-aadb-9ba2918244bd
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>Texto de introducción</p>\r\n"
-          summary: ''
-          format: editor_cont_transparencia
-  -
-    info: 'Transparencia: Plan de Adqusiciones [ Introduccion Encabezado ]'
-    langcode: es
-    uuid: e5eb02e6-9c81-47d2-94d8-b38ccec9f999
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>Texto de introduccion</p>\r\n"
-          summary: ''
-          format: editor_cont_transparencia
-  -
-    info: 'Transparencia: ejecución presupuestal [ Introducción - Encabezado ] '
-    langcode: es
-    uuid: 3acdbfe6-7c56-4840-8651-36c26c1ad57c
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>Texto de introducción de ejecución presupuestal</p>\r\n"
-          summary: ''
-          format: editor_cont_transparencia
-  -
-    info: 'Transparencia: Plan de acción [ Introducción - Encabezado ]'
-    langcode: es
-    uuid: 4afce3fa-8c1a-4f61-92dd-4b072b34e510
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>Texto de introducción&nbsp;Transparencia: Plan de acción [ Introducción - Encabezado ]</p>\r\n"
-          summary: ''
-          format: editor_cont_transparencia
-  -
-    info: 'Transparencia: Planes institucionales [ Introducción - Encabezado ]'
-    langcode: es
-    uuid: 4e70d309-4dc3-4259-8a25-e4ef7016d4da
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>Introducción planes institucionales</p>\r\n"
-          summary: ''
-          format: editor_cont_transparencia
-  -
-    info: 'Transparencia: Informes de empalme [ Introducción - Encabezado ]'
-    langcode: es
-    uuid: 97657fef-20d3-4c1b-8a35-3f61844bd2ca
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>Texto de introducción&nbsp;</p>\r\n"
-          summary: ''
-          format: editor_cont_transparencia
-  -
-    info: 'Transparencia: Informes de gestión [ Introducción - encabezado ]'
-    langcode: es
-    uuid: 8dc92244-8dc7-49db-afe6-189a6db95a46
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>texto introducción</p>\r\n"
-          summary: ''
-          format: editor_cont_transparencia
-  -
-    info: 'Trnasparencia: informes rendición de cuentas [ Introducción - Encabezado ]'
-    langcode: es
-    uuid: 21a3ebe4-6542-42ea-aee8-b0d6026dfb0e
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>texto introducción</p>\r\n"
-          summary: ''
-          format: editor_cont_transparencia
-  -
-    info: 'Transparencia: Informes a organismos de inspección [ Introducción - Encabezado ]'
-    langcode: es
-    uuid: f84c383e-b33a-46e9-b096-1454d9951fab
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>Introducción&nbsp;4.7.4 Informes a organismos de inspección, vigilancia y control</p>\r\n"
-          summary: ''
-          format: editor_cont_transparencia
-  -
-    info: 'Transparencia: Planes de mejoramiento [ Introduccion - Encabezado ]'
-    langcode: es
-    uuid: 78cdf21c-cf4b-41b0-9261-1c9b59598e2d
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;texto&nbsp;</p>\r\n"
-          summary: ''
-          format: editor_cont_transparencia
-  -
-    info: 'Transparencia: Informe Pormenorizado [ Introducción - Encabezado ]'
-    langcode: es
-    uuid: 09f2a2df-4469-4165-a6fb-8b6418562f6f
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>introducccion</p>\r\n"
-          summary: ''
-          format: editor_cont_transparencia
-  -
-    info: 'Transparencia: Informe sobre defensa publica [ Introducción - Encabezado ]'
-    langcode: es
-    uuid: 287285d3-2a71-4fb2-9bea-1f9b4b71af05
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>Texto introduccion</p>\r\n"
-          summary: ''
-          format: editor_cont_transparencia
-  -
-    info: 'Transparencia: Registros de activos de información [ Introduccion - Encabezado ]'
-    langcode: es
-    uuid: e237cd4e-ae34-4589-8ba2-7f0181d62613
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>texto introducc</p>\r\n"
-          summary: ''
-          format: editor_cont_transparencia
-  -
-    info: 'Transparencia: Registros de activos de información [ Pie de pagina ]'
-    langcode: es
-    uuid: 069fc02b-47b0-4af7-b931-13c5bc3b796f
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>Lo invitamos a conocer el catálogo de datos abiertos del Índice de Información Clasificada y Reservada de la CRC, &nbsp;publicado en <a href=\"https://www.datos.gov.co/dataset/Registro-de-Activos-de-Informaci-n-de-la-CRC/6ip3-8q5c\">datos.gov.co</a></p>\r\n"
-          summary: ''
-          format: full_html
-  -
-    info: 'Transparencia: Indice de información clasificada [ Introducción - Encabezado ]'
-    langcode: es
-    uuid: a6cf0b9b-f995-488f-bf9f-e3d374e79313
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>texto&nbsp;</p>\r\n"
-          summary: ''
-          format: editor_cont_transparencia
-  -
-    info: 'Transparencia: Indice de información clasificada [ pie de pagina ]'
-    langcode: es
-    uuid: 947a2ab3-9808-44c8-a9de-afd08b9ead38
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>Lo invitamos a conocer el catálogo de datos abiertos del Índice de Información Clasificada y Reservada de la CRC, &nbsp;publicado en <a href=\"https://www.datos.gov.co/dataset/-ndice-de-Informaci-n-Clasificada-y-Reservada-CRC/xtju-zcke\">datos.gov.co</a></p>\r\n"
-          summary: ''
-          format: full_html
-  -
-    info: 'Transparencia: Esquema de publicación [ Introduccion- Encabezado ]'
-    langcode: es
-    uuid: 8a03e2b9-1fcb-4a45-b020-f42bfc3a5f6c
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>texto texto</p>\r\n"
-          summary: ''
-          format: editor_cont_transparencia
-  -
-    info: 'Transparencia: Programa de gestion documental [ Introduccion - Encabezado ]'
-    langcode: es
-    uuid: 35f3ddb0-7e49-4e53-bf53-632e24dce9a0
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>texto texto texto</p>\r\n"
-          summary: ''
-          format: editor_cont_transparencia
-  -
-    info: 'Temas de Interés [ Se debe solo agregar o editar una sola vez este bloque ]'
-    langcode: es
-    uuid: 75dc6e84-7257-481b-9c84-294ca5e39f7a
-    bundle: themes_interest
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_interest_content:
-        -
-          target_id: '4543'
-          target_revision_id: '4543'
-        -
-          target_id: '4546'
-          target_revision_id: '4546'
-        -
-          target_id: '4547'
-          target_revision_id: '4547'
-        -
-          target_id: '4548'
-          target_revision_id: '4548'
-        -
-          target_id: '4549'
-          target_revision_id: '4549'
-  -
-    info: Indicadores
-    langcode: es
-    uuid: a6f79fbc-3c22-45c9-b011-f3b39cdcfe46
-    bundle: indicators
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_content_title:
-        -
-          value: Indicadores
-      field_icon:
-        -
-          target_id: '35'
-      field_indicator:
-        -
-          target_id: '32'
-          target_revision_id: '32'
-        -
-          target_id: '33'
-          target_revision_id: '33'
-        -
-          target_id: '34'
-          target_revision_id: '34'
-        -
-          target_id: '35'
-          target_revision_id: '35'
-        -
-          target_id: '36'
-          target_revision_id: '36'
-      field_logo:
-        -
-          target_id: '35'
-      field_primary_url:
-        -
-          uri: 'https://www.postdata.gov.co/'
-          title: 'Información tomada de www.postdata.gov.co'
-          options: {  }
-  -
-    info: 'Ultimas noticias'
-    langcode: es
-    uuid: d6b7ca44-d780-4080-8a98-17d98296f931
-    bundle: last_news
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_content_title:
-        -
-          value: Noticias
-      field_content_title_primary:
-        -
-          value: Últimas
-      field_content_view:
-        -
-          target_id: news
-          display_id: last_news
-          data: 'a:5:{s:8:"argument";N;s:5:"limit";N;s:6:"offset";N;s:5:"title";N;s:5:"pager";N;}'
-      field_icon:
-        -
-          target_id: '35'
-  -
-    info: 'Boletin de noticias'
-    langcode: es
-    uuid: 8df82bb0-b5c2-4fa4-a354-97253c686628
-    bundle: newsletter
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_content_description:
-        -
-          value: 'Suscríbase a nuestro boletín y manténgase actualizado con las últimas noticias del sector. <br /> Los campos con (*) son obligatorios'
-          format: editor_cont_transparencia
-      field_content_form:
-        -
-          target_id: boletin_de_noticias
-          default_data: ''
-          status: open
-          open: ''
-          close: ''
-      field_content_title:
-        -
-          value: 'Boletín de noticias'
-      field_icon:
-        -
-          target_id: '46'
-  -
-    info: 'Tabs redes sociales'
-    langcode: es
-    uuid: b78e3423-dddb-49b0-97af-f37d06b61a79
-    bundle: tabs_social_networks
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_content_tabs:
-        -
-          target_id: '41'
-          target_revision_id: '41'
-  -
-    info: 'Contenidos mas importantes crc'
-    langcode: es
-    uuid: f054bf59-bf4c-47a8-a4c3-aebdbb350de5
-    bundle: important_content_crc
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_content_tabs:
-        -
-          target_id: '31'
-          target_revision_id: '31'
-      field_content_title:
-        -
-          value: 'en la CRC'
-      field_content_title_primary:
-        -
-          value: 'Lo más importante '
-      field_icon:
-        -
-          target_id: '34'
-  -
-    info: 'Barra de accesibilidad'
-    langcode: es
-    uuid: 527852f6-5c8d-49c0-a38c-a8ea26a0a2b6
-    bundle: accessibility_toolbar
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_content_paragraph:
-        -
-          target_id: '14'
-          target_revision_id: '14'
-        -
-          target_id: '15'
-          target_revision_id: '15'
-        -
-          target_id: '16'
-          target_revision_id: '16'
-        -
-          target_id: '17'
-          target_revision_id: '17'
-  -
-    info: 'Contenidos consultados'
-    langcode: es
-    uuid: 9ef5effc-94da-4dce-a1d8-5bac3078b416
-    bundle: tabs_consulted_content
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_tabs_consulted_content:
-        -
-          target_id: '24'
-          target_revision_id: '24'
-  -
-    info: 'Pie de pagina - Informacion de contacto'
-    langcode: es
-    uuid: 0d3dc0aa-8df4-44fc-809c-b63a77cf87c9
-    bundle: home_footer
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_home_footer_contacts:
-        -
-          value: 'Línea atención al ciudadano: (+57) 601 319 8300'
-        -
-          value: 'Línea gratuita nacional: 01-8000-919278'
-        -
-          value: 'Fax: (+57) 601 319 8301'
-      field_home_footer_img_org:
-        -
-          target_id: '64'
-          alt: organizacion-prai-crc
-          title: ''
-          width: '101'
-          height: '45'
-        -
-          target_id: '65'
-          alt: organizacion-regulatel-crc
-          title: ''
-          width: '88'
-          height: '45'
-      field_home_footer_insti_mail:
-        -
-          value: institucional@crcom.gov.co
-      field_home_footer_judicial_mail:
-        -
-          value: notificacionesjudiciales@crcom.gov.co
-      field_home_footer_location:
-        -
-          value: 'Dirección: Cl 59 a bis # 5 - 53, Ed Link Siete Sesenta P9 Bogoá, Colombia.'
-        -
-          value: 'Código Postal: 11011'
-        -
-          value: 'Horario de Atención: 8:30 a.m. a 5:30 p.m. en jornada continua'
-      field_home_footer_logo_webcrc:
-        -
-          target_id: '63'
-          alt: logo-comision-de-regulacion-de-comunicaciones-crc
-          title: ''
-          width: '195'
-          height: '65'
-      field_home_footer_title_social:
-        -
-          value: 'Siguenos en:'
-      field_home_footer_txt_org:
-        -
-          value: 'Organizaciones internacionales presididas por la CRC'
-      field_social_networks:
-        -
-          target_id: '42'
-          target_revision_id: '42'
-        -
-          target_id: '43'
-          target_revision_id: '43'
-        -
-          target_id: '44'
-          target_revision_id: '44'
-        -
-          target_id: '45'
-          target_revision_id: '45'
-        -
-          target_id: '46'
-          target_revision_id: '46'
-  -
-    info: 'Rss - Lo ultimo de postdata'
-    langcode: es
-    uuid: 06352fb3-55b8-4ec6-9c56-9278fdf46acc
-    bundle: block_rss_last_of_postada
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_intro_text: {  }
-      field_read_more: {  }
-      field_rss_feed:
-        -
-          feed_uri: 'https://www.postdata.gov.co/postdata-rss.xml'
-          count: '5'
-          display_date: '1'
-          date_format: news_dates
-          custom_date_format: 'F j, Y'
-          display_description: '1'
-          description_length: '255'
-          description_plaintext: '1'
-  -
-    info: 'Transparencia: Informes trimestrales acceso informacion [ Introducción - Encabezado ]'
-    langcode: es
-    uuid: c3639dc4-45b3-4eb7-9088-467d6afcd086
-    bundle: transparencia_encabezado_e_intro
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>Texto de introducción</p>\r\n"
-          summary: ''
-          format: editor_cont_transparencia
-menus:
-  -
-    menu_name: main
-    title: 'Transparencia y acceso a la información pública'
-    parent: null
-    uri: 'internal:#'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-49'
-    langcode: es
-    uuid: bd24f550-691a-433f-a715-669d7f7aba59
-  -
-    menu_name: main
-    title: 'Atención y servicio a la ciudadanía'
-    parent: null
-    uri: 'internal:#'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-48'
-    langcode: es
-    uuid: 773dd082-053d-4b26-acf1-2815aedde80d
-  -
-    menu_name: main
-    title: Participa
-    parent: null
-    uri: 'internal:#'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-47'
-    langcode: es
-    uuid: b67943ce-7be1-4679-af38-8b6f4343ec15
-  -
-    menu_name: main
-    title: 'La CRC'
-    parent: null
-    uri: 'internal:#'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-46'
-    langcode: es
-    uuid: a590b8dd-cce5-476e-b111-4d1b0695f764
-  -
-    menu_name: main
-    title: 'Sala de prensa'
-    parent: null
-    uri: 'internal:#'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-45'
-    langcode: es
-    uuid: 9754eac8-83ab-4d09-afc7-f4b4598827ca
-  -
-    menu_name: main
-    title: Estudios
-    parent: null
-    uri: 'internal:#'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-44'
-    langcode: es
-    uuid: 2a041cad-8240-4856-8940-34d346f3a5ac
-  -
-    menu_name: main
-    title: 'Submenu 1'
-    parent: 'menu_link_content:773dd082-053d-4b26-acf1-2815aedde80d'
-    uri: 'internal:#'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: es
-    uuid: 06b43a7c-7176-4015-9934-703a3325f1be
-  -
-    menu_name: main
-    title: 'Submenu 2'
-    parent: 'menu_link_content:773dd082-053d-4b26-acf1-2815aedde80d'
-    uri: 'internal:#'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: es
-    uuid: 8d34ddd9-2b24-475b-8ba7-70a07c49ff8b
-  -
-    menu_name: main
-    title: 'Submenu 1'
-    parent: 'menu_link_content:b67943ce-7be1-4679-af38-8b6f4343ec15'
-    uri: 'internal:#'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: es
-    uuid: 4d1e5962-f29a-4c9c-bea4-9cf8cee71bc5
-  -
-    menu_name: main
-    title: 'Submenu 2'
-    parent: 'menu_link_content:b67943ce-7be1-4679-af38-8b6f4343ec15'
-    uri: 'internal:#'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: es
-    uuid: 8ef3e256-13a1-4791-9e8a-5a365b495439
-  -
-    menu_name: main
-    title: 'Submenu 1'
-    parent: 'menu_link_content:a590b8dd-cce5-476e-b111-4d1b0695f764'
-    uri: 'internal:#'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: es
-    uuid: a7586318-7725-44c4-bd33-1878e6496de5
-  -
-    menu_name: main
-    title: 'Submenu 2'
-    parent: 'menu_link_content:a590b8dd-cce5-476e-b111-4d1b0695f764'
-    uri: 'internal:#'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: es
-    uuid: de6b368a-d42b-4893-a6f2-efdd55adff14
-  -
-    menu_name: footer
-    title: Politicas
-    parent: null
-    uri: 'internal:#'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-50'
-    langcode: es
-    uuid: ef89f96d-9bec-4b05-bb4d-fae5f773ca45
-  -
-    menu_name: footer
-    title: 'Mapa del sitio'
-    parent: null
-    uri: 'internal:#'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-49'
-    langcode: es
-    uuid: ce1d1fa2-b353-432c-b9ae-d4a562825859
-  -
-    menu_name: footer
-    title: 'Términos y condiciones'
-    parent: null
-    uri: 'internal:#'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-48'
-    langcode: es
-    uuid: 046422c6-f7fa-4c2c-8ed6-d76541a3bca2
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '1.Información de la entidad'
-    parent: null
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '1'
-    weight: '-54'
-    langcode: es
-    uuid: 828fc963-6129-4c0b-b02c-d6bd372cc7e2
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '1.1 Misión, Visión, Funciones y Deberes'
-    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
-    uri: 'internal:/transparencia-y-acceso-a-la-informacion-publica/informacion-de-la-entidad/mision-vision-funciones-deberes'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-52'
-    langcode: es
-    uuid: 032361b1-dd36-4383-aa82-c36516beb87c
-  -
-    menu_name: menu-transp-access-infor-public
-    title: 2.Normativa
-    parent: null
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '1'
-    weight: '-53'
-    langcode: es
-    uuid: ffb56e75-db3b-4584-afac-a8cfdc9d2899
-  -
-    menu_name: menu-transp-access-infor-public
-    title: 3.Contratación
-    parent: null
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '1'
-    weight: '-52'
-    langcode: es
-    uuid: 3497f9c3-6213-4ae8-bc00-fb25ef61da32
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '1.2 Estructura orgánica - Organigrama.'
-    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
-    uri: 'http://google.com'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-51'
-    langcode: es
-    uuid: b7ebf0cf-78dc-4055-af77-cb2ea7f862c9
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '1.3 Mapas y Cartas descriptivas de los procesos.'
-    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-53'
-    langcode: es
-    uuid: 0ca6218d-f8f9-43b1-850e-4e5253571e89
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '1.4 Directorio Institucional incluyendo sedes, oficinas, sucursales, o regionales, y dependencias.'
-    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-50'
-    langcode: es
-    uuid: cc45bb56-3061-44d0-97fc-ee6637bc996a
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '1.5 Directorio de servidores públicos, empleados o contratistas.'
-    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-49'
-    langcode: es
-    uuid: c944569b-b8c5-4725-9408-9663d4705e90
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '1.6 Directorio de entidades.'
-    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-48'
-    langcode: es
-    uuid: 7894759c-29ad-4891-8acf-fcf9c9203f53
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '1.7 Directorio de agremiaciones o asociaciones en las que participe.'
-    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-47'
-    langcode: es
-    uuid: 8b78ff4d-414d-47f5-98ba-69ed0774193f
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '1.8 Servicio al público, normas, formularios y protocolos de atención.'
-    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-46'
-    langcode: es
-    uuid: 9bc4fb1c-bbb4-4a2e-85fe-5473674d4e4e
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '1.9 Procedimientos que se siguen para tomar decisiones en las diferentes áreas.'
-    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-45'
-    langcode: es
-    uuid: edf8cf27-db77-4065-a08d-c1aafab00396
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '1.10 Mecanismo de presentación directa de solicitudes, quejas y reclamos a disposición del público en relación con acciones u omisiones del sujeto obligado.'
-    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-44'
-    langcode: es
-    uuid: 505b3d2d-04c2-4be2-9105-ec510002576c
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '1.11 Calendario de actividades y eventos.'
-    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-43'
-    langcode: es
-    uuid: 634dc290-df4f-4916-aa96-bd1351e06d90
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '1.12 Información sobre decisiones que puede afectar al público.'
-    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-42'
-    langcode: es
-    uuid: 52e9732c-fd9e-4580-90da-1c176ea5dd32
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '1.13 Entes y autoridades que lo vigilan.'
-    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-41'
-    langcode: es
-    uuid: 19d9995a-9aa5-4982-a17a-440807fe29ac
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '1.14 Publicación de hojas de vida.'
-    parent: 'menu_link_content:828fc963-6129-4c0b-b02c-d6bd372cc7e2'
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-40'
-    langcode: es
-    uuid: 9005c667-55d2-4765-be4d-604bd5f1047a
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '2.1 Normativa de la entidad o autoridad:'
-    parent: 'menu_link_content:ffb56e75-db3b-4584-afac-a8cfdc9d2899'
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: es
-    uuid: 2911f7b0-e5ba-4c5a-bb65-8b410cf7795a
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '2.2 Búsqueda de normas.'
-    parent: 'menu_link_content:ffb56e75-db3b-4584-afac-a8cfdc9d2899'
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: es
-    uuid: f9b471f8-d74a-4674-96d5-d2cadbf15a51
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '2.3 Proyectos de normas para comentarios.'
-    parent: 'menu_link_content:ffb56e75-db3b-4584-afac-a8cfdc9d2899'
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: es
-    uuid: d4203456-8002-45e9-bfa4-85b265b01894
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '3.1 Plan Anual de Adquisiciones.'
-    parent: 'menu_link_content:3497f9c3-6213-4ae8-bc00-fb25ef61da32'
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: es
-    uuid: b874a5ef-76c4-44f7-a0b4-94b5bb2c4e01
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '3.2 Publicación de la información contractual.'
-    parent: 'menu_link_content:3497f9c3-6213-4ae8-bc00-fb25ef61da32'
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: es
-    uuid: 85137717-3e5c-4c6f-8aae-6b6856d71a7d
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '3.3 Publicación de la ejecución de los contratos.'
-    parent: 'menu_link_content:3497f9c3-6213-4ae8-bc00-fb25ef61da32'
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: es
-    uuid: 4bf150b4-907e-4823-9626-3f9768c4de10
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '3.4 Manual de contratación, adquisición y/o compras.'
-    parent: 'menu_link_content:3497f9c3-6213-4ae8-bc00-fb25ef61da32'
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: es
-    uuid: a62d9359-9332-49ca-92c4-4482c5ce8670
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '3.5 Formatos o modelos de contratos o pliegos tipo.'
-    parent: 'menu_link_content:3497f9c3-6213-4ae8-bc00-fb25ef61da32'
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: es
-    uuid: 9610fd82-6bee-4d67-b567-1cda7f1f8f74
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '4.Planeación, Presupuesto e Informes'
-    parent: null
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '1'
-    weight: '-51'
-    langcode: es
-    uuid: b2dcd4f0-2a8c-4af2-a888-07cd3d494cf2
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '4.1 Presupuesto general de ingresos, gastos e inversión.'
-    parent: 'menu_link_content:b2dcd4f0-2a8c-4af2-a888-07cd3d494cf2'
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: es
-    uuid: d71a6df9-95d9-48b9-9018-46dc980d6105
-  -
-    menu_name: menu-transp-access-infor-public
-    title: "4.2\_ Ejecución presupuestal."
-    parent: 'menu_link_content:b2dcd4f0-2a8c-4af2-a888-07cd3d494cf2'
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: es
-    uuid: ece5a862-4475-4d25-b10a-a0868c6f28b8
-  -
-    menu_name: menu-transp-access-infor-public
-    title: "4.3\_ Plan de Acción."
-    parent: 'menu_link_content:b2dcd4f0-2a8c-4af2-a888-07cd3d494cf2'
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: es
-    uuid: c6493f89-dd7d-4435-84ac-d39ae8c9bb41
-  -
-    menu_name: menu-transp-access-infor-public
-    title: "4.4\_ Proyectos de Inversión."
-    parent: 'menu_link_content:b2dcd4f0-2a8c-4af2-a888-07cd3d494cf2'
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: es
-    uuid: acb923f7-fb16-4533-a754-8b60d19b5c20
-  -
-    menu_name: menu-transp-access-infor-public
-    title: "4.5\_ Informes de empalme."
-    parent: 'menu_link_content:b2dcd4f0-2a8c-4af2-a888-07cd3d494cf2'
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: es
-    uuid: 1e724ad3-a77d-4aa1-a3fb-6bccf2c318ed
-  -
-    menu_name: menu-transp-access-infor-public
-    title: "4.6\_ Información pública y/o relevante."
-    parent: 'menu_link_content:b2dcd4f0-2a8c-4af2-a888-07cd3d494cf2'
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: es
-    uuid: 86b1cafd-b932-46f3-bc0a-3c578d632b6d
-  -
-    menu_name: menu-transp-access-infor-public
-    title: "4.7\_ Informes de gestión, evaluación y auditoría."
-    parent: 'menu_link_content:b2dcd4f0-2a8c-4af2-a888-07cd3d494cf2'
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: es
-    uuid: f5b2a1af-f2d3-4a6d-83aa-e1683f5533f3
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '4.8 Informes de la Oficina de Control Interno.'
-    parent: 'menu_link_content:b2dcd4f0-2a8c-4af2-a888-07cd3d494cf2'
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: es
-    uuid: 22e9fc32-2d72-4642-931b-518cd71c5c13
-  -
-    menu_name: menu-transp-access-infor-public
-    title: "4.9\_\_ Informe sobre Defensa Pública y Prevención del Daño Antijurídico."
-    parent: 'menu_link_content:b2dcd4f0-2a8c-4af2-a888-07cd3d494cf2'
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: es
-    uuid: e9af4bf6-67bf-41ea-baf6-5313e8400d18
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '4.10 Informes trimestrales sobre acceso a información, quejas y reclamos.'
-    parent: 'menu_link_content:b2dcd4f0-2a8c-4af2-a888-07cd3d494cf2'
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: es
-    uuid: 9a496877-7580-48a0-9d49-30c8d912655c
-  -
-    menu_name: menu-transp-access-infor-public
-    title: 5.Trámites
-    parent: null
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '1'
-    weight: '-50'
-    langcode: es
-    uuid: 8eed88b7-a99b-494a-a0f2-114f5cd81d25
-  -
-    menu_name: menu-transp-access-infor-public
-    title: 6.Participa
-    parent: null
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-49'
-    langcode: es
-    uuid: 11cd20cc-7f56-43c0-9fd4-865bae6f71e0
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '7.Datos abiertos'
-    parent: null
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '1'
-    weight: '-48'
-    langcode: es
-    uuid: 58d3f7c3-4740-48bc-b103-0cdc4bbe3780
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '7.1 Instrumentos de gestión de la información.'
-    parent: 'menu_link_content:58d3f7c3-4740-48bc-b103-0cdc4bbe3780'
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: es
-    uuid: d97e49ba-7962-488a-9dfb-abb766cacc53
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '7.2 Sección de Datos Abiertos.'
-    parent: 'menu_link_content:58d3f7c3-4740-48bc-b103-0cdc4bbe3780'
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: es
-    uuid: e5bc5e60-5fa7-42a4-a99c-b0633a9c33cc
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '7.3 Portal de Datos Abiertos'
-    parent: 'menu_link_content:58d3f7c3-4740-48bc-b103-0cdc4bbe3780'
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: es
-    uuid: d571a70b-5877-45c0-a33a-5a6ab2f4759b
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '8.Información específica para Grupos de Interés'
-    parent: null
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '1'
-    weight: '-47'
-    langcode: es
-    uuid: 66187132-2531-4f72-a205-36d47fb2571c
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '9.Obligación de reporte de información específica por parte de la entidad'
-    parent: null
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '1'
-    weight: '-45'
-    langcode: es
-    uuid: b5215679-3b8b-4663-84b9-37a59347333b
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '8.1 Información para niños, niñas y adolescentes.'
-    parent: 'menu_link_content:66187132-2531-4f72-a205-36d47fb2571c'
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: es
-    uuid: 01e4a9a1-0fbd-4199-8fe6-545dd7cd9928
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '8.2 Información para Mujeres'
-    parent: 'menu_link_content:66187132-2531-4f72-a205-36d47fb2571c'
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: es
-    uuid: 87cebad3-6215-4976-a2db-1172c1e2071f
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '9.1 Socialización reportes de información'
-    parent: 'menu_link_content:b5215679-3b8b-4663-84b9-37a59347333b'
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-54'
-    langcode: es
-    uuid: 57eb4412-d299-4229-ac72-9f254e52b45c
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '9.2 Estudios, investigaciones y otras publicaciones'
-    parent: 'menu_link_content:b5215679-3b8b-4663-84b9-37a59347333b'
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-53'
-    langcode: es
-    uuid: 6c7b9ba9-b98e-4a18-bfe8-dab3bdaf514c
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '9.3 Convocatorias'
-    parent: 'menu_link_content:b5215679-3b8b-4663-84b9-37a59347333b'
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-52'
-    langcode: es
-    uuid: a0fe8a8c-99f1-414e-abcc-4082651348f2
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '9.4 Preguntas frecuentes'
-    parent: 'menu_link_content:b5215679-3b8b-4663-84b9-37a59347333b'
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-51'
-    langcode: es
-    uuid: 4d5f03c5-04c9-4fd4-8d68-76ceccb5c509
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '9.5 Glosario'
-    parent: 'menu_link_content:b5215679-3b8b-4663-84b9-37a59347333b'
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-50'
-    langcode: es
-    uuid: 1fdfb212-c629-46a5-b0b7-acd891003c1c
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '9.6 Noticias'
-    parent: 'menu_link_content:b5215679-3b8b-4663-84b9-37a59347333b'
-    uri: 'internal:/transparencia-y-acceso-a-la-informacion-publica/obligacion-de-reporte-de-informacion-especifica-por-parte-de-la-entidad/noticias'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-49'
-    langcode: es
-    uuid: c5b33c96-adbc-41a7-aa74-89b358dca84e
-  -
-    menu_name: menu-transp-access-infor-public
-    title: '9.7 Ofertas de empleo'
-    parent: 'menu_link_content:b5215679-3b8b-4663-84b9-37a59347333b'
-    uri: 'route:<nolink>'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-48'
-    langcode: es
-    uuid: 52ea4a6e-0d1e-4c0e-8d2a-8e8ce45d40c7

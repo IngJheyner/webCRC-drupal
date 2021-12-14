@@ -1,0 +1,11 @@
+uuid: eb04cc25-f9c6-4499-a378-d184c2083b46
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.services_list_formats
+id: taxonomy_term.services_list_formats
+target_entity_type_id: taxonomy_term
+target_bundle: services_list_formats
+default_langcode: site_default
+language_alterable: false

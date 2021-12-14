@@ -1,0 +1,20 @@
+uuid: 3cf1950a-c996-4921-84a4-e7ac5085a9ff
+langcode: es
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+id: node.field_fech_publi_vacant
+field_name: field_fech_publi_vacant
+entity_type: node
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

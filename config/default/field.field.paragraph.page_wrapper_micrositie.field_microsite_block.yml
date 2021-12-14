@@ -21,9 +21,9 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       microsite_block: microsite_block
+    negate: 0
     target_bundles_drag_drop:
       enlaces:
         weight: 18
@@ -38,8 +38,8 @@ settings:
         weight: 21
         enabled: false
       microsite_block:
-        enabled: true
         weight: 22
+        enabled: true
       navigation_microsites:
         weight: 23
         enabled: false

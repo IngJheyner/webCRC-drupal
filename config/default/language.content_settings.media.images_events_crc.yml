@@ -1,0 +1,11 @@
+uuid: c946ce6a-5e1b-424e-80bb-6aae6d8f4074
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.images_events_crc
+id: media.images_events_crc
+target_entity_type_id: media
+target_bundle: images_events_crc
+default_langcode: site_default
+language_alterable: false

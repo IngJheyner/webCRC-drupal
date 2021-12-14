@@ -16,24 +16,24 @@ bundle: transp_infor_defensa_publi_doc
 mode: default
 content:
   field_docum_archi:
-    weight: 102
+    type: file_default
     label: above
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    type: file_default
+    weight: 102
     region: content
   field_list_anio_infor_decisi:
-    weight: 101
+    type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 101
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
 hidden:
   addtoany: true

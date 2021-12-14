@@ -1,0 +1,18 @@
+uuid: 6ea9732a-4873-4862-b3c5-7f2fde0d5e9a
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.commission_minutes
+id: node.commission_minutes.title
+field_name: title
+entity_type: node
+bundle: commission_minutes
+label: Titulo
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -17,13 +17,13 @@ plugin: 'block_content:9ef5effc-94da-4dce-a1d8-5bac3078b416'
 settings:
   id: 'block_content:9ef5effc-94da-4dce-a1d8-5bac3078b416'
   label: 'Contenidos consultados'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
+    pages: '<front>'

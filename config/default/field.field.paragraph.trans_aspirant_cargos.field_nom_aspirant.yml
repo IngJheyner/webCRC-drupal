@@ -1,0 +1,19 @@
+uuid: c1bd82b2-f816-455f-a534-e82ea9a64532
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_nom_aspirant
+    - paragraphs.paragraphs_type.trans_aspirant_cargos
+id: paragraph.trans_aspirant_cargos.field_nom_aspirant
+field_name: field_nom_aspirant
+entity_type: paragraph
+bundle: trans_aspirant_cargos
+label: 'Nombre Aspirante'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

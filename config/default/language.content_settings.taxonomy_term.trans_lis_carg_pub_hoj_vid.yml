@@ -1,0 +1,11 @@
+uuid: a2d800a1-f279-487f-b41b-e02fb4028c48
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.trans_lis_carg_pub_hoj_vid
+id: taxonomy_term.trans_lis_carg_pub_hoj_vid
+target_entity_type_id: taxonomy_term
+target_bundle: trans_lis_carg_pub_hoj_vid
+default_langcode: site_default
+language_alterable: false

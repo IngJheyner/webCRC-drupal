@@ -22,67 +22,12 @@ base_table: node_field_data
 base_field: nid
 display:
   default:
-    display_plugin: default
     id: default
     display_title: Default
+    display_plugin: default
     position: 0
     display_options:
-      access:
-        type: perm
-        options:
-          perm: 'access content'
-      cache:
-        type: tag
-        options: {  }
-      query:
-        type: views_query
-        options:
-          disable_sql_rewrite: false
-          distinct: false
-          replica: false
-          query_comment: ''
-          query_tags: {  }
-      exposed_form:
-        type: basic
-        options:
-          submit_button: Buscar
-          reset_button: true
-          reset_button_label: 'Limpiar consulta'
-          exposed_sorts_label: 'Sort by'
-          expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        type: mini
-        options:
-          items_per_page: 10
-          offset: 0
-          id: 0
-          total_pages: null
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
-          tags:
-            previous: ‹‹
-            next: ››
-      style:
-        type: views_bootstrap_list_group
-        options:
-          grouping:
-            -
-              field: field_list_cat_tablas_reten_doc
-              rendered: true
-              rendered_strip: true
-          row_class: 'mr-5 mb-3 fileTable'
-          default_row_class: true
-          title_field: ''
-      row:
-        type: fields
+      title: 'Tablas de retención documental'
       fields:
         title:
           id: title
@@ -91,6 +36,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -146,9 +94,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: node
-          entity_field: title
-          plugin_id: field
         field_list_cat_tablas_reten_doc:
           id: field_list_cat_tablas_reten_doc
           table: node__field_list_cat_tablas_reten_doc
@@ -156,6 +101,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -211,7 +157,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         field_docum_archi:
           id: field_docum_archi
           table: node__field_docum_archi
@@ -219,6 +164,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -273,30 +219,83 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
+      pager:
+        type: mini
+        options:
+          offset: 0
+          items_per_page: 10
+          total_pages: null
+          id: 0
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Buscar
+          reset_button: true
+          reset_button_label: 'Limpiar consulta'
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: tag
+        options: {  }
+      empty: {  }
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: created
+          exposed: false
+          granularity: second
+      arguments: {  }
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            transp_tablas_reten_docu: transp_tablas_reten_docu
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            transp_tablas_reten_docu: transp_tablas_reten_docu
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -307,6 +306,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: string
           operator: contains
           value: ''
           group: 1
@@ -340,9 +342,6 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          entity_type: node
-          entity_field: title
-          plugin_id: string
         field_list_cat_tablas_reten_doc_target_id:
           id: field_list_cat_tablas_reten_doc_target_id
           table: node__field_list_cat_tablas_reten_doc
@@ -350,6 +349,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: taxonomy_index_tid
           operator: or
           value: {  }
           group: 1
@@ -384,29 +384,34 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: select
-          limit: true
           vid: transp_list_cat_tabl_retenci_doc
+          type: select
           hierarchy: false
+          limit: true
           error_message: true
-          plugin_id: taxonomy_index_tid
-      sorts:
-        created:
-          id: created
-          table: node_field_data
-          field: created
-          order: DESC
-          entity_type: node
-          entity_field: created
-          plugin_id: date
-          relationship: none
-          group_type: group
-          admin_label: ''
-          exposed: false
-          expose:
-            label: ''
-          granularity: second
-      title: 'Tablas de retención documental'
+      style:
+        type: views_bootstrap_list_group
+        options:
+          grouping:
+            -
+              field: field_list_cat_tablas_reten_doc
+              rendered: true
+              rendered_strip: true
+          row_class: 'mr-5 mb-3 fileTable'
+          default_row_class: true
+          title_field: ''
+      row:
+        type: fields
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_tags: {  }
+      relationships: {  }
+      css_class: 'transparenciaAcceso pages transparenciaAccesoTables fileTable '
       header:
         area_text_custom:
           id: area_text_custom
@@ -415,16 +420,12 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          empty: true
-          tokenize: false
-          content: "<div class=\"titleContentSimple mt-5 mb-4\" id=\"cont\">\r\n   <h1> 7.1.5 Tablas de retención documental</h1>\r\n</div>"
           plugin_id: text_custom
+          empty: true
+          content: "<div class=\"titleContentSimple mt-5 mb-4\" id=\"cont\">\r\n   <h1> 7.1.5 Tablas de retención documental</h1>\r\n</div>"
+          tokenize: false
       footer: {  }
-      empty: {  }
-      relationships: {  }
-      arguments: {  }
       display_extenders: {  }
-      css_class: 'transparenciaAcceso pages transparenciaAccesoTables fileTable '
     cache_metadata:
       max-age: -1
       contexts:
@@ -439,9 +440,9 @@ display:
         - 'config:field.storage.node.field_docum_archi'
         - 'config:field.storage.node.field_list_cat_tablas_reten_doc'
   transp_page_tablas_reten_documen:
-    display_plugin: page
     id: transp_page_tablas_reten_documen
     display_title: Page
+    display_plugin: page
     position: 1
     display_options:
       display_extenders: {  }

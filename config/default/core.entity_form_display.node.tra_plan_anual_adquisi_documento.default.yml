@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.tra_plan_anual_adquisi_documento.field_docum_archi
+    - field.field.node.tra_plan_anual_adquisi_documento.field_lis_cat_plan_adqu
     - field.field.node.tra_plan_anual_adquisi_documento.field_list_anio_infor_decisi
     - node.type.tra_plan_anual_adquisi_documento
   module:
@@ -22,18 +23,24 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_docum_archi:
-    weight: 26
+    type: file_generic
+    weight: 13
+    region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
-    type: file_generic
-    region: content
-  field_list_anio_infor_decisi:
+  field_lis_cat_plan_adqu:
+    type: options_select
     weight: 1
+    region: content
     settings: {  }
     third_party_settings: {  }
+  field_list_anio_infor_decisi:
     type: options_select
+    weight: 2
     region: content
+    settings: {  }
+    third_party_settings: {  }
   langcode:
     type: language_select
     weight: 3
@@ -49,10 +56,10 @@ content:
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 5
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   publish_on:
     type: datetime_timestamp_no_default
@@ -62,17 +69,17 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 12
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 6
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   title:
     type: string_textfield
@@ -85,12 +92,12 @@ content:
   uid:
     type: entity_reference_autocomplete
     weight: 4
+    region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
-      match_limit: 10
-    region: content
     third_party_settings: {  }
   unpublish_on:
     type: datetime_timestamp_no_default

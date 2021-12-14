@@ -1,0 +1,31 @@
+uuid: 64a106ad-0808-4f4c-a5e6-4b138c561d74
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.events.field_content_description
+    - field.field.node.events.field_content_lecturers
+    - field.field.node.events.field_end_date_time
+    - field.field.node.events.field_start_date_time
+    - node.type.events
+  module:
+    - user
+id: node.events.teaser
+targetEntityType: node
+bundle: events
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_content_description: true
+  field_content_lecturers: true
+  field_end_date_time: true
+  field_start_date_time: true
+  langcode: true
+  search_api_excerpt: true

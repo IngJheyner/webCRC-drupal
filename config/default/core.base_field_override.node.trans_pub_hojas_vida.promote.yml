@@ -1,0 +1,22 @@
+uuid: c874f2fd-0fd2-409c-9d25-e554f9c486ae
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.trans_pub_hojas_vida
+id: node.trans_pub_hojas_vida.promote
+field_name: promote
+entity_type: node
+bundle: trans_pub_hojas_vida
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,9 +1,9 @@
 :root {
-  --font-size: 1pt;
+  --font-size: 1;
 }
 
 body {
-  font-size: calc(var(--font-size) * 1pt);
+  font-size: calc(var(--font-size) * 1em);
 }
 
 .contrasteweb {
@@ -49,19 +49,69 @@ body {
   display: none;
 }
 
-.embed-container {
-  position: relative;
-  padding-bottom: 100%;
-  height: 0;
-  overflow: hidden;
+// ESTILOS GIF LENGUAJE INCLUSIVO
+div.media.media--bundle--inclusive-language {
+  display: none;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 100%;
+  margin: 5px auto 15px;
+
+  img {
+    width: 130px;
+    height: auto;
+  }
 }
 
-.embed-container iframe {
-  position: absolute !important;
-  top:0;
+// HOVER ACTIVO GIF LENGIAJE INCLUSIVO
+.media-body {
+  position: relative;
+  
+  &:hover {
+    div.media.media--bundle--inclusive-language {
+      display: block;
+    }
+  }
+}
+
+// VIDEOS RESPONSIVE CKEDITOR GLOBAL 
+@mixin content-media-video {
+  position: relative;
+  padding-bottom: 40%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  width: 75%;
+  margin: 20px auto;
+}
+
+@mixin media-video {
+  position: absolute;
+  top: 0;
   left: 0;
-  width: 100% !important;
-  height: 100% !important;
+  width: 100%;
+  height: 100%;
+}
+
+.field--name-field-media-oembed-video {
+  @include content-media-video;
+
+  iframe,
+  object,
+  embed,
+  video {
+    @include media-video;
+  }
+  
+}
+
+video ~ div {
+  @include content-media-video;
+}
+
+video {
+  @include media-video;
 }
 
 .media--blazy {
@@ -309,111 +359,6 @@ div.most-consulted-content {
   }
 }
 
-/* ul.slide__content {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  justify-content: center;
-
-  li {
-    position: relative;
-    padding: 30px 20px;
-  }
-
-  li:before {
-    font-family: "Material Icons";
-    content: 'arrow_drop_up';
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: -10px;
-    color: transparent;
-    font-size: 3rem;
-    text-align: center;
-    margin: auto;
-  }
-
-  > li:after {
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: rgba(231, 231, 231, 1);
-    width: 2px;
-    height: 80%;
-    margin: auto;
-  }
-
-  > li:last-child:after {
-    display: none;
-  }
-
-  .slide__caption {
-    position: relative;
-    text-align: center;
-    color: rgba(47, 42, 124, 1);
-
-    a {
-      position: absolute;
-      right: 0;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      text-align: center;
-      background: transparent !important;
-      color: transparent !important;
-      z-index: 1;
-    }
-
-    .background-round {
-      background: rgba(255,255,255,0.7);
-      border-radius: 50%;
-      margin: auto;
-      width: 100%;
-      max-width: 100px;
-    }
-
-    img {
-      width: 100%;
-      max-width: 100px;
-      min-width: 70px;
-      padding: 20px;
-    }
-  }
-
-  li:hover {
-    background: rgba(244, 67, 92, 1);
-    border-radius: 15px;
-
-    &::before {
-      color: rgba(255, 255, 255, 1);
-    }
-
-    &::after {
-      display: none;
-    }
-
-    h1, h2, h3, h4, h5, h5,
-    div, p {
-      color: rgba(255, 255, 255, 1);
-    }
-
-    .background-round {
-      background: rgba(255, 255, 255, 1);
-    }
-
-    img {
-      filter: invert(25%) sepia(99%) saturate(2254%) hue-rotate(328deg) brightness(98%) contrast(95%);
-    }
-  }
-}
-
-.slick-dots {
-  padding: 0;
-  bottom: -35px;
-} */
-
 
 // LOS MAS IMPORTANTE DE LA CRC
 .contenido-importante-container {
@@ -431,7 +376,6 @@ div.most-consulted-content {
 .tabs-container.tabs-vertical {
   border-radius: 20px;
   box-shadow: 0 0 5px 0px rgb(0,0,0);
-  overflow: hidden;
 
   .nav-tab-content {
     box-shadow: 0 0 10px 0px rgba(0, 0, 0, .5);

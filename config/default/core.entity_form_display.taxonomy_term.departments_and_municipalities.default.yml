@@ -1,0 +1,75 @@
+uuid: 1e2a65cb-f164-4285-a2cb-19c34c42a500
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.departments_and_municipalities.field_code_dane
+    - field.field.taxonomy_term.departments_and_municipalities.field_content_latitude
+    - field.field.taxonomy_term.departments_and_municipalities.field_content_length
+    - taxonomy.vocabulary.departments_and_municipalities
+  module:
+    - path
+    - text
+id: taxonomy_term.departments_and_municipalities.default
+targetEntityType: taxonomy_term
+bundle: departments_and_municipalities
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 4
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_code_dane:
+    type: number
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_content_latitude:
+    type: number
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_content_length:
+    type: number
+    weight: 3
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 5
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 7
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden: {  }

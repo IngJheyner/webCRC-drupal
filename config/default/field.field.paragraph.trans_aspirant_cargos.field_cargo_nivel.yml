@@ -1,0 +1,19 @@
+uuid: 665e79cf-090f-4d38-afbd-faa0a3fa5c15
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cargo_nivel
+    - paragraphs.paragraphs_type.trans_aspirant_cargos
+id: paragraph.trans_aspirant_cargos.field_cargo_nivel
+field_name: field_cargo_nivel
+entity_type: paragraph
+bundle: trans_aspirant_cargos
+label: 'Cargo / Nivel'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

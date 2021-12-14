@@ -1,0 +1,32 @@
+uuid: 0bcbabd7-844b-437f-9b7b-0da04d895fca
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.speakers_events.field_content_function
+    - taxonomy.vocabulary.speakers_events
+  module:
+    - text
+id: taxonomy_term.speakers_events.default
+targetEntityType: taxonomy_term
+bundle: speakers_events
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_content_function:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

@@ -4,9 +4,9 @@ status: true
 dependencies: {  }
 id: template_1
 label: 'Plantilla 1'
+image: ''
 description: 'Estilo para un titulo, una descripcion y una imagen ubicada a la derecha'
 html:
   value: "<div class=\"block-micrositio-1\">\r\n<div class=\"row m-0 justify-content-center\">\r\n<div class=\"col-12 col-md-7 px-5 px-md-3 pr-md-5 align-self-center\">\r\n<h3 class=\"mt-0 mb-3 block-title-personalized\">Titulo</h3>\r\n\r\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin libero lectus, lobortis a diam eu, finibus semper tortor. Nunc tincidunt a dui sit amet porttitor. Integer at dolor posuere, maximus tortor ac, mollis erat. Nullam sapien dui, luctus sit amet ipsum tempus, porttitor dapibus enim. Morbi venenatis mi fermentum risus mattis porttitor. Etiam mollis dui et quam lobortis accumsan. Donec euismod sapien vel libero sodales, at rutrum arcu posuere. Sed a laoreet odio, consequat bibendum mauris. Morbi vel tellus vel lacus cursus aliquam vitae at dui. Integer ac placerat velit, non pellentesque dolor. Proin quis tortor ultrices enim pretium condimentum. Aliquam id augue eu quam convallis lobortis.</p>\r\n</div>\r\n\r\n<div class=\"col-12 col-md-5 px-5 px-md-3 pl-md-5 align-self-center block-image-personalized\">\r\n<drupal-media data-align=\"center\" data-entity-type=\"media\" data-entity-uuid=\"0e2dcc9b-ee75-416c-b5ed-b5e4460d35d7\"></drupal-media>\r\n</div>\r\n</div>\r\n</div>\r\n"
   format: microsites_editor
-image: ''
 weight: 1

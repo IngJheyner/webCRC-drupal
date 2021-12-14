@@ -17,18 +17,18 @@ plugin: 'superfish:main'
 settings:
   id: 'superfish:main'
   label: 'Menu Principal'
-  provider: superfish
   label_display: '0'
+  provider: superfish
   level: '1'
   depth: '0'
   expand_all_items: false
   menu_type: horizontal
   style: white
   arrow: 1
-  shadow: 1
-  speed: fast
-  delay: '800'
-  slide: diagonal
+  shadow: 0
+  speed: slow
+  delay: '400'
+  slide: vertical
   supposition: 1
   hoverintent: 1
   touch: '0'
@@ -38,7 +38,7 @@ settings:
   touchual: ''
   touchuam: '0'
   small: '2'
-  smallbp: '768'
+  smallbp: '992'
   smallua: '0'
   smallual: ''
   smalluam: '0'
@@ -54,7 +54,7 @@ settings:
   smallamt: ''
   smallabt: '1'
   supersubs: 1
-  minwidth: '12'
+  minwidth: '15'
   maxwidth: '27'
   multicolumn: 0
   multicolumn_depth: '1'

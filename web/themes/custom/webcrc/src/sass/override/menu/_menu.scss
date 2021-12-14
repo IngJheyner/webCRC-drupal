@@ -1,0 +1,347 @@
+// INICIO
+nav.nav-main-menu {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 0 30px;
+  margin: auto;
+  background: none;
+
+  @include desktop {
+    background: $bg-black;
+  }
+
+  &.home-menu {
+    position: unset;
+    background: none;
+
+    @include desktop {
+      position: absolute;
+      z-index: 1;
+      background: rgb(0,0,0);
+      background: -moz-linear-gradient(180deg, rgba(0,0,0,0.7) 60%, rgba(255,255,255,0) 100%);
+      background: -webkit-linear-gradient(180deg, rgba(0,0,0,0.7) 60%, rgba(255,255,255,0) 100%);
+      background: linear-gradient(180deg, rgba(0,0,0,0.7) 60%, rgba(255,255,255,0) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1); 
+    } 
+  }
+
+  ul.menu {
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    float: none;
+    background: transparent;
+
+    @mixin menu-inclusive-language {
+      & ~ div.menu_link_content {
+        div.media--bundle--inclusive-language {
+          display: block;
+        }
+      }
+    }
+
+    @mixin active-sub-indicator {
+      .sf-sub-indicator {
+        &:after {
+          color: $text-black;
+        }
+      }
+    }
+
+    li {
+      background: transparent;
+
+      &.sfHover {
+
+        a {
+          color: $text-black;
+          background: $bg-white;
+
+          @include menu-inclusive-language;
+          @include active-sub-indicator;
+
+          &:hover,
+          &:visited,
+          &:hover:visited {
+            color: $text-black;
+            background: $bg-white;
+          }
+        }
+
+        ul {
+          top: 100%;
+
+          li {
+        
+            a {
+              text-align: left;
+            }
+          }
+        }
+      }
+
+      &:hover,
+      &:visited,
+      &:hover:visited {
+        color: $text-black;
+        background: $bg-white;
+      }
+
+      a {
+        min-width: 130px;
+        color: $text-white;
+        text-decoration: none;
+        font-size: 12pt;
+        font-weight: 600;
+        background: transparent;
+
+        @include large {
+          font-size: 14pt;
+        } 
+
+        .sf-sub-indicator {
+          &:after {
+            font-family: "Material Icons";
+            content: "expand_more";
+            position: absolute;
+            top: 0;
+            left: 0;
+            line-height: 1;
+            color: $text-white;
+          }
+        }
+
+        &:hover,
+        &:hover:visited {
+          color: $text-black;
+          background: $bg-white;
+          text-decoration: underline;
+
+          @include menu-inclusive-language;
+          @include active-sub-indicator;
+        }
+
+        &:focus {
+          color: $text-black;
+          background: $bg-white;
+          text-decoration: underline;
+
+          @include active-sub-indicator;
+        }
+
+        &:visited {
+          color: $text-white;
+        }
+
+        &.is-active {
+          color: $text-white;
+          background: transparent;
+          text-decoration: underline;
+
+          &:hover,
+          &:hover:visited,
+          &:focus {
+            color: $text-black;
+            background: $bg-white;
+            text-decoration: underline;
+
+            @include active-sub-indicator;
+          }
+        }
+      }
+    }
+  }
+
+  // MENU RESPONSIVE
+  div.sf-accordion-toggle {
+
+    a {
+      display: block;
+      position: relative;
+      width: max-content;
+      margin: auto;
+      padding: 30px;
+      border: none;
+      text-align: center;
+      color: $text-white;
+      background: $bg-dark-blue;
+      font-weight: normal;
+      border-radius: 50%;
+      
+      &::after {
+        font-family: "Material Icons";
+        content: "menu";
+        position: absolute;
+        right: 0;
+        left: 0;
+        line-height: 1;
+        color: $text-white;
+      }
+
+      &.sf-expanded {
+        background: $bg-secondary;
+
+        &::after {
+          font-family: "Material Icons";
+          content: "close";
+        }
+      }
+
+      span {
+        display: none;
+      }
+    }
+  }
+
+  ul.menu.sf-accordion {
+    display: block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin-top: 2rem;
+    text-align: left;
+    background: $bg-white;
+  }
+}
+
+
+/* nav.primary-menu {
+
+  ul.sf-menu,
+  ul#superfish-main-accordion {
+    display: flex;
+    margin: 0 auto;
+    padding: 0px 20px;
+    float: none;
+    align-items: center;
+    justify-content: space-between;
+    background: $bg-black;
+
+    li {
+      background: transparent;
+
+      .contextual-region {
+        position: initial;
+      }
+
+      .field--name-field-content-animated-icon {
+        display: none;
+        position: absolute;
+        width: 130px;
+        min-width: auto;
+        right: 0;
+        left: 0;
+        bottom: 100%;
+        margin: auto;
+      }
+      
+      a,
+      a:visited {
+        color: $text-white;
+        font-size: 12pt;
+        font-weight: 600;
+        text-align: center;
+        text-decoration: none;
+
+        @include large-lg {
+          font-size: 14pt;
+        } 
+      }
+
+      a.is-active,
+      a.is-active:hover,
+      a.is-active:active,
+      a.is-active:focus,
+      a:hover, 
+      a:active, 
+      a:focus {
+        color: rgba(0,0,0,1);
+        text-decoration: underline;
+
+        & ~ div.menu_link_content {
+          .field--name-field-content-animated-icon {
+            display: block;
+          }
+        }
+      }
+
+      a.is-active {
+        color: rgba(255,255,255,1);
+        background: transparent;
+      }
+    }
+
+    .sf-sub-indicator:after {
+      font-family: "Material Icons";
+      content: "expand_more";
+      position: absolute;
+      top: 0;
+      left: 0;
+      line-height: 1;
+      color: rgb(255, 255, 255);
+    }
+
+    ul {
+      li {
+        * {
+          text-align: left;
+        }
+      }
+    }
+
+    .sfHover > ul {
+      min-width: 100% !important;
+      background: rgb(240, 240, 240);
+    }
+
+    .sfHover a,
+    .sfHover a:visited,
+    .sfhover li a,
+    .sfHover .sf-sub-indicator:after,
+    .sf-expanded .sf-sub-indicator:after,
+    a:hover .sf-sub-indicator:after
+    {
+      color: rgba(0,0,0,1);
+    }
+
+    .sfHover a {
+      & ~ div.menu_link_content {
+        .field--name-field-content-animated-icon {
+          display: block;
+        }
+      }
+    }
+  }
+
+  ul.sf-menu:after {
+    display: none;
+  }
+
+}
+
+// Estilos menu pagina Home
+nav.nav-main-menu.home-menu {
+  position: relative;
+  right: 0;
+  left: 0;
+  z-index: 1;
+
+  @include desktop {
+    position: absolute;
+  } 
+
+  ul.sf-menu {
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(180deg, rgba(0,0,0,0.7) 60%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0,0,0,0.7) 60%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,0.7) 60%, rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1); 
+  }
+} */

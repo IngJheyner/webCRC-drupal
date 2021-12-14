@@ -24,17 +24,17 @@ third_party_settings:
         - group_tab_infor_inform_decision
         - group_tab_doc_file_infor_deciosi
         - group_tab_link_infor_decisio_pub
+      label: 'Tabs informacion sobre Deciones'
+      region: content
       parent_name: ''
       weight: 0
       format_type: tabs
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
         direction: horizontal
         width_breakpoint: 640
-      label: 'Tabs informacion sobre Deciones'
     group_tab_infor_inform_decision:
       children:
         - title
@@ -42,48 +42,48 @@ third_party_settings:
         - field_lista_mes_inf_decisi
         - field_categ_infor_decision_publi
         - body
+      label: Información
+      region: content
       parent_name: group_tabs_infor_dec_afect_publi
       weight: 2
       format_type: tab
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
-        description: 'Información sobre decisiones que puede afectar al público'
         formatter: closed
+        description: 'Información sobre decisiones que puede afectar al público'
         required_fields: true
-      label: Información
     group_tab_doc_file_infor_deciosi:
       children:
         - field_doc_file_info_decisi_publi
+      label: 'Documento / Archivo'
+      region: content
       parent_name: group_tabs_infor_dec_afect_publi
       weight: 4
       format_type: tab
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
-        description: ''
         formatter: closed
+        description: ''
         required_fields: true
-      label: 'Documento / Archivo'
     group_tab_link_infor_decisio_pub:
       children:
         - field_link_sitie
+      label: Enlace
+      region: content
       parent_name: group_tabs_infor_dec_afect_publi
       weight: 5
       format_type: tab
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
-        description: ''
         formatter: closed
+        description: ''
         required_fields: true
-      label: Enlace
 id: node.transp_inf_decisi_afec_pub_docum.default
 targetEntityType: node
 bundle: transp_inf_decisi_afec_pub_docum
@@ -92,13 +92,13 @@ content:
   body:
     type: text_textarea_with_summary
     weight: 32
+    region: content
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
-    region: content
   created:
     type: datetime_timestamp
     weight: 7
@@ -106,38 +106,38 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_categ_infor_decision_publi:
+    type: options_select
     weight: 31
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_doc_file_info_decisi_publi:
+    type: file_generic
     weight: 3
+    region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
-    type: file_generic
-    region: content
   field_link_sitie:
+    type: link_default
     weight: 4
+    region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-    type: link_default
-    region: content
   field_list_anio_infor_decisi:
+    type: options_select
     weight: 29
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_lista_mes_inf_decisi:
+    type: options_select
     weight: 30
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   langcode:
     type: language_select
     weight: 1
@@ -153,10 +153,10 @@ content:
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 3
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   publish_on:
     type: datetime_timestamp_no_default
@@ -166,17 +166,17 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 10
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 4
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   title:
     type: string_textfield
@@ -189,12 +189,12 @@ content:
   uid:
     type: entity_reference_autocomplete
     weight: 2
+    region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
-      match_limit: 10
-    region: content
     third_party_settings: {  }
   unpublish_on:
     type: datetime_timestamp_no_default

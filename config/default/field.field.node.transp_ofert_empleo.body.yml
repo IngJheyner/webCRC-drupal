@@ -1,0 +1,23 @@
+uuid: f077d6de-eac5-41d0-bb58-d15e2a55027f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.transp_ofert_empleo
+  module:
+    - text
+id: node.transp_ofert_empleo.body
+field_name: body
+entity_type: node
+bundle: transp_ofert_empleo
+label: Funciones
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

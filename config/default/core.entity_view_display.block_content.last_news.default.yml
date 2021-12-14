@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - block_content.type.last_news
+    - field.field.block_content.last_news.field_content_animated_icon
     - field.field.block_content.last_news.field_content_title
     - field.field.block_content.last_news.field_content_title_primary
     - field.field.block_content.last_news.field_content_view
@@ -16,44 +17,15 @@ targetEntityType: block_content
 bundle: last_news
 mode: default
 content:
-  field_content_title:
-    weight: 1
+  field_content_animated_icon:
+    type: blazy_media
     label: hidden
     settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
-  field_content_title_primary:
-    weight: 3
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
-  field_content_view:
-    weight: 2
-    label: hidden
-    settings:
-      plugin_types:
-        block: block
-        default: 0
-        page: 0
-        feed: 0
-        entity_browser: 0
-        embed: 0
-    third_party_settings: {  }
-    type: viewsreference_formatter
-    region: content
-  field_icon:
-    weight: 0
-    label: hidden
-    settings:
-      link: '1'
+      caption: {  }
       class: ''
       id: ''
       image: ''
+      link: '1'
       overlay: ''
       title: ''
       vanilla: false
@@ -69,7 +41,6 @@ content:
       box_caption: ''
       box_caption_custom: ''
       box_media_style: ''
-      caption: {  }
       responsive_image_style: ''
       box_style: ''
       image_style: ''
@@ -77,14 +48,84 @@ content:
       ratio: ''
       thumbnail_style: ''
       _uri: ''
-      grid: ''
-      grid_medium: ''
-      grid_small: ''
       breakpoints: {  }
       sizes: ''
       grid_header: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
     third_party_settings: {  }
+    weight: 0
+    region: content
+  field_content_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_content_title_primary:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_content_view:
+    type: viewsreference_formatter
+    label: hidden
+    settings:
+      plugin_types:
+        block: block
+        default: 0
+        page: 0
+        feed: 0
+        entity_browser: 0
+        embed: 0
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_icon:
     type: blazy_media
+    label: hidden
+    settings:
+      caption: {  }
+      class: ''
+      id: ''
+      image: ''
+      link: '1'
+      overlay: ''
+      title: ''
+      vanilla: false
+      icon: ''
+      layout: ''
+      view_mode: ''
+      cache: 0
+      current_view_mode: ''
+      skin: ''
+      fx: ''
+      style: ''
+      background: false
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      responsive_image_style: ''
+      box_style: ''
+      image_style: ''
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
+      _uri: ''
+      breakpoints: {  }
+      sizes: ''
+      grid_header: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
+    third_party_settings: {  }
+    weight: 1
     region: content
 hidden:
   langcode: true

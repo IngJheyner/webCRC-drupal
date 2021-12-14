@@ -111,6 +111,12 @@
           }
         }
 
+        &:hover {
+          div.media.media--bundle--inclusive-language {
+            display: block;
+          }
+        }
+
         &.active {
 
           div.media.media-container {
@@ -163,5 +169,35 @@
         max-width: 90%;
       }
     }
+
+    .slick-dots {
+      padding: 0;
+      top: 90%;
+    }
+  }
+}
+
+// VERTICALES
+.tabs-container.tabs-vertical {
+
+  // BARRA DE NAVEGACION
+  div.nav-tab-content {
+
+    div.nav-pills {
+
+      a {
+        
+        &:hover {
+          div.media.media--bundle--inclusive-language {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  // CONTENIDO
+  div.tab-content {
+
   }
 }

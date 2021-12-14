@@ -21,9 +21,9 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       themes_interest: themes_interest
+    negate: 0
     target_bundles_drag_drop:
       from_library:
         weight: 11
@@ -53,6 +53,6 @@ settings:
         weight: 17
         enabled: false
       themes_interest:
-        enabled: true
         weight: 20
+        enabled: true
 field_type: entity_reference_revisions

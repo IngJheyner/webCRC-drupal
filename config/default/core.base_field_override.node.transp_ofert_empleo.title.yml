@@ -1,0 +1,18 @@
+uuid: 6d0d5dbe-ee1c-469c-b5ff-e5685f811c99
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transp_ofert_empleo
+id: node.transp_ofert_empleo.title
+field_name: title
+entity_type: node
+bundle: transp_ofert_empleo
+label: 'Titulo de oferta'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

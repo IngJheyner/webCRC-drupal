@@ -1,0 +1,21 @@
+uuid: e4a62415-d0e2-42b7-a0d3-78bd9083c593
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_act
+    - node.type.commission_minutes
+  module:
+    - options
+id: node.commission_minutes.field_type_act
+field_name: field_type_act
+entity_type: node
+bundle: commission_minutes
+label: 'Tipo de acta'
+description: 'Tipo acta de comision'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -12,8 +12,8 @@ dependencies:
     - node.type.news_crc
   module:
     - node
-id: news_crc
 label: 'Noticias crc'
+id: news_crc
 description: 'Importar datos de las noticias principales de la crc'
 help: ''
 import_period: -1
@@ -28,54 +28,54 @@ parser_configuration:
   line_limit: 100
 processor: 'entity:node'
 processor_configuration:
+  values:
+    type: news_crc
   langcode: es
+  insert_new: 1
   update_existing: 2
   update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
   expire: -1
   owner_feed_author: false
   owner_id: 0
-  authorize: true
-  skip_hash_check: false
-  values:
-    type: news_crc
-  insert_new: 1
 custom_sources:
   news_title:
-    label: TITULO
     value: TITULO
+    label: TITULO
     machine_name: news_title
   news_category:
-    label: CATEGORIA
     value: CATEGORIA
+    label: CATEGORIA
     machine_name: news_category
   news_created:
-    label: FECHA_CREACION
     value: FECHA_CREACION
+    label: FECHA_CREACION
     machine_name: news_created
   news_content:
-    label: CONTENIDO
     value: CONTENIDO
+    label: CONTENIDO
     machine_name: news_content
   news_introduction_image:
-    label: IMAGEN_INTRODUCCION
     value: IMAGEN_INTRODUCCION
+    label: IMAGEN_INTRODUCCION
     machine_name: news_introduction_image
   news_image:
-    label: IMAGEN
     value: IMAGEN
+    label: IMAGEN
     machine_name: news_image
   news_introduction:
-    label: INTRODUCCION
     value: INTRODUCCION
+    label: INTRODUCCION
     machine_name: news_introduction
 mappings:
   -
     target: title
     map:
       value: news_title
-    unique: {  }
     settings:
       language: null
+    unique: {  }
   -
     target: field_category
     map:

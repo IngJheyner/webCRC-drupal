@@ -1,0 +1,11 @@
+uuid: 7e150b40-4d53-4549-a203-74dcd7180556
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.departments_and_municipalities
+id: taxonomy_term.departments_and_municipalities
+target_entity_type_id: taxonomy_term
+target_bundle: departments_and_municipalities
+default_langcode: site_default
+language_alterable: false

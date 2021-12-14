@@ -1,0 +1,19 @@
+uuid: 83b8fb12-ca95-461b-b3d3-a9fe42a39095
+langcode: es
+status: true
+dependencies: {  }
+id: events_crc_videos_remote
+label: 'Eventos CRC [Videos Remotos]'
+description: 'Tipo de multimedia que almacenara todas los videos remotos para los eventos de la crc'
+source: 'oembed:video'
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_oembed_video
+  thumbnails_directory: 'public://webcrc/eventos/remote_videos'
+  providers:
+    - YouTube
+    - Vimeo
+field_map:
+  type: name
+  title: name

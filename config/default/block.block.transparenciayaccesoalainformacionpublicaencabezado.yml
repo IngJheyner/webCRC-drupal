@@ -15,13 +15,13 @@ plugin: 'block_content:63d3fd79-a7e3-4ce3-aba1-af6e05bc66e2'
 settings:
   id: 'block_content:63d3fd79-a7e3-4ce3-aba1-af6e05bc66e2'
   label: 'Transparencia y acceso a la información pública'
-  provider: block_content
   label_display: visible
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: "/transparencia-y-acceso-a-la-informacion-publica\r\n/transparencia-y-acceso-a-la-informacion-publica/*"
     negate: false
+    pages: "/transparencia-y-acceso-a-la-informacion-publica\r\n/transparencia-y-acceso-a-la-informacion-publica/*"

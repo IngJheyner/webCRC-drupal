@@ -16,19 +16,19 @@ mode: default
 content:
   field_content_icon:
     type: blazy_media
-    weight: 0
     label: hidden
     settings:
-      view_mode: default
-      link: ''
+      caption: {  }
       class: ''
       id: ''
       image: ''
+      link: ''
       overlay: ''
       title: ''
       vanilla: false
       icon: ''
       layout: ''
+      view_mode: default
       cache: 0
       current_view_mode: ''
       skin: ''
@@ -38,7 +38,6 @@ content:
       box_caption: ''
       box_caption_custom: ''
       box_media_style: ''
-      caption: {  }
       responsive_image_style: ''
       box_style: ''
       image_style: ''
@@ -46,16 +45,17 @@ content:
       ratio: ''
       thumbnail_style: ''
       _uri: ''
-      grid: ''
-      grid_medium: ''
-      grid_small: ''
       breakpoints: {  }
       sizes: ''
       grid_header: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
     third_party_settings: {  }
+    weight: 0
     region: content
   field_url:
-    weight: 1
+    type: link
     label: hidden
     settings:
       trim_length: 80
@@ -64,7 +64,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 1
     region: content
 hidden:
   search_api_excerpt: true

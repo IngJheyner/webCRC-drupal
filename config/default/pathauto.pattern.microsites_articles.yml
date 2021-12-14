@@ -11,12 +11,12 @@ pattern: 'micrositios/[node:field_content_type:entity:title]/[node:title]'
 selection_criteria:
   24456b98-def6-47a1-9daa-08f2252d174c:
     id: node_type
-    bundles:
-      microsites_articles: microsites_articles
     negate: false
+    uuid: 24456b98-def6-47a1-9daa-08f2252d174c
     context_mapping:
       node: node
-    uuid: 24456b98-def6-47a1-9daa-08f2252d174c
+    bundles:
+      microsites_articles: microsites_articles
 selection_logic: and
 weight: -5
 relationships: {  }

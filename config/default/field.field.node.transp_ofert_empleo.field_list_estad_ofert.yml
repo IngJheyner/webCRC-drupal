@@ -1,0 +1,23 @@
+uuid: d8c6a645-2683-46e3-b2ff-931c749a12f1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_list_estad_ofert
+    - node.type.transp_ofert_empleo
+  module:
+    - options
+id: node.transp_ofert_empleo.field_list_estad_ofert
+field_name: field_list_estad_ofert
+entity_type: node
+bundle: transp_ofert_empleo
+label: Estado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: Abierta
+default_value_callback: ''
+settings: {  }
+field_type: list_string

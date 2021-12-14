@@ -1,0 +1,21 @@
+uuid: d86c12ea-8767-45c9-b09e-d49f2a1f45db
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_list_periodicity
+    - node.type.list_formats
+  module:
+    - options
+id: node.list_formats.field_list_periodicity
+field_name: field_list_periodicity
+entity_type: node
+bundle: list_formats
+label: Periodicidad
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

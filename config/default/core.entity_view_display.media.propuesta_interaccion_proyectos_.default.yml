@@ -17,16 +17,16 @@ third_party_settings:
         - name
         - field_media_file_1
         - created
+      label: Archivo
       parent_name: ''
+      region: content
       weight: 0
       format_type: fieldset
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: field-proposal
-        classes: ''
         description: ''
-      label: Archivo
 id: media.propuesta_interaccion_proyectos_.default
 targetEntityType: media
 bundle: propuesta_interaccion_proyectos_
@@ -34,30 +34,30 @@ mode: default
 content:
   created:
     type: timestamp
-    weight: 2
-    region: content
     label: above
     settings:
       date_format: medium
       custom_date_format: ''
       timezone: ''
     third_party_settings: {  }
+    weight: 2
+    region: content
   field_media_file_1:
     type: file_default
-    weight: 1
-    region: content
     label: hidden
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
+    weight: 1
+    region: content
   name:
     type: string
-    weight: 0
-    region: content
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   feeds_item: true
   field_ruta_file_propuestas: true

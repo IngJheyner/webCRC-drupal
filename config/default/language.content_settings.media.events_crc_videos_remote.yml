@@ -1,0 +1,11 @@
+uuid: 3650f1fc-22e5-40ec-91a4-1804a07c920f
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.events_crc_videos_remote
+id: media.events_crc_videos_remote
+target_entity_type_id: media
+target_bundle: events_crc_videos_remote
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,20 @@
+uuid: c0a93255-d5d0-47f0-8bf8-d2b1c22b47c2
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_lis_cat_plan_adqu
+field_name: field_lis_cat_plan_adqu
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
