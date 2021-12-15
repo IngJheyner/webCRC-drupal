@@ -171,7 +171,7 @@ mappings:
     settings:
       language: ''
       reference_by: name
-      autocreate: '1'
+      autocreate: 0
   -
     target: field_library_keywords
     map:
@@ -179,7 +179,7 @@ mappings:
     settings:
       language: ''
       reference_by: name
-      autocreate: '1'
+      autocreate: 0
   -
     target: field_library_formats
     map:
@@ -195,7 +195,7 @@ mappings:
     settings:
       language: ''
       reference_by: name
-      autocreate: '1'
+      autocreate: 0
   -
     target: field_library_link_related
     map:

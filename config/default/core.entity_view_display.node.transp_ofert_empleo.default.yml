@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.field.node.transp_ofert_empleo.body
     - field.field.node.transp_ofert_empleo.field_docum_archi
-    - field.field.node.transp_ofert_empleo.field_list_estad_ofert
+    - field.field.node.transp_ofert_empleo.field_lis_est_ofert
     - node.type.transp_ofert_empleo
   module:
     - file
@@ -30,14 +30,14 @@ content:
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    weight: 103
+    weight: 102
     region: content
-  field_list_estad_ofert:
+  field_lis_est_ofert:
     type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 102
+    weight: 103
     region: content
   links:
     settings: {  }
