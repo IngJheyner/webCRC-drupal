@@ -10,7 +10,19 @@ dependencies:
     - field.field.media.comentarios_iteracciones_.field_ruta_archivo_comentarios
     - media.type.comentarios_iteracciones_
   module:
+    - feeds_tamper
     - media
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      66609c50-6f17-405c-bb9a-9017903ab883:
+        separator: '~'
+        limit: null
+        uuid: 66609c50-6f17-405c-bb9a-9017903ab883
+        plugin: explode
+        source: operator
+        weight: 0
+        label: 'Operadores comentarios'
 label: 'Comentarios [ Interacciones ]'
 id: interactions_comments
 description: 'Carga de archivos para interacciones utilizado en proyectos comentarios.'
@@ -77,13 +89,15 @@ mappings:
       reference_by: origname
       existing: '1'
       autocreate: 0
+      feeds_item: false
   -
     target: name
     map:
       value: name_file
     settings:
       language: null
-    unique: {  }
+    unique:
+      value: '1'
   -
     target: created
     map:
@@ -96,6 +110,6 @@ mappings:
     map:
       target_id: operator
     settings:
-      language: null
+      language: ''
       reference_by: name
-      autocreate: false
+      autocreate: 0

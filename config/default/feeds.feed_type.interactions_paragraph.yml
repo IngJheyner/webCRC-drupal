@@ -6,10 +6,41 @@ dependencies:
     - field.field.paragraph.iterecciones_proyectos.feeds_item
     - field.field.paragraph.iterecciones_proyectos.field_comentarios_interacciones
     - field.field.paragraph.iterecciones_proyectos.field_fecha_cierre_iteracciones
+    - field.field.paragraph.iterecciones_proyectos.field_interaction_extemporaneous
+    - field.field.paragraph.iterecciones_proyectos.field_interactions_comments
+    - field.field.paragraph.iterecciones_proyectos.field_interactions_phases
     - field.field.paragraph.iterecciones_proyectos.field_propuestas_interacciones
     - paragraphs.paragraphs_type.iterecciones_proyectos
   module:
+    - feeds_tamper
     - paragraphs
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      58d10ec6-acc9-4849-b705-1ed4ee5ae5a6:
+        separator: '~'
+        limit: null
+        uuid: 58d10ec6-acc9-4849-b705-1ed4ee5ae5a6
+        plugin: explode
+        source: proposals
+        weight: 0
+        label: Explode
+      b5626784-03a8-44cc-985d-f3cbc42dc7a9:
+        separator: '~'
+        limit: null
+        uuid: b5626784-03a8-44cc-985d-f3cbc42dc7a9
+        plugin: explode
+        source: comments
+        weight: 0
+        label: 'Archivos comentarios'
+      6e94fe30-b022-42db-befa-3afad16050ec:
+        separator: '~'
+        limit: null
+        uuid: 6e94fe30-b022-42db-befa-3afad16050ec
+        plugin: explode
+        source: extemporaneous
+        weight: 0
+        label: 'Archivos Extemporaneos'
 label: 'Interacciones [ Proyectos ]'
 id: interactions_paragraph
 description: 'Agregar contenido de tipo parrafos que se utilizan en proyectos comentarios campo interacciones.'
@@ -86,6 +117,10 @@ custom_sources:
     value: extemporaneos
     label: extemporaneos
     machine_name: extemporaneous
+  comments_true:
+    value: sin_comentarios
+    label: sin_comentarios
+    machine_name: comments_true
 mappings:
   -
     target: parent_id
@@ -129,11 +164,6 @@ mappings:
     settings: {  }
     unique: {  }
   -
-    target: behavior_settings
-    map:
-      value: delta
-    settings: {  }
-  -
     target: field_comentarios_interacciones
     map:
       target_id: comments
@@ -151,3 +181,15 @@ mappings:
       reference_by: name
       autocreate: false
       feeds_item: false
+  -
+    target: field_interactions_phases
+    map:
+      value: phases
+    settings:
+      language: null
+  -
+    target: field_interactions_comments
+    map:
+      value: comments_true
+    settings:
+      language: null
