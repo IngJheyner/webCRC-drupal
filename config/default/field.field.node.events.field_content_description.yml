@@ -1,0 +1,21 @@
+uuid: 86ed39be-9cba-4c5e-83b5-eecf48e50e30
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_description
+    - node.type.events
+  module:
+    - text
+id: node.events.field_content_description
+field_name: field_content_description
+entity_type: node
+bundle: events
+label: Contenido
+description: 'Descripón vompleta del evento'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,8 @@
+uuid: 92347475-7a80-428b-95ee-eacff19e82c4
+langcode: es
+status: true
+dependencies: {  }
+name: Conferencistas
+vid: speakers_events
+description: 'Los panelistas de cada evento'
+weight: 0

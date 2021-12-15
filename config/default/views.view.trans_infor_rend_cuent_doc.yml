@@ -105,36 +105,50 @@ display:
           entity_field: title
           plugin_id: field
           label: ''
+          exclude: false
           alter:
             alter_text: false
+            text: ''
             make_link: false
+            path: ''
             absolute: false
-            trim: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
             word_boundary: false
             ellipsis: false
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
             strip_tags: false
+            trim: false
+            preserve_tags: ''
             html: false
-          hide_empty: false
-          empty_zero: false
-          settings:
-            link_to_entity: true
-          plugin_id: field
-          relationship: none
-          group_type: group
-          admin_label: ''
-          exclude: false
           element_type: ''
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
+          hide_empty: false
+          empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
           type: string
+          settings:
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -526,7 +540,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: transparencia-y-acceso-a-la-informacion-publica/planeacion-presupuesto-e-informes/informe-de-rendicion-de-cuentas
+      path: transparencia-y-acceso-a-la-informacion-publica/planeacion-presupuesto-e-informes/informes-de-gestion-evaluacion-y-auditoriai/nforme-de-rendicion-de-cuentas-a-la-ciudadania
     cache_metadata:
       max-age: -1
       contexts:
