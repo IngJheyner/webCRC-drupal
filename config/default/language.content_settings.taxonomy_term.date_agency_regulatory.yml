@@ -1,0 +1,11 @@
+uuid: aac029db-4455-4749-9210-5c98901279f8
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.date_agency_regulatory
+id: taxonomy_term.date_agency_regulatory
+target_entity_type_id: taxonomy_term
+target_bundle: date_agency_regulatory
+default_langcode: site_default
+language_alterable: false

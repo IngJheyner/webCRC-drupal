@@ -1,0 +1,8 @@
+uuid: 045022cc-2468-4785-80d1-1547589aa2bd
+langcode: es
+status: true
+dependencies: {  }
+name: 'Fecha de Agenda Regulatoria'
+vid: date_agency_regulatory
+description: 'Agenda Regulatoria.'
+weight: 0

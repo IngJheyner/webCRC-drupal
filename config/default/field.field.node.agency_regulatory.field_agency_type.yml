@@ -1,0 +1,21 @@
+uuid: a17ea52a-29a3-4385-b2ab-e9c85af269d3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_agency_type
+    - node.type.agency_regulatory
+  module:
+    - options
+id: node.agency_regulatory.field_agency_type
+field_name: field_agency_type
+entity_type: node
+bundle: agency_regulatory
+label: 'Tipo de Agenda'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

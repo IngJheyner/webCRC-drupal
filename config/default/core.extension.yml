@@ -137,6 +137,7 @@ module:
   viewsreference: 0
   webcrc_library: 0
   webcrc_projects_regulatory: 0
+  webcrc_schedule: 0
   webform: 0
   webform_submission_log: 0
   webform_ui: 0

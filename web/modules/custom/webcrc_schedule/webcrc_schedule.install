@@ -11,13 +11,13 @@
 function webcrc_schedule_install() {
     \Drupal::messenger()->addStatus(__FUNCTION__);
 
-    webcrc_schedule_schema();
+    //webcrc_schedule_schema();
 }
 
 function webcrc_schedule_uninstall() {
     \Drupal::messenger()->addStatus(__FUNCTION__);
 
-    webcrc_schedule_schema();
+    //webcrc_schedule_schema();
 }
 
 /* ============================================

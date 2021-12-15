@@ -1,0 +1,29 @@
+uuid: 4c1cfe03-f1cd-462d-9e98-13533f8dc0e5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_agency_date
+    - node.type.agency_regulatory
+    - taxonomy.vocabulary.date_agency_regulatory
+id: node.agency_regulatory.field_agency_date
+field_name: field_agency_date
+entity_type: node
+bundle: agency_regulatory
+label: 'Fecha Agenda Regulatoria'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      date_agency_regulatory: date_agency_regulatory
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference
