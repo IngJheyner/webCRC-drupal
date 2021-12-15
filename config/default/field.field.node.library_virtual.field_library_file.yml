@@ -41,6 +41,6 @@ settings:
   handler_settings: {  }
   file_directory: ''
   file_extensions: 'txt pdf docx'
-  max_filesize: '2 mb'
+  max_filesize: '20 mb'
   description_field: false
 field_type: file
