@@ -49,6 +49,12 @@ body {
   display: none;
 }
 
+.media--blazy {
+  img.b-blur {
+    display: none;
+  }
+}
+
 // ESTILOS GIF LENGUAJE INCLUSIVO
 div.media.media--bundle--inclusive-language {
   display: none;
@@ -106,23 +112,14 @@ div.media.media--bundle--inclusive-language {
   
 }
 
-video ~ div {
-  @include content-media-video;
+.field--name-field-media-video-file {
+  div {
+    @include content-media-video;
+  }
 }
 
 video {
   @include media-video;
-}
-
-.media--blazy {
-  img.b-blur {
-    display: none;
-  }
-}
-
-.regulatory-agenda--full {
-  padding: 3rem;
-  margin: 0 3rem;
 }
 
 #bottom_a > div {
@@ -731,14 +728,14 @@ div.most-consulted-content {
     }
   }
 
-  .tab-content {
+  /* .tab-content {
     padding: 0;
     background: rgb(255,255,255);
 
     .embed-container  {
       padding-bottom: 120%;
     }
-  }
+  } */
 }
 
 // TODAS LAS NOTICIAS
