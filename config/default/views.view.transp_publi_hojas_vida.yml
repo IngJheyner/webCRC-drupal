@@ -3,7 +3,8 @@ langcode: es
 status: true
 dependencies:
   config:
-    - field.storage.node.field_fech_publi_vacant
+    - field.storage.node.body
+    - field.storage.node.field_fech_publi_vac
     - field.storage.node.field_list_anio_infor_decisi
     - field.storage.paragraph.field_cargo_nivel
     - field.storage.paragraph.field_dochoja_de_vida
@@ -19,6 +20,7 @@ dependencies:
     - options
     - paragraphs
     - taxonomy
+    - text
     - user
     - views_bootstrap
 id: transp_publi_hojas_vida
@@ -164,10 +166,10 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_fech_publi_vacant:
-          id: field_fech_publi_vacant
-          table: node__field_fech_publi_vacant
-          field: field_fech_publi_vacant
+        field_fech_publi_vac:
+          id: field_fech_publi_vac
+          table: node__field_fech_publi_vac
+          field: field_fech_publi_vac
           relationship: none
           group_type: group
           admin_label: ''
@@ -176,7 +178,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '<p> <small>fecha: {{ field_fech_publi_vacant }}</ small></p>'
+            text: '<p><small>Fecha: {{ field_fech_publi_vac }} </small></p>'
             make_link: false
             path: ''
             absolute: false
@@ -218,6 +220,68 @@ display:
           settings:
             timezone_override: ''
             format_type: fecha_corta_webcrc
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        body:
+          id: body
+          table: node__body
+          field: body
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -736,7 +800,8 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_fech_publi_vacant'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_fech_publi_vac'
         - 'config:field.storage.node.field_list_anio_infor_decisi'
         - 'config:field.storage.paragraph.field_cargo_nivel'
         - 'config:field.storage.paragraph.field_dochoja_de_vida'
@@ -760,7 +825,8 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_fech_publi_vacant'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_fech_publi_vac'
         - 'config:field.storage.node.field_list_anio_infor_decisi'
         - 'config:field.storage.paragraph.field_cargo_nivel'
         - 'config:field.storage.paragraph.field_dochoja_de_vida'

@@ -1,4 +1,4 @@
-uuid: 5a1f72c7-ff7a-4e12-81b1-ba87bc6983bd
+uuid: 1ffa3986-6b78-4d9c-ab52-1c491999611d
 langcode: es
 status: true
 dependencies:
@@ -11,7 +11,7 @@ id: node.trans_pub_hojas_vida.field_list_anio_infor_decisi
 field_name: field_list_anio_infor_decisi
 entity_type: node
 bundle: trans_pub_hojas_vida
-label: Año
+label: 'Año de publicación'
 description: ''
 required: false
 translatable: true

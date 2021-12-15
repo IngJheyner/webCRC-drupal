@@ -554,7 +554,7 @@ display:
           admin_label: 'field_list_cat_ejec_presupue: Término de la taxonomía'
           plugin_id: standard
           required: true
-      css_class: 'pr-3 transparenciaAcceso pages transparenciaAccesoTables fileTable '
+      css_class: 'transparenciaAcceso pages transparenciaAccesoTables fileTable '
       header:
         area_text_custom:
           id: area_text_custom

@@ -1,13 +1,13 @@
-uuid: e7d13ad9-50de-422e-a26a-f122409993cd
+uuid: 3d138491-79b3-434f-91f2-4ea2f45868bb
 langcode: es
 status: true
 dependencies:
   config:
-    - field.storage.node.field_list_cat_pub_hoj_vid
+    - field.storage.node.field_list_cat_pub_hoj_vida
     - node.type.trans_pub_hojas_vida
     - taxonomy.vocabulary.trans_lis_cat_hoj_de_vi
-id: node.trans_pub_hojas_vida.field_list_cat_pub_hoj_vid
-field_name: field_list_cat_pub_hoj_vid
+id: node.trans_pub_hojas_vida.field_list_cat_pub_hoj_vida
+field_name: field_list_cat_pub_hoj_vida
 entity_type: node
 bundle: trans_pub_hojas_vida
 label: Categoría
@@ -25,5 +25,5 @@ settings:
       field: name
       direction: asc
     auto_create: false
-    auto_create_bundle: type_projects_comments
+    auto_create_bundle: ''
 field_type: entity_reference

@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.field.node.transp_ofert_empleo.body
     - field.field.node.transp_ofert_empleo.field_docum_archi
-    - field.field.node.transp_ofert_empleo.field_list_estad_ofert
+    - field.field.node.transp_ofert_empleo.field_lis_est_ofert
     - node.type.transp_ofert_empleo
   module:
     - file
@@ -19,7 +19,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 1
+    weight: 2
     region: content
     settings:
       rows: 9
@@ -34,13 +34,15 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_docum_archi:
+    type: file_generic
     weight: 3
     region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
-  field_list_estad_ofert:
-    weight: 2
+  field_lis_est_ofert:
+    type: options_select
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
