@@ -1,0 +1,19 @@
+uuid: f216ba5a-8ce7-4556-825b-4856e88864b1
+langcode: es
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_agency_activity
+field_name: field_agency_activity
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

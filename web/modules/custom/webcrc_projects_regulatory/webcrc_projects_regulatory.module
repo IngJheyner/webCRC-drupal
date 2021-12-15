@@ -42,10 +42,20 @@ function webcrc_projects_regulatory_preprocess_field(&$variables, $hook){
   $element = $variables['element'];
   if($element['#bundle'] == 'proyectos_regulatorios'){
     //Definir si existe algun documento final para ocultar o
-    //mostrar las interacciones    
-    $nid = \Drupal::routeMatch()->getParameter('node')->id();
-    $field = \Drupal::entityTypeManager()->getStorage('node')->load($nid);
-    $variables['document_defined'] = $field->get('field_projects_documents_endings')->getValue();
+    //mostrar las interacciones 
+    
+    if(\Drupal::routeMatch()->getRouteName() != "view.frontpage.page_1"){
+
+      $nid = \Drupal::routeMatch()->getParameter('node')->id();
+      
+      if(!is_null($nid)){
+        $field = \Drupal::entityTypeManager()->getStorage('node')->load($nid);
+        $variables['document_defined'] = $field->get('field_projects_documents_endings')->getValue();
+      }
+
+    }
+    
+    
   }  
   
 }

@@ -43,9 +43,9 @@ settings:
           name: Plantillas
           items:
             - microsites_articles
+            - Spoiler
             - Accordion
             - Templates
-            - Spoiler
         -
           name: Tools
           items:

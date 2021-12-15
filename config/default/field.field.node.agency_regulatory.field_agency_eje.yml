@@ -1,0 +1,29 @@
+uuid: 495a7b14-94af-4d3f-aef2-410983631a05
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_agency_eje
+    - node.type.agency_regulatory
+    - taxonomy.vocabulary.eje
+id: node.agency_regulatory.field_agency_eje
+field_name: field_agency_eje
+entity_type: node
+bundle: agency_regulatory
+label: Eje
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      eje: eje
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

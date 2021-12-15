@@ -1,0 +1,56 @@
+<?php
+/**
+ * @file
+ * Install, update and uninstall functions for the Forcontu forms module.
+ */
+
+/**
+ * Implements hook_install().
+ */
+
+function webcrc_schedule_install() {
+    \Drupal::messenger()->addStatus(__FUNCTION__);
+
+    webcrc_schedule_schema();
+}
+
+function webcrc_schedule_uninstall() {
+    \Drupal::messenger()->addStatus(__FUNCTION__);
+
+    webcrc_schedule_schema();
+}
+
+/* ============================================
+SCHEMA TABLE FORM schedule colors
+=============================================== */
+function webcrc_schedule_schema() {
+
+    $schema['webcrc_schedule_colors'] = [
+        'description' => 'Tabla que guarda los colores de la agenda',
+        'fields' => [
+            'nid' => [
+                'type' => 'int',
+                'unsigned' => TRUE,
+                'not null' => TRUE,
+                'description' => 'nid node.',
+            ],
+            'date_initial_colors' => [
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => TRUE,
+                'default' => '',
+                'description' => 'colores para el anio inicial de agenda.',
+            ],
+            'date_finished_colors' => [
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => TRUE,
+                'default' => '',
+                'description' => 'colores para el anio final de agenda.',
+            ]
+        ],
+        'primary key' => ['nid'],
+    ];
+
+    return $schema;
+}

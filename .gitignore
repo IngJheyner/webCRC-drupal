@@ -72,3 +72,7 @@ node_modules/
 /.env
 /.editorconfig
 /.gitattributes
+
+#ddev
+/.ddev
+install_ddev.sh

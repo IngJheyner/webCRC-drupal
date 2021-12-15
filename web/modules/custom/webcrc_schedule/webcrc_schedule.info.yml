@@ -1,0 +1,6 @@
+name: Agenda Regulatoria
+type: module
+description: Se crea la agenda de actividades/proyectos de la CRC.
+package: Webcrc
+core: 8.x
+core_version_requirement: ^8 || ^9

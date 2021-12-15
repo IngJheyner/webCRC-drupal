@@ -582,7 +582,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: transparencia-y-acceso-a-la-informacion-publica/planeacion-presupuesto-e-informes/informes-de-la-oficina-de-control-interno/informes-pormenorizados
+      path: transparencia-y-acceso-a-la-informacion-publica/planeacion-presupuesto-e-informes/informes-pormenorizados
     cache_metadata:
       max-age: -1
       contexts:

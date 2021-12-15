@@ -1,0 +1,37 @@
+uuid: 7dcd0dcc-1cfa-486c-9605-049dc8252b9b
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.agency_regulatory.field_agency_activity
+    - field.field.node.agency_regulatory.field_agency_date_finished
+    - field.field.node.agency_regulatory.field_agency_date_initial
+    - field.field.node.agency_regulatory.field_agency_eje
+    - field.field.node.agency_regulatory.field_agency_note
+    - field.field.node.agency_regulatory.field_agency_trimester_finished
+    - field.field.node.agency_regulatory.field_agency_trimester_initial
+    - node.type.agency_regulatory
+  module:
+    - user
+id: node.agency_regulatory.teaser
+targetEntityType: node
+bundle: agency_regulatory
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_agency_activity: true
+  field_agency_date_finished: true
+  field_agency_date_initial: true
+  field_agency_eje: true
+  field_agency_note: true
+  field_agency_trimester_finished: true
+  field_agency_trimester_initial: true
+  langcode: true
+  search_api_excerpt: true

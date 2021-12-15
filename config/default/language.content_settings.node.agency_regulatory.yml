@@ -1,0 +1,11 @@
+uuid: f71d4677-28ae-4215-8c48-1b820e3c77d4
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.agency_regulatory
+id: node.agency_regulatory
+target_entity_type_id: node
+target_bundle: agency_regulatory
+default_langcode: site_default
+language_alterable: false

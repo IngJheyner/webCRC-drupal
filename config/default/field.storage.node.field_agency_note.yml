@@ -1,17 +1,15 @@
-uuid: 72526c25-911e-41c5-a5fb-a4d7b2016238
+uuid: a3537e2f-8f09-4028-954d-513a289cae98
 langcode: es
 status: true
 dependencies:
   module:
-    - paragraphs
-id: paragraph.field_content_id
-field_name: field_content_id
-entity_type: paragraph
-type: string
+    - node
+id: node.field_agency_note
+field_name: field_agency_note
+entity_type: node
+type: string_long
 settings:
-  max_length: 50
   case_sensitive: false
-  is_ascii: false
 module: core
 locked: false
 cardinality: 1

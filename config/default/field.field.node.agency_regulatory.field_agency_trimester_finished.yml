@@ -1,0 +1,21 @@
+uuid: efd0be33-f195-4902-be52-eba33fd64068
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_agency_trimester_finished
+    - node.type.agency_regulatory
+  module:
+    - options
+id: node.agency_regulatory.field_agency_trimester_finished
+field_name: field_agency_trimester_finished
+entity_type: node
+bundle: agency_regulatory
+label: Trimestre
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

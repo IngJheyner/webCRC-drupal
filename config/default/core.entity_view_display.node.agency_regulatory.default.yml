@@ -1,0 +1,91 @@
+uuid: 7b99375d-5ecc-4e98-88a1-c16d6bb24511
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.agency_regulatory.field_agency_activity
+    - field.field.node.agency_regulatory.field_agency_date_finished
+    - field.field.node.agency_regulatory.field_agency_date_initial
+    - field.field.node.agency_regulatory.field_agency_eje
+    - field.field.node.agency_regulatory.field_agency_note
+    - field.field.node.agency_regulatory.field_agency_trimester_finished
+    - field.field.node.agency_regulatory.field_agency_trimester_initial
+    - node.type.agency_regulatory
+  module:
+    - datetime
+    - link
+    - options
+    - user
+id: node.agency_regulatory.default
+targetEntityType: node
+bundle: agency_regulatory
+mode: default
+content:
+  field_agency_activity:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_agency_date_finished:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_agency_date_initial:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_agency_eje:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_agency_note:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_agency_trimester_finished:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_agency_trimester_initial:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  langcode: true
+  search_api_excerpt: true

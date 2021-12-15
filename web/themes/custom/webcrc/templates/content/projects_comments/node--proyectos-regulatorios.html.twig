@@ -81,6 +81,7 @@
   ]
 %}
 
+{% if node.isPublished() %}
 <article{{ attributes.addClass(classes) }}>
 
   <section class="projects__regulatory-content pt-4 pt-md-5">
@@ -241,3 +242,4 @@
   </section>  
 
 </article>
+{% endif %}

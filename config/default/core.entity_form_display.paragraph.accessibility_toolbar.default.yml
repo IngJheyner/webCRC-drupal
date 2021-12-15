@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.accessibility_toolbar.field_content_icon
-    - field.field.paragraph.accessibility_toolbar.field_content_id
     - field.field.paragraph.accessibility_toolbar.field_url
     - paragraphs.paragraphs_type.accessibility_toolbar
   module:

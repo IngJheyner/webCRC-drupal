@@ -1,0 +1,20 @@
+uuid: 1c8a89f3-f0da-423b-bf16-a666d8441130
+langcode: es
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+id: node.field_agency_date_finished
+field_name: field_agency_date_finished
+entity_type: node
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
