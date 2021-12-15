@@ -4,8 +4,8 @@ status: true
 dependencies:
   module:
     - file
-id: library_virtual_file
 label: 'Archivo [ Biblioteca Virtual ]'
+id: library_virtual_file
 description: 'Carga de archivos para biblioteca Virtual'
 help: ''
 import_period: 3600
@@ -20,50 +20,50 @@ parser_configuration:
   line_limit: 100
 processor: 'entity:file'
 processor_configuration:
+  values: {  }
   langcode: es
   insert_new: 1
   update_existing: 2
   update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
   expire: -1
   owner_feed_author: false
   owner_id: 50
-  authorize: false
-  skip_hash_check: false
-  values: {  }
 custom_sources:
   filename:
-    label: filename
     value: filename
+    label: filename
     machine_name: filename
   name:
-    label: name
     value: name
+    label: name
     machine_name: name
   uid:
-    label: uid
     value: uid
+    label: uid
     machine_name: uid
   uri:
-    label: uri
     value: uri
+    label: uri
     machine_name: uri
   filemime:
-    label: filemime
     value: filemime
+    label: filemime
     machine_name: filemime
 mappings:
   -
     target: filename
     map:
       value: filename
-    unique: {  }
     settings: {  }
+    unique: {  }
   -
     target: origname
     map:
       value: name
-    unique: {  }
     settings: {  }
+    unique: {  }
   -
     target: uid
     map:
@@ -75,5 +75,5 @@ mappings:
     target: filemime
     map:
       value: filemime
-    unique: {  }
     settings: {  }
+    unique: {  }
