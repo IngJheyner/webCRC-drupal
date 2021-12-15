@@ -6,7 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.transp_ofert_empleo.body
     - field.field.node.transp_ofert_empleo.field_docum_archi
-    - field.field.node.transp_ofert_empleo.field_list_estad_ofert
+    - field.field.node.transp_ofert_empleo.field_lis_est_ofert
     - node.type.transp_ofert_empleo
   module:
     - text
@@ -32,6 +32,6 @@ content:
 hidden:
   addtoany: true
   field_docum_archi: true
-  field_list_estad_ofert: true
+  field_lis_est_ofert: true
   langcode: true
   search_api_excerpt: true

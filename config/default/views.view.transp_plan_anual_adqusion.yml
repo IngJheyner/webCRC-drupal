@@ -535,6 +535,7 @@ display:
           replica: false
           query_tags: {  }
       css_class: 'transparenciaAcceso pages transparenciaAccesoTables fileTable '
+      use_ajax: true
       header:
         area_text_custom:
           id: area_text_custom

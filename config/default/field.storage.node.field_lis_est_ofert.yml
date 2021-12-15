@@ -1,12 +1,12 @@
-uuid: e4a6b679-bcdc-43ee-9f61-1bacd6ac8f0d
+uuid: 2731e953-9edf-45fb-9601-e521fe941da8
 langcode: es
 status: true
 dependencies:
   module:
     - node
     - options
-id: node.field_list_estad_ofert
-field_name: field_list_estad_ofert
+id: node.field_lis_est_ofert
+field_name: field_lis_est_ofert
 entity_type: node
 type: list_string
 settings:

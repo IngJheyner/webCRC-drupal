@@ -1,17 +1,17 @@
-uuid: 3a5d108d-186f-464a-ba78-bb3ebb1df0e1
+uuid: 99b576ae-964a-4759-b6ba-bf286b6c7b8b
 langcode: es
 status: true
 dependencies:
   module:
+    - datetime
     - node
-    - taxonomy
-id: node.field_list_cat_pub_hoj_vid
-field_name: field_list_cat_pub_hoj_vid
+id: node.field_fech_publi_vac
+field_name: field_fech_publi_vac
 entity_type: node
-type: entity_reference
+type: datetime
 settings:
-  target_type: taxonomy_term
-module: core
+  datetime_type: date
+module: datetime
 locked: false
 cardinality: 1
 translatable: true
