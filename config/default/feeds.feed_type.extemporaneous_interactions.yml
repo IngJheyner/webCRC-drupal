@@ -10,7 +10,19 @@ dependencies:
     - field.field.media.interactions_extemporaneous.field_projects_operator
     - media.type.interactions_extemporaneous
   module:
+    - feeds_tamper
     - media
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      e16f6700-65aa-4d49-a7cb-b02ff92025d3:
+        separator: '~'
+        limit: null
+        uuid: e16f6700-65aa-4d49-a7cb-b02ff92025d3
+        plugin: explode
+        source: operator
+        weight: 0
+        label: 'Operador Extemporaneos'
 label: 'Extemporaneos [ Interacciones ]'
 id: extemporaneous_interactions
 description: 'Carga de archivos para interacciones utilizado en proyectos comentarios.'
@@ -77,13 +89,15 @@ mappings:
       reference_by: origname
       existing: '1'
       autocreate: 0
+      feeds_item: false
   -
     target: name
     map:
       value: name_file
     settings:
       language: null
-    unique: {  }
+    unique:
+      value: '1'
   -
     target: created
     map:
@@ -96,6 +110,6 @@ mappings:
     map:
       target_id: operator
     settings:
-      language: null
+      language: ''
       reference_by: name
-      autocreate: false
+      autocreate: 0

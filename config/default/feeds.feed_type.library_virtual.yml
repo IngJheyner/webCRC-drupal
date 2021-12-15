@@ -23,7 +23,7 @@ third_party_settings:
   feeds_tamper:
     tampers:
       c780636f-15ae-4a27-b97a-b722d9c247ad:
-        separator: ','
+        separator: '~'
         limit: null
         uuid: c780636f-15ae-4a27-b97a-b722d9c247ad
         plugin: explode
@@ -31,7 +31,7 @@ third_party_settings:
         weight: 0
         label: palabras
       96c4fcc9-3d83-4a71-8b63-e107651a4f6a:
-        separator: ','
+        separator: '~'
         limit: null
         uuid: 96c4fcc9-3d83-4a71-8b63-e107651a4f6a
         plugin: explode
@@ -39,7 +39,7 @@ third_party_settings:
         weight: 0
         label: autores
       ed8a7911-86ce-4c8e-a3b7-d725301d52d1:
-        separator: ','
+        separator: '~'
         limit: null
         uuid: ed8a7911-86ce-4c8e-a3b7-d725301d52d1
         plugin: explode
@@ -47,7 +47,7 @@ third_party_settings:
         weight: 0
         label: url
       06faee09-1da7-45dd-b022-3f7ef02bf852:
-        separator: ','
+        separator: '~'
         limit: null
         uuid: 06faee09-1da7-45dd-b022-3f7ef02bf852
         plugin: explode
@@ -234,3 +234,4 @@ mappings:
       reference_by: origname
       existing: '1'
       autocreate: 0
+      feeds_item: false

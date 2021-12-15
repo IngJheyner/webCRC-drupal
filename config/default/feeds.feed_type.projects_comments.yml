@@ -21,7 +21,7 @@ third_party_settings:
   feeds_tamper:
     tampers:
       50876f0a-9b16-4199-af58-c4b0f93f00a8:
-        separator: ','
+        separator: '~'
         limit: null
         uuid: 50876f0a-9b16-4199-af58-c4b0f93f00a8
         plugin: explode
@@ -172,9 +172,9 @@ mappings:
     map:
       target_id: services
     settings:
-      language: null
+      language: ''
       reference_by: name
-      autocreate: false
+      autocreate: '1'
   -
     target: nid
     map:

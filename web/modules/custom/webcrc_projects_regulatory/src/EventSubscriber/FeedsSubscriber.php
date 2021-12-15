@@ -46,6 +46,10 @@ class FeedsSubscriber implements EventSubscriberInterface {
             $delta = 0;
             $entity_id = 0;
 
+            $this->database->delete('node__field_interacciones_proyectos')
+                                //->condition('entity_id', $rows['feeds_item_guid'])
+                                ->execute();
+
             /*while($rows = $result->fetchAssoc()){
 
                 $this->database->delete('node__field_interacciones_proyectos')

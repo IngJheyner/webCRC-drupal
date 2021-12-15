@@ -1,9 +1,7 @@
 uuid: b079e6d7-665d-4aef-97c1-2ffc7baf15f2
 langcode: es
-status: false
+status: true
 dependencies:
-  content:
-    - 'block_content:tabs_consulted_content:9ef5effc-94da-4dce-a1d8-5bac3078b416'
   module:
     - system
   theme:
