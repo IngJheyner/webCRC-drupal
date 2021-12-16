@@ -8,7 +8,6 @@ dependencies:
     - node.type.news_crc
   module:
     - node
-    - options
     - text
     - user
     - views_bootstrap
@@ -409,10 +408,10 @@ display:
           total_pages: null
           id: 0
           tags:
-            next: Adelante
-            previous: Atrás
-            first: '« Primero'
-            last: 'Último »'
+            next: 'Siguiente ››'
+            previous: '‹‹ Anterior'
+            first: '« Primera'
+            last: 'Última »'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -422,6 +421,18 @@ display:
             offset: false
             offset_label: Offset
           quantity: 9
+      empty:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text_custom
+          empty: true
+          content: '<p>No se encontró contenido relacionado con la búsqueda, por favor,  intente nuevamente con otro criterio de búsqueda. </p>'
+          tokenize: false
       filters:
         status:
           id: status
@@ -498,6 +509,8 @@ display:
           separator: ''
           hide_empty: false
       defaults:
+        empty: false
+        use_ajax: false
         pager: false
         style: false
         row: false
@@ -505,6 +518,7 @@ display:
         filters: false
         filter_groups: false
         header: false
+      use_ajax: true
       header:
         area_text_custom:
           id: area_text_custom

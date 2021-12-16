@@ -349,15 +349,17 @@ display:
           separator: ', '
           field_api_classes: false
       pager:
-        type: mini
+        type: full
         options:
           offset: 0
           items_per_page: 10
           total_pages: null
           id: 0
           tags:
-            next: ››
-            previous: ‹‹
+            next: 'Siguiente ››'
+            previous: '‹‹ Anterior'
+            first: '« Primera'
+            last: 'Última »'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -366,6 +368,7 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
+          quantity: 9
       exposed_form:
         type: basic
         options:
@@ -383,7 +386,18 @@ display:
       cache:
         type: tag
         options: {  }
-      empty: {  }
+      empty:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text_custom
+          empty: true
+          content: '<p>No se encontró contenido relacionado con la búsqueda, por favor,  intente nuevamente con otro criterio de búsqueda. </p>'
+          tokenize: false
       sorts:
         field_list_anio_infor_decisi_value:
           id: field_list_anio_infor_decisi_value
@@ -636,6 +650,10 @@ display:
               field: field_list_cat_infor_trismes_acc
               rendered: true
               rendered_strip: true
+            -
+              field: field_list_anio_infor_decisi
+              rendered: true
+              rendered_strip: true
           row_class: 'mr-5 mb-3 fileTable'
           default_row_class: true
           title_field: ''
@@ -660,6 +678,7 @@ display:
           plugin_id: standard
           required: true
       css_class: 'transparenciaAcceso pages transparenciaAccesoTables fileTable '
+      use_ajax: true
       header:
         area_text_custom:
           id: area_text_custom
@@ -702,8 +721,8 @@ display:
         - 'config:field.storage.node.field_list_anio_infor_decisi'
         - 'config:field.storage.node.field_list_cat_infor_trismes_acc'
         - 'config:field.storage.node.field_list_semestr_infor_acces'
-  page_1:
-    id: page_1
+  trans_infor_trimestr_sobre_infor_queja_reclamos:
+    id: trans_infor_trimestr_sobre_infor_queja_reclamos
     display_title: Page
     display_plugin: page
     position: 1
