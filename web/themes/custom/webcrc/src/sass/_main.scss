@@ -14,10 +14,18 @@ body {
 
 // CLASES GENERALES
 .logo-postdata {
+  font-family: $roboto-condensed;
   position: relative;
-  color: rgba(254, 221, 50, 1);
-  font-size: 10rem;
+  display: block;
+  width: max-content;
+  margin: auto;
+  font-size: 80pt;
   font-weight: bold;
+  color: $text-yellow !important;
+
+  @include large-lg {
+    font-size: 80pt;
+  }
 
   &:after {
     content: '';
@@ -27,7 +35,7 @@ body {
     bottom: 0;
     width: 35%;
     margin-right: 2rem;
-    border: 5px solid rgba(254, 221, 50, 1);
+    border: 5px solid $bg-yellow;
     border-radius: 20px;
   }
 }
@@ -52,6 +60,22 @@ body {
 .media--blazy {
   img.b-blur {
     display: none;
+  }
+}
+
+.title-block-primary {
+
+  .media {
+
+    img {
+      width: 30px;
+      font-weight: normal;
+
+      @include small {
+        width: 52px;
+        font-weight: bold;
+      }
+    }
   }
 }
 
@@ -370,192 +394,133 @@ div.most-consulted-content {
   }
 }
 
-.tabs-container.tabs-vertical {
-  border-radius: 20px;
-  box-shadow: 0 0 5px 0px rgb(0,0,0);
+// INDICADORES
+.indicators-container {
+  background: $bg-white;
 
-  .nav-tab-content {
-    box-shadow: 0 0 10px 0px rgba(0, 0, 0, .5);
-    z-index: 1;
-  }
+  div.indicators-container-items {
+    padding: 20px 50px;
 
-  .nav {
-
-    .title {
-      padding: 20px;
+    div.card-indicator {
+      max-width: 250px;
+      width: 100%;
+      border-radius: $border-radius-global;
 
       * {
-        font-size: 20pt;
-        font-weight: bold;
-      }
-    }
-
-    a {
-      position: relative;
-      background: rgba(214, 214, 214, 1);
-      border-radius: 0;
-      text-decoration: none;
-      border-bottom: 2px solid rgb(255, 255, 255);
-
-      * {
-        color: rgba(47, 42, 124, 1);
+        font-family: $roboto-condensed;
       }
 
-      &:after {
-        font-family: "Material Icons";
-        content: "arrow_right";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 89%;
-        font-size: 7rem;
-        line-height: .99;
-        color: transparent;
+      &:first-child {
+        background: $bg-dark-blue;
+
+        .card-body {
+          background: $bg-dark-blue;
+        }
+
+        * {
+          color: $text-white;
+        }
       }
 
       &:last-child {
-        border-bottom: none;
-      }
-    }
-
-    a.active {
-      background: rgba(244, 67, 92, 1);
-      transition: all .3s ease;
-
-      * {
-        color: rgba(255, 255, 255, 1);
+        margin-right: 0 !important;
       }
 
-      &:after {
-        color: rgba(244, 67, 92, 1);
-        transition: all .3s ease;
-      }
-    }
-  }
+      .card-body {
+        background: $bg-light-grey;
+        border-radius: $border-radius-global $border-radius-global 0 0;
 
-  .tab-content {
-    background: rgba(255, 255, 255, 1);
-    height: 100%;
-  }
-}
-
-// INDICADORES
-.indicators-container {
-  background: rgba(255, 255, 255, 1);
-
-  .row .col:first-child .card, 
-  .row .col:first-child .card .card-body {
-    background: rgba(40, 55, 137, 1);
-  }
-
-  .card {
-    width: 100%;
-    max-width: 270px;
-    min-width: 255px;
-    margin: auto;
-    overflow: hidden;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0px 6px 9px 1px rgba(0, 0, 0, .3);
-
-    .card-body {
-      background: rgba(241, 241, 241, 1);
-      padding: 15px 10px 5px;
-      border: none;
-
-      * {
-        margin: 20px auto;
-        line-height: 1;
-      }
-
-      .count_indicator {
-        font-size: 45pt;
-        font-weight: bold;
-      }
-
-      .unit, .unit * {
-        font-size: 18pt;
-        font-weight: bold;
-      }
-
-      .description, .description * {
-        font-size: 14pt;
-      }
-    }
-
-    .card-footer {
-      padding: 30px 18px;
-      background: rgba(40, 55, 137, 1);
-      border: none;
-
-      * {
-        color: rgba(255, 255, 255, 1);
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 13pt;
-        line-height: 1;
-      }
-
-      > .media {
-        max-width: 90%;
-        margin: 0 auto;
-      }
-
-      .font-image {
-        background: rgba(255, 255, 255, 1);
-        border-radius: 50%;
-      }
-
-      img {
-        width: 100%;
-        min-width: 30px;
-        max-width: 40px;
-      }
-    }
-  }
-
-  .card-indicator {
-
-    a.btn-link {
-      display: none;
-      text-transform: none;
-      text-decoration: underline;
-    }
-  }
-
-  .card-indicator:hover {
-
-    .card-body, .card-footer {
-      background: rgba(244, 67, 92, 1);
-
-      * {
-        color: rgba(255, 255, 255, 1);
-      }
-    }
-
-    .card-footer {
-      text-align: center;
-      padding: 0 0 16px;
-
-      .media {
-
-        span {
-          display: none;
+        > * {
+          margin: auto;
         }
 
-        .media-body {
-          margin-left: 0 !important;
+        .count_indicator {
+          margin: auto;
+          font-size: 30pt;
+          font-weight: bold;
 
-          div {
-            width: 100%;
-            max-width: 160px;
-            min-width: 150px;
-            margin: 0 auto 20px;
+          @include large {
+            font-size: 30pt;
+          }
+
+          @include large-lg {
+            font-size: 40px;
           }
         }
 
-        a {
-          display: block;
+        .unit {
+          font-size: 12pt;
+          font-weight: 700;
+
+          @include large {
+            font-size: 16pt;
+          }
+
+          @include large-lg {
+            font-size: 20pt;
+          }
+
+          * {
+            font-size: 12pt;
+            font-weight: 700;
+
+            @include large {
+              font-size: 16pt;
+            }
+  
+            @include large-lg {
+              font-size: 20pt;
+            }
+          }
+        }
+
+        .description {
+          font-size: 12pt;
+          font-weight: normal;
+        }
+      }
+
+      .card-footer {
+        padding: 20px 10px;
+        background: $bg-dark-blue;
+        border-radius: 0 0 $border-radius-global $border-radius-global;
+
+        * {
+          font-size: 11pt;
+          font-weight: bold;
+          color: $text-white;
+        }
+
+        .media {
+          max-width: 165px;
+          margin: auto;
+
+          .media {
+            padding: 10px;
+            background: $bg-white;
+            border-radius: 50%;
+
+            img {
+              width: 18px;
+
+              @include large-lg {
+                width: 25px;
+              }
+            }
+          }
+
+          .media-body {
+            padding: 0 1px;
+            text-align: left;
+
+            a {
+              display: none;
+              font-weight: normal;
+              text-transform: capitalize;
+              font-size: 12pt;
+              text-align: center;
+            }
+          }
         }
       }
     }
