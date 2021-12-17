@@ -398,6 +398,19 @@ display:
             label: ''
             field_identifier: field_list_anio_infor_decisi_value
           exposed: false
+        field_lista_mes_inf_decisi_value:
+          id: field_lista_mes_inf_decisi_value
+          table: node__field_lista_mes_inf_decisi
+          field: field_lista_mes_inf_decisi_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: standard
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
       arguments: {  }
       filters:
         status:

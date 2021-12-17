@@ -286,15 +286,17 @@ display:
           separator: ', '
           field_api_classes: false
       pager:
-        type: mini
+        type: full
         options:
           offset: 0
           items_per_page: 10
           total_pages: null
           id: 0
           tags:
-            next: ››
-            previous: ‹‹
+            next: 'Siguiente ››'
+            previous: '‹‹ Anterior'
+            first: '« Primera'
+            last: 'Última »'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -303,6 +305,7 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
+          quantity: 9
       exposed_form:
         type: basic
         options:
@@ -599,7 +602,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: transparencia-y-acceso-a-la-informacion-publica/planeacion-presupuesto-e-informes/planes-institucionales
+      path: transparencia-y-acceso-a-la-informacion-publica/planeacion-presupuesto-e-informes/plan-de-accion/planes-institucionales
     cache_metadata:
       max-age: -1
       contexts:

@@ -240,9 +240,9 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
-          reset_button: false
-          reset_button_label: Reset
+          submit_button: Buscar
+          reset_button: true
+          reset_button_label: 'Limpiar consulta'
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -312,6 +312,49 @@ display:
           expose:
             operator_limit_selection: false
             operator_list: {  }
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: string
+          operator: contains
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: title_op
+            label: Nombre
+            description: 'Escriba el nombre a buscar'
+            use_operator: false
+            operator: title_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: nombre
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: 'Escriba aquí'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
       style:
         type: views_bootstrap_list_group
         options:
@@ -334,6 +377,8 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
+      css_class: 'transparenciaAcceso pages transparenciaAccesoTables fileTable '
+      use_ajax: true
       header:
         area_text_custom:
           id: area_text_custom
@@ -366,6 +411,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
@@ -379,12 +425,13 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: transparencia-y-acceso-a-la-informacion-publica/planeacion-presupuesto-e-informes/planes-de-mejoramiento
+      path: transparencia-y-acceso-a-la-informacion-publica/planeacion-presupuesto-e-informes/informes-de-gestion-evaluacion-y-auditoria/planes-de-mejoramiento
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
