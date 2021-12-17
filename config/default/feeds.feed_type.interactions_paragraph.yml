@@ -66,8 +66,8 @@ processor_configuration:
   skip_hash_check: false
   authorize: false
   expire: -1
-  owner_feed_author: false
-  owner_id: 50
+  owner_feed_author: true
+  owner_id: 0
 custom_sources:
   parent_id:
     value: parent_id
@@ -145,8 +145,8 @@ mappings:
     map:
       value: closing_date
     settings:
-      language: null
-      timezone: UTC
+      language: ''
+      timezone: America/Bogota
   -
     target: field_propuestas_interacciones
     map:
