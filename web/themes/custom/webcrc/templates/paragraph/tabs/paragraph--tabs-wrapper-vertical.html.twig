@@ -10,7 +10,7 @@
     'paragraph--type--' ~ paragraph.bundle|clean_class,
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
     not paragraph.isPublished() ? 'paragraph--unpublished',
-    'nav flex-column nav-pills'
+    'nav flex-lg-column nav-pills'
   ]
 %}
 
@@ -20,8 +20,8 @@
 
 {% block paragraph %}
   {% block content %}
-    <div class="row tabs-container tabs-vertical m-0">
-      <div class="col-3 p-0 nav-tab-content">
+    <div class="row tabs-container tabs-vertical">
+      <div class="col-12 col-lg-4 p-0 nav-tab-content">
         <div {{ attributes.addClass(classes) }} id="v-tab"  role="tablist" aria-orientation="vertical">
           {% for key, item in content.field_tabs_content if key|first != '#' %}
             <a  class="field__item nav-link {{ key == 0 ? 'active' : null }}" 
@@ -38,7 +38,7 @@
         </div>
       </div>
 
-      <div class="col-9 p-0">
+      <div class="col-12 col-lg-8 p-0">
         <div class="tab-content" id="v-tabContent">
           {% for key, item in content.field_tabs_content if key|first != '#' %}
             <div  class="tab-pane fade {{ key == 0 ? 'show active' : null }}" 
