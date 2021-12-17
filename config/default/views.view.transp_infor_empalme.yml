@@ -199,7 +199,13 @@ display:
           id: area_text_custom
           table: views
           field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
           plugin_id: text_custom
+          empty: true
+          content: '<p>No se encontró contenido relacionado con la búsqueda, por favor,  intente nuevamente con otro criterio de búsqueda. </p>'
+          tokenize: false
       sorts:
         created:
           id: created
@@ -311,6 +317,7 @@ display:
           query_tags: {  }
       relationships: {  }
       css_class: 'transparenciaAcceso pages transparenciaAccesoTables fileTable '
+      use_ajax: true
       header:
         area_text_custom:
           id: area_text_custom

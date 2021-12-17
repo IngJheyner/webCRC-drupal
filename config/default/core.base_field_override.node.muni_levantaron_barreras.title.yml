@@ -1,0 +1,18 @@
+uuid: 06860db6-3fcc-4b0d-9bbb-b4598aca9564
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.muni_levantaron_barreras
+id: node.muni_levantaron_barreras.title
+field_name: title
+entity_type: node
+bundle: muni_levantaron_barreras
+label: Titulo
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

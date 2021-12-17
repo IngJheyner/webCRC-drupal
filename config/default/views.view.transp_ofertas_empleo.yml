@@ -440,7 +440,7 @@ display:
             operator: field_lis_est_ofert_value_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: field_lis_est_ofert_value
+            identifier: estado
             required: false
             remember: false
             multiple: false

@@ -1,0 +1,260 @@
+uuid: 2d329d46-5358-42b2-97b6-5a447cb07865
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.muni_levantaron_barreras.field_apart_norma_incluyen_barre
+    - field.field.node.muni_levantaron_barreras.field_descripcion_barreras
+    - field.field.node.muni_levantaron_barreras.field_fecha_emitid_acredit
+    - field.field.node.muni_levantaron_barreras.field_fecha_emitid_barrer
+    - field.field.node.muni_levantaron_barreras.field_file_concept_acredit
+    - field.field.node.muni_levantaron_barreras.field_file_concept_barreras
+    - field.field.node.muni_levantaron_barreras.field_norma_levant_barrer
+    - field.field.node.muni_levantaron_barreras.field_rad_concept_acredit
+    - field.field.node.muni_levantaron_barreras.field_rad_concept_barreras
+    - field.field.node.muni_levantaron_barreras.field_tax_departament
+    - field.field.node.muni_levantaron_barreras.field_tax_municipio
+    - node.type.muni_levantaron_barreras
+  module:
+    - datetime
+    - field_group
+    - file
+    - path
+    - scheduler
+third_party_settings:
+  field_group:
+    group_tabs_munic_levant:
+      children:
+        - group_infor_municipio
+        - group_info_barrera
+        - group_infor_acredit
+      label: 'Tabs Municipios'
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        direction: horizontal
+        width_breakpoint: 640
+    group_info_barrera:
+      children:
+        - field_rad_concept_barreras
+        - field_fecha_emitid_barrer
+        - field_apart_norma_incluyen_barre
+        - field_file_concept_barreras
+      label: 'Información barrera'
+      region: content
+      parent_name: group_tabs_munic_levant
+      weight: 23
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_infor_acredit:
+      children:
+        - field_rad_concept_acredit
+        - field_fecha_emitid_acredit
+        - field_norma_levant_barrer
+        - field_file_concept_acredit
+      label: 'Información Acreditación'
+      region: content
+      parent_name: group_tabs_munic_levant
+      weight: 24
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_infor_municipio:
+      children:
+        - title
+        - field_tax_departament
+        - field_tax_municipio
+        - field_descripcion_barreras
+      label: 'Informacion '
+      region: content
+      parent_name: group_tabs_munic_levant
+      weight: 20
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+id: node.muni_levantaron_barreras.default
+targetEntityType: node
+bundle: muni_levantaron_barreras
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_apart_norma_incluyen_barre:
+    type: string_textfield
+    weight: 17
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_descripcion_barreras:
+    type: string_textarea
+    weight: 24
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_fecha_emitid_acredit:
+    type: datetime_default
+    weight: 17
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_fecha_emitid_barrer:
+    type: datetime_default
+    weight: 16
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_file_concept_acredit:
+    type: file_generic
+    weight: 19
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_file_concept_barreras:
+    type: file_generic
+    weight: 18
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_norma_levant_barrer:
+    type: string_textfield
+    weight: 18
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_rad_concept_acredit:
+    type: number
+    weight: 16
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_rad_concept_barreras:
+    type: number
+    weight: 15
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_tax_departament:
+    type: entity_reference_autocomplete
+    weight: 22
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: 'Escriba el departamento'
+    third_party_settings: {  }
+  field_tax_municipio:
+    type: entity_reference_autocomplete
+    weight: 23
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: 'Escriba el municipio'
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 10
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 21
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 6
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  url_redirects:
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

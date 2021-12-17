@@ -1,0 +1,126 @@
+uuid: 6c885e3d-7aae-4a24-b58a-4f16e4a20674
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.muni_levantaron_barreras.field_apart_norma_incluyen_barre
+    - field.field.node.muni_levantaron_barreras.field_descripcion_barreras
+    - field.field.node.muni_levantaron_barreras.field_fecha_emitid_acredit
+    - field.field.node.muni_levantaron_barreras.field_fecha_emitid_barrer
+    - field.field.node.muni_levantaron_barreras.field_file_concept_acredit
+    - field.field.node.muni_levantaron_barreras.field_file_concept_barreras
+    - field.field.node.muni_levantaron_barreras.field_norma_levant_barrer
+    - field.field.node.muni_levantaron_barreras.field_rad_concept_acredit
+    - field.field.node.muni_levantaron_barreras.field_rad_concept_barreras
+    - field.field.node.muni_levantaron_barreras.field_tax_departament
+    - field.field.node.muni_levantaron_barreras.field_tax_municipio
+    - node.type.muni_levantaron_barreras
+  module:
+    - datetime
+    - file
+    - user
+id: node.muni_levantaron_barreras.default
+targetEntityType: node
+bundle: muni_levantaron_barreras
+mode: default
+content:
+  field_apart_norma_incluyen_barre:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_descripcion_barreras:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  field_fecha_emitid_acredit:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_fecha_emitid_barrer:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_file_concept_acredit:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_file_concept_barreras:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_norma_levant_barrer:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  field_rad_concept_acredit:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_rad_concept_barreras:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_tax_departament:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 111
+    region: content
+  field_tax_municipio:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  langcode: true
+  search_api_excerpt: true
