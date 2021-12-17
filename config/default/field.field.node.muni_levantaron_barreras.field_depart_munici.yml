@@ -1,16 +1,16 @@
-uuid: 0e39278b-04d1-4899-a638-fc712aecdde7
+uuid: 82d3cfda-c686-4992-8470-afc90ad7b09d
 langcode: es
 status: true
 dependencies:
   config:
-    - field.storage.node.field_tax_departament
+    - field.storage.node.field_depart_munici
     - node.type.muni_levantaron_barreras
     - taxonomy.vocabulary.departments_and_municipalities
-id: node.muni_levantaron_barreras.field_tax_departament
-field_name: field_tax_departament
+id: node.muni_levantaron_barreras.field_depart_munici
+field_name: field_depart_munici
 entity_type: node
 bundle: muni_levantaron_barreras
-label: Departamento
+label: 'Departamento / municipio'
 description: ''
 required: false
 translatable: false

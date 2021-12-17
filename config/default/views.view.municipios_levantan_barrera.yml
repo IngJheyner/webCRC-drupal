@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_apart_norma_incluyen_barre
+    - field.storage.node.field_depart_munici
     - field.storage.node.field_descripcion_barreras
     - field.storage.node.field_fecha_emitid_acredit
     - field.storage.node.field_fecha_emitid_barrer
@@ -12,11 +13,10 @@ dependencies:
     - field.storage.node.field_norma_levant_barrer
     - field.storage.node.field_rad_concept_acredit
     - field.storage.node.field_rad_concept_barreras
-    - field.storage.node.field_tax_departament
-    - field.storage.node.field_tax_municipio
     - node.type.muni_levantaron_barreras
     - taxonomy.vocabulary.departments_and_municipalities
   module:
+    - cshs
     - datetime
     - file
     - node
@@ -104,15 +104,15 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_tax_departament:
-          id: field_tax_departament
-          table: node__field_tax_departament
-          field: field_tax_departament
+        field_depart_munici:
+          id: field_depart_munici
+          table: node__field_depart_munici
+          field: field_depart_munici
           relationship: none
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: Departamento
+          label: 'Departamento / Municipios'
           exclude: false
           alter:
             alter_text: false
@@ -145,7 +145,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: false
+          element_label_colon: true
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -154,72 +154,11 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: entity_reference_label
+          type: cshs_full_hierarchy
           settings:
-            link: false
-          group_column: target_id
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        field_tax_municipio:
-          id: field_tax_municipio
-          table: node__field_tax_municipio
-          field: field_tax_municipio
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: Municipio
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
-          settings:
-            link: false
+            linked: 0
+            reverse: 0
+            separator: ' / '
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -794,6 +733,11 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+        nothing:
+          id: nothing
+          table: views
+          field: nothing
+          plugin_id: custom
       pager:
         type: full
         options:
@@ -877,27 +821,27 @@ display:
           expose:
             operator_limit_selection: false
             operator_list: {  }
-        field_tax_departament_target_id:
-          id: field_tax_departament_target_id
-          table: node__field_tax_departament
-          field: field_tax_departament_target_id
+        field_depart_munici_target_id:
+          id: field_depart_munici_target_id
+          table: node__field_depart_munici
+          field: field_depart_munici_target_id
           relationship: none
           group_type: group
           admin_label: ''
           plugin_id: taxonomy_index_tid
           operator: or
-          value: {  }
+          value: null
           group: 1
           exposed: true
           expose:
-            operator_id: field_tax_departament_target_id_op
-            label: Departamento
-            description: 'Escriba el nombre del departamento a buscar'
+            operator_id: field_depart_munici_target_id_op
+            label: 'Departamento / municipio'
+            description: ''
             use_operator: false
-            operator: field_tax_departament_target_id_op
+            operator: field_depart_munici_target_id_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: departamento
+            identifier: departmunic
             required: false
             remember: false
             multiple: false
@@ -920,57 +864,17 @@ display:
             group_items: {  }
           reduce_duplicates: false
           vid: departments_and_municipalities
-          type: textfield
+          type: cshs
           hierarchy: false
           limit: true
           error_message: true
-        field_tax_municipio_target_id:
-          id: field_tax_municipio_target_id
-          table: node__field_tax_municipio
-          field: field_tax_municipio_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: taxonomy_index_tid
-          operator: or
-          value: {  }
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_tax_municipio_target_id_op
-            label: Municipio
-            description: 'Escriba el nombre del municipio a buscar'
-            use_operator: false
-            operator: field_tax_municipio_target_id_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: municipio
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          vid: departments_and_municipalities
-          type: textfield
-          hierarchy: false
-          limit: true
-          error_message: true
+          save_lineage: false
+          force_deepest: false
+          parent: null
+          level_labels: ''
+          hierarchy_depth: 0
+          required_depth: 0
+          none_label: '- Seleccione -'
       style:
         type: views_bootstrap_table
         options:
@@ -1098,16 +1002,7 @@ display:
           distinct: false
           replica: false
           query_tags: {  }
-      relationships:
-        field_tax_municipio:
-          id: field_tax_municipio
-          table: node__field_tax_municipio
-          field: field_tax_municipio
-          relationship: none
-          group_type: group
-          admin_label: 'field_tax_municipio: Término de la taxonomía'
-          plugin_id: standard
-          required: true
+      relationships: {  }
       css_class: 'container-fluid mt-4 px-5 transparenciaAcceso'
       use_ajax: true
       header: {  }
@@ -1125,6 +1020,7 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_apart_norma_incluyen_barre'
+        - 'config:field.storage.node.field_depart_munici'
         - 'config:field.storage.node.field_descripcion_barreras'
         - 'config:field.storage.node.field_fecha_emitid_acredit'
         - 'config:field.storage.node.field_fecha_emitid_barrer'
@@ -1133,8 +1029,6 @@ display:
         - 'config:field.storage.node.field_norma_levant_barrer'
         - 'config:field.storage.node.field_rad_concept_acredit'
         - 'config:field.storage.node.field_rad_concept_barreras'
-        - 'config:field.storage.node.field_tax_departament'
-        - 'config:field.storage.node.field_tax_municipio'
   page_1:
     id: page_1
     display_title: Page
@@ -1142,7 +1036,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: municipios--que-levantan-barrera
+      path: municipios-que-levantan-barrera
     cache_metadata:
       max-age: -1
       contexts:
@@ -1155,6 +1049,7 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_apart_norma_incluyen_barre'
+        - 'config:field.storage.node.field_depart_munici'
         - 'config:field.storage.node.field_descripcion_barreras'
         - 'config:field.storage.node.field_fecha_emitid_acredit'
         - 'config:field.storage.node.field_fecha_emitid_barrer'
@@ -1163,5 +1058,3 @@ display:
         - 'config:field.storage.node.field_norma_levant_barrer'
         - 'config:field.storage.node.field_rad_concept_acredit'
         - 'config:field.storage.node.field_rad_concept_barreras'
-        - 'config:field.storage.node.field_tax_departament'
-        - 'config:field.storage.node.field_tax_municipio'

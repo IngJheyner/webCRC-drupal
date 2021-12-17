@@ -1,12 +1,12 @@
-uuid: 25819d85-cce2-4887-867e-ef3c6dfca03b
+uuid: 0d5f27a6-d003-42eb-a477-52a7ccdd3c33
 langcode: es
 status: true
 dependencies:
   module:
     - node
     - taxonomy
-id: node.field_tax_departament
-field_name: field_tax_departament
+id: node.field_depart_munici
+field_name: field_depart_munici
 entity_type: node
 type: entity_reference
 settings:

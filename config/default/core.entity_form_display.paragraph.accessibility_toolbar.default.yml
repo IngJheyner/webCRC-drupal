@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.accessibility_toolbar.field_content_icon
+    - field.field.paragraph.accessibility_toolbar.field_content_id
     - field.field.paragraph.accessibility_toolbar.field_url
     - paragraphs.paragraphs_type.accessibility_toolbar
   module:
@@ -23,7 +24,7 @@ content:
     third_party_settings: {  }
   field_content_id:
     type: string_textfield
-    weight: 0
+    weight: 3
     region: content
     settings:
       size: 60

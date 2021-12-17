@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.muni_levantaron_barreras.field_apart_norma_incluyen_barre
+    - field.field.node.muni_levantaron_barreras.field_depart_munici
     - field.field.node.muni_levantaron_barreras.field_descripcion_barreras
     - field.field.node.muni_levantaron_barreras.field_fecha_emitid_acredit
     - field.field.node.muni_levantaron_barreras.field_fecha_emitid_barrer
@@ -12,10 +13,9 @@ dependencies:
     - field.field.node.muni_levantaron_barreras.field_norma_levant_barrer
     - field.field.node.muni_levantaron_barreras.field_rad_concept_acredit
     - field.field.node.muni_levantaron_barreras.field_rad_concept_barreras
-    - field.field.node.muni_levantaron_barreras.field_tax_departament
-    - field.field.node.muni_levantaron_barreras.field_tax_municipio
     - node.type.muni_levantaron_barreras
   module:
+    - cshs
     - datetime
     - field_group
     - file
@@ -78,6 +78,7 @@ third_party_settings:
     group_infor_municipio:
       children:
         - title
+        - field_depart_munici
         - field_tax_departament
         - field_tax_municipio
         - field_descripcion_barreras
@@ -112,9 +113,22 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_depart_munici:
+    type: cshs
+    weight: 22
+    region: content
+    settings:
+      force_deepest: false
+      parent: ''
+      level_labels: ''
+      none_label: '- Please select -'
+      save_lineage: false
+      hierarchy_depth: 0
+      required_depth: 0
+    third_party_settings: {  }
   field_descripcion_barreras:
     type: string_textarea
-    weight: 24
+    weight: 25
     region: content
     settings:
       rows: 5
@@ -167,26 +181,6 @@ content:
     region: content
     settings:
       placeholder: ''
-    third_party_settings: {  }
-  field_tax_departament:
-    type: entity_reference_autocomplete
-    weight: 22
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: 'Escriba el departamento'
-    third_party_settings: {  }
-  field_tax_municipio:
-    type: entity_reference_autocomplete
-    weight: 23
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: 'Escriba el municipio'
     third_party_settings: {  }
   langcode:
     type: language_select

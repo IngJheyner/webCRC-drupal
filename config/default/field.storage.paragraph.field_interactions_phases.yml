@@ -12,8 +12,20 @@ type: list_string
 settings:
   allowed_values:
     -
-      value: 'Fase 1'
-      label: 'Fase 1'
+      value: Única
+      label: Única
+    -
+      value: 'Identificación de alternativas'
+      label: 'Identificación de alternativas'
+    -
+      value: 'Propuesta regulatoria'
+      label: 'Propuesta regulatoria'
+    -
+      value: 'Consulta pública'
+      label: 'Consulta pública'
+    -
+      value: 'Formulación del problema'
+      label: 'Formulación del problema'
   allowed_values_function: ''
 module: options
 locked: false
