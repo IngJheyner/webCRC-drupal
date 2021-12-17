@@ -349,6 +349,11 @@ $settings['update_free_access'] = FALSE;
 # $settings['http_client_config']['proxy']['no'] = ['127.0.0.1', 'localhost'];
 
 /**
+ * HTTP Client config.
+ */
+$settings['http_client_config']['timeout'] = 60;
+
+/**
  * Reverse Proxy Configuration:
  *
  * Reverse proxy servers are often used to enhance the performance
