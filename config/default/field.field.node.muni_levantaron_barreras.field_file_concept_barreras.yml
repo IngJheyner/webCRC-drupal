@@ -1,0 +1,46 @@
+uuid: 75a9cc34-85cf-4340-aa11-65000a03c229
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file_concept_barreras
+    - node.type.muni_levantaron_barreras
+  module:
+    - file
+    - filefield_paths
+third_party_settings:
+  filefield_paths:
+    enabled: true
+    file_path:
+      value: micrositios/municipios_levantan_barreras
+      options:
+        slashes: false
+        pathauto: false
+        transliterate: false
+    file_name:
+      value: '[file:ffp-name-only-original].[file:ffp-extension-original]'
+      options:
+        slashes: false
+        pathauto: false
+        transliterate: false
+    redirect: false
+    retroactive_update: false
+    active_updating: false
+id: node.muni_levantaron_barreras.field_file_concept_barreras
+field_name: field_file_concept_barreras
+entity_type: node
+bundle: muni_levantaron_barreras
+label: 'Archivo concepto barreras'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt xlsx xls doc pdf docx zip rar'
+  max_filesize: ''
+  description_field: false
+field_type: file
