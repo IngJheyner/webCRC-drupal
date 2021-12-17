@@ -571,7 +571,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: transparencia-y-acceso-a-la-informacion-publica/datos-abiertos/programa-de-gestion-documental
+      path: transparencia-y-acceso-a-la-informacion-publica/datos-abiertos/instrumentos-de-gestion/programa-de-gestion-documental
     cache_metadata:
       max-age: -1
       contexts:

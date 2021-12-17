@@ -352,7 +352,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: transparencia-y-acceso-a-la-informacion-publica/datos-abiertos/esquema-de-publicacion-de-la-informacion
+      path: transparencia-y-acceso-a-la-informacion-publica/datos-abiertos/instrumentos-de-gestion/esquema-de-publicacion-de-la-informacion
     cache_metadata:
       max-age: -1
       contexts:

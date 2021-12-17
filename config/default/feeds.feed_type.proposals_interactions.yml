@@ -3,6 +3,8 @@ langcode: es
 status: true
 dependencies:
   config:
+    - core.base_field_override.media.propuesta_interaccion_proyectos_.created
+    - core.base_field_override.media.propuesta_interaccion_proyectos_.name
     - field.field.media.propuesta_interaccion_proyectos_.field_media_file_1
     - field.field.media.propuesta_interaccion_proyectos_.field_ruta_file_propuestas
     - media.type.propuesta_interaccion_proyectos_
@@ -31,10 +33,10 @@ processor_configuration:
   update_existing: 2
   update_non_existent: _keep
   skip_hash_check: false
-  authorize: true
+  authorize: false
   expire: -1
-  owner_feed_author: false
-  owner_id: 50
+  owner_feed_author: true
+  owner_id: 0
 custom_sources:
   name_path:
     value: nombre_ruta
@@ -70,17 +72,19 @@ mappings:
       reference_by: origname
       existing: '1'
       autocreate: 0
+      feeds_item: false
   -
     target: name
     map:
       value: name_file
     settings:
       language: null
-    unique: {  }
+    unique:
+      value: '1'
   -
     target: created
     map:
       value: date
     settings:
-      language: null
-      timezone: UTC
+      language: ''
+      timezone: America/Bogota

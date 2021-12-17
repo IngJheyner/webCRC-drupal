@@ -3,6 +3,7 @@ langcode: es
 status: true
 dependencies:
   config:
+    - field.field.taxonomy_term.departments_and_municipalities.feeds_item
     - field.field.taxonomy_term.departments_and_municipalities.field_code_dane
     - field.field.taxonomy_term.departments_and_municipalities.field_content_latitude
     - field.field.taxonomy_term.departments_and_municipalities.field_content_length
@@ -53,5 +54,6 @@ content:
     weight: 3
     region: content
 hidden:
+  feeds_item: true
   langcode: true
   search_api_excerpt: true

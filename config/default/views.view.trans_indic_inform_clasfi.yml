@@ -366,7 +366,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: transparencia-y-acceso-a-la-informacion-publica/datos-abiertos/indice-de-informacion-clasificada-y-reservada
+      path: transparencia-y-acceso-a-la-informacion-publica/datos-abiertos/instrumentos-de-gestion/indice-de-informacion-clasificada-y-reservada
     cache_metadata:
       max-age: -1
       contexts:
