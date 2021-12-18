@@ -38,7 +38,7 @@
     'cols-' ~ header|length,
     responsive ? 'responsive-enabled',
     sticky ? 'sticky-enabled',
-    'library-virtual',
+    'agency-regulatory',
     'display table hover'
   ]
 %}
@@ -47,7 +47,7 @@
   set data_empty = rows|length > 1 ? "datable-webcrc" : "datable-webcrc-empty"
 %}
 <div class="table-responsive">
-<table{{ attributes.addClass(classes) }} id="{{ data_empty }}" style="width:100%" id-table='library-virtual'>
+<table{{ attributes.addClass(classes) }} id="{{ data_empty }}" style="width:100%" id-table='agency-regulatory'>
   {% if header %}
     <thead>
       <tr>

@@ -37,7 +37,7 @@
     'cols-' ~ header|length,    
     sticky ? 'sticky-enabled',
     'projects-comments',
-    'text-md-center display table hover'
+    'display table hover'
   ]
 %}
 
@@ -63,7 +63,7 @@
           {% endif %}           
         </th>
       </tr>  
-      <tr>          
+      <tr class="text-center">          
         {% for key, column in header %}
           {% if column.default_classes %}
             {%

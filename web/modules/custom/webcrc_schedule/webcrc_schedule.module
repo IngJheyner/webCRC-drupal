@@ -28,9 +28,9 @@ function webcrc_schedule_form_node_form_alter(&$form, $form_state, $form_id) {
     $form['field_agency_date_finished']['widget'][0]['value']['#date_year_range'] = '2015:+1';
     //dpm($form['field_agency_two_trimester_ini']);
 
-    $form['actions']['submit']['#submit'][] = 'webcrc_schedule_colors_submit';
+   // $form['actions']['submit']['#submit'][] = 'webcrc_schedule_colors_submit';
 
-    $form_state->getValue('title');
+    //$form_state->getValue('title');
   }
 }
 
@@ -38,7 +38,45 @@ function webcrc_schedule_form_node_form_alter(&$form, $form_state, $form_id) {
  * Funcion para agregar las fecha de agenda regultoria colors
  */
 function webcrc_schedule_colors_submit(array &$form, \Drupal\Core\Form\FormStateInterface $form_state){
-  $tri_initial = [];
-  $tri_finished = [];
+  //$tri_initial = [];
+  //$tri_finished = [];
   
+}
+
+/**
+ * Implements hook_preprocess_views_view_field()
+ */
+function webcrc_schedule_preprocess_views_view_field(&$variables){
+  $view = $variables['view'];
+  $field = $variables['field'];
+  $row = $variables['row'];
+
+  $color_array = ['blanco', 'rojo', 'amarillo', 'verde'];
+  list($blanco, $rojo, $amarillo, $verde) = $color_array;
+
+  if($view->storage->id() == 'agency_regulatory'){
+    $caja_color_i = [];
+    $caja_color_f = [];
+    if($field->field == 'field_agency_type'){
+      $actv = $row->_entity->get('field_agency_type')->getValue();
+      $date_initial = $row->_entity->get('field_agency_trimester_initial')->getValue();
+      //dpm(intval($date_initial[0]['value']));
+      if($actv[0]['value'] == 'act'){
+        for ($i=1; $i <= 4 ; $i++) { 
+         
+          if($i <= intval($date_initial[0]['value'])){            
+            $caja_color_i[] = $rojo;
+          }else{
+            $caja_color_f[] = $blanco;
+          }
+        }
+      }
+    }
+
+    if($field->field == 'field_agency_trimester_initial'){
+      dpm($caja_color_i[0]);
+      //$variables['output'] = $caja_color_i." ".$caja_color_f;
+    }
+      
+  }
 }

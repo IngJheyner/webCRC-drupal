@@ -735,7 +735,7 @@ display:
           plugin_id: taxonomy_index_tid
           operator: or
           value:
-            116: 116
+            202: 202
           group: 1
           exposed: true
           expose:
