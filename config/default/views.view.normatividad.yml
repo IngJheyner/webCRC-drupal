@@ -1,30 +1,27 @@
-uuid: c3d3fd64-261f-4d3d-ac4a-bfc6072e0aee
+uuid: 44a103c9-b43e-4ad5-a142-ea05486c266c
 langcode: es
 status: true
 dependencies:
   config:
-    - field.storage.node.field_apart_norma_incluyen_barre
-    - field.storage.node.field_depart_munici
-    - field.storage.node.field_descripcion_barreras
-    - field.storage.node.field_fecha_emitid_acredit
-    - field.storage.node.field_fecha_emitid_barrer
-    - field.storage.node.field_file_concept_acredit
-    - field.storage.node.field_file_concept_barreras
-    - field.storage.node.field_norma_levant_barrer
-    - field.storage.node.field_rad_concept_acredit
-    - field.storage.node.field_rad_concept_barreras
-    - node.type.muni_levantaron_barreras
-    - taxonomy.vocabulary.departments_and_municipalities
+    - field.storage.node.field_ano_normat_reg
+    - field.storage.node.field_archivo_normativ
+    - field.storage.node.field_epigrafe_referencia_normat
+    - field.storage.node.field_fecha_de_publi_normativ
+    - field.storage.node.field_list_tipo_norma_normativid
+    - field.storage.node.field_numero_normatividad
+    - field.storage.node.field_tax_palabras_clave_normati
+    - node.type.normatividad_regulatoria
+    - taxonomy.vocabulary.library_keywords
   module:
-    - cshs
     - datetime
     - file
     - node
+    - options
     - taxonomy
     - user
     - views_bootstrap
-id: municipios_levantan_barrera
-label: 'Municipios Levantan barrera'
+id: normatividad
+label: Normatividad
 module: views
 description: ''
 tag: ''
@@ -37,7 +34,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Municipios que levantan barrera'
+      title: Normatividad
       fields:
         title:
           id: title
@@ -49,7 +46,7 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: field
-          label: ''
+          label: Title
           exclude: true
           alter:
             alter_text: false
@@ -82,7 +79,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: false
+          element_label_colon: true
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -104,15 +101,15 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_depart_munici:
-          id: field_depart_munici
-          table: node__field_depart_munici
-          field: field_depart_munici
+        field_list_tipo_norma_normativid:
+          id: field_list_tipo_norma_normativid
+          table: node__field_list_tipo_norma_normativid
+          field: field_list_tipo_norma_normativid
           relationship: none
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: 'Departamento / Municipios'
+          label: 'Tipo Normatividad'
           exclude: false
           alter:
             alter_text: false
@@ -145,7 +142,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -153,13 +150,10 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: target_id
-          type: cshs_full_hierarchy
-          settings:
-            linked: 0
-            reverse: 0
-            separator: ' / '
-          group_column: target_id
+          click_sort_column: value
+          type: list_default
+          settings: {  }
+          group_column: value
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -169,19 +163,19 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_rad_concept_barreras:
-          id: field_rad_concept_barreras
-          table: node__field_rad_concept_barreras
-          field: field_rad_concept_barreras
+        field_numero_normatividad:
+          id: field_numero_normatividad
+          table: node__field_numero_normatividad
+          field: field_numero_normatividad
           relationship: none
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: 'Concepto de Barrera'
+          label: 'Número de normatividad'
           exclude: false
           alter:
-            alter_text: true
-            text: '<strong>Radicado:</strong> {{ field_rad_concept_barreras }} <br><br>'
+            alter_text: false
+            text: ''
             make_link: false
             path: ''
             absolute: false
@@ -219,8 +213,10 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: number_unformatted
-          settings: {  }
+          type: number_integer
+          settings:
+            thousand_separator: ''
+            prefix_suffix: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -231,15 +227,15 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_descripcion_barreras:
-          id: field_descripcion_barreras
-          table: node__field_descripcion_barreras
-          field: field_descripcion_barreras
+        field_epigrafe_referencia_normat:
+          id: field_epigrafe_referencia_normat
+          table: node__field_epigrafe_referencia_normat
+          field: field_epigrafe_referencia_normat
           relationship: none
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: Descripción
+          label: 'Epígrafe(resoluciones) / Referencia(Circular)'
           exclude: false
           alter:
             alter_text: false
@@ -293,19 +289,19 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_rad_concept_acredit:
-          id: field_rad_concept_acredit
-          table: node__field_rad_concept_acredit
-          field: field_rad_concept_acredit
+        field_ano_normat_reg:
+          id: field_ano_normat_reg
+          table: node__field_ano_normat_reg
+          field: field_ano_normat_reg
           relationship: none
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: Acreditación
+          label: Año
           exclude: false
           alter:
-            alter_text: true
-            text: '<strong>Radicado:</strong> {{ field_rad_concept_acredit }} <br><br>'
+            alter_text: false
+            text: ''
             make_link: false
             path: ''
             absolute: false
@@ -343,72 +339,10 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: number_unformatted
-          settings: {  }
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        field_fecha_emitid_barrer:
-          id: field_fecha_emitid_barrer
-          table: node__field_fecha_emitid_barrer
-          field: field_fecha_emitid_barrer
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: 'Fecha Emitido barreras'
-          exclude: false
-          alter:
-            alter_text: true
-            text: '<strong>Emitido:</strong> {{ field_fecha_emitid_barrer }} <br><br>'
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: datetime_default
+          type: number_integer
           settings:
-            timezone_override: ''
-            format_type: fecha_corta_webcrc
+            thousand_separator: ''
+            prefix_suffix: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -419,19 +353,19 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_fecha_emitid_acredit:
-          id: field_fecha_emitid_acredit
-          table: node__field_fecha_emitid_acredit
-          field: field_fecha_emitid_acredit
+        field_fecha_de_publi_normativ:
+          id: field_fecha_de_publi_normativ
+          table: node__field_fecha_de_publi_normativ
+          field: field_fecha_de_publi_normativ
           relationship: none
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: 'Fecha emitido acreditación'
+          label: 'Fecha de publicación'
           exclude: false
           alter:
-            alter_text: true
-            text: '<strong>Emitido:</strong> {{ field_fecha_emitid_acredit }} <br><br>'
+            alter_text: false
+            text: ''
             make_link: false
             path: ''
             absolute: false
@@ -483,145 +417,19 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_apart_norma_incluyen_barre:
-          id: field_apart_norma_incluyen_barre
-          table: node__field_apart_norma_incluyen_barre
-          field: field_apart_norma_incluyen_barre
+        field_tax_palabras_clave_normati:
+          id: field_tax_palabras_clave_normati
+          table: node__field_tax_palabras_clave_normati
+          field: field_tax_palabras_clave_normati
           relationship: none
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: 'Apartes normativos que incluían barreras'
+          label: 'Palabras Clave'
           exclude: false
           alter:
-            alter_text: true
-            text: '<strong>Apartes normativos que incluían barreras:</strong> {{ field_apart_norma_incluyen_barre }} <br><br>'
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: false
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        field_norma_levant_barrer:
-          id: field_norma_levant_barrer
-          table: node__field_norma_levant_barrer
-          field: field_norma_levant_barrer
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: 'Norma que levanta la barrera:​'
-          exclude: false
-          alter:
-            alter_text: true
-            text: '<strong>Norma que levanta la barrera:</strong> {{ field_norma_levant_barrer }} <br><br>'
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: false
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        field_file_concept_barreras:
-          id: field_file_concept_barreras
-          table: node__field_file_concept_barreras
-          field: field_file_concept_barreras
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: ''
-          exclude: false
-          alter:
-            alter_text: true
-            text: '<a class="m-2 btn btn-primary " href="{{ field_file_concept_barreras }}">Descargar</a>'
+            alter_text: false
+            text: ''
             make_link: false
             path: ''
             absolute: false
@@ -659,9 +467,10 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: file_url_plain
-          settings: {  }
-          group_column: ''
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -671,19 +480,19 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_file_concept_acredit:
-          id: field_file_concept_acredit
-          table: node__field_file_concept_acredit
-          field: field_file_concept_acredit
+        field_archivo_normativ:
+          id: field_archivo_normativ
+          table: node__field_archivo_normativ
+          field: field_archivo_normativ
           relationship: none
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: ''
+          label: Archivo
           exclude: false
           alter:
             alter_text: true
-            text: '<a class="m-2 btn btn-primary" href="{{ field_file_concept_acredit  }}">Descargar</a>'
+            text: '<a class="btn btn-primary p-3 m-3" href="{{ field_archivo_normativ }}">Descargar</a>'
             make_link: false
             path: ''
             absolute: false
@@ -734,17 +543,15 @@ display:
           separator: ', '
           field_api_classes: false
       pager:
-        type: full
+        type: mini
         options:
           offset: 0
           items_per_page: 10
           total_pages: null
           id: 0
           tags:
-            next: 'Siguiente ››'
-            previous: '‹‹ Anterior'
-            first: '« Primera'
-            last: 'Última »'
+            next: ››
+            previous: ‹‹
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -753,13 +560,12 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
-          quantity: 9
       exposed_form:
         type: basic
         options:
-          submit_button: Buscar
-          reset_button: true
-          reset_button_label: 'Limpiar consulta'
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -812,31 +618,31 @@ display:
           entity_field: type
           plugin_id: bundle
           value:
-            muni_levantaron_barreras: muni_levantaron_barreras
+            normatividad_regulatoria: normatividad_regulatoria
           expose:
             operator_limit_selection: false
             operator_list: {  }
-        field_depart_munici_target_id:
-          id: field_depart_munici_target_id
-          table: node__field_depart_munici
-          field: field_depart_munici_target_id
+        field_list_tipo_norma_normativid_value:
+          id: field_list_tipo_norma_normativid_value
+          table: node__field_list_tipo_norma_normativid
+          field: field_list_tipo_norma_normativid_value
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: taxonomy_index_tid
+          plugin_id: list_field
           operator: or
-          value: null
+          value: {  }
           group: 1
           exposed: true
           expose:
-            operator_id: field_depart_munici_target_id_op
-            label: 'Departamento / municipio'
-            description: ''
+            operator_id: field_list_tipo_norma_normativid_value_op
+            label: 'Tipo Normatividad'
+            description: 'Seleccione el tipo a buscar'
             use_operator: false
-            operator: field_depart_munici_target_id_op
+            operator: field_list_tipo_norma_normativid_value_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: departmunic
+            identifier: tiponormatividad
             required: false
             remember: false
             multiple: false
@@ -858,8 +664,50 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          vid: departments_and_municipalities
-          type: cshs
+        field_tax_palabras_clave_normati_target_id:
+          id: field_tax_palabras_clave_normati_target_id
+          table: node__field_tax_palabras_clave_normati
+          field: field_tax_palabras_clave_normati_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_tax_palabras_clave_normati_target_id_op
+            label: 'Palabras Clave'
+            description: 'Escriba la palabra clave a buscar'
+            use_operator: false
+            operator: field_tax_palabras_clave_normati_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: palabraclave
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: library_keywords
+          type: textfield
           hierarchy: false
           limit: true
           error_message: true
@@ -869,124 +717,55 @@ display:
           level_labels: ''
           hierarchy_depth: 0
           required_depth: 0
-          none_label: '- Seleccione -'
+          none_label: '- Please select -'
+        field_numero_normatividad_value:
+          id: field_numero_normatividad_value
+          table: node__field_numero_normatividad
+          field: field_numero_normatividad_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: numeric
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_numero_normatividad_value_op
+            label: Número
+            description: 'Escriba el número a buscar'
+            use_operator: false
+            operator: field_numero_normatividad_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: numero
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            min_placeholder: ''
+            max_placeholder: ''
+            placeholder: 'Escriba aquí'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
       style:
         type: views_bootstrap_table
-        options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: false
-          override: 0
-          sticky: 0
-          caption: ''
-          summary: ''
-          description: ''
-          columns:
-            title: title
-            field_tax_departament: field_tax_departament
-            field_tax_municipio: field_tax_municipio
-            field_rad_concept_barreras: field_rad_concept_barreras
-            field_descripcion_barreras: field_descripcion_barreras
-            field_rad_concept_acredit: field_rad_concept_acredit
-            field_fecha_emitid_barrer: field_rad_concept_barreras
-            field_fecha_emitid_acredit: field_rad_concept_acredit
-            field_apart_norma_incluyen_barre: field_rad_concept_barreras
-            field_norma_levant_barrer: field_rad_concept_acredit
-            field_file_concept_barreras: field_rad_concept_barreras
-            field_file_concept_acredit: field_rad_concept_acredit
-          info:
-            title:
-              sortable: 0
-              default_sort_order: asc
-              align: views-align-center
-              separator: ''
-              empty_column: 0
-              responsive: ''
-            field_tax_departament:
-              sortable: 0
-              default_sort_order: asc
-              align: views-align-center
-              separator: ''
-              empty_column: 0
-              responsive: ''
-            field_tax_municipio:
-              sortable: 0
-              default_sort_order: asc
-              align: views-align-center
-              separator: ''
-              empty_column: 0
-              responsive: ''
-            field_rad_concept_barreras:
-              sortable: 0
-              default_sort_order: asc
-              align: views-align-center
-              separator: ''
-              empty_column: 0
-              responsive: ''
-            field_descripcion_barreras:
-              sortable: 0
-              default_sort_order: asc
-              align: views-align-center
-              separator: ''
-              empty_column: 0
-              responsive: ''
-            field_rad_concept_acredit:
-              sortable: 0
-              default_sort_order: asc
-              align: views-align-center
-              separator: ''
-              empty_column: 0
-              responsive: ''
-            field_fecha_emitid_barrer:
-              sortable: 0
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: 0
-              responsive: ''
-            field_fecha_emitid_acredit:
-              sortable: 0
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: 0
-              responsive: ''
-            field_apart_norma_incluyen_barre:
-              sortable: 0
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: 0
-              responsive: ''
-            field_norma_levant_barrer:
-              sortable: 0
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: 0
-              responsive: ''
-            field_file_concept_barreras:
-              sortable: 0
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: 0
-              responsive: ''
-            field_file_concept_acredit:
-              sortable: 0
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: 0
-              responsive: ''
-          default: '-1'
-          empty_table: 0
-          responsive: 1
-          bootstrap_styles:
-            bordered: bordered
-            striped: 0
-            hover: 0
-            condensed: 0
       row:
         type: fields
       query:
@@ -998,8 +777,6 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
-      css_class: 'container-fluid mt-4 px-5 transparenciaAcceso'
-      use_ajax: true
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -1014,24 +791,21 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_apart_norma_incluyen_barre'
-        - 'config:field.storage.node.field_depart_munici'
-        - 'config:field.storage.node.field_descripcion_barreras'
-        - 'config:field.storage.node.field_fecha_emitid_acredit'
-        - 'config:field.storage.node.field_fecha_emitid_barrer'
-        - 'config:field.storage.node.field_file_concept_acredit'
-        - 'config:field.storage.node.field_file_concept_barreras'
-        - 'config:field.storage.node.field_norma_levant_barrer'
-        - 'config:field.storage.node.field_rad_concept_acredit'
-        - 'config:field.storage.node.field_rad_concept_barreras'
-  page_1:
-    id: page_1
+        - 'config:field.storage.node.field_ano_normat_reg'
+        - 'config:field.storage.node.field_archivo_normativ'
+        - 'config:field.storage.node.field_epigrafe_referencia_normat'
+        - 'config:field.storage.node.field_fecha_de_publi_normativ'
+        - 'config:field.storage.node.field_list_tipo_norma_normativid'
+        - 'config:field.storage.node.field_numero_normatividad'
+        - 'config:field.storage.node.field_tax_palabras_clave_normati'
+  normatividad_page:
+    id: normatividad_page
     display_title: Page
     display_plugin: page
     position: 1
     display_options:
       display_extenders: {  }
-      path: micrositios/despliegue-infraestructura/municipios-que-levantan-barrera
+      path: normatividad
     cache_metadata:
       max-age: -1
       contexts:
@@ -1043,13 +817,10 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_apart_norma_incluyen_barre'
-        - 'config:field.storage.node.field_depart_munici'
-        - 'config:field.storage.node.field_descripcion_barreras'
-        - 'config:field.storage.node.field_fecha_emitid_acredit'
-        - 'config:field.storage.node.field_fecha_emitid_barrer'
-        - 'config:field.storage.node.field_file_concept_acredit'
-        - 'config:field.storage.node.field_file_concept_barreras'
-        - 'config:field.storage.node.field_norma_levant_barrer'
-        - 'config:field.storage.node.field_rad_concept_acredit'
-        - 'config:field.storage.node.field_rad_concept_barreras'
+        - 'config:field.storage.node.field_ano_normat_reg'
+        - 'config:field.storage.node.field_archivo_normativ'
+        - 'config:field.storage.node.field_epigrafe_referencia_normat'
+        - 'config:field.storage.node.field_fecha_de_publi_normativ'
+        - 'config:field.storage.node.field_list_tipo_norma_normativid'
+        - 'config:field.storage.node.field_numero_normatividad'
+        - 'config:field.storage.node.field_tax_palabras_clave_normati'

@@ -1,0 +1,61 @@
+uuid: 851e6b60-268b-4767-8125-9d32d6d5de9e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.agenda.field_archivo_agenda
+    - field.field.node.agenda.field_fecha_pub_agenda
+    - field.field.node.agenda.field_list_tipo_doc_agenda
+    - field.field.node.agenda.field_periodo_agenda
+    - node.type.agenda
+  module:
+    - datetime
+    - file
+    - options
+    - user
+id: node.agenda.default
+targetEntityType: node
+bundle: agenda
+mode: default
+content:
+  field_archivo_agenda:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_fecha_pub_agenda:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_list_tipo_doc_agenda:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_periodo_agenda:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  langcode: true
+  search_api_excerpt: true

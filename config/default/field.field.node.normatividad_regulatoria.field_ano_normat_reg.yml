@@ -1,0 +1,23 @@
+uuid: d97d8171-6c44-4e9f-9ccf-09b6f5cc038f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ano_normat_reg
+    - node.type.normatividad_regulatoria
+id: node.normatividad_regulatoria.field_ano_normat_reg
+field_name: field_ano_normat_reg
+entity_type: node
+bundle: normatividad_regulatoria
+label: Año
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 2000
+  max: 9999
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,19 @@
+uuid: 5f15a3b0-ef09-4d93-a9f8-b65f6f8e8938
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_periodo_agenda
+    - node.type.agenda
+id: node.agenda.field_periodo_agenda
+field_name: field_periodo_agenda
+entity_type: node
+bundle: agenda
+label: Período
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
