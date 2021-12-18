@@ -143,6 +143,9 @@
         "patches": {
             "drupal/redis": {
                 "Default lifetime for permanent TTL": "https://www.drupal.org/files/issues/2020-09-23/redis-default_permanent_ttl-2944938.patch"
+            },
+            "drupal/core": {
+                "Argument #1 ($uri) must be of type string, null given": "https://www.drupal.org/files/issues/2021-12-18/file-url-generator-3254245-34.patch"
             }
         },
         "composer-exit-on-patch-failure": true,
