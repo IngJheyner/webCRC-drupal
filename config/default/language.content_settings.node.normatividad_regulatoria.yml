@@ -1,0 +1,11 @@
+uuid: 4fd1129a-905b-46eb-849c-75c9345b1142
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.normatividad_regulatoria
+id: node.normatividad_regulatoria
+target_entity_type_id: node
+target_bundle: normatividad_regulatoria
+default_langcode: site_default
+language_alterable: false

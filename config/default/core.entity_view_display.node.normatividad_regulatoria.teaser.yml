@@ -1,0 +1,37 @@
+uuid: 8a7348e8-d395-43ed-84bb-1333e59b1721
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.normatividad_regulatoria.field_ano_normat_reg
+    - field.field.node.normatividad_regulatoria.field_archivo_normativ
+    - field.field.node.normatividad_regulatoria.field_epigrafe_referencia_normat
+    - field.field.node.normatividad_regulatoria.field_fecha_de_publi_normativ
+    - field.field.node.normatividad_regulatoria.field_list_tipo_norma_normativid
+    - field.field.node.normatividad_regulatoria.field_numero_normatividad
+    - field.field.node.normatividad_regulatoria.field_tax_palabras_clave_normati
+    - node.type.normatividad_regulatoria
+  module:
+    - user
+id: node.normatividad_regulatoria.teaser
+targetEntityType: node
+bundle: normatividad_regulatoria
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_ano_normat_reg: true
+  field_archivo_normativ: true
+  field_epigrafe_referencia_normat: true
+  field_fecha_de_publi_normativ: true
+  field_list_tipo_norma_normativid: true
+  field_numero_normatividad: true
+  field_tax_palabras_clave_normati: true
+  langcode: true
+  search_api_excerpt: true

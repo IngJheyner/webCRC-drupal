@@ -1,0 +1,150 @@
+uuid: 3555a808-632e-40bc-b7fe-71dcd3e6aa68
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.normatividad_regulatoria.field_ano_normat_reg
+    - field.field.node.normatividad_regulatoria.field_archivo_normativ
+    - field.field.node.normatividad_regulatoria.field_epigrafe_referencia_normat
+    - field.field.node.normatividad_regulatoria.field_fecha_de_publi_normativ
+    - field.field.node.normatividad_regulatoria.field_list_tipo_norma_normativid
+    - field.field.node.normatividad_regulatoria.field_numero_normatividad
+    - field.field.node.normatividad_regulatoria.field_tax_palabras_clave_normati
+    - node.type.normatividad_regulatoria
+  module:
+    - datetime
+    - file
+    - path
+    - scheduler
+id: node.normatividad_regulatoria.default
+targetEntityType: node
+bundle: normatividad_regulatoria
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_ano_normat_reg:
+    type: number
+    weight: 124
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_archivo_normativ:
+    type: file_generic
+    weight: 126
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_epigrafe_referencia_normat:
+    type: string_textarea
+    weight: 123
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_fecha_de_publi_normativ:
+    type: datetime_default
+    weight: 127
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_list_tipo_norma_normativid:
+    type: options_select
+    weight: 121
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_numero_normatividad:
+    type: number
+    weight: 122
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_tax_palabras_clave_normati:
+    type: entity_reference_autocomplete
+    weight: 125
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 120
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

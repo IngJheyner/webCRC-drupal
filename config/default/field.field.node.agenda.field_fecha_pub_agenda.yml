@@ -1,0 +1,21 @@
+uuid: f8d82d18-0577-4ca5-9c55-90d8d376d122
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_pub_agenda
+    - node.type.agenda
+  module:
+    - datetime
+id: node.agenda.field_fecha_pub_agenda
+field_name: field_fecha_pub_agenda
+entity_type: node
+bundle: agenda
+label: 'Fecha de publicación'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,19 @@
+uuid: f8f13183-527e-4fdb-a48c-1b89011b296a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_epigrafe_referencia_normat
+    - node.type.normatividad_regulatoria
+id: node.normatividad_regulatoria.field_epigrafe_referencia_normat
+field_name: field_epigrafe_referencia_normat
+entity_type: node
+bundle: normatividad_regulatoria
+label: 'Epígrafe(resoluciones) / Referencia(Circular)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,21 @@
+uuid: f93e48a8-2dc1-4efe-9193-b9aafd64ee62
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_de_publi_normativ
+    - node.type.normatividad_regulatoria
+  module:
+    - datetime
+id: node.normatividad_regulatoria.field_fecha_de_publi_normativ
+field_name: field_fecha_de_publi_normativ
+entity_type: node
+bundle: normatividad_regulatoria
+label: 'Fecha de publicación'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime
