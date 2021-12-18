@@ -1,0 +1,22 @@
+uuid: 2e12abea-1eeb-4315-ac34-69c8a812127f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.muni_levantaron_barreras
+id: node.muni_levantaron_barreras.promote
+field_name: promote
+entity_type: node
+bundle: muni_levantaron_barreras
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,30 @@
+uuid: 74a813a5-b895-4b45-8a89-c320033a473f
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_list_tipo_doc_agenda
+field_name: field_list_tipo_doc_agenda
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Modificación Agenda Regulatoria'
+      label: 'Modificación Agenda Regulatoria'
+    -
+      value: 'Propuesta de Agenda Regulatoria'
+      label: 'Propuesta de Agenda Regulatoria'
+    -
+      value: 'Respuesta a Comentarios'
+      label: 'Respuesta a Comentarios'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

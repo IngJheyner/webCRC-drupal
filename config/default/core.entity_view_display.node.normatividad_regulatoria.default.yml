@@ -1,0 +1,89 @@
+uuid: 324a3da3-ef8b-433d-b294-1585ccf36911
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.normatividad_regulatoria.field_ano_normat_reg
+    - field.field.node.normatividad_regulatoria.field_archivo_normativ
+    - field.field.node.normatividad_regulatoria.field_epigrafe_referencia_normat
+    - field.field.node.normatividad_regulatoria.field_fecha_de_publi_normativ
+    - field.field.node.normatividad_regulatoria.field_list_tipo_norma_normativid
+    - field.field.node.normatividad_regulatoria.field_numero_normatividad
+    - field.field.node.normatividad_regulatoria.field_tax_palabras_clave_normati
+    - node.type.normatividad_regulatoria
+  module:
+    - datetime
+    - file
+    - options
+    - user
+id: node.normatividad_regulatoria.default
+targetEntityType: node
+bundle: normatividad_regulatoria
+mode: default
+content:
+  field_ano_normat_reg:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_archivo_normativ:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_epigrafe_referencia_normat:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_fecha_de_publi_normativ:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_list_tipo_norma_normativid:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_numero_normatividad:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_tax_palabras_clave_normati:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  langcode: true
+  search_api_excerpt: true

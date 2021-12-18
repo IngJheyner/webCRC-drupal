@@ -2,7 +2,7 @@ _core:
   default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
 langcode: es
 uuid: 6c81981c-26c5-4056-8099-0792a5fc6b27
-name: Webcrc
+name: 'Comisión de Regulación de Comunicaciones - CRC'
 mail: admin@example.com
 slogan: ''
 page:

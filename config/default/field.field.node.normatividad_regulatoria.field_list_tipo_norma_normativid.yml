@@ -1,0 +1,21 @@
+uuid: b3b342d4-06e9-4a19-9af7-e256610279d8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_list_tipo_norma_normativid
+    - node.type.normatividad_regulatoria
+  module:
+    - options
+id: node.normatividad_regulatoria.field_list_tipo_norma_normativid
+field_name: field_list_tipo_norma_normativid
+entity_type: node
+bundle: normatividad_regulatoria
+label: 'Tipo Normatividad'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

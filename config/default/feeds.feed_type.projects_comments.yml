@@ -3,7 +3,6 @@ langcode: es
 status: true
 dependencies:
   config:
-    - core.base_field_override.node.proyectos_regulatorios.created
     - core.base_field_override.node.proyectos_regulatorios.title
     - field.field.node.proyectos_regulatorios.field_email_proyectos
     - field.field.node.proyectos_regulatorios.field_estado_proyectos
@@ -11,7 +10,6 @@ dependencies:
     - field.field.node.proyectos_regulatorios.field_oficina_proyecto
     - field.field.node.proyectos_regulatorios.field_projects_links
     - field.field.node.proyectos_regulatorios.field_projects_services
-    - field.field.node.proyectos_regulatorios.field_resumen_proyecto
     - field.field.node.proyectos_regulatorios.field_type_projects_comments
     - node.type.proyectos_regulatorios
   module:
@@ -51,10 +49,10 @@ processor_configuration:
   update_existing: 2
   update_non_existent: _keep
   skip_hash_check: false
-  authorize: true
+  authorize: false
   expire: -1
-  owner_feed_author: false
-  owner_id: 50
+  owner_feed_author: true
+  owner_id: 0
 custom_sources:
   projects_interactions:
     value: interacciones
@@ -132,13 +130,6 @@ mappings:
     settings:
       language: null
   -
-    target: created
-    map:
-      value: created
-    settings:
-      language: null
-      timezone: UTC
-  -
     target: field_nombre_proyecto
     map:
       value: name_project
@@ -175,6 +166,7 @@ mappings:
       language: ''
       reference_by: name
       autocreate: '1'
+      feeds_item: false
   -
     target: nid
     map:
@@ -183,12 +175,6 @@ mappings:
     unique:
       value: '1'
   -
-    target: vid
-    map:
-      value: nid
-    settings: {  }
-    unique: {  }
-  -
     target: field_type_projects_comments
     map:
       target_id: type_project
@@ -196,6 +182,7 @@ mappings:
       language: null
       reference_by: name
       autocreate: false
+      feeds_item: false
   -
     target: title
     map:

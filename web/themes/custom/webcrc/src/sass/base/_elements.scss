@@ -17,7 +17,16 @@ h1 > * {
 }
 
 h2 > * {
-  font-size: 35pt;
+  font-family: $roboto-condensed;
+  font-size: 18pt;
+
+  @include small {
+    font-size: 26pt;
+  }
+
+  @include desktop {
+    font-size: 35pt;
+  }
 }
 
 // Text

@@ -1,0 +1,19 @@
+uuid: 69fda784-31dd-4995-a1b2-c303aa567431
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_norma_levant_barrer
+    - node.type.muni_levantaron_barreras
+id: node.muni_levantaron_barreras.field_norma_levant_barrer
+field_name: field_norma_levant_barrer
+entity_type: node
+bundle: muni_levantaron_barreras
+label: 'Norma que levanta la barrera:​'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,22 @@
+uuid: 14e8c5fc-42b1-4c25-84a7-01992c3f70f4
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.normatividad_regulatoria
+id: node.normatividad_regulatoria.promote
+field_name: promote
+entity_type: node
+bundle: normatividad_regulatoria
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -735,7 +735,11 @@ display:
           plugin_id: taxonomy_index_tid
           operator: or
           value:
+<<<<<<< HEAD
             202: 202
+=======
+            501: 501
+>>>>>>> 259e09818952ae56e80070cf7e7a8bb748aaaf8d
           group: 1
           exposed: true
           expose:

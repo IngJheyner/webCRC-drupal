@@ -11,7 +11,6 @@ dependencies:
   content:
     - 'block_content:transparencia_encabezado_e_intro:e5eb02e6-9c81-47d2-94d8-b38ccec9f999'
   module:
-    - better_exposed_filters
     - file
     - node
     - options
@@ -308,7 +307,7 @@ display:
             offset_label: Offset
           quantity: 9
       exposed_form:
-        type: bef
+        type: basic
         options:
           submit_button: Buscar
           reset_button: true
@@ -317,24 +316,6 @@ display:
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
-          text_input_required: 'Seleccione cualquier filtro y pulse Aplicar para ver los resultados'
-          text_input_required_format: editor_cont_transparencia
-          bef:
-            general:
-              autosubmit: false
-              autosubmit_exclude_textfield: false
-              autosubmit_textfield_delay: 500
-              autosubmit_hide: false
-              input_required: false
-              allow_secondary: false
-              secondary_label: 'Advanced options'
-              secondary_open: false
-            filter:
-              field_date_information_file_value:
-                plugin_id: bef_datepicker
-                advanced:
-                  collapsible: false
-                  is_secondary: false
       access:
         type: perm
         options:
@@ -342,7 +323,18 @@ display:
       cache:
         type: tag
         options: {  }
-      empty: {  }
+      empty:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text_custom
+          empty: true
+          content: '<p>No se encontró contenido relacionado con la búsqueda, por favor,  intente nuevamente con otro criterio de búsqueda. </p>'
+          tokenize: false
       sorts:
         field_list_anio_infor_decisi_value:
           id: field_list_anio_infor_decisi_value

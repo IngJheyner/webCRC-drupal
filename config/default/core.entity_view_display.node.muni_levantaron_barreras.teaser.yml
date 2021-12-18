@@ -1,0 +1,43 @@
+uuid: 631441f4-59c5-4fb9-a1ef-904160266b0d
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.muni_levantaron_barreras.field_apart_norma_incluyen_barre
+    - field.field.node.muni_levantaron_barreras.field_depart_munici
+    - field.field.node.muni_levantaron_barreras.field_descripcion_barreras
+    - field.field.node.muni_levantaron_barreras.field_fecha_emitid_acredit
+    - field.field.node.muni_levantaron_barreras.field_fecha_emitid_barrer
+    - field.field.node.muni_levantaron_barreras.field_file_concept_acredit
+    - field.field.node.muni_levantaron_barreras.field_file_concept_barreras
+    - field.field.node.muni_levantaron_barreras.field_norma_levant_barrer
+    - field.field.node.muni_levantaron_barreras.field_rad_concept_acredit
+    - field.field.node.muni_levantaron_barreras.field_rad_concept_barreras
+    - node.type.muni_levantaron_barreras
+  module:
+    - user
+id: node.muni_levantaron_barreras.teaser
+targetEntityType: node
+bundle: muni_levantaron_barreras
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_apart_norma_incluyen_barre: true
+  field_depart_munici: true
+  field_descripcion_barreras: true
+  field_fecha_emitid_acredit: true
+  field_fecha_emitid_barrer: true
+  field_file_concept_acredit: true
+  field_file_concept_barreras: true
+  field_norma_levant_barrer: true
+  field_rad_concept_acredit: true
+  field_rad_concept_barreras: true
+  langcode: true
+  search_api_excerpt: true

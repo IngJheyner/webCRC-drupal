@@ -1,0 +1,29 @@
+uuid: 9bcac5e8-ad8a-45cf-b27c-c08c2f207ad2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tax_palabras_clave_normati
+    - node.type.normatividad_regulatoria
+    - taxonomy.vocabulary.library_keywords
+id: node.normatividad_regulatoria.field_tax_palabras_clave_normati
+field_name: field_tax_palabras_clave_normati
+entity_type: node
+bundle: normatividad_regulatoria
+label: 'Palabras Clave'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      library_keywords: library_keywords
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,20 @@
+uuid: 3ea21ea6-6f59-4d61-9d71-5804a9a243e1
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_tax_palabras_clave_normati
+field_name: field_tax_palabras_clave_normati
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -157,15 +157,17 @@ display:
           separator: ', '
           field_api_classes: false
       pager:
-        type: mini
+        type: full
         options:
           offset: 0
           items_per_page: 10
           total_pages: null
           id: 0
           tags:
-            next: ››
-            previous: ‹‹
+            next: 'Siguiente ››'
+            previous: '‹‹ Anterior'
+            first: '« Primera'
+            last: 'Última »'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -174,12 +176,13 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
+          quantity: 9
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
-          reset_button: false
-          reset_button_label: Reset
+          submit_button: Buscar
+          reset_button: true
+          reset_button_label: 'Limpiar consulta'
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -191,7 +194,18 @@ display:
       cache:
         type: tag
         options: {  }
-      empty: {  }
+      empty:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text_custom
+          empty: true
+          content: ''
+          tokenize: false
       sorts:
         created:
           id: created
@@ -293,6 +307,7 @@ display:
           query_tags: {  }
       relationships: {  }
       css_class: 'transparenciaAcceso pages transparenciaAccesoTables fileTable '
+      use_ajax: true
       header:
         area_text_custom:
           id: area_text_custom
@@ -351,7 +366,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: transparencia-y-acceso-a-la-informacion-publica/datos-abiertos/indice-de-informacion-clasificada-y-reservada
+      path: transparencia-y-acceso-a-la-informacion-publica/datos-abiertos/instrumentos-de-gestion/indice-de-informacion-clasificada-y-reservada
     cache_metadata:
       max-age: -1
       contexts:

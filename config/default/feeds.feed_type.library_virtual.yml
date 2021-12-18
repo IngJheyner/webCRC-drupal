@@ -58,14 +58,14 @@ label: 'Biblioteca Virtual'
 id: library_virtual
 description: 'Se crea nodo de tipo de contenido biblioteca virtual.'
 help: ''
-import_period: 3600
+import_period: -1
 fetcher: upload
 fetcher_configuration:
   allowed_extensions: 'txt csv tsv xml opml'
   directory: 'private://feeds/library_virtual'
 parser: csv
 parser_configuration:
-  delimiter: ;
+  delimiter: TAB
   no_headers: false
   line_limit: 100
 processor: 'entity:node'
@@ -80,7 +80,7 @@ processor_configuration:
   authorize: true
   expire: -1
   owner_feed_author: false
-  owner_id: 50
+  owner_id: 0
 custom_sources:
   title:
     value: titulo
@@ -134,6 +134,14 @@ custom_sources:
     value: imagen
     label: imagen
     machine_name: image
+  archivo1:
+    value: archivo
+    label: archivo
+    machine_name: archivo1
+  archivo2:
+    value: archivo
+    label: archivo
+    machine_name: archivo2
 mappings:
   -
     target: title

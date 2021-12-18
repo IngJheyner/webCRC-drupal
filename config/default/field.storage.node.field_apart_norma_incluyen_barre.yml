@@ -1,0 +1,21 @@
+uuid: d9592b4d-1d32-46ac-9761-b045bc380fa7
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_apart_norma_incluyen_barre
+field_name: field_apart_norma_incluyen_barre
+entity_type: node
+type: string
+settings:
+  max_length: 300
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
