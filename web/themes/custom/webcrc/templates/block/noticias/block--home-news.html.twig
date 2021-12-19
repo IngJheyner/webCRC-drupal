@@ -7,7 +7,7 @@
 <div {{ attributes|without('id').addClass(classes) }}>
 
   {% block content %}
-    <div class="d-flex mt-0 mb-2 p-0">
+    <div class="d-flex justify-content-left mt-0 mb-2 my-sm-2 p-0 title-block-primary">
       <div class="media">
         <span class="align-self-center">
           {{ content.field_icon }}
@@ -20,6 +20,7 @@
         </div>
       </div>
     </div>
+
     {{ content.field_content_view }}
   {% endblock %}
-</div>
+</div> 
