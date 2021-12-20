@@ -172,7 +172,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '<a href="field_docum_archi">{{ title }} </a>'
+            text: '<a href="{{field_docum_archi}}">{{ title }} </a>'
             make_link: false
             path: ''
             absolute: false
