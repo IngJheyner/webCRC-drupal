@@ -92,12 +92,6 @@ filters:
     status: true
     weight: 0
     settings: {  }
-  filter_align:
-    id: filter_align
-    provider: filter
-    status: true
-    weight: 0
-    settings: {  }
   filter_html:
     id: filter_html
     provider: filter

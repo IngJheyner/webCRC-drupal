@@ -1,0 +1,23 @@
+uuid: 255193d5-44be-458d-ad97-77cecc14fdde
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rad_concept_barreras
+    - node.type.muni_levantaron_barreras
+id: node.muni_levantaron_barreras.field_rad_concept_barreras
+field_name: field_rad_concept_barreras
+entity_type: node
+bundle: muni_levantaron_barreras
+label: 'Radicado Concepto barreras'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

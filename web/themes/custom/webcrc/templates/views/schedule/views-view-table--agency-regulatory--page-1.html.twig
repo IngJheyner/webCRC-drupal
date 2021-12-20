@@ -46,23 +46,41 @@
 {%
   set data_empty = rows|length > 1 ? "datable-webcrc" : "datable-webcrc-empty"
 %}
+
 <div class="table-responsive">
+
 <table{{ attributes.addClass(classes) }} id="{{ data_empty }}" style="width:100%" id-table='agency-regulatory'>
+
   {% if header %}
+
     <thead>
+
       <tr>
-        <th colspan="4">          
+
+        <th colspan="6">  
+
           {% if caption %}
-            <p class="h4 text-left p-md-3">{{ caption }}</p>
+
+            <p class="h4 text-center p-md-3">{{ caption }} {{ date_agency_target }}</p> 
+
           {% else %}
+
             <p class="h4 text-left p-md-4">{{ title }}</p>
+
           {% endif %}
+
           {% if (summary_element is not empty) %}
+
             {{ summary_element }}
-          {% endif %}           
+
+          {% endif %} 
+
         </th>
+
       </tr>  
+
       <tr class="text-center">
+
         {% for key, column in header %}
 
           {% if column.default_classes %}
@@ -76,19 +94,48 @@
         
         
         <th{{ column.attributes.addClass(column_classes).setAttribute('scope', 'col') }}>
+
           {%- if column.wrapper_element -%}
+
             <{{ column.wrapper_element }}>
+
               {%- if column.url -%}
+
                 <a href="{{ column.url }}" title="{{ column.title }}" rel="nofollow">{{ column.content }}{{ column.sort_indicator }}</a>
+
               {%- else -%}
+
                 {{ column.content }}{{ column.sort_indicator }}
+
               {%- endif -%}
+
             </{{ column.wrapper_element }}>
+
           {%- else -%}
+
             {%- if column.url -%}
+
               <a href="{{ column.url }}" title="{{ column.title }}" rel="nofollow">{{ column.content }}{{ column.sort_indicator }}</a>
+
             {%- else -%}
-              {{- column.content }}{{ column.sort_indicator }}
+
+              {%
+                set anio_date_agency =  date_agency_target|split("-")
+              %}
+
+              {% if column.content == 'Trimestre' or  column.content == 'Trimestre final'%}
+
+                <div class="item-colrs__anio mb-2">{{ column.content == 'Trimestre' ? anio_date_agency[0] : anio_date_agency[1] }}</div>
+
+                <div class="item-colrs-header">                  
+                  <div class="item-colrs__header">1T</div>
+                  <div class="item-colrs__header">2T</div>
+                  <div class="item-colrs__header">3T</div>
+                  <div class="item-colrs__header">4T</div>
+                </div>
+              {% else %}
+                {{- column.content }}{{ column.sort_indicator }}
+              {% endif %}              
             {%- endif -%}
           {%- endif -%}
         </th>
@@ -101,6 +148,7 @@
     {% for row in rows %}
       <tr{{ row.attributes }}>
         {% for key, column in row.columns %}
+    
           {% if column.default_classes %}
             {%
               set column_classes = [
@@ -113,17 +161,16 @@
           {% endif %}
 
           <td{{ column.attributes.addClass(column_classes) }}>
+          
             {%- if column.wrapper_element -%}
               <{{ column.wrapper_element }}>
               {% for content in column.content %}
+              
                 {{ content.separator }}{{ content.field_output }}
               {% endfor %}
               </{{ column.wrapper_element }}>
             {%- else -%}
               {% for content in column.content %}
-                {% if column.attributes.storage["class"][0] == 'views-empty' %}
-                  {{ 'No se encontraron resultados.' }}
-                {% endif %}
                 {{- content.separator }}{{ content.field_output -}}
               {% endfor %}
             {%- endif %}

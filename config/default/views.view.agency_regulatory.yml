@@ -6,13 +6,18 @@ dependencies:
     - field.storage.node.field_agency_activity
     - field.storage.node.field_agency_eje
     - field.storage.node.field_agency_note
+    - field.storage.node.field_agency_trimester_finished
     - field.storage.node.field_agency_trimester_initial
-    - field.storage.node.field_agency_type
+    - field.storage.node.field_agency_trimester_published
     - node.type.agency_regulatory
+    - taxonomy.vocabulary.date_agency_regulatory
+  content:
+    - 'taxonomy_term:date_agency_regulatory:ccc9344c-50da-4825-9b3a-79f2241fb9b2'
   module:
     - link
     - node
     - options
+    - taxonomy
     - user
 id: agency_regulatory
 label: 'Agenda Regulatoria'
@@ -349,15 +354,77 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_agency_type:
-          id: field_agency_type
-          table: node__field_agency_type
-          field: field_agency_type
+        field_agency_trimester_finished:
+          id: field_agency_trimester_finished
+          table: node__field_agency_trimester_finished
+          field: field_agency_trimester_finished
           relationship: none
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: 'Tipo de Agenda'
+          label: 'Trimestre final'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: '0'
+          element_class: ''
+          element_label_type: '0'
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: '0'
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: list_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_agency_trimester_published:
+          id: field_agency_trimester_published
+          table: node__field_agency_trimester_published
+          field: field_agency_trimester_published
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: Publicación
           exclude: false
           alter:
             alter_text: false
@@ -432,7 +499,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Buscar
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -446,7 +513,20 @@ display:
       cache:
         type: tag
         options: {  }
-      empty: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: true
+          content:
+            value: '<p class=''p-3''> No se encontraron resultados. </p>'
+            format: full_html
+          tokenize: false
       sorts:
         created:
           id: created
@@ -488,15 +568,75 @@ display:
           plugin_id: bundle
           value:
             agency_regulatory: agency_regulatory
+          group: 1
           expose:
             operator_limit_selection: false
             operator_list: {  }
+        field_agency_date_target_id:
+          id: field_agency_date_target_id
+          table: node__field_agency_date
+          field: field_agency_date_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: and
+          value:
+            207: 207
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_agency_date_target_id_op
+            label: ''
+            description: 'Seleccione solo una opción.'
+            use_operator: false
+            operator: field_agency_date_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_agency_date_target_id
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: date_agency_regulatory
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+          save_lineage: false
+          force_deepest: false
+          parent: null
+          level_labels: ''
+          hierarchy_depth: 0
+          required_depth: 0
+          none_label: '- Please select -'
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
       style:
         type: table
         options:
           grouping: {  }
           row_class: ''
-          default_row_class: true
+          default_row_class: false
           columns:
             title: title
             field_agency_eje: field_agency_eje
@@ -504,6 +644,8 @@ display:
             field_agency_note: field_agency_note
             field_agency_trimester_initial: field_agency_trimester_initial
             field_agency_type: field_agency_trimester_initial
+            field_agency_trimester_finished: field_agency_trimester_finished
+            field_agency_date: field_agency_trimester_initial
           default: '-1'
           info:
             title:
@@ -546,11 +688,25 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
-          override: true
+            field_agency_trimester_finished:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_agency_date:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+          override: false
           sticky: false
           summary: ''
           empty_table: false
-          caption: ''
+          caption: 'Agenda Regulatoria'
           description: ''
       row:
         type: fields
@@ -563,7 +719,21 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
-      header: {  }
+      css_class: 'agency-regulatory container my-5'
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: 'Encabezado de texto'
+          plugin_id: text
+          empty: true
+          content:
+            value: "<p class='mb-4'>\r\nLa publicación y discusión de la Agenda Regulatoria es una actividad que la Comisión de Regulación de Comunicaciones CRC desarrolla, no solo en cumplimiento del decreto 1078 de 2015, sino también como un mecanismo de planeación y ejecución de la política regulatoria. Esta permite dar a conocer y discutir de manera oportuna las próximas acciones de regulación que se adelantaran a corto y mediano plazo.\r\n</p>"
+            format: full_html
+          tokenize: false
       footer: {  }
       display_extenders: {  }
     cache_metadata:
@@ -571,15 +741,18 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
         - 'config:field.storage.node.field_agency_activity'
         - 'config:field.storage.node.field_agency_eje'
         - 'config:field.storage.node.field_agency_note'
+        - 'config:field.storage.node.field_agency_trimester_finished'
         - 'config:field.storage.node.field_agency_trimester_initial'
-        - 'config:field.storage.node.field_agency_type'
+        - 'config:field.storage.node.field_agency_trimester_published'
   page_1:
     id: page_1
     display_title: 'Agenda Regulatoria'
@@ -594,12 +767,15 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
         - 'config:field.storage.node.field_agency_activity'
         - 'config:field.storage.node.field_agency_eje'
         - 'config:field.storage.node.field_agency_note'
+        - 'config:field.storage.node.field_agency_trimester_finished'
         - 'config:field.storage.node.field_agency_trimester_initial'
-        - 'config:field.storage.node.field_agency_type'
+        - 'config:field.storage.node.field_agency_trimester_published'

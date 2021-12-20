@@ -32,13 +32,13 @@ class FeedsSubscriber implements EventSubscriberInterface {
          * @var \Drupal\feeds\Result\ParserResultInterface
          * @var \Drupal\feeds\Feeds\Item\ItemInterface
          */
-        if ($event->getFeed()->getType()->id() == 'projects_comments'){
+        /*if ($event->getFeed()->getType()->id() == 'projects_comments'){*/
 
             /*foreach ($event->getParserResult() as $item) {
                 $this->alterItem($item, $event);                
             }*/
 
-            $query = $this->database->select('paragraph__feeds_item', 'pfi')
+            /*$query = $this->database->select('paragraph__feeds_item', 'pfi')
                                     ->fields('pfi', ['entity_id', 'feeds_item_guid'])
                                     ->condition('pfi.bundle', 'iterecciones_proyectos', '=');
             $result = $query->execute();
@@ -57,7 +57,7 @@ class FeedsSubscriber implements EventSubscriberInterface {
                                 ->execute();
             }*/
 
-            while($row = $result->fetchAssoc()){
+            /*while($row = $result->fetchAssoc()){
                 //dump($row);
                 if($row['feeds_item_guid'] == $entity_id)
                     $delta++;
@@ -80,7 +80,7 @@ class FeedsSubscriber implements EventSubscriberInterface {
                 $entity_id = $row['feeds_item_guid'];
             }
 
-        }
+        }*/
     }
 
 

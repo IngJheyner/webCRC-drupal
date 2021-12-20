@@ -12,8 +12,8 @@ field_name: field_agency_type
 entity_type: node
 bundle: agency_regulatory
 label: 'Tipo de Agenda'
-description: ''
-required: false
+description: "\r\n\r\n"
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

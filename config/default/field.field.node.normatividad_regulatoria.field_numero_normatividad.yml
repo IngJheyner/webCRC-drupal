@@ -1,0 +1,23 @@
+uuid: 4ed3d6f8-68cb-4137-9fa0-62beb5806c37
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_numero_normatividad
+    - node.type.normatividad_regulatoria
+id: node.normatividad_regulatoria.field_numero_normatividad
+field_name: field_numero_normatividad
+entity_type: node
+bundle: normatividad_regulatoria
+label: Número
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -12,8 +12,8 @@ field_name: field_agency_date_finished
 entity_type: node
 bundle: agency_regulatory
 label: Año
-description: ''
-required: false
+description: 'El año debe ser mayor o igual a la Fecha de Inicio.'
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

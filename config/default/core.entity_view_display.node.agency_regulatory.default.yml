@@ -7,10 +7,12 @@ dependencies:
     - field.field.node.agency_regulatory.field_agency_date
     - field.field.node.agency_regulatory.field_agency_date_finished
     - field.field.node.agency_regulatory.field_agency_date_initial
+    - field.field.node.agency_regulatory.field_agency_date_published
     - field.field.node.agency_regulatory.field_agency_eje
     - field.field.node.agency_regulatory.field_agency_note
     - field.field.node.agency_regulatory.field_agency_trimester_finished
     - field.field.node.agency_regulatory.field_agency_trimester_initial
+    - field.field.node.agency_regulatory.field_agency_trimester_published
     - field.field.node.agency_regulatory.field_agency_type
     - node.type.agency_regulatory
   module:
@@ -61,6 +63,15 @@ content:
     third_party_settings: {  }
     weight: 106
     region: content
+  field_agency_date_published:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 110
+    region: content
   field_agency_eje:
     type: entity_reference_label
     label: above
@@ -89,6 +100,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 104
+    region: content
+  field_agency_trimester_published:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 111
     region: content
   field_agency_type:
     type: list_default

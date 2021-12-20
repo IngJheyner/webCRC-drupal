@@ -1,0 +1,17 @@
+form.node-agency-regulatory-edit-form div.field--name-field-agency-trimester-initial fieldset div.fieldset__wrapper div.form-radios,
+form.node-agency-regulatory-form div.field--name-field-agency-trimester-initial fieldset div.fieldset__wrapper div.form-radios,
+form.node-agency-regulatory-edit-form div.field--name-field-agency-trimester-finished fieldset div.fieldset__wrapper div.form-radios,
+form.node-agency-regulatory-form div.field--name-field-agency-trimester-finished fieldset div.fieldset__wrapper div.form-radios,
+form.node-agency-regulatory-edit-form div.field--name-field-agency-trimester-published fieldset div.fieldset__wrapper div.form-radios,
+form.node-agency-regulatory-form div.field--name-field-agency-trimester-published fieldset div.fieldset__wrapper div.form-radios{
+    display: flex;
+}
+
+form.node-agency-regulatory-edit-form div.field--name-field-agency-trimester-initial fieldset div.fieldset__wrapper div.form-radios div,
+form.node-agency-regulatory-form div.field--name-field-agency-trimester-initial fieldset div.fieldset__wrapper div.form-radios div,
+form.node-agency-regulatory-edit-form div.field--name-field-agency-trimester-finished fieldset div.fieldset__wrapper div.form-radios div,
+form.node-agency-regulatory-form div.field--name-field-agency-trimester-finished fieldset div.fieldset__wrapper div.form-radios div,
+form.node-agency-regulatory-edit-form div.field--name-field-agency-trimester-published fieldset div.fieldset__wrapper div.form-radios div,
+form.node-agency-regulatory-form div.field--name-field-agency-trimester-published fieldset div.fieldset__wrapper div.form-radios div{
+    margin-right: 2rem;
+}

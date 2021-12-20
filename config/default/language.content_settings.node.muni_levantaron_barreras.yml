@@ -1,0 +1,11 @@
+uuid: bb22864b-047c-43e2-a56b-2c1921614325
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.muni_levantaron_barreras
+id: node.muni_levantaron_barreras
+target_entity_type_id: node
+target_bundle: muni_levantaron_barreras
+default_langcode: site_default
+language_alterable: false

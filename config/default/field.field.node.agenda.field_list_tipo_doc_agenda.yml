@@ -1,0 +1,21 @@
+uuid: 415fd229-7432-4c2d-897b-6735b2bfc0e4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_list_tipo_doc_agenda
+    - node.type.agenda
+  module:
+    - options
+id: node.agenda.field_list_tipo_doc_agenda
+field_name: field_list_tipo_doc_agenda
+entity_type: node
+bundle: agenda
+label: 'Tipo Documento'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

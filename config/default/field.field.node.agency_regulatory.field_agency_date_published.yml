@@ -1,0 +1,21 @@
+uuid: 26c2a162-fd19-4dc0-a18d-56b5a1affd50
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_agency_date_published
+    - node.type.agency_regulatory
+  module:
+    - datetime
+id: node.agency_regulatory.field_agency_date_published
+field_name: field_agency_date_published
+entity_type: node
+bundle: agency_regulatory
+label: Año
+description: 'El año debe ser mayor o igual a la Fecha de Inicio.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

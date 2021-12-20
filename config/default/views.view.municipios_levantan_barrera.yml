@@ -1,0 +1,1055 @@
+uuid: c3d3fd64-261f-4d3d-ac4a-bfc6072e0aee
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_apart_norma_incluyen_barre
+    - field.storage.node.field_depart_munici
+    - field.storage.node.field_descripcion_barreras
+    - field.storage.node.field_fecha_emitid_acredit
+    - field.storage.node.field_fecha_emitid_barrer
+    - field.storage.node.field_file_concept_acredit
+    - field.storage.node.field_file_concept_barreras
+    - field.storage.node.field_norma_levant_barrer
+    - field.storage.node.field_rad_concept_acredit
+    - field.storage.node.field_rad_concept_barreras
+    - node.type.muni_levantaron_barreras
+    - taxonomy.vocabulary.departments_and_municipalities
+  module:
+    - cshs
+    - datetime
+    - file
+    - node
+    - taxonomy
+    - user
+    - views_bootstrap
+id: municipios_levantan_barrera
+label: 'Municipios Levantan barrera'
+module: views
+description: ''
+tag: ''
+base_table: node_field_data
+base_field: nid
+display:
+  default:
+    id: default
+    display_title: Default
+    display_plugin: default
+    position: 0
+    display_options:
+      title: 'Municipios que levantan barrera'
+      fields:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: false
+            ellipsis: false
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_depart_munici:
+          id: field_depart_munici
+          table: node__field_depart_munici
+          field: field_depart_munici
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: 'Departamento / Municipios'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: cshs_full_hierarchy
+          settings:
+            linked: 0
+            reverse: 0
+            separator: ' / '
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_rad_concept_barreras:
+          id: field_rad_concept_barreras
+          table: node__field_rad_concept_barreras
+          field: field_rad_concept_barreras
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: 'Concepto de Barrera'
+          exclude: false
+          alter:
+            alter_text: true
+            text: '<strong>Radicado:</strong> {{ field_rad_concept_barreras }} <br><br>'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: number_unformatted
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_descripcion_barreras:
+          id: field_descripcion_barreras
+          table: node__field_descripcion_barreras
+          field: field_descripcion_barreras
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: Descripción
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: basic_string
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_rad_concept_acredit:
+          id: field_rad_concept_acredit
+          table: node__field_rad_concept_acredit
+          field: field_rad_concept_acredit
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: Acreditación
+          exclude: false
+          alter:
+            alter_text: true
+            text: '<strong>Radicado:</strong> {{ field_rad_concept_acredit }} <br><br>'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: number_unformatted
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_fecha_emitid_barrer:
+          id: field_fecha_emitid_barrer
+          table: node__field_fecha_emitid_barrer
+          field: field_fecha_emitid_barrer
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: 'Fecha Emitido barreras'
+          exclude: false
+          alter:
+            alter_text: true
+            text: '<strong>Emitido:</strong> {{ field_fecha_emitid_barrer }} <br><br>'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: datetime_default
+          settings:
+            timezone_override: ''
+            format_type: fecha_corta_webcrc
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_fecha_emitid_acredit:
+          id: field_fecha_emitid_acredit
+          table: node__field_fecha_emitid_acredit
+          field: field_fecha_emitid_acredit
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: 'Fecha emitido acreditación'
+          exclude: false
+          alter:
+            alter_text: true
+            text: '<strong>Emitido:</strong> {{ field_fecha_emitid_acredit }} <br><br>'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: datetime_default
+          settings:
+            timezone_override: ''
+            format_type: fecha_corta_webcrc
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_apart_norma_incluyen_barre:
+          id: field_apart_norma_incluyen_barre
+          table: node__field_apart_norma_incluyen_barre
+          field: field_apart_norma_incluyen_barre
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: 'Apartes normativos que incluían barreras'
+          exclude: false
+          alter:
+            alter_text: true
+            text: '<strong>Apartes normativos que incluían barreras:</strong> {{ field_apart_norma_incluyen_barre }} <br><br>'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_norma_levant_barrer:
+          id: field_norma_levant_barrer
+          table: node__field_norma_levant_barrer
+          field: field_norma_levant_barrer
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: 'Norma que levanta la barrera:​'
+          exclude: false
+          alter:
+            alter_text: true
+            text: '<strong>Norma que levanta la barrera:</strong> {{ field_norma_levant_barrer }} <br><br>'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_file_concept_barreras:
+          id: field_file_concept_barreras
+          table: node__field_file_concept_barreras
+          field: field_file_concept_barreras
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: '<a class="m-2 btn btn-primary " href="{{ field_file_concept_barreras }}">Descargar</a>'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: file_url_plain
+          settings: {  }
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_file_concept_acredit:
+          id: field_file_concept_acredit
+          table: node__field_file_concept_acredit
+          field: field_file_concept_acredit
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: '<a class="m-2 btn btn-primary" href="{{ field_file_concept_acredit  }}">Descargar</a>'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: file_url_plain
+          settings: {  }
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+      pager:
+        type: full
+        options:
+          offset: 0
+          items_per_page: 10
+          total_pages: null
+          id: 0
+          tags:
+            next: 'Siguiente ››'
+            previous: '‹‹ Anterior'
+            first: '« Primera'
+            last: 'Última »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Buscar
+          reset_button: true
+          reset_button_label: 'Limpiar consulta'
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: tag
+        options: {  }
+      empty: {  }
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+          granularity: second
+      arguments: {  }
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            muni_levantaron_barreras: muni_levantaron_barreras
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_depart_munici_target_id:
+          id: field_depart_munici_target_id
+          table: node__field_depart_munici
+          field: field_depart_munici_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value: null
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_depart_munici_target_id_op
+            label: 'Departamento / municipio'
+            description: ''
+            use_operator: false
+            operator: field_depart_munici_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: departmunic
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: departments_and_municipalities
+          type: cshs
+          hierarchy: false
+          limit: true
+          error_message: true
+          save_lineage: false
+          force_deepest: false
+          parent: null
+          level_labels: ''
+          hierarchy_depth: 0
+          required_depth: 0
+          none_label: '- Seleccione -'
+      style:
+        type: views_bootstrap_table
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: false
+          override: 0
+          sticky: 0
+          caption: ''
+          summary: ''
+          description: ''
+          columns:
+            title: title
+            field_tax_departament: field_tax_departament
+            field_tax_municipio: field_tax_municipio
+            field_rad_concept_barreras: field_rad_concept_barreras
+            field_descripcion_barreras: field_descripcion_barreras
+            field_rad_concept_acredit: field_rad_concept_acredit
+            field_fecha_emitid_barrer: field_rad_concept_barreras
+            field_fecha_emitid_acredit: field_rad_concept_acredit
+            field_apart_norma_incluyen_barre: field_rad_concept_barreras
+            field_norma_levant_barrer: field_rad_concept_acredit
+            field_file_concept_barreras: field_rad_concept_barreras
+            field_file_concept_acredit: field_rad_concept_acredit
+          info:
+            title:
+              sortable: 0
+              default_sort_order: asc
+              align: views-align-center
+              separator: ''
+              empty_column: 0
+              responsive: ''
+            field_tax_departament:
+              sortable: 0
+              default_sort_order: asc
+              align: views-align-center
+              separator: ''
+              empty_column: 0
+              responsive: ''
+            field_tax_municipio:
+              sortable: 0
+              default_sort_order: asc
+              align: views-align-center
+              separator: ''
+              empty_column: 0
+              responsive: ''
+            field_rad_concept_barreras:
+              sortable: 0
+              default_sort_order: asc
+              align: views-align-center
+              separator: ''
+              empty_column: 0
+              responsive: ''
+            field_descripcion_barreras:
+              sortable: 0
+              default_sort_order: asc
+              align: views-align-center
+              separator: ''
+              empty_column: 0
+              responsive: ''
+            field_rad_concept_acredit:
+              sortable: 0
+              default_sort_order: asc
+              align: views-align-center
+              separator: ''
+              empty_column: 0
+              responsive: ''
+            field_fecha_emitid_barrer:
+              sortable: 0
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
+            field_fecha_emitid_acredit:
+              sortable: 0
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
+            field_apart_norma_incluyen_barre:
+              sortable: 0
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
+            field_norma_levant_barrer:
+              sortable: 0
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
+            field_file_concept_barreras:
+              sortable: 0
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
+            field_file_concept_acredit:
+              sortable: 0
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
+          default: '-1'
+          empty_table: 0
+          responsive: 1
+          bootstrap_styles:
+            bordered: bordered
+            striped: 0
+            hover: 0
+            condensed: 0
+      row:
+        type: fields
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_tags: {  }
+      relationships: {  }
+      css_class: 'container-fluid mt-4 px-5 transparenciaAcceso'
+      use_ajax: true
+      header: {  }
+      footer: {  }
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_apart_norma_incluyen_barre'
+        - 'config:field.storage.node.field_depart_munici'
+        - 'config:field.storage.node.field_descripcion_barreras'
+        - 'config:field.storage.node.field_fecha_emitid_acredit'
+        - 'config:field.storage.node.field_fecha_emitid_barrer'
+        - 'config:field.storage.node.field_file_concept_acredit'
+        - 'config:field.storage.node.field_file_concept_barreras'
+        - 'config:field.storage.node.field_norma_levant_barrer'
+        - 'config:field.storage.node.field_rad_concept_acredit'
+        - 'config:field.storage.node.field_rad_concept_barreras'
+  page_1:
+    id: page_1
+    display_title: Page
+    display_plugin: page
+    position: 1
+    display_options:
+      display_extenders: {  }
+      path: micrositios/despliegue-infraestructura/municipios-que-levantan-barrera
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_apart_norma_incluyen_barre'
+        - 'config:field.storage.node.field_depart_munici'
+        - 'config:field.storage.node.field_descripcion_barreras'
+        - 'config:field.storage.node.field_fecha_emitid_acredit'
+        - 'config:field.storage.node.field_fecha_emitid_barrer'
+        - 'config:field.storage.node.field_file_concept_acredit'
+        - 'config:field.storage.node.field_file_concept_barreras'
+        - 'config:field.storage.node.field_norma_levant_barrer'
+        - 'config:field.storage.node.field_rad_concept_acredit'
+        - 'config:field.storage.node.field_rad_concept_barreras'

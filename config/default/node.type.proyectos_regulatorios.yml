@@ -27,5 +27,5 @@ type: proyectos_regulatorios
 description: 'Contenido que se utiliza en la seccion para tipos de comentarios.'
 help: ''
 new_revision: false
-preview_mode: 1
+preview_mode: 0
 display_submitted: false

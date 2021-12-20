@@ -1,0 +1,20 @@
+uuid: a3e56627-f8f2-4449-ad95-e3acac392a7f
+langcode: es
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+id: node.field_fecha_emitid_barrer
+field_name: field_fecha_emitid_barrer
+entity_type: node
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

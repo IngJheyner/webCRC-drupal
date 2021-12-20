@@ -1,0 +1,97 @@
+uuid: 4bd8e572-83c9-411a-8d9a-beea3ca0db0a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.departments_and_municipalities.field_code_dane
+    - field.field.taxonomy_term.departments_and_municipalities.field_content_latitude
+    - field.field.taxonomy_term.departments_and_municipalities.field_content_length
+    - taxonomy.vocabulary.departments_and_municipalities
+  module:
+    - taxonomy
+label: 'Departamentos y Municipios'
+id: dpto_mpio
+description: 'se cargan datos para taxonomias dpto y mpio'
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds/taxonomy/dpto_mpio'
+parser: csv
+parser_configuration:
+  delimiter: ;
+  no_headers: false
+  line_limit: 100
+processor: 'entity:taxonomy_term'
+processor_configuration:
+  values:
+    vid: departments_and_municipalities
+  langcode: es
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  codedane:
+    value: CodeDane
+    label: CodeDane
+    machine_name: codedane
+  contentlatitude:
+    value: ContentLatitude
+    label: ContentLatitude
+    machine_name: contentlatitude
+  contentlength:
+    value: ContentLength
+    label: ContentLength
+    machine_name: contentlength
+  name:
+    value: name
+    label: name
+    machine_name: name
+  name_parent:
+    value: name_parent
+    label: name_parent
+    machine_name: name_parent
+mappings:
+  -
+    target: field_code_dane
+    map:
+      value: codedane
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_content_latitude
+    map:
+      value: contentlatitude
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_content_length
+    map:
+      value: contentlength
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: name
+    map:
+      value: name
+    settings:
+      language: null
+    unique:
+      value: '1'
+  -
+    target: parent
+    map:
+      target_id: name_parent
+    settings:
+      reference_by: name
+      autocreate: false
+      feeds_item: false

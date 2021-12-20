@@ -1,0 +1,20 @@
+uuid: 21e86226-dfec-44f8-b4f0-09a5b90d27e7
+langcode: es
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+id: node.field_fecha_pub_agenda
+field_name: field_fecha_pub_agenda
+entity_type: node
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
