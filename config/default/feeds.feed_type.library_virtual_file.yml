@@ -8,7 +8,7 @@ label: 'Archivo [ Biblioteca Virtual ]'
 id: library_virtual_file
 description: 'Carga de archivos para biblioteca Virtual'
 help: ''
-import_period: 3600
+import_period: -1
 fetcher: upload
 fetcher_configuration:
   allowed_extensions: 'txt csv tsv xml opml'

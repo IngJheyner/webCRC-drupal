@@ -9,6 +9,7 @@ dependencies:
     - contact
     - filter
     - media
+    - pfdp
     - search_api_page
     - system
     - webform
@@ -22,6 +23,8 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access site-wide contact form'
+  - 'bypass pfdp'
+  - 'bypass pfdp for temporary files'
   - 'use text format restricted_html'
   - 'view any webform submission'
   - 'view media'

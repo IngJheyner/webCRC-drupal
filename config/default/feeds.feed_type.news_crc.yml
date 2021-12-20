@@ -3,6 +3,7 @@ langcode: es
 status: true
 dependencies:
   config:
+    - core.base_field_override.node.news_crc.created
     - core.base_field_override.node.news_crc.title
     - field.field.node.news_crc.field_category
     - field.field.node.news_crc.field_content

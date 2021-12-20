@@ -23179,19 +23179,19 @@ div.agency-regulatory div.item-colrs div.item-colrs__item.blanco {
   background-color: #FFFFFF;
 }
 div.agency-regulatory div.item-colrs div.item-colrs__item.rojo {
-  background-color: red;
+  background-color: #F9006F;
 }
 div.agency-regulatory div.item-colrs div.item-colrs__item.amarillo {
-  background-color: yellow;
+  background-color: #CCAE00;
 }
 div.agency-regulatory div.item-colrs div.item-colrs__item.verde {
-  background-color: green;
+  background-color: #00AA7E;
 }
 div.agency-regulatory div.item-colrs div.item-colrs__item.morado {
-  background-color: indigo;
+  background-color: #6A009F;
 }
 div.agency-regulatory div.item-colrs div.item-colrs__item.amarillo-verde {
-  background: linear-gradient(to top, green 50%, yellow 50%);
+  background: linear-gradient(to top, #00AA7E 50%, #CCAE00 50%);
 }
 div.agency-regulatory div.item-colrs div.item-colrs__item {
   width: 70px;
@@ -23199,22 +23199,22 @@ div.agency-regulatory div.item-colrs div.item-colrs__item {
 div.agency-regulatory div.table__agency-info > div.d-flex div:nth-child(1) div.table__agency-info-color {
   width: 20px;
   height: 20px;
-  background-color: green;
+  background-color: #00AA7E;
 }
 div.agency-regulatory div.table__agency-info > div.d-flex div:nth-child(2) div.table__agency-info-color {
   width: 20px;
   height: 20px;
-  background-color: yellow;
+  background-color: #CCAE00;
 }
 div.agency-regulatory div.table__agency-info > div.d-flex div:nth-child(3) div.table__agency-info-color {
   width: 20px;
   height: 20px;
-  background-color: red;
+  background-color: #F9006F;
 }
 div.agency-regulatory div.table__agency-info > div.d-flex div:nth-child(4) div.table__agency-info-color {
   width: 20px;
   height: 20px;
-  background-color: indigo;
+  background-color: #6A009F;
 }
 div.agency-regulatory form {
   background-color: #3366CC;

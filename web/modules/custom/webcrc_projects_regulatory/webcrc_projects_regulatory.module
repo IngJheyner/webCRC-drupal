@@ -110,6 +110,7 @@ function webcrc_projects_regulatory_preprocess_views_view_field(&$variables) {
         }
       }
       
+      //dpm($field->field);
       if($field->field == 'nothing'){
 
         $field = end($row->_entity->get('field_interacciones_proyectos')->getValue());

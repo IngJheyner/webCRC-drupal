@@ -22,12 +22,12 @@ div.agency-regulatory{
         grid-column-gap: 2px;
 
         div.item-colrs__item.blanco { background-color: #FFFFFF; }
-        div.item-colrs__item.rojo { background-color: red; }
-        div.item-colrs__item.amarillo { background-color: yellow; }
-        div.item-colrs__item.verde { background-color: green; }
-        div.item-colrs__item.morado { background-color:indigo; }
+        div.item-colrs__item.rojo { background-color: #F9006F; }
+        div.item-colrs__item.amarillo { background-color: #CCAE00; }
+        div.item-colrs__item.verde { background-color: #00AA7E; }
+        div.item-colrs__item.morado { background-color:#6A009F; }
 
-        div.item-colrs__item.amarillo-verde { background: linear-gradient(to top, green 50%, yellow 50%); }
+        div.item-colrs__item.amarillo-verde { background: linear-gradient(to top, #00AA7E 50%, #CCAE00 50%); }
 
         div.item-colrs__item{
             width: 70px;
@@ -37,7 +37,7 @@ div.agency-regulatory{
     /* ===== ===== Info. de la tabla ===== ===== */
     div.table__agency-info > div.d-flex{
 
-        $colors: (1: green, 2: yellow, 3: red, 4: indigo);
+        $colors: (1: #00AA7E, 2: #CCAE00, 3: #F9006F, 4: #6A009F);
         
         @each $num, $color in $colors {
             div:nth-child(#{$num}) {

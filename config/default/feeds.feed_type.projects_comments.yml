@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.proyectos_regulatorios.field_oficina_proyecto
     - field.field.node.proyectos_regulatorios.field_projects_links
     - field.field.node.proyectos_regulatorios.field_projects_services
+    - field.field.node.proyectos_regulatorios.field_resumen_proyecto
     - field.field.node.proyectos_regulatorios.field_type_projects_comments
     - node.type.proyectos_regulatorios
   module:
@@ -30,7 +31,7 @@ label: 'Proyectos Comentarios'
 id: projects_comments
 description: 'Se crea nodo de tipo de contenido proyectos comentarios.'
 help: ''
-import_period: 3600
+import_period: -1
 fetcher: upload
 fetcher_configuration:
   allowed_extensions: 'txt csv tsv xml opml'
