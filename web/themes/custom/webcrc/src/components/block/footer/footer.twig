@@ -52,7 +52,7 @@
           {{ content.field_home_footer_title_social }}
         </div>
         <div class="col-12">
-          <ul class="list-group list-group-horizontal social-networks">
+          <ul class="list-group list-group-horizontal flex-wrap social-networks">
             {% for key, item in content.field_social_networks if key|first != '#' %}
               {% set social_network = item %}
               {{ social_network }}

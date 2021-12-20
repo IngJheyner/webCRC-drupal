@@ -78,7 +78,7 @@
   {% if page.bottom_a %}
     <div class="page__bottom_a px-5 py-5">
       <div class="container-fluid p-0">
-        <div id="bottom_a" class="d-flex pl-5 pr-5">
+        <div id="bottom_a" class="d-flex flex-column flex-lg-row px-0 px-sm-5">
           {{ page.bottom_a }}
         </div>
       </div>
@@ -92,12 +92,12 @@
           <div class="page__footer__top">
             <div class="row">
               {% if page.footer_left  %}
-                <div class="col">
+                <div class="col-12 col-lg-6">
                   {{ page.footer_left }}
                 </div>
               {% endif %}
               {% if page.footer_right %}
-                <div class="col">
+                <div class="col-12 col-lg-6 px-0 px-sm-3">
                   {{ page.footer_right }}
                 </div>
               {% endif %}

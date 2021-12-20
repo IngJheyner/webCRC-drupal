@@ -8,7 +8,7 @@ dependencies:
     - field.field.paragraph.accessibility_toolbar.field_url
     - paragraphs.paragraphs_type.accessibility_toolbar
   module:
-    - link
+    - link_target
     - media_library
 id: paragraph.accessibility_toolbar.default
 targetEntityType: paragraph
@@ -31,12 +31,17 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_url:
-    type: link_default
+    type: link_target_field_widget
     weight: 2
     region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
+      available_targets:
+        _self: _self
+        _blank: _blank
+        parent: parent
+        top: top
     third_party_settings: {  }
 hidden:
   created: true

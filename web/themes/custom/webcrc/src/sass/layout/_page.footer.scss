@@ -2,9 +2,13 @@
 // -----------------------------------------------------------------------------
 .newsletter-container {
   background: rgb(51, 102, 204);
-  padding: 40px 60px;
+  padding: 20px 33px;
   border-radius: 20px;
   margin: 20px auto 5px;
+
+  @include tablet {
+    padding: 40px 60px;
+  }
 
   *,
   .title-two-colors 
@@ -15,6 +19,24 @@
   .alert-danger {
     background: rgb(244, 46, 98);
     border-color: rgb(244, 46, 98);
+  }
+
+  .media {
+    .media-body {
+      * {
+        font-family: $roboto-condensed;
+        font-size: 20pt;
+
+        @include tablet {
+          font-size: 26pt;
+        }
+
+        @include large-lg {
+          font-family: $roboto-condensed;
+          font-size: 30pt;
+        }
+      }
+    }
   }
 
   input {
@@ -88,15 +110,23 @@ footer.page__footer {
 
   .page__footer__top,
   .page__footer__bottom {
-    max-width: 80%;
+    max-width: 95%;
     margin: 0 auto;
+
+    @include desktop {
+      max-width: 80%;
+    }
   }
 
   .page__footer__top {
     background: rgb(255, 255, 255);
-    padding: 50px;
+    padding: 20px;
     border-radius: 1%;
     box-shadow: 0 0 15px 0px rgba(0, 0, 0, .2);
+
+    @include small {
+      padding: 50px;
+    }
   }
 
   .page__footer__bottom {

@@ -89,15 +89,21 @@ small {
 }
 
 time {
-  border-left: 5px solid rgb(51, 102, 204);
+  border-left: 5px solid $lb-primary;
   padding: 0 10px;
   margin: 0 auto 20px;
 }
 
 sub {
+  font-family: $roboto-condensed;
+  color: $text-dark-blue;
+  font-style: oblique;
+  font-weight: bold;
 
-  > * {
-    color: rgba(40, 55, 137, 1);
+  *,
+  a {
+    font-family: $roboto-condensed;
+    color: $text-dark-blue;
     font-style: oblique;
     font-weight: bold;
   }

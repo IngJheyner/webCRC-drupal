@@ -22397,14 +22397,26 @@ __webpack_require__.r(__webpack_exports__);
           var fontUp = function fontUp(element) {
             element.addEventListener('click', function () {
               var fontSize = getFontSize();
-              document.documentElement.style.setProperty('--font-size', "".concat(fontSize * 1.1));
+              var htmlElement = document.querySelector('html');
+              fontSize += 1;
+
+              if (fontSize >= 12 && fontSize <= 24) {
+                document.documentElement.style.setProperty('--font-size', "".concat(fontSize));
+                htmlElement.style.setProperty('font-size', fontSize + 'pt');
+              }
             });
           };
 
           var fontDown = function fontDown(element) {
             element.addEventListener('click', function () {
               var fontSize = getFontSize();
-              document.documentElement.style.setProperty('--font-size', "".concat(fontSize * 0.9));
+              var htmlElement = document.querySelector('html');
+              fontSize -= 1;
+
+              if (fontSize >= 12 && fontSize <= 24) {
+                document.documentElement.style.setProperty('--font-size', "".concat(fontSize));
+                htmlElement.style.setProperty('font-size', fontSize + 'pt');
+              }
             });
           };
 
