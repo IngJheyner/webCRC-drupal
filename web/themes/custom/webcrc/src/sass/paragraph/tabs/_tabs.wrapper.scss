@@ -318,11 +318,37 @@
     border-radius: 0 0 $border-radius-global $border-radius-global;
 
     @include desktop {
+      padding: 40px;
       border-radius: 0 $border-radius-global $border-radius-global 0;
     }
 
     > div {
       height: 100%;
+    }
+
+    * {
+      font-family: $roboto-condensed;
+    }
+  }
+
+  .slick-dots {
+    position: absolute;
+    width: auto;
+    top: 100%;
+    right: 0;
+    left: unset;
+    margin: 0;
+
+    li {
+      button {
+        background: $bg-dark-gray;
+      }
+
+      &.slick-active {
+        button {
+          background: $bg-secondary;
+        }
+      }
     }
   }
 }
