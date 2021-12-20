@@ -10,22 +10,26 @@ dependencies:
     - field.field.node.agenda.field_periodo_agenda
     - node.type.agenda
   module:
+    - file
     - user
 id: node.agenda.teaser
 targetEntityType: node
 bundle: agenda
 mode: teaser
 content:
-  links:
-    settings: {  }
+  field_archivo_agenda:
+    type: file_default
+    label: hidden
+    settings:
+      use_description_as_link_text: true
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
   addtoany: true
-  field_archivo_agenda: true
   field_fecha_pub_agenda: true
   field_list_tipo_doc_agenda: true
   field_periodo_agenda: true
   langcode: true
+  links: true
   search_api_excerpt: true

@@ -21,17 +21,33 @@ import anime from 'animejs/lib/anime.es';
 
           const fontUp = element => {
             element.addEventListener('click', () => {
-              let fontSize = getFontSize()
-              document.documentElement
-                .style.setProperty('--font-size', `${fontSize * 1.1}`)
+              let fontSize = getFontSize();
+              let htmlElement = document.querySelector('html');
+              fontSize += 1;
+              
+              if(fontSize >= 12 && fontSize <= 24)
+              {
+                document.documentElement
+                  .style.setProperty('--font-size', `${fontSize}`);
+
+                htmlElement.style.setProperty('font-size', fontSize + 'pt');
+              }
             })
           }
           
           const fontDown = element => {
             element.addEventListener('click', () => {
-              let fontSize = getFontSize()
-              document.documentElement
-                .style.setProperty('--font-size', `${fontSize * 0.9}`)
+              let fontSize = getFontSize();
+              let htmlElement = document.querySelector('html');
+              fontSize -= 1;
+              
+              if(fontSize >= 12 && fontSize <= 24)
+              {
+                document.documentElement
+                  .style.setProperty('--font-size', `${fontSize}`);
+
+                htmlElement.style.setProperty('font-size', fontSize + 'pt');
+              }
             })
           }
 
