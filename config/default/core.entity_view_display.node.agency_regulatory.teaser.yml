@@ -8,10 +8,12 @@ dependencies:
     - field.field.node.agency_regulatory.field_agency_date
     - field.field.node.agency_regulatory.field_agency_date_finished
     - field.field.node.agency_regulatory.field_agency_date_initial
+    - field.field.node.agency_regulatory.field_agency_date_published
     - field.field.node.agency_regulatory.field_agency_eje
     - field.field.node.agency_regulatory.field_agency_note
     - field.field.node.agency_regulatory.field_agency_trimester_finished
     - field.field.node.agency_regulatory.field_agency_trimester_initial
+    - field.field.node.agency_regulatory.field_agency_trimester_published
     - field.field.node.agency_regulatory.field_agency_type
     - node.type.agency_regulatory
   module:
@@ -32,10 +34,12 @@ hidden:
   field_agency_date: true
   field_agency_date_finished: true
   field_agency_date_initial: true
+  field_agency_date_published: true
   field_agency_eje: true
   field_agency_note: true
   field_agency_trimester_finished: true
   field_agency_trimester_initial: true
+  field_agency_trimester_published: true
   field_agency_type: true
   langcode: true
   search_api_excerpt: true

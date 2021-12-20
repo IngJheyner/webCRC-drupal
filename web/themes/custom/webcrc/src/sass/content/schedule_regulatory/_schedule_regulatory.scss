@@ -1,0 +1,61 @@
+/* ==============================
+PAGINA AGENDA REGULATORIA
+============================== */
+div.agency-regulatory{
+
+    @include media-breakpoint-up(xl){
+        max-width: 1400px;
+    }
+
+    /* ===== ===== ITEMS COLORS HEADER ===== ===== */
+    div.item-colrs-header{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 2px;
+    }
+
+    /* ===== ===== ITEMS COLORS ROW ===== ===== */
+    div.item-colrs{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        height: 100px;
+        grid-column-gap: 2px;
+
+        div.item-colrs__item.blanco { background-color: #FFFFFF; }
+        div.item-colrs__item.rojo { background-color: red; }
+        div.item-colrs__item.amarillo { background-color: yellow; }
+        div.item-colrs__item.verde { background-color: green; }
+        div.item-colrs__item.morado { background-color:indigo; }
+
+        div.item-colrs__item.amarillo-verde { background: linear-gradient(to top, green 50%, yellow 50%); }
+
+        div.item-colrs__item{
+            width: 70px;
+        }
+    }
+
+    /* ===== ===== Info. de la tabla ===== ===== */
+    div.table__agency-info > div.d-flex{
+
+        $colors: (1: green, 2: yellow, 3: red, 4: indigo);
+        
+        @each $num, $color in $colors {
+            div:nth-child(#{$num}) {
+                div.table__agency-info-color{
+                    width: 20px;
+                    height: 20px;
+                    background-color: $color;
+                }
+            }
+        }
+    }
+
+    /* ===== ===== FORM VIEW ===== ===== */
+    @include form-view();
+
+    /* ===== ===== TABLE ===== ===== */
+    @include datable('agency-regulatory');
+
+    /* ===== ===== PAGINACION ===== ===== */
+    @include pagination();
+}

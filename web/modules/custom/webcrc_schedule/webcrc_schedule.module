@@ -1,5 +1,6 @@
 <?php
-
+use Drupal\Core\Datetime\DrupalDateTime;
+use Drupal\Core\Form\FormStateInterface;
 /**
  * @file
  * Primary module hooks for Agenda Regulatoria module.
@@ -10,7 +11,7 @@
  */
 
 /**
- * Implements hook_form_alter().
+ * Implements hook_form_BASE_FORM_ID_alter().
  * @author 3desarrollo <3desarrollo@3dstudio.com>
  */
 function webcrc_schedule_form_node_form_alter(&$form, $form_state, $form_id) {
@@ -26,6 +27,10 @@ function webcrc_schedule_form_node_form_alter(&$form, $form_state, $form_id) {
     $form['field_agency_date_finished']['widget'][0]['value']['#type'] = 'datelist';
     $form['field_agency_date_finished']['widget'][0]['value']['#date_part_order'] = ['year'];
     $form['field_agency_date_finished']['widget'][0]['value']['#date_year_range'] = '2015:+1';
+
+    $form['field_agency_date_published']['widget'][0]['value']['#type'] = 'datelist';
+    $form['field_agency_date_published']['widget'][0]['value']['#date_part_order'] = ['year'];
+    $form['field_agency_date_published']['widget'][0]['value']['#date_year_range'] = '2015:+5';
     //dpm($form['field_agency_two_trimester_ini']);
 
    // $form['actions']['submit']['#submit'][] = 'webcrc_schedule_colors_submit';
@@ -35,48 +40,907 @@ function webcrc_schedule_form_node_form_alter(&$form, $form_state, $form_id) {
 }
 
 /**
- * Funcion para agregar las fecha de agenda regultoria colors
- */
-function webcrc_schedule_colors_submit(array &$form, \Drupal\Core\Form\FormStateInterface $form_state){
-  //$tri_initial = [];
-  //$tri_finished = [];
-  
-}
-
-/**
  * Implements hook_preprocess_views_view_field()
+ * @param array $variables
+ * @author 3desarrollo <3desarrollo@3dstudio.com>
  */
 function webcrc_schedule_preprocess_views_view_field(&$variables){
+
   $view = $variables['view'];
   $field = $variables['field'];
-  $row = $variables['row'];
-
-  $color_array = ['blanco', 'rojo', 'amarillo', 'verde'];
-  list($blanco, $rojo, $amarillo, $verde) = $color_array;
+  $row = $variables['row']; 
 
   if($view->storage->id() == 'agency_regulatory'){
-    $caja_color_i = [];
-    $caja_color_f = [];
-    if($field->field == 'field_agency_type'){
-      $actv = $row->_entity->get('field_agency_type')->getValue();
-      $date_initial = $row->_entity->get('field_agency_trimester_initial')->getValue();
-      //dpm(intval($date_initial[0]['value']));
-      if($actv[0]['value'] == 'act'){
-        for ($i=1; $i <= 4 ; $i++) { 
-         
-          if($i <= intval($date_initial[0]['value'])){            
-            $caja_color_i[] = $rojo;
-          }else{
-            $caja_color_f[] = $blanco;
-          }
-        }
-      }
+
+    //Tipo de agenda regulatoria
+    $type = $row->_entity->get('field_agency_type')->getValue();
+
+    //Trimestres inicial, final y publicado
+    $tri_initial = $row->_entity->get('field_agency_trimester_initial')->getValue();
+    $tri_finished = $row->_entity->get('field_agency_trimester_finished')->getValue();
+    $tri_published = $row->_entity->get('field_agency_trimester_published')->getValue();
+    $trimester = ['tri_initial' => $tri_initial[0]['value'], 'tri_finished' => $tri_finished[0]['value'], 'tri_published' => $tri_published[0]['value']];
+
+    //Anios trimestrales inicial, final y publicado
+    $anio_initial = $row->_entity->get('field_agency_date_initial')->getValue();
+    $anio_finished = $row->_entity->get('field_agency_date_finished')->getValue();
+    $anio_published = $row->_entity->get('field_agency_date_published')->getValue();
+    $anios = ['anio_tri_initial' => $anio_initial[0]['value'], 'anio_tri_finished' => $anio_finished[0]['value'], 'anio_published' => $anio_published[0]['value']];
+    
+    /* ===== ===== Fecha inicial trimestral ===== ===== */
+    if($field->field == 'field_agency_trimester_initial'){  
+
+      if($type[0]['value'] == 'act')
+        $html = ColorsActivityInitial($trimester, $anios);
+      else
+        $html = ColorScheduleInitial($trimester, $anios);
+
+      $variables['output'] = ['#markup' => $html];
+
     }
 
-    if($field->field == 'field_agency_trimester_initial'){
-      dpm($caja_color_i[0]);
-      //$variables['output'] = $caja_color_i." ".$caja_color_f;
+    /* ===== ===== Fecha final trimestral ===== ===== */
+    if($field->field == 'field_agency_trimester_finished'){    
+     
+      if($type[0]['value'] == 'act')
+        $html = ColorsActivityFinished($trimester, $anios);
+      else
+        $html = ColorScheduleFinished($trimester, $anios);
+
+      $variables['output'] = ['#markup' => $html ]; 
+
+    }
+
+    /* ===== ===== Fecha publicacion trimestral ===== ===== */
+    if($field->field == 'field_agency_trimester_published'){      
+
+      //anio trimestre publicado
+      if($anios['anio_published'] != NULL && $trimester['tri_published'] != NULL){
+
+        //anio trimestre final
+        $anio_finished_new = new DrupalDateTime($anios['anio_tri_finished']);
+        $anio_finished = \Drupal::service('date.formatter')->format($anio_finished_new->getTimestamp(), 'custom','Y');
+
+        //anio trimestre publicado
+        $anio_published_new = new DrupalDateTime($anios['anio_published']);
+        $anio_published = \Drupal::service('date.formatter')->format($anio_published_new->getTimestamp(), 'custom','Y');
+
+        $sum_anio_finished = intval($anio_published) - intval($anio_finished);
+
+        if($sum_anio_finished >= 1){
+
+          $tri_published = $trimester['tri_published']."T";
+
+          $variables['output'] = ['#markup' => "<div class='alert alert-light text-center' role='alert'><time datetime='".$anio_published."'>$anio_published</time>$tri_published</div>"];
+        }else{                
+          $variables['output'] = ['#markup' => '<div class="alert alert-light text-center" role="alert"> N/A </div>'];
+        }
+
+      }else{
+        $variables['output'] = ['#markup' => '<div class="alert alert-info text-center" role="alert"> NO se ha fijado fecha </div>'];
+      }      
+
     }
       
   }
 }
+
+/* ============================================
+TIPO DE AGENDA REGULATORIA
+=============================================== */
+/**
+ * Se modifica los valores trimestrales dando a un valor en tipo rgb inicial;
+ * @author 3desarrollo <email@email.com>
+ * @param string $trimester
+ * @param string $anios
+ * @param use Drupal\Core\Datetime\DrupalDateTime $dateFormatter
+ */
+function ColorScheduleInitial($trimester, $anios):string {
+
+  $html = '<div class="item-colrs">';
+
+  //anio trimestre inicial
+  $anio_initial_new = new DrupalDateTime($anios['anio_tri_initial']);
+  $anio_initial = \Drupal::service('date.formatter')->format($anio_initial_new->getTimestamp(), 'custom','Y');
+  
+  //anio trimestre final
+  $anio_finished_new = new DrupalDateTime($anios['anio_tri_finished']);
+  $anio_finished = \Drupal::service('date.formatter')->format($anio_finished_new->getTimestamp(), 'custom','Y');
+
+  //anio trimestre publicado
+  $anio_published_new = new DrupalDateTime($anios['anio_published']);
+  $anio_published = \Drupal::service('date.formatter')->format($anio_published_new->getTimestamp(), 'custom','Y');
+  
+  $array_colors = [];
+
+  switch (intval($trimester['tri_initial'])) {
+
+    case 1:
+
+      if($anio_initial != $anio_finished){
+
+        if($anio_initial != $anio_published){
+
+          $array_colors = ['amarillo', 'blanco', 'blanco', 'blanco'];
+
+        }else{
+
+          for ($i=1; $i <=4 ; $i++) {
+
+            if($i == intval($trimester['tri_published'])){
+              array_push($array_colors, 'morado');
+            }else{
+              if($i == intval($trimester['tri_initial']))
+                array_push($array_colors, 'amarillo');
+              else
+                array_push($array_colors, 'blanco');
+            }            
+            
+          }   
+        }
+
+      }else{
+        
+        for ($i=1; $i <=4 ; $i++) {
+
+          if($i == intval($trimester['tri_initial'])){
+            
+            if(intval($trimester['tri_initial']) == intval($trimester['tri_finished']))
+              array_push($array_colors, 'amarillo-verde');
+            else
+              array_push($array_colors, 'amarillo');
+
+          }else{
+
+            if($i == intval($trimester['tri_finished'])){
+              array_push($array_colors, 'verde');
+            }else{
+              if($i == intval($trimester['tri_published']) && ($anio_published == $anio_initial && $anio_published == $anio_finished))
+                array_push($array_colors, 'morado');
+              else
+                array_push($array_colors, 'blanco');
+            }
+          }      
+          
+        }         
+        
+      }
+    break;
+
+    case 2:
+
+      if($anio_initial != $anio_finished){
+
+        if($anio_initial != $anio_published){
+
+          $array_colors = ['blanco', 'amarillo', 'blanco', 'blanco'];
+
+        }else{
+
+          for ($i=1; $i <=4 ; $i++) {
+
+            if($i == intval($trimester['tri_published'])){
+              array_push($array_colors, 'morado');
+            }else{
+              if($i == intval($trimester['tri_initial']))
+                array_push($array_colors, 'amarillo');
+              else
+                array_push($array_colors, 'blanco');
+            }            
+            
+          }   
+        }
+
+      }else{          
+
+        $array_colors = ['blanco'];
+        
+        for ($i=intval($trimester['tri_initial']); $i <= 4; $i++) { 
+
+          if($i == intval($trimester['tri_initial'])){
+            
+            if(intval($trimester['tri_initial']) == intval($trimester['tri_finished']))
+              array_push($array_colors, 'amarillo-verde');
+            else
+              array_push($array_colors, 'amarillo');
+
+          }else{
+
+            if($i == intval($trimester['tri_finished'])){
+
+              array_push($array_colors, 'verde');
+
+            }else{
+
+              if($i == intval($trimester['tri_published']) && ($anio_published == $anio_initial && $anio_published == $anio_finished))
+                array_push($array_colors, 'morado');
+              else
+                array_push($array_colors, 'blanco');
+
+            }
+              
+          }
+        }      
+        
+      }
+    break;
+
+    case 3:
+
+      if($anio_initial != $anio_finished){
+
+        if($anio_initial != $anio_published){
+
+          $array_colors = ['blanco', 'blanco', 'amarillo', 'blanco'];
+          
+        }else{
+
+          for ($i=1; $i <=4 ; $i++) {
+
+            if($i == intval($trimester['tri_published'])){
+              array_push($array_colors, 'morado');
+            }else{
+              if($i == intval($trimester['tri_initial']))
+                array_push($array_colors, 'amarillo');
+              else
+                array_push($array_colors, 'blanco');
+            }            
+            
+          }   
+        }
+
+      }else{          
+
+        $array_colors = ['blanco', 'blanco'];
+        
+        for ($i=intval($trimester['tri_initial']); $i <= 4; $i++) {
+
+          if($i == intval($trimester['tri_initial'])){
+          
+            if(intval($trimester['tri_initial']) == intval($trimester['tri_finished']))
+              array_push($array_colors, 'amarillo-verde');
+            else
+              array_push($array_colors, 'amarillo');
+
+          }else{
+
+            if($i == intval($trimester['tri_finished'])){
+
+              array_push($array_colors, 'verde');
+
+            }else{
+
+              if($i == intval($trimester['tri_published']) && ($anio_published == $anio_initial && $anio_published == $anio_finished))
+                array_push($array_colors, 'morado');
+              else
+                array_push($array_colors, 'blanco');
+
+            }
+          }          
+        }
+      }
+    break;
+
+    case 4:
+
+      if($anio_initial != $anio_finished){
+
+        $array_colors = ['blanco', 'blanco', 'blanco', 'amarillo'];
+
+      }else{          
+
+        $array_colors = ['blanco', 'blanco', 'blanco'];
+        
+        for ($i=intval($trimester['tri_initial']); $i <= 4; $i++) { 
+
+          if($i == intval($trimester['tri_initial'])){
+
+            if(intval($trimester['tri_initial']) == intval($trimester['tri_finished']))
+              array_push($array_colors, 'amarillo-verde');
+            else
+              array_push($array_colors, 'amarillo');
+          }
+        }       
+        
+      }
+    break;
+
+    default:
+      $array_colors = ['blanco', 'blanco', 'blanco', 'blanco'];
+    break;
+
+  }
+
+  for ($i=0; $i <count($array_colors); $i++) { 
+    $html .= "<div class='item-colrs__item $array_colors[$i]'></div>";
+  }
+
+  $html .= '</div>';
+  return $html;
+}
+/**
+ * Se modifica los valores trimestrales dando a un valor en tipo rgb inicial;
+ * @author 3desarrollo <email@email.com>
+ * @param string $trimester
+ * @param string $anios
+ * @param use Drupal\Core\Datetime\DrupalDateTime $dateFormatter
+ */
+function ColorScheduleFinished($trimester, $anios):string {
+
+  $html = '<div class="item-colrs">';
+
+  //anio trimestre inicial
+  $anio_initial_new = new DrupalDateTime($anios['anio_tri_initial']);
+  $anio_initial = \Drupal::service('date.formatter')->format($anio_initial_new->getTimestamp(), 'custom','Y');
+  
+  //anio trimestre final
+  $anio_finished_new = new DrupalDateTime($anios['anio_tri_finished']);
+  $anio_finished = \Drupal::service('date.formatter')->format($anio_finished_new->getTimestamp(), 'custom','Y');
+
+  //anio trimestre publicado
+  $anio_published_new = new DrupalDateTime($anios['anio_published']);
+  $anio_published = \Drupal::service('date.formatter')->format($anio_published_new->getTimestamp(), 'custom','Y');
+
+  $array_colors = [];
+
+  if($anio_initial != $anio_finished){
+
+    switch (intval($trimester['tri_finished'])) {
+
+      case 1:
+        
+        if($anio_finished != $anio_published){
+
+          $array_colors = ['verde', 'blanco', 'blanco', 'blanco'];
+
+        }else{
+
+          for ($i=1; $i <=4 ; $i++) {
+
+            if($i == intval($trimester['tri_published'])){
+
+              array_push($array_colors, 'morado');
+
+            }else{
+              
+              if($i == intval($trimester['tri_finished']))
+                array_push($array_colors, 'verde');
+              else
+                array_push($array_colors, 'blanco');
+            } 
+            
+          }
+
+        }
+
+      break;
+
+      case 2:
+        
+        if($anio_finished != $anio_published){
+
+          $array_colors = ['blanco', 'verde', 'blanco', 'blanco'];
+
+        }else{
+
+          for ($i=1; $i <=4 ; $i++) {
+
+            if($i == intval($trimester['tri_published'])){
+
+              array_push($array_colors, 'morado');
+
+            }else{
+              
+              if($i == intval($trimester['tri_finished']))
+                array_push($array_colors, 'verde');
+              else
+                array_push($array_colors, 'blanco');
+            } 
+            
+          }
+
+        }
+
+      break;
+
+      case 3:
+        
+        if($anio_finished != $anio_published){
+
+          $array_colors = ['blanco', 'blanco', 'verde', 'blanco'];
+
+        }else{
+
+          for ($i=1; $i <=4 ; $i++) {
+
+            if($i == intval($trimester['tri_published'])){
+
+              array_push($array_colors, 'morado');
+
+            }else{
+              
+              if($i == intval($trimester['tri_finished']))
+                array_push($array_colors, 'verde');
+              else
+                array_push($array_colors, 'blanco');
+            } 
+            
+          }
+
+        }
+
+      break;
+
+      case 4:
+        
+        if($anio_finished != $anio_published){
+
+          $array_colors = ['blanco', 'blanco', 'blanco', 'verde'];
+
+        }else{
+
+          for ($i=1; $i <=4 ; $i++) {
+
+            if($i == intval($trimester['tri_published'])){
+
+              array_push($array_colors, 'morado');
+
+            }else{
+              
+              if($i == intval($trimester['tri_finished']))
+                array_push($array_colors, 'verde');
+              else
+                array_push($array_colors, 'blanco');
+            } 
+            
+          }
+
+        }
+
+      break;
+
+      default:
+        $array_colors = ['blanco', 'blanco', 'blanco', 'blanco'];
+      break;
+    }
+  }else{    
+
+    $sum_anio_finished = intval($anio_finished) + 1;
+    
+    if($sum_anio_finished === intval($anio_published)){
+
+      for ($i=1; $i <= 4 ; $i++) { 
+
+        if($i == intval($trimester['tri_published']))
+          array_push($array_colors, 'morado');
+        else
+          array_push($array_colors, 'blanco');
+
+      }      
+
+    }else{
+      $array_colors = ['blanco', 'blanco', 'blanco', 'blanco'];
+    }     
+     
+  }
+
+  for ($i=0; $i <count($array_colors); $i++) { 
+    $html .= "<div class='item-colrs__item $array_colors[$i]'></div>";
+  }
+
+  $html .= '</div>'; 
+
+  return $html;
+}
+
+
+
+/* ============================================
+TIPO DE AGENDA ESTUDIO O ACTIVIDAD
+=============================================== */
+/**
+ * Se modifica los valores trimestrales dando a un valor en tipo rgb inicial;
+ * @author 3desarrollo <email@email.com>
+ * @param string $trimester
+ * @param string $anios
+ * @param use Drupal\Core\Datetime\DrupalDateTime $dateFormatter
+ */
+function ColorsActivityInitial($trimester, $anios):string {
+
+  $html = '<div class="item-colrs">';
+
+  //anio trimestre inicial
+  $anio_initial_new = new DrupalDateTime($anios['anio_tri_initial']);
+  $anio_initial = \Drupal::service('date.formatter')->format($anio_initial_new->getTimestamp(), 'custom','Y');
+  
+  //anio trimestre final
+  $anio_finished_new = new DrupalDateTime($anios['anio_tri_finished']);
+  $anio_finished = \Drupal::service('date.formatter')->format($anio_finished_new->getTimestamp(), 'custom','Y');
+
+  //anio trimestre publicado
+  $anio_published_new = new DrupalDateTime($anios['anio_published']);
+  $anio_published = \Drupal::service('date.formatter')->format($anio_published_new->getTimestamp(), 'custom','Y');
+  
+  $array_colors = [];
+
+  switch (intval($trimester['tri_initial'])) {
+
+    //Primer trimestre
+    case 1:
+
+      if($anio_initial != $anio_finished){
+
+        if($anio_initial != $anio_published){
+
+          $array_colors = ['rojo', 'rojo', 'rojo', 'rojo'];
+
+        }else{          
+
+          for ($i=1; $i <=4 ; $i++) {
+
+            if($i == intval($trimester['tri_published'])){
+
+              array_push($array_colors, 'morado');
+
+            }else{
+
+              array_push($array_colors, 'rojo');
+
+            }              
+            
+          }         
+          
+        }
+
+      }else{ 
+        
+        if($anio_published > $anio_finished){ //Validacion si el anio publicado es mayor al anio de final en trimestre
+
+          for ($i=intval($trimester['tri_initial']); $i <= 4; $i++) { 
+
+            if($i < intval($trimester['tri_finished'])){
+              array_push($array_colors, 'rojo');
+            }else{
+              if($i == intval($trimester['tri_finished']))
+                array_push($array_colors, 'rojo');
+              else
+                array_push($array_colors, 'blanco');
+            }
+          }
+        }else{
+
+          for ($i=intval($trimester['tri_initial']); $i <= 4; $i++) { 
+
+            if($i < intval($trimester['tri_finished'])){
+
+              if(intval($trimester['tri_published']) == $i)
+                array_push($array_colors, 'morado');
+              else
+                array_push($array_colors, 'rojo');
+              
+            }else{
+              if($i == intval($trimester['tri_finished'])){
+
+                if(intval($trimester['tri_published']) == $i)
+                  array_push($array_colors, 'morado');
+                else
+                  array_push($array_colors, 'rojo');
+
+              }else{
+                if(intval($trimester['tri_published']) == $i)
+                  array_push($array_colors, 'morado');
+                else
+                  array_push($array_colors, 'blanco');
+              }
+            }
+          }
+        }
+
+      }     
+
+    break;
+
+    case 2:      
+
+      if($anio_initial != $anio_finished){
+
+        $array_colors = ['blanco', 'rojo', 'rojo', 'rojo'];
+
+      }else{
+
+        $array_colors = ['blanco'];
+        
+        for ($i=intval($trimester['tri_initial']); $i <= 4; $i++) { 
+
+          if($i < intval($trimester['tri_finished'])){
+            array_push($array_colors, 'rojo');
+          }else{
+            if($i == intval($trimester['tri_finished']))
+              array_push($array_colors, 'rojo');
+            else
+              array_push($array_colors, 'blanco');
+          }
+        }
+      }
+
+    break;
+
+    case 3:
+
+      if($type === 'act'){
+
+        if($anio_initial != $anio_finished){
+
+          $array_colors = ['blanco', 'blanco', 'rojo', 'rojo'];
+
+        }else{
+
+          $array_colors = ['blanco', 'blanco'];
+          
+          for ($i=intval($trimester['tri_initial']); $i <= 4; $i++) { 
+
+            if($i < intval($trimester['tri_finished'])){
+              array_push($array_colors, 'rojo');
+            }else{
+              if($i == intval($trimester['tri_finished']))
+                array_push($array_colors, 'rojo');
+              else
+                array_push($array_colors, 'blanco');
+            }
+          }
+          
+          for ($i=0; $i <count($array_colors); $i++) { 
+            $html .= "<div class='item-colrs__item $array_colors[$i]'></div>";
+          }
+        }
+      }
+    
+    break;
+    
+    case 4:
+
+      if($type === 'act'){    
+
+        $array_colors = ['blanco', 'blanco', 'blanco', 'rojo'];
+        
+      }
+    
+    break;
+
+    default:
+      $array_colors = ['blanco', 'blanco', 'blanco', 'blanco'];
+      break;
+  }
+
+  for ($i=0; $i <count($array_colors); $i++) { 
+    $html .= "<div class='item-colrs__item $array_colors[$i]'></div>";
+  }
+
+  $html .= '</div>';
+  return $html;
+}
+
+/**
+ * Se modifica los valores trimestrales dando a un valor en tipo rgb final;
+ * @author 3desarrollo <email@email.com>
+ * @param string $trimester
+ * @param string $anios
+ * @param use Drupal\Core\Datetime\DrupalDateTime $dateFormatter
+ */
+function ColorsActivityFinished($trimester, $anios):string {
+
+  $html = '<div class="item-colrs">';
+
+  //anio trimestre inicial
+  $anio_initial_new = new DrupalDateTime($anios['anio_tri_initial']);
+  $anio_initial = \Drupal::service('date.formatter')->format($anio_initial_new->getTimestamp(), 'custom','Y');
+  
+  //anio trimestre final
+  $anio_finished_new = new DrupalDateTime($anios['anio_tri_finished']);
+  $anio_finished = \Drupal::service('date.formatter')->format($anio_finished_new->getTimestamp(), 'custom','Y');
+
+  //anio trimestre publicado
+  $anio_published_new = new DrupalDateTime($anios['anio_published']);
+  $anio_published = \Drupal::service('date.formatter')->format($anio_published_new->getTimestamp(), 'custom','Y');
+
+  $array_colors = [];
+
+  if($anio_initial != $anio_finished){
+
+    switch (intval($trimester['tri_finished'])) {
+
+      case 1:
+        
+        if($anio_finished != $anio_published){
+
+          $array_colors = ['rojo', 'blanco', 'blanco', 'blanco'];
+
+        }else{
+
+          for ($i=1; $i <=4 ; $i++) {
+
+            if($i == intval($trimester['tri_published'])){
+
+              array_push($array_colors, 'morado');
+
+            }else{
+              
+              if($i <= intval($trimester['tri_finished']))
+                array_push($array_colors, 'rojo');
+              else
+                array_push($array_colors, 'blanco');
+            } 
+            
+          }
+
+        }
+
+      break;
+
+      case 2:
+
+        if($anio_finished != $anio_published){
+
+          $array_colors = ['rojo', 'rojo', 'blanco', 'blanco'];
+
+        }else{
+
+          for ($i=1; $i <=4; $i++) {
+
+            if($i == intval($trimester['tri_published'])){
+
+              array_push($array_colors, 'morado');
+
+            }else{
+              
+              if($i <= intval($trimester['tri_finished']))
+                array_push($array_colors, 'rojo');
+              else
+                array_push($array_colors, 'blanco');
+            }              
+            
+          }
+        }
+
+      break;
+
+      case 3:
+
+        if($anio_finished != $anio_published){
+
+          $array_colors = ['rojo', 'rojo', 'rojo', 'blanco'];
+
+        }else{
+
+          for ($i=1; $i <=4; $i++) {
+
+            if($i == intval($trimester['tri_published'])){
+
+              array_push($array_colors, 'morado');
+
+            }else{
+
+              if($i <= intval($trimester['tri_finished']))
+                array_push($array_colors, 'rojo');
+              else
+                array_push($array_colors, 'blanco');
+            }              
+            
+          }
+        }
+
+      break;
+
+      case 4:
+
+        if($anio_finished != $anio_published){
+
+          $array_colors = ['rojo', 'rojo', 'rojo', 'rojo'];
+
+        }else{
+
+          for ($i=1; $i <=4; $i++) {
+
+            if($i == intval($trimester['tri_published'])){
+
+              array_push($array_colors, 'morado');
+
+            }else{
+
+              if($i <= intval($trimester['tri_finished']))
+                array_push($array_colors, 'rojo');
+              else
+                array_push($array_colors, 'blanco');
+            }              
+            
+          }
+        }
+
+      break;
+
+      default:
+        $array_colors = ['blanco', 'blanco', 'blanco', 'blanco'];
+      break;
+    }
+
+  }else{    
+
+    $sum_anio_finished = intval($anio_finished) + 1;
+    
+    if($sum_anio_finished === intval($anio_published)){
+
+      for ($i=1; $i <= 4 ; $i++) { 
+
+        if($i == intval($trimester['tri_published']))
+          array_push($array_colors, 'morado');
+        else
+          array_push($array_colors, 'blanco');
+
+      }
+
+    }else{
+      $array_colors = ['blanco', 'blanco', 'blanco', 'blanco']; 
+    }     
+     
+  }
+
+  for ($i=0; $i <count($array_colors); $i++) { 
+    $html .= "<div class='item-colrs__item $array_colors[$i]'></div>";
+  }
+
+  $html .= '</div>'; 
+
+  return $html;
+}
+
+/**
+ * Implements hook_preprocess_views_view_table()
+ * @author 3desarrollo <email@email.com>
+ */
+function webcrc_schedule_preprocess_views_view_table(&$variables){
+  
+  if($variables['theme_hook_original'] === 'views_view_table__agency_regulatory__page_1'){
+
+    /* ===== ===== TRAER EL NOMBRE DEL FILTRO POR TAXONOMIA ===== ===== */
+    $filter_new = $variables['view']->filter['field_agency_date_target_id']->value;
+    $filter = reset($filter_new);
+
+    $tax_agency = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->load($filter);
+    
+    $variables['date_agency_target'] = $tax_agency->getName();
+
+  }
+}
+
+/**
+ * Implements hook_form_views_exposed_form_alter()
+ * @author 3desarrollo <email@email.com>
+ */
+function webcrc_schedule_form_views_exposed_form_alter(&$form, FormStateInterface $form_state) {
+
+  //dpm($form['#id']);
+
+  if($form['#id'] == 'views-exposed-form-agency-regulatory-page-1'){
+
+    /* ===== ===== TITULO ===== ===== */
+    if (isset($form['field_agency_date_target_id'])) $form['field_agency_date_target_id']['#prefix'] = '<p class="h4 text-center text-white mb-3">Lo invitamos a seleccionar la agenda que desea consultar</p>';
+  }
+}
+
+/**
+ * Implements hook_preprocess_form_element()
+ */
+function webcrc_schedule_preprocess_form_element(&$variables) {
+  /* ===== ===== Nombre de proyecto ===== ===== */
+  if(isset($variables['name']) && $variables['name'] == 'field_agency_date_target_id'){
+
+    $variables['attributes'] = [
+      'class' => [
+        'input__select-multiple',
+      ]
+    ];
+  }
+}
+
+       
+      

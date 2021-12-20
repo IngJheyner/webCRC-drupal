@@ -11,7 +11,7 @@ field_name: field_agency_date
 entity_type: node
 bundle: agency_regulatory
 label: 'Fecha Agenda Regulatoria'
-description: ''
+description: "Digite o seleccione una de las opciones para la fecha de agenda de la siguiente manera Ej: 1999 - 2000 <strong>Nota: </strong>Separe con espacios y guion (-). <br>\r\nLa agenda debe coincidir con fecha de inicio y final, debe haber alguna concordancia en la digitacion de fechas."
 required: false
 translatable: false
 default_value: {  }

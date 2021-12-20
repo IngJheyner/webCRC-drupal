@@ -1,17 +1,17 @@
-uuid: 54c16f99-23a6-410d-a68a-20c594d11b2a
+uuid: 70ba51df-de4a-4d4b-a205-14dc7430d746
 langcode: es
 status: true
 dependencies:
   config:
-    - node.type.proyectos_regulatorios
-id: node.proyectos_regulatorios.title
+    - node.type.agency_regulatory
+id: node.agency_regulatory.title
 field_name: title
 entity_type: node
-bundle: proyectos_regulatorios
-label: Código
+bundle: agency_regulatory
+label: 'Titulo de agenda'
 description: ''
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

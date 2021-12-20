@@ -27,5 +27,5 @@ type: agency_regulatory
 description: 'Seccion donde se visualiza la agencia regulatoria de proyectos/Actividades de la CRC en los proximos anios.'
 help: ''
 new_revision: false
-preview_mode: 1
+preview_mode: 0
 display_submitted: false
