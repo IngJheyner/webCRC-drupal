@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.normatividad_regulatoria.field_tax_palabras_clave_normati
     - node.type.normatividad_regulatoria
   module:
+    - datetime
     - file
     - user
 id: node.normatividad_regulatoria.teaser
@@ -28,11 +29,19 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  field_fecha_de_publi_normativ:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: America/Bogota
+      format_type: news_dates
+    third_party_settings: {  }
+    weight: 1
+    region: content
 hidden:
   addtoany: true
   field_ano_normat_reg: true
   field_epigrafe_referencia_normat: true
-  field_fecha_de_publi_normativ: true
   field_list_tipo_norma_normativid: true
   field_numero_normatividad: true
   field_tax_palabras_clave_normati: true

@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.agenda.field_periodo_agenda
     - node.type.agenda
   module:
+    - datetime
     - file
     - user
 id: node.agenda.teaser
@@ -25,9 +26,17 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  field_fecha_pub_agenda:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: America/Bogota
+      format_type: news_dates
+    third_party_settings: {  }
+    weight: 1
+    region: content
 hidden:
   addtoany: true
-  field_fecha_pub_agenda: true
   field_list_tipo_doc_agenda: true
   field_periodo_agenda: true
   langcode: true
