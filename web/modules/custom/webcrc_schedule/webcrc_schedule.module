@@ -60,7 +60,8 @@ function webcrc_schedule_anios_date(&$form, FormStateInterface $form_state){
   //Anio publicacion
   $anio_published_field = $form_state->getValue('field_agency_date_published')[0]['value'];
   $anio_published = $anio_published_field != NULL ? \Drupal::service('date.formatter')->format($anio_published_field->getTimestamp(), 'custom','Y') : NULL;
-  //dpm($anio_published);
+
+  $tri_published_field = $form_state->getValue('field_agency_trimester_published')[0]['value'];
 
   if(intval($anio_finished) < intval($anio_initial)){
 
@@ -72,10 +73,15 @@ function webcrc_schedule_anios_date(&$form, FormStateInterface $form_state){
     $form_state->setErrorByName('field_agency_date_published', t('
     El año de la Fecha Publicacion debe ser mayor o igual al de la Fecha Inicial. <br><strong>%anio_published < %anio_initial</strong>', ['%anio_published' => $anio_published, '%anio_initial' => $anio_initial]));
 
+  }elseif($tri_published_field != NULL){
+
+    if($anio_published == NULL){
+
+      $form_state->setErrorByName('field_agency_date_published', t('El año de publicación es obligatorio ya que tiene un trimestre asignado.'));
+
+    }
   }
-  /*if(!$this->email_validator->isValid($email)){
-      $form_state->setErrorByName('user_email', $this->t('%email is not a valid email address.', ['%email' => $email]));
-  }*/
+  
 }
 
 /**
@@ -197,6 +203,7 @@ function ColorScheduleInitial($trimester, $anios):string {
   $anio_published = \Drupal::service('date.formatter')->format($anio_published_new->getTimestamp(), 'custom','Y');
   
   $array_colors = [];
+  $purple = FALSE;
 
   switch (intval($trimester['tri_initial'])) {
 
@@ -212,44 +219,98 @@ function ColorScheduleInitial($trimester, $anios):string {
 
           for ($i=1; $i <=4 ; $i++) {
 
-            if($trimester['tri_published'] != NULL && $i == intval($trimester['tri_published'])){
+            if($trimester['tri_published'] != NULL && $i == intval($trimester['tri_published']))
+
               array_push($array_colors, 'morado');
-            }else{
-              if($i == intval($trimester['tri_initial']))
-                array_push($array_colors, 'amarillo');
-              else
-                array_push($array_colors, 'blanco');
-            }            
+
+            elseif($i == intval($trimester['tri_initial']))
+
+              array_push($array_colors, 'amarillo');
+
+            else
+            
+              array_push($array_colors, 'blanco');                       
             
           }   
         }
 
       }else{
-        
-        for ($i=1; $i <=4 ; $i++) {
+
+        for ($i=intval($trimester['tri_initial']); $i <= 4; $i++) { 
 
           if($i == intval($trimester['tri_initial'])){
             
-            if(intval($trimester['tri_initial']) == intval($trimester['tri_finished']))
-              array_push($array_colors, 'amarillo-verde');
-            else
-              array_push($array_colors, 'amarillo');
+            if(intval($trimester['tri_initial']) == intval($trimester['tri_finished'])){
+
+              if(intval($trimester['tri_published']) != $i)
+
+                array_push($array_colors, 'amarillo-verde');
+                
+              elseif($anio_initial != $anio_published)
+
+                array_push($array_colors, 'amarillo-verde');
+
+              else
+
+                array_push($array_colors, 'morado');             
+
+            }else{
+
+              if(intval($trimester['tri_published']) != $i)
+
+                array_push($array_colors, 'amarillo'); 
+
+              elseif($anio_initial == $anio_published)
+
+                array_push($array_colors, 'amarillo-morado');
+
+              else
+                
+                array_push($array_colors, 'amarillo');
+            }
 
           }else{
 
             if($i == intval($trimester['tri_finished'])){
-              array_push($array_colors, 'verde');
+              
+              if($trimester['tri_published'] != NULL && intval($trimester['tri_published']) != intval($trimester['tri_finished'])){
+
+                array_push($array_colors, 'verde');
+
+              }else{
+                
+                if($trimester['tri_published'] != NULL){
+
+                  if($anio_finished != $anio_published)
+                    array_push($array_colors, 'verde');
+                  else
+                    array_push($array_colors, 'verde-morado');
+
+                }else{
+
+                  array_push($array_colors, 'verde');
+
+                }              
+
+              }
+
             }else{
+
               if(($trimester['tri_published'] != NULL && $i == intval($trimester['tri_published'])) && ($anio_published == $anio_initial && $anio_published == $anio_finished))
+
                 array_push($array_colors, 'morado');
+
               else
+
                 array_push($array_colors, 'blanco');
+
             }
-          }      
-          
-        }         
-        
+              
+          }
+        }
+               
       }
+      
     break;
 
     case 2:
@@ -264,14 +325,18 @@ function ColorScheduleInitial($trimester, $anios):string {
 
           for ($i=1; $i <=4 ; $i++) {
 
-            if($i == intval($trimester['tri_published'])){
+            if($i == intval($trimester['tri_published']))
+
               array_push($array_colors, 'morado');
-            }else{
-              if($i == intval($trimester['tri_initial']))
-                array_push($array_colors, 'amarillo');
-              else
-                array_push($array_colors, 'blanco');
-            }            
+
+            elseif($i == intval($trimester['tri_initial']))
+
+              array_push($array_colors, 'amarillo');
+
+            else
+
+              array_push($array_colors, 'blanco');
+                       
             
           }   
         }
@@ -284,22 +349,63 @@ function ColorScheduleInitial($trimester, $anios):string {
 
           if($i == intval($trimester['tri_initial'])){
             
-            if(intval($trimester['tri_initial']) == intval($trimester['tri_finished']))
-              array_push($array_colors, 'amarillo-verde');
-            else
-              array_push($array_colors, 'amarillo');
+            if(intval($trimester['tri_initial']) == intval($trimester['tri_finished'])){
+              
+              if(intval($trimester['tri_published']) != $i){
+                array_push($array_colors, 'amarillo-verde');
+                
+              }elseif($anio_initial != $anio_published){
+                array_push($array_colors, 'amarillo-verde');
+              }else{
+                array_push($array_colors, 'morado');
+              }
+
+            }else{
+
+              if(intval($trimester['tri_published']) != $i){
+                array_push($array_colors, 'amarillo');                
+              }else{
+                if($anio_initial == $anio_published)
+                  array_push($array_colors, 'amarillo-morado');
+                else
+                  array_push($array_colors, 'amarillo');                
+              }               
+
+            }
 
           }else{
 
             if($i == intval($trimester['tri_finished'])){
+              
+              if($trimester['tri_published'] != NULL && intval($trimester['tri_published']) != intval($trimester['tri_finished'])){
 
-              array_push($array_colors, 'verde');
+                array_push($array_colors, 'verde');
+
+              }else{
+                
+                if($trimester['tri_published'] != NULL){
+
+                  if($anio_finished != $anio_published)
+                    array_push($array_colors, 'verde');
+                  else
+                    array_push($array_colors, 'verde-morado');
+
+                }else{
+
+                  array_push($array_colors, 'verde');
+
+                }              
+
+              }
 
             }else{
 
               if(($trimester['tri_published'] != NULL && $i == intval($trimester['tri_published'])) && ($anio_published == $anio_initial && $anio_published == $anio_finished))
+
                 array_push($array_colors, 'morado');
+
               else
+
                 array_push($array_colors, 'blanco');
 
             }
@@ -341,27 +447,69 @@ function ColorScheduleInitial($trimester, $anios):string {
         for ($i=intval($trimester['tri_initial']); $i <= 4; $i++) {
 
           if($i == intval($trimester['tri_initial'])){
-          
-            if(intval($trimester['tri_initial']) == intval($trimester['tri_finished']))
-              array_push($array_colors, 'amarillo-verde');
-            else
-              array_push($array_colors, 'amarillo');
+            
+            if(intval($trimester['tri_initial']) == intval($trimester['tri_finished'])){
+              
+              if(intval($trimester['tri_published']) != $i){
+                array_push($array_colors, 'amarillo-verde');
+                
+              }elseif($anio_initial != $anio_published){
+                array_push($array_colors, 'amarillo-verde');
+              }else{
+                array_push($array_colors, 'morado');
+              }
+
+            }else{
+
+              if(intval($trimester['tri_published']) != $i){
+                array_push($array_colors, 'amarillo');                
+              }else{
+                if($anio_initial == $anio_published)
+                  array_push($array_colors, 'amarillo-morado');
+                else
+                  array_push($array_colors, 'amarillo');                
+              }               
+
+            }
 
           }else{
 
             if($i == intval($trimester['tri_finished'])){
+              
+              if($trimester['tri_published'] != NULL && intval($trimester['tri_published']) != intval($trimester['tri_finished'])){
 
-              array_push($array_colors, 'verde');
+                array_push($array_colors, 'verde');
+
+              }else{
+                
+                if($trimester['tri_published'] != NULL){
+
+                  if($anio_finished != $anio_published)
+                    array_push($array_colors, 'verde');
+                  else
+                    array_push($array_colors, 'verde-morado');
+
+                }else{
+
+                  array_push($array_colors, 'verde');
+
+                }              
+
+              }
 
             }else{
 
               if(($trimester['tri_published'] != NULL && $i == intval($trimester['tri_published'])) && ($anio_published == $anio_initial && $anio_published == $anio_finished))
+
                 array_push($array_colors, 'morado');
+
               else
+
                 array_push($array_colors, 'blanco');
 
             }
-          }          
+              
+          }         
         }
       }
     break;
@@ -379,15 +527,73 @@ function ColorScheduleInitial($trimester, $anios):string {
         for ($i=intval($trimester['tri_initial']); $i <= 4; $i++) { 
 
           if($i == intval($trimester['tri_initial'])){
+            
+            if(intval($trimester['tri_initial']) == intval($trimester['tri_finished'])){
+              
+              if(intval($trimester['tri_published']) != $i){
+                array_push($array_colors, 'amarillo-verde');
+                
+              }elseif($anio_initial != $anio_published){
+                array_push($array_colors, 'amarillo-verde');
+              }else{
+                array_push($array_colors, 'morado');
+              }
 
-            if(intval($trimester['tri_initial']) == intval($trimester['tri_finished']))
-              array_push($array_colors, 'amarillo-verde');
-            else
-              array_push($array_colors, 'amarillo');
+            }else{
+
+              if(intval($trimester['tri_published']) != $i){
+                array_push($array_colors, 'amarillo');                
+              }else{
+                if($anio_initial == $anio_published)
+                  array_push($array_colors, 'amarillo-morado');
+                else
+                  array_push($array_colors, 'amarillo');                
+              }               
+
+            }
+
+          }else{
+
+            if($i == intval($trimester['tri_finished'])){
+              
+              if($trimester['tri_published'] != NULL && intval($trimester['tri_published']) != intval($trimester['tri_finished'])){
+
+                array_push($array_colors, 'verde');
+
+              }else{
+                
+                if($trimester['tri_published'] != NULL){
+
+                  if($anio_finished != $anio_published)
+                    array_push($array_colors, 'verde');
+                  else
+                    array_push($array_colors, 'verde-morado');
+
+                }else{
+
+                  array_push($array_colors, 'verde');
+
+                }              
+
+              }
+
+            }else{
+
+              if(($trimester['tri_published'] != NULL && $i == intval($trimester['tri_published'])) && ($anio_published == $anio_initial && $anio_published == $anio_finished))
+
+                array_push($array_colors, 'morado');
+
+              else
+
+                array_push($array_colors, 'blanco');
+
+            }
+              
           }
         }       
         
       }
+
     break;
 
     default:
@@ -444,7 +650,10 @@ function ColorScheduleFinished($trimester, $anios):string {
 
             if($trimester['tri_published'] != NULL && $i == intval($trimester['tri_published'])){
 
-              array_push($array_colors, 'morado');
+              if(intval($trimester['tri_published']) == intval($trimester['tri_finished']))           
+                array_push($array_colors, 'verde-morado');
+              else
+                array_push($array_colors, 'morado');              
 
             }else{
               
@@ -472,7 +681,10 @@ function ColorScheduleFinished($trimester, $anios):string {
 
             if($trimester['tri_published'] != NULL && $i == intval($trimester['tri_published'])){
 
-              array_push($array_colors, 'morado');
+              if(intval($trimester['tri_published']) == intval($trimester['tri_finished']))           
+                array_push($array_colors, 'verde-morado');
+              else
+                array_push($array_colors, 'morado');
 
             }else{
               
@@ -498,9 +710,12 @@ function ColorScheduleFinished($trimester, $anios):string {
 
           for ($i=1; $i <=4 ; $i++) {
 
-            if($i == intval($trimester['tri_published'])){
+            if($trimester['tri_published'] != NULL && $i == intval($trimester['tri_published'])){
 
-              array_push($array_colors, 'morado');
+              if(intval($trimester['tri_published']) == intval($trimester['tri_finished']))           
+                array_push($array_colors, 'verde-morado');
+              else
+                array_push($array_colors, 'morado');
 
             }else{
               
@@ -528,7 +743,10 @@ function ColorScheduleFinished($trimester, $anios):string {
 
             if($trimester['tri_published'] != NULL && $i == intval($trimester['tri_published'])){
 
-              array_push($array_colors, 'morado');
+              if(intval($trimester['tri_published']) == intval($trimester['tri_finished']))           
+                array_push($array_colors, 'verde-morado');
+              else
+                array_push($array_colors, 'morado');
 
             }else{
               
@@ -536,10 +754,8 @@ function ColorScheduleFinished($trimester, $anios):string {
                 array_push($array_colors, 'verde');
               else
                 array_push($array_colors, 'blanco');
-            } 
-            
+            }             
           }
-
         }
 
       break;
@@ -689,7 +905,26 @@ function ColorsActivityInitial($trimester, $anios):string {
 
       if($anio_initial != $anio_finished){
 
-        $array_colors = ['blanco', 'rojo', 'rojo', 'rojo'];
+        if($anio_initial != $anio_published){
+
+          $array_colors = ['blanco', 'rojo', 'rojo', 'rojo'];
+
+        }else{
+
+          for ($i=1; $i <=4 ; $i++) {
+
+            if($trimester['tri_published'] != NULL && $i == intval($trimester['tri_published'])){
+
+              array_push($array_colors, 'morado');
+
+            }else{
+
+              array_push($array_colors, 'rojo');
+
+            }              
+            
+          } 
+        }
 
       }else{
 
@@ -698,13 +933,55 @@ function ColorsActivityInitial($trimester, $anios):string {
         for ($i=intval($trimester['tri_initial']); $i <= 4; $i++) { 
 
           if($i < intval($trimester['tri_finished'])){
-            array_push($array_colors, 'rojo');
-          }else{
-            if($i == intval($trimester['tri_finished']))
+
+            if($trimester['tri_published'] != NULL && intval($trimester['tri_published']) == $i){
+
+              if($anio_finished != $anio_published)
+                array_push($array_colors, 'rojo');
+              else
+                array_push($array_colors, 'morado');
+            }else{
               array_push($array_colors, 'rojo');
-            else
-              array_push($array_colors, 'blanco');
+            }
+
+          }else{
+
+            if($i == intval($trimester['tri_finished'])){
+              
+              if(intval($trimester['tri_published']) == intval($trimester['tri_finished'])){
+                
+                if($trimester['tri_published'] != NULL && intval($trimester['tri_published']) == $i){
+                  
+                  if($anio_finished != $anio_published)
+                    array_push($array_colors, 'rojo');
+                  else
+                    array_push($array_colors, 'morado');
+                }else{
+                    array_push($array_colors, 'rojo');
+                }
+
+              }else{                
+                array_push($array_colors, 'rojo');               
+              }
+
+            }else{
+              
+              if($trimester['tri_published'] != NULL && intval($trimester['tri_published']) == $i){
+                
+                dpm($trimester['tri_published']);
+                if($anio_finished != $anio_published)
+                  array_push($array_colors, 'rojo');
+                else
+                  array_push($array_colors, 'morado');
+
+              }else{
+               
+                array_push($array_colors, 'blanco');
+              }
+
+            }
           }
+
         }
       }
 
@@ -712,49 +989,103 @@ function ColorsActivityInitial($trimester, $anios):string {
 
     case 3:
 
-      if($type === 'act'){
+      if($anio_initial != $anio_finished){
 
-        if($anio_initial != $anio_finished){
+        if($anio_initial != $anio_published){
 
           $array_colors = ['blanco', 'blanco', 'rojo', 'rojo'];
 
         }else{
 
-          $array_colors = ['blanco', 'blanco'];
-          
-          for ($i=intval($trimester['tri_initial']); $i <= 4; $i++) { 
+          for ($i=1; $i <=4 ; $i++) {
 
-            if($i < intval($trimester['tri_finished'])){
-              array_push($array_colors, 'rojo');
+            if($trimester['tri_published'] != NULL && $i == intval($trimester['tri_published'])){
+
+              array_push($array_colors, 'morado');
+
             }else{
-              if($i == intval($trimester['tri_finished']))
+
+              array_push($array_colors, 'rojo');
+
+            }              
+            
+          } 
+
+        }
+
+      }else{
+
+        $array_colors = ['blanco', 'blanco'];
+        
+        for ($i=intval($trimester['tri_initial']); $i <= 4; $i++) { 
+
+          if($i < intval($trimester['tri_finished'])){
+
+            if($trimester['tri_published'] != NULL && intval($trimester['tri_published']) == $i){
+
+              if($anio_finished != $anio_published)
                 array_push($array_colors, 'rojo');
               else
-                array_push($array_colors, 'blanco');
+                array_push($array_colors, 'morado');
+            }else{
+              array_push($array_colors, 'rojo');
             }
-          }
-          
-          for ($i=0; $i <count($array_colors); $i++) { 
-            $html .= "<div class='item-colrs__item $array_colors[$i]'></div>";
+
+          }else{
+
+            if($i == intval($trimester['tri_finished'])){
+              
+              if(intval($trimester['tri_published']) == intval($trimester['tri_finished'])){
+                
+                if($trimester['tri_published'] != NULL && intval($trimester['tri_published']) == $i){
+                  
+                  if($anio_finished != $anio_published)
+                    array_push($array_colors, 'rojo');
+                  else
+                    array_push($array_colors, 'morado');
+                }else{
+                    array_push($array_colors, 'rojo');
+                }
+
+              }else{                
+                array_push($array_colors, 'rojo');               
+              }
+
+            }else{
+              
+              if($trimester['tri_published'] != NULL && intval($trimester['tri_published']) == $i){
+                
+                dpm($trimester['tri_published']);
+                if($anio_finished != $anio_published)
+                  array_push($array_colors, 'rojo');
+                else
+                  array_push($array_colors, 'morado');
+
+              }else{
+               
+                array_push($array_colors, 'blanco');
+              }
+
+            }
           }
         }
       }
     
     break;
     
-    case 4:
+    case 4:         
 
-      if($type === 'act'){    
-
+      if($anio_initial != $anio_published){
         $array_colors = ['blanco', 'blanco', 'blanco', 'rojo'];
-        
-      }
-    
+      }else{
+        $array_colors = ['blanco', 'blanco', 'blanco', 'morado'];
+      } 
+
     break;
 
     default:
       $array_colors = ['blanco', 'blanco', 'blanco', 'blanco'];
-      break;
+    break;
   }
 
   for ($i=0; $i <count($array_colors); $i++) { 
