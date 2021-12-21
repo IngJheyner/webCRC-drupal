@@ -703,14 +703,6 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-        field_date_value_1:
-          id: field_date_value_1
-          table: node__field_date
-          field: field_date_value
-          plugin_id: datetime
-          expose:
-            operator_limit_selection: false
-            operator_list: {  }
       style:
         type: views_bootstrap_table
         options:
