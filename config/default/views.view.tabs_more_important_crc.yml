@@ -532,6 +532,11 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: false
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 12
       style:
         type: slick_grouping
         options:
@@ -581,6 +586,7 @@ display:
         options: {  }
       defaults:
         css_class: false
+        pager: false
         style: false
         row: false
         fields: false
@@ -848,6 +854,11 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: false
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 6
       filters:
         status:
           id: status
@@ -956,6 +967,7 @@ display:
       defaults:
         title: false
         css_class: false
+        pager: false
         style: false
         row: false
         fields: false
