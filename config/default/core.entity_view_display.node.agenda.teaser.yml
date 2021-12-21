@@ -1,6 +1,6 @@
 uuid: c37c8526-a778-438c-b0e6-a56324aa845d
 langcode: es
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
@@ -10,22 +10,35 @@ dependencies:
     - field.field.node.agenda.field_periodo_agenda
     - node.type.agenda
   module:
+    - datetime
+    - file
     - user
 id: node.agenda.teaser
 targetEntityType: node
 bundle: agenda
 mode: teaser
 content:
-  links:
-    settings: {  }
+  field_archivo_agenda:
+    type: file_default
+    label: hidden
+    settings:
+      use_description_as_link_text: true
     third_party_settings: {  }
-    weight: 100
+    weight: 0
+    region: content
+  field_fecha_pub_agenda:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: America/Bogota
+      format_type: news_dates
+    third_party_settings: {  }
+    weight: 1
     region: content
 hidden:
   addtoany: true
-  field_archivo_agenda: true
-  field_fecha_pub_agenda: true
   field_list_tipo_doc_agenda: true
   field_periodo_agenda: true
   langcode: true
+  links: true
   search_api_excerpt: true

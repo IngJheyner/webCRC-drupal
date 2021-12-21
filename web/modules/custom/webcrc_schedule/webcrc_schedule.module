@@ -20,17 +20,19 @@ function webcrc_schedule_form_node_form_alter(&$form, $form_state, $form_id) {
 
   if($node->getType() == 'agency_regulatory'){
     /* ===== ===== Campo fecha Inicial ===== ===== */
+    $form['title']['#attributes']['class'][] = 'hidden';
+
     $form['field_agency_date_initial']['widget'][0]['value']['#type'] = 'datelist';
     $form['field_agency_date_initial']['widget'][0]['value']['#date_part_order'] = ['year'];
-    $form['field_agency_date_initial']['widget'][0]['value']['#date_year_range'] = '2015:+0';
+    $form['field_agency_date_initial']['widget'][0]['value']['#date_year_range'] = '2020:+5';
 
     $form['field_agency_date_finished']['widget'][0]['value']['#type'] = 'datelist';
     $form['field_agency_date_finished']['widget'][0]['value']['#date_part_order'] = ['year'];
-    $form['field_agency_date_finished']['widget'][0]['value']['#date_year_range'] = '2015:+1';
+    $form['field_agency_date_finished']['widget'][0]['value']['#date_year_range'] = '2020:+5';
 
     $form['field_agency_date_published']['widget'][0]['value']['#type'] = 'datelist';
     $form['field_agency_date_published']['widget'][0]['value']['#date_part_order'] = ['year'];
-    $form['field_agency_date_published']['widget'][0]['value']['#date_year_range'] = '2015:+5';
+    $form['field_agency_date_published']['widget'][0]['value']['#date_year_range'] = '2020:+5';
     //dpm($form['field_agency_two_trimester_ini']);
 
     $form['#validate'][] = 'webcrc_schedule_anios_date'; //Validacion de fechas
@@ -39,6 +41,7 @@ function webcrc_schedule_form_node_form_alter(&$form, $form_state, $form_id) {
     //$form_state->getValue('title');
   }
 }
+
 
 /**
  * Validacion de los anios de finalizacion y publicacion en base a anio de inicio

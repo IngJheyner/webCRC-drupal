@@ -103,7 +103,7 @@ nav.nav-main-menu {
         background: transparent;
 
         @include large {
-          font-size: 14pt;
+          font-size: 12pt;
         } 
 
         .sf-sub-indicator {
@@ -205,9 +205,60 @@ nav.nav-main-menu {
     position: fixed;
     left: 0;
     right: 0;
-    margin-top: 2rem;
+    width: 100%;
+    height: calc(100vh - 150px);
+    margin-top: 1.3rem;
+    padding: 5px 20px;
     text-align: left;
     background: $bg-white;
+    z-index: 99999;
+    overflow-y: auto;
+
+    li {
+      background: $bg-white;
+
+      &.sf-expanded {
+
+        a {
+          color: $text-alpha;
+
+          &:hover,
+          &:active {
+            color: $text-alpha;
+          }
+        }
+
+        ul {
+
+          li {
+
+            a {
+              color: $text-black;
+
+              &:hover,
+              &:active {
+                color: $text-alpha;
+              }
+            }
+          }
+        }
+      }
+
+      a {
+        color: $text-black;
+
+        .sf-sub-indicator {
+          &:after {
+            color: $text-black;
+          }
+        }
+
+        &:hover,
+        &:active {
+          color: $text-alpha;
+        }
+      }
+    }
   }
 }
 

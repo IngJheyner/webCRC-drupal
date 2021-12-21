@@ -21,14 +21,14 @@
 
 <header id="page-header" class="page__header container-fluid p-0">
   <section id="toolbar_header">
-    <div class="row m-0 pl-5 pr-5 align-items-center header-gov">
-      <div class="col pl-5 text-left">
+    <div class="row m-0 px-4 px-sm-5 align-items-center header-gov">
+      <div class="col px-1 pl-sm-5 text-left">
         {% block toolbar_left %}
           {{ toolbar_left }}
         {% endblock %}
       </div>
 
-      <div class="col pr-5 text-right">
+      <div class="col px-1 pr-sm-5 text-right">
         {% if path('<front>') == "/es" %}
           <a href="/en">
             <span class="govco-icon govco-icon-language-en-n lang-govco ml-3"></span>
@@ -47,7 +47,7 @@
 
   <section id="primary_header">
     <div class="row m-0 align-items-center header-webcrc">
-      <div class="col-6 col-md-5 p-0 logo-crc">
+      <div class="col-6 col-lg-5 px-4 py-3 logo-crc">
         <a href="{{ url('<front>') }}">
           {% block logo %}
             {{ logo }}
@@ -55,13 +55,13 @@
         </a>
       </div>
 
-      <div class="col-3 col-md-3 col-lg-7 p-0 search-primary">
+      <div class="col-3 col-lg-7 p-0 search-primary">
         {% block search %}
           {{ search }}
         {% endblock %}
       </div>
 
-      <div class="col-3 col-md-4 col-lg-12 p-0">
+      <div class="col-3 col-lg-12 p-0">
         <nav id="main_menu" class="nav-main-menu primary-menu {{ is_front ? 'home-menu' : null }}">
           {% block menu %}
             {{ menu }}

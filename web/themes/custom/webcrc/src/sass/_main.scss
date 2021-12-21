@@ -1,9 +1,9 @@
 :root {
-  --font-size: 1;
+  --font-size: 12;
 }
 
 body {
-  font-size: calc(var(--font-size) * 1em);
+  font-size: calc(var(--font-size) * 1pt);
 }
 
 .contrasteweb {
@@ -19,9 +19,17 @@ body {
   display: block;
   width: max-content;
   margin: auto;
-  font-size: 80pt;
+  font-size: 40pt;
   font-weight: bold;
   color: $text-yellow !important;
+
+  @include small {
+    font-size: 50pt;
+  }
+
+  @include large {
+    font-size: 70pt;
+  }
 
   @include large-lg {
     font-size: 80pt;
@@ -394,17 +402,68 @@ div.most-consulted-content {
   }
 }
 
+// PAGINAS DESTACADAS
+.featured-pages-microsite {
+
+  ul.slick__grid,
+  ul.slide__content {
+
+    li {
+
+      .slide__caption {
+
+        .img-microsite {
+          border-radius: $border-radius-global;
+        }
+
+        .title-microsite {
+          color: $text-dark-blue;
+          font-weight: bold;
+          font-size: 18pt;
+
+          * {
+            color: $text-dark-blue;
+            font-weight: bold;
+            font-size: 18pt;
+          }
+        }
+      }
+    }
+  }
+}
+
+// PROYECTOS A COMENTAR
+.projects-to-comment {
+
+  h1, h2, h3,
+  h4, h5, h6 {
+    font-size: 14pt;
+
+    * {
+      font-size: 14pt;
+    }
+  }
+}
+
 // INDICADORES
 .indicators-container {
   background: $bg-white;
 
   div.indicators-container-items {
-    padding: 20px 50px;
+    padding: 0;
+
+    @include tablet {
+      padding: 20px 50px;
+    }
 
     div.card-indicator {
-      max-width: 250px;
+      max-width: 100%;
       width: 100%;
       border-radius: $border-radius-global;
+
+      @include desktop {
+        max-width: 250px;
+      }
 
       * {
         font-family: $roboto-condensed;
@@ -428,7 +487,11 @@ div.most-consulted-content {
 
       .card-body {
         background: $bg-light-grey;
-        border-radius: $border-radius-global $border-radius-global 0 0;
+        border-radius: $border-radius-global 0 0 $border-radius-global;
+
+        @include desktop {
+          border-radius: $border-radius-global $border-radius-global 0 0;
+        }
 
         > * {
           margin: auto;
@@ -436,8 +499,12 @@ div.most-consulted-content {
 
         .count_indicator {
           margin: auto;
-          font-size: 30pt;
+          font-size: 22pt;
           font-weight: bold;
+
+          @include small {
+            font-size: 25pt;
+          }
 
           @include large {
             font-size: 30pt;
@@ -451,6 +518,10 @@ div.most-consulted-content {
         .unit {
           font-size: 12pt;
           font-weight: 700;
+
+          @include small {
+            font-size: 14pt;
+          }
 
           @include large {
             font-size: 16pt;
@@ -477,13 +548,26 @@ div.most-consulted-content {
         .description {
           font-size: 12pt;
           font-weight: normal;
+
+          * {
+            font-size: 12pt;
+            font-weight: normal;
+
+            @include small {
+              font-size: 12pt;
+            }
+          }
         }
       }
 
       .card-footer {
         padding: 20px 10px;
         background: $bg-dark-blue;
-        border-radius: 0 0 $border-radius-global $border-radius-global;
+        border-radius: 0 $border-radius-global $border-radius-global 0;
+
+        @include desktop {
+          border-radius: 0 0 $border-radius-global $border-radius-global;
+        }
 
         * {
           font-size: 11pt;
@@ -492,6 +576,7 @@ div.most-consulted-content {
         }
 
         .media {
+          position: relative;
           max-width: 165px;
           margin: auto;
 
@@ -510,15 +595,84 @@ div.most-consulted-content {
           }
 
           .media-body {
+            position: unset;
             padding: 0 1px;
             text-align: left;
 
+            @include desktop {
+              position: relative;
+            }
+
             a {
-              display: none;
+              display: block;
+              position: absolute !important;
+              right: 0;
+              left: 0;
+              margin: auto;
+              padding-top: 18px;
               font-weight: normal;
               text-transform: capitalize;
               font-size: 12pt;
               text-align: center;
+
+              @include desktop {
+                display: none;
+                position: relative !important;
+                right: unset;
+                left: unset;
+                padding: .375rem .75rem;
+              }
+            }
+          }
+        }
+      }
+
+      & + div.card-indicator
+      {
+        &:hover {
+          * {
+            color: $text-white;
+            text-align: center;
+          }
+  
+          .card-body {
+            padding-bottom: 1.25rem;
+            background: $bg-secondary;
+
+            @include desktop {
+              padding-bottom: 5px;
+            }
+          }
+  
+          .card-footer {
+            padding-top: 1.25rem;
+            background: $bg-secondary;
+            border: none;
+
+            @include desktop {
+              padding-top: 5px;
+            }
+  
+            .media {
+  
+              span {
+                display: none;
+              }
+  
+              .media-body {
+                text-align: center;
+
+                div {
+                  max-width: 110px;
+                  margin: auto;
+                }
+  
+                a {
+                  display: block;
+                  font-weight: bold;
+                  text-decoration: underline;
+                }
+              }
             }
           }
         }
@@ -528,11 +682,15 @@ div.most-consulted-content {
 }
 
 // ULTIMAS NOTICIAS
-.news-last-container {
-  width: 70%;
+.news-last-container { 
+  width: 100%;
+
+  @include desktop {
+    width: 70%;
+  }
 
   ul.slide__content {
-    display: grid;
+    display: block;
     width: 100%;
     height: 100%;
     align-items: center;
@@ -542,111 +700,144 @@ div.most-consulted-content {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 
-    li {
-      width: 100%;
+    @include desktop {
+      display: grid;
+    }
+
+    * {
+      font-family: $roboto-condensed;
+    }
+
+    h1, h2, h3,
+    h4, h5, h6 {
+      font-size: 12pt;
+      font-weight: normal;
+      color: $text-black;
 
       * {
-        margin: 0;
+        font-size: 12pt;
+        font-weight: normal;
+        color: $text-black;
+      }
+    }
+
+    > li {
+      padding: 0 0 20px 0;
+
+      @include desktop {
         padding: 0;
-      }
-
-      a {
-        text-decoration: none;
-      }
-
-      div.media {
-        background-size: cover;
-        border-radius: 10px;
-        box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, .5);
-      }
-
-      sub {
-
-        > * {
-          color: rgba(40, 55, 137, 1);
-          font-style: oblique;
-          font-weight: bold;
-        }
-      }
-
-      h3 > * {
-        display: block;
-        color: rgba(61, 61, 61, 1);
-        font-weight: 600;
-      }
-
-      time {
-        display: block;
-        border-left: 5px solid rgb(51, 102, 204);
-        padding: 0 10px;
-        margin: 10px auto;
       }
 
       &:nth-child(1) {
         grid-area: primary;
+        width: 100%;
+        padding: 10px 10px 30px;
+        border-right: none;
+        border-bottom: 1px solid $bg-dark-gray;
+
+        @include desktop {
+          padding: 0 10px;
+          border-right: 1px solid $bg-dark-gray;
+          border-bottom: none;
+        }
+
+        .slide__caption {
+          padding: 0;
+
+          .slide__data { 
+            h1, h2, h3,
+            h4, h5, h6 {
+              font-size: 12pt;
+
+              @include small {
+                font-size: 20pt;
+              }
+
+              * {
+                font-size: 12pt;
+
+                @include small {
+                  font-size: 20pt;
+                }
+              }
+            }
+          }
+        }
       }
 
       &:nth-child(2) {
         grid-area: second-1;
 
-        .slide__caption {
-          padding-top: 0;
+        .slide__caption { 
+          padding: 20px 10px 10px 10px;
+
+          @include desktop {
+            padding: 0 10px 10px 10px;
+          }
         }
       }
 
       &:nth-child(3) {
         grid-area: second-2;
+
+        .slide__caption { 
+          padding: 10px;
+        }
       }
 
       &:nth-child(4) {
         grid-area: second-3;
-      }
 
-      &:first-child {
-        max-width: 100%;
-        min-width: 550px;
-        border-right: 2px solid rgb(202, 202, 202);
-
-        .slide__caption {
-          padding: 0;
-
-          .slide__data {
-            margin: 15px auto 0;
-
-            h3 a {
-              font-size: 18pt;
-            }
-          }
-        }
-
-        div.media { 
-          padding-bottom: 65%;
+        .slide__caption { 
+          padding: 10px 10px 0 10px;
         }
       }
 
-      &:last-child {
-        border-bottom: none;
+      h1, h2, h3,
+      h4, h5, h6 {
+        font-size: 12pt;
+        font-weight: normal;
+        color: $text-black;
+
+        * {
+          font-size: 12pt;
+          font-weight: normal;
+          color: $text-black;
+        }
       }
 
       + li {
-        margin-left: 20px;
-        padding: 0;
-        max-width: 440px;
-        min-width: 350px;
-        border-bottom: 2px solid rgb(202, 202, 202);
+        width: 100%;
 
         .slide__caption {
-          display: flex;
-          align-items: center;
-          text-align: left;
-          padding: 0 0 25px 0;
+          display: block;
+
+          @include tablet {
+            display: flex;
+          }
 
           .slide__overlay {
+            flex: 1;
 
-            div.media {
-              width: 118px;
-              height: 118px;
-              margin-right: 20px;
+            .media {
+
+            }
+          }
+
+          .slide__data {
+            flex: 3;
+            padding-left: 0;
+
+            @include tablet {
+              padding-left: 20px;
+            }
+
+            sub {
+
+            }
+
+            time {
+              font-size: 10pt;
             }
           }
         }
@@ -655,9 +846,9 @@ div.most-consulted-content {
   }
 
   .slick-dots {
-    position: relative;
+    top: 100%;
+    margin: 0 auto;
     padding: 0;
-    margin: 10px auto;
   }
 }
 
@@ -751,11 +942,11 @@ div.most-consulted-content {
     & > div {
       display: flex;
       width: 200%;
-      justify-content: center;
       align-content: center;
 
       & > div {
-        margin: 10px 20px;
+        margin: 20px;
+        min-width: 400px;
       }
     }
   }
