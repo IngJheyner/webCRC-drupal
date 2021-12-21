@@ -16,111 +16,25 @@ dependencies:
     - field.field.node.agency_regulatory.field_agency_type
     - node.type.agency_regulatory
   module:
-    - datetime
-    - link
-    - options
     - user
 id: node.agency_regulatory.default
 targetEntityType: node
 bundle: agency_regulatory
 mode: default
-content:
-  field_agency_activity:
-    type: link
-    label: above
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    weight: 102
-    region: content
-  field_agency_date:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 108
-    region: content
-  field_agency_date_finished:
-    type: datetime_default
-    label: above
-    settings:
-      timezone_override: ''
-      format_type: medium
-    third_party_settings: {  }
-    weight: 107
-    region: content
-  field_agency_date_initial:
-    type: datetime_default
-    label: above
-    settings:
-      timezone_override: ''
-      format_type: medium
-    third_party_settings: {  }
-    weight: 106
-    region: content
-  field_agency_date_published:
-    type: datetime_default
-    label: above
-    settings:
-      timezone_override: ''
-      format_type: medium
-    third_party_settings: {  }
-    weight: 110
-    region: content
-  field_agency_eje:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 101
-    region: content
-  field_agency_note:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 103
-    region: content
-  field_agency_trimester_finished:
-    type: list_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 105
-    region: content
-  field_agency_trimester_initial:
-    type: list_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 104
-    region: content
-  field_agency_trimester_published:
-    type: list_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 111
-    region: content
-  field_agency_type:
-    type: list_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 109
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
-    region: content
+content: {  }
 hidden:
   addtoany: true
+  field_agency_activity: true
+  field_agency_date: true
+  field_agency_date_finished: true
+  field_agency_date_initial: true
+  field_agency_date_published: true
+  field_agency_eje: true
+  field_agency_note: true
+  field_agency_trimester_finished: true
+  field_agency_trimester_initial: true
+  field_agency_trimester_published: true
+  field_agency_type: true
   langcode: true
+  links: true
   search_api_excerpt: true

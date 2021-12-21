@@ -2,7 +2,7 @@
 webcrc_schedule:
   js:
     #js/webcrc-projects-regulatory.min.js: { minified: true }
-    #js/webcrc-projects-regulatory.js: {}
+    js/webcrc-schedule.js: {}
   css:
     component:
       css/webcrc_schedule.css: {}
