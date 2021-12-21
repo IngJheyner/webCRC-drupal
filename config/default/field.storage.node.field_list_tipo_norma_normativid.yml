@@ -17,6 +17,9 @@ settings:
     -
       value: Circular
       label: Circular
+    -
+      value: Concepto
+      label: Concepto
   allowed_values_function: ''
 module: options
 locked: false
