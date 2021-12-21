@@ -8,20 +8,20 @@ dependencies:
 id: proyectos_regulatorios
 label: 'Proyectos Regulatorios'
 type: 'canonical_entities:node'
-pattern: 'proyectos-comentarios/[node:title]'
+pattern: 'proyectos-regulatorios/[node:title]'
 selection_criteria:
-  e2a20f5f-2057-4a7b-86ad-39736c7125cd:
+  3541a74f-940c-4000-bd19-4178354abbd9:
     id: node_type
     negate: false
-    uuid: e2a20f5f-2057-4a7b-86ad-39736c7125cd
+    uuid: 3541a74f-940c-4000-bd19-4178354abbd9
     context_mapping:
       node: node
     bundles:
       proyectos_regulatorios: proyectos_regulatorios
-  e5c311c4-4d3d-4a65-a8a7-3b407f2282ea:
+  b0bfed4e-2256-4168-a616-4d89b1d2649c:
     id: language
     negate: false
-    uuid: e5c311c4-4d3d-4a65-a8a7-3b407f2282ea
+    uuid: b0bfed4e-2256-4168-a616-4d89b1d2649c
     context_mapping:
       language: 'node:langcode:language'
     langcodes:
