@@ -955,7 +955,7 @@ display:
     display_plugin: page
     position: 3
     display_options:
-      title: 'Proyectos Comentarios'
+      title: 'Proyectos Regulatorios'
       fields:
         title:
           id: title
@@ -1734,7 +1734,7 @@ display:
       display_description: ''
       display_comment: "@see\r\n#Se utiliza la vista y llamados de renderizado de datos, desde el modulo webcrc_projects_comments en la las funciones de hook."
       display_extenders: {  }
-      path: proyectos-comentarios
+      path: proyectos-regulatorios
     cache_metadata:
       max-age: -1
       contexts:

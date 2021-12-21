@@ -20,6 +20,9 @@ settings:
     -
       value: 'Respuesta a Comentarios'
       label: 'Respuesta a Comentarios'
+    -
+      value: 'Agenda Regulatoria'
+      label: 'Agenda Regulatoria'
   allowed_values_function: ''
 module: options
 locked: false
