@@ -20558,7 +20558,7 @@ sub a {
 }
 @media only screen and (min-width: 992px) {
   .page__header .search-primary form .form-item:before {
-    right: 0;
+    right: unset;
     margin: unset;
     text-align: left;
     line-height: 1.2;
@@ -20601,6 +20601,7 @@ sub a {
   .page__header .search-primary form .form-actions .search-form__submit {
     padding: 0 15px;
     width: 100%;
+    height: 100%;
   }
 }
 .page__header .search-primary form .form-actions:before {
@@ -20621,7 +20622,7 @@ sub a {
 }
 @media only screen and (min-width: 992px) {
   .page__header .search-primary form .form-actions:before {
-    right: 0;
+    right: unset;
     margin: unset;
     text-align: left;
     line-height: 1.2;
