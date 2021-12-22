@@ -14,26 +14,75 @@ dependencies:
     - field.field.node.news_crc.field_tags
     - node.type.news_crc
   module:
+    - blazy
     - user
 id: node.news_crc.teaser
 targetEntityType: node
 bundle: news_crc
 mode: teaser
 content:
-  links:
+  field_category:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_introduccion_contenido:
+    type: basic_string
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 2
+    region: content
+  field_introduction_image:
+    type: blazy_media
+    label: hidden
+    settings:
+      caption: {  }
+      class: ''
+      id: ''
+      image: ''
+      link: '1'
+      overlay: ''
+      title: ''
+      vanilla: false
+      icon: ''
+      layout: ''
+      view_mode: ''
+      cache: 0
+      current_view_mode: ''
+      skin: ''
+      fx: ''
+      style: ''
+      background: false
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      responsive_image_style: ''
+      box_style: ''
+      image_style: ''
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
+      _uri: ''
+      breakpoints: {  }
+      sizes: ''
+      grid_header: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
+    third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   addtoany: true
   feeds_item: true
-  field_category: true
   field_content: true
   field_content_featured: true
   field_image_content: true
-  field_introduccion_contenido: true
-  field_introduction_image: true
   field_tags: true
   langcode: true
+  links: true
   search_api_excerpt: true

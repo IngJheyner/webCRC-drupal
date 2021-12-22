@@ -16,8 +16,20 @@ searched_fields:
 style: view_modes
 view_mode_configuration:
   'entity:node':
-    default: default
+    default: teaser
     overrides:
+      agency_regulatory: ''
+      commission_minutes: ''
+      events: ''
+      glossary: ''
+      home_articles: ''
+      library_virtual: ''
+      microsites_articles: ''
+      microsite_crc: ''
       news_crc: ''
+      normatividad_regulatoria: ''
+      proyectos_regulatorios: ''
+      tip_cont_simple_transp: ''
+      transp_ofert_empleo: ''
 show_search_form: true
 parse_mode: terms
