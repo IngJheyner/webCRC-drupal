@@ -22657,7 +22657,10 @@ div.page-projects table.projects-comments tbody tr td:last-child strong {
 div.page-projects ul.pagination {
   padding-block: 2em;
 }
-div.page-projects ul.pagination a {
+div.page-projects ul.pagination li.pager__item {
+  height: 100%;
+}
+div.page-projects ul.pagination li.pager__item a {
   text-decoration: none;
   border: 0;
 }
@@ -22665,6 +22668,12 @@ div.page-projects ul.pagination li.pager__item.active a {
   color: white !important;
   background-color: #2F2A7C;
   border-radius: 0.3em;
+}
+div.page-projects ul.pagination li.pager__item.pager__item--previous a {
+  padding: 6px 10px;
+}
+div.page-projects ul.pagination li.pager__item.pager__item--next a {
+  padding: 6px 10px;
 }
 div.page-projects ul.pagination li.disabled a {
   color: #EBEBEB !important;
@@ -23238,7 +23247,10 @@ div.page-library table.library-virtual tbody tr td:last-child strong {
 div.page-library ul.pagination {
   padding-block: 2em;
 }
-div.page-library ul.pagination a {
+div.page-library ul.pagination li.pager__item {
+  height: 100%;
+}
+div.page-library ul.pagination li.pager__item a {
   text-decoration: none;
   border: 0;
 }
@@ -23246,6 +23258,12 @@ div.page-library ul.pagination li.pager__item.active a {
   color: white !important;
   background-color: #2F2A7C;
   border-radius: 0.3em;
+}
+div.page-library ul.pagination li.pager__item.pager__item--previous a {
+  padding: 6px 10px;
+}
+div.page-library ul.pagination li.pager__item.pager__item--next a {
+  padding: 6px 10px;
 }
 div.page-library ul.pagination li.disabled a {
   color: #EBEBEB !important;
@@ -23330,6 +23348,7 @@ div.page-library div.page-library-sections div.library-type-document div.view-co
 /* ===== ===== BOTONES y Anclas ===== ===== */
 div.preguntas-frecuentes {
   /* ===== ===== FORM VIEW ===== ===== */
+  /* ===== ===== PAGINACION ===== ===== */
 }
 div.preguntas-frecuentes form {
   background-color: #3366CC;
@@ -23457,10 +23476,37 @@ div.preguntas-frecuentes form div.input__group div.input__group-item label {
 div.preguntas-frecuentes div.respuesta {
   border-left: 2px solid #F42E62;
 }
+div.preguntas-frecuentes ul.pagination {
+  padding-block: 2em;
+}
+div.preguntas-frecuentes ul.pagination li.pager__item {
+  height: 100%;
+}
+div.preguntas-frecuentes ul.pagination li.pager__item a {
+  text-decoration: none;
+  border: 0;
+}
+div.preguntas-frecuentes ul.pagination li.pager__item.active a {
+  color: white !important;
+  background-color: #2F2A7C;
+  border-radius: 0.3em;
+}
+div.preguntas-frecuentes ul.pagination li.pager__item.pager__item--previous a {
+  padding: 6px 10px;
+}
+div.preguntas-frecuentes ul.pagination li.pager__item.pager__item--next a {
+  padding: 6px 10px;
+}
+div.preguntas-frecuentes ul.pagination li.disabled a {
+  color: #EBEBEB !important;
+}
 
 /* ===== ===== TEXTO ===== ===== */
 /* ===== ===== FONDO ===== ===== */
 /* ===== ===== BOTONES y Anclas ===== ===== */
+div.glossary {
+  /* ===== ===== PAGINACION ===== ===== */
+}
 div.glossary ul.glossary__item li.glossary__item-items {
   overflow: hidden;
   border: 0;
@@ -23479,6 +23525,30 @@ div.glossary ul.glossary__item li.glossary__item-items::before {
   right: 0;
   top: 0;
   width: 0;
+}
+div.glossary ul.pagination {
+  padding-block: 2em;
+}
+div.glossary ul.pagination li.pager__item {
+  height: 100%;
+}
+div.glossary ul.pagination li.pager__item a {
+  text-decoration: none;
+  border: 0;
+}
+div.glossary ul.pagination li.pager__item.active a {
+  color: white !important;
+  background-color: #2F2A7C;
+  border-radius: 0.3em;
+}
+div.glossary ul.pagination li.pager__item.pager__item--previous a {
+  padding: 6px 10px;
+}
+div.glossary ul.pagination li.pager__item.pager__item--next a {
+  padding: 6px 10px;
+}
+div.glossary ul.pagination li.disabled a {
+  color: #EBEBEB !important;
 }
 
 /* ==============================
@@ -23690,7 +23760,10 @@ div.agency-regulatory table.agency-regulatory tbody tr td:last-child strong {
 div.agency-regulatory ul.pagination {
   padding-block: 2em;
 }
-div.agency-regulatory ul.pagination a {
+div.agency-regulatory ul.pagination li.pager__item {
+  height: 100%;
+}
+div.agency-regulatory ul.pagination li.pager__item a {
   text-decoration: none;
   border: 0;
 }
@@ -23698,6 +23771,12 @@ div.agency-regulatory ul.pagination li.pager__item.active a {
   color: white !important;
   background-color: #2F2A7C;
   border-radius: 0.3em;
+}
+div.agency-regulatory ul.pagination li.pager__item.pager__item--previous a {
+  padding: 6px 10px;
+}
+div.agency-regulatory ul.pagination li.pager__item.pager__item--next a {
+  padding: 6px 10px;
 }
 div.agency-regulatory ul.pagination li.disabled a {
   color: #EBEBEB !important;

@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.glossary.body
-    - field.field.node.glossary.field_glossary_tags
     - node.type.glossary
   module:
     - field_group
@@ -48,7 +47,6 @@ third_party_settings:
     group_content:
       children:
         - title
-        - field_glossary_tags
         - body
       label: Contenido
       region: content
@@ -82,16 +80,6 @@ content:
     weight: 3
     region: content
     settings: {  }
-    third_party_settings: {  }
-  field_glossary_tags:
-    type: entity_reference_autocomplete
-    weight: 3
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
     third_party_settings: {  }
   path:
     type: path

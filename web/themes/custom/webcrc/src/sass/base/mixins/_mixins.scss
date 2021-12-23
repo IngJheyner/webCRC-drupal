@@ -191,12 +191,20 @@ TABLE
 PAGINATION
 ============================== */
 @mixin pagination() {
+
     ul.pagination{
+
         padding-block: 2em;
-        a{
-            text-decoration: none;
-            border: 0;
-        }
+
+        li.pager__item{
+
+            height: 100%;
+
+            a{
+                text-decoration: none;
+                border: 0;
+            }
+        }       
 
         li.pager__item.active{
                             
@@ -205,6 +213,18 @@ PAGINATION
                 background-color: var.$btn-color-primary; 
                 border-radius: .3em;
             }
+        }
+
+        li.pager__item.pager__item--previous{
+            a{
+                padding: 6px 10px;
+            }            
+        }
+
+        li.pager__item.pager__item--next{
+            a{
+                padding: 6px 10px;
+            }            
         }
 
         li.disabled a{

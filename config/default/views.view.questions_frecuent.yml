@@ -157,14 +157,14 @@ display:
         type: full
         options:
           offset: 0
-          items_per_page: 5
+          items_per_page: 10
           total_pages: null
           id: 0
           tags:
-            next: ''
-            previous: ''
-            first: '« Primero'
-            last: 'Ultimo »'
+            next: Siguiente
+            previous: Anterior
+            first: ''
+            last: ''
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'

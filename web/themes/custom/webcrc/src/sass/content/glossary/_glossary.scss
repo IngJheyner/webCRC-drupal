@@ -20,4 +20,8 @@ div.glossary{
             }
         }
     }
+
+    /* ===== ===== PAGINACION ===== ===== */
+    @include pagination();
 }
+

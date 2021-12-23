@@ -1032,7 +1032,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "{% if field_estado_proyectos__value == 1 %}\r\n<img src=\"/themes/custom/webcrc/src/images/proyecto-abierto.svg\" alt=\"Proyecto abierto\" onerror=\"this.remove();\">\r\n{% else %}\r\n<img src=\"/themes/custom/webcrc/src/images/proyecto-finalizado.svg\" alt=\"Proyecto finalizado\" onerror=\"this.remove();\">\r\n{% endif %}"
+            text: "{% if field_estado_proyectos__value == 1 %}\r\n<img src=\"/themes/custom/webcrc/src/images/proyecto-abierto.svg\" alt=\"Proyecto abierto\" onerror=\"this.remove();\">\r\n{% elseif field_estado_proyectos__value == 2  %}\r\n<img src=\"/themes/custom/webcrc/src/images/proyecto-finalizado.svg\" alt=\"Proyecto finalizado\" onerror=\"this.remove();\">\r\n{% else %}\r\n<img src=\"/themes/custom/webcrc/src/images/icono-suspendido-circulo.png\" alt=\"Proyecto finalizado\" onerror=\"this.remove();\">\r\n{% endif %}"
             make_link: false
             path: ''
             absolute: false
@@ -1393,8 +1393,8 @@ display:
           tags:
             next: Siguiente
             previous: Anterior
-            first: ' '
-            last: ' '
+            first: ''
+            last: ''
           expose:
             items_per_page: false
             items_per_page_label: 'Elementos por página'

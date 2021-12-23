@@ -12,7 +12,7 @@ entity_type: node
 bundle: proyectos_regulatorios
 label: 'Tipo de Proyecto'
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

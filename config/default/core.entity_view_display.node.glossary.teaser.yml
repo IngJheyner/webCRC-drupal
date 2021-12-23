@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.glossary.body
-    - field.field.node.glossary.field_glossary_tags
     - node.type.glossary
   module:
     - text
@@ -30,6 +29,5 @@ content:
     region: content
 hidden:
   addtoany: true
-  field_glossary_tags: true
   langcode: true
   search_api_excerpt: true

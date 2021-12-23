@@ -14,7 +14,7 @@ entity_type: node
 bundle: proyectos_regulatorios
 label: 'Propuestas, Comentarios y Com. extemporáneo.'
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
@@ -25,6 +25,9 @@ settings:
       iterecciones_proyectos: iterecciones_proyectos
     negate: 0
     target_bundles_drag_drop:
+      accessibility_toolbar:
+        weight: 20
+        enabled: false
       from_library:
         weight: 9
         enabled: false
@@ -72,5 +75,11 @@ settings:
         enabled: false
       themes_interest:
         weight: 32
+        enabled: false
+      themes_interest_microsite:
+        weight: 37
+        enabled: false
+      trans_aspirant_cargos:
+        weight: 38
         enabled: false
 field_type: entity_reference_revisions

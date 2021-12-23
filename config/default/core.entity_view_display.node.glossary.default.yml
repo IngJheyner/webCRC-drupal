@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.glossary.body
-    - field.field.node.glossary.field_glossary_tags
     - node.type.glossary
   module:
     - user
@@ -16,7 +15,6 @@ content: {  }
 hidden:
   addtoany: true
   body: true
-  field_glossary_tags: true
   langcode: true
   links: true
   search_api_excerpt: true
