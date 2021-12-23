@@ -777,6 +777,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
+      css_class: 'container-fluid mt-4 px-5 transparenciaAcceso'
       header: {  }
       footer: {  }
       display_extenders: {  }
