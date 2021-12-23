@@ -6,6 +6,16 @@ body {
   font-size: calc(var(--font-size) * 1pt);
 }
 
+/* bootstrap hack: fix content width inside hidden tabs */
+.tab-content > .tab-pane, .pill-content > .pill-pane {
+  display: block;    /* undo display:none          */
+  height: 0;         /* height:0 is also invisible */ 
+  overflow: hidden;  /* no-overflow                */
+}
+.tab-content > .active, .pill-content > .active {
+  height: auto;      /* let the content decide it  */
+} /* bootstrap hack end */
+
 .contrasteweb {
   mix-blend-mode: difference;
   filter: none;
@@ -405,15 +415,39 @@ div.most-consulted-content {
 // PAGINAS DESTACADAS
 .featured-pages-microsite {
 
+  .slick-track {
+    width: 100%;
+
+    > div {
+      width: auto;
+      margin-right: 15px;
+    }
+  }
+
   ul.slick__grid,
   ul.slide__content {
 
     li {
+      // width: auto;
 
       .slide__caption {
 
         .img-microsite {
           border-radius: $border-radius-global;
+
+          /* img {
+            max-width: 100%;
+
+            @include large {
+              max-width: 230px;
+              width: auto;
+            }
+
+            @include large-lg {
+              max-width: 340px;
+              width: auto;
+            }
+          } */
         }
 
         .title-microsite {
@@ -938,6 +972,8 @@ div.most-consulted-content {
 .view-block-rss-last-of-postada {
   .views-field {
     overflow: scroll hidden;
+    scrollbar-width: thin;
+    scrollbar-color: $bg-dark-gray $bg-white;
 
     & > div {
       display: flex;

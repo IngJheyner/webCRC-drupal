@@ -4,6 +4,12 @@
  * Template for the main page.
  */
 #}
+{%
+  set pathUrl = [
+    '/busqueda'
+  ]
+%}
+
 <div class="page">
   
   {% embed '@webcrc/block/header/header.twig' with {
@@ -67,7 +73,7 @@
     </div>
   {% endif %}
 
-  <main>
+  <main >
     {% if page.content %}
       <div class="page__content">        
         {{ page.content }}        

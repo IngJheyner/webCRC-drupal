@@ -8,7 +8,7 @@ id: primary_search
 label: Buscador
 path: busqueda
 clean_url: true
-show_all_when_no_keys: false
+show_all_when_no_keys: true
 index: webcrc_contenido
 limit: 10
 searched_fields:
