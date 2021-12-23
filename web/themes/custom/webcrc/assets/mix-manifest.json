@@ -1,12 +1,12 @@
 {
     "/js/webcrc.script.js": "/js/webcrc.script.js",
     "/css/webcrc.style.css": "/css/webcrc.style.css",
-    "/var/www/App/WebCRC/web/libraries/blazy/blazy.js": "/var/www/App/WebCRC/web/libraries/blazy/blazy.js",
-    "/var/www/App/WebCRC/web/libraries/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js": "/var/www/App/WebCRC/web/libraries/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js",
-    "/var/www/App/WebCRC/web/libraries/slick/slick/slick.css": "/var/www/App/WebCRC/web/libraries/slick/slick/slick.css",
-    "/var/www/App/WebCRC/web/libraries/slick/slick/slick.min.js": "/var/www/App/WebCRC/web/libraries/slick/slick/slick.min.js",
-    "/var/www/App/WebCRC/web/libraries/slick/slick/slick-theme.css": "/var/www/App/WebCRC/web/libraries/slick/slick/slick-theme.css",
-    "/var/www/App/WebCRC/web/libraries/slick/slick/ajax-loader.gif": "/var/www/App/WebCRC/web/libraries/slick/slick/ajax-loader.gif",
-    "/var/www/App/WebCRC/web/libraries/slick/package.json": "/var/www/App/WebCRC/web/libraries/slick/package.json",
-    "/var/www/App/WebCRC/web/libraries/a11y-accordion-tabs/a11y-accordion-tabs.js": "/var/www/App/WebCRC/web/libraries/a11y-accordion-tabs/a11y-accordion-tabs.js"
+    "/var/www/html/web/libraries/blazy/blazy.js": "/var/www/html/web/libraries/blazy/blazy.js",
+    "/var/www/html/web/libraries/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js": "/var/www/html/web/libraries/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js",
+    "/var/www/html/web/libraries/slick/slick/slick.css": "/var/www/html/web/libraries/slick/slick/slick.css",
+    "/var/www/html/web/libraries/slick/slick/slick.min.js": "/var/www/html/web/libraries/slick/slick/slick.min.js",
+    "/var/www/html/web/libraries/slick/slick/slick-theme.css": "/var/www/html/web/libraries/slick/slick/slick-theme.css",
+    "/var/www/html/web/libraries/slick/slick/ajax-loader.gif": "/var/www/html/web/libraries/slick/slick/ajax-loader.gif",
+    "/var/www/html/web/libraries/slick/package.json": "/var/www/html/web/libraries/slick/package.json",
+    "/var/www/html/web/libraries/a11y-accordion-tabs/a11y-accordion-tabs.js": "/var/www/html/web/libraries/a11y-accordion-tabs/a11y-accordion-tabs.js"
 }

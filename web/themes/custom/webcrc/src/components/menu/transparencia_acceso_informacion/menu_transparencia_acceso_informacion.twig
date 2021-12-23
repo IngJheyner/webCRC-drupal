@@ -11,7 +11,7 @@
       {% set titleId = item.title|replace({' ': '-'}) %}
         {% set titleId = titleId|split('.')[1] %}
         {% set titleId = titleId|replace({',': ''}) %}
-        <li class="nav-item col-md-4 dropdown" id="{{titleId|lower}}-div">
+        <li class="nav-item col-lg-4 dropdown" id="{{titleId|lower}}-div">
           {% if item.below %}
             <a class="nav-link dropdown-toggle border p-2 back-menu-transparencia item_menu" href="#" id="navbarDropdown{{iterar}}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           {% else %}
@@ -31,17 +31,17 @@
           {% endif %}
             <div class=" d-flex align-items-center">
             {#{% set titleId = titleId|normalize('NFD')|replace(/[\u0300-\u036f]/g, "") %}#}
-              <div class="col-md-2 p-2 m-0 " id="{{titleId|lower}}-icon">
+              <div class="col-2 col-lg-2 p-2 m-0 divicon" id="{{titleId|lower}}-icon">
                 {{ item.content.field_icono_de_enlace }}
               </div>
-              <div class="col-md-9">
+              <div class="col-9 col-lg-9 divlabel" >
                   <div class="align-items-center">
                       <div class="d-flex align-items-center">
                           <span id="{{titleId|lower}}-title" toggle-nav-transp="true" >{{item.title|replace({'.': '. '}) }}</span>
                       </div>
                   </div>
               </div>
-              <div class="col-md-1 p-0">
+              <div class="col-1 col-lg-1 p-0">
                 {% if item.below %}
                   <span class="material-icons material-icons-outlined">
                       expand_more
