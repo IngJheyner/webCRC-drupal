@@ -18,7 +18,7 @@ third_party_settings:
         - field_projects_operator
         - field_media_file_2
         - created
-      label: Archivo
+      label: Archivo(s)
       parent_name: ''
       region: content
       weight: 0
@@ -37,7 +37,7 @@ content:
     type: timestamp
     label: above
     settings:
-      date_format: medium
+      date_format: fecha_corta_webcrc
       custom_date_format: ''
       timezone: ''
     third_party_settings: {  }

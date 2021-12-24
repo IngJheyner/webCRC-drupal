@@ -563,10 +563,10 @@ display:
           overridables:
             dots: dots
             draggable: draggable
+            mouseWheel: mouseWheel
             arrows: '0'
             autoplay: '0'
             infinite: '0'
-            mouseWheel: '0'
             randomize: '0'
             variableWidth: '0'
           thumbnail: ''

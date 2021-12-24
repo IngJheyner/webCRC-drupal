@@ -20,9 +20,9 @@ content:
     type: timestamp
     label: hidden
     settings:
-      date_format: fecha_webcrc
+      date_format: fecha_corta_webcrc
       custom_date_format: ''
-      timezone: America/Bogota
+      timezone: ''
     third_party_settings: {  }
     weight: 2
     region: content
@@ -31,7 +31,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
   field_projects_operator:
     type: entity_reference_label
@@ -39,7 +39,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
 hidden:
   feeds_item: true
