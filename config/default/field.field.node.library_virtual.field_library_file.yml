@@ -40,7 +40,7 @@ settings:
   handler: 'default:file'
   handler_settings: {  }
   file_directory: ''
-  file_extensions: 'txt pdf docx zip rar'
-  max_filesize: '50 mb'
+  file_extensions: 'txt pdf docx zip rar xlsx xlsm xls doc ai'
+  max_filesize: '70 mb'
   description_field: false
 field_type: file

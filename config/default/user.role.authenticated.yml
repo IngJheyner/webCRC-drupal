@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - filter.format.basic_html
+    - filter.format.editor_cont_transparencia
     - filter.format.events
     - filter.format.global_editor
     - filter.format.microsites_editor
@@ -12,6 +13,7 @@ dependencies:
     - comment
     - contact
     - filter
+    - google_analytics
     - media
     - search_api_page
     - shortcut
@@ -30,9 +32,11 @@ permissions:
   - 'access shortcuts'
   - 'access site-wide contact form'
   - 'access toolbar'
+  - 'opt-in or out of google analytics tracking'
   - 'post comments'
   - 'skip comment approval'
   - 'use text format basic_html'
+  - 'use text format editor_cont_transparencia'
   - 'use text format events'
   - 'use text format global_editor'
   - 'use text format microsites_editor'

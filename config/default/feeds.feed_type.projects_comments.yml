@@ -3,12 +3,12 @@ langcode: es
 status: true
 dependencies:
   config:
-    - core.base_field_override.node.proyectos_regulatorios.created
     - core.base_field_override.node.proyectos_regulatorios.title
     - field.field.node.proyectos_regulatorios.field_email_proyectos
     - field.field.node.proyectos_regulatorios.field_estado_proyectos
     - field.field.node.proyectos_regulatorios.field_nombre_proyecto
     - field.field.node.proyectos_regulatorios.field_oficina_proyecto
+    - field.field.node.proyectos_regulatorios.field_projects_documents_endings
     - field.field.node.proyectos_regulatorios.field_projects_links
     - field.field.node.proyectos_regulatorios.field_projects_services
     - field.field.node.proyectos_regulatorios.field_resumen_proyecto
@@ -28,6 +28,14 @@ third_party_settings:
         source: services
         weight: 0
         label: 'Tomar el nombre de varios servicios para el proyecto.'
+      a90f5944-4ee6-4672-956f-343bbd4e9643:
+        separator: '~'
+        limit: null
+        uuid: a90f5944-4ee6-4672-956f-343bbd4e9643
+        plugin: explode
+        source: documento_final
+        weight: 0
+        label: Explode
 label: 'Proyectos Comentarios'
 id: projects_comments
 description: 'Se crea nodo de tipo de contenido proyectos comentarios.'
@@ -124,6 +132,10 @@ custom_sources:
     value: resumen
     label: resumen
     machine_name: abstracts
+  documento_final:
+    value: documento_final
+    label: documento_final
+    machine_name: documento_final
 mappings:
   -
     target: field_estado_proyectos
@@ -131,13 +143,6 @@ mappings:
       value: state
     settings:
       language: null
-  -
-    target: created
-    map:
-      value: created
-    settings:
-      language: null
-      timezone: UTC
   -
     target: field_nombre_proyecto
     map:
@@ -175,6 +180,7 @@ mappings:
       language: ''
       reference_by: name
       autocreate: '1'
+      feeds_item: false
   -
     target: nid
     map:
@@ -183,12 +189,6 @@ mappings:
     unique:
       value: '1'
   -
-    target: vid
-    map:
-      value: nid
-    settings: {  }
-    unique: {  }
-  -
     target: field_type_projects_comments
     map:
       target_id: type_project
@@ -196,6 +196,7 @@ mappings:
       language: null
       reference_by: name
       autocreate: false
+      feeds_item: false
   -
     target: title
     map:
@@ -210,3 +211,12 @@ mappings:
       value: abstracts
     settings:
       language: null
+  -
+    target: field_projects_documents_endings
+    map:
+      target_id: documento_final
+    settings:
+      language: null
+      reference_by: title
+      autocreate: false
+      feeds_item: false

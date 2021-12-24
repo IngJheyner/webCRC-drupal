@@ -12,7 +12,7 @@ dependencies:
     - node.type.agency_regulatory
     - taxonomy.vocabulary.date_agency_regulatory
   content:
-    - 'taxonomy_term:date_agency_regulatory:ccc9344c-50da-4825-9b3a-79f2241fb9b2'
+    - 'taxonomy_term:date_agency_regulatory:0f82517a-c95c-44eb-aed1-a910d77e0101'
   module:
     - link
     - node
@@ -479,23 +479,9 @@ display:
           separator: ', '
           field_api_classes: false
       pager:
-        type: mini
+        type: none
         options:
           offset: 0
-          items_per_page: 10
-          total_pages: null
-          id: 0
-          tags:
-            next: ››
-            previous: ‹‹
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
       exposed_form:
         type: basic
         options:
@@ -582,7 +568,7 @@ display:
           plugin_id: taxonomy_index_tid
           operator: and
           value:
-            207: 207
+            4779: 4779
           group: 1
           exposed: true
           expose:
@@ -742,7 +728,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
-        - url.query_args
         - user
         - 'user.node_grants:view'
         - user.permissions
@@ -768,7 +753,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
-        - url.query_args
         - user
         - 'user.node_grants:view'
         - user.permissions

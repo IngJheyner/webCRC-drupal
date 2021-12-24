@@ -4,8 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.taxonomy_term.departments_and_municipalities.field_code_dane
-    - field.field.taxonomy_term.departments_and_municipalities.field_content_latitude
-    - field.field.taxonomy_term.departments_and_municipalities.field_content_length
     - taxonomy.vocabulary.departments_and_municipalities
   module:
     - taxonomy
@@ -62,20 +60,6 @@ mappings:
     target: field_code_dane
     map:
       value: codedane
-    settings:
-      language: null
-    unique: {  }
-  -
-    target: field_content_latitude
-    map:
-      value: contentlatitude
-    settings:
-      language: null
-    unique: {  }
-  -
-    target: field_content_length
-    map:
-      value: contentlength
     settings:
       language: null
     unique: {  }

@@ -1153,7 +1153,7 @@ display:
           group_type: group
           admin_label: 'Fecha de Cierrre'
           plugin_id: custom
-          label: 'Fecha de Cierre'
+          label: 'Fecha Cierre de Comentarios'
           exclude: false
           alter:
             alter_text: true
@@ -1404,6 +1404,20 @@ display:
             offset: false
             offset_label: Desplazamiento
           quantity: 9
+      sorts:
+        field_estado_proyectos_value:
+          id: field_estado_proyectos_value
+          table: node__field_estado_proyectos
+          field: field_estado_proyectos_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
       arguments: {  }
       filters:
         status:
@@ -1724,6 +1738,7 @@ display:
         row: false
         relationships: false
         fields: false
+        sorts: false
         arguments: false
         filters: false
         filter_groups: false

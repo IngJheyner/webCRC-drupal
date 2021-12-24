@@ -1,4 +1,4 @@
-uuid: 766ed22f-fff9-4408-8470-676084e85221
+uuid: 80b58a09-baa0-4a11-a117-c7f08b03cd43
 langcode: es
 status: true
 dependencies:
@@ -7,10 +7,8 @@ dependencies:
 id: taxonomy_term.field_content_latitude
 field_name: field_content_latitude
 entity_type: taxonomy_term
-type: decimal
-settings:
-  precision: 10
-  scale: 8
+type: float
+settings: {  }
 module: core
 locked: false
 cardinality: 1

@@ -86,7 +86,7 @@
         "drupal/search_api_page": "^1.0@beta",
         "drupal/simple_sitemap": "^3.8",
         "drupal/simplify": "^1.2",
-        "drupal/slick": "^2.3",
+        "drupal/slick": "^2.4",
         "drupal/slick_extras": "^1.0@RC",
         "drupal/slick_paragraphs": "^2.1",
         "drupal/slick_views": "^2.4",

@@ -1,4 +1,4 @@
-uuid: 691710dc-07bf-4c8e-8237-950d48c5ae46
+uuid: a18fef25-4718-48ac-9a94-7d0aecd4cce0
 langcode: es
 status: true
 dependencies:
@@ -20,4 +20,4 @@ settings:
   max: null
   prefix: ''
   suffix: ''
-field_type: decimal
+field_type: float

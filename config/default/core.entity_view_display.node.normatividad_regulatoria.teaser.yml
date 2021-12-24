@@ -34,7 +34,7 @@ content:
     label: hidden
     settings:
       timezone_override: America/Bogota
-      format_type: news_dates
+      format_type: fecha_corta_webcrc
     third_party_settings: {  }
     weight: 1
     region: content

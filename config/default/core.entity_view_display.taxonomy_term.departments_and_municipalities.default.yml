@@ -33,7 +33,7 @@ content:
     region: content
   field_content_latitude:
     type: number_decimal
-    label: hidden
+    label: above
     settings:
       thousand_separator: ''
       decimal_separator: .
@@ -44,7 +44,7 @@ content:
     region: content
   field_content_length:
     type: number_decimal
-    label: hidden
+    label: above
     settings:
       thousand_separator: ''
       decimal_separator: .
