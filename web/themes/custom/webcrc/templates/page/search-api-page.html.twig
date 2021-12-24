@@ -1,0 +1,22 @@
+<div class="container mt-5 p-2 search-primary-page">
+  <div class="search-primary-page-form mb-5">
+    {{ form }}
+  </div>
+
+  {% if search_title %}
+    <h2>{{ search_title }}</h2>
+  {% endif %}
+
+  {% if no_of_results %}
+    <p>{{ no_of_results }}</p>
+  {% endif %}
+
+  {{ no_results_found }}
+
+  {{ search_help }}
+
+  {{ results }}
+
+  {{ pager }}
+
+</div>

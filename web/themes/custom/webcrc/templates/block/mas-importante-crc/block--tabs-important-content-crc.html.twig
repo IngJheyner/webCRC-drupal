@@ -1,5 +1,5 @@
 {% set classes = [
-  'block contenido-importante-container md-3 m-0 p-5',
+  'block contenido-importante-container md-3 m-0 px-3 py-5 px-sm-5',
   bundle ? 'block--' ~ bundle|clean_class,
   id ? 'block--' ~ id|replace({"_": "-"})|clean_class,
 ]|merge(utility_classes ? utility_classes : []) %}

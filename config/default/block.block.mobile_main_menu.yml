@@ -1,4 +1,4 @@
-uuid: 43664969-bcf3-4aaf-ba93-83f3ff3b87a1
+uuid: b11b2ff7-9257-447c-bd3e-ae0e66f8c86a
 langcode: es
 status: true
 dependencies:
@@ -8,15 +8,15 @@ dependencies:
     - superfish
   theme:
     - webcrc
-id: home_main_menu
+id: mobile_main_menu
 theme: webcrc
 region: main_menu
-weight: -15
+weight: 0
 provider: null
 plugin: 'superfish:main'
 settings:
   id: 'superfish:main'
-  label: 'Menu Principal'
+  label: 'Menu Principal responsive'
   label_display: '0'
   provider: superfish
   level: '1'
@@ -37,7 +37,7 @@ settings:
   touchua: '0'
   touchual: ''
   touchuam: '0'
-  small: '2'
+  small: '1'
   smallbp: '992'
   smallua: '0'
   smallual: ''

@@ -21,7 +21,13 @@ settings:
             - Italic
             - Superscript
             - Subscript
+            - Format
             - Styles
+            - ShowBlocks
+        -
+          name: 'Edición Rápida'
+          items:
+            - Templates
         -
           name: Enlaces
           items:
@@ -35,13 +41,13 @@ settings:
         -
           name: Media
           items:
-            - Blockquote
             - DrupalImage
             - DrupalMediaLibrary
         -
           name: Tools
           items:
             - Source
+            - Blockquote
         -
           name: Alineación
           items:
@@ -62,11 +68,6 @@ settings:
             - Paste
             - Undo
             - Redo
-        -
-          name: Tablas
-          items:
-            - Table
-            - ShowBlocks
   plugins:
     stylescombo:
       styles: ''

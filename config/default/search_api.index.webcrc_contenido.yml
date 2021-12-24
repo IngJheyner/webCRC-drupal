@@ -35,7 +35,19 @@ datasource_settings:
     bundles:
       default: false
       selected:
+        - agency_regulatory
+        - commission_minutes
+        - events
+        - glossary
+        - home_articles
+        - library_virtual
+        - microsite_crc
+        - microsites_articles
         - news_crc
+        - normatividad_regulatoria
+        - proyectos_regulatorios
+        - tip_cont_simple_transp
+        - transp_ofert_empleo
     languages:
       default: true
       selected: {  }
@@ -74,7 +86,7 @@ processor_settings:
       - webcrc_search_title
 tracker_settings:
   default:
-    indexing_order: fifo
+    indexing_order: lifo
 options:
   cron_limit: 50
   index_directly: true

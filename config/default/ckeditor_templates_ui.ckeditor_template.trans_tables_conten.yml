@@ -1,0 +1,12 @@
+uuid: 164e3bb1-6e54-4574-bcdf-0726cd3d50b9
+langcode: es
+status: true
+dependencies: {  }
+id: trans_tables_conten
+label: 'Tablas en contenido de transparencia'
+image: ''
+description: ''
+html:
+  value: "<div class=\"table-responsive-sm\">\r\n<table align=\"center\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 510px;max-width: 810px;\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td>&nbsp;</td>\r\n\t\t\t<td>&nbsp;</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>&nbsp;</td>\r\n\t\t\t<td>&nbsp;</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>&nbsp;</td>\r\n\t\t\t<td>&nbsp;</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n</div>\r\n"
+  format: editor_cont_transparencia
+weight: 3
