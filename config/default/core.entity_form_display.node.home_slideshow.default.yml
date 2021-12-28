@@ -9,7 +9,7 @@ dependencies:
     - image.style.thumbnail
     - node.type.home_slideshow
   module:
-    - link
+    - link_target
     - path
     - scheduler
     - svg_image
@@ -41,12 +41,17 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
   field_home_slideshow_url:
-    type: link_default
+    type: link_target_field_widget
     weight: 3
     region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
+      available_targets:
+        _self: _self
+        _blank: _blank
+        parent: parent
+        top: top
     third_party_settings: {  }
   langcode:
     type: language_select

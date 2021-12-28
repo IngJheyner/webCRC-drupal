@@ -21,14 +21,24 @@
       <div class="content-kids-page__field-content-background-image">
         {{ content.field_content_background_image }}
       </div>
-      <div class="card-body">
-        <div class="content-kids-page__field-content-video">
-          {{ content.field_content_video }}
+      <div class="card-body mb-0 mt-5">
+        <div class="row m-0 p-0">
+          <div class="col-9 col-xl-10 py-5 pr-0">
+            <div class="container mb-5 mr-xl-5 pr-xl-5">
+              <div class="ml-5 pl-5 ml-xl-0 pl-xl-0">
+                <div class="content-kids-page__field-content-video">
+                  {{ content.field_content_video }}
+                </div>
+                {{ content.field_introduccion_contenido }}
+              </div>
+            </div>
+          </div>
+          <div class="logo-kids col-3 col-xl-2 mb-0 pr-0">
+            <div class="content-kids-page__field-content-logo">
+              {{ content.field_content_logo }}
+            </div>
+          </div>
         </div>
-        {{ content.field_introduccion_contenido }}
-      </div>
-      <div class="content-kids-page__field-content-logo">
-        {{ content.field_content_logo }}
       </div>
     </div>
     {{ content.field_content_tabs }}

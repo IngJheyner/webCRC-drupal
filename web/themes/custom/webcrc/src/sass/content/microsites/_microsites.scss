@@ -11,8 +11,10 @@ ul.block-grid {
     *, a,
     h1, h2, h3, 
     h4, h5, h6, 
-    p, div, span
-    .microsite-block__field-content-personalized .block-title-personalized {
+    p, div, span,
+    .block-title-personalized,
+    .block-title-personalized a,
+    .block-title-personalized p {
       color: $text-white;
     }
   }
@@ -24,7 +26,9 @@ ul.block-grid {
     h1, h2, h3, 
     h4, h5, h6, 
     p, div, span,
-    .microsite-block__field-content-personalized .block-title-personalized {
+    .block-title-personalized,
+    .block-title-personalized a,
+    .block-title-personalized p  {
       color: $text-black;
     }
 
@@ -50,7 +54,9 @@ ul.block-grid {
     h1, h2, h3, 
     h4, h5, h6, 
     p, div, span,
-    .microsite-block__field-content-personalized .block-title-personalized {
+    .block-title-personalized,
+    .block-title-personalized a,
+    .block-title-personalized p  {
       color: $text-black;
     }
 
@@ -136,11 +142,16 @@ ul.block-grid {
   }
 
   .block-title-personalized,
-  .block-title-personalized * {
+  .block-title-personalized a,
+  .block-title-personalized p {
     font-size: 22pt;
     font-weight: bold;
     color: $text-black;
     text-decoration: none;
+
+    br {
+      display: none;
+    }
   }
 
   p {
@@ -159,12 +170,22 @@ ul.block-grid {
 // NOTICIAS 
 .last-news-internal {
   .slide__caption {
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     align-items: flex-start;
 
+    @include small {
+      display: flex;
+    }
+
     > * {
-      width: 50%;
+      width: 100%;
+      margin-bottom: 20px;
+
+      @include small {
+        width: 50%;
+        margin-bottom: 0;
+      }
     }
 
     img {
@@ -176,7 +197,11 @@ ul.block-grid {
     }
 
     .slide__data {
-      padding: 0px 30px 10px;
+      padding: 0;
+
+      @include small {
+        padding: 0px 30px 10px;
+      }
 
       h1, h2, h3, 
       h4, h5, h6 {
