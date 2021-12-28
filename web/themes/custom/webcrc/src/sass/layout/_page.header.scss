@@ -24,7 +24,8 @@
       background: linear-gradient(110deg, rgba(244,46,98,1) 90%, rgba(255,255,255,0) 90%); 
 
       img {
-        max-width: 100%;
+        max-width: 50%;
+        min-width: 100px;
       }
     }
   }
@@ -42,10 +43,14 @@
       right: 0;
       margin: auto;
       text-align: center;
-      font-size: 30pt;
+      font-size: 24pt;
       color: rgba(75, 92, 184, 1);
       line-height: unset;
       padding-left: 0;
+
+      @include small {
+        font-size: 30pt;
+      }
 
       @include desktop {
         right: unset;
@@ -106,12 +111,17 @@
         }
 
         .search-form__submit {  
-          width: 66px;
-          padding: 20px 0px;
+          width: 50px;
+          padding: 13px 0px;
           color: transparent;
           background: transparent;
           border: none;
           z-index: 2;
+
+          @include small {
+            width: 66px;
+            padding: 20px 0px;
+          }
 
           @include desktop {
             padding: 0 15px;
