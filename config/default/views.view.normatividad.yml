@@ -543,15 +543,17 @@ display:
           separator: ', '
           field_api_classes: false
       pager:
-        type: mini
+        type: full
         options:
           offset: 0
           items_per_page: 10
           total_pages: null
           id: 0
           tags:
-            next: ››
-            previous: ‹‹
+            next: 'Siguiente ››'
+            previous: '‹‹ Anterior'
+            first: '« Primera'
+            last: 'Última »'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -560,6 +562,7 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
+          quantity: 9
       exposed_form:
         type: basic
         options:
@@ -579,6 +582,19 @@ display:
         options: {  }
       empty: {  }
       sorts:
+        field_ano_normat_reg_value:
+          id: field_ano_normat_reg_value
+          table: node__field_ano_normat_reg
+          field: field_ano_normat_reg_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: standard
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
         created:
           id: created
           table: node_field_data
@@ -752,6 +768,52 @@ display:
             min_placeholder: ''
             max_placeholder: ''
             placeholder: 'Escriba aquí'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        field_ano_normat_reg_value:
+          id: field_ano_normat_reg_value
+          table: node__field_ano_normat_reg
+          field: field_ano_normat_reg_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: numeric
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_ano_normat_reg_value_op
+            label: Año
+            description: 'Escriba el año a buscar'
+            use_operator: false
+            operator: field_ano_normat_reg_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: year
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            min_placeholder: ''
+            max_placeholder: ''
+            placeholder: 'Ej. 2022'
           is_grouped: false
           group_info:
             label: ''
