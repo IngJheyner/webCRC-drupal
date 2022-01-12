@@ -298,6 +298,10 @@
         }
       } 
     }
+    .dropdown-menu.show{
+      left: -7% !important;
+      padding: 8px;
+    }
   }
 }
 @media screen and (max-width:991px){
@@ -327,6 +331,9 @@
           font-size: 0.8rem;
         }
       }
+      .dropdown-menu.show{
+        top: -12% !important;
+      }
     }
   }
 }
@@ -339,5 +346,8 @@
         font-size: 0.8rem;
       }
     }
+  }
+  .dropdown-menu.show{
+    top: -20% !important;
   }
 }

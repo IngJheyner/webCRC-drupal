@@ -642,7 +642,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: true
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -1040,14 +1040,14 @@ display:
             suffix: ''
             target: ''
             nl2br: false
-            max_length: 0
-            word_boundary: false
-            ellipsis: false
+            max_length: 80
+            word_boundary: true
+            ellipsis: true
             more_link: false
             more_link_text: ''
             more_link_path: ''
             strip_tags: false
-            trim: false
+            trim: true
             preserve_tags: ''
             html: false
           element_type: ''
@@ -1057,7 +1057,7 @@ display:
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -1065,7 +1065,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: true
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -1249,9 +1249,10 @@ display:
           cache: 0
           current_view_mode: last_news_microsites
           skin: ''
+          style: ''
           grid: '2'
-          grid_medium: '2'
-          grid_small: '2'
+          grid_medium: '1'
+          grid_small: '1'
           overridables:
             dots: dots
             draggable: draggable

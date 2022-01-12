@@ -13,6 +13,11 @@
       padding-bottom: 0 !important;
       width: 100%;
       height: 100%;
+
+      .media--background {
+        padding: 0 !important;
+        height: 100%;
+      }
     }
 
     img {
@@ -22,21 +27,27 @@
     }
   }
 
+  .logo-kids {
+    margin: auto;
+  }
+
   .content-kids-page__field-content-logo {
-    position: absolute;
+    /* position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 0; */
   }
 
   .card-body {
     position: relative;
-    width: 70%;
+    //width: 70%;
+    width: 100%;
     margin: 5rem auto;
-    padding: 20px 70px 11px 65px;
+    // padding: 20px 70px 11px 65px;
+    padding: 0;
 
     * {
       width: 100%;
-      margin: auto;
+      // margin: auto;
       color: rgb(255, 255, 255);
       border-radius: 20px;
       font-size: 22pt;
