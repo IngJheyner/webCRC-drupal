@@ -12,7 +12,7 @@ dependencies:
     - node.type.agency_regulatory
     - taxonomy.vocabulary.date_agency_regulatory
   content:
-    - 'taxonomy_term:date_agency_regulatory:0f82517a-c95c-44eb-aed1-a910d77e0101'
+    - 'taxonomy_term:date_agency_regulatory:28da7f6f-4df2-404a-9652-a339a0aca972'
   module:
     - link
     - node
@@ -425,7 +425,7 @@ display:
           admin_label: ''
           plugin_id: field
           label: Publicación
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -568,7 +568,7 @@ display:
           plugin_id: taxonomy_index_tid
           operator: and
           value:
-            4779: 4779
+            208: 208
           group: 1
           exposed: true
           expose:

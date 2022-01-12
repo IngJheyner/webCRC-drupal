@@ -96,11 +96,13 @@ function webcrc_projects_regulatory_preprocess_views_view_field(&$variables) {
   if($view->storage->id() == 'projects_comments'){
 
     if($view->current_display == 'page_projects_comments'){      
-        
+      
       if($field->field == 'field_interacciones_proyectos'){
+       
+        $fields = end($row->_entity->get('field_interacciones_proyectos')->getValue());
+        //dpm($fields);
+        $paragraph = Paragraph::load($fields['target_id']);
 
-        $field = end($row->_entity->get('field_interacciones_proyectos')->getValue());
-        $paragraph = Paragraph::load($field['target_id']);
         $definition_interactions = $paragraph->get('field_interactions_comments')[0]->getValue()['value'];
 
         if($definition_interactions == 0){
@@ -110,11 +112,11 @@ function webcrc_projects_regulatory_preprocess_views_view_field(&$variables) {
         }
       }
       
-      //dpm($field->field);
       if($field->field == 'nothing'){
 
-        $field = end($row->_entity->get('field_interacciones_proyectos')->getValue());
-        $paragraph = Paragraph::load($field['target_id']);
+        $fields = end($row->_entity->get('field_interacciones_proyectos')->getValue());
+        $paragraph = Paragraph::load($fields['target_id']);
+
         $dateTime = strtotime($paragraph->get('field_fecha_cierre_iteracciones')[0]->getValue()['value']);
         $variables['output'] = \Drupal::service('date.formatter')->format($dateTime, 'fecha_corta_webcrc');
 
