@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.muni_levantaron_barreras.field_apart_norma_incluyen_barre
+    - field.field.node.muni_levantaron_barreras.field_content_geofield
     - field.field.node.muni_levantaron_barreras.field_depart_munici
     - field.field.node.muni_levantaron_barreras.field_descripcion_barreras
     - field.field.node.muni_levantaron_barreras.field_fecha_emitid_acredit
@@ -19,6 +20,7 @@ dependencies:
     - datetime
     - field_group
     - file
+    - geofield
     - path
     - scheduler
 third_party_settings:
@@ -79,8 +81,7 @@ third_party_settings:
       children:
         - title
         - field_depart_munici
-        - field_tax_departament
-        - field_tax_municipio
+        - field_content_geofield
         - field_descripcion_barreras
       label: 'Informacion '
       region: content
@@ -113,6 +114,13 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_content_geofield:
+    type: geofield_latlon
+    weight: 23
+    region: content
+    settings:
+      html5_geolocation: false
+    third_party_settings: {  }
   field_depart_munici:
     type: cshs
     weight: 22
@@ -128,7 +136,7 @@ content:
     third_party_settings: {  }
   field_descripcion_barreras:
     type: string_textarea
-    weight: 25
+    weight: 24
     region: content
     settings:
       rows: 5
