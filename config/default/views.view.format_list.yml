@@ -13,8 +13,6 @@ dependencies:
     - field.storage.node.field_template_name
     - node.type.list_formats
     - taxonomy.vocabulary.services_list_formats
-  content:
-    - 'taxonomy_term:services_list_formats:71b85052-fc75-427b-b77b-cc2054acbd5c'
   module:
     - file
     - node
@@ -487,7 +485,7 @@ display:
           admin_label: ''
           plugin_id: field
           label: Plantilla
-          exclude: false
+          exclude: true
           alter:
             alter_text: true
             text: '<a href="{{ field_content_file_2 }}">{{ field_template_name }}</a>'
@@ -680,9 +678,64 @@ display:
           plugin_id: bundle
           value:
             list_formats: list_formats
+          group: 1
           expose:
             operator_limit_selection: false
             operator_list: {  }
+        field_category_target_id:
+          id: field_category_target_id
+          table: node__field_category
+          field: field_category_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_category_target_id_op
+            label: Categoria
+            description: ''
+            use_operator: false
+            operator: field_category_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_category_target_id
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: true
+          vid: services_list_formats
+          type: select
+          hierarchy: true
+          limit: true
+          error_message: true
+          save_lineage: false
+          force_deepest: false
+          parent: null
+          level_labels: ''
+          hierarchy_depth: 0
+          required_depth: 0
+          none_label: '- Please select -'
         field_list_periodicity_value:
           id: field_list_periodicity_value
           table: node__field_list_periodicity
@@ -725,54 +778,10 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-        field_category_target_id:
-          id: field_category_target_id
-          table: node__field_category
-          field: field_category_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: taxonomy_index_tid
-          operator: or
-          value:
-            501: 501
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_category_target_id_op
-            label: Categoria
-            description: ''
-            use_operator: false
-            operator: field_category_target_id_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: field_category_target_id
-            required: false
-            remember: false
-            multiple: true
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: true
-          vid: services_list_formats
-          type: select
-          hierarchy: true
-          limit: true
-          error_message: true
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
       style:
         type: views_bootstrap_table
         options:
@@ -907,7 +916,7 @@ display:
     display_options:
       display_description: 'Pagina que muestra una tabla con el tipo de contenido listas de formatos'
       display_extenders: {  }
-      path: listas-formatos
+      path: micrositios/reportes-informacion/lista-de-formatos
     cache_metadata:
       max-age: -1
       contexts:
