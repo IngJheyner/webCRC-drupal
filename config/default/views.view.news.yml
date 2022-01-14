@@ -1587,13 +1587,13 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<sub>{{ field_category }}</sub>\r\n<h4>{{ title }}</h4>\r\n<time>{{ created }}</time>"
+            text: "<sub><a href='/noticias/{{ field_category|lower }}'>{{ field_category }}</a></sub>\r\n<h4>{{ title }}</h4>\r\n<time>{{ created }}</time>"
             make_link: false
             path: ''
             absolute: false
             external: false
             replace_spaces: false
-            path_case: none
+            path_case: lower
             trim_whitespace: false
             alt: ''
             rel: ''
@@ -1688,9 +1688,9 @@ display:
             transform: false
           glossary: false
           limit: 0
-          case: none
-          path_case: none
-          transform_dash: false
+          case: lower
+          path_case: lower
+          transform_dash: true
           break_phrase: false
           add_table: false
           require_value: false

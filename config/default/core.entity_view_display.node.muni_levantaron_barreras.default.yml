@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.muni_levantaron_barreras.field_apart_norma_incluyen_barre
+    - field.field.node.muni_levantaron_barreras.field_content_geofield
     - field.field.node.muni_levantaron_barreras.field_depart_munici
     - field.field.node.muni_levantaron_barreras.field_descripcion_barreras
     - field.field.node.muni_levantaron_barreras.field_fecha_emitid_acredit
@@ -17,6 +18,7 @@ dependencies:
   module:
     - datetime
     - file
+    - geofield
     - user
 id: node.muni_levantaron_barreras.default
 targetEntityType: node
@@ -30,6 +32,15 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 108
+    region: content
+  field_content_geofield:
+    type: geofield_default
+    label: above
+    settings:
+      output_format: wkt
+      output_escape: true
+    third_party_settings: {  }
+    weight: 113
     region: content
   field_depart_munici:
     type: entity_reference_label
