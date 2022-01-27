@@ -16,6 +16,7 @@ module:
 theme: {  }
 blacklist:
   - google_analytics.settings
-graylist: {  }
+graylist:
+  - xmlsitemap.xmlsitemap.t9UQ7FvqR0wMQMnd5n2XukH0kM9liAM9wOhfSLRl2qw
 graylist_dependents: true
 graylist_skip_equal: true
