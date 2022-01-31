@@ -572,7 +572,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: true
-          content: "<div class=\"titleContentSimple mt-5 mb-4\" id=\"cont\">\r\n   <h1> 4.8.1 Informe pormenorizado </h1>\r\n</div>"
+          content: "<div class=\"titleContentSimple mt-5 mb-4\" id=\"cont\">\r\n   <h1> 4.8.1 Informes de control interno</h1>\r\n</div>"
           tokenize: false
         entity_block_content:
           id: entity_block_content
@@ -610,7 +610,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: transparencia-y-acceso-a-la-informacion-publica/planeacion-presupuesto-e-informes/informes-de-la-oficina-de-control-interno/informes-pormenorizados
+      path: transparencia-y-acceso-a-la-informacion-publica/planeacion-presupuesto-e-informes/informes-de-la-oficina-de-control-interno/informes-control-interno
     cache_metadata:
       max-age: -1
       contexts:
