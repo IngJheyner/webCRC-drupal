@@ -1437,12 +1437,58 @@ blocks:
           summary: ''
           format: editor_cont_transparencia
 taxonomies:
-  alphabet: {  }
-  departments_and_municipalities: {  }
+  date_agency_regulatory: {  }
+  departments_and_municipalities:
+    -
+      vid: departments_and_municipalities
+      tid: '250'
+      langcode: es
+      name: Abejorral
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '249'
+      uuid: e1e8a66f-b227-4512-9ddb-50e51b005f40
+      field_code_dane:
+        -
+          value: '5002'
+      field_content_latitude: {  }
+      field_content_length: {  }
+    -
+      vid: departments_and_municipalities
+      tid: '248'
+      langcode: es
+      name: Amazonas
+      description__value: null
+      description__format: null
+      weight: '1'
+      parent: '0'
+      uuid: 29bde502-70c9-4af7-8dc3-053ce9391975
+      field_code_dane:
+        -
+          value: '91'
+      field_content_latitude: {  }
+      field_content_length: {  }
+    -
+      vid: departments_and_municipalities
+      tid: '249'
+      langcode: es
+      name: Antioquia
+      description__value: null
+      description__format: null
+      weight: '2'
+      parent: '0'
+      uuid: 3fc39e5e-b57b-4581-91ca-2359f6b53677
+      field_code_dane:
+        -
+          value: '5'
+      field_content_latitude: {  }
+      field_content_length: {  }
+  eje: {  }
   library_author:
     -
       vid: library_author
-      tid: '3'
+      tid: '69'
       langcode: und
       name: 'Jesus Huertas Cuenca'
       description__value: "Cui eligo eu letalis mauris nobis pecus sino uxor valetudo. Antehabeo camur gemino luctus nutus pala. Aptent at ea neo nobis qui tation. Erat eros jus probo tum. Amet hendrerit olim paratus praemitto quadrum quidem saluto tamen. At laoreet nimis paulatim quis valde velit. Abluo amet aptent caecus consequat ideo persto saluto vero verto.\r\n\r\nErat genitus haero imputo jugis lucidus ludus persto ulciscor. Adipiscing cui ea iriure letalis neo patria sino turpis velit. Brevitas huic iusto vero. Caecus dolor esca eu meus neo obruo os tation. Cogo dolore iaceo neque nimis nunc odio sed uxor valde.\r\n\r\nAbico ex gravis iaceo ideo laoreet neque plaga utrum. Mos neo obruo patria vindico. Amet comis gemino importunus obruo quidem uxor. Accumsan camur haero neque obruo occuro tamen tincidunt ullamcorper. Acsi amet luctus populus saepius tego uxor. Conventio luptatum magna meus nutus plaga. Brevitas commodo commoveo consequat esse hos ibidem inhibeo magna singularis.\r\n\r\nAccumsan augue neo. Jumentum lucidus nimis occuro paulatim qui sino vulpes. Autem facilisi humo ille jugis minim pertineo premo si suscipit. Augue lobortis oppeto pagus.\r\n\r\nAptent decet feugiat illum incassum melior te. Illum interdico populus qui. Ea eum voco. Abbas abluo acsi euismod exerci gravis huic ideo nunc quia. Ad augue blandit mos sino uxor vereor zelus. Facilisis lucidus nutus odio os persto. Enim haero jumentum pagus quae tego vulpes. Haero neo nisl quadrum similis sino.\r\n\r\nAbluo consequat eros euismod natu tamen. Ad exerci nulla pagus ut venio. Defui elit feugiat iusto molior nulla premo refoveo ymo. Autem causa commoveo dolore luptatum pala populus singularis. Commoveo dolor dolus gravis neo pala probo typicus validus. Decet dolor jumentum quae quis saepius zelus. Macto nunc quidne tation venio.\r\n\r\nAbluo esca mauris praemitto sudo suscipere tincidunt. Abdo aptent conventio dignissim distineo ex imputo nobis te torqueo. Augue duis immitto loquor nibh nimis vereor. Abdo acsi ex. Dolore facilisis quadrum. Abbas antehabeo letalis odio similis. Abdo aptent exputo gemino natu virtus wisi ymo. Aptent tincidunt ulciscor utinam. Accumsan commoveo gravis os paratus pneum ymo. Cui saluto sudo torqueo. Adipiscing augue gemino laoreet.\r\n\r\nAppellatio pecus persto quis ratis ullamcorper vulpes. Loquor probo quidem turpis. Feugiat humo incassum jugis melior ut. Appellatio caecus ibidem plaga pneum sino tation. Abluo comis eligo humo loquor paratus.\r\n\r\nCogo meus nimis occuro si vindico. Acsi importunus lobortis lucidus neo obruo quadrum saluto sudo typicus. Duis ibidem iriure nibh vulputate. Esca gilvus iriure iustum mos roto secundum tincidunt vicis. Accumsan caecus damnum diam eligo modo singularis ulciscor veniam virtus. Consequat diam dolus et letalis persto praemitto suscipere ulciscor.\r\n\r\nConsectetuer loquor natu sagaciter scisco similis. Enim iaceo lenis ludus metuo paratus ut. Abigo exerci oppeto saluto sino vereor wisi ymo. Commoveo enim exerci facilisis humo similis typicus. Commodo diam quadrum quibus quidem secundum tum typicus. Augue conventio defui eu jumentum letalis persto populus. Bene commodo exerci ideo jus melior mos suscipere valetudo ymo.\r\n\r\nBrevitas duis facilisis haero humo sudo ullamcorper. Camur consectetuer diam facilisi nibh praesent vel. Aptent iustum odio patria suscipit tum. Duis huic nibh nobis praemitto si tincidunt usitas velit verto.\r\n\r\nAbbas at enim iriure voco. Abluo incassum jus. Iusto meus validus. Abbas dolore vindico. Aliquip duis immitto in pertineo refero roto singularis vero. Caecus eligo eros lucidus roto scisco uxor verto.\r\n\r\n"
@@ -1452,7 +1498,7 @@ taxonomies:
       uuid: c0912c91-1377-44ad-80c1-66b65865b834
     -
       vid: library_author
-      tid: '1'
+      tid: '67'
       langcode: en
       name: 'Lorena Castro'
       description__value: "Capto plaga quibus similis usitas utrum verto. Ad elit ex hos incassum macto paratus patria praesent suscipere. Iusto nimis quibus refoveo. Abbas defui elit enim gilvus ideo lucidus suscipere. Ea praemitto utrum vicis. Letalis quae veniam. Jumentum praemitto quadrum quia saepius sino. Accumsan imputo odio tego vicis. Antehabeo damnum diam dolore gemino letalis metuo nunc volutpat.\r\n\r\nCapto cogo luctus pertineo qui secundum vindico voco. Gemino nulla sit ulciscor. Aliquip at consequat huic plaga premo sed si te ut. Abdo gilvus ideo laoreet modo persto praemitto qui quidem vulputate. Bene caecus euismod mos probo vulputate. Cogo dolus erat eu ex letalis macto natu pertineo. Causa consequat ibidem vel.\r\n\r\nCui ea enim feugiat luptatum neque olim pala. At dolor facilisis interdico neo sed suscipere torqueo valde. Illum neque proprius. Facilisi persto populus verto. Abdo antehabeo defui interdico quia suscipit vulputate. Commodo cui ea importunus interdico iriure ludus typicus validus velit.\r\n\r\nComis duis magna nobis. Dignissim facilisis humo interdico jumentum lobortis plaga tincidunt velit venio. Consequat ibidem paulatim roto ut velit. Diam iusto mauris. Causa lobortis molior quadrum roto tamen tum virtus. Cogo ideo mos sino turpis vindico. Abico consequat facilisi ibidem os sagaciter turpis zelus.\r\n\r\nDistineo immitto praemitto si. Aliquip cogo magna nibh pertineo. Aptent camur cui saepius. Acsi blandit dolor haero jus mos sagaciter ullamcorper ymo. Esca neo odio vereor verto. Comis commoveo meus verto. Aliquip ea pala quidem sit torqueo utinam venio wisi. Abbas acsi antehabeo aptent ea facilisis paratus venio. Camur lenis lucidus melior pertineo praesent usitas valetudo validus veniam.\r\n\r\nBrevitas dolore hos nunc. Hos lobortis nimis probo. Aliquip et imputo in ludus nostrud populus roto vereor. Caecus eligo eu nutus saluto suscipit torqueo typicus voco wisi. Decet eu fere genitus ille tum vulputate. Abdo augue exputo facilisi inhibeo nimis olim persto refoveo. Duis inhibeo metuo pala pecus quadrum qui vereor. Capto decet gilvus ideo ille nibh vulpes.\r\n\r\nAbdo cogo exputo tamen. Esse gemino ut vero. Interdico nobis qui tamen vulpes. Cui letalis qui. Acsi lucidus mauris neo os saepius si ymo. Accumsan dolus ille macto nisl valetudo. Nulla quae rusticus scisco. Fere ideo melior meus minim obruo proprius typicus. Abluo gilvus sit. Abico aptent dignissim jumentum lenis te valetudo.\r\n\r\nIllum imputo ymo. Damnum eum mauris premo. Abigo exerci hos incassum loquor ludus mauris quis usitas. Lenis ratis sit suscipit usitas.\r\n\r\nConsequat dolus ideo proprius tamen. Appellatio dolore elit eu obruo probo torqueo virtus. Genitus occuro pala qui. Appellatio laoreet qui ulciscor. Abigo os praesent. Abigo abluo iustum natu nimis sed wisi.\r\n\r\nAppellatio at consectetuer haero nisl os sudo tation. Autem blandit gravis scisco. Acsi comis ea feugiat illum jus obruo quibus sagaciter vel. Amet iriure paulatim qui quibus quidem saepius sino sudo valetudo. Ille sino sudo validus vulpes. Aliquam ex patria probo.\r\n\r\nAcsi consectetuer premo sagaciter vicis. At esca iusto melior plaga populus premo uxor vereor zelus. Abluo accumsan defui duis gilvus hos jumentum letalis occuro pertineo. Consequat eros iriure metuo velit. Laoreet odio praesent quia sudo velit. Humo jumentum paulatim singularis velit. Abigo accumsan aliquip haero loquor obruo patria quidem secundum.\r\n\r\nMetuo quis similis vel. Acsi defui distineo ex hendrerit nimis. Aliquam aliquip laoreet valetudo. Aliquam aptent brevitas camur consectetuer conventio magna persto tego uxor. Et eum exputo huic nostrud obruo secundum verto vicis voco.\r\n\r\n"
@@ -1462,7 +1508,7 @@ taxonomies:
       uuid: c207b0f3-c355-4d4b-a99b-14be7f5662bf
     -
       vid: library_author
-      tid: '5'
+      tid: '71'
       langcode: es
       name: 'Mario Antonio Hernandez Ruiz'
       description__value: null
@@ -1472,7 +1518,7 @@ taxonomies:
       uuid: fc8df496-a15a-4f97-be44-8c1a3f697ba6
     -
       vid: library_author
-      tid: '4'
+      tid: '70'
       langcode: en
       name: 'Pedro Alonso Castillo'
       description__value: "Consequat laoreet venio. Dolor ideo singularis ullamcorper. Camur causa lucidus olim qui si ymo. Abdo eu in lenis lobortis sagaciter. Autem duis eros humo lenis magna paratus plaga ratis vulputate. Bene feugiat hos interdico saepius utinam vicis vindico vulputate.\r\n\r\nBene molior quae suscipit typicus verto. Abdo abico aliquip diam distineo dolore gravis obruo proprius qui. Acsi aliquam dolor eu gilvus huic jus nibh nostrud valde. Accumsan enim euismod paulatim roto ullamcorper.\r\n\r\nAcsi exputo fere huic inhibeo nunc populus vereor. Duis facilisi illum immitto molior nulla typicus venio. Aliquam eligo lenis roto tum usitas uxor. Brevitas enim incassum lucidus magna nobis usitas ut veniam vicis. Laoreet odio paulatim sagaciter. Feugiat ideo pala. Abdo dignissim eligo eum ibidem laoreet quidne virtus. Gravis macto quadrum quidem sit tego velit venio.\r\n\r\nDuis mauris pala praemitto tum utrum uxor velit. Ea oppeto paulatim ratis saepius turpis vulpes. Eligo patria vereor. Blandit conventio feugiat gilvus metuo occuro plaga.\r\n\r\nCommodo fere jumentum luptatum persto wisi. Huic odio sino. Nisl paulatim ullamcorper. Adipiscing defui magna nutus rusticus saluto scisco velit vicis. Acsi autem modo. Defui exerci odio pala. Abico eum lenis secundum tum. Aliquam caecus hendrerit huic iusto iustum paratus sit vicis virtus.\r\n\r\nDolor haero imputo laoreet occuro pala ratis tincidunt ulciscor vel. Humo ibidem illum saepius. Duis haero immitto jumentum melior saluto suscipere tincidunt wisi. Abico ille quidem. Distineo hendrerit natu vulputate. Bene ideo refoveo. Autem iaceo illum oppeto. Ad aliquip augue qui secundum tum valetudo.\r\n\r\nNeque pecus suscipere vulpes vulputate. Rusticus sino wisi. Caecus melior odio populus tamen vero volutpat. Abigo abluo aptent hos importunus mos nimis obruo quae si. Commoveo facilisi gilvus illum os plaga quia roto usitas. Esse ibidem melior sit vel voco vulputate.\r\n\r\nAugue erat imputo modo sit. Ad exerci tincidunt. Luctus proprius validus ymo. Conventio luptatum minim oppeto quia torqueo validus verto. Amet loquor paulatim tego. Acsi decet facilisis fere macto nulla ullamcorper zelus. Adipiscing nulla pagus. Ibidem quis refoveo roto saluto. Gemino gravis obruo praesent tamen te. Abdo comis commoveo dolus haero nisl suscipit ullamcorper.\r\n\r\nAliquip duis in melior nulla nutus pecus populus tation vicis. Abluo acsi capto comis damnum iaceo nisl oppeto os. Eligo fere iaceo ibidem macto mauris meus modo uxor vicis. Acsi gemino gilvus in nibh sit tamen tation typicus velit. Brevitas imputo olim. Abdo ludus quidem velit. Abdo caecus erat nimis paulatim pecus saepius. Dolus exerci facilisi gravis nunc quibus vero.\r\n\r\nEligo erat euismod immitto imputo populus singularis ulciscor ut vindico. Jugis pecus quae sit utinam venio. Camur causa consequat cui mauris mos pagus scisco vel. Caecus enim gravis. Abbas antehabeo molior neque obruo patria quidem sagaciter velit. Camur dolore ex magna occuro odio pertineo qui tamen. Abbas ad cogo elit patria plaga praesent roto si tamen.\r\n\r\nLuptatum roto similis. Defui eum facilisi metuo meus nibh paulatim probo tincidunt torqueo. Commodo gravis jugis jus tamen. Importunus molior refoveo ullamcorper veniam. Abluo consequat gemino ille illum obruo olim vulputate. At commoveo ludus ratis sudo uxor veniam.\r\n\r\nEsse natu quidem. Accumsan aliquip nimis. Abico enim quadrum roto sed tego tincidunt utinam. Abdo amet duis eligo occuro. Cogo jugis luptatum modo mos torqueo ulciscor utrum. Capto eros et pneum. Aliquam blandit paulatim sagaciter sit tation. Augue blandit diam eu exputo paratus quis suscipere te.\r\n\r\n"
@@ -1482,7 +1528,7 @@ taxonomies:
       uuid: b8e45309-470f-4126-89ca-b0fd2b1fe9df
     -
       vid: library_author
-      tid: '6'
+      tid: '72'
       langcode: es
       name: 'Richard 3DStudio'
       description__value: null
@@ -1492,7 +1538,7 @@ taxonomies:
       uuid: 6477decd-7c28-47e4-8bb1-4819ca563a41
     -
       vid: library_author
-      tid: '2'
+      tid: '68'
       langcode: zxx
       name: 'Vicente Fernandez Martinez'
       description__value: "Gemino humo jugis luptatum nostrud nutus quae. Ibidem immitto inhibeo persto rusticus saluto. Comis commodo dolore iaceo ibidem immitto inhibeo nobis pertineo refoveo. Scisco tego turpis. Accumsan eros exputo obruo os si.\r\n\r\nBlandit causa consequat fere nisl paratus quia valde. Aptent distineo eu ex in mauris quidem saluto suscipere tego. Augue consequat dolus ex praesent qui. Camur eligo esca illum mauris scisco tincidunt. Aptent conventio ille imputo incassum laoreet nisl nobis pala refero. Immitto imputo nibh patria. Consequat eum molior qui quibus sagaciter tamen validus voco zelus.\r\n\r\nCommodo erat esca. Aliquam appellatio autem eligo iaceo lobortis nisl paulatim torqueo. Eros lobortis occuro oppeto populus. Caecus in nunc pertineo refero tum validus vereor. Et gilvus humo ibidem jugis quis secundum. Abluo qui virtus. Camur causa dolore eum natu nutus sino valetudo virtus. Aliquip eu obruo virtus. Acsi aliquip exerci gravis letalis loquor metuo nulla rusticus.\r\n\r\nEsca iriure mauris pneum ullamcorper. Capto facilisis gemino minim modo pagus premo qui sudo. Abbas abdo eligo exerci ideo paulatim uxor venio virtus. Abbas defui immitto occuro qui saepius ullamcorper vero vicis.\r\n\r\nEros gilvus illum in inhibeo macto pagus plaga valde. Acsi persto ullamcorper valde. Acsi luptatum quis te usitas. Antehabeo appellatio augue brevitas commoveo huic minim patria plaga tego. Brevitas gravis immitto macto obruo probo quibus utinam validus. Damnum dolore refoveo. Cogo consequat duis hendrerit immitto imputo scisco utrum. Comis macto ratis veniam. Camur esca esse premo sudo tamen ulciscor uxor.\r\n\r\nCogo oppeto volutpat. Ludus quidem singularis sino. Abigo abluo decet iaceo occuro ut. Abico fere praemitto sino. Mauris nunc quibus quis utinam zelus. Conventio dignissim genitus hendrerit macto proprius singularis ulciscor utinam. Abbas euismod ibidem metuo tincidunt vero.\r\n\r\nAliquip defui eligo enim facilisis feugiat refero sudo suscipit ulciscor. Cogo eligo inhibeo magna meus odio oppeto utinam. Gilvus quia suscipit virtus. Eum inhibeo mos odio praemitto scisco secundum te tincidunt voco. Cui humo suscipit tincidunt uxor vulpes. At bene consequat jugis quibus tincidunt torqueo ullamcorper velit virtus. Eligo minim neo probo te ulciscor vicis ymo.\r\n\r\nAccumsan brevitas commoveo dolore imputo interdico pagus quidne virtus. Cui facilisi neque nulla usitas. Abdo autem lenis pneum. Aliquip consectetuer exputo jugis letalis nunc praesent vicis. Hendrerit mos similis. Huic iustum oppeto refero.\r\n\r\nAd caecus duis exputo nutus quidne si turpis valde. Aliquip appellatio at ex exerci facilisis quae quia sino usitas. Causa consequat quae veniam. Autem erat gemino huic nulla praemitto te. At cogo dolor ideo iriure jumentum lobortis sit.\r\n\r\nAutem et facilisi minim praemitto qui rusticus sed. Distineo illum natu wisi. Exerci inhibeo jus patria sudo ullamcorper. Defui eligo melior odio. Dignissim elit iaceo metuo os uxor vero vulputate. Acsi antehabeo elit huic molior secundum sudo.\r\n\r\nAccumsan consectetuer defui elit ibidem populus praemitto sudo vicis vindico. Abluo distineo eu patria tincidunt. Esse hendrerit lenis metuo typicus utrum voco. Nobis olim paulatim tincidunt.\r\n\r\nDiam interdico obruo rusticus vindico. Abluo consectetuer iaceo letalis neque pertineo ulciscor usitas vulpes. Enim jumentum vulputate. Aptent feugiat lobortis natu neque turpis valetudo. Autem conventio laoreet letalis nibh singularis tego typicus voco wisi.\r\n\r\n"
@@ -1503,7 +1549,7 @@ taxonomies:
   library_formats:
     -
       vid: library_formats
-      tid: '10'
+      tid: '76'
       langcode: es
       name: 'Audios o podcast'
       description__value: null
@@ -1520,7 +1566,7 @@ taxonomies:
           height: '145'
     -
       vid: library_formats
-      tid: '7'
+      tid: '73'
       langcode: es
       name: 'Documentos o Publicaciones'
       description__value: null
@@ -1531,7 +1577,7 @@ taxonomies:
       field_formats_image: {  }
     -
       vid: library_formats
-      tid: '8'
+      tid: '74'
       langcode: es
       name: 'Imágenes o infografías'
       description__value: null
@@ -1542,7 +1588,7 @@ taxonomies:
       field_formats_image: {  }
     -
       vid: library_formats
-      tid: '9'
+      tid: '75'
       langcode: es
       name: 'Videos o animaciones'
       description__value: null
@@ -1554,7 +1600,7 @@ taxonomies:
   library_keywords:
     -
       vid: library_keywords
-      tid: '11'
+      tid: '77'
       langcode: es
       name: Colombia
       description__value: null
@@ -1564,7 +1610,7 @@ taxonomies:
       uuid: 06379649-5c0f-47a1-b887-d53604746ba8
     -
       vid: library_keywords
-      tid: '12'
+      tid: '78'
       langcode: es
       name: Comunicación
       description__value: null
@@ -1574,7 +1620,7 @@ taxonomies:
       uuid: 964f9607-1ed5-4375-8256-d22c3efe714b
     -
       vid: library_keywords
-      tid: '115'
+      tid: '233'
       langcode: es
       name: pruebas
       description__value: null
@@ -1585,7 +1631,7 @@ taxonomies:
   library_type_document:
     -
       vid: library_type_document
-      tid: '13'
+      tid: '79'
       langcode: es
       name: 'Estudios e investigaciones'
       description__value: null
@@ -1834,7 +1880,7 @@ taxonomies:
   services_list_formats:
     -
       vid: services_list_formats
-      tid: '111'
+      tid: '242'
       langcode: es
       name: Correo
       description__value: null
@@ -1844,7 +1890,7 @@ taxonomies:
       uuid: 60f29e6b-5feb-423f-a986-da2bd5ce1dd1
     -
       vid: services_list_formats
-      tid: '103'
+      tid: '234'
       langcode: es
       name: 'Internet fijo'
       description__value: null
@@ -1854,7 +1900,7 @@ taxonomies:
       uuid: 9067c65e-dbd1-4ab7-86f3-50ef71451bdc
     -
       vid: services_list_formats
-      tid: '105'
+      tid: '236'
       langcode: es
       name: 'Internet móvil'
       description__value: null
@@ -1864,7 +1910,7 @@ taxonomies:
       uuid: aa9eee68-f5e5-4221-8c2d-afa001c32015
     -
       vid: services_list_formats
-      tid: '114'
+      tid: '245'
       langcode: es
       name: 'Larga distancia'
       description__value: null
@@ -1874,7 +1920,7 @@ taxonomies:
       uuid: 3245eeff-a29c-432d-a5cf-72625c65e0cd
     -
       vid: services_list_formats
-      tid: '112'
+      tid: '243'
       langcode: es
       name: 'Mensajería expresa'
       description__value: null
@@ -1884,7 +1930,7 @@ taxonomies:
       uuid: 8ac31e62-eac0-4e26-befa-812d0e404fa0
     -
       vid: services_list_formats
-      tid: '107'
+      tid: '238'
       langcode: es
       name: Portador
       description__value: null
@@ -1894,7 +1940,7 @@ taxonomies:
       uuid: be9bc441-22bf-4f69-bf23-31590dffc279
     -
       vid: services_list_formats
-      tid: '113'
+      tid: '244'
       langcode: es
       name: 'Postales de pago'
       description__value: null
@@ -1904,7 +1950,7 @@ taxonomies:
       uuid: 15b434ba-611d-46ea-adc0-cf8a74def6bc
     -
       vid: services_list_formats
-      tid: '109'
+      tid: '240'
       langcode: es
       name: 'Telefonía Fija Local'
       description__value: null
@@ -1914,7 +1960,7 @@ taxonomies:
       uuid: da1e9c76-0b39-486d-b2a0-90254569539c
     -
       vid: services_list_formats
-      tid: '104'
+      tid: '235'
       langcode: es
       name: 'Telefonía Móvil'
       description__value: null
@@ -1924,7 +1970,7 @@ taxonomies:
       uuid: 36cf7e83-cb7e-41ce-9c89-75969484a168
     -
       vid: services_list_formats
-      tid: '116'
+      tid: '246'
       langcode: es
       name: 'Todos los servicios'
       description__value: null
@@ -1934,7 +1980,7 @@ taxonomies:
       uuid: 71b85052-fc75-427b-b77b-cc2054acbd5c
     -
       vid: services_list_formats
-      tid: '108'
+      tid: '239'
       langcode: es
       name: 'Todos los TIC'
       description__value: null
@@ -1944,7 +1990,7 @@ taxonomies:
       uuid: 35468285-d032-4e0e-b51b-70ad50bc9b13
     -
       vid: services_list_formats
-      tid: '110'
+      tid: '241'
       langcode: es
       name: 'TV abierta'
       description__value: null
@@ -1954,7 +2000,7 @@ taxonomies:
       uuid: 78180719-5869-4b7d-aea1-eac9a60c03ba
     -
       vid: services_list_formats
-      tid: '106'
+      tid: '237'
       langcode: es
       name: 'TV suscripción'
       description__value: null
@@ -1965,7 +2011,7 @@ taxonomies:
   speakers_events:
     -
       vid: speakers_events
-      tid: '45'
+      tid: '247'
       langcode: es
       name: 'William Eggers'
       description__value: "<div class=\"block-micrositio-1\">\r\n<div class=\"row m-0 justify-content-center\">\r\n<div class=\"col-12 col-md-5 px-5 px-md-3 pr-md-5 align-self-center block-image-personalized\">\r\n<drupal-media data-align=\"center\" data-entity-type=\"media\" data-entity-uuid=\"5aa1e515-1806-455f-a709-ad9c8cb80b8a\"></drupal-media>\r\n</div>\r\n\r\n<div class=\"col-12 col-md-7 px-5 px-md-3 pl-md-5 align-self-center\">\r\n<h3 class=\"mt-0 mb-3 block-title-personalized\">Titulo</h3>\r\n\r\n<p>Es el Director Ejecutivo del Centro Deloitte para insights de Gobierno y ha sido autor, columnista, consultor y reconocido orador durante más de dos décadas. Es una autoridad en la reforma del gobierno y es responsable de la investigación y el liderazgo para la práctica de la industria del sector público de Deloitte. Su nuevo libro, Cumpliendo en lo Digital: Los Innovadores y las Tecnologías que están Transformando al Gobierno, se publicaró en junio de 2016. Bill ha aparecido en docenas de los</p>\r\n</div>\r\n</div>\r\n</div>\r\n"
@@ -1977,6 +2023,27 @@ taxonomies:
         -
           value: 'Executive Director, Deloitte Center for Government Insights. USA'
   tags: {  }
+  tax_concep_acreditac_barrera:
+    -
+      vid: tax_concep_acreditac_barrera
+      tid: '251'
+      langcode: es
+      name: 'Conceptos de acreditación'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 914eb302-f9a9-456f-8bb6-c850e7a23337
+    -
+      vid: tax_concep_acreditac_barrera
+      tid: '252'
+      langcode: es
+      name: 'Conceptos de barreras al despliegue'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: b969570a-3cab-4ef0-95ea-0980042172e8
   tipo_documento_o_link_transparen:
     -
       vid: tipo_documento_o_link_transparen
@@ -2537,6 +2604,79 @@ taxonomies:
       weight: '0'
       parent: '0'
       uuid: f5ff5525-28ef-489e-ba0a-4af9ef802131
+  trans_list_cat_plan_adqusicion:
+    -
+      vid: trans_list_cat_plan_adqusicion
+      tid: '226'
+      langcode: es
+      name: 'Plan anual de adquisiciones'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: b0e22b56-1589-4860-b6b9-5fe9ca5eadb2
+    -
+      vid: trans_list_cat_plan_adqusicion
+      tid: '227'
+      langcode: es
+      name: 'Plan de compras'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 1199b4f8-8be3-4c09-92fc-61098db73a5e
+    -
+      vid: trans_list_cat_plan_adqusicion
+      tid: '228'
+      langcode: es
+      name: 'Plan de gasto publico'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: c656ae8e-e8a3-4867-b4fe-f89cde0dd9d6
+  trans_lis_carg_pub_hoj_vid:
+    -
+      vid: trans_lis_carg_pub_hoj_vid
+      tid: '229'
+      langcode: es
+      name: Asesor
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 1b02a8a0-f76d-4fc4-9ce3-206feb909cef
+    -
+      vid: trans_lis_carg_pub_hoj_vid
+      tid: '230'
+      langcode: es
+      name: Directivo
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 55408177-441b-4dcf-827d-3c358ef0ba4a
+  trans_lis_cat_hoj_de_vi:
+    -
+      vid: trans_lis_cat_hoj_de_vi
+      tid: '231'
+      langcode: es
+      name: 'Aspirantes a cargo'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: b195cf10-f172-4c0e-9800-4cbd86c86056
+    -
+      vid: trans_lis_cat_hoj_de_vi
+      tid: '232'
+      langcode: es
+      name: 'Resoluciones de nombramientos'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: ff97ac55-4e51-4af3-8087-e06c79a3f80a
   trans_lis_cat_infr_rendi_cuenta:
     -
       vid: trans_lis_cat_infr_rendi_cuenta

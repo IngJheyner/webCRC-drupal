@@ -1,0 +1,29 @@
+uuid: 884c718f-9508-47cc-8443-c14b7f2d7dd2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_concp_acred_bar_municipio
+    - node.type.concepto_acreditacion_barrera
+    - taxonomy.vocabulary.departments_and_municipalities
+id: node.concepto_acreditacion_barrera.field_concp_acred_bar_municipio
+field_name: field_concp_acred_bar_municipio
+entity_type: node
+bundle: concepto_acreditacion_barrera
+label: Municipio
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      departments_and_municipalities: departments_and_municipalities
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

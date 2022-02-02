@@ -1,0 +1,22 @@
+uuid: 825c6d3a-898a-4cce-864d-5339894dec19
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.concepto_acreditacion_barrera
+id: node.concepto_acreditacion_barrera.promote
+field_name: promote
+entity_type: node
+bundle: concepto_acreditacion_barrera
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,20 @@
+uuid: bdb37ce0-b5b3-41d0-9306-c98b5cb132f4
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_tax_concepto
+field_name: field_tax_concepto
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
