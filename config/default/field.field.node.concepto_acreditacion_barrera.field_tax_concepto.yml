@@ -1,0 +1,29 @@
+uuid: db84bd9d-42f2-4a43-8c45-31fee608e172
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tax_concepto
+    - node.type.concepto_acreditacion_barrera
+    - taxonomy.vocabulary.tax_concep_acreditac_barrera
+id: node.concepto_acreditacion_barrera.field_tax_concepto
+field_name: field_tax_concepto
+entity_type: node
+bundle: concepto_acreditacion_barrera
+label: Concepto
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tax_concep_acreditac_barrera: tax_concep_acreditac_barrera
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,31 @@
+uuid: 22375bf2-6b37-42d1-8879-b4b4527f609a
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - scheduler
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: false
+    publish_past_date: error
+    publish_past_date_created: false
+    publish_required: false
+    publish_revision: false
+    publish_touch: false
+    show_message_after_update: true
+    unpublish_enable: false
+    unpublish_required: false
+    unpublish_revision: false
+name: 'Concepto de acreditación / barreras'
+type: concepto_acreditacion_barrera
+description: 'Contenido para micrositio Despliegue de infraestructura para conceptos de acreditación y conceptos de barreras al despliegue'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

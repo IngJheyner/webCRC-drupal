@@ -1,0 +1,11 @@
+uuid: adab9442-72a9-454a-a1d5-72b33290cff6
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.concepto_acreditacion_barrera
+id: node.concepto_acreditacion_barrera
+target_entity_type_id: node
+target_bundle: concepto_acreditacion_barrera
+default_langcode: site_default
+language_alterable: false

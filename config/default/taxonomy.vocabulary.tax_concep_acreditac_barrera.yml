@@ -1,0 +1,8 @@
+uuid: 172a60b3-2a2c-4c06-a8bf-7ff3978cbb38
+langcode: es
+status: true
+dependencies: {  }
+name: 'Concepto de acreditación / barreras'
+vid: tax_concep_acreditac_barrera
+description: 'Taxonomía para contenido de concepto de acreditación / barreras'
+weight: 0
