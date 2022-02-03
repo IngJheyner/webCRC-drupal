@@ -12,7 +12,7 @@ dependencies:
     - node.type.agency_regulatory
     - taxonomy.vocabulary.date_agency_regulatory
   content:
-    - 'taxonomy_term:date_agency_regulatory:28da7f6f-4df2-404a-9652-a339a0aca972'
+    - 'taxonomy_term:date_agency_regulatory:4e464c6f-6002-4c03-bda5-1f8fc415944f'
   module:
     - link
     - node
@@ -568,7 +568,7 @@ display:
           plugin_id: taxonomy_index_tid
           operator: and
           value:
-            208: 208
+            122: 122
           group: 1
           exposed: true
           expose:
@@ -717,7 +717,7 @@ display:
           plugin_id: text
           empty: true
           content:
-            value: "<p class='mb-4'>\r\nLa publicación y discusión de la Agenda Regulatoria es una actividad que la Comisión de Regulación de Comunicaciones CRC desarrolla, no solo en cumplimiento del decreto 1078 de 2015, sino también como un mecanismo de planeación y ejecución de la política regulatoria. Esta permite dar a conocer y discutir de manera oportuna las próximas acciones de regulación que se adelantaran a corto y mediano plazo.\r\n</p>"
+            value: "<p class='mb-4'>\r\nLa publicación y discusión de la Agenda Regulatoria es una actividad que la Comisión de Regulación de Comunicaciones CRC desarrolla, no solo en cumplimiento del decreto 1078 de 2015, sino también como un mecanismo de planeación y ejecución de la política regulatoria. Esta permite dar a conocer y discutir de manera oportuna las próximas acciones de regulación que se adelantaran a corto y mediano plazo.\r\n</p>\r\n\r\n<ul class=\"list-group list-group-flush\">\r\n\t<li class=\"list-group-item\">\r\n\t\t<a href=\"/es/proyectos-regulatorios/5000-2022-1\" class=\"d-block text-center text-decoration-none\">Proyecto de la Agenda Regulatoria 2022-2023\r\n\t\t\t<img src=\"/sites/default/files/webcrc/images/iconos/agenda.svg\" alt=\"Agenda\" onerror=\"this.remove();\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"Agenda\">\r\n\t\t</a>\r\n\t</li>            \r\n</ul>"
             format: full_html
           tokenize: false
       footer: {  }
