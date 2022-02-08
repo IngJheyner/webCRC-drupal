@@ -1,0 +1,21 @@
+uuid: b5098151-9179-4b75-8111-61f14237f42d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_geofield
+    - node.type.muni_levantaron_barreras
+  module:
+    - geofield
+id: node.muni_levantaron_barreras.field_content_geofield
+field_name: field_content_geofield
+entity_type: node
+bundle: muni_levantaron_barreras
+label: Ubicación
+description: 'Información necesaria para poder visualizar el punto en el mapa'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geofield

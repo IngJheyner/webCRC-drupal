@@ -1,0 +1,11 @@
+uuid: 45890de6-18bb-4e94-83a2-30c29a3f9654
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tax_concep_acreditac_barrera
+id: taxonomy_term.tax_concep_acreditac_barrera
+target_entity_type_id: taxonomy_term
+target_bundle: tax_concep_acreditac_barrera
+default_langcode: site_default
+language_alterable: false

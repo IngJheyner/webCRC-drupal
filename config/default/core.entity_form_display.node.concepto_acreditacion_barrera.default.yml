@@ -1,0 +1,121 @@
+uuid: e9369144-3a42-4f5d-a0bd-18abfdb36bd5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.concepto_acreditacion_barrera.field_archi_concep_acred_barrera
+    - field.field.node.concepto_acreditacion_barrera.field_concp_acred_bar_municipio
+    - field.field.node.concepto_acreditacion_barrera.field_tax_concepto
+    - node.type.concepto_acreditacion_barrera
+  module:
+    - cshs
+    - file
+    - path
+    - scheduler
+id: node.concepto_acreditacion_barrera.default
+targetEntityType: node
+bundle: concepto_acreditacion_barrera
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_archi_concep_acred_barrera:
+    type: file_generic
+    weight: 3
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_concp_acred_bar_municipio:
+    type: cshs
+    weight: 2
+    region: content
+    settings:
+      force_deepest: true
+      parent: null
+      level_labels: 'Departamento, Municipio'
+      none_label: '- Seleccione -'
+      hierarchy_depth: '0'
+      required_depth: '0'
+      save_lineage: false
+    third_party_settings: {  }
+  field_tax_concepto:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 4
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 7
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 13
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 8
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  url_redirects:
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

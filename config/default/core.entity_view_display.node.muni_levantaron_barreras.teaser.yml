@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.muni_levantaron_barreras.field_apart_norma_incluyen_barre
+    - field.field.node.muni_levantaron_barreras.field_content_geofield
     - field.field.node.muni_levantaron_barreras.field_depart_munici
     - field.field.node.muni_levantaron_barreras.field_descripcion_barreras
     - field.field.node.muni_levantaron_barreras.field_fecha_emitid_acredit
@@ -30,6 +31,7 @@ content:
 hidden:
   addtoany: true
   field_apart_norma_incluyen_barre: true
+  field_content_geofield: true
   field_depart_munici: true
   field_descripcion_barreras: true
   field_fecha_emitid_acredit: true

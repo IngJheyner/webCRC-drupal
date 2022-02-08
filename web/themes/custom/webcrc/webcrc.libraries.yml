@@ -6,7 +6,7 @@ style:
       //cdn.www.gov.co/v2/assets/cdn.min.css: {type: external}
   js:
     assets/js/webcrc.script.js: {}
-    //asistentevirtual.crcom.gov.co/agenti/js/scripts.js: {type: external, attributes: { type: text/javascript, async: true }}
+    //asistentevirtual.crcom.gov.co/agenti/js/scripts.js?v=9.3.0: {type: external, attributes: { type: text/javascript, async: true }}
   dependencies:
     - core/jquery
     - core/drupal

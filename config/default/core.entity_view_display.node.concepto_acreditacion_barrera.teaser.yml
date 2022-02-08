@@ -1,0 +1,29 @@
+uuid: f3ca0490-4e4d-43ca-8162-3409bdb5478c
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.concepto_acreditacion_barrera.field_archi_concep_acred_barrera
+    - field.field.node.concepto_acreditacion_barrera.field_concp_acred_bar_municipio
+    - field.field.node.concepto_acreditacion_barrera.field_tax_concepto
+    - node.type.concepto_acreditacion_barrera
+  module:
+    - user
+id: node.concepto_acreditacion_barrera.teaser
+targetEntityType: node
+bundle: concepto_acreditacion_barrera
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_archi_concep_acred_barrera: true
+  field_concp_acred_bar_municipio: true
+  field_tax_concepto: true
+  langcode: true
+  search_api_excerpt: true
