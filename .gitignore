@@ -76,3 +76,6 @@ node_modules/
 #ddev
 /.ddev
 install_ddev.sh
+
+#vscode
+/.vscode
