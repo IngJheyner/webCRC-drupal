@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.proyectos_regulatorios.feeds_item
+    - field.field.node.proyectos_regulatorios.field_date_finished_projects
     - field.field.node.proyectos_regulatorios.field_email_proyectos
     - field.field.node.proyectos_regulatorios.field_estado_proyectos
     - field.field.node.proyectos_regulatorios.field_interacciones_proyectos
@@ -32,6 +33,7 @@ content:
 hidden:
   addtoany: true
   feeds_item: true
+  field_date_finished_projects: true
   field_email_proyectos: true
   field_estado_proyectos: true
   field_interacciones_proyectos: true

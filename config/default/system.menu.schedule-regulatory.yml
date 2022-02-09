@@ -1,0 +1,8 @@
+uuid: 330854ab-fdc3-4485-8335-33d0ac632c47
+langcode: es
+status: true
+dependencies: {  }
+id: schedule-regulatory
+label: 'Agenda regulatoria'
+description: 'Se utiliza en la seccion de agenda regulatoria para administrar contenido de tipos proyectos.'
+locked: false

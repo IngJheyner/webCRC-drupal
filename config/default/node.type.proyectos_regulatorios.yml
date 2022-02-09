@@ -22,7 +22,7 @@ third_party_settings:
     unpublish_enable: false
     unpublish_required: false
     unpublish_revision: false
-name: 'Proyectos Comentarios'
+name: 'Proyectos Regulatorios'
 type: proyectos_regulatorios
 description: 'Contenido que se utiliza en la seccion para tipos de comentarios.'
 help: ''

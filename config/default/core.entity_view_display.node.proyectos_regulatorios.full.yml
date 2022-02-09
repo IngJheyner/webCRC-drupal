@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.full
     - field.field.node.proyectos_regulatorios.feeds_item
+    - field.field.node.proyectos_regulatorios.field_date_finished_projects
     - field.field.node.proyectos_regulatorios.field_email_proyectos
     - field.field.node.proyectos_regulatorios.field_estado_proyectos
     - field.field.node.proyectos_regulatorios.field_interacciones_proyectos
@@ -18,6 +19,7 @@ dependencies:
     - field.field.node.proyectos_regulatorios.field_type_projects_comments
     - node.type.proyectos_regulatorios
   module:
+    - datetime
     - entity_reference_revisions
     - link
     - options
@@ -28,6 +30,15 @@ targetEntityType: node
 bundle: proyectos_regulatorios
 mode: full
 content:
+  field_date_finished_projects:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 11
+    region: content
   field_email_proyectos:
     type: basic_string
     label: above

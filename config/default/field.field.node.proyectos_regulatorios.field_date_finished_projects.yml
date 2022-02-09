@@ -1,0 +1,21 @@
+uuid: eab73399-53b6-478d-aae5-725d4b84baf2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_finished_projects
+    - node.type.proyectos_regulatorios
+  module:
+    - datetime
+id: node.proyectos_regulatorios.field_date_finished_projects
+field_name: field_date_finished_projects
+entity_type: node
+bundle: proyectos_regulatorios
+label: 'Fecha de Finalizacion'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

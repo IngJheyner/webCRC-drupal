@@ -142,7 +142,8 @@ import anime from 'animejs/lib/anime.es';
               { className: "tablet-l desktop", targets: 3 },
               { className: "tablet-l desktop", targets: 4 },
               { className: "tablet-l desktop", targets: 5 },
-              { className: "tablet-l desktop", targets: 6 }
+              { className: "tablet-l desktop", targets: 6 },
+              { className: "tablet-l desktop", targets: 7 }
             ]
             break;
           case 'library-virtual':

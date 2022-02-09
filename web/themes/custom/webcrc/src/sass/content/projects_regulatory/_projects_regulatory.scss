@@ -181,6 +181,17 @@ div.page-projects{
 
     /* ===== ===== TABLE ===== ===== */
     @include datable('projects-comments');
+
+    table{
+
+        tbody{
+
+            tr td:nth-child(7) strong{
+                display: none;
+            }
+        }
+    }
+    
         
     /* ===== ===== PAGINACION ===== ===== */
     @include pagination();
