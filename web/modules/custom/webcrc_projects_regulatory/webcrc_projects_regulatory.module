@@ -99,13 +99,19 @@ function webcrc_projects_regulatory_preprocess_views_view_field(&$variables) {
       
       if($field->field == 'field_interacciones_proyectos'){
        
-        $fields = end($row->_entity->get('field_interacciones_proyectos')->getValue());
-        //dpm($fields);
-        $paragraph = Paragraph::load($fields['target_id']);
+        //$fields = array_pop($row->_entity->get('field_interacciones_proyectos')->getValue());
+        $fields_interactions = $row->_entity->get('field_interacciones_proyectos');
+        $definition_interactions = [];
 
-        $definition_interactions = $paragraph->get('field_interactions_comments')[0]->getValue()['value'];
+        foreach ($fields_interactions->referencedEntities() as $value) {
+          $definition_interactions[] = $value->get('field_interactions_comments')[0]->getValue()['value'];
+        }
+        //dpm(end($paragraph));
+        //$paragraph = Paragraph::load($fields['target_id']);
+        //$definition_interactions = $paragraph->get('field_interactions_comments')[0]->getValue()['value'];
+        //$definition_interactions = $paragraph->get('field_interactions_comments')[0]->getValue()['value'];
 
-        if($definition_interactions == 0){
+        if(end($definition_interactions) == 0){
           $variables['output'] = ['#markup' => '<img src="/themes/custom/webcrc/src/images/aceptan-comentarios.svg" class="mr-3" alt="See interaction" onerror="this.remove();">'];          
         }else{
           $variables['output'] =['#markup' => '<img src="/themes/custom/webcrc/src/images/no-aceptan-comentarios.svg" class="mr-3" alt="See interaction" onerror="this.remove();">'];
@@ -114,18 +120,25 @@ function webcrc_projects_regulatory_preprocess_views_view_field(&$variables) {
       
       if($field->field == 'nothing'){
 
-        $fields = end($row->_entity->get('field_interacciones_proyectos')->getValue());
-        $paragraph = Paragraph::load($fields['target_id']);
+        //$fields = end($row->_entity->get('field_interacciones_proyectos')->getValue());
+        $fields_interactions = $row->_entity->get('field_interacciones_proyectos');
+        //$paragraph = Paragraph::load($fields['target_id']);
+        $definition_interactions = [];
 
-        $dateTime = strtotime($paragraph->get('field_fecha_cierre_iteracciones')[0]->getValue()['value']);
+        foreach ($fields_interactions->referencedEntities() as $value) {
+          $definition_interactions[] = $value->get('field_fecha_cierre_iteracciones')[0]->getValue()['value'];
+        }
+
+        //$dateTime = strtotime($paragraph->get('field_fecha_cierre_iteracciones')[0]->getValue()['value']);
+        $dateTime = strtotime(end($definition_interactions));
         $variables['output'] = \Drupal::service('date.formatter')->format($dateTime, 'fecha_corta_webcrc');
-
+        //$variables['info'] = dump($field);
       }
         
     }
   }
 
-  //$variables['info'] = dump($field);
+  
     
 }
 
