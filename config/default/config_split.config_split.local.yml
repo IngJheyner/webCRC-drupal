@@ -8,8 +8,6 @@ description: 'Configuracion del entorno de desarrollo'
 weight: 0
 folder: ../config/envs/local
 module:
-  google_analytics: 0
-  xmlsitemap: 1
   devel: 0
   devel_entity_updates: 0
   devel_generate: 0
@@ -17,6 +15,7 @@ module:
   webprofiler: 0
 theme: {  }
 blacklist:
+  - advagg.settings
   - google_analytics.settings
   - xmlsitemap.xmlsitemap.t9UQ7FvqR0wMQMnd5n2XukH0kM9liAM9wOhfSLRl2qw
   - xmlsitemap_engines.settings
