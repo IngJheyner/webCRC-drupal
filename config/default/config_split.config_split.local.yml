@@ -17,5 +17,8 @@ theme: {  }
 blacklist: {  }
 graylist:
   - advagg.settings
+  - google_analytics.settings
+  - xmlsitemap.xmlsitemap.t9UQ7FvqR0wMQMnd5n2XukH0kM9liAM9wOhfSLRl2qw
+  - xmlsitemap_engines.settings
 graylist_dependents: true
 graylist_skip_equal: true
