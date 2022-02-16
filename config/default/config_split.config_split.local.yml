@@ -14,10 +14,8 @@ module:
   entity_update: 0
   webprofiler: 0
 theme: {  }
-blacklist:
+blacklist: {  }
+graylist:
   - advagg.settings
-  - xmlsitemap.xmlsitemap.t9UQ7FvqR0wMQMnd5n2XukH0kM9liAM9wOhfSLRl2qw
-  - xmlsitemap_engines.settings
-graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true
