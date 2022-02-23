@@ -28,7 +28,7 @@ view_mode_configuration:
       microsite_crc: ''
       news_crc: ''
       normatividad_regulatoria: ''
-      proyectos_regulatorios: ''
+      proyectos_regulatorios: teaser
       tip_cont_simple_transp: ''
       transp_ofert_empleo: ''
 show_search_form: true

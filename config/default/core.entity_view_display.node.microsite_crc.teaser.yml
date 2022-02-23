@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.microsite_crc.field_content_quick_access
     - field.field.node.microsite_crc.field_content_slideshow
     - field.field.node.microsite_crc.field_content_themes_interest
+    - field.field.node.microsite_crc.field_content_url
     - field.field.node.microsite_crc.field_image_content
     - node.type.microsite_crc
   module:
@@ -34,6 +35,7 @@ hidden:
   field_content_quick_access: true
   field_content_slideshow: true
   field_content_themes_interest: true
+  field_content_url: true
   field_image_content: true
   langcode: true
   search_api_excerpt: true

@@ -1,0 +1,23 @@
+uuid: 7b9e1a24-95c4-40d6-a280-029390df13b3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_url
+    - node.type.microsite_crc
+  module:
+    - link
+id: node.microsite_crc.field_content_url
+field_name: field_content_url
+entity_type: node
+bundle: microsite_crc
+label: Enlace
+description: 'Enlace interno o externo que se asignara a la presentacion del micrositio'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

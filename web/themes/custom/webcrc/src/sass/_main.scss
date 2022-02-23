@@ -461,6 +461,22 @@ div.most-consulted-content {
             font-size: 18pt;
           }
         }
+
+        .slide__description {
+          .field-content {
+            > a {
+              position: absolute;
+              right: 0;
+              left: 0;
+              top: 0;
+              bottom: 0;
+              display: block;
+              color: transparent;
+              background: transparent;
+              text-decoration: none;
+            }
+          }
+        }
       }
     }
   }

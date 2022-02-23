@@ -14,7 +14,7 @@ entity_type: node
 bundle: microsite_crc
 label: 'Pagina micrositio'
 description: 'Gestionar la presentacion del contenido para micrositio'
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
@@ -25,8 +25,8 @@ settings:
       page_wrapper_micrositie: page_wrapper_micrositie
     negate: 0
     target_bundles_drag_drop:
-      enlaces:
-        weight: 18
+      accessibility_toolbar:
+        weight: 20
         enabled: false
       from_library:
         weight: 19
@@ -75,5 +75,11 @@ settings:
         enabled: false
       themes_interest:
         weight: 34
+        enabled: false
+      themes_interest_microsite:
+        weight: 37
+        enabled: false
+      trans_aspirant_cargos:
+        weight: 38
         enabled: false
 field_type: entity_reference_revisions

@@ -3,12 +3,14 @@ langcode: es
 status: true
 dependencies:
   config:
+    - field.storage.node.field_content_url
     - field.storage.node.field_image_content
     - field.storage.node.field_nombre_proyecto
     - node.type.microsite_crc
     - node.type.proyectos_regulatorios
   module:
     - blazy
+    - link
     - media
     - node
     - slick_views
@@ -354,6 +356,73 @@ display:
     position: 1
     display_options:
       fields:
+        field_content_url:
+          id: field_content_url
+          table: node__field_content_url
+          field: field_content_url
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: 'microsite _external_link'
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: true
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: uri
+          type: link
+          settings:
+            trim_length: 80
+            url_only: false
+            url_plain: false
+            rel: '0'
+            target: '0'
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
         field_image_content:
           id: field_image_content
           table: node__field_image_content
@@ -495,7 +564,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"content-featured-pages-microsite\">\r\n <div class=\"img-microsite\">\r\n  {{ field_image_content }}\r\n </div>\r\n <div class =\"title-microsite\">\r\n  {{ title }}\r\n </div>\r\n</div>"
+            text: "{{ field_content_url }}\r\n\r\n<div class=\"content-featured-pages-microsite\">\r\n <div class=\"img-microsite\">\r\n  {{ field_image_content }}\r\n </div>\r\n <div class =\"title-microsite\">\r\n  {{ title }}\r\n </div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -669,6 +738,7 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:field.storage.node.field_content_url'
         - 'config:field.storage.node.field_image_content'
   projects_to_comment:
     id: projects_to_comment

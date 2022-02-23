@@ -10,10 +10,12 @@ dependencies:
     - field.field.node.microsite_crc.field_content_quick_access
     - field.field.node.microsite_crc.field_content_slideshow
     - field.field.node.microsite_crc.field_content_themes_interest
+    - field.field.node.microsite_crc.field_content_url
     - field.field.node.microsite_crc.field_image_content
     - node.type.microsite_crc
   module:
     - field_group
+    - link_target
     - media_library
     - paragraphs
     - path
@@ -44,6 +46,7 @@ third_party_settings:
       children:
         - title
         - field_image_content
+        - field_content_url
         - field_content_featured
       label: Presentación
       region: content
@@ -160,7 +163,7 @@ content:
     third_party_settings: {  }
   field_content_featured:
     type: boolean_checkbox
-    weight: 3
+    weight: 4
     region: content
     settings:
       display_label: true
@@ -236,6 +239,15 @@ content:
       add_mode: dropdown
       form_display_mode: default
       default_paragraph_type: ''
+    third_party_settings: {  }
+  field_content_url:
+    type: link_target_field_widget
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      available_targets: {  }
     third_party_settings: {  }
   field_image_content:
     type: media_library_widget
