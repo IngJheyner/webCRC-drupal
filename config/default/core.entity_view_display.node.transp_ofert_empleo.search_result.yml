@@ -1,0 +1,33 @@
+uuid: e7628f9f-bd2f-40a4-ab53-1d194e28a7a3
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.transp_ofert_empleo.body
+    - field.field.node.transp_ofert_empleo.field_docum_archi
+    - field.field.node.transp_ofert_empleo.field_lis_est_ofert
+    - node.type.transp_ofert_empleo
+  module:
+    - text
+    - user
+id: node.transp_ofert_empleo.search_result
+targetEntityType: node
+bundle: transp_ofert_empleo
+mode: search_result
+content:
+  body:
+    type: text_trimmed
+    label: hidden
+    settings:
+      trim_length: 300
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  addtoany: true
+  field_docum_archi: true
+  field_lis_est_ofert: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

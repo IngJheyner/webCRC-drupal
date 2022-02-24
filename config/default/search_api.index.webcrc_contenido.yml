@@ -35,13 +35,10 @@ datasource_settings:
     bundles:
       default: false
       selected:
-        - agency_regulatory
         - commission_minutes
-        - events
         - glossary
         - home_articles
         - library_virtual
-        - microsite_crc
         - microsites_articles
         - news_crc
         - normatividad_regulatoria
