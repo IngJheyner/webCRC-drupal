@@ -1,0 +1,29 @@
+uuid: ddf92135-4e33-44ee-9163-d037cf06a6f6
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.tip_cont_simple_transp.field_cont_tipo_cont_simp_transp
+    - node.type.tip_cont_simple_transp
+  module:
+    - text
+    - user
+id: node.tip_cont_simple_transp.search_result
+targetEntityType: node
+bundle: tip_cont_simple_transp
+mode: search_result
+content:
+  field_cont_tipo_cont_simp_transp:
+    type: text_trimmed
+    label: hidden
+    settings:
+      trim_length: 300
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  addtoany: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

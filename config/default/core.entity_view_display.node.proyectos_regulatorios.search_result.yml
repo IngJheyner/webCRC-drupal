@@ -1,0 +1,58 @@
+uuid: 21919cb1-54ac-4415-aad3-e79a9b2e2621
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.proyectos_regulatorios.feeds_item
+    - field.field.node.proyectos_regulatorios.field_date_finished_projects
+    - field.field.node.proyectos_regulatorios.field_email_proyectos
+    - field.field.node.proyectos_regulatorios.field_estado_proyectos
+    - field.field.node.proyectos_regulatorios.field_interacciones_proyectos
+    - field.field.node.proyectos_regulatorios.field_nombre_proyecto
+    - field.field.node.proyectos_regulatorios.field_oficina_proyecto
+    - field.field.node.proyectos_regulatorios.field_poll_content_useful
+    - field.field.node.proyectos_regulatorios.field_projects_documents_endings
+    - field.field.node.proyectos_regulatorios.field_projects_links
+    - field.field.node.proyectos_regulatorios.field_projects_services
+    - field.field.node.proyectos_regulatorios.field_resumen_proyecto
+    - field.field.node.proyectos_regulatorios.field_type_projects_comments
+    - node.type.proyectos_regulatorios
+  module:
+    - user
+id: node.proyectos_regulatorios.search_result
+targetEntityType: node
+bundle: proyectos_regulatorios
+mode: search_result
+content:
+  field_nombre_proyecto:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_resumen_proyecto:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  addtoany: true
+  feeds_item: true
+  field_date_finished_projects: true
+  field_email_proyectos: true
+  field_estado_proyectos: true
+  field_interacciones_proyectos: true
+  field_oficina_proyecto: true
+  field_poll_content_useful: true
+  field_projects_documents_endings: true
+  field_projects_links: true
+  field_projects_services: true
+  field_type_projects_comments: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

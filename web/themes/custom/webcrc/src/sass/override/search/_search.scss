@@ -29,4 +29,22 @@
       }
     }
   }
+
+  .search-results {
+    .title-result {
+      display: block;
+      font-family: $roboto-condensed;
+      font-size: 20pt;
+      color: $text-dark-blue;
+      text-decoration: none;
+
+      &:hover,
+      &:active,
+      &:focus,
+      &:visited {
+        color: $text-alpha;
+        text-decoration: underline;
+      }
+    }
+  }
 }

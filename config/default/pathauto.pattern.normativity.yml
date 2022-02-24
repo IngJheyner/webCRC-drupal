@@ -1,0 +1,22 @@
+uuid: f37491e0-349b-4b27-ab49-b8d48b674cbc
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: normativity
+label: Normatividad
+type: 'canonical_entities:node'
+pattern: 'normatividad/[node:title]'
+selection_criteria:
+  f24b178f-0958-41b9-82d4-9a8c312953f7:
+    id: node_type
+    negate: false
+    uuid: f24b178f-0958-41b9-82d4-9a8c312953f7
+    context_mapping:
+      node: node
+    bundles:
+      normatividad_regulatoria: normatividad_regulatoria
+selection_logic: and
+weight: -5
+relationships: {  }

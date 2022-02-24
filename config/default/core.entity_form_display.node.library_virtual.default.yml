@@ -299,11 +299,11 @@ content:
     weight: 5
     region: content
     settings:
+      match_limit: 10
       match_operator: CONTAINS
       size: 60
       placeholder: ''
       default_data: false
-      match_limit: '10'
       webforms: {  }
     third_party_settings: {  }
   status:
