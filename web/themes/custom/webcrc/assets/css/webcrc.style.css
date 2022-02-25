@@ -23594,6 +23594,13 @@ div.agency-regulatory {
     max-width: 1400px;
   }
 }
+div.agency-regulatory ul.menu-schedule {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 100px));
+  grid-template-rows: repeat(auto-fill, minmax(10px, 30px));
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
 div.agency-regulatory div.item-colrs-header {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
