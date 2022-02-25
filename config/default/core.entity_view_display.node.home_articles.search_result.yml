@@ -1,0 +1,29 @@
+uuid: e4ed2993-0a26-4198-9c01-5e8e973b5e80
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.home_articles.field_content
+    - node.type.home_articles
+  module:
+    - text
+    - user
+id: node.home_articles.search_result
+targetEntityType: node
+bundle: home_articles
+mode: search_result
+content:
+  field_content:
+    type: text_trimmed
+    label: hidden
+    settings:
+      trim_length: 300
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  addtoany: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

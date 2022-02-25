@@ -330,52 +330,6 @@ display:
           expose:
             operator_limit_selection: false
             operator_list: {  }
-        field_docum_archi_display:
-          id: field_docum_archi_display
-          table: node__field_docum_archi
-          field: field_docum_archi_display
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: numeric
-          operator: '='
-          value:
-            min: ''
-            max: ''
-            value: ''
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_docum_archi_display_op
-            label: 'Nombre de documento'
-            description: 'Escriba el nombre del documento a buscar'
-            use_operator: false
-            operator: field_docum_archi_display_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: text
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-            min_placeholder: ''
-            max_placeholder: ''
-            placeholder: 'Busque aquí'
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
         field_tipo_doc_paragraph_target_id:
           id: field_tipo_doc_paragraph_target_id
           table: node__field_tipo_doc_paragraph
@@ -423,6 +377,49 @@ display:
           hierarchy: false
           limit: true
           error_message: true
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: string
+          operator: contains
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: title_op
+            label: 'Nombre del documento'
+            description: 'Escriba el nombre del documento a buscar'
+            use_operator: false
+            operator: title_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: nombre_documento
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: 'Escriba aquí'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
       filter_groups:
         operator: AND
         groups:

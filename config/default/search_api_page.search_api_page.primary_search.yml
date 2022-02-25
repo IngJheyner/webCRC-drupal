@@ -16,7 +16,7 @@ searched_fields:
 style: view_modes
 view_mode_configuration:
   'entity:node':
-    default: teaser
+    default: search_result
     overrides:
       agency_regulatory: ''
       commission_minutes: ''

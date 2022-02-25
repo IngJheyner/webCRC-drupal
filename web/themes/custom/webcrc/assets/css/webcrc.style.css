@@ -21259,6 +21259,18 @@ div.most-consulted-content ul.slick--view--tabs-contents-consulted > li .slide__
   font-weight: bold;
   font-size: 18pt;
 }
+.featured-pages-microsite ul.slick__grid li .slide__caption .slide__description .field-content > a,
+.featured-pages-microsite ul.slide__content li .slide__caption .slide__description .field-content > a {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+  color: transparent;
+  background: transparent;
+  text-decoration: none;
+}
 
 .projects-to-comment h1, .projects-to-comment h2, .projects-to-comment h3,
 .projects-to-comment h4, .projects-to-comment h5, .projects-to-comment h6 {
@@ -21962,6 +21974,17 @@ nav.nav-main-menu ul.menu.sf-accordion li a:hover, nav.nav-main-menu ul.menu.sf-
   background: transparent;
   border: none;
   z-index: 2;
+}
+.search-primary-page .search-results .title-result {
+  display: block;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20pt;
+  color: #2e297b;
+  text-decoration: none;
+}
+.search-primary-page .search-results .title-result:hover, .search-primary-page .search-results .title-result:active, .search-primary-page .search-results .title-result:focus, .search-primary-page .search-results .title-result:visited {
+  color: #f42e62;
+  text-decoration: underline;
 }
 
 /* ==============================

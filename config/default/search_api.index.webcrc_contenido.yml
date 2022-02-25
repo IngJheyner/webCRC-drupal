@@ -35,13 +35,10 @@ datasource_settings:
     bundles:
       default: false
       selected:
-        - agency_regulatory
         - commission_minutes
-        - events
         - glossary
         - home_articles
         - library_virtual
-        - microsite_crc
         - microsites_articles
         - news_crc
         - normatividad_regulatoria
@@ -55,6 +52,7 @@ processor_settings:
   add_url: {  }
   aggregated_field: {  }
   entity_status: {  }
+  entity_type: {  }
   ignorecase:
     weights:
       preprocess_index: -20

@@ -1,0 +1,22 @@
+uuid: 799286ff-022c-4225-a2cc-8f20dd83c7fd
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: transparency_job_offers
+label: 'Transparencia - Ofertas de empleo'
+type: 'canonical_entities:node'
+pattern: 'transparencia-y-acceso-a-la-informacion-publica/ofertas-de-empleo/[node:title]'
+selection_criteria:
+  9599e098-e4ac-4809-9409-8118f90ecc6c:
+    id: node_type
+    negate: false
+    uuid: 9599e098-e4ac-4809-9409-8118f90ecc6c
+    context_mapping:
+      node: node
+    bundles:
+      transp_ofert_empleo: transp_ofert_empleo
+selection_logic: and
+weight: -5
+relationships: {  }

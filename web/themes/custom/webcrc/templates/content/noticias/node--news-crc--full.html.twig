@@ -31,7 +31,7 @@
           {{ content.field_image_content }}
         </span>
         <div class="media-body align-self-center px-3">
-          <a href="/noticias/{{ content.field_category.0['#title']|lower }}">
+          <a href="/noticias/{{ content.field_category.0['#title']|replace({' ':'-'})|lower  }}">
             {{ content.field_category.0['#title'] }}
           </a>
           {{ content.field_introduccion_contenido }}

@@ -1,0 +1,41 @@
+uuid: 74d5de33-5472-4b04-a377-7dfa8f461757
+langcode: es
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.agency_regulatory.field_agency_activity
+    - field.field.node.agency_regulatory.field_agency_date
+    - field.field.node.agency_regulatory.field_agency_date_finished
+    - field.field.node.agency_regulatory.field_agency_date_initial
+    - field.field.node.agency_regulatory.field_agency_date_published
+    - field.field.node.agency_regulatory.field_agency_eje
+    - field.field.node.agency_regulatory.field_agency_note
+    - field.field.node.agency_regulatory.field_agency_trimester_finished
+    - field.field.node.agency_regulatory.field_agency_trimester_initial
+    - field.field.node.agency_regulatory.field_agency_trimester_published
+    - field.field.node.agency_regulatory.field_agency_type
+    - node.type.agency_regulatory
+  module:
+    - user
+id: node.agency_regulatory.search_result
+targetEntityType: node
+bundle: agency_regulatory
+mode: search_result
+content: {  }
+hidden:
+  addtoany: true
+  field_agency_activity: true
+  field_agency_date: true
+  field_agency_date_finished: true
+  field_agency_date_initial: true
+  field_agency_date_published: true
+  field_agency_eje: true
+  field_agency_note: true
+  field_agency_trimester_finished: true
+  field_agency_trimester_initial: true
+  field_agency_trimester_published: true
+  field_agency_type: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

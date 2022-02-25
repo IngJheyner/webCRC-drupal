@@ -46,13 +46,15 @@ function webcrc_projects_regulatory_preprocess_field(&$variables, $hook){
     
     if(\Drupal::routeMatch()->getRouteName() != "view.frontpage.page_1"){
 
-      $nid = \Drupal::routeMatch()->getParameter('node')->id();
+      if(!is_null(\Drupal::routeMatch()->getParameter('node')))
+      {
+        $nid = \Drupal::routeMatch()->getParameter('node')->id();
       
-      if(!is_null($nid)){
-        $field = \Drupal::entityTypeManager()->getStorage('node')->load($nid);
-        $variables['document_defined'] = $field->get('field_projects_documents_endings')->getValue();
+        if(!is_null($nid)){
+          $field = \Drupal::entityTypeManager()->getStorage('node')->load($nid);
+          $variables['document_defined'] = $field->get('field_projects_documents_endings')->getValue();
+        }
       }
-
     }
     
     

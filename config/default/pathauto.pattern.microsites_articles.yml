@@ -5,14 +5,14 @@ dependencies:
   module:
     - node
 id: microsites_articles
-label: 'Micrositios - Aticulos'
+label: 'Micrositios - Articulos'
 type: 'canonical_entities:node'
 pattern: 'micrositios/[node:field_content_type:entity:title]/[node:title]'
 selection_criteria:
-  24456b98-def6-47a1-9daa-08f2252d174c:
+  c6423aff-b393-48d4-8bc8-27ac712dce93:
     id: node_type
     negate: false
-    uuid: 24456b98-def6-47a1-9daa-08f2252d174c
+    uuid: c6423aff-b393-48d4-8bc8-27ac712dce93
     context_mapping:
       node: node
     bundles:

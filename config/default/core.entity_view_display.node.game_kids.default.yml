@@ -31,9 +31,7 @@ content:
     type: blazy_media
     label: hidden
     settings:
-      caption:
-        title: '0'
-        alt: '0'
+      caption: {  }
       class: ''
       id: ''
       image: ''
@@ -41,13 +39,15 @@ content:
       overlay: ''
       title: ''
       vanilla: false
-      icon: ''
       layout: ''
-      view_mode: default
+      view_mode: ''
       cache: 0
-      current_view_mode: default
+      current_view_mode: ''
       skin: ''
       fx: ''
+      lazy: ''
+      loading: lazy
+      preload: false
       style: ''
       background: false
       box_caption: ''
@@ -59,9 +59,8 @@ content:
       media_switch: ''
       ratio: ''
       thumbnail_style: ''
+      _item: ''
       _uri: ''
-      breakpoints: {  }
-      sizes: ''
       grid_header: ''
       grid: ''
       grid_medium: ''

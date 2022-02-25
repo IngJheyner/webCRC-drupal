@@ -1,0 +1,23 @@
+{#
+/**
+ * @file
+ * Template for a Node Full actas de comision.
+ */
+#}
+{%
+  set classes = [
+  'node',
+  node.isPromoted() ? 'node--promoted',
+  node.isSticky() ? 'node--sticky',
+  not node.isPublished() ? 'node--unpublished',
+  node.bundle|clean_class,
+  node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
+]
+%}
+<article{{ attributes.addClass(classes) }}>
+  <div class="container my-5 text-rize">
+    {% block content %}
+      {{ content }}
+    {% endblock %}
+  </div>
+</article>

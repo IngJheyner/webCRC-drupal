@@ -213,12 +213,12 @@ content:
     weight: 8
     region: content
     settings:
+      match_limit: 10
       match_operator: CONTAINS
       size: 60
       placeholder: ''
       default_data: true
       webforms: {  }
-      match_limit: 10
     third_party_settings: {  }
   field_projects_documents_endings:
     type: entity_reference_autocomplete
