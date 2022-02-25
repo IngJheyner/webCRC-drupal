@@ -17,7 +17,84 @@
 <article{{ attributes.addClass(classes) }}>
   <div class="container my-5 text-rize">
     {% block content %}
-      {{ content }}
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <h5>
+            <strong>
+              {{ content.field_fecha_de_publi_normativ['#title'] }}
+            </strong>
+          </h5>
+          <p>
+            {{ content.field_fecha_de_publi_normativ.0 }}
+          </p>
+        </div>
+        <div class="col-12 col-md-4">
+          <h5>
+            <strong>
+              {{ content.field_list_tipo_norma_normativid['#title'] }}
+            </strong>
+          </h5>
+          <p>
+            {{ content.field_list_tipo_norma_normativid.0 }}
+          </p>
+        </div>
+        <div class="col-12 col-md-2">
+          <h5>
+            <strong>
+              {{ content.field_numero_normatividad['#title'] }}
+            </strong>
+          </h5>
+          <p>
+            {{ content.field_numero_normatividad.0 }}
+          </p>
+        </div>
+        <div class="col-12 col-md-2">
+          <h5>
+            <strong>
+              {{ content.field_ano_normat_reg['#title'] }}
+            </strong>
+          </h5>
+          <p>
+            {{ content.field_ano_normat_reg.0 }}
+          </p>
+        </div>
+        <div class="col-12">
+          <h5>
+            <strong>
+              {{ content.field_epigrafe_referencia_normat['#title'] }}
+            </strong>
+          </h5>
+          <p>
+            {{ content.field_epigrafe_referencia_normat.0 }}
+          </p>
+        </div>
+        <div class="col-12">
+          <h5>
+            <strong>
+              {{ content.field_tax_palabras_clave_normati['#title'] }}
+            </strong>
+          </h5>
+          <p>
+            {{ content.field_tax_palabras_clave_normati.0 }}
+          </p>
+        </div>
+        <div class="col-12">
+          <h5>
+            <strong>
+              {{ content.field_archivo_normativ['#title'] }}
+            </strong>
+          </h5>
+          <p>
+            {% if content.field_archivo_normativ.0 %}
+              <a  href="{{ file_url(content.field_archivo_normativ.0['#file'].fileuri) }}"
+                  target="_blank"
+                  title="{{ content.field_archivo_normativ.0['#file'].filename.value }}">
+                {{ content.field_archivo_normativ.0['#file'].filename.value }}
+              </a>
+            {% endif %}
+          </p>
+        </div>
+      </div>
     {% endblock %}
   </div>
 </article>

@@ -17,7 +17,54 @@
 <article{{ attributes.addClass(classes) }}>
   <div class="container my-5 text-rize">
     {% block content %}
-      {{ content }}
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <h5>
+            <strong>
+              {{ content.field_type_act['#title'] }}
+            </strong>
+          </h5>
+          <p>
+            {{ content.field_type_act.0 }}
+          </p>
+        </div>
+        <div class="col-12 col-md-4">
+          <h5>
+            <strong>
+              {{ content.field_date['#title'] }}
+            </strong>
+          </h5>
+          <p>
+            {{ content.field_date.0 }}
+          </p>
+        </div>
+        <div class="col-12">
+          <h5>
+            <strong>
+              {{ content.field_introduccion_contenido['#title'] }}
+            </strong>
+          </h5>
+          <p>
+            {{ content.field_introduccion_contenido.0 }}
+          </p>
+        </div>
+        <div class="col-12">
+          <h5>
+            <strong>
+              {{ content.field_content_file['#title'] }}
+            </strong>
+          </h5>
+          <p>
+            {% if content.field_content_file.0 %}
+              <a  href="{{ file_url(content.field_content_file.0['#file'].fileuri) }}"
+                  target="_blank"
+                  title="{{ content.field_content_file.0['#file'].filename.value }}">
+                {{ content.field_content_file.0['#file'].filename.value }}
+              </a>
+            {% endif %}
+          </p>
+        </div>
+      </div>
     {% endblock %}
   </div>
 </article>
