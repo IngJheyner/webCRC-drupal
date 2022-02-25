@@ -1299,7 +1299,7 @@ function webcrc_schedule_form_views_exposed_form_alter(&$form, FormStateInterfac
   if($form['#id'] == 'views-exposed-form-agency-regulatory-page-1'){
 
     /* ===== ===== TITULO ===== ===== */
-    if (isset($form['field_agency_date_target_id'])) $form['field_agency_date_target_id']['#prefix'] = '<p class="h4 text-center text-white mb-3">Lo invitamos a seleccionar la agenda que desea consultar</p>';
+    if (isset($form['field_agency_date_target_id'])) $form['field_agency_date_target_id']['#prefix'] = t('<p class="h4 text-center text-white mb-3">We invite you to consult the planner of the agenda of the following periods</p>');
   }
 }
 
