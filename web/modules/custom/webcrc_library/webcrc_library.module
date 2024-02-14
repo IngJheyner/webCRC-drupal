@@ -20,7 +20,7 @@ function webcrc_library_form_alter(&$form, $form_state, $form_id) {
     $form['field_library_notes']['widget'][0]['value']['#rows'] = 15;
     $form['field_library_information']['widget'][0]['value']['#rows'] = 15;
   }
-    
+
 }
 
  /**
@@ -67,14 +67,14 @@ function webcrc_library_form_views_exposed_form_alter(&$form, FormStateInterface
         ];
     }
 }
-  
+
 /**
  * Implements hook_preprocess_form_element()
  */
 function webcrc_library_preprocess_form_element(&$variables) {
 
     /* ===== ===== Nombre de proyecto ===== ===== */
-    if(isset($variables['name'])){         
+    if(isset($variables['name'])){
         /* ===== ===== SELECTOR ===== ===== */
         switch ($variables['name']) {
 
@@ -85,13 +85,13 @@ function webcrc_library_preprocess_form_element(&$variables) {
                         'input__primary d-flex flex-row',
                     ]
                 ];
-            
+
                 $variables['label']['#attributes'] = [
                     'class' => [
                         'd-none',
                     ]
                 ];
-            
+
                 $variables['label']['#prefix'] = '<img src="/themes/custom/webcrc/src/images/icono-lupa.svg" onerror="this.remove();" class="mx-3 my-2">';
 
             break;
@@ -111,7 +111,7 @@ function webcrc_library_preprocess_form_element(&$variables) {
                     'm-0 px-3',
                     ]
                 ];
-                
+
             break;
 
             case 'palabras-claves': case 'autor':

@@ -105,17 +105,17 @@
           {% else %}
             {% set text = 'Discontinued'|trans %}
             {% set alt = 'Discontinued'|trans %}
-            {% set icon = '/themes/custom/webcrc/src/images/icono-suspendido-circulo.png' %}            
-          {% endif %}       
-          
+            {% set icon = '/themes/custom/webcrc/src/images/icono-suspendido-circulo.png' %}
+          {% endif %}
+
           <img src="{{ icon }}" alt="{{ alt }}" onerror="this.remove();">
-          <p class="m-auto flex-grow-1 flex-lg-grow-0 pl-1 pl-lg-0">{{ text }}</p>        
+          <p class="m-auto flex-grow-1 flex-lg-grow-0 pl-1 pl-lg-0">{{ text }}</p>
 
         </div>
 
         {# ===== ===== SERVICES ===== ===== #}
-        <div class="node__content-info--items services order-lg-2 order-lg-2 px-md-2 mt-3 mt-md-0">         
-          {{ content.field_projects_services }}         
+        <div class="node__content-info--items services order-lg-2 order-lg-2 px-md-2 mt-3 mt-md-0">
+          {{ content.field_projects_services }}
         </div>
 
         {# ===== ===== DATE COMMENTS ===== ===== #}
@@ -127,7 +127,7 @@
 
               <div class="node__content-info--items date-comments order-2 order-lg-3 d-flex mb-2 mb-lg-0 px-lg-2 mt-3 mt-md-0">
 
-                <img src="/themes/custom/webcrc/src/images/aceptan-comentarios.svg" alt="{{ 'Comments are accepted until'|t }}"> 
+                <img src="/themes/custom/webcrc/src/images/aceptan-comentarios.svg" alt="{{ 'Comments are accepted until'|t }}">
 
                 <p class="m-auto text-left pl-1 pl-lg-0 flex-grow-1 flex-lg-grow-0">
 
@@ -135,11 +135,11 @@
 
                   <time datetime='{{ dateClose|date('U')|format_date('fecha_corta_webcrc') }}' class='border-0 p-0'>{{ dateClose|date('U')|format_date('fecha_corta_webcrc') }}</time>
 
-                </p>               
-              </div>              
+                </p>
+              </div>
             {% endif %}
           {% endfor %}
-        {% endif %}     
+        {% endif %}
 
       </div>
       {# ===== ===== TITLE PROJECTS ===== ===== #}
@@ -162,8 +162,8 @@
           {# ===== ===== RESUMEN ===== ===== #}
           <div class="node__content-abstract">
              <p class='font-weight-bold'>{{'Abstract'|t}}</p>
-            {{ content.field_resumen_proyecto.0 }}            
-          </div>          
+            {{ content.field_resumen_proyecto.0 }}
+          </div>
 
           {# ===== ===== DOCUMENTACION FINAL ===== ===== #}
           {% if content.field_projects_documents_endings['#items'] != null %}
@@ -190,8 +190,8 @@
                 </div>
               </div>
             </div>
-          {% endif %}  
-          
+          {% endif %}
+
           <hr>
 
           {# ===== ===== INTERACCIONES ===== ===== #}
@@ -199,10 +199,10 @@
 
             <h3 class='mb-3'>{{ 'Interactions'|t }}</h3>
 
-            {{ content.field_interacciones_proyectos }} 
-            
-          </div> 
-               
+            {{ content.field_interacciones_proyectos }}
+
+          </div>
+
         </div>
 
         {# ===== ===== MECANISMOS DE PARTICIPACION ===== ===== #}
@@ -215,13 +215,13 @@
             <li class="list-group-item node__content-mechanisms--email pt-3 pb-1 px-2 px-md-4"><img src="/themes/custom/webcrc/src/images/email.svg" onerror='this.remove();'><a href="mailto:{{ content.field_email_proyectos.0 }}?Subject=Cordial%20saludo%20señores%20de%20la%20CRC" class="text mx-2 font-weight-bold">{{ content.field_email_proyectos.0 }}</a></li>
 
             <li class="list-group-item node__content-mechanisms--enlaces py-1 px-2 px-md-4">{{ content.field_projects_links }}</li>
-            
+
             <li class="list-group-item node__content-mechanisms--facebook py-1 pb-1 px-2 px-md-4"><img src="/themes/custom/webcrc/src/images/Facebook.svg" onerror='this.remove();'><a href="javascript:void(0)" class="text mx-2 font-weight-bold">Facebook</a></li>
 
             <li class="list-group-item node__content-mechanisms--twitter py-1 pb-1 px-2 px-md-4"><img src="/themes/custom/webcrc/src/images/Twitter.svg" onerror='this.remove();'><a href="javascript:void(0)" class="text mx-2 font-weight-bold">Twitter</a></li>
 
             <li class="list-group-item node__content-mechanisms--email pb-3 px-2 px-md-4 d-flex"><img src="/themes/custom/webcrc/src/images/Direccion.svg"><a class="text mx-2 font-weight-bold text-decoration-none" href='javascript:void(0)'>{{ content.field_oficina_proyecto.0 }}</a></li>
-            
+
           </ul>
 
         </div>
@@ -238,8 +238,8 @@
 
   <section class="projects__regulatory-related container-fluid px-0 mt-5">
     <div id='content-related--bg--webcrc'></div>
-    {{ drupal_view('projects_comments', 'block_projects_related') }}    
-  </section>  
+    {{ drupal_view('projects_comments', 'block_projects_related') }}
+  </section>
 
 </article>
 {% endif %}

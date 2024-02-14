@@ -45,9 +45,6 @@ content:
       current_view_mode: ''
       skin: ''
       fx: ''
-      lazy: ''
-      loading: lazy
-      preload: false
       style: ''
       background: false
       box_caption: ''
@@ -59,12 +56,15 @@ content:
       media_switch: ''
       ratio: ''
       thumbnail_style: ''
-      _item: ''
       _uri: ''
       grid_header: ''
       grid: ''
       grid_medium: ''
       grid_small: ''
+      lazy: ''
+      loading: lazy
+      preload: false
+      _item: ''
     third_party_settings: {  }
     weight: 0
     region: content
